@@ -1,0 +1,63 @@
+name: Auto-merge corrections
+
+on:
+  # Runs after content-check completes on a PR
+  check_suite:
+    types: [completed]
+  # Also trigger when content-check reports status
+  workflow_run:
+    workflows: ['content-check']
+    types: [completed]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  auto-merge:
+    name: Auto-merge bot PRs
+    runs-on: ubuntu-latest
+    # Only run when the triggering workflow/check succeeded
+    if: >-
+      (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success') ||
+      (github.event_name == 'check_suite' && github.event.check_suite.conclusion == 'success')
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Find open correction PRs from the bot
+        id: find-prs
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # List open PRs whose branch starts with "corrections/" or "new/"
+          PRS=$(gh pr list --state open --json number,headRefName \
+            --jq '[.[] | select(.headRefName | test("^(corrections|new)/"))] | .[].number')
+
+          if [ -z "$PRS" ]; then
+            echo "No correction PRs found."
+            echo "prs=" >> "$GITHUB_OUTPUT"
+          else
+            echo "Found PRs: $PRS"
+            echo "prs=$PRS" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Merge each qualifying PR
+        if: steps.find-prs.outputs.prs != ''
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          for PR in ${{ steps.find-prs.outputs.prs }}; do
+            echo "Attempting to merge PR #${PR}..."
+
+            # Check all status checks passed
+            STATUS=$(gh pr checks "$PR" --json state --jq '[.[].state] | if all(. == "SUCCESS"; .) then "pass" else "fail" end' 2>/dev/null || echo "fail")
+
+            if [ "$STATUS" = "pass" ]; then
+              gh pr merge "$PR" --squash --delete-branch --auto \
+                && echo "✅ PR #${PR} merged." \
+                || echo "⚠️  PR #${PR} merge failed (may need approvals or branch protection)."
+            else
+              echo "⏳ PR #${PR} has pending or failing checks — skipping."
+            fi
+          done
