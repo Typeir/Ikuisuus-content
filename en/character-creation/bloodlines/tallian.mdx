@@ -26,11 +26,15 @@ The Tallians now merely exist among the ruins, some refusing to interact with th
 
 | **Ability Scores**                      | **Movement Speeds**                                                                            | **Senses**                        |
 | --------------------------------------- | ---------------------------------------------------------------------------------------------- | --------------------------------- |
-| <ul><li>CON +2</li><li>INT +1</li></ul> | <ul><li>Walk: 30 ft.</li><li>Hover: 2.5 ft. x your proficiency bonus (minimum 5 ft.)</li></ul> | <ul><li>Standard vision</li></ul> |
+| <ul><li>CON +2</li><li>INT +1</li></ul> | <ul><li>Walk: 30 ft.</li><li>Hover: Same as Walking speed</li></ul> | <ul><li>Standard vision</li></ul> |
 
 | **Size**                                                                                                                                                                                                                                                                                                                                                                                                   | **Creature Types**          | **Age**                                                                                                                                                                                                                                                                                                                                                                                           |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <ul><li>Small</li><li>Medium</li><li><Tooltip><span>Large</span><span>Choose Small, Medium, or Large at character creation. Large creatures must use the Squeeze action to fit through gaps of 5 ft. or less. While Squeezing, attack rolls against you have advantage, your own attack rolls and Dexterity saving throws have disadvantage, and your movement speed is halved.</span></Tooltip></li></ul> | <ul><li>Construct</li></ul> | <ul><li><Tooltip><span>Service cycle (~40 years per major component set)</span><span>Tallians do not age biologically, but their biomechanical parts wear out under stress. Every 40 years, major component groups usually require replacement or full refurbishment to maintain baseline function. A neglected Tallian can remain animate but progressively unstable.</span></Tooltip></li></ul> |
+
+### Maneuverable
+
+When hovering, you hover at 2.5 ft. x your proficiency bonus (minimum 5 ft.) from the ground, and can hover over liquids.
 
 ### Inertity
 
@@ -69,13 +73,12 @@ Your spent Hit Dice are restored as normal when you finish a long rest.
 
 ### Programmed Excellence
 
-Once per short rest, as a bonus action, you can enter Programmed Excellence for 1 minute.
-Choose all of the following when you activate it:
+Once per short rest, as a bonus action, you can re-wire your programming.
+You gain all of the following benefits until your next Short Rest:
 
-- One condition: blinded, charmed, deafened, frightened, poisoned, or stunned. You are immune to that condition.
-- One condition: blinded, charmed, deafened, frightened, paralyzed, poisoned, stunned, or terrified. You are immune to that condition.
-- One elemental damage type: acid, cold, fire, lightning, or thunder. You gain resistance to that damage type.
-- One skill and one tool. You gain proficiency in both until Programmed Excellence ends.
+- Choose one condition: blinded, charmed, deafened, frightened, paralyzed, poisoned, or terrified. You are immune to that condition.
+- Choose one elemental damage type: acid, cold, fire, lightning, or psychic. You gain resistance to that damage type.
+- Choose one skill and one tool. You gain proficiency in both.
 
 ### Languages
 
@@ -87,25 +90,53 @@ You can speak, read, and write Common and Empyrean.
 
 You have a budget of **10 Boon Points**.
 
-<Collapsible open>
+<Collapsible>
+
+###### Multi-Dimensional Maneuvers <span>7 BP</span>
+
+At the start of each of your turns, if you are not incapacitated, you can forego 10ft of movement for that turn.
+If you do so, movement does not provoke opportunity attacks until the end of that turn.
+
+Once per short rest, when you move at least 10 feet before making a melee attack on your turn, you can add your proficiency bonus to the attack and damage rolls.
+
+_Notes._
+
+> This suite descends from old hunter-frame movement doctrine: break contact, cut angle, re-enter from a better line.
+
+</Collapsible>
+
+<Collapsible>
 
 ###### Waking Protocol <span>6 BP</span>
 
 Your chassis is fitted with a combat-ready restart stack.
 
 Once per long rest, when you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead.
-When you do, you immediately gain temporary hit points equal to your proficiency bonus + your Constitution modifier.
+When you do, you immediately gain temporary hit points equal to your level + your Constituion modifier.
 
-If your Repair Window is active when this triggers, you can also move up to half your speed without provoking opportunity attacks.
+If your **Repair Window** is active when this triggers, you can also move up to half your speed without provoking opportunity attacks.
 
-When this feature triggers, you can instead arm an End-of-Life Cycle.
-If you do, a 6 second countdown begins. During this countdown, you are incapacitated.
+When this feature triggers, **after** you moved if your **Repair Window** was active, you can arm an **End-of-Life Cycle**.
+If you do, a 6 second countdown begins. During this countdown, you are incapacitated and immune to all damage and forced movement effects.
 At the end of the countdown, or if you are reduced to 0 hit points again before it ends, each creature within 10 feet of you must make a Dexterity saving throw (DC = 8 + your proficiency bonus + your Constitution modifier), taking force damage equal to five times your level on a failed save, or half as much on a success.
 After this detonation, you immediately drop to 0 hit points.
 
 _Notes._
 
-> Most Tallians destroyed after the Fourth Star were not truly beyond repair, merely denied restart authority.
+> Most Tallians destroyed after the Fourth Star were not truly beyond repair, they were merely discarded.
+
+</Collapsible>
+
+<Collapsible>
+
+###### Multi-Purpose Tool <span>5 BP</span>
+
+Choose one skill and two tools.
+You gain proficiency in all three.
+
+_Notes._
+
+> In older design notes, this chassis category was expected to switch from intimidation, escort, and labor tasks without changing body architecture.
 
 </Collapsible>
 
@@ -125,11 +156,26 @@ _Notes._
 
 <Collapsible>
 
+###### Disambiguator Subroutine <span>4 BP</span>
+
+When you hit a creature with a weapon attack, you can force it to make a Charisma saving throw (DC = 8 + your proficiency bonus + your Intelligence modifier).
+On a failed save, one magical effect currently affecting it ends (your choice).
+
+You can use this feature once per turn, and a number of times equal to your proficiency bonus per long rest.
+
+_Notes._
+
+> This is a degraded cousin of old disambiguation hardware. It cannot sever fate-lines, but it can still collapse weaker active enchantments.
+
+</Collapsible>
+
+<Collapsible>
+
 ###### Gravitic Skirt <span>4 BP</span>
 
 Your hover system is upgraded.
 
-- Your hover speed becomes 5 ft. x your proficiency bonus.
+- Your hover height becomes 5 ft. x your proficiency bonus.
 - While hovering, difficult terrain on solid ground does not reduce your movement.
 - Falling damage you take is reduced by an amount equal to twice your proficiency bonus.
 
@@ -156,34 +202,31 @@ _Notes._
 
 <Collapsible>
 
-###### Multi-Dimensional Maneuvers <span>3 BP</span>
+###### Innate Utility Suite <span>3 BP</span>
 
-At the start of each of your turns, if you are not incapacitated, your movement does not provoke opportunity attacks until the end of that turn.
+Choose one spell from the following list:
 
-While Programmed Excellence is active, your walking speed increases by 10 feet.
+- [_Shield_](https://dnd5e.wikidot.com/spell:shield)
+- [_Misty Step_](https://dnd5e.wikidot.com/spell:misty-step)
+- [_Invisibility_](https://dnd5e.wikidot.com/spell:invisibility)
+- [_Pass Without Trace_](https://dnd5e.wikidot.com/spell:pass-without-trace)
 
-Once per short rest, when you move at least 10 feet before making a melee attack on your turn, you can add your proficiency bonus to that attack roll.
+You can cast the chosen spell once per long rest without expending a spell slot.
+Intelligence is your spellcasting ability for it.
 
 _Notes._
 
-> This suite descends from old hunter-frame movement doctrine: break contact, cut angle, re-enter from a better line.
+> Hunter and commander frames often carried minimalist utility suites so they could operate away from support logistics.
 
 </Collapsible>
 
 <Collapsible>
 
-###### Multi-Purpose Tool <span>2 BP</span>
+###### Threatening Pressence <span>2 BP</span>
 
-Choose two skills and one tool.
-You gain proficiency in all three.
+You gain proficiency in Intimidation. If you are already proficient in Intimidation, you gain expertise in it instead.
 
-You also gain proficiency in Intimidation. If you are already proficient in Intimidation, you gain expertise in it instead.
-
-As part of a long rest, you can replace one chosen skill and one chosen tool with different selections.
-
-_Notes._
-
-> In older design notes, this chassis category was expected to switch from intimidation, escort, and labor tasks without changing body architecture.
+> The threat of violence the Tallians posed was often more effective than the act itself.
 
 </Collapsible>
 
@@ -200,40 +243,5 @@ You can use this reaction a number of times equal to your proficiency bonus per 
 _Notes._
 
 > Anchor jets were originally built for hull work along the outer shells of high-altitude Empyrean machinery.
-
-</Collapsible>
-
-<Collapsible>
-
-###### Disambiguator Subroutine <span>1 BP</span>
-
-When you hit a creature with a weapon attack, you can force it to make a Charisma saving throw (DC = 8 + your proficiency bonus + your Intelligence modifier).
-On a failed save, one magical effect currently affecting it ends (your choice).
-
-You can use this feature once per turn, and a number of times equal to your proficiency bonus per long rest.
-
-_Notes._
-
-> This is a degraded cousin of old disambiguation hardware. It cannot sever fate-lines, but it can still collapse weaker active enchantments.
-
-</Collapsible>
-
-<Collapsible>
-
-###### Innate Utility Suite <span>1 BP</span>
-
-Choose one spell from the following list:
-
-- [_Shield_](https://dnd5e.wikidot.com/spell:shield)
-- [_Misty Step_](https://dnd5e.wikidot.com/spell:misty-step)
-- [_Invisibility_](https://dnd5e.wikidot.com/spell:invisibility)
-- [_Pass Without Trace_](https://dnd5e.wikidot.com/spell:pass-without-trace)
-
-You can cast the chosen spell once per long rest without expending a spell slot.
-Intelligence is your spellcasting ability for it.
-
-_Notes._
-
-> Hunter and commander frames often carried minimalist utility suites so they could operate away from support logistics.
 
 </Collapsible>
