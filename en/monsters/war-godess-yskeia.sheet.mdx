@@ -2,7 +2,7 @@
 
 _War Goddess_
 
-<BlendedImage src="/library/images/Yskeia.webp" alt="Yskeia" />{" "}
+<BlendedImage src='/library/images/Yskeia.webp' alt='Yskeia' />
 
 _Gargantuan Construct, Lawful Neutral_
 
@@ -30,12 +30,21 @@ _Gargantuan Construct, Lawful Neutral_
 ## Traits
 
 #### Legendary Deeds
+
 Yskeia has **3 legendary deeds per round**, and regains all expended deeds at the start of her turn.
 
 #### Legendary Deed: Resist (3/Short rest)
+
 When Yskeia fails a saving throw, she can expend a legendary deed to succeed instead. This feature can be used **3 times per Short Rest**.
 
 #### Primeval Plating
+
+<Meta
+  target='generator'
+  type='feature'
+  featureId='war-godess-yskeia/primeval-plating'
+  customHandler='destructible_component'
+/>
 
 Yskeia's armor is made of an ancient alloy that hardens and softens at will.
 
@@ -73,6 +82,13 @@ Yskeia deals quadruple damage to objects and structures.
 
 #### Marked for Decommission
 
+<Meta
+  target='generator'
+  type='feature'
+  featureId='war-godess-yskeia/marked-for-decommission'
+  customHandler='mark_target'
+/>
+
 When Yskeia strikes a creature with any of its attacks, the target is **Marked for Decommission** until the end of Yskeia's next turn. Only one creature can be marked at a time.
 
 #### Protected Air space
@@ -85,14 +101,14 @@ On a success, it is forced 10 feet toward the ground, and takes no damage.
 
 ## Actions
 
-### **Multiattack**
+#### **Multiattack**
 
 Yskeia makes up to **three attacks per turn**, choosing an attack with her main cannon, and any combination of weapons.
 She can replace any attack with a **drone deployment**, **Missile Batteries**, or **mortar volley**.
 
 ---
 
-### **The Frontline (Shield)**
+#### **The Frontline (Shield)**
 
 _Melee Weapon Attack:_ +22 to hit, reach 10 ft., one target.  
 _Hit:_ 51 (7d10 + 10) bludgeoning damage.  
@@ -100,7 +116,7 @@ A creature hit by The Frontline must succeed on a **DC 25 Strength saving throw*
 
 ---
 
-### **Spear of Retribution**
+#### **Spear of Retribution**
 
 _Melee or Ranged Weapon Attack:_ +22 to hit, reach 20 ft. or range 120/360 ft., one target. This attack critically strikes on a roll of 18, 19 or 20.  
 _Hit:_ 67 (12d8 + 13) piercing damage plus 31 (7d8) radiant damage.  
@@ -109,7 +125,14 @@ On hit, Yskeia may choose to **reel the target 30 feet toward her**. The target 
 
 ---
 
-### **Missile Batteries (4 charges, Recharge 4–6)**
+#### **Missile Batteries (4 charges, Recharge 4–6)**
+
+<Meta
+  target='generator'
+  type='feature'
+  featureId='war-godess-yskeia/missile-batteries-4-charges-recharge-4-6'
+  customHandler='auto_hit'
+/>
 
 Yskeia targets a creature of her choice within **1 mile**.  
 The targeted creature takes **23 force damage**. This attack cannot miss except by the usage of the [_shield_](https://dnd5e.wikidot.com/spell:shield) spell.
@@ -133,7 +156,7 @@ The attack ignores cover and resistance, and penetrates all forms of magical bar
 
 ---
 
-### **Main Cannon – The Stratagem**
+#### **Main Cannon – The Stratagem**
 
 _Ranged Weapon Attack:_ +22 to hit, range 1,200 ft., one target.  
 _Hit:_ 88 (16d10 + 10) force damage plus 44 (8d10) thunder damage.  
@@ -141,7 +164,7 @@ The attack ignores cover and deals **maximum damage** against objects and struct
 
 ---
 
-### **Secondary Cannon – Myriad**
+#### **Secondary Cannon – Myriad**
 
 _Ranged Weapon Attack:_ +22 to hit, range 300 ft., one target.  
 _Hit:_ 46 (9d8 + 12) piercing damage.  
@@ -150,7 +173,7 @@ Creatures that start their turn in the area take **27 (6d8)** piercing damage.
 
 ---
 
-### **Shoulder Mortars (2 charges, Recharge 4–6)**
+#### **Shoulder Mortars (2 charges, Recharge 4–6)**
 
 Each mortar can target a point within **5 miles**.  
 All creatures in a **20-foot-radius sphere** centered on that point must make a **DC 25 Dexterity saving throw**, taking **56 (16d6)** fire damage on a failed save, or half as much on a success.  
@@ -158,7 +181,7 @@ Creatures that fail the saving throw are **pushed 30 feet away** from the blast 
 
 ---
 
-### **Flamethrower Legs**
+#### **Flamethrower Legs**
 
 Each leg-mounted flamethrower projects a **30-foot-long, 10-foot-wide cone**.  
 Creatures in the area must make a **DC 25 Dexterity saving throw**, taking **45 (10d8)** fire damage on a failure, or half on a success.  
@@ -168,7 +191,14 @@ Yskeia can also make a **kick or stomp** attack (melee +22 to hit, 10 ft. reach,
 
 ---
 
-### **Warlings (Recharge 5–6)**
+#### **Warlings (Recharge 5–6)**
+
+<Meta
+  target='generator'
+  type='feature'
+  featureId='war-godess-yskeia/warlings-recharge-5-6'
+  customHandler='summon'
+/>
 
 As an action, Yskeia deploys up to four **Warlings** into empty spaces within 30 ft. of her.
 
@@ -193,7 +223,6 @@ As an action, Yskeia deploys up to four **Warlings** into empty spaces within 30
 > Each hit reduces the target’s movement speed by **10 feet** until the start of the Warling’s next turn; this reduction stacks.
 >
 > **Tethered**: When Yskeia is incapacitated, all active Warlings immediately fall inert.
->
 
 ---
 
@@ -203,14 +232,28 @@ Yskeia can expend legendary deeds to use the options below. Only one legendary d
 
 ---
 
-### **Reposition** (Costs 1 Deed)
+#### **Reposition** (Costs 1 Deed)
+
+<Meta
+  target='generator'
+  type='feature'
+  featureId='war-godess-yskeia/reposition'
+  customHandler='geometry_teleport'
+/>
 
 Yskeia instantly relocates to any point that maintains the exact same distance from the creature currently **Marked for Decommission**.  
 This movement does not provoke opportunity attacks, ignores terrain, and renders her immune to all damage and effects until the repositioning ends.
 
 ---
 
-### **Mutually Assured Destruction (Costs 2 Deeds)**
+#### **Mutually Assured Destruction** (Costs 2 Deeds)
+
+<Meta
+  target='generator'
+  type='feature'
+  featureId='war-godess-yskeia/mutually-assured-destruction'
+  customHandler='damage_reflection'
+/>
 
 Yskeia designates one creature she can see within 300 feet.  
 The target must succeed on a **DC 32 Charisma saving throw** or become linked to her for 1 minute.  
@@ -220,13 +263,20 @@ A creature that succeeds on either saving throw is immune to this effect for 24 
 
 ---
 
-### **Attack** (Costs 1 Deed)
+#### **Attack** (Costs 1 Deed)
 
 Yskeia makes one weapon attack of her choice.
 
 ---
 
-### **Faterender Railgun (Recharge 6)** (Costs 1 Deed)
+#### **Faterender Railgun (Recharge 6)** (Costs 1 Deed)
+
+<Meta
+  target='generator'
+  type='feature'
+  featureId='war-godess-yskeia/faterender-railgun-recharge-6'
+  customHandler='instant_death'
+/>
 
 Yskeia fires a blinding rail of divine kinetic energy in a **10-foot-wide, 3000-foot-long line**.  
 All creatures in the area must make a **DC 35 Dexterity saving throw**, **taking force damage equal to the sum of their ability scores** on a failed save, or half as much on a success.  
@@ -247,7 +297,14 @@ Once fired, the Faterender Railgun cannot be used again until it recharges.
 
 At the start of the creature with the highest initiative's turn, Yskeia can expend a legendary deed to use one of the following lair deeds. She cannot use the same lair deed two rounds in a row.
 
-### **Arms Race**
+#### **Arms Race**
+
+<Meta
+  target='generator'
+  type='feature'
+  featureId='war-godess-yskeia/arms-race'
+  customHandler='expanding_aoe'
+/>
 
 Yskeia designates two targets within 1 mile and fires a pair of **ordinance maelstroms**.  
 Each maelstrom strikes its mark, embedding into the ground or air around the target as a **5-foot-thick, 5-foot-radius ring of superheated alloy and pressure**.
@@ -275,7 +332,14 @@ After detonation, both maelstroms are destroyed and cannot be redeployed until t
 > - **Targets**: All creatures whose space the maelstrom’s edge passes through
 > - **Notes**: Treated as high-velocity debris; cannot be dispelled or destroyed by magical means, save for disintegration effects.
 
-### **Sky Aflame**
+#### **Sky Aflame**
+
+<Meta
+  target='generator'
+  type='feature'
+  featureId='war-godess-yskeia/sky-aflame'
+  customHandler='environmental_zone'
+/>
 
 Yskeia fires a volley of atmosphere-piercing warheads into the upper sky.  
 The munitions detonate above the battlefield, burning the air itself into plasma.
@@ -292,7 +356,14 @@ When the effect ends, the atmosphere reforms over 1d4 minutes, leaving behind vi
 
 ---
 
-### **Tides of Ruin**
+#### **Tides of Ruin**
+
+<Meta
+  target='generator'
+  type='feature'
+  featureId='war-godess-yskeia/tides-of-ruin'
+  customHandler='advancing_wall'
+/>
 
 From one side of the battlefield, a surge of discarded weaponry and war machines floods forward in a solid wall of motion.
 
@@ -313,7 +384,7 @@ On a success, it takes half as much damage and is pushed 30 feet ahead of the ad
 
 ## Legendary Deed: Stratagem
 
-### **Lattice of Fire**
+#### **Lattice of Fire**
 
 Yskeia activates a battlefield-wide firing grid.  
 Thousands of precision kinetic rounds are released in perfect intervals, forming a **lattice of intersecting lines** that spans the entire arena.
@@ -332,7 +403,7 @@ A creature that fails the save is also **knocked prone**.
 
 ## Legendary Deed: Phase
 
-### **Wounded (75%) — Call to Counsel**
+#### **Wounded (75%) — Call to Counsel**
 
 When Yskeia is first reduced to **75% of her maximum hit points**, she lowers her weapons and speaks a single word that echoes through the air like an order remembered from an ancient war.
 
@@ -343,7 +414,7 @@ He joins the initiative immediately after Yskeia.
 
 ---
 
-### **Doomed (25%) — Athena Protocol**
+#### **Doomed (25%) — Athena Protocol**
 
 When Yskeia is reduced to **25% of her maximum hit points**, she turns to War Counselor Of Yskeia and holds out the **Spear of Retribution**.  
 Without hesitation, he takes it.  
