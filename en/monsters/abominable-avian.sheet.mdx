@@ -1,6 +1,18 @@
-{/* paw:gate:content-format:missing-h1 ignore */}
-
 # Abominable Avian
+
+<ParallaxBackdrop
+  src='/library/images/monsters/abominable-avian-background.webp'
+  alt='Abominable Avian Backdrop'
+  blurPx={2}
+  opacity={0.05}
+/>
+
+<FloatedContainer side='right' width='60%'>
+  <Image
+    src='/library/images/monsters/abominable-avian.webp'
+    alt='Abominable Avian'
+  />
+</FloatedContainer>
 
 _Large Aberration, Chaotic Evil_
 
@@ -9,24 +21,28 @@ great wyrms or dragons of legend, and subsequently hunted down by the locals of 
 
 > With a Hail of Harpoons... With every last drop of my being! — Last words of Sire Ahav of Irémia.
 
+---
+
 | **Armor Class**    | **Hit Points**   | **Speed**                       |
 | ------------------ | ---------------- | ------------------------------- |
 | 16 (natural armor) | 170 (20d10 + 60) | 30 ft., fly 60 ft., swim 30 ft. |
 
 | **STR** | **DEX** | **CON** | **INT** | **WIS** | **CHA** |
 | ------- | ------- | ------- | ------- | ------- | ------- |
-| 18 (+4) | 16 (+3) | 18 (+4) | 4 (-3)  | 12 (+1) | 18 (+4) |
+| 16 (+3) | 16 (+3) | 18 (+4) | 6 (-2)  | 12 (+1) | 16 (+3) |
 
-- **Saving Throws**: Dex +7, Con +8, Cha +8
+- **Saving Throws**: Dex +7, Con +8, Cha +7
 - **Skills**: Perception +5, Stealth +7, Arcana +6
 - **Damage Resistances**: lightning, thunder
-- **Condition Immunities**: Terrified
+- **Condition Immunities**: Terrified, frightened.
 - **Senses**: Darkvision 60 ft., passive Perception 15
-- **Languages**: Understands Abyssal but cannot speak.
+- **Languages**: Understands Hidden but cannot speak.
 - **Challenge**: 10 (5,900 XP)
 - **Proficiency Bonus**: +4
 
 ---
+
+<ClearFloats />
 
 ## Traits
 
@@ -36,11 +52,7 @@ The abominable avian can breathe air and water.
 
 #### Gold Glimmer
 
-The abominable avian emits a faint, mesmerizing glow. Creatures within 10 feet of it must succeed on a **DC 16 Wisdom saving throw** or be **charmed** until the end of their next turn.
-
-#### Winged Horror
-
-The abominable avian has a permanent **flying speed of 60 feet** and does not provoke opportunity attacks when it flies out of a creature’s reach.
+The abominable avian emits a faint, mesmerizing glow. Creatures that start their turn within 10 feet of it or enter this area for the first time on a turn must succeed on a **DC 16 Wisdom saving throw** or be **charmed** until the end of their next turn.
 
 #### Storm Bladder
 
@@ -74,6 +86,7 @@ Objects and structures in the area take double damage.
 #### Lightning Dive
 
 The abominable avian flies up to **60 feet** in a straight line. Each creature whose space it passes through must succeed on a **DC 15 Dexterity saving throw** or take **22 (4d10) lightning damage** and be knocked prone.
+The abominable avian does not provoke opportunity attacks when it flies out of an enemy’s reach.
 
 ---
 
@@ -81,4 +94,4 @@ The abominable avian flies up to **60 feet** in a straight line. Each creature w
 
 #### Abominable Reflex
 
-When the abominable avian takes damage from a melee attack, the attacker takes **7 (2d6) bludgeoning damage**, as a mass of tentacles lashes out against them.
+When a creature the abominable avian can see targets it with a melee attack, the abominable avian can use its reaction to have its lightning organs lash out, forcing the attacker to make a **DC 15 Dexterity saving throw** or take 9 (2d8) lightning damage become **paralyzed** until the end of its next turn.
