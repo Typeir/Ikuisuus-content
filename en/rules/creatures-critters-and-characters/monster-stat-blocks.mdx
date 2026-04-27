@@ -4,9 +4,7 @@ contentType: rule
 
 # Monster Stat Blocks
 
-## Overview
-
-This section explains the statistics that appear in a monster's stat block and how those statistics are calculated and used in play. It covers hit dice and hit points, saving throws, speed and movement modes, proficiency bonuses derived from challenge rating, and skill bonuses.
+This section explains the statistics and action entries that appear in a monster's stat block and how they are calculated and used in play. It covers hit dice and hit points, saving throws, speed and movement modes, proficiency bonuses, skills, limited-use notations, automatic grapple, Multiattack, and ammunition. For general combat actions and attack resolution, see [Actions in Combat](/en/library/rules/steel-and-strife/actions-in-combat) and [Making an Attack](/en/library/rules/steel-and-strife/making-an-attack).
 
 ## Mechanics
 
@@ -65,6 +63,33 @@ A monster's proficiency bonus is determined by its challenge rating (CR). That p
 The Skills entry is reserved for monsters that are proficient in one or more skills. A monster's skill bonus is the sum of the relevant ability modifier and the monster's proficiency bonus (as determined by its challenge rating). Other modifiers (circumstance, trait-based modifiers, or magic items) may also apply and are shown in the stat block.
 
 Example: a monster that is very perceptive and stealthy might have bonuses to Wisdom (Perception) and Dexterity (Stealth). Each listed skill bonus equals (ability modifier) + (proficiency bonus) + any other modifiers.
+
+### Limited Usage Notation
+
+Many special monster abilities carry a usage limit shown in the stat block:
+
+- **X/Day.** The ability can be used X times. The monster must finish a long rest to regain expended uses.
+- **Recharge X–Y.** The ability can be used once; at the start of each of the monster's subsequent turns, roll a d6. If the result falls within the listed range (e.g. 5–6), the ability is regained. It also recharges on a short or long rest.
+- **Recharge after a Short or Long Rest.** The ability can be used once, then requires a short or long rest to regain.
+
+### Grapple Rules for Monsters
+
+Many monsters have attacks that grapple automatically on a hit. This differs from the standard rules at [Attack Alterations](/en/library/rules/steel-and-strife/attack-alterations):
+
+- If a monster's attack text states it grapples the target on a hit, the grapple succeeds automatically — no additional ability check required, unless the attack text says otherwise.
+- To escape, the grappled creature uses its action and succeeds on a Strength (Athletics) or Dexterity (Acrobatics) check against the escape DC listed in the stat block.
+- If no escape DC is listed, use 10 + the monster's Strength (Athletics) modifier.
+
+### Multiattack
+
+A creature that can make multiple attacks on its turn has the Multiattack action. It makes the combination of attacks specified by that entry.
+
+- A creature cannot use Multiattack when making an opportunity attack; opportunity attacks are always a single melee attack.
+- Follow the Multiattack entry text for which attacks are made and in what order.
+
+### Ammunition
+
+Assume a monster carries enough ammunition to make its ranged attacks. Default quantities when not stated: **2d4** pieces for thrown weapons, **2d10** for projectile weapons such as bows or crossbows.
 
 ### Monster Equipment
 
