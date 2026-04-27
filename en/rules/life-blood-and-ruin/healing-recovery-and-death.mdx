@@ -25,13 +25,13 @@ If a creature takes damage that reduces it below 1 HP and there is damage remain
 If a creature takes damage while downed it accrues negative hit points, and automatically fails a death saving throw.
 A creature can be stabilized in negative health, but any damage they take thereafter returns them to an **unstable** state.
 In order to regain consciousness, a creature must be healed to at least 1 HP.
-If negative hit points ever exceed **a creature's maximum HP** they instantly die. 
+If negative hit points ever equal or exceed **a creature's maximum HP** they instantly die. For example, a creature with 17 maximum HP dies if their HP reaches −17.
 
 ## Death Saving Throws
 
 When a creature is reduced below 1 HP, it collapses and begins making death saving throws at the start of its turn as normal.
 
-- Three successes = stabilized, the creature rolls 1d4 and regains consciousness after that many hours, they are healed to 1HP thereafter.
+- Three successes = **stabilized**. The creature enters a **coma** and does not awaken automatically. To awaken, the creature must first be healed to at least 1 HP. If the healing is **magical**, the creature regains consciousness immediately. If the healing is **non-magical**, the creature rolls 1d4 and awakens in that many hours.
 - Three failures = death.
 - On a roll of 20, the creature regains 1 HP and becomes conscious immediately.
 
