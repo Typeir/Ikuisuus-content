@@ -1,0 +1,97 @@
+---
+contentType: rule
+---
+
+# Field and Formations
+
+Not every threat walks alone. Some crawl in teeming thousands. Others unyieldingly lock shields in disciplined formations. These rules govern how groups of creatures function in combat — from the lone soldier to the skittering swarm.
+
+---
+
+## The Unit
+
+In Damocles, a **Unit** is any single creature acting independently. Every player character, every monster with its own stat block, every lone wolf, every solitary assassin is a Unit. A Unit controls its own space, rolls its own initiative, and acts on its own turn.
+
+When a creature's stat block refers to "a creature" or "a target," it refers to a Unit.
+
+---
+
+## Swarms
+
+A **Swarm** is a mass of identical Tiny or Small creatures acting as a single creature. Unlike Formations, a Swarm is a **creature subtype** — it possesses its own stat block and does not revert to individual members when damaged.
+
+Swarms are used when a creature's nature is to exist in overwhelming numbers: a chittering carpet of rats, a boiling nest of tripodan wasps, a tide of crawling claws.
+
+### Swarm Traits
+
+A Swarm has the following innate traits:
+
+- **Shared HP Pool.** The Swarm has a single pool of hit points representing the collective vitality of all its members.
+- **Overflow Damage.** When the Swarm takes damage in excess of a single member's hit points, the excess carries over to the next member. Damage is never wasted.
+- **Area Vulnerability.** The Swarm is [**vulnerable**](/en/library/rules/steel-and-strife/damage) to area effect damage.
+- **Single-Target Resistance.** The Swarm has [**resistance**](/en/library/rules/steel-and-strife/damage) to bludgeoning, piercing, and slashing damage from attacks that target a single creature.
+- **Condition Immunity.** The Swarm is immune to the following [**conditions**](/en/library/rules/steel-and-strife/conditions): charmed, frightened, grappled, paralyzed, petrified, prone, restrained, and stunned.
+- **Occupy Space.** The Swarm occupies a space appropriate to its collective size. A Swarm of Tiny creatures may fill a single 5-foot square; a Swarm of Small creatures may occupy a 10-foot square.
+- **Can Enter Spaces.** The Swarm can move through the spaces of enemy creatures without provoking [**opportunity attacks**](/en/library/rules/steel-and-strife/actions-in-combat).
+- **HP Thresholds.** At certain hit point thresholds (**Wounded**, **Bloodied** and **Doomed**), the Swarm loses combat effectiveness — fewer attacks, lower damage, or reduced reach. Specific thresholds are listed in each Swarm's stat block.
+
+### The 1 HP Rule
+
+Each member of a Swarm has **1 hit point**. When the Swarm takes damage, members die one by one:
+
+- If the damage equals or exceeds 1, one member dies.
+- If the damage exceeds 1, the excess carries over to the next member.
+- Resolution continues until all damage is accounted for.
+
+**Example.** A Swarm of 20 bats (1 HP per member) takes 5 points of slashing damage. Five bats die. The Swarm now has 15 members.
+
+---
+
+## Formations
+
+A **Formation** is a group of **four or more identical creatures** voluntarily acting as a single tactical body. Unlike Swarms, a Formation is not a creature subtype — it is a _tactical choice_ made by intelligent combatants who trade individual autonomy for collective power.
+
+### Forming a Formation
+
+Any group of four or more identical creatures may form a Formation as a **Minor Action** on their turn, provided the following conditions are met:
+
+- All members are within 5 feet of at least one other member.
+- The group's positioning can be arranged into a **contiguous rectangular shape** (e.g., 4 members = 2×2, 9 members = 3×3, 16 members = 4×4).
+
+Once formed, the Formation acts on the **highest initiative count** among its members and moves at the speed of its **slowest member**.
+
+### Formation Benefits
+
+While in Formation, the group gains substantial tactical advantages:
+
+- **Formation Bonus.** Add the Formation's **member count minus 2** to all d20 rolls made by the Formation. This includes attack rolls, saving throws, ability checks, spell attack rolls, and spell save DCs.
+- **Damage Multiplier.** Multiply all damage dealt by the Formation by its current number of members.
+
+### Formation Drawbacks
+
+A Formation's strength is also its vulnerability:
+
+- **AoE Vulnerability.** The Formation is [**vulnerable**](/en/library/rules/steel-and-strife/damage) to area effect damage (double damage taken). This vulnerability applies separately to the vulnerability of the individual; if they are vulnerable to a specific type of damage, the formation is doubly so, taking quadruple damage.
+- **Disadvantage on AoE Saves.** The Formation rolls all saving throws against area effects at [**disadvantage**](/en/library/rules/steel-and-strife/conditions#advantage--disadvantage).
+- **Damage Overflow.** When the Formation takes **area damage**, excess damage after a member's base HP is exceeded carries over to the next member. Damage does not stop at a single member's death.
+
+### Breaking a Formation
+
+A Formation breaks automatically if it loses **more than half its members** in a single round. Remaining members scatter and act individually on their next turn. A Formation may also disband voluntarily as a Minor Action on its turn, or expel one of its members.
+When a formation disbands or a member is expelled, the individuals cannot take Major Actions until the end of their next turn.
+
+### Example
+
+A Formation of 9 Blood Gnomes (base HP 22, base attack +4, base damage 1d6+2):
+
+- **Formation Bonus:** +7 (9 members − 2)
+- **Damage Multiplier:** ×9
+- **Effective Attack:** +11 to hit (+4 base + 7 Formation Bonus)
+- **Effective Damage:** (1d6 + 2) × 9
+
+A _Fireball_ spell deals 28 fire damage to this Formation:
+
+- The Formation is vulnerable to area damage → **56 damage taken**.
+- Threshold 22 (base HP): Member 1 dies. Member 2 dies (22 damage consumed, 34 remaining). Member 3 takes 12 damage and survives.
+- The Formation now has **7 members**.
+- New Formation Bonus: **+5** (7 − 2). New damage multiplier: **×7**.
