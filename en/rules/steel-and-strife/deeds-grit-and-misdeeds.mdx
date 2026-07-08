@@ -1,0 +1,102 @@
+---
+contentType: rule
+---
+
+# Deeds, Grit, and Misdeeds
+
+Fortune favours the bold, but Damocles favours the stubborn. The Deed economy is a shared resource pool — a tide of defiance that recedes and comes crashing back.
+
+---
+
+## Deeds — The Party Pool
+
+Deeds are a shared resource tracked by the party as a group.
+
+```
+party Deeds = lowest Tier Bonus (TB) + number of party members
+```
+
+| Party Example     | Pool |
+| ----------------- | ---- |
+| 4 members at TB 2 | 6    |
+| 5 members at TB 6 | 11   |
+| 6 members at TB 8 | 14   |
+
+### Gaining Deeds
+
+- **Recovery.** The party Deeds pool fully refreshes at the end of a Recovery.
+- **Roleplay.** When the GM deems a moment of play exceptional — compelling portrayal, costly conviction, a sacrifice that defines the character — the party pool gains **+1 Deed**.
+- **GM Overspend.** When the GM overspends (see Misdeeds), the party gains a Deed.
+
+### Individual Deeds
+
+Certain features grant a Deed to a specific creature rather than the party pool. An individual Deed is spent and tracked the same way, but belongs to that creature alone. It does not expire — it persists until spent or until the feature that granted it expires or refreshes.
+
+---
+
+## Spending a Deed — The Grit Roll
+
+Spend **1 Deed** (party or individual) to trigger a Grit Roll. The player must **describe how the character grits through**.
+
+### Grit Roll Triggers
+
+| Trigger             | Grit Roll Effect                                                   |
+| ------------------- | ------------------------------------------------------------------ |
+| Fail a saving throw | Reroll with **bonus = relevant stat mod + TB**                     |
+| Hit by an attack    | Attacker **rerolls with penalty = stat mod + TB**                  |
+| Fail a skill check  | Reroll using a **different attribute** + TB if proficient          |
+| Fail a death save   | Reroll with **any stat mod + TB**. Describe how you cling to life. |
+
+### Constraints
+
+- A roll cannot be rerolled using the **same attribute**. Fail your best roll, and you are forced into a weaker stat — the spiral tightens.
+- Grit Rolls are **not auto-success**.They grant better odds, not certainty.
+- Grit Rolls can be declared **before or after** the outcome of the original roll is known.
+
+---
+
+## Misdeeds — Overshooting the target
+
+Spending more Deeds than the pool has, and you will generate a **Misdeed**.
+
+### Player Overspend
+
+When a player overspends Deeds:
+
+1. The **GM gains 1 Misdeed**.
+2. The character **loses 1 Hit Die**. This HD cannot be recovered until all Grievous Wounds on that character are cleared. Lost HD recover at a rate of **1 per Recovery**.
+3. The character suffers **[Grievous Wounds](/en/library/rules/life-blood-and-ruin/grievous-wounds)**: roll the lost Hit Die + CON. The result is added to the character's Grievous Wound pool. Taking Grievous Wounds in this way never causes a character to fall under 1 HP.
+
+> **Example.** A party has spent all of their 8 Deeds. They spend a 9th Deed to reroll a failed Dexterity save. The GM gains 1 Misdeed. The character loses 1 HD (a d10), rolls 7 + 2 CON = 9 Grievous Wounds. Their max HP drops by 9, current HP drops by 9.
+
+### GM Overspend
+
+The GM has their own Deed pool — drawn from monster stat blocks and accumulated Misdeeds. When the GM overspends:
+
+1. The **party gains 1 Deed**.
+2. The same Grievous Wound mechanics apply to whatever creature the GM used the Deed for, if applicable.
+
+The GM **cannot** overspend without spending at least one real Deed first. Misdeeds cannot be conjured from nothing.
+
+### What Deeds Do For The GM
+
+A GM can spend Deeds to activate the abilities listed in a creature's stat block under its **Legendary Deeds** entry. These include:
+
+| Deed Type | Timing                                          |
+| --------- | ----------------------------------------------- |
+| Act       | End of another creature's turn                  |
+| Resist    | When the creature fails a saving throw          |
+| Stratagem | Declared at end of turn; resolves next turn     |
+| Lair      | Start of the round                              |
+| Phase     | When HP drops below a threshold (75%, 50%, 25%) |
+
+See [Legendary Deeds](/en/library/rules/creatures-critters-and-characters/legendary-deeds) for the full rules on each type, deed caps, and the one-deed-per-turn limit.
+
+Not all creatures have Legendary Deeds. But don't be fooled — If the DM accrues too many Misdeeds, when the party meets the next Legendary Creature, they are in for a world of hurt.
+
+---
+
+## Misdeed as Narrative
+
+Every Misdeed is a story beat. When the party overspends, the GM has ammunition for escalation. When the GM overspends, the party gains breathing room. Misdeeds are not punishment — they are pacing.
+When both pools hit zero, every failed roll is final. Every Deed is a Misdeed waiting to happen.
