@@ -8,7 +8,7 @@ _Gargantuan Aberration, Lawful Evil_
 
 | **Armor Class** | **Hit Points**    | **Speed**                              |
 | --------------- | ----------------- | -------------------------------------- |
-| 20 (natural)    | 780 (60d10 + 420) | 40 ft., climb 30 ft., **swim 120 ft.** |
+| 20 (natural)    | 780 ([% 60d10 +420 %]) | 40 ft., climb 30 ft., **swim 120 ft.** |
 
 | STR     | DEX     | CON     | INT     | WIS     | CHA     |
 | ------- | ------- | ------- | ------- | ------- | ------- |
@@ -58,7 +58,7 @@ Albedo **spawns** when anything bleeds or breaks near her.
 
 _As a Minor Action_, Albedo **consumes** up to **3** allied spawns within 30 ft. For each creature consumed, permanently **increase the damage die size of all her melee and area attacks by one step** on this scale (no maximum):
 
-> d4 → d6 → d8 → d10 → d12 → **2d8** → **2d10** → **2d12** → **4d8** → **4d10** → **4d12** → **8d8** → **8d10** → **8d12** → … (continue increasing die count in the same pattern)
+> d4 → d6 → d8 → d10 → d12 → **[% 2d8 %]** → **[% 2d10 %]** → **[% 2d12 %]** → **[% 4d8 %]** → **[% 4d10 %]** → **[% 4d12 %]** → **[% 8d8 %]** → **[% 8d10 %]** → **[% 8d12 %]** → … (continue increasing die count in the same pattern)
 
 Additionally, each spawn gains a **+1 to all attack and damage rolls**, also stacking infinitely.
 
@@ -71,14 +71,14 @@ Additionally, whenever Albedo rests for longer than 1 hour, she loses all such b
 Ground Albedo has affected this combat becomes **semi-living reef**:
 
 - Counts as **difficult terrain** for creatures other than Albedo.
-- A creature that walks across Endless Reef takes **7 (2d4) chemical** per foot, unless it willingly walks at half its speed.
+- A creature that walks across Endless Reef takes **7 ([% 2d4 chemical %])** per foot, unless it willingly walks at half its speed.
 - Certain effects convert areas into Endless Reef as noted.
 
 #### White Life
 
 Albedo floods the surrounding area with its **endless reef**, a mass of pale coral-like growths that spread and pulse with vile intent.  
 When a creature touches the reef, starts its turn within **30 feet** of Albedo, or is struck by one of its attacks, it must succeed on a **DC 21 Constitution saving throw** or roll on the [_White Life_](/en/library/rules/life-blood-and-ruin/illnesses/white-life) table.  
-Creatures **immune to disease and curses** that would roll in the table ignore this effect and instead take **2d4 chemical damage** as the coral burns against their skin.
+Creatures **immune to disease and curses** that would roll in the table ignore this effect and instead take **[% 2d4 chemical %]** as the coral burns against their skin.
 
 ## Actions
 
@@ -88,16 +88,16 @@ Albedo makes **two** **Mitotic Rends** and **one** **Exuvia Sweep**. Each may be
 
 - **Mitotic Rend**
   _Melee Weapon Attack:_ +15 to hit, reach 15 ft., one target.  
-  _Hit:_ **16 (3d6 + 5)** slashing plus **8 (3d4)** chemical.  
+  _Hit:_ **16 ([% 3d6 +5 slashing %]) plus **8 ([% 3d4 chemical %]).  
   **On hit**: the target is **seeded** with **1 Parasite**.
 
 - **Exuvia Sweep**
   _Melee Weapon Attack:_ +15 to hit, reach 20 ft., up to two targets.  
-  _Hit:_ **13 (3d4 + 5)** bludgeoning plus **5 (2d4)** dark.  
+  _Hit:_ **13 ([% 3d4 +5 bludgeoning %]) plus **5 ([% 2d4 dark %]).  
   Each creature hit must succeed on a **DC 23 Strength** saving throw or be **pushed 15 ft.** and **knocked prone**. If at least one creature fails, **spawn 1 Petal** adjacent to one failed target’s space.
 
 - **Enzyme Torrent (Recharge 5–6)**
-  A **60-ft. cone** of dissolving enzymes. Creatures in the area make a **DC 24 Dexterity** saving throw, taking **23 (9d4)** chemical + **23 (9d4)** dark on a failed save, or half as much on a success.  
+  A **60-ft. cone** of dissolving enzymes. Creatures in the area make a **DC 24 Dexterity** saving throw, taking **23 ([% 9d4 chemical %]) + **23 ([% 9d4 dark %]) on a failed save, or half as much on a success.  
   Creatures that fail are **seeded with 1 Parasite**. All squares in the cone become **Endless Reef**.
 
 - **Consume the Brood (1/Turn)**
@@ -131,7 +131,7 @@ Whether it hits or misses, **spawn 1 Petal** adjacent to the attacker.
 Albedo can expend legendary deeds to use the options below. Only one legendary deed can be used at a time and only at the end of another creature's turn.
 
 - **Spawn Petal.** (Costs 1 Deed) Create **1 Petal** in an empty space within 15 ft.
-- **Detonate Parasites.** (Costs 2 Deeds) Each **Parasite** on creatures within 60 ft. **detonates** for **10 (4d4)** chemical + **10 (4d4)** psychic damage.
+- **Detonate Parasites.** (Costs 2 Deeds) Each **Parasite** on creatures within 60 ft. **detonates** for **10 ([% 4d4 chemical %]) + **10 ([% 4d4 psychic %]).
 - **Reef Stride.** (Costs 2 Deeds) Albedo **teleports up to 60 ft.** to a square of **Endless Reef** she can sense.
 - **Merge Swarm.** (Costs 3 Deeds) Choose up to **3 Petals** within 20 ft.; they merge into **1 Bloom** at full HP.
 
@@ -143,7 +143,7 @@ At the start of the creature with the highest initiative's turn, Albedo can expe
 
 ### **Womb Weeps**
 
-**Spawn 1d4 Petals** adjacent to each hostile creature that **moved** since the previous round.
+**Spawn [% 1d4 %] Petals** adjacent to each hostile creature that **moved** since the previous round.
 
 ### **Crawlspace**
 
@@ -178,7 +178,7 @@ The nucleus destabilizes; replication overruns structure.
 >
 > | **Armor Class** | **Hit Points** | **Speed**            |
 > | --------------- | -------------- | -------------------- |
-> | 15 (natural)    | 40 (5d8 + 15)  | 40 ft., climb 20 ft. |
+> | 15 (natural)    | 40 ([% 5d8 +15 %])  | 40 ft., climb 20 ft. |
 >
 > | **STR** | **DEX** | **CON** | **INT** | **WIS** | **CHA** |
 > | ------- | ------- | ------- | ------- | ------- | ------- |
@@ -186,8 +186,8 @@ The nucleus destabilizes; replication overruns structure.
 >
 > - **Resistances**: Chemical, Dark;
 > - **Senses**: Blindsight 30 ft.
-> - **Actions — Claw.** _Melee Weapon Attack:_ +11 to hit, reach 5 ft.; **12 (2d8 + 3)** slashing + **7 (2d6)** chemical.
-> - **Deathburst.** When reduced to 0 HP, creatures within 5 ft. must make a **DC 19 Dexterity** save or take **7 (2d6)** chemical damage.
+> - **Actions — Claw.** _Melee Weapon Attack:_ +11 to hit, reach 5 ft.; **12 ([% 2d8 +3 slashing %]) + **7 ([% 2d6 chemical %]).
+> - **Deathburst.** When reduced to 0 HP, creatures within 5 ft. must make a **DC 19 Dexterity** save or take **7 ([% 2d6 chemical %]).
 
 ---
 
@@ -197,7 +197,7 @@ The nucleus destabilizes; replication overruns structure.
 >
 > | **Armor Class** | **Hit Points**  | **Speed**            |
 > | --------------- | --------------- | -------------------- |
-> | 16 (natural)    | 120 (15d8 + 45) | 40 ft., climb 20 ft. |
+> | 16 (natural)    | 120 ([% 15d8 +45 %]) | 40 ft., climb 20 ft. |
 >
 > | **STR** | **DEX** | **CON** | **INT** | **WIS** | **CHA** |
 > | ------- | ------- | ------- | ------- | ------- | ------- |
@@ -206,8 +206,8 @@ The nucleus destabilizes; replication overruns structure.
 > - **Resistances**: Chemical, Dark;
 > - **Senses**: Blindsight 30 ft.
 > - **Swarm.** The swarm can occupy another creature’s space; that space is **difficult terrain** for the swarm.
-> - **Grind and Shear.** _Melee Weapon Attack:_ +11 to hit, reach 5 ft.; **(3d8 + 3)** slashing + **(2d6)** chemical. Attacks against a creature in the swarm’s space have **advantage**.
-> - **Shred.** A Large or smaller creature that **ends its turn** in the swarm's space takes **11 (3d6)** slashing damage.
+> - **Grind and Shear.** _Melee Weapon Attack:_ +11 to hit, reach 5 ft.; **([% 3d8 +3 %])** slashing + **([% 2d6 %])** chemical. Attacks against a creature in the swarm’s space have **advantage**.
+> - **Shred.** A Large or smaller creature that **ends its turn** in the swarm's space takes **11 ([% 3d6 slashing %]).
 > - **Multitudes** The swarm cannot take more than **40** damage from a single attack roll.
 > - **Split Reaction.** When reduced to 0 HP, the swarm **spawns 2 Petals** in its space.
 
@@ -219,7 +219,7 @@ The nucleus destabilizes; replication overruns structure.
 >
 > | **Armor Class**    | **Hit Points**    | **Speed**            |
 > | ------------------ | ----------------- | -------------------- |
-> | 17 (natural armor) | 360 (30d10 + 180) | 40 ft., climb 20 ft. |
+> | 17 (natural armor) | 360 ([% 30d10 +180 %]) | 40 ft., climb 20 ft. |
 >
 > | **STR** | **DEX** | **CON** | **INT** | **WIS** | **CHA** |
 > | ------- | ------- | ------- | ------- | ------- | ------- |
@@ -228,10 +228,10 @@ The nucleus destabilizes; replication overruns structure.
 > - **Resistances**: Chemical, Dark;
 > - **Condition Immunities**: Terrified
 > - **Senses**: Blindsight 60 ft.
-> - **Grind and Spray.** When the Flower takes slashing or lightning damage, creatures within 10 ft. must make a **DC 19 Dexterity** save or take **11 (3d6)** chemical.
+> - **Grind and Spray.** When the Flower takes slashing or lightning damage, creatures within 10 ft. must make a **DC 19 Dexterity** save or take **11 ([% 3d6 chemical %]).
 > - **Multiattack.** The Flower makes **two Tendril** attacks.
 > - **Multitudes** The swarm cannot take more than **120** damage from a single attack roll.
-> - **Tendril.** _Melee Weapon Attack:_ +11 to hit, reach 10 ft.; **(2d10 + 4)** slashing + ** (3d6)** chemical.
+> - **Tendril.** _Melee Weapon Attack:_ +11 to hit, reach 10 ft.; **([% 2d10 +4 %])** slashing + ** ([% 3d6 %])** chemical.
 > - **Split Reaction.** When reduced to 0 HP, the Flower **spawns 2 Blooms** in its space.
 
 ---
@@ -242,7 +242,7 @@ The nucleus destabilizes; replication overruns structure.
 >
 > | **Armor Class**    | **Hit Points**    | **Speed**            |
 > | ------------------ | ----------------- | -------------------- |
-> | 18 (natural armor) | 900 (36d12 + 360) | 40 ft., climb 20 ft. |
+> | 18 (natural armor) | 900 ([% 36d12 +360 %]) | 40 ft., climb 20 ft. |
 >
 > | **STR** | **DEX** | **CON** | **INT** | **WIS** | **CHA** |
 > | ------- | ------- | ------- | ------- | ------- | ------- |
@@ -252,9 +252,9 @@ The nucleus destabilizes; replication overruns structure.
 > - **Condition Immunities**: Terrified, Prone
 > - **Senses**: Blindsight 120 ft.
 > - **Eternal Bloom.** Regains **20 HP** at the start of its turn unless it took chemical damage since its last turn.
-> - **Corrosive Pulse (Recharge 5–6).** All creatures within 30 ft. make a **DC 21 Dexterity** save, taking **45 (10d8)** chemical + **27 (6d8)** dark on a fail, or half on success.
+> - **Corrosive Pulse (Recharge 5–6).** All creatures within 30 ft. make a **DC 21 Dexterity** save, taking **45 ([% 10d8 chemical %]) + **27 ([% 6d8 dark %]) on a fail, or half on success.
 > - **Multiattack (3 Cores Active).** The Bouquet makes **three Tendril** attacks.
-> - **Tendril.** _Melee Weapon Attack:_ +13 to hit, reach 15 ft.; **(3d10 + 6)** slashing + ** (3d8)** chemical.
+> - **Tendril.** _Melee Weapon Attack:_ +13 to hit, reach 15 ft.; **([% 3d10 +6 %])** slashing + ** ([% 3d8 %])** chemical.
 > - **Split Reaction.** When reduced to 0 HP, the Bouquet **spawns 2 Flowers** in its space.
 
 ---
