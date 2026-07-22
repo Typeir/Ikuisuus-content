@@ -4,6 +4,7 @@
 
 # Backup files created by linkify scripts
 *.backup
+*.bak
 
 # OS junk
 .DS_Store
