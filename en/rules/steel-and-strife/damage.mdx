@@ -25,7 +25,7 @@ Each weapon, spell, and harmful monster ability specifies the damage it deals. R
 
 - When attacking with a weapon, add your ability modifier — the same modifier used for the attack roll — to the damage.
 - A spell tells you which dice to roll for damage and whether to add any modifiers.
-- Magic weapons, special abilities, and other factors can grant a bonus to damage.
+- Magic weapons, special abilities, and other factors can grant a damage bonus.
 - When an effect damages more than one target simultaneously, roll the damage once and apply the same result to each creature caught in the effect.
 
 ---
@@ -104,17 +104,27 @@ Akashic damage bypasses defences more easily, and destroys the fundamental order
 
 ---
 
+## Bonuses, Penalties, and Damage Reduction
+
+Compounding modifiers — "gain +X to Y" effects — use three standard terms. Flat formulas, such as base Armor Class, ability-modifier damage, and tier-bonus proficiency, are not modifiers of this kind; they are part of the roll itself.
+
+- **Accuracy bonus / accuracy penalty.** Added to or subtracted from attack rolls. An effect may scope it — to one weapon, to ranged attacks, to spell attacks.
+- **Damage bonus / damage penalty.** Added to or subtracted from damage rolls. A damage bonus is a static modifier: it is added once and is not doubled by critical hits unless the granting feature says otherwise.
+- **Damage reduction.** Subtracted from incoming damage of the stated scope, before resistance and vulnerability. Multiple sources of damage reduction add together. It cannot reduce damage below 0 unless the granting feature states a different minimum.
+
+---
+
 ## Resistance and Vulnerability
 
 **Resistance** to a damage type halves incoming damage of that type. **Vulnerability** doubles it. Both are applied after all other modifiers to the damage total.
 
-- Apply fixed reductions (magical auras, flat damage reduction features) first, then apply resistance or vulnerability to the resulting total.
+- Apply **damage reduction** first, then apply resistance or vulnerability to the resulting total.
 - Multiple instances of resistance or vulnerability to the same damage type count as only one instance — they do not stack.
 - If an effect deals multiple damage types, apply resistance or vulnerability separately to each type before summing.
 
 ### Examples
 
-- A creature with resistance to bludgeoning takes 25 damage; a magical effect reduces all damage by 5 first, so the total is reduced to 20, then halved to **10**.
+- A creature with resistance to bludgeoning takes 25 damage; **damage reduction** of 5 applies first, so the total is reduced to 20, then halved to **10**.
 - A creature vulnerable to fire takes fire damage — double the total after other modifiers.
 - Resistance to fire and resistance to all damage do not stack: fire damage is halved once.
 
