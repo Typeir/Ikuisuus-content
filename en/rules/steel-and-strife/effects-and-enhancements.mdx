@@ -1,0 +1,165 @@
+---
+contentType: rule
+source: Ikuisuus
+---
+
+# Effects and Enhancements
+
+Fire clings to a doorway, the eroding pressence of oblivion gnaws at mind and body alike, a swarm gnaws at flesh and keeps gnawing. These rules govern things that stay on the field; how they hurt and when.
+
+---
+
+## Effects
+
+An **effect** is anything that outlives the instant that made it. A spell's lingering area, a monster's aura, a burning path, a curse riding a creature's blood, a boon granted to an ally.
+
+An effect that occupies space on the field triggers on a specific **timing**:
+
+- **Persistent** — when first interacted with on a turn, through intersecting space.
+- **Incipient** — when a turn ends while intersecting with it.
+
+Effects will list whether they are **Persistent** or **Incipient** before the description of the effect itself is stated.
+
+An area anchored to a creature or object is an **aura**, and travels with its source.
+
+---
+
+## Persistent Effects
+
+A **persistent** effect triggers when a creature **intersects with its area for the first time on a round**.
+
+Intersection is symmetric. It does not matter which of the two moved, or whether either did:
+
+- The creature moves into the area.
+- The area moves onto the creature — a drifting cloud, a walking aura, a wall dragged along behind its caster.
+- The area is created on top of the creature.
+
+If the two overlap and did not overlap a moment ago, the effect triggers.
+
+- It triggers **once per round per creature**. Breaking the overlap and restoring it on the same round does not trigger it again.
+- **Forced movement counts.** A creature shoved, pulled, or thrown into the area triggers the effect.
+- If an area intersects a creature during another creature's turn, it triggers for the whole round — but when the target creature's own turn starts, it becomes available for the persistent effect once more.
+
+---
+
+## Incipient Effects
+
+An **incipient** effect triggers when a creature **ends its turn** intersecting with its area.
+
+- It triggers **once per turn per creature**, at the end of that creature's turn.
+- A creature that is moved out of the area before its turn ends does not trigger it.
+- A creature whose space intersects the area when its turn ends triggers it, however the overlap came about.
+
+---
+
+## Persistent and Incipient
+
+A few effects are both. The order of resolution stays the same:
+
+1. **On intersection** — resolve the persistent trigger.
+2. **At the end of the creature's turn** — resolve the incipient trigger.
+
+Both may strike the **same creature on the same turn**; once when an enemy's turn pushes it into the area (or the area into them), once when its own turn ends there.
+
+### Example
+
+A creature is shoved into a **Persistent, Incipient** area that deals [% 6d10 slashing %] on a failed Dexterity save.
+
+- Shoved in on the enemy's turn → **persistent** triggers → first save.
+- Its own turn: it spends its movement and leaves → turn ends outside → no incipient trigger. **One save.**
+- Had it stayed → turn ends inside → **incipient** triggers → **two saves that round.**
+
+---
+
+## Auras
+
+An **aura** is an area anchored to a creature or an object. It extends a stated distance in every direction from the edge of its source's space, and it goes where its source goes.
+
+- Written as **"a 15-foot aura"**. The distance is how far the area reaches from its source.
+- A spell whose area is an aura states it in its range: **Range: Self (15-foot aura)**.
+- While it lasts, an aura moves with its source. This costs no action and is never restated by the effect.
+- An aura does not extend through total cover.
+- An aura ends when its source dies, is destroyed, or the effect ends.
+- An area that must be moved by an action stays where it was put until moved, and is no aura.
+
+Aura is the only term for an area measured from a creature or an object.
+
+Auras are areas, and carry **persistent** and **incipient** timings like any other. Because an aura travels with its source, a source that walks up to a creature intersects it, and a persistent aura triggers on that creature exactly as though the creature had walked in.
+
+### Example
+
+A monster with a **10-foot aura** that is **persistent** ends its move adjacent to two characters who have not touched it this round. Both are intersected by the aura and both trigger it. Neither spent movement; the monster did.
+
+---
+
+## Enhancements
+
+An **enhancement** is an effect attached to a creature or an object that improves it — a boon, a blessing, a conferred resistance, a bonus to a roll.
+
+- An enhancement travels with its bearer. No effect restates this.
+- An enhancement granted by an heirloom, item, or feature lasts as long as its bearer keeps it. One granted by a spell lasts for that spell's duration.
+- [_Objection_](/en/library/spells/objection) ends an enhancement.
+
+---
+
+## Afflictions
+
+An **affliction** is an effect attached to a creature or an object that harms it. **Conditions**, **illnesses**, and **curses** are afflictions, and what is true of an affliction is true of all three.
+
+| Kind | Arises from | Ends by |
+| --- | --- | --- |
+| [Condition](/en/library/rules/steel-and-strife/conditions) | a blow, a spell, a hazard | its own stated counter or duration |
+| [Illness](/en/library/rules/life-blood-and-ruin/illnesses) | a natural vector | rest, medicine, [_Restoration_](/en/library/spells/restoration) |
+| [Curse](/en/library/rules/life-blood-and-ruin/curses) | the attention of an entity | understanding its source; [_Remove Affliction_](/en/library/spells/remove-affliction) |
+
+- An affliction travels with its bearer.
+- Objection does not end an affliction.
+- An effect that reads on "an affliction" reads on conditions, illnesses, and curses alike.
+
+### Curing an Affliction
+
+[_Remove Affliction_](/en/library/spells/remove-affliction) ends afflictions one at a time, chosen by the caster. Its [RR](/en/library/rules/the-measure-of-the-self/rolling-and-special-rolls) saving throw is made against:
+
+**DC = 10 + the affliction's required casting level + its current stacks**
+
+- A **condition** requires no particular level. Its DC is 10 + stacks.
+- Every **illness** and **curse** states the level the spell must be cast at to touch it. A lower slot cannot affect it at all.
+
+Being a raw roll, the caster's own afflictions do not apply to it.
+
+**Example.** [_Erosion_](/en/library/rules/life-blood-and-ruin/curses/erosion) requires a fifth level casting and the patient carries nine stacks: 10 + 5 + 9 = **DC 24**.
+
+Enhancements and afflictions are both subject to the **Single Name Rule** below.
+
+---
+
+## The Single Name Rule
+
+**Two effects sharing a name apply only once to a single target.**
+
+This holds regardless of source. It does not matter that two different casters cast it, that one came from a spell and one from an heirloom, or that the durations began hours apart. One name, one instance.
+
+- While instances overlap, the **most potent** applies — highest bonus, highest damage, longest reach.
+- Ties are resolved in favour of the instance with the **longer remaining duration**.
+- When the applied instance ends, any surviving instance of the same name takes over for whatever duration it has left.
+- Effects with **different names** stack normally, even when their mechanics are identical.
+
+A creature under [_Paivatar's Boon_](/en/library/spells/paivatars-boon) is under one instance of it. A second casting on the same target grants nothing.
+
+### Example
+
+Two casters both cast **Paivatar's Boon** on the same fighter — one from a 2nd-level slot (5 Boon Points), one from a 4th-level slot (9 Boon Points).
+
+- Same name → **one instance applies**.
+- Most potent → the **4th-level casting**, for **9 Boon Points**.
+- The 2nd-level casting lies dormant. If the 4th-level casting's concentration breaks first, the 2nd-level casting applies for its remaining duration.
+
+---
+
+## Interactions
+
+The Single Name Rule is the general case for **every** named effect in Damocles — spells, monster traits, heirloom properties, vocation features, curses, and boons alike.
+
+[_Combining Magical Effects_](/en/library/rules/arcana-and-the-fold/combining-magical-effects) governs how **differently named spells** interact while their durations overlap.
+
+Persistent and incipient are **effect timings**. They do not interact with [_resistance and vulnerability_](/en/library/rules/steel-and-strife/damage), and a creature immune to an effect's damage still intersects the area and still ends its turn in it — it simply takes nothing.
