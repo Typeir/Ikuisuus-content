@@ -41,25 +41,25 @@ Monks use rigorous combat training and mental discipline to bring themselves int
 | Level | PB  | Martial Arts | Focus | Movement | Vocation Features                                    |
 | ----- | --- | ------------ | ----- | -------- | ---------------------------------------------------- |
 | 1     | +1  | [% 1d6 %]          | –     | –        | Martial Arts, Unarmored Defense                      |
-| 2     | +1  | [% 1d6 %]          | 2     | +10 ft   | Monk's Focus, Unarmored Movement, Uncanny Metabolism |
-| 3     | +1  | [% 1d6 %]          | 3     | +10 ft   | Deflect Attacks, Monk Specialization                 |
-| 4     | +2  | [% 1d6 %]          | 4     | +10 ft   | Ability Score Improvement, Slow Fall                 |
-| 5     | +2  | [% 1d8 %]          | 5     | +10 ft   | Extra Attack, Stunning Strike                        |
-| 6     | +2  | [% 1d8 %]          | 6     | +15 ft   | Empowered Strikes, Specialization Feature            |
-| 7     | +3  | [% 1d8 %]          | 7     | +15 ft   | Evasion                                              |
-| 8     | +3  | [% 1d8 %]          | 8     | +15 ft   | Feat                                                 |
-| 9     | +3  | [% 1d8 %]          | 9     | +15 ft   | Acrobatic Movement                                   |
-| 10    | +4  | [% 1d8 %]          | 10    | +20 ft   | Heightened Focus, Self-Restoration                   |
-| 11    | +4  | [% 1d10 %]         | 11    | +20 ft   | Specialization Feature                               |
-| 12    | +4  | [% 1d10 %]         | 12    | +20 ft   | Feat                                                 |
-| 13    | +5  | [% 1d10 %]         | 13    | +20 ft   | Deflect Energy                                       |
-| 14    | +5  | [% 1d10 %]         | 14    | +25 ft   | Disciplined Survivor                                 |
-| 15    | +5  | [% 1d10 %]         | 15    | +25 ft   | Perfect Focus                                        |
-| 16    | +6  | [% 1d10 %]         | 16    | +25 ft   | Feat                                                 |
-| 17    | +6  | [% 1d12 %]         | 17    | +25 ft   | Specialization Feature                               |
-| 18    | +6  | [% 1d12 %]         | 18    | +30 ft   | Superior Defense                                     |
-| 19    | +7  | [% 1d12 %]         | 19    | +30 ft   | Epic Boon                                            |
-| 20    | +7  | [% 1d12 %]         | 20    | +30 ft   | Body and Mind                                        |
+| 2     | +1  | [% 1d6 %]          | 2     | +[= 2 stride =]   | Monk's Focus, Unarmored Movement, Uncanny Metabolism |
+| 3     | +1  | [% 1d6 %]          | 3     | +[= 2 stride =]   | Deflect Attacks, Monk Specialization                 |
+| 4     | +2  | [% 1d6 %]          | 4     | +[= 2 stride =]   | Ability Score Improvement, Slow Fall                 |
+| 5     | +2  | [% 1d8 %]          | 5     | +[= 2 stride =]   | Extra Attack, Stunning Strike                        |
+| 6     | +2  | [% 1d8 %]          | 6     | +[= 3 stride =]   | Empowered Strikes, Specialization Feature            |
+| 7     | +3  | [% 1d8 %]          | 7     | +[= 3 stride =]   | Evasion                                              |
+| 8     | +3  | [% 1d8 %]          | 8     | +[= 3 stride =]   | Feat                                                 |
+| 9     | +3  | [% 1d8 %]          | 9     | +[= 3 stride =]   | Acrobatic Movement                                   |
+| 10    | +4  | [% 1d8 %]          | 10    | +[= 4 stride =]   | Heightened Focus, Self-Restoration                   |
+| 11    | +4  | [% 1d10 %]         | 11    | +[= 4 stride =]   | Specialization Feature                               |
+| 12    | +4  | [% 1d10 %]         | 12    | +[= 4 stride =]   | Feat                                                 |
+| 13    | +5  | [% 1d10 %]         | 13    | +[= 4 stride =]   | Deflect Energy                                       |
+| 14    | +5  | [% 1d10 %]         | 14    | +[= 5 stride =]   | Disciplined Survivor                                 |
+| 15    | +5  | [% 1d10 %]         | 15    | +[= 5 stride =]   | Perfect Focus                                        |
+| 16    | +6  | [% 1d10 %]         | 16    | +[= 5 stride =]   | Feat                                                 |
+| 17    | +6  | [% 1d12 %]         | 17    | +[= 5 stride =]   | Specialization Feature                               |
+| 18    | +6  | [% 1d12 %]         | 18    | +[= 6 stride =]   | Superior Defense                                     |
+| 19    | +7  | [% 1d12 %]         | 19    | +[= 6 stride =]   | Epic Boon                                            |
+| 20    | +7  | [% 1d12 %]         | 20    | +[= 6 stride =]   | Body and Mind                                        |
 
 ---
 
@@ -125,8 +125,8 @@ As a **Reaction** when hit by an attack that deals **Bludgeoning, Piercing, or S
 
 If reduced to 0, you may spend **1 Focus Point** to redirect the attack:
 
-- **Melee**: Choose a creature within **5 feet**.
-- **Ranged**: Choose a creature within **60 feet** (no Total Cover).
+- **Melee**: Choose a creature within **[= 1 stride =]**.
+- **Ranged**: Choose a creature within **[= 12 stride =]** (no Total Cover).
 
 The target must succeed on a **Dexterity saving throw** or take **2 × Martial Arts die + Dex mod** damage of the same type.
 
@@ -216,7 +216,7 @@ Your Focus abilities improve:
 
 - **Flurry of Blows**: Spend 1 Focus Point to make **three Unarmed Strikes** instead of two.
 - **Patient Defense**: Gain **Temporary HP = 2 × Martial Arts die**.
-- **Step of the Wind**: Move a **willing creature within 5 feet** with you without provoking Opportunity Attacks.
+- **Step of the Wind**: Move a **willing creature within [= 1 stride =]** with you without provoking Opportunity Attacks.
 
 </Collapsible>
 
