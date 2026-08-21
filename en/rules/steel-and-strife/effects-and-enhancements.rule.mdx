@@ -16,9 +16,9 @@ An **effect** is anything that outlives the instant that made it. A spell's ling
 An effect that occupies space on the field triggers on a specific **timing**:
 
 - **Persistent** — when first interacted with on a turn, through intersecting space.
-- **Incipient** — when a turn ends while intersecting with it.
+- **Delayed** — when a turn ends while intersecting with it.
 
-Effects will list whether they are **Persistent** or **Incipient** before the description of the effect itself is stated.
+Effects will list whether they are **Persistent** or **Delayed** before the description of the effect itself is stated.
 
 An area anchored to a creature or object is an **aura**, and travels with its source.
 
@@ -42,9 +42,9 @@ If the two overlap and did not overlap a moment ago, the effect triggers.
 
 ---
 
-## Incipient Effects
+## Delayed Effects
 
-An **incipient** effect triggers when a creature **ends its turn** intersecting with its area.
+An **delayed** effect triggers when a creature **ends its turn** intersecting with its area.
 
 - It triggers **once per turn per creature**, at the end of that creature's turn.
 - A creature that is moved out of the area before its turn ends does not trigger it.
@@ -52,22 +52,22 @@ An **incipient** effect triggers when a creature **ends its turn** intersecting 
 
 ---
 
-## Persistent and Incipient
+## Persistent and Delayed
 
 A few effects are both. The order of resolution stays the same:
 
 1. **On intersection** — resolve the persistent trigger.
-2. **At the end of the creature's turn** — resolve the incipient trigger.
+2. **At the end of the creature's turn** — resolve the delayed trigger.
 
 Both may strike the **same creature on the same turn**; once when an enemy's turn pushes it into the area (or the area into them), once when its own turn ends there.
 
 ### Example
 
-A creature is shoved into a **Persistent, Incipient** area that deals [% 6d10 slashing %] on a failed Dexterity save.
+A creature is shoved into a **Persistent, Delayed** area that deals [% 6d10 slashing %] on a failed Dexterity save.
 
 - Shoved in on the enemy's turn → **persistent** triggers → first save.
-- Its own turn: it spends its movement and leaves → turn ends outside → no incipient trigger. **One save.**
-- Had it stayed → turn ends inside → **incipient** triggers → **two saves that round.**
+- Its own turn: it spends its movement and leaves → turn ends outside → no delayed trigger. **One save.**
+- Had it stayed → turn ends inside → **delayed** triggers → **two saves that round.**
 
 ---
 
@@ -84,7 +84,7 @@ An **aura** is an area anchored to a creature or an object. It extends a stated 
 
 Aura is the only term for an area measured from a creature or an object.
 
-Auras are areas, and carry **persistent** and **incipient** timings like any other. Because an aura travels with its source, a source that walks up to a creature intersects it, and a persistent aura triggers on that creature exactly as though the creature had walked in.
+Auras are areas, and carry **persistent** and **delayed** timings like any other. Because an aura travels with its source, a source that walks up to a creature intersects it, and a persistent aura triggers on that creature exactly as though the creature had walked in.
 
 ### Example
 
@@ -162,4 +162,4 @@ The Single Name Rule is the general case for **every** named effect in Damocles 
 
 [_Combining Magical Effects_](/en/library/rules/arcana-and-the-fold/combining-magical-effects) governs how **differently named spells** interact while their durations overlap.
 
-Persistent and incipient are **effect timings**. They do not interact with [_resistance and vulnerability_](/en/library/rules/steel-and-strife/damage), and a creature immune to an effect's damage still intersects the area and still ends its turn in it — it simply takes nothing.
+Persistent and delayed are **effect timings**. They do not interact with [_resistance and vulnerability_](/en/library/rules/steel-and-strife/damage), and a creature immune to an effect's damage still intersects the area and still ends its turn in it — it simply takes nothing.
