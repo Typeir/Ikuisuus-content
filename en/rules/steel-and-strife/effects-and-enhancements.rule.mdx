@@ -1,6 +1,9 @@
 ---
 contentType: rules
 source: Ikuisuus
+keywords:
+  - briefly
+  - resist
 ---
 
 # Effects and Enhancements
@@ -15,8 +18,9 @@ An **effect** is anything that outlives the instant that made it. A spell's ling
 
 An effect that occupies space on the field triggers on a specific **timing**:
 
-- **Persistent** — when first interacted with on a turn, through intersecting space.
-- **Delayed** — when a turn ends while intersecting with it.
+- **Incipient**  — when being **targeted** by it on turn start.
+- **Persistent** — when first being **targeted** by it on a turn.
+- **Delayed** — when a turn ends while **targeted** by it.
 
 Effects will list whether they are **Persistent** or **Delayed** before the description of the effect itself is stated.
 
@@ -32,22 +36,32 @@ Effects describe a duration, measured in **minutes**, **seconds**, **hours** or 
 
 The default duration. The effect **ends** at the end of the **sufferer’s** turn, when it is **resisted or ended externally**, or when its **source dies** or **loses concentration**.
 
+### Resist
+
+If an effect would lasst for longer than **Briefly**, then the **sufferer** maybe be able to **Resist** the effect by saving against what originally imposed it, or another specified method.
+If **no Resist method is specified** and **Resist** is keyed, the method is the **same** by which the effect was first **imposed**.
+
+
+## Incipient Effects
+
+An **incipient** effect triggers when a creature is **targeted** by it **when their turn starts**.
+If the effect is an **area** and the creature moves into it during their turn, the **Incipient** effect does not trigger until their next **turn start**.
 
 ## Persistent Effects
 
-A **persistent** effect triggers when a creature **intersects with its area for the first time on a round**.
+A **persistent** effect triggers when a creature is first **targeted** by the effect on a **round**.
 
-Intersection is symmetric. It does not matter which of the two moved, or whether either did:
+- If an effect **targets** something during another creature's turn, it triggers for that **target's** whole round.
+- It triggers **once per round per creature**. Breaking the overlap and restoring it on the same round does not trigger it again.
+
+For effects that occupy an **area**, intersection is symmetric. It does not matter which of the two moved, or if either did:
 
 - The creature moves into the area.
-- The area moves onto the creature — a drifting cloud, a walking aura, a wall dragged along behind its caster.
+- The area moves onto the creature; a drifting cloud, a walking aura, a wall dragged along behind its caster.
 - The area is created on top of the creature.
 
 If the two overlap and did not overlap a moment ago, the effect triggers.
-
-- It triggers **once per round per creature**. Breaking the overlap and restoring it on the same round does not trigger it again.
-- **Forced movement counts.** A creature shoved, pulled, or thrown into the area triggers the effect.
-- If an area intersects a creature during another creature's turn, it triggers for the whole round — but when the target creature's own turn starts, it becomes available for the persistent effect once more.
+**Forced movement counts.** A **target** shoved, pulled, or thrown into the area triggers the effect.
 
 ---
 
