@@ -29,7 +29,7 @@ An **effect** is anything that outlives the instant that made it. A spell's ling
 An effect that occupies space on the field triggers on a specific **timing**:
 
 - **Incipient**  — when being **targeted** by it on turn start.
-- **Persistent** — when first being **targeted** by it on a turn.
+- **Persistent** — when first being **targeted** by it on a round.
 - **Delayed** — when a turn ends while **targeted** by it.
 
 Effects will list whether they are **Incipient**, **Persistent**, or **Delayed** before the description of the effect itself is stated.
@@ -54,21 +54,21 @@ Targets **Resist** an effect **at the end of their turn**. If they succeed, the 
 
 ## Incipient Effects
 
-An **incipient** effect triggers when a creature is **targeted** by it **when their turn starts**.
-If the effect is an **area** and the creature moves into it during their turn, the **Incipient** effect does not trigger until their next **turn start**.
+An **incipient** effect triggers when a sufferer is **targeted** by it **when their turn starts**.
+If the effect is an **area** and a sufferer moves into it during their turn, the **Incipient** effect does not trigger until their next **turn start**.
 
 ## Persistent Effects
 
-A **persistent** effect triggers when a creature is first **targeted** by the effect on a **round**.
+A **persistent** effect triggers when a sufferer is first **targeted** by the effect on a **round**.
 
 - If an effect **targets** something during another creature's turn, it triggers for that **target's** whole round.
-- It triggers **once per round per creature**. Breaking the overlap and restoring it on the same round does not trigger it again.
+- It triggers **once per round per sufferer**. Breaking the overlap and restoring it on the same round does not trigger it again.
 
 For effects that occupy an **area**, intersection is symmetric. It does not matter which of the two moved, or if either did:
 
-- The creature moves into the area.
-- The area moves onto the creature; a drifting cloud, a walking aura, a wall dragged along behind its caster.
-- The area is created on top of the creature.
+- The sufferer moves into the area.
+- The area moves onto the sufferer; a drifting cloud, a walking aura, a wall dragged along behind its caster.
+- The area is created on top of the sufferer.
 
 If the two overlap and did not overlap a moment ago, the effect triggers.
 **Forced movement counts.** A **target** shoved, pulled, or thrown into the area triggers the effect.
@@ -77,14 +77,14 @@ If the two overlap and did not overlap a moment ago, the effect triggers.
 
 ## Delayed Effects
 
-A **delayed** effect triggers when a creature **ends its turn** being targeted by it.
+A **delayed** effect triggers when a sufferer **ends their turn** being targeted by it.
 
-- It triggers **once per turn per creature**, at the end of that creature's turn.
+- It triggers **once per turn per sufferer**, at the end of that sufferer's turn.
 
 For effects that occupy an **area**, the resolution is the same but targeting is linked to the **area**:
 
-- A creature that is moved out of the area before its turn ends does not trigger it.
-- A creature whose space intersects the area when its turn ends triggers it, however the overlap came about.
+- A sufferer that is moved out of the area before their turn ends does not trigger it.
+- A sufferer whose space intersects the area when their turn ends triggers it, however the overlap came about.
 
 ---
 
@@ -93,13 +93,13 @@ For effects that occupy an **area**, the resolution is the same but targeting is
 A few effects are both. The order of resolution stays the same:
 
 1. **When first targeted** — resolve the persistent trigger.
-2. **At the end of the creature's turn** — resolve the delayed trigger.
+2. **At the end of the sufferer's turn** — resolve the delayed trigger.
 
-Both may strike the **same creature on the same turn**; once when an enemy's turn pushes it into the area (or the area into them), once when its own turn ends there.
+Both may strike the **same sufferer on the same turn**; once when an enemy's turn pushes them into the area (or the area into them), once when their own turn ends there.
 
 ### Example
 
-A creature is shoved into a **Persistent, Delayed** area that deals [% 6d10 slashing %] on a failed Dexterity save.
+A sufferer is shoved into a **Persistent, Delayed** area that deals [% 6d10 slashing %] on a failed Dexterity save.
 
 - Shoved in on the enemy's turn → **persistent** triggers → first save.
 - Its own turn: it spends its movement and leaves → turn ends outside → no delayed trigger. **One save.**
@@ -120,7 +120,7 @@ An **aura** is an area anchored to a creature or an object. It extends a stated 
 
 Aura is the only term for an area measured from a creature or an object.
 
-Auras are areas, and carry **persistent** and **delayed** timings like any other. Because an aura travels with its source, a source that walks up to a creature intersects it, and a persistent aura triggers on that creature exactly as though the creature had walked in.
+Auras are areas, and carry **persistent** and **delayed** timings like any other. Because an aura travels with its source, a source that walks up to a sufferer intersects them, and a persistent aura triggers on that sufferer exactly as though the sufferer had walked in.
 
 ### Example
 
@@ -149,6 +149,7 @@ An **affliction** is an effect attached to a creature or an object that harms it
 | [Curse](/en/library/rules/life-blood-and-ruin/curses) | the attention of an entity | understanding its source; [_Remove Affliction_](/en/library/spells/remove-affliction) |
 
 - An affliction travels with its bearer.
+- Multiple symptoms stack. When a sufferer rolls a symptom they already have, they take the next highest result.
 - Objection does not end an affliction.
 - An effect that reads on "an affliction" reads on conditions, illnesses, and curses alike.
 
@@ -180,7 +181,7 @@ This holds regardless of source. It does not matter that two different casters c
 - When the applied instance ends, any surviving instance of the same name takes over for whatever duration it has left.
 - Effects with **different names** stack normally, even when their mechanics are identical.
 
-A creature under [_Paivatar's Boon_](/en/library/spells/paivatars-boon) is under one instance of it. A second casting on the same target grants nothing.
+A sufferer under [_Paivatar's Boon_](/en/library/spells/paivatars-boon) is under one instance of it. A second casting on the same target grants nothing.
 
 ### Example
 
@@ -198,4 +199,4 @@ The Single Name Rule is the general case for **every** named effect in Damocles 
 
 [_Combining Magical Effects_](/en/library/rules/arcana-and-the-fold/combining-magical-effects) governs how **differently named spells** interact while their durations overlap.
 
-Incipient, persistent, and delayed are **effect timings**. They do not interact with [# kw:resistance and vulnerability #], and a creature immune to an effect's damage simply takes nothing, but still triggers the effect's timing.
+Incipient, persistent, and delayed are **effect timings**. They do not interact with [# kw:resistance and vulnerability #], and a sufferer immune to an effect's damage simply takes nothing, but still triggers the effect's timing.

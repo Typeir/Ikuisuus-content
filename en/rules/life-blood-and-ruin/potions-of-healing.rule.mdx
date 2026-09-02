@@ -17,7 +17,7 @@ Potions of healing are **strictly magical**.
 
 **They do not function in null-magic zones**, such as those produced by higher creatures of the Fold, or by certain scions of the Dreamcatcher.
 
-**8 + ([% 1d8 %] × potion tier)**
+**(8 + [% 1d8 %]) × potion tier**
 
 | Potion Type     | Healing Restored                 |
 | --------------- | -------------------------------- |
@@ -36,22 +36,21 @@ All of these potions are around the same size, they all weigh around **[= 1 burd
 
 The body cannot tolerate endless alchemical healing.
 
-- Upon drinking the **5th potion**, you become **Poisoned for 8 hours**.
+- Upon drinking the **5th potion**, you become **[# kw:condition:poisoned #] for 8 hours**.
 - Each potion **after the 5th** causes:
-  - **Poisoned condition (refreshes to 8 hours each time)**
-  - **+1 level of Exhaustion per extra potion**
+  - **[# kw:condition:poisoned #] condition (refreshes to 8 hours each time)**
+  - **+1 level of [# kw:condition:exhaustion #] per extra potion**
 
-This limit **resets** once the body is left to rest, with no heavily demanding activity, for at least seven uninterrupted days [# kw:Recovery #].
+This limit **resets** after a [# kw:Recovery #].
 
 | Potions Drunk in One [# kw:Recovery #] | Effect                  |
 | ----------------------------- | ----------------------- |
 | 1–5                           | No side effects         |
-| 5th                           | Poisoned for 8 hours    |
-| 6th                           | Poisoned + 1 Exhaustion |
-| 7th                           | Poisoned + 2 Exhaustion |
-| 8th                           | Poisoned + 3 Exhaustion |
-| 9th                           | Poisoned + 4 Exhaustion |
-| 10th                          | Poisoned + 5 Exhaustion |
+| 6th                           | [# kw:condition:poisoned #] + 1 [# kw:condition:exhaustion #] |
+| 7th                           | [# kw:condition:poisoned #] + 2 [# kw:condition:exhaustion #] |
+| 8th                           | [# kw:condition:poisoned #] + 3 [# kw:condition:exhaustion #] |
+| 9th                           | [# kw:condition:poisoned #] + 4 [# kw:condition:exhaustion #] |
+| 10th                          | [# kw:condition:poisoned #] + 5 [# kw:condition:exhaustion #] |
 | 11th                          | **Death**               |
 
 ## Potion Usage
@@ -61,7 +60,7 @@ Pouring one down someone else's throat takes longer—a **Major Action** is requ
 
 ## Throwing a Potion
 
-Potions can be thrown, though this is a risky business. Treat it as a **ranged attack** with a **confirmed roll [CR]** against the target’s Armor Class.
+Potions can be thrown, though this is a risky business. Treat it as a **ranged attack** with a **confirmed roll [CR]** against the target’s Armour Class.
 
 - **If the throw hits**, the potion **deals [% 1d4 bludgeoning %]** from the impact. This can kill a dying character if they already have **two failed death saving throws**.
 - **If confirmed**, the potion **takes effect and heals as normal**.

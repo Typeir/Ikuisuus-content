@@ -19,17 +19,23 @@ A legendary creature has a number of **legendary deeds per round**, specified in
 
 ### Deed Cap
 
-The total number of deeds that can be used per round, globally is **capped by the number of player characters** actively engaged in the encounter. If there are fewer PCs than the deed pool of all combatants, reduce the available deeds accordingly.
+Three limits apply at once, and the tightest one binds.
 
-> **Example**: A creature with 3 deeds faces a party of 2 PCs. It can only use **2 deeds per round** until more combatants enter the fray.
+1. **Per creature**: a creature spends no more than its own deed pool between its turns.
+2. **Per turn**: at most one legendary deed resolves in any single turn, across every creature in the encounter.
+3. **Per round, globally**: the total number of deeds spent by all legendary creatures in a round is capped by the number of player characters actively engaged in the encounter.
+
+The third limit is what keeps two legendary creatures from doubling the pressure on a small party. It is a shared budget: two creatures with 3 deeds each, facing 3 PCs, spend 3 deeds between them that round, not 3 each.
+
+> **Example**: A creature with 3 deeds faces a party of 2 PCs. It can spend **2 deeds per round** until more combatants enter the fray.
 
 ### One Deed Per Turn
 
-A legendary creature can use **at most one legendary deed per turn**. This applies across all deed types—if a creature uses a **Legendary Deed: Act** at the end of one creature's turn, it cannot use another deed until after a different creature's turn ends.
-This limit is shared by all creatures, no two legendary deeds can occur within the same turn cycle.
-In case of collision between multiple legendary deed users, the creature with the highest tier bonus or combat rating acts first.
-If there is a further tie, the GM chooses the order, prioritizing player deeds over monster deeds where possible.
-This limit does not take into account the cost of the deed used, some _act_ or _stratagem_ deeds may cost multiple deeds to use.
+At most one legendary deed resolves per turn, counting every legendary creature in the encounter. If a creature uses a **Legendary Deed: Act** at the end of one creature's turn, no legendary deed of any kind resolves again until after a different creature's turn ends.
+
+Where two creatures would spend a deed in the same turn, the one with the higher tier bonus or challenge rating goes first. On a further tie the Game Director chooses, prioritizing player deeds over monster deeds where possible; the creature that lost the tie may spend its deed at the next turn instead.
+
+This limit counts deeds, not their cost. A single _act_ or _stratagem_ may cost several deeds out of the pool and still be one deed for the purpose of this limit.
 
 ---
 
@@ -91,17 +97,13 @@ Lair deeds represent the creature's connection to its environment—the very ter
 
 ### Legendary Deed: Phase
 
-**Timing**: When a creature drops below a certain threshold on their maximum HP, conventionally in quarters, as defined in [# kw:Thresholds and Bands #].;
+**Timing**: When the creature enters a new band of [# kw:Thresholds and Bands #].
 
-- **Whole (_100%_)**
-- **Wounded (_75%_)**
-- **Bloodied (_50%_)**
-- **Doomed (_25%_)**
-- **Slain (_0%_)**
+Bands run **Whole**, **Wounded**, **Bloodied**, **Doomed**, **Slain**. **Whole** is where a creature starts, so nothing triggers on entering it, and **Slain** is death, so a phase deed keyed to it resolves as the creature drops rather than after. Phase deeds are therefore written for Wounded, Bloodied, and Doomed, with Slain reserved for a death throe.
 
-Phase deeds always cost one legendary deed to activate, and must be used when the creature meets the specified condition.
-If the creature is out of legendary deeds when the condition is met, the phase deed must be activated at the start of its next turn when it regains its deeds.
-Phase deeds represent the creature's transformation as it nears defeat, unlocking new abilities or altering existing ones.
-These phases often reflect narrative beats in the encounter, signaling a shift in tactics or power level.
+Phase deeds always cost one legendary deed, and must be used the moment the creature enters the band.
+If the creature is out of legendary deeds when it enters the band, the phase deed activates at the start of its next turn, when it regains them.
 
-> “Example": "Bloodied (50% HP): the creature sprouts wings and gains a flying speed of [= 12 stride =].”
+Phase deeds represent the creature's transformation as it nears defeat, unlocking new abilities or altering existing ones. These phases often reflect narrative beats in the encounter, signaling a shift in tactics or power level.
+
+> **Example**: "Bloodied (50% HP): the creature sprouts wings and gains a flying speed of [= 12 stride =]."
