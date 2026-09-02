@@ -18,7 +18,7 @@ keywords:
 
 # Effects and Enhancements
 
-Fire clings to a doorway, the eroding pressence of oblivion gnaws at mind and body alike, a swarm gnaws at flesh and keeps gnawing. These rules govern things that stay on the field; how they hurt and when.
+Fire clings to a doorway, the eroding presence of oblivion gnaws at mind and body alike, a swarm gnaws at flesh and keeps gnawing. These rules govern things that stay on the field; how they hurt and when.
 
 ---
 
@@ -32,7 +32,7 @@ An effect that occupies space on the field triggers on a specific **timing**:
 - **Persistent** — when first being **targeted** by it on a turn.
 - **Delayed** — when a turn ends while **targeted** by it.
 
-Effects will list whether they are **Persistent** or **Delayed** before the description of the effect itself is stated.
+Effects will list whether they are **Incipient**, **Persistent**, or **Delayed** before the description of the effect itself is stated.
 
 An area anchored to a creature or object is an **aura**, and travels with its source.
 
@@ -48,7 +48,7 @@ The default duration. The effect **ends** at the end of the **sufferer’s** tur
 
 ### Resist
 
-If an effect would lasst for longer than **Briefly**, then the **sufferer** maybe be able to **Resist** the effect by saving against what originally imposed it, or another specified method.
+If an effect would last for longer than **Briefly**, then the **sufferer** may be able to **Resist** the effect by saving against what originally imposed it, or another specified method.
 If **no Resist method is specified** and **Resist** is keyed, the method is the **same** by which the effect was first **imposed**.
 
 
@@ -77,9 +77,12 @@ If the two overlap and did not overlap a moment ago, the effect triggers.
 
 ## Delayed Effects
 
-An **delayed** effect triggers when a creature **ends its turn** intersecting with its area.
+A **delayed** effect triggers when a creature **ends its turn** being targeted by it.
 
 - It triggers **once per turn per creature**, at the end of that creature's turn.
+
+For effects that occupy an **area**, the resolution is the same but targeting is linked to the **area**:
+
 - A creature that is moved out of the area before its turn ends does not trigger it.
 - A creature whose space intersects the area when its turn ends triggers it, however the overlap came about.
 
@@ -89,7 +92,7 @@ An **delayed** effect triggers when a creature **ends its turn** intersecting wi
 
 A few effects are both. The order of resolution stays the same:
 
-1. **On intersection** — resolve the persistent trigger.
+1. **When first targeted** — resolve the persistent trigger.
 2. **At the end of the creature's turn** — resolve the delayed trigger.
 
 Both may strike the **same creature on the same turn**; once when an enemy's turn pushes it into the area (or the area into them), once when its own turn ends there.
@@ -195,4 +198,4 @@ The Single Name Rule is the general case for **every** named effect in Damocles 
 
 [_Combining Magical Effects_](/en/library/rules/arcana-and-the-fold/combining-magical-effects) governs how **differently named spells** interact while their durations overlap.
 
-Persistent and delayed are **effect timings**. They do not interact with [# kw:resistance and vulnerability #], and a creature immune to an effect's damage still intersects the area and still ends its turn in it — it simply takes nothing.
+Incipient, persistent, and delayed are **effect timings**. They do not interact with [# kw:resistance and vulnerability #], and a creature immune to an effect's damage simply takes nothing, but still triggers the effect's timing.
