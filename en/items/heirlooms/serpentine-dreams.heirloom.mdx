@@ -5,9 +5,18 @@ contentType: heirlooms
 
 # Serpentine Dreams
 
-_Legendary (requires attunement)_  
-_Longsword +3 (Melee, Large, Versatile, Special, Mastery: Cleave)_  
-_Can be used as a spellcasting focus when attuned_
+<Heirloom
+  rarity="Legendary"
+  attunement="required"
+  base="Longsword (Martial, Large, Versatile, Special)"
+  quality="Mundane"
+  enchantment="+3 accuracy and damage"
+  damage="[% 2d8 force %]"
+  versatile="[% 2d10 %]"
+  mastery="Cleave"
+  masterfulBlow="Mooncleave"
+  focus="spellcasting, when attuned"
+  burden="[= 1 burden =]">
 
 When Bloodboil Ludwig dreamt of the moonlit sea, he saw a blade of shifting light and shadow, forged from the essence of the lunar godess herself.
 In fear of his master, the Red Queen, he kept his vision secret, until the night he was betrayed.  
@@ -17,56 +26,61 @@ With his dying breath, he whispered a plea to the moon, and the blade appeared i
 
 ---
 
-## Weapon Properties
+### Attributes
 
-- **Type:** Longsword (Martial, Versatile, Special, Magical)
-- **Damage:** [% 2d8 force %] ([% 2d10 %])
-- **Weight:** [= 1 burden =]
+<Attributes />
 
----
+### Traits
 
-## Special Features
+<Trait>
 
-- **Moonlit Edge:**  
-  While under moonlight, the blade emits **dim cerulean light** in a [= 2 stride;ADJ =] radius.
+#### Moonlit Edge
 
-- **Lunar Dissolution:**  
-  As a **Minor Action**, the weapon can vanish or reappear in your hand as a ripple of light and mist.
+While under moonlight, the blade emits **dim cerulean light** in a [= 2 stride;ADJ =] radius.
 
----
+</Trait>
 
-## Effects
+<Trait>
 
-- **Large**:  
-  This weapon deals damage as if it were one size larger, and medium creatures use it at disadvantage.
+#### Dreamer’s path
 
-- **Dreamer’s path:**  
-  When attuned, this weapon uses your **highest ability score modifier** for attack and damage rolls instead of Strength.
+When attuned, this weapon uses your **highest ability score modifier** for attack and damage rolls instead of Strength.
 
-- **Magical Weapon:**  
-  You gain a **+3 accuracy and damage bonus** made with this weapon.
+</Trait>
 
-- **Special: Ethereality**  
-  The weapon deals **force damage** instead of slashing.
+<Trait>
 
-- **Frozen night:**  
-  When you hit a creature with this weapon, it deals an additional **[% 2d4 frost %]**.
+#### Ethereality
 
----
+The blade deals **force damage** instead of slashing.
 
-## Dreamer’s Reversal
+</Trait>
 
-When a **melee attack hits you**, you may use your **reaction** to contest the attacker’s roll with an **attack roll of your own** made using the Serpentine Dreams.
+<Trait>
 
-- If your roll **equals or exceeds** the attacker’s original result, the attack **misses**, and you may make one **Serpentine Dreams attack** against that creature as part of the same reaction.
-- If your roll is **lower**, the attack resolves normally.
-- For every successful Dreamer’s Reversal, you accrue a -1 penalty to future reversal contests until you miss one.
+#### Frozen night
 
-### Interactions
+When you hit a creature with this weapon, it deals an additional [% 2d4 frost %].
 
-If you possess or benefit from the following features or spells, you can declare a combined use of a single Dreamer’s Reversal per round.
-You may apply **only one of these interaction benefits** to each contest.  
-The combination interacts as follows:
+</Trait>
+
+### Features
+
+<Feature cost="1 Minor Action">
+
+#### Lunar Dissolution
+
+The blade can vanish, or reappear in your hand, as a ripple of light and mist.
+
+</Feature>
+
+<Feature cost="1 Reaction, taken when an attack hits you">
+
+#### Dreamer’s Reversal
+
+When a melee attack hits you, contest the attacker’s roll with an attack roll of your own made using the Serpentine Dreams. If your roll equals or exceeds the attacker’s original result, the attack misses, and you can make one Serpentine Dreams attack against that creature as part of the same reaction. If your roll is lower, the attack resolves normally. For every successful Dreamer’s Reversal, you accrue a -1 penalty to future reversal contests until you miss one.
+
+If you possess or benefit from the following features or spells, you can declare a combined use of a single Dreamer’s Reversal per round, applying only one of these interaction benefits to each contest.
 
 - **Monk – Deflect Missiles / Deflect Attacks:**  
   Add your **Martial Arts die** to your contest roll.
@@ -100,16 +114,23 @@ The combination interacts as follows:
 
 You can combine Dreamer’s Reversal with a feature or spell in this way a number of times equal to your **tier bonus**, regaining all uses after a [# kw:Recovery #].
 
----
+</Feature>
 
-## Weapon Mastery
+<Feature mastery="Longswords">
 
-- **Cleave:** _(Only available if the wielder has mastery with Longswords)_  
-  When you hit a creature with this weapon, you can make a **second attack** with the same weapon against another creature within [= 1 stride =] of the original target and within your reach.  
-  This secondary attack uses the same attack bonuses as the original attack, but not the damage bonuses.
+#### Cleave
 
-- **Mooncleave:** _(1/Repose, or 3/Reposes if the wielder has mastery with Longswords)_  
-  As a Major Action, you may unleash a **sweeping crescent of force and frost**.  
-  All creatures in a **[= 6 stride;ADJ =] cone** originating from you must make a **Dexterity saving throw**  
-  (**DC = 11 + your tier bonus + your highest ability modifier**) Taking 4d8 frost damage plus 4d8 force damage on a failure, or half as much on a success.  
-  This attack counts as one weapon attack for all vocation features and abilities.
+When you hit a creature with this weapon, you can make a **second attack** with the same weapon against another creature within [= 1 stride =] of the original target and within your reach. This secondary attack uses the same attack bonuses as the original attack, but not the damage bonuses.
+
+</Feature>
+
+<Feature cost="1 Major Action" targets="creatures within a [= 6 stride;ADJ =] cone">
+
+#### Mooncleave <span>Masterful Blow</span>
+
+Targets save Dexterity against DC 11 + your tier bonus + your highest ability modifier, halving [% 4d8 frost %] and [% 4d8 force %]. This attack counts as one weapon attack for all vocation features and abilities.
+
+</Feature>
+
+</Heirloom>
+

@@ -3,99 +3,82 @@ source: Ikuisuus
 contentType: heirlooms
 ---
 
-# Carranza’s Great Épée
+# Carranza's Great Épée
 
-_Very rare (requires attunement)_  
-_Rapier ([% 1d8 piercing %], Finesse, Special, Sap, Magical, Martial)_  
-_Can be used as a spellcasting focus when attuned_
+<Heirloom
+  rarity="Very rare"
+  attunement="required"
+  base="Rapier (Finesse, Special)"
+  quality="Mundane"
+  damage="[% 1d8 piercing %]"
+  mastery="Sap"
+  masterfulBlow="Parry and Riposte"
+  focus="spellcasting, while attuned">
 
 A **colossal estoc**, rigid and razor-thin, meant for graceful counters and punishing ripostes. Its sturdy frame parries even the mightiest strikes, while its design allows for lethal precision.
 
-> “If I must die, let it be to my own reflection in your blade.”
+> "If I must die, let it be to my own reflection in your blade."
 
 ---
 
-## Weapon Properties
+### Attributes
 
-- **Type**: Rapier (Martial, Finesse, Special)
-- **Damage**: [% 1d8 piercing %]
-- **Weight**: Medium (not specified—same as standard rapier)
+<Attributes />
 
-## Weapon mastery
+### Traits
 
-- **Sap**  _(Only available if the wielder has mastery with Rapiers)_:  
-  When you hit a creature, their **next attack roll** before your next turn is made at **disadvantage**
+<Trait>
 
-- **Parry and Riposte** _(1/Repose, or 3/Repose if the wielder has mastery with Rapiers)_:
+#### Mighty Armament
 
-  - When a creature makes a **melee attack** against you, use your **reaction** to force a **disadvantage reroll** (before result is known)
-  - If the attack **misses**, you may **counterattack**, dealing an extra **[% 1d8 lightning %]**
-  - When targeted by a **ranged attack**, you may attempt to **redirect it**:
-    - Roll a **Dex save (DC = max(10, half damage))**
-    - **Fail**: You take normal damage (or ignore the miss)
-    - **Success**: Redirect the attack at a target within **[= 6 stride =]/[= 12 stride =]**; you roll attack and damage as if the original attacker had aimed for them
+You must have Strength 20 or higher to wield this weapon effectively. If your Strength is less than 20, you make attack rolls with this weapon at disadvantage.
 
-## Effects
+</Trait>
 
-- **Mighty Armament**:
+<Trait>
 
-  - Requires **20 Strength** to wield effectively; otherwise attacks are at **disadvantage**
+#### Upkeep Penalty
 
-- **Upkeep Penalty**:
+After [% 1d4 +1 %] encounters without maintenance, this weapon suffers -5 to attack rolls. Maintenance requires either 10 gp and 1 hour at a smithy, or 8 hours with a proficient alchemist or tinker.
 
-  - After **[% 1d4 +1 %] encounters**, if not maintained, suffers **-5 to attack rolls**
-  - Maintenance:
-    - **10gp & 1 hour at a smithy**, or
-    - **8 hours by a proficient alchemist/tinker**
+</Trait>
 
-  ### Fatebound Link
+<Trait>
 
-  A creature attuned to **Carranza’s Great Épée** cannot attune to **Narvaez’s Mighty Quiver**.  
-  If both wielders are within **[= 12 stride =]** of each other, they gain the following benefits:
+#### Fatebound Link
 
-  - **Ignore the Mighty Armament restriction**
-  - **The Épée’s upkeep is suspended**—no maintenance needed
-  - If the thread of fate is **severed**, these effects become **permanent**
+A creature attuned to Carranza's Great Épée cannot attune to Narvaez's Mighty Quiver. If both wielders are within [= 12 stride =] of each other, they ignore the Mighty Armament restriction and the Épée's upkeep is suspended. If the thread of fate is severed, these effects become permanent.
 
-  ***
+</Trait>
 
-  ### Fated Demise
+### Features
 
-  If the wielder of **Narvaez’s Mighty Quiver** is **unconscious or slain**, and the wielder of the **Épée** survives:
+<Feature cost="1 Reaction, taken when a creature makes an attack against you">
 
-  - The quiver flies toward the épée wielder if within **[= 120 stride =]**, traveling at:
-    - **[= 24 stride =] per round**, or
-    - **[= 12 stride =] per round through solid terrain**
-  - The surviving wielder **automatically draws both weapons** (no action), treating them as **light**
+#### Parry and Riposte <span>Masterful Blow</span>
 
-  The wielder gains:
+When a creature makes a melee attack against you, you can force them to reroll the attack with disadvantage. If their attack misses, you can counterattack, dealing an extra [% 1d8 lightning %] damage.
 
-  - **Advantage on all attack rolls, saving throws, and skill checks**
-  - **Immunity to all conditions** except **prone** and **exhaustion**
-  - **1 level of exhaustion per round**
+When you are targeted by a ranged attack, you can attempt to redirect it. Roll a Dexterity save against DC = max(10, half damage). On a success, you redirect the attack at a target within [= 6 stride =]/[= 12 stride =]; you roll attack and damage as if the original attacker had aimed for them. On a failure, you take normal damage or ignore the miss.
 
-  If the fallen wielder is **revived**, the effects **end immediately**, but exhaustion persists.  
-  The wielder may choose to **unbind** the weapons:
+</Feature>
 
-  - All magic in both items is **suppressed**
-  - **1 exhaustion level is inflicted**
-  - Both wielders **lose attunement**
+<Feature>
 
-  If the wielders are **separated by more than [= 120 stride =]**, the survivor gains **1 exhaustion per day at dawn** until the link is broken or restored.
+#### Fated Demise
 
-  ### Retribution Mode
+If the wielder of Narvaez's Mighty Quiver is unconscious or slain, and you survive, the quiver flies toward you if within [= 120 stride =], traveling at [= 24 stride =] per round, or [= 12 stride =] per round through solid terrain. You automatically draw both weapons, treating them as light.
 
-  While under **Fated Demise**, this weapon gains enhanced effects:
+While Fated Demise is active, you gain advantage on all attack rolls, saving throws, and skill checks. You have immunity to all conditions except prone and exhaustion, and you suffer 1 level of exhaustion per round.
 
-  - **Deflected Fate**_(3/Repose)_
+If the fallen wielder is revived, these effects end immediately, but exhaustion persists. You can choose to unbind the weapons: all magic in both items is suppressed, you suffer 1 exhaustion level, and both wielders lose attunement.
 
-  When you use **Deflecting Blade**, you may replace the usual redirect or counterattack with a **shockwave riposte**:
+If you are separated from the other wielder by more than [= 120 stride =], you gain 1 exhaustion per day at dawn until the link is broken or restored.
 
-  - Every creature **within [= 1 stride =] of you** must make a **Dexterity saving throw**  
-    (DC = 8 + Dexterity modifier + tier bonus)
-  - **On failure**: They take **[% 2d8 slashing %]**
-  - If the deflected attack was **ranged**, creatures make the save **with advantage**
+While under Fated Demise, when you use a Parry and Riposte option (the redirect or counterattack), you can replace it with a shockwave riposte. Every creature within [= 1 stride =] of you must make a Dexterity saving throw (DC = 8 + Dexterity modifier + tier bonus). On failure, they take [% 2d8 slashing %]. If the attack you deflected was ranged, creatures make the save with advantage.
 
-  > If the thread of fate is severed, this ability becomes a **1-charge feature**, recharging **daily at noon**, instead of using [# kw:Repose #] charges.
+If the thread of fate is severed, the shockwave riposte option becomes a 1-charge feature, recharging daily at noon.
 
----
+</Feature>
+
+</Heirloom>

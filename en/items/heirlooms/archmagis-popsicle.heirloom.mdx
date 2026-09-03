@@ -5,8 +5,16 @@ contentType: heirlooms
 
 # Archmagis Popsicle
 
-_Legendary (requires attunement)_  
-_Large Greatsword +4 (Melee, Heavy, Two-Handed, Special, Magical, Mastery: Graze)_
+<Heirloom
+  rarity="Legendary"
+  attunement="required"
+  base="Greatsword (Martial, Heavy, Two-Handed, Special, Large)"
+  quality="Mundane"
+  enchantment="+4 accuracy and damage"
+  damage="[% 4d6 slashing %]"
+  mastery="Graze"
+  masterfulBlow="Cryogenesis"
+  burden="[= 5 burden =]">
 
 This outrageous contraption is a torture device of cruelty proper of crimes forgotten to the old ages. While the iced blade shatters and crumbles in the heat of the battlefield, the encased empyrean feels its body crumble again and again until the consequence of freedom becomes more terrifying than the everlasting agony. In an ironic twist, the immense power of the jailed individual seems related to the eternal resilience of the blade. It seems that even hell can be tailored for the ones that foolishly tried to reach heaven.
 
@@ -15,47 +23,60 @@ This outrageous contraption is a torture device of cruelty proper of crimes forg
 
 ---
 
-## Weapon Properties
+### Attributes
 
-- **Type**: Greatsword (Martial, Heavy, Two-Handed, Magical, Special, Large)
-- **Damage**: [% 4d6 slashing %]
-- **Weight**: [= 5 burden =]
+<Attributes />
 
----
+### Traits
 
-## Special Features
+<Trait>
 
-- **The Ice is Hungry**:  
-  While wielding this weapon, any creature without resistance or immunity to frost damage suffers **[% 4d6 frost %]** at the start of its turn.
+#### The Ice is Hungry
 
-- **Entropic Anchor**:  
-  Extreme cold fills a **[= 2 stride;ADJ =] aura** originating from the weapon. This can freeze liquid or affect creatures at a normal pace.
+While you wield this weapon, at the start of each turn any creature without resistance or immunity to frost damage takes [% 4d6 frost %].
 
----
+</Trait>
 
-## Effects
+<Trait>
 
-- **Magical Weapon**:  
-  Archmagis Popsicle is a **+4 weapon**. You gain a **+4 accuracy and damage bonus** made with it, and attacks count as magical for overcoming resistance and immunity.
+#### Entropic Anchor
 
-- **The Shattering Blade**:  
-  After hitting a creature with Archmagis Popsicle, the blade shatters — becoming a **-4 weapon** — and you gain **[% 4d6 %] temporary hit points** as the ice fragments begin orbiting around you.  
-  The blade reforms after **[% 1d4 %] rounds** at the start of your turn.
+Extreme cold fills a [= 2 stride;ADJ =] aura originating from the weapon. This can freeze liquid or affect creatures at a normal pace.
 
-- **Icebound Acumen**:  
-  After each time the blade shatters, your **Intelligence score temporarily increases by 2**, to a maximum of 24, until the end of the current combat. This effect ends early if you are knocked unconscious, or if your turn ends and you haven't attacked a hostile creature, forced an enemy to make a saving throw, or taken damage since your last turn.
+</Trait>
 
-- **Merciless Jailer**:  
-  Once per [# kw:Repose #], as a **reaction**, you can transfer the negative effects of a saving throw you failed to the empyrean trapped in the icy blade. The prisoned mage will cry in frustration as no amount of harm may end its torment.
+### Features
 
----
+<Feature>
 
-## Weapon Mastery
+#### The Shattering Blade
 
-- **Graze**:  
-  If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll. This damage is the same type dealt by the weapon, and the damage can be increased only by increasing the ability modifier.
+When you hit a creature with this weapon, the blade shatters — becoming a -4 weapon — and you gain [% 4d6 %] temporary hit points as the ice fragments begin orbiting around you. The blade reforms after [% 1d4 %] rounds at the start of your turn.
 
-- **Cryogenesis** _(1/Repose, or 3/Repose if the wielder has mastery with Greatswords)_:  
-  As a **Minor Action**, call upon the eternal cold of the seventh winter to restore the Archmagis Popsicle, becoming a **+4 weapon** again instantly.
+</Feature>
 
----
+<Feature>
+
+#### Icebound Acumen
+
+When the blade shatters, your Intelligence score increases by 2 (to a maximum of 24) until the end of the current combat. This effect ends early if you are knocked unconscious, or if your turn ends without you attacking a hostile creature, forcing an enemy to make a saving throw, or taking damage since your last turn.
+
+</Feature>
+
+<Feature cost="1 Reaction" charges="1/[# kw:Repose #]">
+
+#### Merciless Jailer
+
+You can transfer the negative effects of a saving throw you failed to the empyrean trapped in the icy blade.
+
+</Feature>
+
+<Feature cost="1 Minor Action">
+
+#### Cryogenesis <span>Masterful Blow</span>
+
+Call upon the eternal cold of the seventh winter to restore the Archmagis Popsicle, becoming a +4 weapon again instantly.
+
+</Feature>
+
+</Heirloom>

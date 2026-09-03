@@ -5,8 +5,9 @@ contentType: heirlooms
 
 # Unkept Promise
 
-_Mythic Artifact (requires attunement)_  
-_Consumable, Trinket_
+<Heirloom
+  rarity="Mythic Artifact"
+  attunement="required">
 
 In the wilds of Taiva, at the foot of the stairway to the heavens, the first pilgrim had one final conversation with an old sage from an age long past.
 The sage knew the white homunculus could not be stopped, so he offered the pilgrim to sit down with him and share a drink instead. 
@@ -16,119 +17,135 @@ Maybe it was an act of respect, maybe a final warning, or a promise.
 > “If fate is to rise, then I hope a will most powerful is to best it, just as fate intends to best the world.” — The First Pilgrim.
 
 
-You may invoke **each Promise once per [# kw:Recovery #]**.  
-**Nameless Promise** may be invoked **once ever**; when you do, the artifact is destroyed.
-
-**Spell Save DC for this artifact is 20.**  
-If a Promise replicates a spell effect, it does not require material components.
+You may invoke each Promise once per [# kw:Recovery #]. Promises replicate spells without their material components. Saving throws imposed by this artifact are made against a DC of 20.
 
 ---
 
-## Promise of the Murk  
-_1/Recovery_  
-As a **Major Action**, you force a creature to make a charisma saving throw (DC 20). On a failure, the creature gains four stacks of [# kw:Erosion #].
+### Features
+
+<Feature cost="1 Major Action" charges="1/[# kw:Recovery #]" targets="a creature">
+
+#### Promise of the Murk
+
+Targets save Charisma against DC 20. Failing targets gain four stacks of [# kw:Erosion #].
+
+</Feature>
 
 ---
 
-## Promise of the Black Star  
-_1/Recovery, Concentration (1 minute)_  
-As a **Major Action**, you cast [_Waltzing Blades_](/en/library/spells/waltzing-blades) on yourself as if using a 5th-level slot.  
-You must **concentrate** on this effect.
+<Feature cost="1 Major Action" charges="1/[# kw:Recovery #]" targets="you">
+
+#### Promise of the Black Star
+
+Cast [_Waltzing Blades_](/en/library/spells/waltzing-blades) on yourself as if using a 5th-level slot. You must concentrate on this effect for up to a minute.
+
+</Feature>
 
 ---
 
-## Promise of the Aimless Arrow  
-_1/Recovery_  
-As a **Minor Action**, mark one melee attack you will make before the end of your next turn.  
-- Your next hit with that attack becomes an **automatic critical hit**  
-- It deals an additional **10 force damage**
+<Feature cost="1 Minor Action" charges="1/[# kw:Recovery #]" targets="a melee attack you will make before the end of your next turn">
 
-If the attack misses or is not made by the end of your next turn, the effect ends.
+#### Promise of the Aimless Arrow
 
----
+When you next hit with that attack, it is an automatic critical hit and deals an additional 10 force damage. If the attack misses or is not made by the end of your next turn, the effect ends.
 
-## Promise of the Master  
-_1/Recovery, Concentration (normal spell duration)_  
-As a **Major Action**, you cast [_Lost in the Muck_](/en/library/spells/lost-in-the-muck).  
-This version **requires your concentration**.
+</Feature>
 
 ---
 
-## Promise of Gates  
-_1/Recovery_  
-As a **Major Action**, you and up to **8 willing creatures** you can see teleport to a point you visualize within **[= 200 stride =]**.  
-As a Minor Action on your next turn, you and all creatures teleported may return to your original locations, taking **[% 4d6 force %]** in the process.
+<Feature cost="1 Major Action" charges="1/[# kw:Recovery #]" targets="you">
+
+#### Promise of the Master
+
+Cast [_Lost in the Muck_](/en/library/spells/lost-in-the-muck). This version requires your concentration at its normal spell duration.
+
+</Feature>
 
 ---
 
-## Promise of Storms  
-_1/Recovery, Concentration (special)_  
-As a **Major Action**, choose a willing creature you can touch.  
-For as [% 1d4 +1 %] rounds, that creature gains:
+<Feature cost="1 Major Action" charges="1/[# kw:Recovery #]" targets="you and up to 8 willing creatures you can see">
 
-- The benefits of [_Blade Ward_](/en/library/spells/blade-ward)
-- The benefits of [_Feather Fall_](/en/library/spells/feather-fall)
-- The benefits of [_Blur_](/en/library/spells/blur)  
-- The benefits of [_Mirror Image_](/en/library/spells/mirror-image)
-- The benefits of [_Freedom of Movement_](/en/library/spells/freedom-of-movement)
-- The benefits of [_Haste_](/en/library/spells/haste)  
-- The benefits of [_Fly_](/en/library/spells/fly)
+#### Promise of Gates
 
-**Collision:** When your concentration ends for any reason, or when the spell ends, the creature takes **80 true damage**.
+Targets teleport to a point you visualize within [= 200 stride =]. As a Minor Action on your next turn, they may return to your original locations, taking [% 4d6 force %] in the process.
+
+</Feature>
 
 ---
 
-## Promise of Rot  
-_1/Recovery, Concentration (1 minute)_  
-As a **Major Action**, choose up to **3 creatures** within [= 12 stride =].  
-Each must succeed on a **Constitution saving throw (DC 20)**, or be affected by the effects of [_Bane_](/en/library/spells/bane) and [_Hex_](/en/library/spells/hex), targeting Constitution.
+<Feature cost="1 Major Action" charges="1/[# kw:Recovery #]" targets="a willing creature you can touch">
 
-You must **concentrate** on this Promise.
+#### Promise of Storms
 
----
+Targets for [% 1d4 +1 %] rounds gain the benefits of [_Blade Ward_](/en/library/spells/blade-ward), [_Feather Fall_](/en/library/spells/feather-fall), [_Blur_](/en/library/spells/blur), [_Mirror Image_](/en/library/spells/mirror-image), [_Freedom of Movement_](/en/library/spells/freedom-of-movement), [_Haste_](/en/library/spells/haste), and [_Fly_](/en/library/spells/fly).
 
-## Promise of Bones  
-_1/Recovery, Concentration (1 minute)_  
-As a **Major Action**, choose up to **3 creatures** within [= 12 stride =].  
-Each must succeed on a **Wisdom saving throw (DC 20)**, or be affected by the effects of [_Slow_](/en/library/spells/slow),
-and take **[% 1d4 force %] per [= 1 stride =]** of willing movement.
+When your concentration ends for any reason, or when the spell ends, the creature takes 80 true damage.
 
-You must **concentrate** on this Promise.
+</Feature>
 
 ---
 
-## Promise of Freedom  
-_1/Recovery, Concentration (1 minute)_  
-As a **Major Action**, choose any number of willing creatures within [= 12 stride =].
+<Feature cost="1 Major Action" charges="1/[# kw:Recovery #]" targets="up to 3 creatures within [= 12 stride =]">
 
-For as long as you maintain concentration:  
-- They cannot be **grappled, restrained, paralyzed, or petrified**  
-- They have advantage on saves against **charmed** and **frightened**  
-- Immediately upon invoking this Promise, each chosen creature may use its **reaction** to move up to its speed without provoking opportunity attacks
+#### Promise of Rot
 
----
+Targets save Constitution against DC 20 or are affected by the effects of [_Bane_](/en/library/spells/bane) and [_Hex_](/en/library/spells/hex), targeting Constitution.
 
-## Promise of Wills  
-_1/Recovery, Concentration (1 minute)_  
-As a **Major Action**, choose a willing creature within [= 12 stride =].  
-For as long as you maintain concentration:
+You must concentrate on this Promise for up to a minute.
 
-- The creature gains **advantage on all Strength checks and Strength saving throws**  
-- The creature ignores **difficult terrain**  
-- The creature's carrying capacity is **quadrupled**
-- The creature cannot be **pushed, pulled, knocked prone, or restrained**  
-- The creature makes **opportunity attacks with advantage** and those attacks deal **+[% 1d10 force %]**
+</Feature>
 
 ---
 
-## Promise of Fate  
-_1/Recovery_  
-As a **Major Action**, cast the [_Thought Of Oblivion_](/en/library/spells/thought-of-oblivion) spell.
+<Feature cost="1 Major Action" charges="1/[# kw:Recovery #]" targets="up to 3 creatures within [= 12 stride =]">
+
+#### Promise of Bones
+
+Targets save Wisdom against DC 20 or are affected by the effects of [_Slow_](/en/library/spells/slow), and take [% 1d4 force %] per [= 1 stride =] of willing movement.
+
+You must concentrate on this Promise for up to a minute.
+
+</Feature>
 
 ---
 
-## Nameless Promise  
-_Once ever — destroys the artifact_  
-As a **Major Action**, you invoke the final vow sealed within the bullet.  
-You cast [_Wish_](/en/library/spells/wish).  
-After resolving the Wish, **Unkept Promise is destroyed** and all other Promises vanish with it.
+<Feature cost="1 Major Action" charges="1/[# kw:Recovery #]" targets="any number of willing creatures within [= 12 stride =]">
+
+#### Promise of Freedom
+
+While you maintain concentration, for up to a minute, targets cannot be grappled, restrained, paralyzed, or petrified, and have advantage on saves against charmed and frightened. Immediately upon invoking this Promise, each target may use its reaction to move up to its speed without provoking opportunity attacks.
+
+</Feature>
+
+---
+
+<Feature cost="1 Major Action" charges="1/[# kw:Recovery #]" targets="a willing creature within [= 12 stride =]">
+
+#### Promise of Wills
+
+While you maintain concentration, for up to a minute, targets gain advantage on all Strength checks and Strength saving throws, ignore difficult terrain, have their carrying capacity quadrupled, and cannot be pushed, pulled, knocked prone, or restrained. Targets' opportunity attacks have advantage and deal [% 1d10 force %].
+
+</Feature>
+
+---
+
+<Feature cost="1 Major Action" charges="1/[# kw:Recovery #]" targets="you">
+
+#### Promise of Fate
+
+Cast the [_Thought Of Oblivion_](/en/library/spells/thought-of-oblivion) spell.
+
+</Feature>
+
+---
+
+<Feature cost="1 Major Action" charges="once ever" targets="you">
+
+#### Nameless Promise
+
+You invoke the final vow sealed within the bullet. Cast [_Wish_](/en/library/spells/wish). After resolving the Wish, Unkept Promise is destroyed and all other Promises vanish with it.
+
+</Feature>
+
+</Heirloom>
+

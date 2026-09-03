@@ -5,9 +5,16 @@ contentType: heirlooms
 
 # Sacred Heresy
 
-_Rare (requires attunement)_  
-_Greataxe +1 (Heavy, Two-Handed, Mastery: Sap, Cleave)_  
-_Counts as a pact weapon for warlocks who possess Pact of the Blade_
+<Heirloom
+  rarity="Rare"
+  attunement="required"
+  base="Greataxe (Heavy, Two-Handed)"
+  quality="Mundane"
+  enchantment="+1 accuracy and damage"
+  damage="[% 1d12 slashing %]"
+  mastery="Sap, Cleave"
+  burden="[= 4 burden =]"
+  focus="spellcasting, if you have Pact of the Blade">
 
 Forged from a slab of curdled demon-sap and a chunk of primordial wax, this axe radiates with heat and cold in equal measure. The wound it opens is real—but so is the mend.
 
@@ -15,63 +22,54 @@ Forged from a slab of curdled demon-sap and a chunk of primordial wax, this axe 
 
 ---
 
-## Weapon Properties
+### Attributes
 
-- **Type**: Greataxe (Martial, Heavy, Two-Handed, Magical)
-- **Damage**: [% 1d12 slashing %]
-- **Weight**: [= 4 burden =]
+<Attributes />
 
-## Special Features
+### Traits
 
-- **Janiformed Edge**:  
-  The axe deals an extra **[% 1d6 dark %] or holy damage** while raging.  
-  You must alternate each time you rage (dark first, then holy, and so on).
+<Trait>
 
----
+#### Janiformed Edge
 
-## Curse
+While raging, the axe deals an extra [% 1d6 dark %] or holy damage. You must alternate the type each time you rage, dark first, then holy, and so on.
 
-- **Motions of Divinity**:  
-  This weapon is cursed. While attuned, you cannot willingly remove or drop it unless you are unconscious.  
-  If you begin a **rest** of any kind without having dealt damage to at least one creature other than you, and not having restored hit points to a creature other than you, you gain **no benefits from the rest**.
-  The creature's CR must be at least 1/2 of your total level.
+</Trait>
 
----
+<Trait>
 
-## Effects
+#### Brutal Critical
 
-- **Magical Weapon**: This weapon has a **+1 accuracy and damage bonus** .
+This weapon critically strikes on a roll of 19-20. While a target is afflicted by Hexblade's Curse, it also critically strikes on an 18. When this weapon critically strikes, its damage is force.
 
-- **Pact Focus**: This weapon counts as your spellcasting focus if you have Pact of the Blade.
+</Trait>
 
-- **Brutal Critical**:
-  - This weapon **critically strikes on a roll of 19-20**.
-  - If a target is **afflicted by Hexblade's Curse**, it also **crits on an 18**.
-  - When this weapon **critically strikes**, it deals **Force damage**.
+<Trait>
 
-- **Obligate Pact Weapon**:
-  - If the wielder is a Villein, This weapon **must be used as the wielder’s pact weapon**.
+#### Obligate Pact Weapon
 
----
+If the wielder is a Villein, this weapon must be used as the wielder's pact weapon.
 
-## Weapon Mastery
+</Trait>
 
-This dual blade has two masteries.
+### Curses
 
-- **Sap** _(Only available if the wielder has mastery with Greataxes)_:  
-  When you hit a creature with this weapon, that creature has **disadvantage on its next Attack Roll** before the start of your next turn.
+<Curse>
 
-- **Cleave** _(Only available if the wielder has mastery with Greataxes)_:  
-  When you hit a creature with a Melee Weapon Attack, you can immediately make a second Melee Attack Roll **against another creature you can see within [= 1 stride =] of the first**.  
-  On a hit, the second target takes **damage equal to the weapon’s damage die only** (no modifiers).
+#### Motions of Divinity
 
-- **Edge of Duality** _(1/Repose, or 3/Repose if the wielder has mastery with Greataxes)_:  
-  As a Major Action, you **hurl Sacred Heresy in a [= 6 stride;ADJ =] line**. It cleaves through everything in its path before returning to your hand.
-  - All creatures in the line must make a **Dexterity saving throw (DC = 9 + your Tier Bonus + your Strength modifier)**.
+This weapon is cursed. While attuned, you cannot willingly remove or drop it unless you are unconscious. If you begin a rest of any kind without having dealt damage to at least one creature other than you, and not having restored hit points to a creature other than you, you gain no benefits from the rest. The creature's CR must be at least 1/2 of your total level.
 
-  - **Creatures** who fail take **[% 2d12 slashing %] + [% 2d8 dark %] + [% 2d8 holy %]** damage.
-  - **Creatures** who pass are instead **healed for [% 2d8 %] + your Strength modifier**.
+</Curse>
 
-  - **Leech Spiral**: You gain **temporary hit points equal to half the total amount of damage and healing caused**, rounded up.
+### Features
 
----
+<Feature cost="1 Major Action" targets="creatures in the [= 6 stride;ADJ =] line">
+
+#### Edge of Duality
+
+Hurl Sacred Heresy in a [= 6 stride;ADJ =] line. It cleaves through everything in its path before returning to your hand. Targets save Dexterity against a DC of 9 plus your tier bonus and Strength modifier. Failing targets take [% 2d12 slashing %], [% 2d8 dark %], and [% 2d8 holy %]. Saving targets are instead healed for [% 2d8 %] plus your Strength modifier. You gain temporary hit points equal to half the total damage and healing caused, rounded up.
+
+</Feature>
+
+</Heirloom>

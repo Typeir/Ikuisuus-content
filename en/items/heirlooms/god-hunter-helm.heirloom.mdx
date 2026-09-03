@@ -5,8 +5,11 @@ contentType: heirlooms
 
 # God Hunter Helm
 
-_Very rare (requires attunement)_  
-_Armor, Helmet_
+<Heirloom
+  rarity="Very rare"
+  attunement="requires attunement"
+  base="Armor, Helmet"
+  burden="[= 3 burden =]">
 
 The slits of this dark plate helm are barely big enough to see through, and the interior is pitch black and cold like a starless sky.
 
@@ -14,33 +17,44 @@ The slits of this dark plate helm are barely big enough to see through, and the 
 
 ---
 
-## Item Properties
+### Attributes
 
-- **Type**: Armor (Helmet)
-- **Weight**: [= 3 burden =]
+<Attributes only="burden" />
 
----
+### Traits
 
-## Special Features
+<Trait>
 
-- **Reinforced Tombsteel**:  
-  This helm is forged from tombsteel and counts as an object with **AC 20 and 50 hit points** for the purposes of being sundered or destroyed.
+#### Reinforced Tombsteel
 
----
+This helm is forged from tombsteel and counts as an object with AC 20 and 50 hit points for the purposes of being sundered or destroyed.
 
-## Effects
+</Trait>
 
-- **Cold Eternal**  
-  While wearing a piece Tombsteel Armor, any creature **without resistance or immunity to frost damage** must make a **DC 13 Constitution saving throw** at the **end of each hour**:
+<Trait>
 
-  - **On failure**: Gain **1 level of exhaustion**
-  - This effect applies even while **unconscious or asleep**
+#### Cold Eternal
 
-- **Heartless**:  
-  Once per [# kw:Recovery #], when you are subjected to a **charmed** or **frightened** effect, you may choose to **succeed automatically** instead of rolling a saving throw.
+While attuned to this helm, at the end of each hour, you save Constitution DC 13 if you lack resistance or immunity to frost damage. Failing this save, you gain 1 level of exhaustion. This effect persists even while you are unconscious or asleep.
 
-- **Sightless**:  
-  While wearing this helm, you are **immune to divination magic** and cannot be perceived through magical scrying sensors.
-  - You cannot be targeted by spells or effects that would determine your location, alignment, or thoughts unless you wish it.
+</Trait>
 
----
+<Trait>
+
+#### Sightless
+
+While wearing this helm, you are immune to divination magic and cannot be perceived through magical scrying sensors. You cannot be targeted by spells or effects that would determine your location, alignment, or thoughts unless you wish it.
+
+</Trait>
+
+### Features
+
+<Feature cost="1 Reaction, taken when you are subjected to a charmed or frightened effect" recharge="[# kw:Recovery #]">
+
+#### Heartless
+
+You succeed automatically on this save.
+
+</Feature>
+
+</Heirloom>

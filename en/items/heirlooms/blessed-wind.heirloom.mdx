@@ -5,66 +5,83 @@ contentType: heirlooms
 
 # Blessed Wind
 
-_Legendary (requires attunement)_  
-_Curved longsword +3 (Finesse, Melee, Versatile, Mastery: Graze)_
+<Heirloom
+  rarity="legendary"
+  attunement="required"
+  base="Curved longsword (Finesse, Versatile)"
+  quality="Mundane"
+  enchantment="+3 accuracy and damage"
+  damage="[% 1d8 slashing %]"
+  versatile="[% 1d10 %]"
+  range="[= 3 stride =]"
+  mastery="Graze"
+  burden="[= 0 burden =]">
 
-Born from the last breath of the **Storm Lord Ukkonhemmo**, the Blessed Wind is not so much a weapon as it is a splinter of the very idea of wind and storm.  
+Born from the last breath of the **Storm Lord Ukkonhemmo**, the Blessed Wind is not so much a weapon as it is a splinter of the very idea of wind and storm.
 Eternally humming a song both beautiful and forlorn, this blade attracts **Vakis of the storm**, who dance in silence around it.
 
 > “The wind knows no master—only motion.”
 
 ---
 
-## Weapon Properties
+### Attributes
 
-- **Type**: Curved Longsword (Martial, Versatile, Finesse, Magical)
-- **Damage**: [% 1d8 slashing %] ([% 1d10 %])
-- **Weight**: [= 0 burden =]
-- **Range**: [= 3 stride =] (Melee)
+<Attributes />
 
----
+### Traits
 
-## Special Features
+<Trait>
 
-- **Purifying Currents**  
-  As a **Minor Action**, you may **dissipate fog, smoke, or similar obscuring effects** within a **[= 2 stride;ADJ =] radius** around you.
+#### Mastery of the Wind
 
-- **Mastery of the Wind**  
-  You are **immune to wind-based effects**, such as [_Command The Skies_](/en/library/spells/command-the-skies), [_Breeze Barrier_](/en/library/spells/breeze-barrier), and similar effects.
+You are immune to wind-based effects, such as [_Command The Skies_](/en/library/spells/command-the-skies) and [_Breeze Barrier_](/en/library/spells/breeze-barrier).
 
----
+</Trait>
 
-## Effects
+<Trait>
 
-- **Magical Weapon**  
-  This weapon has a **+3 accuracy and damage bonus** .
+#### Light as Air
 
-- **Light as Air**  
-  While attuned, you suffer **no penalty for jumping or falling**, and are **resistant to fall damage**.
+While attuned, you suffer no penalty for jumping or falling, and are resistant to fall damage.
 
-- **Harmony with the Gale**  
-  The Blessed Wind may replace your **Unarmed Strikes**, **Flurry of Blows**, and **Martial Arts** attacks.  
-  It seamlessly integrates into a monk’s techniques, allowing strikes with the blade to count as unarmed.
+</Trait>
 
-- **Wind Breaker (PB/Recovery)**  
-  If you **spend Ki** as part of your turn, the Blessed Wind emits a **protective current**, granting you **temporary hit points equal to 5 × the amount of Ki spent**.  
-  This feature can be used a number of times equal to your **tier bonus**, and regains all expended uses after a [# kw:Recovery #].
+<Trait>
 
----
+#### Echoing Strikes
 
-## Weapon Mastery
+Each strike leaves behind a lingering afterimage, dealing bludgeoning damage equal to your Wisdom modifier.
 
-- **Graze**  
-  When you **miss** a creature with an attack using this weapon, you still deal your ability modifier as **slashing damage**.
+</Trait>
 
-- **Echoing Strikes**  
-  Each strike leaves behind a **lingering afterimage**, dealing **bludgeoning damage equal to your Wisdom modifier**.
+### Features
 
-- **Crescent Gale (1/Repose, or 3/Repose if the wielder has mastery with Longswords)**  
-  As a **Major Action**, you unleash a **crescent-shaped slash of wind** in a **[= 1 stride;ADJ =] wide, [= 12 stride;ADJ =] long line**.  
-  All creatures in the path must make a **Dexterity saving throw (DC = 11 + your Tier Bonus + your Wisdom modifier)**.
-  - **Failure**: [% 6d10 slashing %] and pushed [= 2 stride =] back.
-  - **Success**: Half damage and not pushed.  
-    This attack deals **double damage** to **constructs and inanimate objects**.
+<Feature cost="1 Minor Action" targets="creatures within a [= 2 stride;ADJ =] radius around you">
+
+#### Purifying Currents
+
+You dissipate fog, smoke, or similar obscuring effects.
+
+</Feature>
+
+<Feature cost="1 Action when you spend Ki" charges="equal to your tier bonus" recharge="[# kw:Recovery #]">
+
+#### Wind Breaker
+
+The Blessed Wind emits a protective current, granting you temporary hit points equal to 5 × the amount of Ki spent.
+
+</Feature>
+
+<Feature cost="1 Major Action" charges="1/[# kw:Repose #], or 3/[# kw:Repose #] if the wielder has mastery with Longswords" targets="creatures within a [= 1 stride;ADJ =]-wide, [= 12 stride;ADJ =]-long line">
+
+#### Crescent Gale <span>Masterful Blow</span>
+
+You unleash a crescent-shaped slash of wind. Targets save Dexterity against DC 11 + your Tier Bonus + your Wisdom modifier, halving [% 6d10 slashing %]. Failing targets are pushed [= 2 stride =] back.
+
+This attack deals double damage to constructs and inanimate objects.
+
+</Feature>
+
+</Heirloom>
 
 ---

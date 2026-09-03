@@ -5,9 +5,16 @@ contentType: heirlooms
 
 # Vile Star
 
-_Legendary (requires attunement)_  
-_Rifle +2 (Heavy, Two-Handed, Ranged 60/120, Special, Mastery: Slow)_  
-_Can be used as a spellcasting focus when attuned_
+<Heirloom
+  rarity="Legendary"
+  attunement="required"
+  base="Rifle (Heavy, Two-Handed, Ranged 60/120, Special)"
+  enchantment="+2 accuracy, +2 damage"
+  damage="[% 1d12 holy %] + [% 1d12 poison %]"
+  mastery="Slow"
+  masterfulBlow="Vile Supernova"
+  focus="spellcasting, while attuned"
+  burden="[= 5 burden =]">
 
 A speck of truth, granted to those who've been inflicted vileness—so they may return it to the world.
 This rifle bears a cruel elegance: biomechanical veins pulse with latent venom.
@@ -16,38 +23,26 @@ This rifle bears a cruel elegance: biomechanical veins pulse with latent venom.
 
 ---
 
-## Weapon Properties
+### Attributes
 
-- **Type**: Rifle (Martial, Heavy, Ranged 60/120, Two-Handed, Special)
-- **Damage**: [% 1d12 holy %] + [% 1d12 poison %]
-- **Weight**: [= 5 burden =]
+<Attributes />
 
----
+### Features
 
-## Effects
+<Feature cost="1 Minor Action">
 
-- **Magical Weapon**: This weapon has a **+2 accuracy and damage bonus** .
+#### Phial Slots
 
-- **Dual Damage**  
-  Each shot deals **[% 1d12 holy %]** and **[% 1d12 poison %]**
+The rifle has 3 venom-infused phial slots. You insert a venom gland or poison into an open slot, and the rifle gains that venom's additional effect for [% 1d4 +1 %] rounds, after which the slot closes. The rifle regains an open slot at midnight, when the Light of Creation shines brightest.
 
-- **Phial Slots**  
-  The rifle has **3 venom-infused phial slots**:
-  - As a **Minor Action**, insert a **venom gland or poison** into an open slot
-  - The rifle gains that venom’s **additional effect** for **[% 1d4 +1 %] rounds**
-  - The slot then **closes**
-  - Regains **1 slot at midnight**, when the **Light of Creation** shines brightest
+</Feature>
 
----
+<Feature>
 
-## Weapon Mastery
+#### Vile Supernova <span>Masterful Blow</span>
 
-- **Slow** _(Only available if the wielder has mastery with rifles)_:  
-  When this weapon deals damage, the target’s **movement speed is reduced by [= 2 stride =]** until the start of your next turn
+When you take the Attack action, you can replace one of your attacks with a Supernova shot: make that attack at advantage, and the shot deals [% 2d12 poison %] and [% 2d12 holy %] extra damage. If the target is affected by any condition, other creatures within [= 4 stride =] of it save Constitution against DC 22 or gain the same condition until the end of their next turn.
 
-- **Vile Supernova** _(1/Repose, or 3/Repose with mastery)_:  
-  When you take the **Attack action**, you may **replace one of your attacks** with a **Supernova shot**:
-  - Roll the attack **at advantage**
-  - **On hit**: Add **+[% 2d12 poison %]** and **+[% 2d12 holy %]** damage
-  - If the target is affected by **any condition**, all other creatures within **[= 4 stride =]** must make a **DC 22 Constitution saving throw**:
-    - **On failure**: They gain the **same condition** until the end of their next turn
+</Feature>
+
+</Heirloom>

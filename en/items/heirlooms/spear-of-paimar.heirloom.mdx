@@ -5,9 +5,18 @@ contentType: heirlooms
 
 # Spear of Päimär
 
-_Rare (requires attunement)_  
-_Spear (Melee, Thrown, Versatile, Mastery: Graze)_  
-_Can be used as a spellcasting focus when attuned_
+<Heirloom
+  rarity="rare"
+  attunement="required"
+  base="Spear (Melee, Thrown, Versatile)"
+  quality="Mundane"
+  enchantment="+1 accuracy and damage"
+  damage="[% 1d6 piercing %]"
+  versatile="[% 1d8 %]"
+  range="[= 6 stride =]/[= 24 stride =]"
+  mastery="Graze"
+  focus="spellcasting, when attuned"
+  burden="[= 3 burden =]">
 
 A spear as weightless as light itself. Though only a fragment of the sun’s wrath remains, it transforms into a bolt of radiant fire when hurled with righteous intent.
 
@@ -15,7 +24,15 @@ The Spear of Päimär is a weapon of celestial justice. Once wielded by the cham
 
 ---
 
-## Weapon Level Table
+### Attributes
+
+<Attributes />
+
+### Traits
+
+<Trait>
+
+#### Weapon Level Table
 
 | Weapon Level | Rarity    | Bonus | Base Damage Dice           | Range                            |
 | ------------ | --------- | ----- | -------------------------- | -------------------------------- |
@@ -23,69 +40,48 @@ The Spear of Päimär is a weapon of celestial justice. Once wielded by the cham
 | 2            | Very Rare | +2    | [% 1d8 %] ([% 1d10 %])     | [= 12 stride =]/[= 48 stride =]  |
 | 3            | Legendary | +3    | [% 1d10 %] ([% 1d12 %])    | [= 12 stride =]/[= 48 stride =]  |
 
-### Evolution
+</Trait>
+
+<Trait>
+
+#### Evolution
 
 This weapon increases in level through major narrative milestones, at the GM’s discretion.
 
----
+</Trait>
 
-## Weapon Properties
+<Trait>
 
-- **Type**: Spear (Melee, Simple, Thrown, Versatile, Special, Magical)
-- **Damage**: piercing, as shown in the Weapon Level Table
-- **Weight**: [= 3 burden =]
-- **Range**: As shown in the Weapon Level Table
+#### Beacon of the Dawn
 
-## Effects
+This becomes available at Weapon Level 2. While attuned to this weapon, you emit bright light in a [= 4 stride;ADJ =] radius and dim light for [= 4 stride =] beyond that.  
+You can suppress or resume this light as a Minor Action.
 
-- **Magical Weapon**: This weapon has an accuracy and damage bonus equal to its weapon level.
+</Trait>
 
-- **Spellcasting Focus**  
-  May be used as a focus for casting spells and cantrips.
+### Features
 
----
+<Feature charges="1/[# kw:Repose #], or 3/[# kw:Repose #] if the wielder has mastery with Spears">
 
-## Special Features
+#### Lightspeed Hurl
 
-### Lightspeed Hurl
+When you throw this spear as part of the Attack action, the spear ignites with solar speed. The attack deals an additional [% 3d6 holy %]. Whether the attack hits or misses, you may teleport to an unoccupied space within [= 1 stride =] of the spear.
 
-_(1/Repose, or 3/Repose if wielding with mastery)_
+</Feature>
 
-When thrown as part of the **Attack action**, the spear ignites with solar speed:
+<Feature charges="1/[# kw:Repose #], or 3/[# kw:Repose #] if the wielder has mastery with Spears">
 
-- On hit, it deals **+[% 3d6 holy %]**
-- After the attack (hit or miss), you may **teleport to an unoccupied space within [= 1 stride =] of the spear**
+#### Solar Cascade
 
-### Beacon of the Dawn
+This becomes available at Weapon Level 2. When hurled, the spear becomes a **beam of divine sunlight**, forming a [= 1 stride =]-wide line up to [= 24 stride =] long.
 
-_(Weapon Level 2)_
-
-While attuned to this weapon, you emit **bright light in a [= 4 stride;ADJ =] radius** and **dim light for [= 4 stride =] beyond that**.  
-You can suppress or resume this light as a **Minor Action**.
-
-### Solar Cascade
-
-_(Weapon Level 2 — 1/Repose, or 3/Repose with mastery)_
-
-When hurled, the spear becomes a **beam of divine sunlight**, forming a **[= 1 stride =]-wide line** up to **[= 24 stride =]**:
-
-- Each creature in the line (excluding you and the final target) must make a Dexterity saving throw, taking line damage on failure, or half on success.
-- On a hit, the final target takes the additional damage shown below.
-- The spear reforms in your hand at the start of your next turn.
+Each creature in the line other than you and the final target must make a Dexterity saving throw, taking the **line damage** on a failed save or half as much on a successful save. The **final target** takes the **additional damage** shown below when it is hit. The spear reforms in your hand at the start of your next turn.
 
 | Weapon Level | Save DC | Line Damage             | Additional on Hit       |
 | ------------ | ------- | ----------------------- | ----------------------- |
 | 2            | DC 17   | [% 6d8 holy %]          | [% 3d8 holy %]          |
 | 3            | DC 19   | [% 8d8 holy %]          | [% 4d8 holy %]          |
 
----
+</Feature>
 
-## Weapon Mastery
-
-- **Graze** _(Only available if the wielder has mastery with Spears)_:
-  If you miss a creature with your weapon, you deal damage equal to the ability modifier you used to make the roll.
-
-- **Lightspeed Hurl** _(Mastery Skill — 1/Repose, or 3/Repose if wielding with mastery)_:  
-  When you throw this weapon as part of the **Attack action**, it blazes with solar velocity.
-  - The attack deals an **additional [% 3d6 holy %]** on hit.
-  - Immediately after the attack lands (or misses), you may **teleport to an unoccupied space within [= 1 stride =] of the spear**.
+</Heirloom>

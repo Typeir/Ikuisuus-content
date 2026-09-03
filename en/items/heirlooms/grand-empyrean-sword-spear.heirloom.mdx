@@ -5,39 +5,67 @@ contentType: heirlooms
 
 # Grand Empyrean Sword-Spear
 
-_Very rare (requires attunement)_
-_Sword-Spear +1 (Martial, Versatile, Heavy)_
+<Heirloom
+  rarity="very rare"
+  attunement="required"
+  base="Sword-Spear (Martial, Versatile, Heavy)"
+  enchantment="+1 accuracy and damage"
+  damage="[% 1d8 slashing %]"
+  versatile="[% 1d10 %]"
+  burden="[= 5 burden =]">
 
 The Empyrean Empire knew no bounds, and so did its cruelty. After the old gods were felled, tombsteel swords, spears, and lances such as this were forged in the image of the _heaven-piercers_ that killed **Päimar**, the sun god. These weapons were designed to channel the icy cold of the Empyrean’s wrath, bringing swift death to their enemies.
 
-## Weapon Properties
-
-- **Type**: Sword-Spear (Martial, Versatile, Heavy)
-- **Damage**: [% 1d8 slashing %] ([% 1d10 %])
-- **Weight** [= 5 burden =]
-
-## Effects
-
-- **+1 Weapon**:  
-   This weapon has a +1 accuracy and damage bonus.
-
-- **Dual Mastery**:  
-  This weapon has **two mastery properties**. Both are available to the wielder while attuned, but only one may be used per attack.
-
-- **Tombsteel Frame**:  
-  This weapon deals an additional **[% 2d6 frost %]** on a hit.
 ---
 
-## Weapon Mastery
+### Attributes
 
-- **Sap** _(Only available if the wielder has mastery with Longswords)_:  
-  After you successfully land an attack on a target, their **next attack roll is made at disadvantage**. This effect lasts **until the end of their next turn**.
+<Attributes />
 
-- **Topple** _(Only available if the wielder has mastery with Quarterstaffs)_  
-  When you hit a creature with this weapon, you can force it to make a **Strength saving throw (DC = 8 + your tier bonus + your Strength or Dexterity modifier)**.  
-  On a failed save, the creature is **knocked prone**.
-  
-- **Frozen Riposte** _(1/Repose, or 3/Repose if wielder has Mastery with Sword-Spears)_:  
-   After taking damage from a melee attack, you can use your reaction to make an immediate attack against the attacker. If this attack hits, it deals an additional [% 2d6 frost %].
+### Traits
+
+<Trait>
+
+#### Dual Mastery
+
+This weapon has two mastery properties. Both are available to the wielder while attuned, but only one may be used per attack.
+
+</Trait>
+
+<Trait>
+
+#### Tombsteel Frame
+
+This weapon deals an additional [% 2d6 frost %] on a hit.
+
+</Trait>
+
+### Features
+
+<Feature mastery="Longswords">
+
+#### Sap
+
+After you land an attack on a target, that target’s next attack roll is made at disadvantage until the end of their next turn.
+
+</Feature>
+
+<Feature mastery="Quarterstaffs">
+
+#### Topple
+
+When you hit a creature with this weapon, you can force it to make a Strength saving throw (DC = 8 + your tier bonus + your Strength or Dexterity modifier). On a failed save, the creature is knocked prone.
+
+</Feature>
+
+<Feature cost="1 Reaction, taken after you take damage from a melee attack" targets="the attacker" charges="1/[# kw:Repose #], or 3/[# kw:Repose #] if you have mastery with Sword-Spears">
+
+#### Frozen Riposte
+
+After taking damage from a melee attack, you can make an attack against the attacker. If this attack hits, it deals an additional [% 2d6 frost %].
+
+</Feature>
+
+</Heirloom>
 
 ---

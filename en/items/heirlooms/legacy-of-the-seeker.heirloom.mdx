@@ -5,47 +5,84 @@ contentType: heirlooms
 
 # Legacy of the Seeker
 
-_Legendary (requires attunement by a Nekarion or by someone who has killed a Nekarion)_  
-_Rapier (Martial, Finesse, Special, Magical)_
+<Heirloom
+  rarity="Legendary"
+  attunement="required by a Nekarion or by someone who has killed a Nekarion"
+  base="Rapier (Martial, Finesse, Special)"
+  enchantment="+3 accuracy and damage"
+  mastery="Vex"
+  masterfulBlow="Contemplate the End">
 
----
-
-Legacy of the Seeker is a weapon formed by pure and accumulated will.  
-Maybe it once had a physical form in a long-lost iteration of the Dread Lord, but only glimmers of pure obsession remain.  
+Legacy of the Seeker is a weapon formed by pure and accumulated will.
+Maybe it once had a physical form in a long-lost iteration of the Dread Lord, but only glimmers of pure obsession remain.
 Each mote of this disturbing light represents one who wasn’t worthy to claim the title of the Dread Lord.
 
 > “Every failure illuminates. Every death instructs. This blade is my education, and I am a dutiful student.” — Nekarion, the Dreadlord.
 
 ---
 
-## Item Properties
+### Traits
 
-- **Type**: Rapier (Martial, Finesse, Special, Magical)
-- **Damage**: — (special)
-- **Weight**: —
+<Trait>
 
----
+#### Seeking Aurora
 
-## Special Features
+As a free action, the blade vanishes or materializes in your hand as flickers of sickly light converge.
 
-- **Seeking Aurora.** As a free action, the blade can vanish or materialize in the wielder’s hand as flickers of sickly light converge.
-- **Ever Present.** Abilities of this weapon can be used even if the blade is not materialized.
+</Trait>
 
----
+<Trait>
 
-## Effects
+#### Ever Present
 
-- **Magical Weapon.** +3 accuracy and damage bonus. Counts as magical.
-- **Meticulous Diligence.** The weapon has no damage dice except on a critical hit.
-- **Dancing Daylights.** You can make one attack as a Minor Action. For this attack only, the weapon gains the **Thrown** property (range [= 12 stride =]/[= 18 stride =]). The weapon returns to your hand immediately after the attack.
-- **The Shame of the Wanderer.** On a hit, you may mark a creature with a **Mark of Shame** (marks accumulate, lasting 10 minutes or until consumed).
-  - As a Minor Action, consume a mark to teleport to an unoccupied space within [= 1 stride =] of the target, as long as the target is within [= 200 stride =] of you.
-  - On a critical hit you may add two Marks of Shame to the target or consume all marks on that target. If you choose to consume the marks, the weapon’s damage die becomes **(number of marks + 1)d12**.
-- **Annihilation of the Infinite Self.** Critical hits with this weapon cannot be rerolled or altered (not even by _Wish_). Critical damage ignores resistance, immunity, or anti-crit protections.
+Abilities of this weapon can be used even if the blade is not materialized.
 
----
+</Trait>
 
-## Weapon Mastery
+<Trait>
 
-- **Vex.** On a hit, you gain advantage on your next attack against the same creature.
-- **Contemplate the End (3/Repose).** As a Major Action, double the marks of shame on any creature fighting you. If you are **Doomed**, instead triple the marks.
+#### Meticulous Diligence
+
+The weapon has no damage dice except on a critical hit.
+
+</Trait>
+
+<Trait>
+
+#### Annihilation of the Infinite Self
+
+Critical hits with this weapon cannot be rerolled or altered, not even by _Wish_. Critical damage ignores resistance, immunity, or anti-crit protections.
+
+</Trait>
+
+### Features
+
+<Feature cost="1 Minor Action">
+
+#### Dancing Daylights
+
+You can make one attack. For this attack only, the weapon gains the Thrown property (range [= 12 stride =]/[= 18 stride =]). The weapon returns to your hand immediately after the attack.
+
+</Feature>
+
+<Feature>
+
+#### The Shame of the Wanderer
+
+On a hit, you may mark the target with a Mark of Shame. Marks accumulate, lasting 10 minutes or until consumed.
+
+As a Minor Action, you can consume a mark from a creature to teleport to an unoccupied space within [= 1 stride =] of that creature, as long as it is within [= 200 stride =] of you.
+
+On a critical hit, you may add two Marks of Shame to the target or consume all marks on that target. If you consume the marks, the weapon’s damage die becomes (number of marks + 1)d12.
+
+</Feature>
+
+<Feature cost="1 Major Action" charges="3/Repose">
+
+#### Contemplate the End <span>Masterful Blow</span>
+
+Double the marks of shame on any creature fighting you. If you are **Doomed**, instead triple the marks.
+
+</Feature>
+
+</Heirloom>

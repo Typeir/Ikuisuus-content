@@ -5,8 +5,12 @@ contentType: heirlooms
 
 # Last Laugh
 
-_Legendary (requires attunement by Nekarion)_  
-_Heavy Armor (Plate)_
+<Heirloom
+  rarity="Legendary"
+  attunement="by Nekarion"
+  base="Heavy Armor (Plate)"
+  stealth="Disadvantage"
+  burden="[= 30 burden =]">
 
 A blackened tombsteel plate with perfect finishes and a somber appearence, it is a feat of Empyrean engineering like no other. 
 The Dreadlord grew disilusioned with the extreme protection it provided, as it ruined any chance of an entertaining encounter.
@@ -16,42 +20,76 @@ Eventually he started hacking away pieces of the armor and replacing them with t
 
 ---
 
-## Armor Properties
+### Attributes
 
-- **Type**: Heavy Armor (Plate)  
-- **Weight**: [= 30 burden =]  
-- **Stealth**: Disadvantage  
+<Attributes only="burden stealth" />
 
----
+### Traits
 
-## Effects
+<Trait>
 
-- **Dark Humour**
-  This armor has a -3 modifier to AC, but it adds your Dexterity modifier to it.
+#### Dark Humour
 
-- **Defiant Masquerade**  
-  You gain **+1 hit point per character level** while wearing this armor.
+Your AC is reduced by 3, but you add your Dexterity modifier to it.
 
-- **Jester's Gait**  
-  You gain proficiency in performance, or **expertise if your alredy have performance**.
+</Trait>
 
-- **Dramatic Blow**  
-  As a **reaction**, when **you or an ally within [= 6 stride =]** take damage from an attack, you may grant the creature **damage reduction** equal to your **Performance modifier** against that attack.
+<Trait>
 
-- **Countercue**  
-  When **you or an ally within [= 6 stride =]** take damage, you may choose to transform that damage into **true damage** and make the target become **vulnerable** to that damage type for this attack.  
-  The source of the damage then takes an equal amount of **true damage**.
-  If true damage reduces any of the two creatures to 0 HP, the comically explode in a red mist of viscera and entrails, instantly dying.  
-  You may use this feature **once per [# kw:Repose #]**.
+#### Defiant Masquerade
 
-- **Grand Finale**  
-  When **you or an ally within [= 6 stride =]** score a **critical hit**, you may grant that attack a **damage bonus** equal to your **Performance modifier**.
+You gain +1 hit point per character level while wearing this armor.
 
-- **The Fourth Wall**  
-  You cannot be **silenced** or **knocked prone** by any means.  
-  Attempts to still your voice or interrupt your movement simply fail.
+</Trait>
 
-- **Onlooker's disdain**  
-  Any creature that targets you from further than **[= 12 stride =]** suffers the effects of [_Bane_](/en/library/spells/bane) until the end of its turn.  
+<Trait>
 
----
+#### Jester's Gait
+
+You gain proficiency in performance, or expertise if your alredy have performance.
+
+</Trait>
+
+<Trait>
+
+#### The Fourth Wall
+
+You cannot be silenced or knocked prone by any means. Attempts to still your voice or interrupt your movement simply fail.
+
+</Trait>
+
+### Features
+
+<Feature cost="1 Reaction, taken when you or an ally within [= 6 stride =] take damage from an attack" targets="the affected creature">
+
+#### Dramatic Blow
+
+You may grant the target damage reduction equal to your Performance modifier against that attack.
+
+</Feature>
+
+<Feature cost="when you or an ally within [= 6 stride =] take damage" targets="the damage source" recharge="once per [# kw:Repose #]">
+
+#### Countercue
+
+You may choose to transform that damage into true damage and make the target become vulnerable to that damage type for this attack. The source of the damage then takes an equal amount of true damage. If true damage reduces any of the two creatures to 0 HP, the comically explode in a red mist of viscera and entrails, instantly dying.
+
+</Feature>
+
+<Feature cost="when you or an ally within [= 6 stride =] score a critical hit" targets="that attack">
+
+#### Grand Finale
+
+You may grant that attack a damage bonus equal to your Performance modifier.
+
+</Feature>
+
+<Feature targets="any creature that targets you from further than [= 12 stride =]">
+
+#### Onlooker's disdain
+
+Targets suffer the effects of [_Bane_](/en/library/spells/bane) until the end of its turn.
+
+</Feature>
+
+</Heirloom>

@@ -5,8 +5,13 @@ contentType: heirlooms
 
 # Clockwork Tombsteel Weapon
 
-_Very rare (requires attunement)_  
-_Weapon +2 (Any Martial Weapon, Superior Quality, Dual Mastery)_
+<Heirloom
+  rarity="very rare"
+  attunement="required"
+  base="Any Martial Weapon (chosen on attunement)"
+  quality="Superior"
+  enchantment="+2 accuracy and damage bonus"
+  masterfulBlow="Swap-Strike">
 
 Forged in the final years of the Empyrean Empire, these weapons combine tombsteel cores with intricate clockwork gearing, allowing the wielder to shift its form mid-battle.
 The mechanisms vent bursts of white-hot steam when activated, searing foes and staggering them under its weight.
@@ -15,43 +20,52 @@ The mechanisms vent bursts of white-hot steam when activated, searing foes and s
 
 ---
 
-## Weapon Properties
+### Attributes
 
-- **Type**: Any Martial Weapon (chosen on attunement)
-- **Damage**: As base weapon (upgraded by one die step due to superior quality)
-- **Weight**: As base weapon
+<Attributes />
 
----
+### Traits
 
-## Special Features
+<Trait>
 
-- **Form Shifter**:  
-  As a **Minor Action**, you may change this weapon’s type to another Martial weapon type (GM’s discretion which are available).
-  - You retain attunement when swapping.
-  - Mastery effects change to match the new form.
+#### Dual Mastery
 
-- **Dual Mastery**:  
-  This weapon has **two mastery properties** determined at creation or GM discretion. Both are available to the wielder while attuned.
+This weapon has two mastery properties determined at creation or GM discretion. Both are available to the wielder while attuned.
 
----
+</Trait>
 
-## Effects
+<Trait>
 
-- **Magical Weapon**:  
-  This weapon has a **+2 accuracy and damage bonus** .
+#### Enhanced Materials
 
-- **Enhanced Materials**:  
-  This weapon has an extra **die level** due to its superior quality (e.g., a [% 1d8 %] weapon becomes [% 1d10 %]).
+This weapon has an extra **die level** due to its superior quality (e.g., a [% 1d8 %] weapon becomes [% 1d10 %]).
 
-- **Clockwork Tombsteel Frame**:  
-  This weapon deals an additional **[% 2d6 frost %]** on a hit.
+</Trait>
 
----
+<Trait>
 
-## Weapon Mastery
+#### Clockwork Tombsteel Frame
 
-- **Swap-Strike** _(Active Mastery, 1/Repose per Mastery, or 3/Repose if you have mastery with the current weapon type)_:  
-  As part of an attack with this weapon, you may trigger its clockwork mechanism, venting white-hot steam:
-  - The target must make a **Constitution saving throw (DC = 10 + your tier bonus + your Strength or Dexterity modifier)**.
-  - **Failure**: The target is **stunned until the start of your next turn** and takes an additional **10 fire damage**.
-  - **Success**: The target takes half the fire damage and is not stunned.
+This weapon deals an additional [% 2d6 frost %] on a hit.
+
+</Trait>
+
+### Features
+
+<Feature cost="1 Minor Action">
+
+#### Form Shifter
+
+You may change this weapon’s type to another Martial weapon type. You retain attunement when swapping, and mastery effects change to match the new form.
+
+</Feature>
+
+<Feature cost="as part of a weapon attack" targets="one creature you hit with a weapon attack">
+
+#### Swap-Strike <span>Masterful Blow</span>
+
+As part of an attack with this weapon, you may trigger the clockwork mechanism, venting white-hot steam. Targets save Constitution (DC = 10 + your tier bonus + your Strength or Dexterity modifier). Failing targets are stunned until the start of your next turn and take an additional 10 fire damage.
+
+</Feature>
+
+</Heirloom>

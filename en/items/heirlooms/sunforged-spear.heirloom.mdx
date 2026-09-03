@@ -5,31 +5,36 @@ contentType: heirlooms
 
 # Sunforged Spear
 
-_Uncommon (requires attunement)_  
-_Spear (Melee, Thrown, Versatile, Mastery: Graze)_  
-_Can be used as a spellcasting focus when attuned_
+<Heirloom
+  rarity="uncommon"
+  attunement="required"
+  base="Spear (Melee, Thrown, Versatile)"
+  quality="Mundane"
+  damage="[% 1d6 piercing %]"
+  versatile="[% 1d8 %]"
+  range="[= 6 stride =]/[= 24 stride =]"
+  burden="[= 3 burden =]"
+  mastery="Graze"
+  focus="spellcasting, while attuned">
 
 A spear as weightless as light itself, crafted in **imitation** of the legendary Spear of Päimär. Though merely a forgery, it still carries a fraction of its intended power, transforming into a bolt of sunlight when hurled.
 
 ---
 
-## Weapon Properties
+### Attributes
 
-- **Type**: Spear (Melee, Simple, Thrown, Versatile, Special, Magical)
-- **Damage**: [% 1d6 piercing %] ([% 1d8 %])
-- **Weight**: [= 3 burden =]
-- **Range**: [= 6 stride =]/[= 24 stride =]
+<Attributes />
 
-## Special Features
+### Features
 
-- **Sunborn Javelin** _(1/day, recharges at sunrise)_:  
-  When thrown, the spear becomes a **bolt of sunlight**, forming a **[= 1 stride;ADJ =]-wide line** from you to a creature within [= 24 stride =].
-  - Each creature in that line (excluding you and the final target) must make a **DC 16 Dexterity saving throw**, taking **[% 4d6 holy %]** on a failure or half as much on success.
-  - The spear reforms at the target's location.
+<Feature charges="1" recharge="at sunrise" targets="creatures in a [= 1 stride;ADJ =]-wide line from you to a creature within [= 24 stride =], other than you and that creature">
 
----
+#### Sunborn Javelin
 
-## Weapon Mastery
+When thrown, the spear becomes a **bolt of sunlight**.
+Targets save Dexterity against a DC of 16, halving [% 4d6 holy %].
+The spear reforms at the creature's location.
 
-- **Graze** _(Only available if the wielder has mastery with Spears)_:
-  If you miss a creature with your weapon, you deal damage equal to the ability modifier you used to make the roll.
+</Feature>
+
+</Heirloom>

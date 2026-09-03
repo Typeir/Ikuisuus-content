@@ -5,64 +5,69 @@ contentType: heirlooms
 
 # Scarf of the Twinned Winds
 
-_Rare (requires attunement)_  
-_Clothing, cloak (magical)_
+<Heirloom
+  rarity="Rare"
+  attunement="required"
+  base="Clothing (Cloak, Worn)"
+  enchantment="+1 bonus to Armor Class, +1 bonus to all Saving Throws"
+  focus="spellcasting"
+  burden="[= 1 burden =]"
+  saveDc="9 + your Tier bonus + your Spellcasting modifier">
 
 This Cavari battle-scarf is woven from seekingsilk and the shattered silver Zülfikars of ancient duelists, each split-blade etched with mirrored invocations to fire and frost. In motion, the scarf unfurls like twin banners of an empire long buried beneath salt and sand—one burning, one still.
+
+The scarf’s mirrored fabric catches wind even indoors. Its left edge pulses faintly with rising heat, while the right shimmers with stagnant frost. When both edges flare, the air sings of distant storms over forgotten dunes.
 
 > “Let the east wind burn, and the west wind still.”
 
 ---
 
-## Item Properties
+### Attributes
 
-- **Type**: Clothing (Cloak, Worn)
-- **Weight**: [= 1 burden =]
-- **Attunement**: Required
+<Attributes />
 
----
+### Traits
 
-## Special Features
+<Trait>
 
-The scarf’s mirrored fabric catches wind even indoors. Its left edge pulses faintly with rising heat, while the right shimmers with stagnant frost. When both edges flare, the air sings of distant storms over forgotten dunes.
+#### Twinned Ward
 
-## Effects
+While wearing this scarf, you gain a +1 bonus to Armor Class and a +1 bonus to all Saving Throws.
 
-- **Twinned Ward**  
-  While wearing this scarf, you gain a **+1 bonus to AC** and **+1 to all Saving Throws**.
+</Trait>
 
-- **Casting Stream**  
-  The scarf may be used as a **spellcasting focus**, and does not hinder somatic components.
+<Trait>
 
--  _(Recharge: Midday)_  
-  As a Major Action, you release a **[= 6 stride;ADJ =] line** of scorching wind, [= 1 stride =] wide.
+#### Casting Stream
 
-  - All creatures in the line must make a **Dexterity saving throw**  
-    **DC = 9 + your Tier Bonus + your Spellcasting modifier**
+The scarf may be used as a spellcasting focus, and does not hinder somatic components.
 
-  - On failure:
+</Trait>
 
-    - **[% 6d10 fire %]**
-    - **Pushed [= 2 stride =] away**
-    - Treated as if under the effects of [**_Heat Metal_**](/en/library/spells/heat-metal) (no concentration) until the start of your next turn
+### Features
 
-  - On success: Half damage, no push or burn
+_ (Recharge: Midday)_  
+As a Major Action, you release a **[= 6 stride;ADJ =] line** of scorching wind, [= 1 stride =] wide.
 
-  - After using this feature, you gain **resistance to fire damage** until the start of your next turn.
+- All creatures in the line must make a **Dexterity saving throw**  
+  **DC = 9 + your Tier Bonus + your Spellcasting modifier**
 
-- **Freezing Gale** _(Recharge: Midnight)_  
-  As a Major Action, unleash a **[= 3 stride;ADJ =] cone** of glacial wind.
+- On failure:
 
-  - All creatures in the cone must make a **Constitution saving throw**  
-    **DC = 9 + your Tier Bonus + your Spellcasting modifier**
+  - **[% 6d10 fire %]**
+  - **Pushed [= 2 stride =] away**
+  - Treated as if under the effects of [**_Heat Metal_**](/en/library/spells/heat-metal) (no concentration) until the start of your next turn
 
-  - On failure:
+- On success: Half damage, no push or burn
 
-    - **[% 6d10 frost %]**
-    - Treated as if under the effects of **_Slow_** (no concentration) until the start of your next turn
+- After using this feature, you gain **resistance to fire damage** until the start of your next turn.
 
-  - On success: Half damage, no slow
+<Feature cost="1 Major Action" recharge="at midnight" targets="creatures within a [= 3 stride;ADJ =] cone">
 
-  - After using this feature, you gain **resistance to frost damage** until the start of your next turn.
+#### Freezing Gale
 
----
+You unleash a cone of glacial wind. Targets save Constitution, halving [% 6d10 frost %]. Failing targets are treated as if under the effects of the [_Slow_](/en/library/spells/slow) spell (no concentration) until the start of your next turn. After using this feature, you gain resistance to frost damage until the start of your next turn.
+
+</Feature>
+
+</Heirloom>

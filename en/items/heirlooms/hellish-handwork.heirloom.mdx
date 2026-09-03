@@ -5,8 +5,11 @@ contentType: heirlooms
 
 # Hellish Handwork
 
-_Rare (requires attunement)_  
-_Gloves (Spellcasting Focus)_
+<Heirloom
+  rarity="rare"
+  attunement="required"
+  base="Gloves"
+  focus="spellcasting">
 
 A pair of gloves that shimmer with a fiery glow of their own — a fire that leaves no trace. Their delicate lacework is woven with threads singed by the Vaki of fire: animistic, nameless spirits born from splinters of the idea of flame itself.
 
@@ -18,34 +21,50 @@ These gloves are a stage for fire Vaki. When the wearer casts flame with enough 
 
 ---
 
-## Special Features
+### Traits
 
-- **Born of the Flames**:  
-  Fire Vaki gather around both gloves whenever the bearer casts a spell that deals fire damage or receives fire damage. The number of Vaki drawn equals the level of the spell cast (minimum of one) or the fire damage received, divided by 5, to a minimum of 1.
-  They linger for one minute, flickering around the bearer during that time.
+<Trait>
 
-- **Consuming Fire**:  
-  If at the end of your turn you have more than 3 Vaki gathered, you take [% 1d4 fire %] for each Vaki above 3.
-  The spirits do not mean harm — they simply burn, and too many burn too brightly.
+#### Born of the Flames
 
----
+Fire Vaki gather around both gloves whenever you cast a spell that deals fire damage or receive fire damage. The number of Vaki drawn equals the spell's level (minimum 1) or the fire damage received divided by 5 (minimum 1). They linger for one minute, flickering around you. Vaki drawn by a spell cannot be used for that same spell.
 
-## Effects
+</Trait>
 
-- **Like tiny embers**:  
-  If the bearer receives frost or fire damage while one or more fire Vaki linger around them, they can use their **reaction** to release one or more Vaki, reducing the damage taken by **[% 1d4 %] per Vaki released**.
+<Trait>
 
-- **Scorching Heat**:  
-  When the bearer deals fire damage to a creature, they can release one Vaki to inflict the [# kw:condition:Burning #] condition on that creature until the end of the bearer's next turn.
+#### Consuming Fire
 
-- **Final Blaze**:  
-  The bearer can use their **Minor Action** to release all Vaki they possess, increasing the damage of the next fire spell damage roll they make this turn by as many d4 as the number of Vaki released. If they would instead heal through a spell, they can ask the vaki to invigorate their target with the warmth of the hearth and flames of Taiva, increasing healing done by **twice as many d4** as Vaki spent.
+If you have more than 3 Vaki gathered at the end of your turn, you take [% 1d4 fire %] for each Vaki above 3. The spirits do not mean harm — they simply burn, and too many burn too brightly.
 
-If the bearer would release more than 3 Vaki with this feature, they cast [_Pyroblast_](/en/library/spells/pyroblast) centered on themselves, at a level equal to the number of Vaki. This is **affected by class features** as any other spellcast would be.
-This does not cause the bearer to gain any Vaki from the damage dealt by the _Pyroblast_, as the _Pyroblast_ is the result of the Vaki's power.
+</Trait>
 
-_Notes._
+### Features
 
-> Vaki drawn by a spell cannot be used for that same spell, they are the echo of the flames that once burned, not the other way around.
+<Feature cost="1 Reaction, taken when you receive frost or fire damage">
 
----
+#### Like tiny embers
+
+You can release one or more Vaki, reducing the damage taken by [% 1d4 %] per Vaki released.
+
+</Feature>
+
+<Feature cost="when you deal fire damage to a creature">
+
+#### Scorching Heat
+
+You can release one Vaki to inflict the [# kw:condition:Burning #] condition on that creature until the end of your next turn.
+
+</Feature>
+
+<Feature cost="1 Minor Action">
+
+#### Final Blaze
+
+You can release any number of your Vaki. Your next fire spell damage roll this turn increases by 1d4 for each Vaki released. If you cast a healing spell instead, that healing increases by 2d4 per Vaki released.
+
+If you release more than 3 Vaki, you cast [_Pyroblast_](/en/library/spells/pyroblast) centered on yourself at a spell level equal to the number of Vaki. That casting is affected by your class features as if you cast it normally. You gain no Vaki from Pyroblast's damage, as it is the result of the Vaki's power.
+
+</Feature>
+
+</Heirloom>

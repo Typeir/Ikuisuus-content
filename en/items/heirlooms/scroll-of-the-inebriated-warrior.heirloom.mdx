@@ -5,54 +5,59 @@ contentType: heirlooms
 
 # Scroll of the Inebriated Warrior
 
-_Legendary, nonmagical_  
-_Scroll_
+<Heirloom
+  rarity="legendary"
+  base="Scroll">
 
 ---
 
-## Inebriation Tracker
+<Pool name="Inebriation Level" max="36">
 
 Your mastery of inebriation has become an artform. You now track your **Inebriation Level**, which ranges from **0 to 36**.
 
-- **Drinking alcohol** (such as a flask, bottle, or skin) counts as a **Minor Action**, and increases your Inebriation Level by **[% 1d6 %]** (maximum 36).
-- At the **end of each of your turns**, your Inebriation Level **decreases by 6**, unless you drink again.
+Drinking alcohol (such as a flask, bottle, or skin) counts as a **Minor Action** and increases your Inebriation Level by **[% 1d6 %]** (maximum 36). At the end of each of your turns, your Inebriation Level decreases by 6, unless you drink again.
 
----
+</Pool>
 
-## Hammered Sweet Spot: Inebriation Level 12+
+### Traits
 
-While your Inebriation Level is **12 or higher**, you gain the following benefits:
+<Trait>
 
-- You can make **one additional attack** as part of your **Attack action** (stacks with Extra Attack).  
-- Your **unarmed strikes deal an additional [% 1d4 force %]**, and deal extra damage equal to your **Wisdom modifier**.  
-- You have **advantage on Dexterity (Acrobatics)** and **Charisma (Performance)** checks.  
-- You gain **+1 to AC** and **+1 to all saving throws**.
+#### Hammered Sweet Spot
 
----
+While your Inebriation Level is **12 or higher**, you can make **one additional attack** as part of your **Attack action** (stacks with Extra Attack). Your **unarmed strikes deal an additional [% 1d4 force %]**, and deal extra damage equal to your **Wisdom modifier**. You have **advantage on Dexterity (Acrobatics)** and **Charisma (Performance)** checks. You gain **+1 to AC** and **+1 to all saving throws**.
 
-## Overdrunk & Exhaustion
+</Trait>
 
-As your Inebriation Level rises above 18, you begin to suffer the following effects:
+<Trait>
 
-| Inebriation Level | Effect                                           |
-| ----------------- | ------------------------------------------------ |
-| 24                | Disadvantage on Wisdom checks and saving throws. |
-| 30                | Gain **1 level of exhaustion.**                  |
-| 36                | Gain **2 levels of exhaustion.**                 |
+#### Overdrunk & Exhaustion
+
+As your Inebriation Level rises above 18, you begin to suffer the following effects.
+
+| Inebriation Level | Effect                                            |
+| ----------------- | ------------------------------------------------- |
+| 24                | Disadvantage on Wisdom checks and saving throws.  |
+| 30                | Gain **1 level of exhaustion.**                   |
+| 36                | Gain **2 levels of exhaustion.**                  |
 
 You cannot exceed a level of 36. Your body simply cannot contain more.
 
----
+</Trait>
 
-## Sober Up
+### Features
 
-You can spend **1 ki point** and use a **Major Action** to forcibly purge your alcohol and reset your Inebriation Level to **0**.  
-When you do, you take **[% 1d10 poison %]**, ignoring resistance and immunity.  
-Alternatively, a [# kw:Repose #] also resets the level and removes any exhaustion gained from this feature.
+<Feature cost="1 Major Action and 1 ki point">
 
----
+#### Sober Up
 
-## Gourd-Borne Techniques
+You can forcibly purge your alcohol and reset your Inebriation Level to **0**. When you do, you take **[% 1d10 poison %]**, ignoring resistance and immunity. Alternatively, a [# kw:Repose #] also resets the level and removes any exhaustion gained from this feature.
+
+</Feature>
+
+<Feature>
+
+#### Gourd-Borne Techniques
 
 If you are attuned to the **Gourd of the Eternal Drunkard**, you gain access to the following techniques, each can be used a number of times per [# kw:Recovery #] equal to your **tier bonus**.
 
@@ -79,4 +84,6 @@ If you are attuned to the **Gourd of the Eternal Drunkard**, you gain access to 
   All creatures within a **[= 6 stride;ADJ =] sphere** must make a **Dexterity save (DC = 8 + proficiency + Wisdom modifier)**, taking **[% 20d6 holy %]** on a failure, or half as much on a success.  
   The explosion dissipates the cloud.
 
----
+</Feature>
+
+</Heirloom>

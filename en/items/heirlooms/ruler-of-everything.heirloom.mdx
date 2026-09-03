@@ -5,8 +5,12 @@ contentType: heirlooms
 
 # Ruler Of Everything
 
-_Legendary (requires attunement by a paladin)_  
-_Weapon +3 (Any Martial Weapon, Superior Quality, Dual Mastery)_
+<Heirloom
+  rarity="Legendary"
+  attunement="by a paladin"
+  base="Any Martial Weapon (chosen on attunement)"
+  quality="Superior"
+  enchantment="+3 accuracy and damage">
 
 During the early empyrean civil war, the alchemists of the city of Thealas found out the lord of rot grew in strength when the empIre used tombsteel.
 As a countermeasure, newly produced weaponry was blessed in the blood-sap of the divine emperor of the clear skies, king Aeridas, heir to nothing.
@@ -15,49 +19,69 @@ As a countermeasure, newly produced weaponry was blessed in the blood-sap of the
 
 ---
 
-## Weapon Properties
+### Attributes
 
-- **Type**: Any Martial Weapon (chosen on attunement)
-- **Damage**: As base weapon (upgraded by one die step due to superior quality)
-- **Weight**: As base weapon
+<Attributes />
 
----
+### Traits
 
-## Special Features
+<Trait>
 
-- **Form Shifter**:  
-  As a **Minor Action**, you may change this weapon’s type to another Martial weapon type. You must choose these two weapon types on attunement. You retain attunement when swapping.
-  Some restrictions apply, such as not being able to swap between light and heavy weapons, or one handed, versatile and two handed weapons. Both weapons must be of the same category in this regard.
-  other properties such as reach and special are generally unaffected by these restrictions (although GM discretion is advised)
+#### Dual Mastery
 
-- **Dual Mastery**:  
-  This weapon has **two mastery properties** determined at creation or GM discretion. Both are available to the wielder while attuned, and both activate every hit.
+This weapon has two mastery properties determined at creation or GM discretion. Both are available to the wielder while attuned, and both activate every hit.
 
----
+</Trait>
 
-## Effects
+<Trait>
 
-- **Magical Weapon**:  
-  This weapon has a **+3 accuracy and damage bonus** .
+#### Enhanced Materials
 
-- **Enhanced Materials**:  
-  This weapon has an extra **die level** due to its superior quality (e.g., a [% 1d8 %] weapon becomes [% 1d10 %]).
+This weapon has an extra die level due to its superior quality (for example, a [% 1d8 %] weapon becomes [% 1d10 %]).
 
-- **Blessed Tombsteel Frame**:  
-  This weapon deals an additional **[% 2d8 holy %]** on a hit.
+</Trait>
 
-- **Engineered Retributuion**
-  Once per [# kw:Repose #], when you use **Paladin’s Smite**, this weapon pays the spell slot on your behalf.
+<Trait>
 
-- **Purifying flames**:
-  This weapon deals double damage to constructs.
+#### Blessed Tombsteel Frame
 
----
+This weapon deals an additional [% 2d8 holy %] on a hit.
 
-## Weapon Mastery
+</Trait>
 
-- **Swap-Strike** _(Active Mastery, 1/Repose per Mastery, or 3/Repose if you have mastery with the current weapon type)_:  
-  As part of an attack with this weapon, you may trigger its clockwork mechanism, venting white-hot steam:
-  - The target must make a **Constitution saving throw (DC = 11 + your tier bonus + your Strength or Dexterity modifier)**.
-  - **Failure**: The target is **stunned until the start of your next turn** and takes an additional **25 holy damage**.
-  - **Success**: The target takes half the holy damage and is not stunned.
+<Trait>
+
+#### Purifying flames
+
+This weapon deals double damage to constructs.
+
+</Trait>
+
+### Features
+
+<Feature cost="1 Minor Action">
+
+#### Form Shifter
+
+You may change this weapon’s type to another Martial weapon type. You must choose these two weapon types on attunement. You retain attunement when swapping. Some restrictions apply, such as not being able to swap between light and heavy weapons, or one handed, versatile and two handed weapons. Both weapons must be of the same category in this regard.
+Other properties such as reach and special are generally unaffected by these restrictions (although GM discretion is advised)
+
+</Feature>
+
+<Feature cost="Once per [# kw:Repose #], when the wielder uses Paladin's Smite">
+
+#### Engineered Retributuion
+
+This weapon pays the spell slot on your behalf.
+
+</Feature>
+
+<Feature cost="as part of a weapon attack" targets="one creature you hit with a weapon attack">
+
+#### Swap-Strike <span>Masterful Blow</span>
+
+As part of an attack with this weapon, you may trigger its clockwork mechanism, venting white-hot steam. Targets save Constitution (DC = 11 + your tier bonus + your Strength or Dexterity modifier), halving 25 holy damage. Failing targets are stunned until the start of your next turn.
+
+</Feature>
+
+</Heirloom>

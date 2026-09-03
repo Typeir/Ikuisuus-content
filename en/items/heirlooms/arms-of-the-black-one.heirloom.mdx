@@ -5,8 +5,16 @@ contentType: heirlooms
 
 # Arms of the Black One
 
-_Very rare (requires attunement)_  
-_Halberd +1 (Melee, Reach, Two-Handed, Mastery: Slow)_
+<Heirloom
+  rarity="very rare"
+  attunement="required"
+  base="Halberd (Reach, Two-Handed)"
+  quality="Enhanced"
+  enchantment="+1 accuracy and damage"
+  damage="[% 1d12 slashing %]"
+  mastery="Slow"
+  masterfulBlow="Black One's Breath"
+  burden="[= 9 burden =]">
 
 When the black one replaced it's body with the cold mechanisms of tombsteel, it's very own fate was severed.
 They became a beast of war, famine and time, endless.
@@ -15,38 +23,28 @@ They became a beast of war, famine and time, endless.
 
 ---
 
-## Weapon Properties
+### Attributes
 
-- **Type**: Halberd (Martial, Reach, Two-Handed, Special, Magical)
-- **Damage**: [% 1d12 slashing %] (superior quality)
-- **Weight**: [= 9 burden =]
+<Attributes />
 
----
+### Traits
 
-## Effects
+<Trait>
 
-- **Magical Weapon**:  
-  This weapon has a **+1 accuracy and damage bonus** .
+#### Hurled Attack
 
-- **Enhanced Materials**:  
-  This weapon has an extra **die level** due to its superior quality (damage die is **[% 1d12 %]**).
+The weapon can be thrown with a range of [= 12 stride =]/[= 24 stride =]. When hurled, critical hits occur on a roll of 18–20 and deal quadruple damage instead of double. The weapon does not return to the wielder and must be retrieved normally.
 
-- **Hurled Attack**:  
-  This weapon may be thrown with a range of **[= 12 stride =]/[= 24 stride =]**  
-  When hurled:
-  - Critical hits occur on a roll of **18–20**.
-  - Critical hits deal **quadruple damage** instead of double.
-  - The weapon does **not** return to the wielder and must be retrieved normally.
+</Trait>
 
----
+### Features
 
-## Weapon Mastery
+<Feature cost="1 Major Action" charges="1/[# kw:Repose #], or 3/[# kw:Repose #] if the wielder has mastery with Halberds" targets="creatures within a [= 3 stride;ADJ =] cone" mastery>
 
-- **Slow** _(Only available if the wielder has mastery with Halberds)_:  
-  On hit, the target's movement speed is reduced by [= 2 stride =] until the end of its next turn.
+#### Black One's Breath <span>Masterful Blow</span>
 
-- **Black One's Breath** _(1/Repose, or 3/Repose if the wielder has mastery with Halberds)_:  
-  As a Major Action, unleash a torrent of superheated steam and rot:
-  - All creatures in a **[= 3 stride;ADJ =] cone** must make a **Dexterity saving throw (DC = 9 + your tier bonus + your Strength modifier)**.
-  - **Failure**: [% 3d6 fire %] + [% 1d6 dark %]
-  - **Success**: Half damage
+Unleash a torrent of superheated steam and rot. Targets save Dexterity, halving [% 3d6 fire %] and [% 1d6 dark %]. The saving throw DC is 9 plus your tier bonus and strength modifier.
+
+</Feature>
+
+</Heirloom>

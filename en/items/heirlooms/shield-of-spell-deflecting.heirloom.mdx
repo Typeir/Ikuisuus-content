@@ -5,8 +5,15 @@ contentType: heirlooms
 
 # Shield of Spell Deflecting
 
-_Very rare (requires attunement)_
-_Armor +1 (shield)_
+<Heirloom
+  rarity="very rare"
+  attunement="required"
+  base="Shield (Heavy)"
+  quality="Mundane"
+  enchantment="+1 to AC"
+  damage="[% 1d4 bludgeoning %]"
+  mastery="Push"
+  burden="[= 3 burden =]">
 
 A polished bronze shield etched with whorls that shimmer subtly when struck by arcane force. the front depicts a demon's head in an agonizing scream, perhaps mockery, perhaps warning.
 
@@ -14,34 +21,33 @@ A polished bronze shield etched with whorls that shimmer subtly when struck by a
 
 ---
 
-## Armor Properties
+### Attributes
 
-- **Type**: Shield (Heavy)
-- **Damage**: [% 1d4 bludgeoning %].
-- **Weight**: [= 3 burden =].
+<Attributes />
 
----
+### Features
 
-## Effects
+<Feature
+  cost="1 Reaction, when you are affected by a spell"
+  charges="6"
+  recharge="regaining [% 1d4 %] at dawn">
 
-**While wielding this shield, you gain a +1 bonus to AC.**
+#### Spell Reflection
 
-The shield has **6 charges**. When you are affected by a spell—whether it targets you directly, includes you in an area of effect, or requires a saving throw—you can use your **reaction** to expend a number of charges equal to the **spell’s level**. If you do, the spell is **reflected back at the caster**, who becomes the **sole target** of the spell, using their original attack roll or save DC against themselves.
+When you are affected by a spell — whether it targets you directly, includes you in an area of effect, or requires a saving throw — you can use your reaction, before the spell's effects resolve, to expend a number of charges equal to the spell's level. If you do, the spell is reflected back at the caster, who becomes its sole target, resolving against their original attack roll or save DC.
 
-- You must use the shield **before** the spell’s effects are resolved.
-- If the spell originally had multiple targets or an area of effect (e.g. [_Pyroblast_](/en/library/spells/pyroblast)), all other targets in the area are affected as normal; the spell is **centered on the original caster** or redirected appropriately.
-- Spells that do not affect creatures (such as [_Perfect Barrier_](/en/library/spells/perfect-barrier)) cannot be reflected.
+If the spell originally had multiple targets or an area of effect (e.g. [_Pyroblast_](/en/library/spells/pyroblast)), all other targets in the area are affected as normal; the spell is centred on the original caster or redirected appropriately. Spells that do not affect creatures (such as [_Perfect Barrier_](/en/library/spells/perfect-barrier)) cannot be reflected.
 
-The shield **regains [% 1d4 %] charges** each day at **dawn**. If you expend the last charge, roll a **d20**. On a **1**, the shield loses all magical properties, becoming a mundane +1 shield.
+If you expend the last charge in this way, roll a d20; on a 1, the shield loses all magical properties and becomes a mundane +1 shield.
 
----
+</Feature>
 
-## Weapon Mastery
+<Feature mastery cost="On a hit" targets="the creature you hit">
 
-- **Push** _(Only available if the wielder has mastery with shields)_:  
-  After you successfully land an attack on a target, you can push that target up to [= 2 stride =] away from you.
+#### Wizard Fizzler
 
-- **Wizard Fizzler** _(1/Repose, or 3/Repose if the wielder has mastery with shields)_:
-  After you successfully land an attack on a target, you can deal an additional **[% 2d4 %]** force damage, and force the target to make a **DC 16** Intelligence saving throw, or become **unable to cast anything but cantrips** until the **end** of their **next turn**.
+The attack deals an additional [% 2d4 force %], and that target must succeed on a DC 16 Intelligence saving throw or be unable to cast anything but cantrips until the end of its next turn.
 
----
+</Feature>
+
+</Heirloom>

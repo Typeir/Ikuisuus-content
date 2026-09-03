@@ -5,20 +5,28 @@ contentType: heirlooms
 
 # Bag o’ Limbs
 
+<Heirloom
+  rarity="Very rare"
+  attunement="required"
+  base="Warhammer (Martial, Heavy, Versatile)"
+  quality="Mundane"
+  enchantment="+1 accuracy and damage"
+  damage="[% 1d8 bludgeoning %]"
+  versatile="[% 1d10 %]"
+  mastery="Push"
+  burden="[= 8 burden =]"
+  focus="spellcasting, while attuned">
+
 <ParallaxBackdrop
   src='/library/images/heirlooms/bag-o-limbs-background.webp'
-  alt='Bag o’ Limbs Backdrop'
+  alt='Bag o' Limbs Backdrop’
   blurPx={2}
   opacity={0.15}
 />
 
 <FloatedContainer side='right' width='42%'>
-  <Image src='/library/images/heirlooms/bag-o-limbs.webp' alt='Bag o’ Limbs' />
+  <Image src='/library/images/heirlooms/bag-o-limbs.webp' alt='Bag o' Limbs’ />
 </FloatedContainer>
-
-_Very rare (requires attunement)_
-_Warhammer +1 (Melee, Heavy, Versatile, Magical Mastery: Push)_  
-_Can be used as a spellcasting focus when attuned_
 
 A disgusting, oversized sack of **preserved demon limbs**, grafted and stitched into a loosely humanoid form. Each strike carries the volatile essence of its contents — mangled hands, horns, tendrils, and organs — and channels the **residual elemental energies** from the demons they were torn from.
 
@@ -26,44 +34,37 @@ A disgusting, oversized sack of **preserved demon limbs**, grafted and stitched 
 
 ---
 
-## Weapon Properties
+### Attributes
 
-- **Type**: Warhammer (Martial, Heavy, Versatile, Magical)
-- **Damage**: [% 1d8 bludgeoning %] ([% 1d10 %])
-- **Weight**: [= 8 burden =].
+<Attributes />
 
----
+### Traits
 
-## Effects
+<Trait>
 
-- **Magical Weapon**:This weapon has a **+1 accuracy and damage bonus** .
+#### Spiteful Havoc
 
-- **Spiteful Havoc**
+When you hit with this weapon, roll a d6 to determine an elemental surge from the stored limbs. On results 1–5, the target takes an additional [% 1d8 %] damage of the corresponding elemental type. On a 6, roll the d6 twice more and repeat this process for each die; you can escalate this chain up to your tier bonus times per attack.
 
-  Whenever you hit a creature with **Bag o' Limbs**, roll a **d6** to determine a random elemental surge from the stored limbs. The target takes an additional **[% 1d8 %] damage** of the rolled type, if the die lands on a 6, then rol two die and repeat the previous steps.
-  You can reroll dice for a single attack as many times as your tier bonus allows, so, for example, a character with a tier bonus of +3 and enough luck, could potentially roll up to 3 additional elemental damage dice on a single hit.
+| d6 | Elemental Effect |
+| --- | --- |
+| 1 | Fire |
+| 2 | Frost |
+| 3 | Acid |
+| 4 | Lightning |
+| 5 | Poison |
+| 6 | Reroll |
 
-  | d6  | Elemental Effect |
-  | --- | ---------------- |
-  | 1   | **Fire**         |
-  | 2   | **Frost**        |
-  | 3   | **Acid**         |
-  | 4   | **Lightning**    |
-  | 5   | **Poison**       |
-  | 6   | **Reroll**       |
+</Trait>
 
----
+### Features
 
-## Weapon Mastery
+<Feature mastery="Warhammers" targets="creatures within a [= 2 stride =] radius of the target">
 
-- **Push** _(Only available if the wielder has mastery with Warhammers)_:  
-  After you successfully land an attack on a target, you can push that target up to [= 2 stride =] away from you.
+#### Limb Lash
 
-- **Limb Lash** _(1/Repose, or 3/Repose if wielder has Mastery with Greathammers)_  
-  When you hit a creature with this weapon, you can choose to have the writhing mass within lash out at enemies around the target.
+When you hit a creature with this weapon, you can choose to have the writhing mass lash out at enemies around the target. Targets save Dexterity, taking [% 2d6 bludgeoning %] plus [% 2d8 %] Spiteful Havoc damage and are pushed [= 2 stride =] away from the target. Saving targets take half damage and are not pushed.
 
-- All creatures of your choice within **[= 2 stride =]** of the target must make a **Dexterity saving throw (DC = 9 + Proficiency + STR modifier)** or take **[% 2d6 bludgeoning %] + [% 2d8 %] _Spiteful Havoc_ damage** (roll twice on the table above).
-- On a success, they take half damage and are not knocked back.
-- On a failure, they are **pushed [= 2 stride =] away** from the target.
+</Feature>
 
----
+</Heirloom>

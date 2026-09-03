@@ -5,8 +5,16 @@ contentType: heirlooms
 
 # Filigree
 
-_Very Rare (requires attunement)_  
-_Dagger +2 (Light, Finesse, Thrown 20/60, Returning, Special, Mastery: Vex)_
+<Heirloom
+  rarity="Very Rare"
+  attunement="required"
+  base="Dagger (Light, Finesse, Thrown 20/60)"
+  quality="Enhanced"
+  enchantment="+2 accuracy and damage"
+  damage="[% 1d6 piercing %]"
+  mastery="Vex"
+  masterfulBlow="Seamline Reprise"
+  burden="[= 1 burden =]">
 
 **Filigree** was once the favored knife of **Master Seamstress Petunya**, used to skin beasts and stitch together the hides of her own making.  
 Its edge was never reforged, only resharpened, until it learned what to cut by memory alone.  
@@ -17,49 +25,54 @@ The knife hums faintly when drawn, as if recalling the rhythm of thread pulled t
 
 ---
 
-## Weapon Properties
+### Attributes
 
-- **Type**: Dagger (Simple, Light, Finesse, Thrown 20/60, Magical, Special: Dual Function)
-- **Damage**: [% 1d6 piercing %]
-- **Weight**: [= 1 burden =]
+<Attributes />
 
----
+### Traits
 
-## Special Features
+<Trait>
 
-- **(Special) Dual Function**:  
-  Filigree can be used as a set of artisan’s tools for **skinning, tailoring, and leatherworking**.  
-  When used this way, you have **advantage** on any relevant Dexterity or Wisdom checks.
+#### Dual Function
 
-- **Returning**:  
-  After each throw, Filigree reappears instantly in your hand in a curl of silver and gold thread.  
-  If you have multiple attacks, you can throw Filigree more than once per round.
+Filigree can be used as a set of artisan’s tools for skinning, tailoring, and leatherworking. When used this way, you have advantage on any relevant Dexterity or Wisdom checks.
 
-- **Seamcutter**:  
-  When you critically hit with Filigree, you may cut through seams or bindings.  
-  The target’s worn armor, clothing, or restraints are partially severed, reducing their **AC by 1 (to a maximum reduction of 5)** until repaired or replaced.
+</Trait>
 
----
+<Trait>
 
-## Effects
+#### Returning
 
-- **Enhanced Materials**: This weapon has an extra **die level** due to it's premium quality.
+After each throw, Filigree reappears instantly in your hand in a curl of silver and gold thread. If you have multiple attacks, you can throw Filigree more than once per round.
 
-- **Magical Weapon**: Filigree grants a **+2 accuracy and damage bonus** .
+</Trait>
 
-- **Threaded Return**:  
-  Once per [# kw:Repose #], when you throw Filigree, you may cause it to drag a **thread of seekersilk** back along its path.  
-  You may use this to retrieve a small to medium object (up to [= 3 burden =]), trip a creature (DC 15 Strength save or fall prone / pull [= 2 stride =]), or close a wound (granting the target 10 temporary hit points).
+<Trait>
 
----
+#### Seamcutter
 
-## Weapon Mastery
+When you critically hit with Filigree, you cut through seams or bindings. The target’s worn armor, clothing, or restraints are partially severed, reducing their AC by 1 (to a maximum reduction of 5) until repaired or replaced.
 
-- **Vex**: On hit, you have **advantage** on the next attack you make against the same target before the end of your next turn.
+</Trait>
 
-- **Mastery: Seamline Reprise (1/Repose, or 3/Repose if the wielder has mastery with daggers)**:  
-  As a Minor Action after hitting a creature with Filigree, you may trace the wound’s outline remotely.
-  - The creature takes **10 flat piercing damage** and gains **7 stacks of [# kw:condition:Bleeding #]**.
-  - Both flat damage and stacks are doubled if the attack was a critical hit.
+### Features
+
+<Feature cost="Once per [# kw:Repose #]" targets="a small to medium object (up to [= 3 burden =]) or a creature">
+
+#### Threaded Return
+
+When you throw Filigree, you may cause it to drag a thread of seekersilk back along its path to retrieve an object, trip a creature (which saves Strength against DC 15 or falls prone and is pulled [= 2 stride =]), or close a wound (granting it 10 temporary hit points).
+
+</Feature>
+
+<Feature cost="1 Minor Action" targets="a creature you hit with Filigree">
+
+#### Seamline Reprise <span>Masterful Blow</span>
+
+You trace the wound’s outline remotely. Targets take 10 flat piercing damage and gain 7 stacks of [# kw:condition:Bleeding #]. Both double if the attack was a critical hit.
+
+</Feature>
+
+</Heirloom>
 
 > “The seam knows not mercy nor cruelty — it only follows the hand that guides it.”

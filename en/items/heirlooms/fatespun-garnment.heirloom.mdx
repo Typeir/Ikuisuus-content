@@ -5,8 +5,12 @@ contentType: heirlooms
 
 # Fatespun Garment
 
-_Legendary (requires attunement)_  
-_Clothing (Robes, Unarmored)_
+<Heirloom
+  rarity="Legendary"
+  attunement="required"
+  base="Clothing (Robes, Unarmored)"
+  armorClass="13 + Dexterity Modifier"
+  burden="[= 1 burden =]">
 
 Woven in the ripples of eternity, beyond the reach of the sands of time, no one knows who seamed these robes, it's fated threads recursing unto infinity.
 
@@ -14,32 +18,45 @@ Woven in the ripples of eternity, beyond the reach of the sands of time, no one 
 
 ---
 
-## Armor Properties
+### Attributes
 
-- **Type**: Clothing (Robes, Unarmored)
-- **Armor Class**: 13 + Dexterity Modifier
-- **Weight**: [= 1 burden =]
----
+<Attributes />
 
-## Effects
+### Traits
 
-- **Stranded destiny**  
-  While wearing the Fatespun Garment, you may cast three Legendary Spells bound into the weave itself. 
-  Each casting costs **1 charge** and ignores all normal downsides or drawbacks of the spell.
+<Trait>
 
-| Spell                                                 | Charge Cost |
-| ----------------------------------------------------- | ----------- |
-| [_Eternal Return_](/en/library/spells/eternal-return) | 1           |
-| [_Prophecy_](/en/library/spells/prophecy)             | 1           |
-| [_Fate Tangle_](/en/library/spells/fate-tangle)       | 1           |
+#### Foretold Step
 
-- **Fate Reservoir**  
-  The garment holds **4 charges** and regains **1 expended charge** after each [# kw:Recovery #].
+You have advantage on ability checks made to read omens and understand prophecies, myth and legend.
 
-- **Foretold Step**  
-  You have advantage on ability checks made to read omens and understand prophecies, myth and legend.
+</Trait>
 
-- **Unraveling Grace**  
-  Once per [# kw:Recovery #], when you would be reduced to 0 hit points or less, you instead drop to **1 hit point**, as the garment briefly rewrites the moment of impact.
+<Trait>
 
----
+#### Unraveling Grace
+
+Once per [# kw:Recovery #], when you would be reduced to 0 hit points or less, you instead drop to 1 hit point, as the garment briefly rewrites the moment of impact.
+
+</Trait>
+
+### Features
+
+<Pool name="Fate Reservoir" max="4" recharge="1 after each [# kw:Recovery #]">
+</Pool>
+
+<Feature>
+
+#### Stranded Destiny
+
+While wearing the Fatespun Garment, you can cast the following legendary spells bound into the weave itself. Each casting costs 1 charge and ignores all normal downsides or drawbacks of the spell.
+
+| Spell | Charge Cost |
+| ----- | ----------- |
+| [_Eternal Return_](/en/library/spells/eternal-return) | 1 |
+| [_Prophecy_](/en/library/spells/prophecy) | 1 |
+| [_Fate Tangle_](/en/library/spells/fate-tangle) | 1 |
+
+</Feature>
+
+</Heirloom>

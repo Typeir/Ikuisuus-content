@@ -5,9 +5,14 @@ contentType: heirlooms
 
 # Narvaez’s Mighty Quiver
 
-_Rare (requires attunement)_  
-_Greatsword ([% 2d6 slashing %], Heavy, Two-Handed, Special: Thrown, Graze)_  
-_Can be used as a spellcasting focus when attuned_
+<Heirloom
+  rarity="Rare"
+  attunement="required"
+  base="Greatsword (Heavy, Two-Handed, Thrown)"
+  quality="Mundane"
+  damage="[% 2d6 slashing %]"
+  mastery="Graze"
+  focus="spellcasting, when attuned">
 
 A quiver filled with **brutish, oversized greatswords**, crafted for **both melee and ranged devastation**. The enchantment allows the wielder to hurl these blades with unnatural ease, their arcs crackling with energy.
 
@@ -15,92 +20,84 @@ A quiver filled with **brutish, oversized greatswords**, crafted for **both mele
 
 ---
 
-## Weapon Properties
+### Attributes
 
-- **Type**: Greatsword (Martial, Heavy, Two-Handed, Thrown (30/60), Special)
-- **Damage**: [% 2d6 slashing %]
-- **Weight per sword**: [= 3 burden =]
-- **Quiver weight**: [= 5 burden =]
+<Attributes />
 
-## Weapon mastery
+### Traits
 
-- **Graze** _(Greatsword Mastery)_:  
-  When you **miss** an attack, the target still takes damage equal to your **Strength modifier**
+<Trait>
 
-- **Thunderous Hurl** _(1/Repose, or 3/Repose with mastery)_:  
-  As an **attack**, you may hurl a greatsword from the quiver at a target within **[= 6 stride =]/[= 12 stride =]**:
-  - All creatures in a **[= 1 stride =]-wide line** between you and the target must make a **Dexterity saving throw**  
-    (DC = 8 + Strength mod + tier bonus)
-  - **On failure**: They take **[% 2d6 lightning %]**
-  - **On hit**: Target takes an additional **[% 2d6 bludgeoning %]**, and their **speed drops to 0** until your next turn
-  - The hurled greatsword **shatters on impact**
+#### Graze
 
-## Effects
+When you **miss** an attack, the target still takes damage equal to your **Strength modifier**.
 
-- **Mighty Armament**:
+</Trait>
 
-  - Requires **20 Strength** to wield. Otherwise, attacks are at **disadvantage**
-  - Holds up to **10 special greatswords**
-  - Drawn blades lose **Heavy** and **Two-Handed**, but gain **Thrown ([= 6 stride =]/[= 12 stride =])** and **Brittle** (breaks on impact)
+<Trait>
 
-- **Weapon Compatibility**:
+#### Mighty Armament
 
-  - **Standard greatswords** suffer **-5 to hit** unless modified (5gp, 1 hour by smith)
-  - **Magical greatswords** are **forcefully ejected** if placed in the quiver
+This quiver requires 20 Strength to wield; otherwise, attacks are at disadvantage. Each sword weighs [= 3 burden =]. The quiver itself weighs [= 5 burden =]. It holds up to 10 special greatswords. Drawn blades lose Heavy and Two-Handed, but gain Thrown ([= 6 stride =]/[= 12 stride =]) and Brittle (breaks on impact).
 
-- **Proficiency Override**:
+</Trait>
 
-  - While attuned, you gain **proficiency** with Narvaez’s quiver swords
+<Trait>
 
-  ### Fatebound Link
+#### Weapon Compatibility
 
-  A creature attuned to **Narvaez’s Mighty Quiver** cannot attune to **Carranza’s Great Épée**.  
-  If both wielders are within **[= 12 stride =]** of each other, they gain the following benefits:
+Standard greatswords suffer -5 to hit unless modified (5 gp, 1 hour by smith). Enchanted greatswords are forcefully ejected if placed in the quiver.
 
-  - **Ignore the Mighty Armament restriction** (Strength 20 no longer required).
-  - **Greatswords stored in the quiver weigh [= 0 burden =]** for carrying capacity.
-  - If the thread of fate is **severed**, these effects become **permanent**.
+</Trait>
 
-  ***
+<Trait>
 
-  ### Fated Demise
+#### Proficiency Override
 
-  If the wielder of **Carranza’s Great Épée** is **unconscious or slain**, and the wielder of the **Quiver** is still alive:
+While attuned, you gain proficiency with Narvaez’s quiver swords.
 
-  - The épée flies toward the quiver wielder if within **[= 120 stride =]**, traveling at:
-    - **[= 24 stride =] per round**, or
-    - **[= 12 stride =] per round through solid terrain**.
-  - The surviving wielder **automatically draws both weapons** (no action), treating them as **light** weapons.
+</Trait>
 
-  The wielder gains:
+<Trait>
 
-  - **Advantage on all attack rolls, saving throws, and skill checks**
-  - **Immunity to all conditions** except **prone** and **exhaustion**
-  - **1 level of exhaustion per round** until they fall unconscious
+#### Fatebound Link
 
-  If the fallen ally is **revived**, these effects **end immediately**, but exhaustion remains.  
-  The wielder may choose to **unbind** the weapons, which:
+A creature attuned to Narvaez’s Mighty Quiver cannot attune to Carranza’s Great Épée. If both wielders are within [= 12 stride =] of each other, they ignore the Mighty Armament restriction (Strength 20 no longer required), and greatswords stored in the quiver weigh [= 0 burden =] for carrying capacity. If the thread of fate is severed, these effects become permanent.
 
-  - **Removes all magic** from both items until **rebonded**
-  - **Inflicts 1 level of exhaustion** (unless already at 5)
-  - **Forces both wielders to unattune**
+</Trait>
 
-  If the wielders are **more than [= 120 stride =] apart**, the survivor gains **1 exhaustion per day at dawn** until the bond is restored or severed.
+<Trait>
 
-  ### Retribution Mode
+#### Fated Demise
 
-  While under **Fated Demise**, this weapon gains enhanced effects:
+If the wielder of Carranza’s Great Épée is unconscious or slain, and you are still alive, Carranza’s épée flies toward you if within [= 120 stride =], traveling at [= 24 stride =] per round or [= 12 stride =] per round through solid terrain. You automatically draw both weapons (no action), treating them as light weapons.
 
-  - **Storm Of Blades**_(3/Repose)_
+You gain advantage on all attack rolls, saving throws, and skill checks. You are immune to all conditions except prone and exhaustion. You gain 1 level of exhaustion per round until you fall unconscious.
 
-  When you take the **Attack action**, you may **replace one of your attacks** with a casting of **Call Lightning**, where thunderous, lightning blades fall from the sky. This version works regardless of the sky visibility, as the blades manifest from your quiver:
+If the fallen ally is revived, these effects end immediately, though exhaustion remains. You can choose to unbind the weapons, which severs their enchantment, inflicts 1 level of exhaustion (unless already at 5), and forces both wielders to unattune.
 
-  - You cast **Call Lightning** (DC = 8 + Strength modifier + tier bonus) as though using a **3rd-level spell slot**
-  - The storm cloud appears **instantly** over the target (no 10-minute casting delay)
-  - The spell uses **Strength** as your spellcasting ability
-  - You may call the bolt **immediately** on the same turn
-  - The spell requires no verbal, somatic, or material components when cast this way
-  - The weapon becomes **supercharged** for 1 minute:
-    - While Call Lightning is active, **drawn greatswords crackle**, dealing **+[% 1d6 lightning %]** on hit
+If you are more than [= 120 stride =] apart, you gain 1 exhaustion per day at dawn until the bond is restored or severed.
 
-  > If the thread of fate is severed, this ability becomes a **1-charge feature**, recharging **daily at noon**
+</Trait>
+
+### Features
+
+<Feature cost="as an attack" charges="1/Repose, or 3/Repose with mastery" targets="a target within [= 6 stride =]/[= 12 stride =]">
+
+#### Thunderous Hurl
+
+Hurl a greatsword from the quiver, making a ranged attack. Creatures in a [= 1 stride =]-wide line between you and the target save Dexterity against DC = 8 + Strength modifier + tier bonus, taking [% 2d6 lightning %]. When you hit the target, it takes [% 2d6 bludgeoning %], and its speed drops to 0 until the start of your next turn. The hurled greatsword shatters on impact.
+
+</Feature>
+
+<Feature cost="replace one attack" charges="3/Repose">
+
+#### Storm of Blades
+
+While under Fated Demise, when you take the Attack action, you can replace one of your attacks with a casting of Call Lightning, where thunderous, lightning blades fall from the sky. This version works regardless of sky visibility, as the blades manifest from your quiver. You cast Call Lightning (DC = 8 + Strength modifier + tier bonus) as though using a 3rd-level spell slot. The storm cloud appears instantly over the target (no 10-minute casting delay). The spell uses Strength as your spellcasting ability. You can call the bolt immediately on the same turn. The spell requires no verbal, somatic, or material components when cast this way. While Call Lightning is active, drawn greatswords crackle, dealing +[% 1d6 lightning %] on hit.
+
+If the thread of fate is severed, this ability recharges daily at noon instead.
+
+</Feature>
+
+</Heirloom>

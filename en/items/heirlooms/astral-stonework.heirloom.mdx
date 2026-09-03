@@ -5,47 +5,52 @@ contentType: heirlooms
 
 # Astral Stonework
 
-_Rare (requires attunement by a Druid of Stars)_  
-_Focus_
+<Heirloom
+  rarity="Rare"
+  attunement="by a Druid of Stars">
 
-A slab of dense astral shale resembling a worn grave marker, carved with drifting constellations that seem to rearrange themselves whenever the stone is held.
-Its glyphs are unmistakably written by Väkis, though whatever message they once carried is long lost.
-
+A slab of dense astral shale resembling a worn grave marker, carved with drifting constellations that seem to rearrange themselves whenever the stone is held. Its glyphs are unmistakably written by Väkis, though whatever message they once carried is long lost.
 
 > “☐☐☐☐ ☐☐☐☐☐☐☐☐☐ ☐☐☐ ☐ ☐☐ ☐☐ ☐☐☐☐☐ ☐☐☐☐ ☐☐☐☐☐☐☐☐” — Some Väki, forgotten in time.
 
 ---
 
-## Starry Form Enhancements
+### Traits
 
-While attuned to the Astral Stonework, whenever you activate Starry Form you immediately gain **temporary hit points equal to your druid level + your Wisdom modifier**.
+<Trait>
 
-Each constellation is additionally enhanced as follows:
+#### Starry Form Enhancements
 
----
+While attuned to the Astral Stonework, whenever you activate Starry Form you immediately gain temporary hit points equal to your druid level + your Wisdom modifier.
 
-### Archer — Twin Lumen Volley
+</Trait>
 
-When you use the Archer constellation’s bonus-action attack:
+<Trait cost="When the Chalice constellation triggers and you target a creature with a healing spell">
 
-- You fire **two astral arrows**, each with its own attack roll.
+#### Chalice — Overflowing Chalice
 
----
+The secondary healing from the constellation always restores the maximum possible amount.
 
-### Chalice — Overflowing Chalice
+</Trait>
 
-When the Chalice constellation triggers and you target a creature with a healing spell:
+### Features
 
-- The secondary healing from the constellation always restores the **maximum possible amount**.
+<Feature cost="When you use the Archer constellation’s bonus-action attack">
 
----
+#### Archer — Twin Lumen Volley
 
-### Dragon — Birth of the Cradle
+You fire two astral arrows, each with its own attack roll.
 
-While in the Dragon constellation, you may use a Minor Action to unleash a **[= 3 stride;ADJ =] cone of black astral flame**.
+</Feature>
 
-- Creatures in the area make a Dexterity saving throw against your spell save DC.  
-- On a failure, they take **[% 1d10 force %]**.  
-- On a success, they take half as much.
+<Feature cost="1 Minor Action" targets="creatures within a [= 3 stride;ADJ =] cone">
+
+#### Dragon — Birth of the Cradle
+
+While in the Dragon constellation, you unleash a cone of black astral flame. Targets save Dexterity, halving [% 1d10 force %].
+
+</Feature>
+
+</Heirloom>
 
 ---

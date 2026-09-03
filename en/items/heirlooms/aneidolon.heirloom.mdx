@@ -5,8 +5,16 @@ contentType: heirlooms
 
 # Aneidolon
 
-_Legendary (requires attunement)_  
-_Handgun +3 (Heavy, Ranged 30/90, Loading, Special, Mastery: Slow)_
+<Heirloom
+  rarity="Legendary"
+  attunement="required"
+  base="Handgun (Light, Loading, Special)"
+  quality="Supreme"
+  enchantment="+3 accuracy and damage"
+  damage="[% 2d10 piercing %]"
+  range="[= 12 stride =] / [= 36 stride =]"
+  mastery="Slow"
+  burden="[= 4 burden =]">
 
 The **Aneidolon** series of firearms were forged during the late Empyrean empire, each carefully brought to life by **Master Delphion** within the soot-stained,
 petrol-fumed forges of the industrial city of **Orpholea**.
@@ -16,58 +24,71 @@ Every discharge from Aneidolon is so potent the weapon turns a glowing white-hot
 The air around it shimmers with intense heat, barely a degree below melting point.
 For that reason, the _Delphionic Manual of Radiant Arms_ specifies that, while the weapon lacks a traditional reload mechanism and is thus theoretically semi-automatic, there must be a mandatory three-second vent period before a subsequent shot.
 
-> “May the light burn away the filth that has taken root upon these wretched lands.”  
-> — Excerpt from "To Forge Hope Itself", by **Delphion**, Master Gunsmith
+> “May the light burn away the filth that has taken root upon these wretched lands.”
+> — Excerpt from “To Forge Hope Itself”, by **Delphion**, Master Gunsmith
 
 ---
 
-## Weapon Properties
+### Attributes
 
-- **Type**: Handgun (Martial, Light, Loading, Magical, Special: Overheat)
-- **Damage**: [% 2d10 piercing %]
-- **Range**: [= 12 stride =] / [= 36 stride =]
-- **Weight**: [= 4 burden =]
+<Attributes />
 
----
+### Traits
 
-## Special Features
+<Trait>
 
-- **Overheat**:  
-  Aneidolon can safely fire **twice per round**.  
-  Firing a **third time before the start of your next turn** overheats the weapon.
-  - You immediately take **50 fire damage**.
-  - Aneidolon’s attack and damage bonus is reduced to **+1** until it is reforged by a master Gunsmith with Access or knowledge of _To Forge Hope Itself_.
+#### Overheat
 
----
+Aneidolon can safely fire twice per round. Firing a third time before the start of your next turn overheats the weapon. When this happens, you immediately take 50 fire damage, and Aneidolon’s enchantment is reduced to +1 until it is reforged by a master Gunsmith with knowledge of _To Forge Hope Itself_.
 
-## Effects
+</Trait>
 
-- **Magical Weapon**: Aneidolon grants a **+3 accuracy and damage bonus** .
+<Trait>
 
-- **Enhanced Materials**: This weapon has an extra **die level** due to it's premium quality.
+#### Oversized
 
-- **Oversized**: Aneidolon is larger than most handguns, doubling it's damage dice but imposing disadvantage on all attacks, unless wielded by a large or larger creature, or in two hands.
+Aneidolon is larger than most handguns, doubling it's damage dice but imposing disadvantage on all attacks, unless wielded by a Large or larger creature, or in two hands.
 
-- **Recoil**:  
-  Due to the immense power of Aneidolon, when you fire it, you can move [= 1 stride =] in the opposite direction to your target, without provoking oportunity attacks.
+</Trait>
 
-- **Magical Weapon**: Aneidolon grants a **+3 accuracy and damage bonus** .
+<Trait>
 
-- **Enhanced Materials**: This weapon has an extra **die level** due to it's premium quality.
+#### Recoil
 
-- **Ammunition**: Uses **Special cartridges**, nicknamed _"Holy Scriptures"_ or _"Epitaphs"_, each costing about **150** gold-equivalent pieces.
+When you fire Aneidolon, you can move [= 1 stride =] in the opposite direction to your target, without provoking oportunity attacks.
 
----
+</Trait>
 
-## Weapon Mastery
+<Trait>
 
-- **Slow** _(Only available if the wielder has mastery with Handguns)_: On hit, the target’s movement speed is reduced by **[= 2 stride =]** until the end of its next turn.
+#### Ammunition
 
-- **Niobean Punishment** _(1/Repose, or 3/Repose if the wielder has mastery with handguns)_:  
-  When you fire Aneidolon, you may do so beyond its safety cycle, invoking a **Niobean Punishment**—a discharge so precise and violent that even the wielder is struck by it.
-  - The attack deals **40 flat piercing damage** (plus relevant modifiers), doubled on a critical hit and ignores all cover and full cover up to [= 2 stride =] thick of all materials short of dense tombsteel, and all resistances and immunities to damage.
-  - The target must succeed on a **DC (11 + tier bonus + Dexterity modifier) Constitution saving throw** or be **blinded** and **stunned** until the end of its next turn.
-  - After the attack resolves, you take **15 fire damage**, and Aneidolon overheats.
-  - You cannot fire Aneidolon again until the end of your next turn.
+Aneidolon uses special cartridges, nicknamed _”Holy Scriptures”_ or _”Epitaphs”_, each costing about 150 gold-equivalent pieces.
 
----
+</Trait>
+
+### Features
+
+<Feature mastery="Handguns">
+
+#### Slow
+
+On hit, the target’s movement speed is reduced by [= 2 stride =] until the end of its next turn.
+
+</Feature>
+
+<Feature charges="1/[# kw:Repose #], or 3/[# kw:Repose #] if the wielder has mastery with Handguns" targets="one creature">
+
+#### Niobean Punishment <span>Masterful Blow</span>
+
+You can fire Aneidolon beyond its safety cycle to invoke a Niobean Punishment—a discharge so precise and violent that even you are struck by it.
+
+The attack deals 40 flat piercing damage (plus your relevant modifiers), doubled on a critical hit. This attack ignores cover and full cover up to [= 2 stride =] thick of all materials except dense tombsteel, and bypasses all resistances and immunities to damage.
+
+Targets save Constitution against DC 11 + your tier bonus + your Dexterity modifier, becoming blinded and stunned until the end of their next turn on failure.
+
+After the attack resolves, you take 15 fire damage. Aneidolon overheats, and you cannot fire it again until the end of your next turn.
+
+</Feature>
+
+</Heirloom>

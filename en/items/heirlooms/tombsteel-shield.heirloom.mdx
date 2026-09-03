@@ -5,8 +5,13 @@ contentType: heirlooms
 
 # Tombsteel Shield
 
-_Armor (shield)_  
-_rare_
+<Heirloom
+  rarity="rare"
+  base="Shield (Heavy)"
+  quality="Mundane"
+  damage="[% 1d4 bludgeoning %]"
+  mastery="Push"
+  burden="[= 5 burden =]">
 
 One of the very first applications of tombsteel was that of crafting rudimentary shields to protect empyrean warriors from the Silent Ones they hunted.
 It was during this hunts that the term "God Challenger" was coined, as the warriors eventually ran out of demons to fight, and turned their blades against the intruding gods.
@@ -15,28 +20,26 @@ It was during this hunts that the term "God Challenger" was coined, as the warri
 
 ---
 
-## Armor Properties
+### Attributes
 
-- **Type**: Shield (Heavy)
-- **Damage**: [% 1d4 bludgeoning %]
-- **Weight**: [= 5 burden =].
+<Attributes />
 
----
+### Features
 
-## Effects
+<Feature cost="1 Reaction" targets="a willing creature you can see within [= 1 stride =] of you">
 
-- **Entropic Guard**:
-  When a **willing creature you can see within [= 1 stride =] of you** is subjected to a **magical effect** that requires a **saving throw**, you can use your **reaction** to interpose the shield.
-  If you do, the protected creature gains **advantage on the saving throw** against that effect. You must declare this reaction **after the effect is identified but before the saving throw is rolled**.
+#### Entropic Guard
 
----
+When targets are subjected to a magical effect that requires a saving throw, you interpose the shield so they gain advantage on that saving throw. Declare this reaction after the effect is identified but before the saving throw is rolled.
 
-## Weapon Mastery
+</Feature>
 
-- **Push** _(Only available if the wielder has mastery with shields)_:  
-  After you successfully land an attack on a target, you can push that target up to **[= 2 stride =]** away from you.
+<Feature mastery cost="On a hit" targets="the target">
 
-- **Muzzling** _(Only available if the wielder has mastery with shields)_:  
-  After you successfully land an attack on a target, the target can cast **only cantrips** (no leveled spells) until the **end of their next turn**.
+#### Muzzling
 
----
+After you successfully land an attack on a target, the target can cast only cantrips (no leveled spells) until the end of its next turn.
+
+</Feature>
+
+</Heirloom>

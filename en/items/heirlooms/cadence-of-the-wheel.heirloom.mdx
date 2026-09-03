@@ -5,9 +5,14 @@ contentType: heirlooms
 
 # Cadence of the Wheel
 
-_Legendary (requires attunement by a school of necromancy wizard)_  
-_Staff +0 (Focus, Versatile, Mastery: None)_  
-_Can be used as a spellcasting focus when attuned_
+<Heirloom
+  rarity="Legendary"
+  attunement="by a school of necromancy wizard"
+  base="Staff (Versatile, Special)"
+  damage="[% 1d4 bludgeoning %]"
+  versatile="[% 1d6 %]"
+  burden="[= 1 burden =]"
+  focus="spellcasting, while attuned">
 
 Originally a weapon of entropy wielded by a foolish minion of Nigredo, fate and time transformed it into a beacon of perdurance and enmity towards the Lord of Flies and Rot.
 
@@ -20,46 +25,76 @@ If someone unattuned holds this heirloom, an overwhelming dissonance creeps into
 
 ---
 
-## Weapon Properties
+### Attributes
 
-- **Type**: Staff (Versatile, Special)
-- **Damage**: [% 1d4 bludgeoning %] ([% 1d6 %])
-- **Weight**: [= 1 burden =]
+<Attributes />
 
-## Special Features
+### Traits
 
-- **Spellcasting Focus**:  
-  May be used as a focus for casting spells and cantrips.
+<Trait>
 
-- **Bizarre Spellbook**:  
-  The staff functions as a spellbook for the wielder. It always contains all necromancy spells of the wizard spell list from level 1 to 9, as if they were always inscribed on its sheets of engraved parchment. 
-  The staff also rejects spells of 3rd level or lower that aren't from the necromancy school—the texts simply vanish as they are being copied onto its sheets.
+#### Bizarre Spellbook
 
-- **Unsavory Tune**:  
-  The staff vibrates with a dissonant pulse that unnerves unattuned holders. 
-  Any unattuned wielder loses the ability to use reactions until they drop the staff.
+The staff functions as a spellbook for the wielder. It always contains all necromancy spells of the wizard spell list from level 1 to 9, as if they were always inscribed on its sheets of engraved parchment. The staff also rejects spells of 3rd level or lower that aren't from the necromancy school—the texts simply vanish as they are being copied onto its sheets.
 
-- **Finale of Beauty**:  
-  Any creature reduced to 0 hit points by a necromancy spell cast by you is decomposed and rapidly covered in moss, fungi, and small flora. The decomposed creatures can't become undead.
+</Trait>
 
-## Effects
+<Trait>
 
-- **Adaptive Power**:  
-  You gain an accuracy bonus on spell attacks and a bonus to your spell save DC with necromancy school spells, each equal to half your tier bonus, rounded down.
+#### Unsavory Tune
 
-- **Unfit for Brutality**:  
-  Weapon damage dice are decreased by one step and the weapon lacks a mastery.
+The staff vibrates with a dissonant pulse that unnerves unattuned holders. Any unattuned wielder loses the ability to use reactions until they drop the staff.
 
-- **Unpredictable Sway**:  
-  While concentrating on the spell **Danse Macabre**, you gain a bonus to your AC and saving throws equal to the number of undead summoned by the spell that are still under your control.  
-  In addition, you can take a **Magic action** to cast the **Danse Macabre** spell without expending a spell slot. Once you cast the spell in this way, you can't do it again until the next dusk.
+</Trait>
 
-- **False Grace**:  
-  While under the **False Life** spell, your Armor Class becomes **13 + your Dexterity modifier** and any critical hit against you counts as a normal hit instead.
+<Trait>
 
-- **The Dance Oblige**:  
-  While attuned to the staff, you can't cast spells of 3rd level or lower that aren't from the necromancy school. 
-  In return, every spell you cast from the necromancy school is treated as being cast one level higher than the level you declare.
+#### Adaptive Power
 
+You gain an accuracy bonus on spell attacks and a bonus to your spell save DC with necromancy school spells, each equal to half your tier bonus, rounded down.
 
----
+</Trait>
+
+<Trait>
+
+#### Unfit for Brutality
+
+Weapon damage dice are decreased by one step and the weapon lacks a mastery.
+
+</Trait>
+
+<Trait>
+
+#### The Dance Oblige
+
+While attuned to the staff, you can't cast spells of 3rd level or lower that aren't from the necromancy school. In return, every spell you cast from the necromancy school is treated as being cast one level higher than the level you declare.
+
+</Trait>
+
+### Features
+
+<Feature>
+
+#### Finale of Beauty
+
+When a creature is reduced to 0 hit points by a necromancy spell you cast, it is decomposed and rapidly covered in moss, fungi, and small flora. The creature can't become undead.
+
+</Feature>
+
+<Feature cost="1 Magic Action" charges="1/next dusk">
+
+#### Unpredictable Sway
+
+While concentrating on the spell **Danse Macabre**, you gain a bonus to your AC and saving throws equal to the number of undead summoned by the spell that are still under your control. You can cast the **Danse Macabre** spell without expending a spell slot.
+
+</Feature>
+
+<Feature>
+
+#### False Grace
+
+While under the **False Life** spell, your Armor Class becomes **13 + your Dexterity modifier** and any critical hit against you counts as a normal hit instead.
+
+</Feature>
+
+</Heirloom>

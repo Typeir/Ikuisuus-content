@@ -5,8 +5,10 @@ contentType: heirlooms
 
 # Golden Nerve Mesh
 
-_Very rare (requires attunement)_  
-_Monstrous Graft (Skin, Chest)_
+<Heirloom
+  rarity="very rare"
+  attunement="required"
+  base="Monstrous Graft (Skin, Chest)">
 
 When the Order of the Wheel located their predecessor's tomb, they were surprised by the baroque machinery that kept their ancestor in an unholy stasis for millennia. The contraption was destroyed to preserve the sanctity of the cycle, but its precious metals were used to reconstruct the castigated flesh of the necromancer within.
 
@@ -15,12 +17,7 @@ When the Order of the Wheel located their predecessor's tomb, they were surprise
 
 ---
 
-## Item Properties
-
-- **Type**: Monstrous Graft (Skin, Chest)
-- **Weight**: —
-
-## Attachment
+### Attachment
 
 Attaching this monstrous graft to a humanoid requires an **8-hour surgical procedure** using:
 
@@ -37,17 +34,34 @@ Each hour of the procedure requires a **DC 30 Medicine check**.
 - On a failure, the subject takes **[% 5d6 dark %]** and must repeat the check.
 - If interrupted, the graft is rejected permanently.
 
-This graft is **permanent until surgically removed** (which destroys it). It is **mundane in nature** and cannot be healed or mended magically if botched.
+This graft is **permanent until surgically removed** (which destroys it). If botched, it cannot be healed or mended magically.
 
-## Effects
+### Traits
 
-- **False Vigor**:  
-  You suffer none of the weakness of old age and can't be aged magically. You can still die of old age, however.
+<Trait>
 
-- **Pulseless Heart**:  
-  You can ignore the effects of having 1 level of exhaustion, and you can finish a [# kw:Repose #] in half the time.
+#### False Vigor
 
-- **Direct Synapsis**:  
-  Pain has become simple data for you. You are immune to the **Invoke Agony** spell and once per rest you may add your proficiency modifier to an Athletics or Acrobatics check.
+You suffer none of the weakness of old age and can't be aged magically. You can still die of old age, however.
 
----
+</Trait>
+
+<Trait>
+
+#### Pulseless Heart
+
+You ignore the effects of 1 level of exhaustion, and you finish a [# kw:Repose #] in half the time.
+
+</Trait>
+
+### Features
+
+<Feature charges="1/Repose">
+
+#### Direct Synapsis
+
+Pain has become simple data for you. You are immune to the **Invoke Agony** spell. Once per rest, you can add your proficiency modifier to one Athletics or Acrobatics check.
+
+</Feature>
+
+</Heirloom>

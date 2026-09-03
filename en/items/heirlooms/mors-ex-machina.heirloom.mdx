@@ -5,6 +5,17 @@ contentType: heirlooms
 
 # Mors Ex Machina
 
+<Heirloom
+  rarity="very rare"
+  attunement="by a Bladesinger Wizard, Spellblade Warrior"
+  base="Longsword"
+  quality="Mundane"
+  damage="[% 1d8 slashing %]"
+  burden="[= 2 burden =]"
+  mastery="Vex"
+  masterfulBlow="Magic Overflow"
+  focus="spellcasting, while attuned">
+
 <ParallaxBackdrop
   src='/library/images/heirlooms/mors-ex-machina-bg.webp'
   alt='Mors Ex Machina background'
@@ -17,54 +28,66 @@ contentType: heirlooms
   />
 </FloatedContainer>
 
-_Very rare (requires attunement by a Bladesinger Wizard, Spellblade Warrior)_
-_Longsword (Melee, Martial, Magical, Special, Mastery: Vex)_
-_Can be used as a spellcasting focus when attuned_
-
 A forgotten fragment of an eternal guardian powered by pain. Even if the meaning of its creation has been lost to the ages, a tool of pain is required in any era. The pitch-black blade humns in the mechanical memory of its past.
 
 > "What is forged in agony cannot be unmade by peace."
 
 ---
 
-## Weapon Properties
+### Attributes
 
-- **Type**: Longsword (Martial, Melee, Special)
-- **Damage**: [% 1d8 slashing %]
-- **Weight**: [= 2 burden =].
+<Attributes />
 
----
+### Traits
 
-## Effects
+<Trait>
 
-- **Sword and Spell**:
-  This exotic longsword lacks the versatile property. While holding this weapon, you gain an accuracy and damage bonus on melee attacks equal to half your Tier Bonus (rounded down), as well as an equal accuracy bonus on spell attacks.
+#### Sword and Spell
 
-- **Arcane Overload**:
-  When you take the Attack action on your turn, you can replace one of the attacks with a casting of one of your cantrips that has a casting time of a Major Action. When you use this feature, you can't cast spells other than cantrips until the end of your next turn.
+This exotic longsword lacks the versatile property. While holding this weapon, you gain an accuracy and damage bonus on melee attacks equal to half your Tier Bonus (rounded down), as well as an equal accuracy bonus on spell attacks.
 
-- **Spellsword Duelist**:
-  When you make an attack with this sword, you can expend a spell slot as a Minor Action to summon an ethereal extension of the blade made of pure magic. The reach of your next weapon attack increases by [= 1 stride =], plus an additional [= 1 stride =] for each spell slot level above 1. Additionally, the next time you hit a creature with this sword before the start of your next turn, the target receives an additional [% 1d4 force %] for a 1st-level spell slot, plus [% 1d4 %] for each spell level higher than 1st, to a maximum of [% 6d4 %].
+</Trait>
 
----
+### Features
 
-## Curse
+<Feature cost="When you take the Attack action on your turn">
 
-- **Old Blasphemy**:
-  This weapon is cursed by old mechanisms that no longer hold a rightful place. Becoming attuned to it extends the curse to you. As long as you remain cursed, you are unwilling to part with the weapon, keeping it on your person at all times. While attuned to this weapon, you have Disadvantage on attack rolls made with weapons other than this one.
+#### Arcane Overload
 
-  In addition, while the weapon is on your person, you cannot use non-lethal attacks.
+You can replace one of your attacks with a cantrip that has a casting time of a Major Action. Until the end of your next turn, you can cast only cantrips.
 
-  This weapon consumes an essential part of its victims, severing them from the flow of destiny. A creature slain by this blade cannot be returned to life or unlife, relegated to be rowed by the tides of oblivion for eternity, an inanimate nothing destined to be carrion.
+</Feature>
 
----
+<Feature cost="expend a spell slot as a Minor Action" targets="your next weapon attack before the start of your next turn">
 
-## Weapon Mastery
+#### Spellsword Duelist
 
-- **Vex** _(Only available if the wielder has mastery with Longswords)_:
-  When you hit a creature with this weapon and deal damage, you have Advantage on your next attack roll against that creature before the end of your next turn.
+Your next weapon attack gains reach +[= 1 stride =], plus [= 1 stride =] for each spell slot level above 1st. On a hit, the target takes an additional [% 1d4 force %] for a 1st-level slot, plus [% 1d4 %] for each spell level higher than 1st, to a maximum of [% 6d4 %].
 
-- **Magic Overflow** _(1/Repose, or 3/Repose if the wielder has mastery with Longswords)_:
-  When you take the Attack action on your turn, you can replace one of your attacks with the casting of a spell that has a casting time of a Major Action. The level of the spell you cast cannot exceed 1 + the number of charges of this feature you spend. You must expend a spell slot as normal for the spell cast in this way.
+</Feature>
+
+<Feature cost="When you take the Attack action on your turn" charges="1/[# kw:Repose #], or 3/[# kw:Repose #] if the wielder has mastery with Longswords">
+
+#### Magic Overflow <span>Masterful Blow</span>
+
+You can replace one of your attacks with a spell that has a casting time of a Major Action. The spell's level cannot exceed 1 + the number of charges you spend. You must expend a spell slot as normal.
+
+</Feature>
+
+### Curses
+
+<Curse>
+
+#### Old Blasphemy
+
+This weapon is cursed by old mechanisms that no longer hold a rightful place. Becoming attuned to it extends the curse to you. As long as you remain cursed, you are unwilling to part with the weapon, keeping it on your person at all times. While attuned to this weapon, you have Disadvantage on attack rolls made with weapons other than this one.
+
+In addition, while the weapon is on your person, you cannot use non-lethal attacks.
+
+This weapon consumes an essential part of its victims, severing them from the flow of destiny. A creature slain by this blade cannot be returned to life or unlife, relegated to be rowed by the tides of oblivion for eternity, an inanimate nothing destined to be carrion.
+
+</Curse>
+
+</Heirloom>
 
 ---

@@ -5,8 +5,12 @@ contentType: heirlooms
 
 # Tombsteel Armor
 
-_Rare (requires attunement by a creature proficient in heavy armor)_  
-_Heavy Armor (Any, Nullifying)_
+<Heirloom
+  rarity="Rare"
+  attunement="by a creature proficient in heavy armor"
+  base="Heavy Armor (Any)"
+  burden="+[= 8 burden =] over base"
+  stealth="Disadvantage">
 
 Tombsteel was the hallmark alloy of the final Empyrean era—its cold silence a grim echo of that civilization's decline. Forged for the **Demon-Hunting Knights** and **Godslaying Battalions**, this armor is feared not for what it does, but for what it represents: the slow death of a world once governed by mechanical perfection.
 
@@ -16,28 +20,44 @@ Though forged of mundane alloy, tombsteel is nullifying: Fold-born magic falters
 
 ---
 
-## Armor Properties
+### Attributes
 
-- **Type**: Heavy Armor (Any, Nullifying)
-- **Weight**: +[= 8 burden =] over base
-- **Stealth**: Disadvantage
-- **Properties**:
+<Attributes />
 
----
+### Traits
 
-## Effects
+<Trait>
 
-- **Cold Eternal**  
-  While wearing Tombsteel Armor, any creature **without resistance or immunity to frost damage** must make a **DC 13 Constitution saving throw** at the **end of each hour**:
-  - **On failure**: Gain **1 level of exhaustion**
-  - This effect applies even while **unconscious or asleep**
+#### Cold Eternal
 
-- **Unyielding Defense**  
-  Gain a **+1 bonus to AC** due to the unnerving rigidity and unnatural construction of the armor.
+While wearing this armor, any creature without resistance or immunity to frost damage saves Constitution against DC 13 at the end of each hour. Failing creatures gain 1 level of exhaustion. This effect applies even while a creature is unconscious or asleep.
 
-- **Stalwart Frame**  
-  You have **advantage on saving throws** against **being pushed, pulled, or knocked prone**
+</Trait>
 
-- **Grave Chill** _(Passive – 10 charges)_  
-  The armor stores **up to 10 charges**, regaining **[% 1d4 +4 %] charges** at **midnight**
-  - When a creature hits you with a **melee weapon attack**, you may expend **1 charge** to deal **10 frost damage** to the attacker, as **tombsteel rime splinters** lash outward from your frame
+<Trait>
+
+#### Unyielding Defense
+
+While wearing this armor, you gain a **+1 bonus to AC** from the unnerving rigidity and unnatural construction of the armor.
+
+</Trait>
+
+<Trait>
+
+#### Stalwart Frame
+
+You have **advantage on saving throws** against **being pushed, pulled, or knocked prone**.
+
+</Trait>
+
+### Features
+
+<Feature cost="when a creature hits you with a melee weapon attack" charges="10" recharge="regaining [% 1d4 +4 %] at midnight">
+
+#### Grave Chill
+
+You may expend 1 charge to deal **10 frost damage** to the attacker, as **tombsteel rime splinters** lash outward from your frame.
+
+</Feature>
+
+</Heirloom>

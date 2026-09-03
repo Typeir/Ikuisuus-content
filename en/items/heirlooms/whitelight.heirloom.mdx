@@ -5,8 +5,13 @@ contentType: heirlooms
 
 # Whitelight
 
-_Legendary (requires attunement by a creature proficient in heavy armor and of good or lawful alignment)_  
-_Heavy Armor (Any, +3)_
+<Heirloom
+  rarity="Legendary"
+  attunement="by a creature proficient in heavy armor and of good or lawful alignment"
+  base="Heavy Armor (Any)"
+  enchantment="+3 to AC"
+  stealth="Disadvantage"
+  burden="+[= 8 burden =] over base">
 
 Whitelight is a blessed suit of **tombsteel armor**, silver-plated and engraved with **birds of war**—a relic of the Empyrean forges once used to clothe the Godslaying Battalions.  
 The alloy’s pale gleam recalls the white birds of prey that flock ashore on the cold Thulean dawns.
@@ -17,47 +22,68 @@ To don Whitelight is to bear another’s burden, to stand so that others may fal
 
 ---
 
-## Armor Properties
+### Attributes
 
-- **Type**: Heavy Armor (Any)
-- **Weight**: +[= 8 burden =] over base
-- **Stealth**: Disadvantage
+<Attributes />
 
----
+### Traits
 
-## Effects
+<Trait>
 
-- **Cold Eternal**  
-  While wearing Whitelight, any creature **without resistance or immunity to frost damage** must make a **DC 13 Constitution saving throw** at the **end of each hour** of continuous wear.
+#### Cold Eternal
 
-- **On failure**: Gain **1 level of exhaustion.**  
-  This effect applies even while **unconscious or asleep.**
+At the end of each hour of continuous wear, a creature wearing Whitelight without resistance or immunity to frost damage must make a DC 13 Constitution saving throw or gain one level of exhaustion. This effect applies even while unconscious or asleep. A creature whose base Constitution saving throw is 12 or more ignores this feature.
 
-If a creature's base Constitution saving throw is 12 or more, they ignore this feature.
+</Trait>
 
-- **Unyielding Defense**  
-  Gain a **+3 bonus to AC** due to the unnerving rigidity and supernatural precision of the alloy.
+<Trait>
 
-- **Stalwart Frame**  
-  You have **advantage on saving throws** against **being pushed, pulled, or knocked prone.**
+#### Unyielding Defense
 
-- **Radiant Sunrise** _(Passive – 10 charges)_  
-  The armor stores **up to 10 charges**, regaining **[% 1d4 +2 %] charges** at **sunrise.**  
-  When a creature hits you with a **melee weapon attack**, you may expend **1 charge** to deal **20 holy damage.**
+The unnerving rigidity and supernatural precision of the alloy grant you a +3 bonus to Armour Class.
 
-- **Under The White Bird's Wings** _(1/Repose)_  
-  Once per [# kw:Repose #], you may command the armor to shield another being from harm.
+</Trait>
 
-  As a **Major Action**, the armor casts **[_Heroism_](/en/library/spells/heroism)** on a willing creature within **[= 6 stride =]**, requiring no components.  
-  While the spell lasts:
-  - **Whitelight maintains concentration**, not you.
-  - The spell ends early only if you dismiss it (no action required).
+<Trait>
 
-- **Sanctified Alloy**  
-  You have **resistance to dark damage.**
+#### Sanctified Alloy
 
-- **Radiant Echo**  
-  If you are reduced to **0 hit points** or less while attuned to Whitelight, the armor releases a pulse of searing radiance.  
-  Each creature of your choice within **[= 4 stride =]** must make a **DC 18 Constitution saving throw**, taking **[% 6d10 holy %]** on a failure or half as much on a success.
+You have resistance to dark damage.
 
----
+</Trait>
+
+<Trait>
+
+#### Stalwart Frame
+
+You have advantage on saving throws against being pushed, pulled, or knocked prone.
+
+</Trait>
+
+### Features
+
+<Feature cost="1 Major Action, once per [# kw:Repose #]" targets="a willing creature within [= 6 stride =]">
+
+#### Under The White Bird's Wings
+
+You command the armor to shield another being from harm. The armor casts [_Heroism_](/en/library/spells/heroism) on the target, requiring no components. The armor maintains concentration on the spell, not you. The spell ends early only if you dismiss it, no action required.
+
+</Feature>
+
+<Feature targets="the creature that hit you">
+
+#### Radiant Sunrise
+
+The armor stores up to 10 charges, regaining [% 1d4 +2 %] charges at sunrise. When a creature hits you with a melee weapon attack, you can expend 1 charge to deal 20 holy damage to it.
+
+</Feature>
+
+<Feature cost="when you are reduced to 0 hit points or less while attuned to Whitelight" targets="creatures of your choice within [= 4 stride =]">
+
+#### Radiant Echo
+
+The armor releases a pulse of searing radiance. Targets make a DC 18 Constitution saving throw, taking [% 6d10 holy %] on a failure or half as much on a success.
+
+</Feature>
+
+</Heirloom>

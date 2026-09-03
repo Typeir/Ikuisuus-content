@@ -5,8 +5,14 @@ contentType: heirlooms
 
 # Queenless Hive
 
-_Very rare_  
-_Musket (Martial, Two-Handed, Ranged 40/120, Mastery: Slow)_
+<Heirloom
+  rarity="very rare"
+  base="Musket (Martial, Two-Handed, Loading, Ranged 40/120)"
+  quality="Mundane"
+  damage="[% 1d12 piercing %]"
+  burden="[= 5 burden =]"
+  mastery="Slow"
+  masterfulBlow="Rehoming">
 
 The epochial tides of the corpse-god bring with them seasons most uncanny, a summer of boiling blood, and a winter of gored coagulation. Yet in the interstitial times between the extremes
 The vermin that inhabit the dead moon set off to find a new nesting spot, leaving behind the hive that once nurtured them, along with the pupas and crysalis that would have become the next generation of the hive. 
@@ -17,22 +23,26 @@ Some are lucky, and instead become subjects to a different queen altogether.
 
 ---
 
-## Weapon Properties
+### Attributes
 
-- **Type**: Musket (Martial, Two-Handed, Loading, Ranged 40/120, Mastery: Slow)
-- **Damage**: [% 1d12 piercing %]
-- **Weight**: [= 5 burden =].
+<Attributes />
 
-## Special Features
+### Traits
 
-### Empty Hive  
+<Trait>
+
+#### Empty Hive
 
 The musket is a hollowed-out hive, and the vermin that once lived within it have left.
 As a consequence, the barrel and the chamber can fit a plethora of ill-advised ammunition formats, such as [_Trinkets_](/en/library/items/trinkets) of less than [= 2 burdens =] and one fourth of a [= 1 stride;ADJ =].
 
-## Effects
+</Trait>
 
-### Sound the alarm
+### Features
+
+<Feature>
+
+#### Sound the alarm
 
 The Locusts that inhabit the hive warn against incoming danger, shrieking when alerted by hostile pressence.
 
@@ -41,21 +51,25 @@ If the wielder would've been [# kw:surprised #], they are not, and instead gain 
 Up to **TB** creatures of the wielder's choice within [= 6 stride;ADJ =] of the wielder are also not [# kw:surprised #] and gain advantage on their initiative rolls.
 This feature consumes an use of the weapon's [# kw:masterful blow #].
 
-### Emptying the Hive
+</Feature>
+
+<Feature>
+
+#### Emptying the Hive
 
 When you take the Attack action with this weapon, if a [_Trinket_](/en/library/items/trinkets) is loaded, that trinket's range increases to that of this weapon, and the trinket's effects are applied as if it were a ranged attack with this weapon.
 If the trinket would deal no damage on an attack roll, it instead deals [% 1d10 bludgeoning %].
 Attacks made this way are considered to be made with the musket, and the wielder adds their bonuses as normal.
 Attacks made this way gain a +1 bonus to [# kw:accuracy #] and [# kw:damage #].
 
-## Weapon Mastery
+</Feature>
 
-- **Slow** _(Only available if the wielder has mastery with Muskets)_  
-  When this weapon deals damage, the target’s movement speed is reduced by **[= 2 stride =] until the start of your next turn**.
+<Feature>
 
-- **Rehoming** (1/Repose, or 3/Repose if the wielder has mastery with Muskets):  
-  When you take the Attack action, you can replace one of your attacks with a Rehoming shot.
-  - Make a special ranged attack with this weapon at advantage.
-  - On a hit, for a minute, the target has Disadvantage on Wisdom (Perception) checks, Dexterity (Stealth) checks and [# kw:Concentration #] checks. 
-    In addition, the target cannot benefit from the Invisible condition.
-    The target can [# kw:resist #] Constitution.
+#### Rehoming <span>Masterful Blow</span>
+
+When you take the Attack action, you can replace one of your attacks with a Rehoming shot. Make a special ranged attack with this weapon at advantage. On a hit, for a minute, the target has Disadvantage on Wisdom (Perception) checks, Dexterity (Stealth) checks and [# kw:Concentration #] checks and cannot benefit from the Invisible condition. The target can [# kw:resist #] Constitution.
+
+</Feature>
+
+</Heirloom>

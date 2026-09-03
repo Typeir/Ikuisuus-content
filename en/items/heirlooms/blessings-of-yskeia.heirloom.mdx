@@ -5,9 +5,18 @@ contentType: heirlooms
 
 # Blessings of Yskeia
 
-_Very rare (requires attunement)_  
-_Longsword +1 (Versatile, Magical, Mastery: Firestorm) and Greatshield (AC +3)_  
-_Can be used as a spellcasting focus when attuned_
+<Heirloom
+  rarity="very rare"
+  attunement="required"
+  base="Longsword"
+  quality="Mundane"
+  enchantment="+1 accuracy, +1 damage"
+  damage="[% 1d8 slashing %]"
+  versatile="[% 1d10 %]"
+  mastery="Sap"
+  masterfulBlow="Firestorm"
+  focus="spellcasting, while attuned"
+  burden="[= 2 burden =]">
 
 These paired weapons were forged before the dawn of this time, when four were the stars which shone bright. Their purpose now lost to time, they now only echo a sense of protection and refusal.
 
@@ -15,47 +24,74 @@ These paired weapons were forged before the dawn of this time, when four were th
 
 ---
 
-## Weapon Properties
+### Attributes
 
-- **Type**: Longsword (Martial, Versatile, Special, Magical) and Greatshield (Martial, Special, Magical, Heavy)
-- **Damage**: [% 1d8 slashing %] ([% 1d10 %])
-- **Weight**: [= 2 burden =] (longsword), [= 6 burden =] (shield)
+<Attributes />
 
-## Special Features
+### Traits
 
-- **Arcane Grip**:  
-  The sword is mounted to a gauntlet. You may perform **somatic components** even with both hands occupied.
+<Trait>
 
-- **Shield Collapse**:  
-  As a **Minor Action**, the shield can be collapsed into a **buckler (+1 AC against melee attacks, loses the Greatshield's slowing and dex-impeding properties)**. Re-expanding it takes a Minor Action.
+#### Arcane Grip
 
-## Effects
+The sword is mounted to a gauntlet. You may perform **somatic components** even with both hands occupied.
 
-- **Spiritual Conduit**:  
-  When you cast [**_Spiritual Weapon_**](/en/library/spells/spiritual-weapon), the conjured weapon takes the form of a **divine blunderbuss**. It deals **[% 2d12 force %]**, has a **range of [= 6 stride =]**, and gains the **Loading** property (it can be fired every other round).
+</Trait>
 
-- **Warchant Focusing**:  
-  You gain a **+1 accuracy bonus** made with [**_Spiritual Weapon_**](/en/library/spells/spiritual-weapon).
+<Trait>
 
-- **Magical Weapon**: This weapon has a **+1 accuracy and damage bonus** .
+#### Greatshield
 
-- **Spellcasting Focus**  
-  May be used as a focus for casting spells and cantrips.
+This item includes a **Greatshield** that grants **AC +3** and weighs [= 6 burden =].
 
----
+</Trait>
 
-## Weapon Mastery
+<Trait>
 
-- **Sap** _(Only available if the wielder has mastery with Longswords)_:  
-  When you hit a creature with this weapon, that creature has **disadvantage on its next Attack Roll** before the start of your next turn.
+#### Spiritual Conduit
 
-- **Firestorm** _(1/Repose, or 3/Repose if the wielder has mastery with Longswords)_:  
-  As a Major Action, you may fire a **divine shell** from your spiritual blunderbuss.
-  - Choose a point within **[= 24 stride =]**.
-  - All creatures within a **[= 4 stride;ADJ =] radius sphere** must make a **Dexterity saving throw (DC = 9 + your Tier Bonus + your Wisdom modifier)**
-  - **Failure**: [% 4d6 fire %] + [% 4d6 force %]
-  - **Success**: Half damage
+When you cast [**_Spiritual Weapon_**](/en/library/spells/spiritual-weapon), the conjured weapon takes the form of a **divine blunderbuss**. It deals **[% 2d12 force %]**, has a **range of [= 6 stride =]**, and gains the **Loading** property (it can be fired every other round).
 
-  The shell arcs overhead and ignores non-total cover.
+</Trait>
+
+<Trait>
+
+#### Warchant Focusing
+
+Attacks you make with [**_Spiritual Weapon_**](/en/library/spells/spiritual-weapon) gain a +1 accuracy bonus.
+
+</Trait>
+
+### Features
+
+<Feature cost="1 Minor Action">
+
+#### Shield Collapse
+
+The shield can be collapsed into a **buckler** (+1 AC against melee attacks, loses the Greatshield's slowing and dex-impeding properties). Re-expanding it takes a Minor Action.
+
+</Feature>
+
+<Feature mastery="Longswords">
+
+#### Sap
+
+When you hit with this weapon, that target has **disadvantage on its next Attack Roll** before the start of your next turn.
+
+</Feature>
+
+<Feature mastery="Longswords" cost="1 Major Action" targets="creatures within a [= 4 stride;ADJ =] radius sphere">
+
+#### Firestorm <span>Masterful Blow</span>
+
+You fire a **divine shell** from your spiritual blunderbuss. Choose a point within **[= 24 stride =]**.
+
+Targets save Dexterity, halving [% 4d6 fire %] and [% 4d6 force %].
+
+The shell arcs overhead and ignores non-total cover.
+
+</Feature>
+
+</Heirloom>
 
 ---

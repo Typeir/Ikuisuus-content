@@ -5,7 +5,10 @@ contentType: heirlooms
 
 # Tombsteel Skeleton
 
-_(Monstrous Graft), legendary, nullifying_
+<Heirloom
+  rarity="legendary"
+  base="Monstrous Graft (Skeleton, All)"
+  nullifying="">
 
 The lord of rot and flies has seeded tendrils all through the lands of Damocles, his dominion over death ever present.
 The mycelial network of _Stachybotrys ventralis_ spreads through all matter, living or inert, and fouls it into tombsteel—indiscriminate as entropy.
@@ -14,21 +17,14 @@ The mycelial network of _Stachybotrys ventralis_ spreads through all matter, liv
 
 ---
 
-## Item Properties
-
-- **Type**: Monstrous Graft (Skeleton, All)
-- **Weight**: —
-
-## Acquisition
+### Acquisition
 
 Unlike most monstrous grafts, the Tombsteel Skeleton cannot be surgically attached.  
 It manifests only as the result of **Nigredo’s curse of ossification**.  
 Those afflicted endure agonizing weeks of decay and failed saving throws until their skeleton stabilizes.  
 Survivors carry this graft forever.
 
----
-
-## Affliction Effects
+While this curse of ossification runs its course, these afflictions weigh on you:
 
 - You gain **3 permanent levels of exhaustion**.
 - Your **speed is reduced by [= 2 stride =]** after exhaustion halving.
@@ -36,55 +32,83 @@ Survivors carry this graft forever.
 - You cannot gain **temporary hit points from spells.**
 - You **do not lose exhaustion from resting**, though magical effects that remove exhaustion still function.
 
-- **Ossification Trial**:  
-  At the end of each [# kw:Repose #], or at **dawn** if no rest was taken, you must succeed on a **DC 20 Constitution saving throw [RR](/en/library/rules/the-measure-of-the-self/rolling-and-special-rolls)**.
-  - **On a failure**: You gain **1 level of exhaustion**, and the [# kw:Repose #] has no effect on you or any of your features.
-  - **On a success**: Mark **1 progress.** At **3 progress**, the body stabilizes and all exhaustion from this feature is removed, and the affliction turns into the heirloom.
-  - Effects that enhance metabolic functions such as [_Catnap_](/en/library/spells/catnap) can turn this roll into a normal roll instead of a Raw Roll, making it qualify for non-persistent modifiers such as the [_Bless_](/en/library/spells/bless) spell.
+**Ossification Trial**. At the end of each [# kw:Repose #], or at **dawn** if no rest was taken, you must succeed on a **DC 20 Constitution saving throw [RR](/en/library/rules/the-measure-of-the-self/rolling-and-special-rolls)**. On a failure, you gain **1 level of exhaustion**, and the [# kw:Repose #] has no effect on you or any of your features. On a success, you mark **1 progress**; at **3 progress**, the body stabilizes and all exhaustion from this feature is removed, and the affliction turns into the heirloom.
+
+Effects that enhance metabolic functions such as [_Catnap_](/en/library/spells/catnap) can turn this roll into a normal roll instead of a Raw Roll, making it qualify for non-persistent modifiers such as the [_Bless_](/en/library/spells/bless) spell.
 
 ---
 
-## Heirloom Effects
+### Traits
 
-When the ossification stabilizes, you permanently gain the following traits:
+<Trait>
 
-- **Entropic Nature**:
-  - You gain **resistance to dark and frost damage.**
-  - You gain a **+1 bonus to AC and saving throws**, and your natural armor baseline becomes **13** instead of 10.
-  - You have **advantage on saving throws** against spells and other magical effects.
-  - You have **disadvantage** on saving throws or checks made to resist **counterspells, dispels, or antimagic effects**, and cannot have **advantage on them from any source**.
-  - When you attempt to **attune or unattune** from an heirloom or artifact, the process requires **twice the normal time** and you make the roll at **disadvantage.**
-  - Rituals take twice as long to perform when you are involved.
+#### Entropic Nature
 
-- **Inert Core**:  
-  Magical healing and temporary hit points from spells you receive are **halved.**
+- You gain **resistance to dark and frost damage.**
+- You gain a **+1 bonus to AC and saving throws**, and your natural armor baseline becomes **13** instead of 10.
+- You have **advantage on saving throws** against spells and other magical effects.
+- You have **disadvantage** on saving throws or checks made to resist **counterspells, dispels, or antimagic effects**, and cannot have **advantage on them from any source**.
+- When you attempt to **attune or unattune** from an heirloom or artifact, the process requires **twice the normal time** and you make the roll at **disadvantage.**
+- Rituals take twice as long to perform when you are involved.
 
-- **Unmalleable Flesh**:  
-  You cannot be polymorphed or otherwise transformed against your will (you automatically succeed on such saving throws).
+</Trait>
 
-- **Dead Weight**:  
-  Tombsteel is vastly heavier than bone.
-  - If you have **Strength 15 or higher**, your **speed is permanently reduced by [= 1 stride =]**
-  - If you have **Strength 14 or lower**, your **speed is halved.**
-  - You have **advantage on saving throws** against being pushed, pulled, knocked prone, or otherwise forcibly moved.
-  - If forced movement requires no save or contest, the distance is **halved against you.**
-  - You count as **one size larger** for the purposes of carrying capacity, push/drag/lift limits, and resisting forced movement.
+<Trait>
 
----
+#### Inert Core
 
-## Entropic magic
+Magical healing and temporary hit points from spells you receive are **halved.**
 
-- **Blurred Veil**:  
-  Your tombsteel skeleton disrupts your magical capabilities and skills. Your maximum spell slots decrease by **1 for every level**, to a minimum of one. Whenever you gain new spell slots, this limit is reapplied.
+</Trait>
 
-- **Overcharged Casting**:  
-  In order to overpower the nullifying energies in your bones, you must overcharge your spells.
-  - Every spell you cast is treated as being cast **one level higher** than the level you declare.
+<Trait>
 
-- **Nullify magic**:  
-  Once per dawn, you may end **all magical effects currently affecting you**—positive and negative alike.  
-  You then become **immune to all such effects** (both beneficial and harmful) for **1 hour.**  
-  For each effect you absorb this way, you gain **10 temporary hit points**, which fade after 1 hour.  
-  These hit points ignore halving effects from this item.
+#### Unmalleable Flesh
 
----
+You cannot be polymorphed or otherwise transformed against your will (you automatically succeed on such saving throws).
+
+</Trait>
+
+<Trait>
+
+#### Dead Weight
+
+Tombsteel is vastly heavier than bone.
+- If you have **Strength 15 or higher**, your **speed is permanently reduced by [= 1 stride =]**
+- If you have **Strength 14 or lower**, your **speed is halved.**
+- You have **advantage on saving throws** against being pushed, pulled, knocked prone, or otherwise forcibly moved.
+- If forced movement requires no save or contest, the distance is **halved against you.**
+- You count as **one size larger** for the purposes of carrying capacity, push/drag/lift limits, and resisting forced movement.
+
+</Trait>
+
+<Trait>
+
+#### Blurred Veil
+
+Your tombsteel skeleton disrupts your magical capabilities and skills. Your maximum spell slots decrease by **1 for every level**, to a minimum of one. Whenever you gain new spell slots, this limit is reapplied.
+
+</Trait>
+
+<Trait>
+
+#### Overcharged Casting
+
+In order to overpower the nullifying energies in your bones, you must overcharge your spells. Every spell you cast is treated as being cast **one level higher** than the level you declare.
+
+</Trait>
+
+### Features
+
+<Feature>
+
+#### Nullify magic
+
+Once per dawn, you may end **all magical effects currently affecting you**—positive and negative alike.  
+You then become **immune to all such effects** (both beneficial and harmful) for **1 hour.**  
+For each effect you absorb this way, you gain **10 temporary hit points**, which fade after 1 hour.  
+These hit points ignore halving effects from this item.
+
+</Feature>
+
+</Heirloom>

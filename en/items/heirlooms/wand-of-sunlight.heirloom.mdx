@@ -5,19 +5,36 @@ contentType: heirlooms
 
 # Wand of Sunlight
 
-_Rare_  
-_Wand_
+<Heirloom
+  rarity="Rare"
+  base="Wand">
 
 The Brumeans used these to calibrate their solar cannons before departing for the Glass Wars in Cavar. 
 The brilliance of those machines was obscured only by the atrocities the Empire committed with them.
 
 ---
 
-## Properties
+### Attributes
+
+<Attributes />
+
+### Traits
+
+<Trait>
+
+#### Stored Charges
 
 When first discovered, the Wand of Sunlight holds **[% 4d6 %] charges**. Each activation **expends 1 charge**. Once all charges are used, the wand becomes inert and cannot be recharged.
 
-To activate the wand, a creature must spend a Major Action and roll **[% 1d10 %]**, consulting the following table:
+</Trait>
+
+### Features
+
+<Feature cost="1 Major Action">
+
+#### Activation
+
+Roll **[% 1d10 %]** and consult the following table:
 
 | Roll                      | Effect                                                                                                                                                                         |
 | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -28,8 +45,12 @@ To activate the wand, a creature must spend a Major Action and roll **[% 1d10 %]
 | **7**                     | [_Bless_](/en/library/spells/bless) cast at 3rd level on all allies within [= 24 stride =] radius (up to 9 creatures).                                                     |
 | **9**                     | [_Sunbeam_](/en/library/spells/sunbeam), targeting a creature within [= 12 stride =] (DC 15 Con save or blinded; [% 6d8 holy %]).                                       |
 
----
+</Feature>
 
-- This wand is an **unpredictable relic**, originally used not as a weapon, but as a calibration tool for solar siege arrays.
-- The **sunlight effect** can **disrupt illusions, reveal hidden glyphs**, or trigger wards tied to solar exposure.
-- **Once all charges are spent, the wand turns cold and blackened, its photonic core burned out.**
+This wand is an **unpredictable relic**, originally used not as a weapon, but as a calibration tool for solar siege arrays.
+
+The **sunlight effect** can **disrupt illusions, reveal hidden glyphs**, or trigger wards tied to solar exposure.
+
+**Once all charges are spent, the wand turns cold and blackened, its photonic core burned out.**
+
+</Heirloom>

@@ -5,8 +5,15 @@ contentType: heirlooms
 
 # Chromatic Armament
 
-_Very rare (requires attunement by a homunculus)_  
-_Large Greatsword +2 (Melee, Magical, Mastery: Vex)_
+<Heirloom
+  rarity="Very rare"
+  attunement="requires attunement by a homunculus"
+  base="Large Greatsword"
+  quality="Mundane"
+  enchantment="+2 accuracy and damage"
+  damage="[% 4d6 slashing %]"
+  mastery="Vex"
+  burden="[= 5 burden =]">
 
 Undecided between a weapon, a tool and a relic deserving of an opulent exhibition, the Chromatic Armament is said to have been designed by
 Heirloom designed by Plato Moumtzis, Damocles's most devoted Homunculi scholar and preservationist. It is unkown why Plato settled on the design for this greatsword,
@@ -19,53 +26,75 @@ Alas, the records are as sparce as are the surviving pieces, and the truth may n
 
 ---
 
-## Weapon Properties
+### Attributes
 
-- **Type**: Greatsword (Martial, Magical, Large)
-- **Damage**: [% 4d6 slashing %]
-- **Weight**: [= 5 burden =]
+<Attributes />
 
----
+<Pool name="Hit Dice" max="double the wielder's tier bonus" recharge="at Repose">
 
-## Special Features
+Stoke the Flame grants a Hit Dice pool that can be used to empower dice rolls according to the flame's color:
 
-- **Rite of Kindling**:  
-  By focusing on the Armament for **10 minutes**, a homunculus can light the Armament with their homunculus flame.
+| Flame Color | Damage Type |
+| ----------- | ----------- |
+| Red         | Fire        |
+| Blue        | Lightning   |
+| Green       | Acid        |
+| Purple      | Psychic     |
+| Black       | Force       |
+| Golden      | True Damage |
 
-- **Shifting Form**:  
-  When in lantern form, the Armament behaves like a hooded lantern, with the only particularity being that the color of the light emanated depends on the color of the flame within the lantern. It can change back and forth to its greatsword form at no cost.
+</Pool>
 
-- **Emergency Flame**:  
-  If a homunculus wielding the Armament would have its flame extinguished, the Armament's flame can extinguish in its place. The Armament turns into a regular greatsword until the **Rite of Kindling** is performed on it again.
+### Traits
 
----
+<Trait>
 
-## Effects
+#### Rite of Kindling
 
-- **Magical Weapon**:  
-  This weapon has a **+2 accuracy and damage bonus** .
+By focusing on the Armament for 10 minutes, a homunculus can light the Armament with their homunculus flame.
 
-- **Stoke the Flame**:  
-  The weapon deals an extra **[% 1d6 %] damage** on impact, determined by the color of the homunculus flame. Additionally, it grants a **Hit Dice pool** equal to double the wielder's tier bonus. These dice can be used to empower dice rolls according to the flame's color.
+</Trait>
 
-  | Flame Color | Damage Type |
-  | ----------- | ----------- |
-  | Red         | Fire        |
-  | Blue        | Lightning   |
-  | Green       | Acid        |
-  | Purple      | Psychic     |
-  | Black       | Force       |
-  | Golden      | True Damage |
+<Trait>
 
----
+#### Shifting Form
 
-## Weapon Mastery
+When in lantern form, the Armament behaves like a hooded lantern, with the only particularity being that the color of the light emanated depends on the color of the flame within the lantern. It can change back and forth to its greatsword form at no cost.
 
-- **Vex** _(Only available if the wielder has mastery with Greatswords)_:  
-  On hit, you have **advantage** on the next attack you make against the same target before the end of your next turn.
+</Trait>
 
-- **Enkindle** _(1/Repose, or 3/Repose if the wielder has mastery with Greatswords)_:  
-  After making an attack with the weapon — regardless of whether the attack hits — a **[= 1 stride;ADJ =] wide, [= 10 stride;ADJ =] long line** aligned with you and the target blasts from the point of impact. Each creature in the line must make a **Dexterity saving throw**, taking **[% 6d6 %] damage** of a type depending on the active flame on a failure, or half damage on a success.  
-  After this, roll **[% 1d6 %]** — on a result of **1 or 2**, the homunculus flame is snuffed out.
+<Trait>
 
----
+#### Emergency Flame
+
+If a homunculus wielding the Armament would have its flame extinguished, the Armament's flame can extinguish in its place. The Armament turns into a regular greatsword until the Rite of Kindling is performed on it again.
+
+</Trait>
+
+<Trait>
+
+#### Stoke the Flame
+
+The weapon deals an extra [% 1d6 %] damage on impact, determined by the color of the homunculus flame.
+
+</Trait>
+
+### Features
+
+<Feature mastery>
+
+#### Vex
+
+On hit, you have advantage on the next attack you make against the same target before the end of your next turn.
+
+</Feature>
+
+<Feature cost="After making an attack with the weapon — regardless of whether the attack hits" charges="1/Repose, or 3/Repose if the wielder has mastery with Greatswords" targets="creatures in a [= 1 stride;ADJ =] wide, [= 10 stride;ADJ =] long line aligned with you and the target">
+
+#### Enkindle
+
+Targets save Dexterity, halving [% 6d6 %] of the type determined by the active flame. After this, roll [% 1d6 %]; on a result of 1 or 2, the homunculus flame is snuffed out.
+
+</Feature>
+
+</Heirloom>

@@ -5,31 +5,41 @@ contentType: heirlooms
 
 # Cloak of the Black One
 
-_Very rare (requires attunement)_  
-_Clothing, Cloak_
+<Heirloom
+  rarity="Very rare"
+  attunement="required"
+  base="Cloak"
+  enchantment="+1 bonus to saving throws"
+  burden="[= 5 burden =]">
 
-A cloak made of small tombsteel scales, held together by a network of fuming, black fungus.
-It writhes as if alive, yet it is naught but death.
+A cloak made of small tombsteel scales, held together by a network of fuming, black fungus. It writhes as if alive, yet it is naught but death.
 
 > “The black winds brought only death”
 
 ---
 
-## Item Properties
+### Attributes
 
-- **Type**: Clothing (Cloak)
-- **Weight**: [= 5 burden =]
+<Attributes />
 
----
+### Traits
 
-## Effects
+<Trait>
 
-- **Enhanced protection**:
-  - While you wear this cloak, you gain a +1 bonus to saving throws.
-- **Black Wind Step**:  
-  A number of times per [# kw:Recovery #] equal to your **tier bonus**, you may move up to [= 2 stride =] in a straight line.
-  - This movement does **not provoke opportunity attacks**.
-  - Creatures you move through must succeed on a **Strength saving throw (DC = 8 + your tier bonus + your Strength or Dexterity modifier)** or fall **prone**.
-  - This movement ignores difficult terrain.
+#### Enhanced Protection
 
----
+While you wear this cloak, you gain a +1 bonus to saving throws.
+
+</Trait>
+
+### Features
+
+<Feature charges="equal to your tier bonus per [# kw:Recovery #]" targets="creatures you move through">
+
+#### Black Wind Step
+
+You move up to [= 2 stride =] in a straight line. This movement does not provoke opportunity attacks and ignores difficult terrain. Targets save Strength or fall prone.
+
+</Feature>
+
+</Heirloom>
