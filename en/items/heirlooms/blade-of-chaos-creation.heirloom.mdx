@@ -14,6 +14,7 @@ contentType: heirlooms
   damage="[% 1d8 slashing %]"
   versatile="[% 1d10 %]"
   mastery="Sap"
+  masterfulBlow="Fear Rend"
   burden="[= 2 burden =]"
   focus="spellcasting, when attuned">
 
@@ -61,11 +62,10 @@ This weapon **chains itself to another**, making **both count as the wielder’s
 
 ### Features
 
-<Feature cost="1 Major Action" charges="1/Repose, or 3/Repose if the wielder has mastery with Longswords" targets="a creature">
+<Feature cost="1 Major Action" charges="1/[# kw:Repose #], or 3/[# kw:Repose #] with mastery" targets="a creature">
 
-#### Fear Rend
-
-You roll your **next attack at advantage**. If you **hit a creature with this attack**, the target must succeed on an **Intelligence saving throw** or become **Frightened** briefly. While **Frightened**, the target **cannot move closer** to the wielder and has **disadvantage** on attack rolls, saving throws, and skill checks. The DC gains an accuracy bonus of 1.
+#### Fear Rend <span>Masterful Blow</span>
+You roll your **next attack at advantage**. If you **hit a creature with this attack**, the target saves **Intelligence** or becomes **[# kw:condition:Frightened #]** [# kw:briefly #]. While **[# kw:condition:Frightened #]**, the target **cannot move closer** to the wielder and has **disadvantage** on attack rolls, saving throws, and skill checks. The DC gains an [# kw:accuracy #] bonus of 1.
 
 </Feature>
 

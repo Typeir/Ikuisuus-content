@@ -13,6 +13,7 @@ contentType: heirlooms
   enchantment="+1 accuracy and damage"
   damage="[% 1d12 slashing %]"
   mastery="Sap, Cleave"
+  masterfulBlow="Edge of Duality"
   burden="[= 4 burden =]"
   focus="spellcasting, if you have Pact of the Blade">
 
@@ -58,16 +59,15 @@ If the wielder is a Villein, this weapon must be used as the wielder's pact weap
 
 #### Motions of Divinity
 
-This weapon is cursed. While attuned, you cannot willingly remove or drop it unless you are unconscious. If you begin a rest of any kind without having dealt damage to at least one creature other than you, and not having restored hit points to a creature other than you, you gain no benefits from the rest. The creature's CR must be at least 1/2 of your total level.
+This weapon is cursed. While attuned, you cannot willingly remove or drop it unless you are [# kw:condition:unconscious #]. If you begin a rest of any kind without having dealt damage to at least one creature other than you, and not having restored hit points to a creature other than you, you gain no benefits from the rest. The creature's CR must be at least 1/2 of your total level.
 
 </Curse>
 
 ### Features
 
-<Feature cost="1 Major Action" targets="creatures in the [= 6 stride;ADJ =] line">
+<Feature charges="1/[# kw:Repose #], or 3/[# kw:Repose #] with mastery" cost="1 Major Action" targets="creatures in the [= 6 stride;ADJ =] line">
 
-#### Edge of Duality
-
+#### Edge of Duality <span>Masterful Blow</span>
 Hurl Sacred Heresy in a [= 6 stride;ADJ =] line. It cleaves through everything in its path before returning to your hand. Targets save Dexterity against a DC of 9 plus your tier bonus and Strength modifier. Failing targets take [% 2d12 slashing %], [% 2d8 dark %], and [% 2d8 holy %]. Saving targets are instead healed for [% 2d8 %] plus your Strength modifier. You gain temporary hit points equal to half the total damage and healing caused, rounded up.
 
 </Feature>

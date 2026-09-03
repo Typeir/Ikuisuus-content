@@ -12,6 +12,7 @@ contentType: heirlooms
   quality="Mundane"
   damage="[% 2d6 slashing %]"
   mastery="Graze"
+  masterfulBlow="Thunderous Hurl"
   focus="spellcasting, when attuned">
 
 A quiver filled with **brutish, oversized greatswords**, crafted for **both melee and ranged devastation**. The enchantment allows the wielder to hurl these blades with unnatural ease, their arcs crackling with energy.
@@ -70,27 +71,26 @@ A creature attuned to Narvaez’s Mighty Quiver cannot attune to Carranza’s Gr
 
 #### Fated Demise
 
-If the wielder of Carranza’s Great Épée is unconscious or slain, and you are still alive, Carranza’s épée flies toward you if within [= 120 stride =], traveling at [= 24 stride =] per round or [= 12 stride =] per round through solid terrain. You automatically draw both weapons (no action), treating them as light weapons.
+If the wielder of Carranza’s Great Épée is [# kw:condition:unconscious #] or slain, and you are still alive, Carranza’s épée flies toward you if within [= 120 stride =], traveling at [= 24 stride =] per round or [= 12 stride =] per round through solid terrain. You automatically draw both weapons (no action), treating them as light weapons.
 
-You gain advantage on all attack rolls, saving throws, and skill checks. You are immune to all conditions except prone and exhaustion. You gain 1 level of exhaustion per round until you fall unconscious.
+You gain advantage on all attack rolls, saving throws, and skill checks. You are immune to all conditions except [# kw:condition:prone #] and [# kw:condition:exhaustion #]. You gain 1 level of [# kw:condition:exhaustion #] per round until you fall [# kw:condition:unconscious #].
 
-If the fallen ally is revived, these effects end immediately, though exhaustion remains. You can choose to unbind the weapons, which severs their enchantment, inflicts 1 level of exhaustion (unless already at 5), and forces both wielders to unattune.
+If the fallen ally is revived, these effects end immediately, though [# kw:condition:exhaustion #] remains. You can choose to unbind the weapons, which severs their enchantment, inflicts 1 level of [# kw:condition:exhaustion #] (unless already at 5), and forces both wielders to unattune.
 
-If you are more than [= 120 stride =] apart, you gain 1 exhaustion per day at dawn until the bond is restored or severed.
+If you are more than [= 120 stride =] apart, you gain 1 [# kw:condition:exhaustion #] per day at dawn until the bond is restored or severed.
 
 </Trait>
 
 ### Features
 
-<Feature cost="as an attack" charges="1/Repose, or 3/Repose with mastery" targets="a target within [= 6 stride =]/[= 12 stride =]">
+<Feature cost="1 Reflex" trigger="as an attack" charges="1/[# kw:Repose #], or 3/[# kw:Repose #] with mastery" targets="a target within [= 6 stride =]/[= 12 stride =]">
 
-#### Thunderous Hurl
-
-Hurl a greatsword from the quiver, making a ranged attack. Creatures in a [= 1 stride =]-wide line between you and the target save Dexterity against DC = 10 + Strength modifier + tier bonus, taking [% 2d6 lightning %]. When you hit the target, it takes [% 2d6 bludgeoning %], and its speed drops to 0 until the start of your next turn. The hurled greatsword shatters on impact.
+#### Thunderous Hurl <span>Masterful Blow</span>
+Hurl a greatsword from the quiver, making a ranged attack. Creatures in a [= 1 stride;ADJ =]-wide line between you and the target save Dexterity against DC = 10 + Strength modifier + tier bonus, taking [% 2d6 lightning %]. When you hit the target, it takes [% 2d6 bludgeoning %], and its speed drops to 0 until the start of your next turn. The hurled greatsword shatters on impact.
 
 </Feature>
 
-<Feature cost="replace one attack" charges="3/Repose">
+<Feature cost="1 Reflex" trigger="replace one attack" charges="3/Repose">
 
 #### Storm of Blades
 

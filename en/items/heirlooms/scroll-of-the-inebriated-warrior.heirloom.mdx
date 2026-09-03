@@ -11,7 +11,9 @@ contentType: heirlooms
 
 ---
 
-<Pool name="Inebriation Level" max="36">
+<Pool max="36">
+
+#### Inebriation Level
 
 Your mastery of inebriation has become an artform. You now track your **Inebriation Level**, which ranges from **0 to 36**.
 
@@ -31,15 +33,15 @@ While your Inebriation Level is **12 or higher**, you can make **one additional 
 
 <Trait>
 
-#### Overdrunk & Exhaustion
+#### Overdrunk & [# kw:condition:Exhaustion #]
 
 As your Inebriation Level rises above 18, you begin to suffer the following effects.
 
 | Inebriation Level | Effect                                            |
 | ----------------- | ------------------------------------------------- |
 | 24                | Disadvantage on Wisdom checks and saving throws.  |
-| 30                | Gain **1 level of exhaustion.**                   |
-| 36                | Gain **2 levels of exhaustion.**                  |
+| 30                | Gain **1 level of [# kw:condition:exhaustion #].**                   |
+| 36                | Gain **2 levels of [# kw:condition:exhaustion #].**                  |
 
 You cannot exceed a level of 36. Your body simply cannot contain more.
 
@@ -51,7 +53,7 @@ You cannot exceed a level of 36. Your body simply cannot contain more.
 
 #### Sober Up
 
-You can forcibly purge your alcohol and reset your Inebriation Level to **0**. When you do, you take **[% 1d10 poison %]**, ignoring resistance and immunity. Alternatively, a [# kw:Repose #] also resets the level and removes any exhaustion gained from this feature.
+You can forcibly purge your alcohol and reset your Inebriation Level to **0**. When you do, you take **[% 1d10 poison %]**, ignoring resistance and immunity. Alternatively, a [# kw:Repose #] also resets the level and removes any [# kw:condition:exhaustion #] gained from this feature.
 
 </Feature>
 
@@ -73,7 +75,7 @@ If you are attuned to the **Gourd of the Eternal Drunkard**, you gain access to 
   _Requires Inebriation Level 24+_  
   You may use your Major Action to unleash a **[= 4 stride;ADJ =]-radius sphere** of intoxicating vapor.  
   **Constitution save (DC 10 + proficiency + Wisdom modifier)**  
-  - On failure: **[% 5d6 poison %]**, the target is **poisoned (1 minute)**, and must use its reaction to stumble [= 2 stride =] away from the cloud.  
+  - On failure: **[% 5d6 poison %]**, the target is **[# kw:condition:poisoned #] (1 minute)**, and must use its reaction to stumble [= 2 stride =] away from the cloud.  
   - On success: Half damage, no poison.  
   - **Cost**: 6 Inebriation points.  
   - The cloud remains for **1 minute**, dealing its damage as a [# kw:persistent #] effect.  
@@ -81,7 +83,7 @@ If you are attuned to the **Gourd of the Eternal Drunkard**, you gain access to 
 
 - **Secret Technique – Drunkard’s Heaven**:  
   Once per [# kw:Repose #], if you use **Breath of the Drunkard** against your **Belch of the Deep Still** cloud, it immediately detonates.  
-  All creatures within a **[= 6 stride;ADJ =] sphere** must make a **Dexterity save (DC 10 + proficiency + Wisdom modifier)**, taking **[% 20d6 holy %]** on a failure, or half as much on a success.  
+  Creatures within a **[= 6 stride;ADJ =] sphere** save Dexterity against **DC 10 + proficiency + your Wisdom modifier**, halving [% 20d6 holy %].  
   The explosion dissipates the cloud.
 
 </Feature>

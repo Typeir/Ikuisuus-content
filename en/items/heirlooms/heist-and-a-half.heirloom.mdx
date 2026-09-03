@@ -5,38 +5,42 @@ contentType: heirlooms
 
 # Heist and a Half
 
-_Rare (requires attunement)_  
-_Whip +1 (Finesse, Reach, Bind, Slow)_
+<Heirloom
+  rarity="Rare"
+  attunement="required"
+  base="Whip (Finesse, Reach, Bind)"
+  quality="Mundane"
+  enchantment="+1 accuracy and damage"
+  damage="[% 1d4 slashing %]"
+  reach="[= 2 stride =]"
+  mastery="Slow"
+  masterfulBlow="Fifty-Two-Finger Discount"
+  burden="[= 2 burden =]">
 
 A whip of supple, ink-dark leather found within an ancient Silent One hoard of the [Hidden Kingdom](/en/library/world/the-lands-of-damocles/hidden-kingdom). 
 Whenever it cracks and strikes true, it is said the hoard from whence it came is engorged, yet when it strikes false, that same hoard wanes.
 
 > “No treasury can hold infinity, But mine will certainly be close.”  
-> — Ozymandias, the Great Silent One, after the conquest and subsequent fall of Old Sauvan  
+> — Ozymandias, the Great Silent One, after the conquest and subsequent fall of Old Sauvan
 
 ---
 
-## Weapon Properties
+### Attributes
 
-- **Type**: Whip (Martial, Finesse, Reach, Bind)
-- **Damage**: [% 1d4 slashing %]
-- **Range**: Melee ([= 2 stride =])
-- **Weight**: [= 2 burden =]
+<Attributes />
 
----
+### Features
 
-## Weapon Mastery
+<Feature mastery="Whips" charges="1/[# kw:Repose #], or 3/[# kw:Repose #] with mastery" cost="1 Reflex" trigger="on a hit" targets="the creature you hit">
 
-- **Slow**:
-  On hit, the target's Speed is reduced by [= 2 stride =] until the start of your next turn.
+#### Fifty-Two-Finger Discount <span>Masterful Blow</span>
 
-- **Fifty-Two-Finger Discount** _(1/Repose, or 3/Repose if the wielder has mastery with Whips)_:
-  When you hit a creature with this weapon, you may expend a use to make a **Dexterity (Sleight of Hand)** check contested by the target's **Wisdom (Perception)** check. On a success, you steal one trinket the target carries and roll a **d100** on the **Stolen Trinkets** table below.
-  If the target carries no trinkets, you still come away with one — roll and use **half the result**, rounded up. No one is certain where these trinkets come from.
+When you hit a creature with this weapon, you may expend a use to make a **Dexterity (Sleight of Hand)** check contested by the target's **Wisdom (Perception)** check. On a success, you steal one trinket the target carries and roll a **d100** on the **Stolen Trinkets** table below.
+If the target carries no trinkets, you still come away with one — roll and use **half the result**, rounded up. No one is certain where these trinkets come from.
 
----
+</Feature>
 
-## Stolen Trinkets
+### Stolen Trinkets
 
 Roll a **d100**. Lower results yield humbler loot, higher results rarer haul. No result is worthless.
 
@@ -73,4 +77,5 @@ Roll a **d100**. Lower results yield humbler loot, higher results rarer haul. No
 | 94–95 | [Lesser Potion](/en/library/rules/life-blood-and-ruin/potions-of-healing)                            |
 | 96–97 | [Standard Potion](/en/library/rules/life-blood-and-ruin/potions-of-healing)                          |
 | 98–00 | [Greater Potion](/en/library/rules/life-blood-and-ruin/potions-of-healing)                           |
----
+
+</Heirloom>

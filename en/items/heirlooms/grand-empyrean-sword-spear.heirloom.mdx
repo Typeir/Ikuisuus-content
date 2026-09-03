@@ -11,6 +11,7 @@ contentType: heirlooms
   base="Sword-Spear (Martial, Versatile, Heavy)"
   enchantment="+1 accuracy and damage"
   damage="[% 1d8 slashing %]"
+  masterfulBlow="Frozen Riposte"
   versatile="[% 1d10 %]"
   burden="[= 5 burden =]">
 
@@ -54,14 +55,13 @@ After you land an attack on a target, that target’s next attack roll is made a
 
 #### Topple
 
-When you hit a creature with this weapon, you can force it to make a Strength saving throw (DC = 10 + your tier bonus + your Strength or Dexterity modifier). On a failed save, the creature is knocked prone.
+When you hit a creature with this weapon, it saves Strength against DC 10 + your tier bonus + your Strength or Dexterity modifier or is knocked [# kw:condition:prone #].
 
 </Feature>
 
-<Feature cost="1 Reaction, taken after you take damage from a melee attack" targets="the attacker" charges="1/[# kw:Repose #], or 3/[# kw:Repose #] if you have mastery with Sword-Spears">
+<Feature cost="1 Reaction" trigger="after you take damage from a melee attack" targets="the attacker" charges="1/[# kw:Repose #], or 3/[# kw:Repose #] with mastery">
 
-#### Frozen Riposte
-
+#### Frozen Riposte <span>Masterful Blow</span>
 After taking damage from a melee attack, you can make an attack against the attacker. If this attack hits, it deals an additional [% 2d6 frost %].
 
 </Feature>

@@ -13,6 +13,7 @@ contentType: heirlooms
   enchantment="+1 to AC"
   damage="[% 1d4 bludgeoning %]"
   mastery="Push"
+  masterfulBlow="Wizard Fizzler"
   burden="[= 3 burden =]">
 
 A polished bronze shield etched with whorls that shimmer subtly when struck by arcane force. the front depicts a demon's head in an agonizing scream, perhaps mockery, perhaps warning.
@@ -28,7 +29,7 @@ A polished bronze shield etched with whorls that shimmer subtly when struck by a
 ### Features
 
 <Feature
-  cost="1 Reaction, when you are affected by a spell"
+  cost="1 Reaction" trigger="when you are affected by a spell"
   charges="6"
   recharge="regaining [% 1d4 %] at dawn">
 
@@ -42,11 +43,10 @@ If you expend the last charge in this way, roll a d20; on a 1, the shield loses 
 
 </Feature>
 
-<Feature mastery cost="On a hit" targets="the creature you hit">
+<Feature charges="1/[# kw:Repose #], or 3/[# kw:Repose #] with mastery" mastery cost="1 Reflex" trigger="On a hit" targets="the creature you hit">
 
-#### Wizard Fizzler
-
-The attack deals an additional [% 2d4 force %], and that target must succeed on a DC 16 Intelligence saving throw or be unable to cast anything but cantrips until the end of its next turn.
+#### Wizard Fizzler <span>Masterful Blow</span>
+The attack deals an additional [% 2d4 force %], and that target saves Intelligence against DC 16 or is unable to cast anything but cantrips until the end of its next turn.
 
 </Feature>
 

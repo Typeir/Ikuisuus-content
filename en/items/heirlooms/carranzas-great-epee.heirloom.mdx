@@ -53,13 +53,13 @@ A creature attuned to Carranza's Great Épée cannot attune to Narvaez's Mighty 
 
 ### Features
 
-<Feature cost="1 Reaction, taken when a creature makes an attack against you">
+<Feature charges="1/[# kw:Repose #], or 3/[# kw:Repose #] with mastery" cost="1 Reaction" trigger="when a creature makes an attack against you">
 
 #### Parry and Riposte <span>Masterful Blow</span>
 
 When a creature makes a melee attack against you, you can force them to reroll the attack with disadvantage. If their attack misses, you can counterattack, dealing an extra [% 1d8 lightning %] damage.
 
-When you are targeted by a ranged attack, you can attempt to redirect it. Roll a Dexterity save against DC = max(10, half damage). On a success, you redirect the attack at a target within [= 6 stride =]/[= 12 stride =]; you roll attack and damage as if the original attacker had aimed for them. On a failure, you take normal damage or ignore the miss.
+When you are targeted by a ranged attack, you can attempt to redirect it. Save Dexterity against DC 10 or half the damage, whichever is higher, to redirect the attack at a target within [= 6 stride =]/[= 12 stride =]; you roll attack and damage as if the original attacker had aimed for them.
 
 </Feature>
 
@@ -67,13 +67,13 @@ When you are targeted by a ranged attack, you can attempt to redirect it. Roll a
 
 #### Fated Demise
 
-If the wielder of Narvaez's Mighty Quiver is unconscious or slain, and you survive, the quiver flies toward you if within [= 120 stride =], traveling at [= 24 stride =] per round, or [= 12 stride =] per round through solid terrain. You automatically draw both weapons, treating them as light.
+If the wielder of Narvaez's Mighty Quiver is [# kw:condition:unconscious #] or slain, and you survive, the quiver flies toward you if within [= 120 stride =], traveling at [= 24 stride =] per round, or [= 12 stride =] per round through solid terrain. You automatically draw both weapons, treating them as light.
 
-While Fated Demise is active, you gain advantage on all attack rolls, saving throws, and skill checks. You have immunity to all conditions except prone and exhaustion, and you suffer 1 level of exhaustion per round.
+While Fated Demise is active, you gain advantage on all attack rolls, saving throws, and skill checks. You have immunity to all conditions except [# kw:condition:prone #] and [# kw:condition:exhaustion #], and you suffer 1 level of [# kw:condition:exhaustion #] per round.
 
-If the fallen wielder is revived, these effects end immediately, but exhaustion persists. You can choose to unbind the weapons: all magic in both items is suppressed, you suffer 1 exhaustion level, and both wielders lose attunement.
+If the fallen wielder is revived, these effects end immediately, but [# kw:condition:exhaustion #] persists. You can choose to unbind the weapons: all magic in both items is suppressed, you suffer 1 [# kw:condition:exhaustion #] level, and both wielders lose attunement.
 
-If you are separated from the other wielder by more than [= 120 stride =], you gain 1 exhaustion per day at dawn until the link is broken or restored.
+If you are separated from the other wielder by more than [= 120 stride =], you gain 1 [# kw:condition:exhaustion #] per day at dawn until the link is broken or restored.
 
 While under Fated Demise, when you use a Parry and Riposte option (the redirect or counterattack), you can replace it with a shockwave riposte. Every creature within [= 1 stride =] of you must make a Dexterity saving throw (DC = 10 + Dexterity modifier + tier bonus). On failure, they take [% 2d8 slashing %]. If the attack you deflected was ranged, creatures make the save with advantage.
 

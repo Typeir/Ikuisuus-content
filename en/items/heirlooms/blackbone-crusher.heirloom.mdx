@@ -15,6 +15,7 @@ contentType: heirlooms
   reach="[= 5 stride =]"
   burden="[= 23 burden =]"
   mastery="Push, Enhanced Sunder">
+  masterfulBlow="Heart of Gold"
 
 Forged from the brutalized corpses of void-giants, it's core formed by a **Dreamcatcher shard** whose will has been shattered, and blessed with the still-beating **Heart of the Golden One**, the Blackbone Crusher is the blade meant to end ambition itself.
 It is a massive, cathedral-like slab of blackened bone and iron — **too large for a mortal to wield without divine purpose.**
@@ -39,7 +40,7 @@ A dark, sickening throb follows each strike, as if the world itself had been ren
 
 #### Attunement Rite
 
-When a creature attempts to attune to this weapon, it must make a Strength saving throw (DC 28). Failing creatures are trapped within the heart of will’s event horizon and die instantly, their death marked by an echoing scream that lasts for a minute. Saving creatures gain attunement to it.
+When a creature attempts to attune to this weapon, it saves Strength against DC 28. Failing creatures are trapped within the heart of will’s event horizon and die instantly, their death marked by an echoing scream that lasts for a minute. Saving creatures gain attunement to it.
 
 </Trait>
 
@@ -79,7 +80,7 @@ You cannot be affected by magical fear, charm, or compulsion effects while attun
 
 #### Heart of Motion
 
-You cannot be moved against your will, nor can you be knocked prone or pushed while attuned.
+You cannot be moved against your will, nor can you be knocked [# kw:condition:prone #] or pushed while attuned.
 
 </Trait>
 
@@ -113,7 +114,7 @@ When you fail a saving throw, you can instead succeed. To recharge this feature,
 
 #### Enhanced Sunder
 
-When you hit a creature with this weapon, that target makes a Strength saving throw (DC = 12 + your tier bonus + your Strength modifier). On a failure, its AC is reduced by 1 until the end of its next turn. This can stack indefinitely. If a target’s AC reaches 0, it is immediately devoured and killed.
+When you hit a creature with this weapon, that target saves Strength against DC 12 + your tier bonus + your Strength modifier or its AC is reduced by 1 until the end of its next turn. This can stack indefinitely. If a target’s AC reaches 0, it is immediately devoured and killed.
 
 </Feature>
 
@@ -125,25 +126,24 @@ When you hit a creature of any size less than Titanic with this weapon, you can 
 
 </Feature>
 
-<Feature cost="1 Major Action" targets="creatures in a [= 6 stride;ADJ =]-radius sphere within [= 5 stride =]">
+<Feature charges="1/[# kw:Repose #], or 3/[# kw:Repose #] with mastery" cost="1 Major Action" targets="creatures in a [= 6 stride;ADJ =]-radius sphere within [= 5 stride =]">
 
-#### Heart of Gold
-
+#### Heart of Gold <span>Masterful Blow</span>
 You split the Blackbone Crusher in two, glowing like molten gold, and bring them together in a cataclysmic cross-chop centered on a point within your reach.
 
-Targets make a Strength saving throw (DC = 10 + your tier bonus + your Strength modifier). Failing targets take [% 8d12 bludgeoning %] and [% 8d12 holy %], are knocked prone, and are pulled to the center. Creatures that succeed take half damage and are not moved.
+Targets save Strength against DC 10 + your tier bonus + your Strength modifier. Failing targets take [% 8d12 bludgeoning %] and [% 8d12 holy %], are knocked [# kw:condition:prone #], and are pulled to the center. Creatures that succeed take half damage and are not moved.
 
 When creatures are pulled to the center, each creature that collides with another creature or solid object takes an additional [% 1d12 bludgeoning %] (rolled separately for each collision).
 
 </Feature>
 
-<Feature deed="stratagem" targets="creatures in a [= 20 stride =] long, [= 8 stride =] wide line" recharge="at sunrise">
+<Feature deed="stratagem" targets="creatures in a [= 20 stride;ADJ =] long, [= 8 stride;ADJ =] wide line" recharge="at sunrise">
 
 #### Will of the World
 
 You focus the will of the world through the Heart of Wills embedded in the blade. The heart emits a pulse of everburning dark flames, engulfing the weapon and wielder in a shroud of black fire and slowly manifesting a shard of the golden one.
 
-When the stratagem resolves, a golden chariot pulled by two burning horses manifests, bearing a radiant figure clad in golden armor and wielding two blazing curved swords. The image rides forth in the line, and targets make a Dexterity saving throw (DC 28). Failing targets take [% 10d8 holy %] and [% 10d8 fire %], and are blinded and deafened for a minute. Creatures that succeed take half damage and are not blinded or deafened.
+When the stratagem resolves, a golden chariot pulled by two burning horses manifests, bearing a radiant figure clad in golden armor and wielding two blazing curved swords. The image rides forth in the line, and targets save Dexterity against DC 28. Failing targets take [% 10d8 holy %] and [% 10d8 fire %], and are [# kw:condition:blinded #] and [# kw:condition:deafened #] for a minute. Creatures that succeed take half damage and are not [# kw:condition:blinded #] or [# kw:condition:deafened #].
 
 When the chariot reaches the end of the line, you may choose to manifest from the flaming chariot and instantly critically strike a creature that failed the saving throw.
 
@@ -151,7 +151,9 @@ When the chariot reaches the end of the line, you may choose to manifest from th
 
 </Feature>
 
-<Pool name="Spell Points" max="20">
+<Pool max="20">
+
+#### Spell Points
 
 You can replace any attack with a spell from the list below, but only once per turn. Spells use Strength for attack and save DCs and ignore V/M components.
 

@@ -14,6 +14,7 @@ contentType: heirlooms
   damage="[% 1d8 bludgeoning %]"
   versatile="[% 1d10 %]"
   mastery="Push"
+  masterfulBlow="Limb Lash"
   burden="[= 8 burden =]"
   focus="spellcasting, while attuned">
 
@@ -59,9 +60,9 @@ When you hit with this weapon, roll a d6 to determine an elemental surge from th
 
 ### Features
 
-<Feature mastery="Warhammers" targets="creatures within a [= 2 stride =] radius of the target">
+<Feature charges="1/[# kw:Repose #], or 3/[# kw:Repose #] with mastery" mastery="Warhammers" targets="creatures within a [= 2 stride;ADJ =] radius of the target">
 
-#### Limb Lash
+#### Limb Lash <span>Masterful Blow</span>
 
 When you hit a creature with this weapon, you can choose to have the writhing mass lash out at enemies around the target. Targets save Dexterity, taking [% 2d6 bludgeoning %] plus [% 2d8 %] Spiteful Havoc damage and are pushed [= 2 stride =] away from the target. Saving targets take half damage and are not pushed.
 

@@ -3,6 +3,7 @@ contentType: rules
 source: Ikuisuus
 keywords:
   - accuracy
+  - chained
 ---
 
 # Rolling and Special Rolls in Damocles
@@ -146,6 +147,22 @@ Use a **Deliberate Roll [DR]** when:
 
 ---
 
+### Chained
+
+A roll may be **Chained**, resolving over several attempts rather than one.
+
+A chain is written **Chained(successes/failures)**:
+  - **Chained(3/1)** completes on **three successes** and fails on **one failure**. 
+  - **Chained(3/3)** completes or fails on **three** of either.
+
+Successes and failures **need not be consecutive**, and either count may be reached first.
+
+When a chain **completes**, the effect it was resisting **ends**. When a chain **fails**, the entry states what failing it does.
+
+A **Chained** **Resist** is rolled **at the end of the sufferer's turn**, one at a time, per turn.
+
+A common example of a **Chained** effect are **Death Saving Throws**. A creature that is **[# kw:condition:dying #]** rolls **Chained(3/3)**. On **three successes**, it stabilizes. On **three failures**, it dies.
+
 ### Attack Rolls
 
 - A **natural 20** on an **attack roll** is a **critical hit**.  
@@ -175,6 +192,7 @@ Only the **final total matters**. Some tasks are **impossible no matter the roll
 | **Raw Roll [RR]**          | d20 + relevant modifier (if any). **No other modifiers.**                  |
 | **Confirmed Roll [CR]**    | Roll the check **twice**. Both must succeed. Partial success exists        |
 | **Deliberate Roll [DR]**   | Take extra time to **default to 10 or 20** instead of rolling              |
+| **Chained(s/f)**           | Resolves over several rolls. **s** successes complete it, **f** fail it.  |
 
 ---
 

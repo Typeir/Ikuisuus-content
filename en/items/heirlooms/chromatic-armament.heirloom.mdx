@@ -7,12 +7,13 @@ contentType: heirlooms
 
 <Heirloom
   rarity="Very rare"
-  attunement="requires attunement by a homunculus"
+  attunement="by a homunculus"
   base="Large Greatsword"
   quality="Mundane"
   enchantment="+2 accuracy and damage"
   damage="[% 4d6 slashing %]"
   mastery="Vex"
+  masterfulBlow="Enkindle"
   burden="[= 5 burden =]">
 
 Undecided between a weapon, a tool and a relic deserving of an opulent exhibition, the Chromatic Armament is said to have been designed by
@@ -30,7 +31,9 @@ Alas, the records are as sparce as are the surviving pieces, and the truth may n
 
 <Attributes />
 
-<Pool name="Hit Dice" max="double the wielder's tier bonus" recharge="at Repose">
+<Pool max="double the wielder's tier bonus" recharge="at Repose">
+
+#### Hit Dice
 
 Stoke the Flame grants a Hit Dice pool that can be used to empower dice rolls according to the flame's color:
 
@@ -89,10 +92,9 @@ On hit, you have advantage on the next attack you make against the same target b
 
 </Feature>
 
-<Feature cost="After making an attack with the weapon — regardless of whether the attack hits" charges="1/Repose, or 3/Repose if the wielder has mastery with Greatswords" targets="creatures in a [= 1 stride;ADJ =] wide, [= 10 stride;ADJ =] long line aligned with you and the target">
+<Feature cost="1 Reflex" trigger="After making an attack with the weapon — regardless of whether the attack hits" charges="1/[# kw:Repose #], or 3/[# kw:Repose #] with mastery" targets="creatures in a [= 1 stride;ADJ =] wide, [= 10 stride;ADJ =] long line aligned with you and the target">
 
-#### Enkindle
-
+#### Enkindle <span>Masterful Blow</span>
 Targets save Dexterity, halving [% 6d6 %] of the type determined by the active flame. After this, roll [% 1d6 %]; on a result of 1 or 2, the homunculus flame is snuffed out.
 
 </Feature>

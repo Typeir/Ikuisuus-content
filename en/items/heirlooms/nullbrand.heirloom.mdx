@@ -16,6 +16,7 @@ contentType: heirlooms
   reach="[= 3 stride =]"
   burden="[= 2 burden =]"
   mastery="Sever">
+  masterfulBlow="Erosion"
 
 This is the sword Wax left behind when he stepped down from Plato’s Tower. Forged from pure idea, Nullbrand was meant to end wars without being drawn.
 But peace died. And the blade, abandoned in brine beneath the station, grew a vaki—not of violence, but of refusal.
@@ -114,10 +115,9 @@ When you hit a creature with this weapon, that creature has disadvantage on its 
 
 </Feature>
 
-<Feature cost="1 Major Action" charges="1/Repose, or 3/Repose if you have mastery with this weapon">
+<Feature cost="1 Major Action" charges="1/[# kw:Repose #], or 3/[# kw:Repose #] with mastery">
 
-#### Erosion
-
+#### Erosion <span>Masterful Blow</span>
 Make a single melee weapon attack with advantage. On a hit, the target suffers normal damage and is marked with Erosion: [# kw:Erosion #] is a stacking curse. For each stack, roll [% 1d4 %] and subtract it from all attack rolls, damage rolls, saving throws, ability checks, and AC. The effect lasts until Restoration, Remove Affliction (5th level onwards), or Wish is used. Erosion is not magical—it is a curse, a mechanism of reality, not a spell. It cannot be dispelled, only removed by the listed effects.
 
 > “There is less pain in being forgotten, than in being remembered”
@@ -128,7 +128,7 @@ Make a single melee weapon attack with advantage. On a hit, the target suffers n
 
 #### Null and Void
 
-You swing Nullbrand in a still arc. The air breaks apart. Nullbrand carves a line through space, creating an ear-piercing screech. Creatures in that line must make a Charisma [RR](/en/library/rules/the-measure-of-the-self/rolling-and-special-rolls) saving throw (DC = 12 + your Tier Bonus + your Charisma modifier). On a failure, the creature is banished to the Muck Dimension for as many rounds as points it failed the DC. The creature becomes incapacitated, unable to take actions of any kind. At the start of each of its turns, it takes [% 6d10 force %] as it sinks through brine and pressure. On a success, the creature suffers [% 6d10 force %] as its spatial integrity partially collapses.
+You swing Nullbrand in a still arc. The air breaks apart. Nullbrand carves a line through space, creating an ear-piercing screech. Creatures in that line must make a Charisma [RR](/en/library/rules/the-measure-of-the-self/rolling-and-special-rolls) saving throw (DC = 12 + your Tier Bonus + your Charisma modifier). On a failure, the creature is banished to the Muck Dimension for as many rounds as points it failed the DC. The creature becomes [# kw:condition:incapacitated #], unable to take actions of any kind. At the start of each of its turns, it takes [% 6d10 force %] as it sinks through brine and pressure. On a success, the creature suffers [% 6d10 force %] as its spatial integrity partially collapses.
 
 The Muck Dimension is a microchamber within the folds of reality, a copy of the primordial rot-brine layer beneath Plato Station. Nullbrand’s vaki is native to the original one.
 
@@ -158,7 +158,9 @@ You may replace any attack with a spell from the list above, but only once per t
 
 </Heirloom>
 
-<Pool name="Spell Points" max="15" recharge="[% 1d4 +1 %] points when Nullbrand is submerged in brine for eight uninterrupted hours; regains once every 24 hours">
+<Pool max="15" recharge="[% 1d4 +1 %] points when Nullbrand is submerged in brine for eight uninterrupted hours; regains once every 24 hours">
+
+#### Spell Points
 
 </Pool>
 

@@ -7,7 +7,7 @@ contentType: heirlooms
 
 <Heirloom
   rarity="Very rare"
-  attunement="requires attunement"
+  attunement="required"
   base="Armor, Helmet"
   burden="[= 3 burden =]">
 
@@ -19,7 +19,7 @@ The slits of this dark plate helm are barely big enough to see through, and the 
 
 ### Attributes
 
-<Attributes only="burden" />
+<Attributes burden />
 
 ### Traits
 
@@ -35,7 +35,7 @@ This helm is forged from tombsteel and counts as an object with AC 20 and 50 hit
 
 #### Cold Eternal
 
-While attuned to this helm, at the end of each hour, you save Constitution DC 13 if you lack resistance or immunity to frost damage. Failing this save, you gain 1 level of exhaustion. This effect persists even while you are unconscious or asleep.
+While attuned to this helm, at the end of each hour, you save Constitution DC 13 if you lack resistance or immunity to frost damage. Failing this save, you gain 1 level of [# kw:condition:exhaustion #]. This effect persists even while you are [# kw:condition:unconscious #] or asleep.
 
 </Trait>
 
@@ -49,7 +49,7 @@ While wearing this helm, you are immune to divination magic and cannot be percei
 
 ### Features
 
-<Feature cost="1 Reaction, taken when you are subjected to a charmed or frightened effect" recharge="[# kw:Recovery #]">
+<Feature cost="1 Reaction" trigger="when you are subjected to a charmed or frightened effect" recharge="[# kw:Recovery #]">
 
 #### Heartless
 

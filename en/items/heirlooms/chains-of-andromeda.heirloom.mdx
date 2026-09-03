@@ -13,6 +13,7 @@ contentType: heirlooms
   damage="[% 4d4 %]"
   burden="[= 25 burden =]"
   mastery="Topple">
+  masterfulBlow="Vortex Shield"
 
 An artifact that defied its apparent function — the final creation of a Pieni artisan who rejected inevitability itself. 
 The Chains of Andromeda are not tools of binding, but of liberation: forged to protect those surrendered to the world’s cruelty and to remind them that even in despair, there is choice.  
@@ -41,7 +42,7 @@ The weapon binds itself to your wrists, the metal fusing with your flesh. Once a
 #### Chains of Freedom
 
 While attuned to this weapon, your movement cannot be reduced by any effect, and you ignore difficult terrain.
-You are immune to the prone, paralyzed, grappled, petrified, and restrained conditions.
+You are immune to the [# kw:condition:prone #], [# kw:condition:paralyzed #], [# kw:condition:grappled #], [# kw:condition:petrified #], and [# kw:condition:restrained #] conditions.
 
 </Trait>
 
@@ -73,10 +74,9 @@ On a hit, the target has disadvantage on its next attack roll until the start of
 
 </Feature>
 
-<Feature mastery="heavy whips" targets="creatures affected by your Aura of Protection">
+<Feature charges="1/[# kw:Repose #], or 3/[# kw:Repose #] with mastery" mastery="heavy whips" targets="creatures affected by your Aura of Protection">
 
-#### Vortex Shield
-
+#### Vortex Shield <span>Masterful Blow</span>
 When a creature affected by your Aura of Protection makes a Strength, Dexterity, or Constitution saving throw, you can use your reaction to weave the chains into a dome of deflective force. That creature takes no damage on a success and half damage on a failure.
 
 </Feature>

@@ -5,8 +5,11 @@ contentType: heirlooms
 
 # Crescent Brimmed Hat
 
-_Rare (requires attunement)_  
-_Clothing, Hat_
+<Heirloom
+  rarity="Rare"
+  attunement="required"
+  base="Clothing (Hat)"
+  burden="Half of [= 1 burden =]">
 
 It is said the Pieni tribes that settled on the Argent Peaks to establish what would become the sediment and foundations of the ancient Vermelka often relied on senses other than
 sight for their trips into the corpse-goddess's innards. There, the spiraling and cavernous passages were hosts to the eldritch and the unnatural, and every living being was both predator and prey,
@@ -17,28 +20,53 @@ overflow from the moon itself, granting mere objects the ability to sense that w
 
 ---
 
-## Item Properties
+### Attributes
 
-- **Type**: Clothing (Hat)
-- **Weight**: Half of [= 1 burden =]
+<Attributes />
 
----
+### Traits
 
-## Effects
+<Trait>
 
-- **Waning Step**:
-  While you wear this hat, you have advantage on **Dexterity (Stealth)** checks.
+#### Waning Step
 
-- **Crescent Guile**:
-  You may add [% 1d4 %] to **Dexterity (Sleight of Hand)** checks and to ability checks made with [Thievery](/en/library/items/tools/thievery) tools.
+While you wear this hat, you have advantage on **Dexterity (Stealth)** checks.
 
-- **Full Sight**:
-  While you wear this hat, you have darkvision out to [= 12 stride =].
+</Trait>
 
-- **Waxing Grace**:
-  While you wear this hat, you gain a +1 bonus to ability checks and saving throws.
+<Trait>
 
-- **Moon's Embrace**:
-  When you settle down to sleep and ask it to, the hat casts [_Sigil of Ruin_](/en/library/spells/sigil-of-ruin).
-  The sigil appears as a Lunar inscriptio, startin on a crescent, and cycling to fullness into waning over the course of eight hours.
-  After the sigil is cast, it cannot be cast again until you finish a [# kw:recovery #].
+#### Crescent Guile
+
+You may add [% 1d4 %] to **Dexterity (Sleight of Hand)** checks and to ability checks made with [Thievery](/en/library/items/tools/thievery) tools.
+
+</Trait>
+
+<Trait>
+
+#### Full Sight
+
+While you wear this hat, you have darkvision out to [= 12 stride =].
+
+</Trait>
+
+<Trait>
+
+#### Waxing Grace
+
+While you wear this hat, you gain a +1 bonus to ability checks and saving throws.
+
+</Trait>
+
+### Features
+
+<Feature cost="1 Reflex" trigger="when you settle down to sleep and ask it to" recharge="[# kw:recovery #]">
+
+#### Moon’s Embrace
+
+The hat casts [_Sigil of Ruin_](/en/library/spells/sigil-of-ruin).
+The sigil appears as a Lunar inscriptio, startin on a crescent, and cycling to fullness into waning over the course of eight hours.
+
+</Feature>
+
+</Heirloom>

@@ -5,6 +5,19 @@ contentType: heirlooms
 
 # Alfanjón of the Crescent Moon
 
+<Heirloom
+  rarity="very rare"
+  attunement="required"
+  base="Curved longsword (Finesse, Versatile)"
+  quality="Enhanced"
+  enchantment="+1 accuracy, +1 damage"
+  damage="[% 1d10 slashing %]"
+  versatile="[% 1d12 %]"
+  mastery="Slow"
+  masterfulBlow="Mooncleave"
+  focus="spellcasting, while attuned"
+  burden="[= 2 burden =]">
+
 <ParallaxBackdrop
   src='/library/images/heirlooms/alfanjon-of-the-crescent-moon-background.webp'
   alt='Alfanjón of the Crescent Moon Backdrop'
@@ -19,10 +32,6 @@ contentType: heirlooms
   />
 </FloatedContainer>
 
-_Very rare (requires attunement)_  
-_Curved longsword +1 (Melee, Finesse, Versatile, Mastery: Slow)_  
-_Can be used as a spellcasting focus when attuned_
-
 Forged from a sliver of condensed moonlight and the scale of a lunar wyrm, this
 crescent blade phases gently in and out of visibility, humming faintly under the
 stars. Its form is tailored for agile swordmasters whose grace intertwines with
@@ -32,56 +41,71 @@ arcane instinct.
 
 ---
 
-## Weapon Properties
+### Attributes
 
-- **Type**: Curved Longsword (Martial, Versatile, Special, Magical)
-- **Damage**: [% 1d10 slashing %] ([% 1d12 %]),
-- **Weight**: [= 2 burden =]
+<Attributes />
 
-## Special Features
+### Traits
 
-- **Blessing of Küütar**:
-  This items attunes immediately to those that have been blessed (both willingly and unwillingly) by the corpse-goddess. This effect can only happen once.
+<Trait>
 
-- **Lunar Dissolution**:  
-  As a **Minor Action**, the blade can vanish or reappear in the wielder’s hand in a shimmer of silver mist.
+#### Blessing of Küütar
 
-- **Moonlight Glow**:  
-  While under moonlight, the blade glows with a **cerulean hue** (dim light in a [= 1 stride;ADJ =] radius).
+The blade attunes at once, and only once, to anyone the corpse-goddess has blessed, willing or not.
 
-## Effects
+</Trait>
 
-- **Magical Weapon**: This weapon has a **+1 accuracy and damage bonus**.
+<Trait>
 
-- **Enhanced Materials**: This weapon has an extra **die level** due to its masterful craftsmanship.
+#### Moonlight Glow
 
-- **Spellcasting Focus**  
-  May be used as a focus for casting spells and cantrips.
+Under moonlight the blade sheds cerulean dim light in a [= 1 stride;ADJ =] radius.
 
-- **Moon Step Technique**:  
-  While the wielder is in combat, if they **forgo all movement** on their turn:
-  - Regain **[% 1d6 %] hit points**
-  - You may make a **cantrip spell attack** as a Minor Action using this weapon as a focus.  
-    If you do:
-    - Gain **+1 to hit and damage** with that cantrip
-    - Until the start of your next turn, gain **+1 to AC, saving throws, and ability checks**
+</Trait>
 
----
+### Features
+
+<Feature cost="1 Major Action">
+
+#### Innate Cantrip – Lesser Mooncleave
+
+While Attuned to this weapon, you learn the following cantrip. **Charisma** is your spellcasting ability for it.
 
 <Collapsible open>
-  ### Innate Cantrip – Lesser Mooncleave
   <LesserMooncleave />
 </Collapsible>
 
----
+If you lose attunement to this weapon, you lose **access** to this cantrip until you regain attunement.
 
-## Weapon Mastery
+</Feature>
 
-- **Slow** _(Only available if the wielder has mastery with Longswords)_: On hit, the target’s movement speed is reduced by [= 2 stride =] until the end of its next turn.
-- **Mooncleave** _(1/Repose, or 3/Repose if the wielder has mastery with Longswords)_:  
-  As a Major Action, sweep the blade in a great lunar arc:
-  - All creatures in a **[= 6 stride;ADJ =] cone** must make a **Dexterity saving throw (DC = Spell Save DC + 1)**
-  - **Failure**: [% 3d8 frost %] + [% 3d8 force %]
-  - **Success**: Half damage
+<Feature cost="1 Minor Action">
 
----
+#### Lunar Dissolution
+
+The blade vanishes, or reappears in your hand, in a shimmer of silver mist.
+
+</Feature>
+
+<Feature>
+
+#### Moon Step
+
+When you are [# kw:steady #] you regain [% 1d6 %] hit points, and you gain +1 to Armor Class, saves and checks.
+During **Moon Step** You can make one cantrip attack as a Minor Action, using the blade as its focus.
+That cantrip gains +1 [# kw:accuracy #] and damage.
+these benefits last until the start of your next turn.
+
+</Feature>
+
+<Feature cost="1 Major Action" charges="1/[# kw:Repose #], or 3/[# kw:Repose #] with mastery" targets="creatures within a [= 6 stride;ADJ =] cone">
+
+#### Mooncleave <span>Masterful Blow</span>
+
+You sweep the blade in a great lunar arc.
+Targets save Dexterity, halving [% 3d8 frost %] and [% 3d8 force %].
+The DC gains an [# kw:accuracy #] bonus of 1.
+
+</Feature>
+
+</Heirloom>

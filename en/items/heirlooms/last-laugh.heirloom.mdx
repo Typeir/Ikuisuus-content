@@ -22,7 +22,7 @@ Eventually he started hacking away pieces of the armor and replacing them with t
 
 ### Attributes
 
-<Attributes only="burden stealth" />
+<Attributes burden stealth />
 
 ### Traits
 
@@ -54,13 +54,13 @@ You gain proficiency in performance, or expertise if your alredy have performanc
 
 #### The Fourth Wall
 
-You cannot be silenced or knocked prone by any means. Attempts to still your voice or interrupt your movement simply fail.
+You cannot be silenced or knocked [# kw:condition:prone #] by any means. Attempts to still your voice or interrupt your movement simply fail.
 
 </Trait>
 
 ### Features
 
-<Feature cost="1 Reaction, taken when you or an ally within [= 6 stride =] take damage from an attack" targets="the affected creature">
+<Feature cost="1 Reaction" trigger="when you or an ally within [= 6 stride =] take damage from an attack" targets="the affected creature">
 
 #### Dramatic Blow
 
@@ -68,7 +68,7 @@ You may grant the target damage reduction equal to your Performance modifier aga
 
 </Feature>
 
-<Feature cost="when you or an ally within [= 6 stride =] take damage" targets="the damage source" recharge="once per [# kw:Repose #]">
+<Feature cost="1 Reflex" trigger="when you or an ally within [= 6 stride =] take damage" targets="the damage source" recharge="once per [# kw:Repose #]">
 
 #### Countercue
 
@@ -76,11 +76,11 @@ You may choose to transform that damage into true damage and make the target bec
 
 </Feature>
 
-<Feature cost="when you or an ally within [= 6 stride =] score a critical hit" targets="that attack">
+<Feature cost="1 Reflex" trigger="when you or an ally within [= 6 stride =] score a critical hit" targets="that attack">
 
 #### Grand Finale
 
-You may grant that attack a damage bonus equal to your Performance modifier.
+You may grant that attack a [# kw:damage bonus #] equal to your Performance modifier.
 
 </Feature>
 
