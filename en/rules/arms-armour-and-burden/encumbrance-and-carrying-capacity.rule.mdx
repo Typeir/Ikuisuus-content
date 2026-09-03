@@ -5,7 +5,7 @@ source: Ikuisuus
 
 # Encumbrance and Carrying Capacity
 
-Carrying capacity in this system follows the granular 3.5-edition model. Three load tiers — light, medium, and heavy — determine speed, skill penalties, and the maximum Dexterity bonus that armor can transmit.
+Carrying capacity in this system follows the granular 3.5-edition model. Three load tiers — light, medium, and heavy — determine speed, skill penalties, and the maximum Dexterity bonus that armour can transmit.
 
 ## Carrying Capacity by Strength
 
@@ -45,13 +45,17 @@ The table below lists the upper bound (in burdens) for each load tier at every S
 
 ## Load Penalties
 
-| Load   | Max Dex Bonus | Check Penalty | Speed Reduction | Run Multiplier |
-| ------ | ------------- | ------------- | --------------- | -------------- |
-| Light  | —             | 0             | None            | ×4             |
-| Medium | +3            | −3            | [= 6 stride =] → [= 4 stride =]   | ×4             |
-| Heavy  | +1            | −6            | [= 6 stride =] → [= 4 stride =]   | ×3             |
+| Load   | Max Dex Bonus | Check Penalty | Speed Reduction               | Run Multiplier |
+| ------ | ------------- | ------------- | ----------------------------- | -------------- |
+| Light  | —             | 0             | None                          | ×4             |
+| Medium | +3            | −3            | [= 6 stride =] → [= 4 stride =] | ×4             |
+| Heavy  | +1            | −6            | [= 6 stride =] → [= 3 stride =] | ×3             |
 
-Speed reduction follows the same scale at other base speeds: [= 4 stride =] drops to [= 3 stride =], [= 8 stride =] drops to [= 6 stride =], and so on.
+A medium load costs a third of your speed; a heavy load costs half. Both scale from any base speed: at [= 4 stride =] a medium load leaves [= 3 stride =] and a heavy load leaves [= 2 stride =]; at [= 8 stride =] they leave [= 6 stride =] and [= 4 stride =]. Round down, to a minimum of [= 1 stride =].
+
+**Check Penalty** applies to every Strength-based and Dexterity-based ability check and skill check, and to Dexterity saving throws. It does not apply to attack rolls, to other saving throws, or to checks based on any other ability.
+
+**Max Dex Bonus** caps the Dexterity modifier you add to Armour Class. Where armour imposes its own cap — see [Donning, Doffing, and Defence](/en/library/rules/arms-armour-and-burden/donning-doffing-and-defense) — the two do not stack: take the lower of the two caps.
 
 ## Lifting and Dragging
 
@@ -61,7 +65,7 @@ Speed reduction follows the same scale at other base speeds: [= 4 stride =] drop
 
 ## Size Multipliers
 
-Apply these multipliers to every threshold in the Carrying Capacity by Strength table, based on creature size:
+Apply these multipliers to every threshold in the Carrying Capacity by Strength table, based on creature size. This is the canonical size ladder, restated in [Measures](/en/library/rules/steel-and-strife/measures#size):
 
 | Size       | Multiplier |
 | ---------- | ---------- |
@@ -74,6 +78,7 @@ Apply these multipliers to every threshold in the Carrying Capacity by Strength 
 | Huge       | ×4         |
 | Gargantuan | ×8         |
 | Colossal   | ×16        |
+| Titanic    | ×32        |
 
 ## Quadruped Multipliers
 
@@ -86,6 +91,7 @@ A quadruped (or other creature with a markedly load-bearing frame) replaces its 
 | Huge       | ×6                   |
 | Gargantuan | ×12                  |
 | Colossal   | ×24                  |
+| Titanic    | ×48                  |
 
 Sizes smaller than Medium continue to use the bipedal size multipliers from the previous table.
 

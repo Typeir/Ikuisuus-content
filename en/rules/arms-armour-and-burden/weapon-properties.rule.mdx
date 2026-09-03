@@ -24,7 +24,7 @@ The following properties appear in the Weapons tables.
 | Draw          | The weapon requires drawing (e.g. bowstring) as part of each attack; you can use your Strength in place of Dexterity for the attack and damage rolls.                                                                                                                                                    |
 | Focus         | The weapon can be used as a spellcasting focus.                                                                                                                                                                                                                                                          |
 | Bind          | When you hit a creature with this weapon, you can attempt to grapple the target as part of the same action.                                                                                                                                                                                              |
-| Large/Huge... | The weapon's damage die are doubled. The weapon is intended for a creature of the specified Size. Creatures of smaller sizes suffer disadvantage when using them, and creatures of two sizes or less cannot use them as weapons.                                                                         |
+| Large/Huge... | The weapon's damage die are increased according to the [_Weapons and Dice Levels_](/en/library/rules/arms-armour-and-burden/weapons-and-dice-levels). The weapon is intended for a creature of the specified Size. Creatures of smaller sizes suffer disadvantage when using them, and creatures of two sizes or less cannot use them as weapons.                                                                         |
 | Special       | The weapon has rules not covered here; see its individual description.                                                                                                                                                                                                                                   |
 
 ## Mastery Properties
@@ -33,9 +33,7 @@ Unless stated otherwise, you apply the effect when you hit a creature with a wea
 
 ### Mastery Save DC
 
-Some masteries call for a saving throw.
-
-- Save DC = 8 + your tier bonus + the ability modifier used for the attack.
+Some masteries call for a saving throw, which follows the standard resolution defined in [Checks and Rolls](/en/library/rules/the-measure-of-the-self/checks-and-rolls).
 
 | Property | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -45,13 +43,17 @@ Some masteries call for a saving throw.
 | Push     | If you hit a creature with this weapon, you can push the creature up to [= 2 stride =] straight away from yourself if it is a creature you can effectively grapple.                                                                                                                                                                                                                                                                                                                                                         |
 | Sap      | If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn.                                                                                                                                                                                                                                                                                                                                                                                   |
 | Slow     | If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by [= 2 stride =] until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn’t exceed [= 2 stride =].                                                                                                                                                                                                                                                           |
-| Topple   | If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw. On a failed save, the creature has the Prone condition.                                                                                                                                                                                                                                                                                                                                                      |
+| Topple   | If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw. On a failed save, the creature has the [# kw:condition:prone #] condition.                                                                                                                                                                                                                                                                                                                                                      |
 | Vex      | If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.                                                                                                                                                                                                                                                                                                                                          |
 | Skip     | If you hit a creature with this weapon, you can move [= 1 stride =] to an unoccupied space you can see within [= 1 stride =] of the target.                                                                                                                                                                                                                                                                                                                                                                                          |
 
 ### Masterful blows
 
 Each weapon type has a special masterful technique listed in the Mastery column of the Weapons tables.
+
+#### Gaining Mastery
+
+Mastery with a weapon type is granted outside these pages: by vocations that list Weapon Mastery among their features ([Berserker](/en/library/character-creation/vocations/berserker), [Paladin](/en/library/character-creation/vocations/paladin), [Revenant](/en/library/character-creation/vocations/revenant), [Rogue](/en/library/character-creation/vocations/rogue), [Strider](/en/library/character-creation/vocations/strider), [Warrior](/en/library/character-creation/vocations/warrior)), and by the [Natural Warrior](/en/library/character-creation/feats/natural-warrior) feat. This page governs what Mastery does, not who has it.
 
 #### Assignment and Uses
 
@@ -60,7 +62,7 @@ You can use a weapon’s Masterful Blow once per [# kw:Repose #]; if you have Ma
 When you hit a creature with that weapon, you can expend a use to invoke the Masterful Blow.
 If the Masterful Blow calls for a saving throw, use the Mastery Save DC.
 Unless noted otherwise, the effect ends at the start of your next turn.
-The same Masterful Blow on the same target doesn't stack; a new application only refreshes its duration — unless the blow's effect is a condition that inherently accumulates by stacking, such as the Sundered condition.
+The same Masterful Blow on the same target doesn't stack; a new application only refreshes its duration — unless the blow's effect is a condition that inherently accumulates by stacking, such as the [# kw:condition:sundered #] condition.
 A creature can be affected by only one Masterful Blow per turn.
 
 | Name         | Save | Effect                                                                                                                                     |
