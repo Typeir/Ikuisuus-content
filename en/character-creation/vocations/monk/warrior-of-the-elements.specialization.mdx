@@ -33,7 +33,7 @@ When you cast a spell via a discipline:
 
 - It is cast at its **lowest level**, unless specified otherwise.
 - You **do not provide material components**.
-- At **5th level**, you can spend **additional focus points** to upcast a discipline spell that has enhanced effects.  
+- At **5th level**, you can spend **additional focus points** to overcast a discipline spell that has enhanced effects.  
   For each additional focus point spent, the spell’s level increases by 1.
 - After using a discipline, you may make **one unarmed strike as a Minor Action** or use **Flurry of Blows**.
 
@@ -58,7 +58,7 @@ When you cast a spell via a discipline:
 
 - **Effortless Step.** Your **jump distance and height are doubled** (quadrupled with **Step of the Wind**). You have **advantage on Strength (Athletics) checks** related to jumping.
 
-- **Enduring Mountain Stance.** When you take the **Dodge action**, you cannot be **moved, pushed, grappled, terrified, or knocked prone** until the start of your next turn. You must be **standing on the ground**.
+- **Enduring Mountain Stance.** When you take the **Dodge action**, you cannot be **moved, pushed, [# kw:condition:grappled #], [# kw:condition:terrified #], or knocked [# kw:condition:prone #]** until the start of your next turn. You must be **standing on the ground**.
 
 - **Fangs of the Fire Snake.** When you make an **unarmed attack**, you may choose to **extend your reach by [= 1 stride =]** and deal **fire damage** instead of bludgeoning. On a hit, you may spend **1 focus point** to deal **+[% 1d10 fire %]**.
 
@@ -66,7 +66,7 @@ When you cast a spell via a discipline:
 
 - **Fist of Four Thunders.** Spend 1 focus point to cast [thunderwave](/en/library/spells/thunderwave).
 
-- **Fist of Unbroken Air.** When you make an **unarmed attack**, you may extend your reach by **[= 2 stride =]**. On a hit, spend **1 focus point** to force the creature to make a **Strength saving throw** or be **pushed [= 2 stride =]** and **knocked prone**.
+- **Fist of Unbroken Air.** When you make an **unarmed attack**, you may extend your reach by **[= 2 stride =]**. On a hit, spend **1 focus point** to force the creature to make a **Strength saving throw** or be **pushed [= 2 stride =]** and **knocked [# kw:condition:prone #]**.
 
 - **Golden Snake’s Icy Path.** When you **Dash**, you leave a **trail of ice** behind you. The ice is **difficult terrain** and lasts until the start of your next turn.
 
@@ -78,7 +78,7 @@ When you cast a spell via a discipline:
 
 - **Sweeping Cinder Strike.** Spend 1 focus point to cast [burning hands](/en/library/spells/burning-hands).
 
-- **Water Whip.** Spend 1 focus point as a **Minor Action** to whip a creature within **[= 6 stride =]**. The creature makes a **Dexterity saving throw**. On a failure, it takes **your Martial Arts die + Wisdom modifier** in bludgeoning damage plus **[% 1d10 %] per extra focus point** spent. You may **pull the creature up to [= 5 stride =]** or **knock it prone**.
+- **Water Whip.** Spend 1 focus point as a **Minor Action** to whip a creature within **[= 6 stride =]**. The creature makes a **Dexterity saving throw**. On a failure, it takes **your Martial Arts die + Wisdom modifier** in bludgeoning damage plus **[% 1d10 %] per extra focus point** spent. You may **pull the creature up to [= 5 stride =]** or **knock it [# kw:condition:prone #]**.
 
 </Collapsible>
 
@@ -168,16 +168,16 @@ When you cast a spell via a discipline:
 
   While Avatar of the Elements is active, you can use one of the following effects as a **Minor Action** each turn:
   - **Earthquake Burst.**  
-    Each creature within **[= 3 stride =] of you** must make a **Dexterity saving throw**. On a failed save, a creature takes **[% 1d6 bludgeoning %]** and is **knocked prone**. On a success, the creature takes half damage and isn’t knocked prone.
+    Each creature within **[= 3 stride =] of you** saves Dexterity. On a failed save, a creature takes **[% 1d6 bludgeoning %]** and is **knocked [# kw:condition:prone #]**. On a success, the creature takes half damage and isn’t knocked [# kw:condition:prone #].
 
   - **Line of Flame.**  
-    You create a **[= 3 stride;ADJ =] line** of fire that is **[= 1 stride =] wide**, extending from you in a direction you choose. Each creature in the line must make a **Dexterity saving throw**, taking **[% 3d6 fire %]** on a failed save, or half as much on a success.
+    You create a **[= 3 stride;ADJ =] line** of fire that is **[= 1 stride =] wide**, extending from you in a direction you choose. Each creature in the line saves Dexterity, halving **[% 3d6 fire %]**.
 
   - **Swirling Wind Vortex.**  
-    Choose a point you can see within **[= 12 stride =]**. Each creature in a **[= 3 stride;ADJ =] cube** centered on that point must make a **Constitution saving throw**, taking **[% 1d10 bludgeoning %]** on a failed save, or half as much on a success. **Large or smaller creatures** that fail are also **pushed [= 2 stride =] away from the cube’s center**.
+    Choose a point you can see within **[= 12 stride =]**. Each creature in a **[= 3 stride;ADJ =] cube** centered on that point saves Constitution, halving **[% 1d10 bludgeoning %]**. **Large or smaller creatures** that fail are also **pushed [= 2 stride =] away from the cube’s center**.
 
   - **Cone of Ice Shards.**  
-    You unleash a **[= 3 stride;ADJ =] cone** of freezing shards. Each creature in the cone must make a **Constitution saving throw**, taking **[% 2d6 frost %]** on a failed save, or half as much on a success. A creature that fails also has its **speed halved until the start of your next turn**.
+    You unleash a **[= 3 stride;ADJ =] cone** of freezing shards. Each creature in the cone saves Constitution, halving **[% 2d6 frost %]**. A creature that fails also has its **speed halved until the start of your next turn**.
 
 - **Breath of Winter.** Spend 5 focus points to cast [cone of cold](/en/library/spells/cone-of-cold).
 

@@ -23,7 +23,7 @@ _Gargantuan Aberration, Lawful Evil_
 - **Skills**: Perception +16, Insight +16, Athletics +15
 - **Damage Resistances**: Chemical, Dark, Psychic
 - **Damage Immunities**: Poison
-- **Condition Immunities**: Terrified, Paralyzed, Poisoned, Prone, Banishment
+- **Condition Immunities**: [# kw:condition:Terrified #], [# kw:condition:Paralyzed #], [# kw:condition:Poisoned #], [# kw:condition:Prone #], Banishment
 - **Senses**: Truesight [= 24 stride =], Tremorsense [= 24 stride =], passive Perception 25
 - **Languages**: Empyrean; telepathy [= 60 stride =]
 - **Challenge**: 23 (32,000 XP)
@@ -45,7 +45,7 @@ When Albedo fails a saving throw, she can expend a legendary deed to succeed ins
 
 The listed statistics represent **Albedo’s control nucleus** (roughly horse-sized), extruded from a miles-wide quasi-liquid body. Only the nucleus can be targeted. The rest of Albedo functions as terrain and sources of spawns created by her abilities.
 
-- The nucleus can’t be grappled or knocked prone.
+- The nucleus can’t be [# kw:condition:grappled #] or knocked [# kw:condition:prone #].
 - If the nucleus would be pushed or pulled, Albedo may instead shift the ground beneath her and remain in place.
 
 #### Cancerous Proliferation
@@ -82,7 +82,7 @@ Ground Albedo has affected this combat becomes **semi-living reef**:
 #### White Life
 
 Albedo floods the surrounding area with its **endless reef**, a mass of pale coral-like growths that spread and pulse with vile intent.  
-When a creature touches the reef, is caught within **[= 6 stride =]** of Albedo as an [# kw:delayed #] effect, or is struck by one of its attacks, it must succeed on a **DC 21 Constitution saving throw** or roll on the [# kw:White Life #] table.  
+When a creature touches the reef, is caught within **[= 6 stride =]** of Albedo as an [# kw:delayed #] effect, or is struck by one of its attacks, it saves Constitution against DC 21 or rolls on the [# kw:White Life #] table.  
 Creatures **immune to disease and curses** that would roll in the table ignore this effect and instead take **[% 2d4 chemical %]** as the coral burns against their skin.
 
 ## Actions
@@ -92,14 +92,14 @@ Creatures **immune to disease and curses** that would roll in the table ignore t
 Albedo makes **two** **Mitotic Rends** and **one** **Exuvia Sweep**. Each may be replaced with either **Enzyme Torrent** or **Consume the Brood**.
 
 - **Mitotic Rend**
-  _Melee Weapon Attack:_ +15 to hit, reach [= 3 stride =], one target.  
-  _Hit:_ **16 ([% 3d6 +5 slashing %])** plus **8 ([% 3d4 chemical %])**.  
+  Accuracy +15, reach [= 3 stride =], one creature.  
+  On a hit, **16 ([% 3d6 +5 slashing %])** plus **8 ([% 3d4 chemical %])**.  
   **On hit**: the target is **seeded** with **1 Parasite**.
 
 - **Exuvia Sweep**
-  _Melee Weapon Attack:_ +15 to hit, reach [= 4 stride =], up to two targets.  
-  _Hit:_ **13 ([% 3d4 +5 bludgeoning %])** plus **5 ([% 2d4 dark %])**.  
-  Each creature hit must succeed on a **DC 23 Strength** saving throw or be **pushed [= 3 stride =]** and **knocked prone**. If at least one creature fails, **spawn 1 Petal** adjacent to one failed target’s space.
+  Accuracy +15, reach [= 4 stride =], up to two targets.  
+  On a hit, **13 ([% 3d4 +5 bludgeoning %])** plus **5 ([% 2d4 dark %])**.  
+  Each creature hit saves Strength against DC 23 or is **pushed [= 3 stride =]** and **knocked [# kw:condition:prone #]**. If at least one creature fails, **spawn 1 Petal** adjacent to one failed target’s space.
 
 - **Enzyme Torrent (Recharge 5–6)**
   A **[= 12 stride;ADJ =] cone** of dissolving enzymes. Creatures in the area make a **DC 24 Dexterity** saving throw, taking **23 ([% 9d4 chemical %])** + **23 ([% 9d4 dark %])** on a failed save, or half as much on a success.  
@@ -120,13 +120,13 @@ All merges occur immediately in spaces formerly occupied by the consumed creatur
 
 ## Reactions
 
-### **Shedding Wake**
+### Shedding Wake
 
 When a creature **ends its movement within [= 2 stride =]** of Albedo's Godmass, **spawn 1 Petal** adjacent to that creature (once per creature per round).
 
-### **Exuvial Guard**
+### Exuvial Guard
 
-When Albedo would be hit by a melee attack, growths interpose. The attacker must succeed on a **DC 23 Dexterity** saving throw or the attack **misses**.  
+When Albedo would be hit by a melee attack, growths interpose. The attacker saves Dexterity against DC 23 or the attack **misses**.  
 Whether it hits or misses, **spawn 1 Petal** adjacent to the attacker.
 
 ---
@@ -146,11 +146,11 @@ Albedo can expend legendary deeds to use the options below. Only one legendary d
 
 At the start of the creature with the highest initiative's turn, Albedo can expend a legendary deed to use one of the following lair deeds. She cannot use the same lair deed two rounds in a row.
 
-### **Womb Weeps**
+### Womb Weeps
 
 **Spawn [% 1d4 %] Petals** adjacent to each hostile creature that **moved** since the previous round.
 
-### **Crawlspace**
+### Crawlspace
 
 Choose up to **three [= 2 stride;ADJ =] squares** within [= 24 stride =]; they become **Endless Reef** and immediately **spawn 1 Petal** each.
 
@@ -158,11 +158,11 @@ Choose up to **three [= 2 stride;ADJ =] squares** within [= 24 stride =]; they b
 
 ## Legendary Deed: Phase
 
-### **Bloodied (50%) — Knots of Flesh**
+### Bloodied (50%) — Knots of Flesh
 
 At the end of each of Albedo’s turns, **merge automatically**: for every **3 Petals** within [= 2 stride =] of each other, create **1 Bloom** (consuming those Petals).
 
-### **Doomed (25%) — Critical Mass**
+### Doomed (25%) — Critical Mass
 
 The nucleus destabilizes; replication overruns structure.
 
@@ -177,7 +177,7 @@ The nucleus destabilizes; replication overruns structure.
 
 > These creatures are part of Albedo and act on **initiative count 10** (grouped), unless created at another time; then they join the count 10 group at the end of the round.
 
-> ### **Petal**
+> ### Petal
 >
 > _Small Aberration_
 >
@@ -191,12 +191,12 @@ The nucleus destabilizes; replication overruns structure.
 >
 > - **Resistances**: Chemical, Dark;
 > - **Senses**: Blindsight [= 6 stride =]
-> - **Actions — Claw.** _Melee Weapon Attack:_ +11 to hit, reach [= 1 stride =]; **12 ([% 2d8 +3 slashing %])** + **7 ([% 2d6 chemical %])**.
-> - **Deathburst.** When reduced to 0 HP, creatures within [= 1 stride =] must make a **DC 19 Dexterity** save or take **7 ([% 2d6 chemical %])**.
+> - **Actions — Claw.** Accuracy +11, reach [= 1 stride =]; **12 ([% 2d8 +3 slashing %])** + **7 ([% 2d6 chemical %])**.
+> - **Deathburst.** When reduced to 0 HP, creatures within [= 1 stride =] save Dexterity against DC 19 or take **7 ([% 2d6 chemical %])**.
 
 ---
 
-> ### **Bloom (Swarm)**
+> ### Bloom (Swarm)
 >
 > _Medium Aberration_
 >
@@ -211,14 +211,14 @@ The nucleus destabilizes; replication overruns structure.
 > - **Resistances**: Chemical, Dark;
 > - **Senses**: Blindsight [= 6 stride =]
 > - **Swarm.** The swarm can occupy another creature’s space; that space is **difficult terrain** for the swarm.
-> - **Grind and Shear.** _Melee Weapon Attack:_ +11 to hit, reach [= 1 stride =]; **([% 3d8 +3 %])** slashing + **([% 2d6 %])** chemical. Attacks against a creature in the swarm’s space have **advantage**.
+> - **Grind and Shear.** Accuracy +11, reach [= 1 stride =]; **([% 3d8 +3 %])** slashing + **([% 2d6 %])** chemical. Attacks against a creature in the swarm’s space have **advantage**.
 > - **Shred.** As an [# kw:delayed #] effect, a Large or smaller creature in the swarm's space takes **11 ([% 3d6 slashing %])**.
 > - **Multitudes** The swarm cannot take more than **40** damage from a single attack roll.
 > - **Split Reaction.** When reduced to 0 HP, the swarm **spawns 2 Petals** in its space.
 
 ---
 
-> ### **Flower**
+> ### Flower
 >
 > _Large Aberration (Union of Three Blooms)_
 >
@@ -231,17 +231,17 @@ The nucleus destabilizes; replication overruns structure.
 > | 18 (+4) | 16 (+3) | 22 (+6) | 3 (−4)  | 10 (+0) | 5 (−3)  |
 >
 > - **Resistances**: Chemical, Dark;
-> - **Condition Immunities**: Terrified
+> - **Condition Immunities**: [# kw:condition:Terrified #]
 > - **Senses**: Blindsight [= 12 stride =]
-> - **Grind and Spray.** When the Flower takes slashing or lightning damage, creatures within [= 2 stride =] must make a **DC 19 Dexterity** save or take **11 ([% 3d6 chemical %])**.
+> - **Grind and Spray.** When the Flower takes slashing or lightning damage, creatures within [= 2 stride =] save Dexterity against DC 19 or take **11 ([% 3d6 chemical %])**.
 > - **Multiattack.** The Flower makes **two Tendril** attacks.
 > - **Multitudes** The swarm cannot take more than **120** damage from a single attack roll.
-> - **Tendril.** _Melee Weapon Attack:_ +11 to hit, reach [= 2 stride =]; **([% 2d10 +4 %])** slashing + ** ([% 3d6 %])** chemical.
+> - **Tendril.** Accuracy +11, reach [= 2 stride =]; **([% 2d10 +4 %])** slashing + ** ([% 3d6 %])** chemical.
 > - **Split Reaction.** When reduced to 0 HP, the Flower **spawns 2 Blooms** in its space.
 
 ---
 
-> ### **Bouquet**
+> ### Bouquet
 >
 > _Gargantuan Aberration (Union of Three Flowers)_
 >
@@ -254,17 +254,17 @@ The nucleus destabilizes; replication overruns structure.
 > | 22 (+6) | 14 (+2) | 26 (+8) | 3 (−4)  | 10 (+0) | 5 (−3)  |
 >
 > - **Resistances**: Chemical, Dark, Psychic;
-> - **Condition Immunities**: Terrified, Prone
+> - **Condition Immunities**: [# kw:condition:Terrified #], [# kw:condition:Prone #]
 > - **Senses**: Blindsight [= 24 stride =]
 > - **Eternal Bloom.** Regains **20 HP** at the start of its turn unless it took chemical damage since its last turn.
 > - **Corrosive Pulse (Recharge 5–6).** All creatures within [= 6 stride =] make a **DC 21 Dexterity** save, taking **45 ([% 10d8 chemical %])** + **27 ([% 6d8 dark %])** on a fail, or half on success.
 > - **Multiattack (3 Cores Active).** The Bouquet makes **three Tendril** attacks.
-> - **Tendril.** _Melee Weapon Attack:_ +13 to hit, reach [= 3 stride =]; **([% 3d10 +6 %])** slashing + ** ([% 3d8 %])** chemical.
+> - **Tendril.** Accuracy +13, reach [= 3 stride =]; **([% 3d10 +6 %])** slashing + ** ([% 3d8 %])** chemical.
 > - **Split Reaction.** When reduced to 0 HP, the Bouquet **spawns 2 Flowers** in its space.
 
 ---
 
-> ### **Reflected Parasite (On-Host)**
+> ### Reflected Parasite (On-Host)
 >
 > _Tiny Aberration (Attached to a Host)_
 >

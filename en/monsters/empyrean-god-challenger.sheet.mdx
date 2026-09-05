@@ -23,7 +23,7 @@ _Medium Humanoid (Empyrean), Lawful Evil_
 - **Saving Throws**: Strength +8, Constitution +6, Charisma +7
 - **Skills**: Intimidation +8, Survival +4, Religion +5
 - **Damage Resistances**: Frost.
-- **Condition Immunities**: Terrified
+- **Condition Immunities**: [# kw:condition:Terrified #]
 - **Senses**: Darkvision [= 12 stride =], passive Perception 12
 - **Languages**: Common, Empyrean, [Prey Language]
 - **Challenge**: 6 (2,300 XP)
@@ -40,7 +40,7 @@ The God-Challenger wears custom heavy armor forged from tombsteel, The armor has
 - Increases base AC by +1
 - Increases the weight of the armor by +[= 8 burden =]
 - Causes disadvantage on Dexterity (Stealth) checks
-- Grants advantage on saving throws made to resist being **pushed**, **pulled**, or **knocked prone**
+- Grants advantage on saving throws made to resist being **pushed**, **pulled**, or **knocked [# kw:condition:prone #]**
 - Grants the following features:
   ** Grave Chill**
   Tombsteel armor holds up to **10 charges** of reactive cold stored in its rime-slicked seams. When a creature hits the God-Challenger with a **melee weapon attack**, the attacker immediately takes **10 frost damage** as frozen tendrils erupt from the armor. This effect requires no action or reaction.
@@ -48,8 +48,8 @@ The God-Challenger wears custom heavy armor forged from tombsteel, The armor has
   - Charges **regenerate at midnight**, recovering **[% 1d4 +4 %] charges**
 
   ** Cold Eternal**
-  If a creature wearing Tombsteel Armor is **not resistant or immune to frost damage**, they must succeed on a **DC 12 Constitution saving throw at the end of each hour** while wearing it. On a failed save, the creature gains **1 level of exhaustion**.
-  This effect occurs even while sleeping or unconscious. The God-Challenger is resistant to frost damage and thus ignores this effect.
+  If a creature wearing Tombsteel Armor is **not resistant or immune to frost damage**, they save Constitution against DC 12 at the end of each hour while wearing it. On a failed save, the creature gains **1 level of exhaustion**.
+  This effect occurs even while sleeping or [# kw:condition:unconscious #]. The God-Challenger is resistant to frost damage and thus ignores this effect.
 
   ** Fraternity (Integrated)**
   The God-Challenger’s armor contains an embedded permanent **Fraternity** enchantment that links them to their mount. While both the God-Challenger and their mount are alive and conscious:
@@ -76,7 +76,7 @@ The God-Challenger gains the following benefits against the chosen prey:
 The God-Challenger emits an aura that suppresses flight and escape. While creatures are within [= 2 stride =] of the God-Challenger:
 
 - They **provoke opportunity attacks** even if they take the **Disengage** action
-- If a creature within the aura is **hit by an opportunity attack** from the God-Challenger or one of their allies, the target’s **movement speed is reduced by [= 2 stride =]** until the end of their next turn
+- If a creature within the aura is **hit by an opportunity attack** from the God-Challenger or one of their allies, the target’s **movement speed is reduced by [= 2 stride =]** [# kw:briefly #]
 - The aura is always active while the God-Challenger is conscious
 
 #### Mounted Brutality
@@ -105,14 +105,14 @@ This character may ride any of the following creatures:
 The God-Challenger makes **two melee weapon attacks** with their **Grand Empyrean Sword-Spear**.
 
 - **Grand Empyrean Sword-Spear.**  
-  _Melee Weapon Attack:_ +8 to hit, reach [= 2 stride =], one target.  
-  _Hit:_ 12 ([% 1d10 +6 slashing %]) plus 6 ([% 2d6 frost %]).  
+  Accuracy +8, reach [= 2 stride =], one creature.  
+  On a hit, 12 ([% 1d10 +6 slashing %]) plus 6 ([% 2d6 frost %]).  
   This weapon is **Versatile** ([% 1d10 %]), **Heavy**, and **Martial**. It is forged from tombsteel and treated as magical for overcoming resistance.
 
 - **Bound to the Earth (Channel Divinity).**  
   When the God-Challenger hits a creature with a melee weapon attack, they can use a **Minor Action** to activate this feature.
   - The triggering attack deals an **extra [% 2d6 frost %]**
-  - The target’s **speed becomes 0 until the end of its next turn**
+  - The target’s **speed becomes 0 [# kw:briefly #]**
   - Can only be used **once per [# kw:Repose #] or [# kw:Recovery #]**
 
 ---
@@ -122,7 +122,7 @@ The God-Challenger makes **two melee weapon attacks** with their **Grand Empyrea
 The God-Challenger is a spellcaster. Their spellcasting ability is **Charisma**.
 
 - **Spell Save DC**: 16
-- **Spell Attack Bonus**: +7 to hit
+- **Spell Attack Bonus**: accuracy +7
 - They follow Paladin-style spellcasting and always have certain Oath spells prepared.
 
 **Spell Slots**:

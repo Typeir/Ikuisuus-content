@@ -24,7 +24,7 @@ _Gargantuan Aberration, Lawful Evil_
 - **Damage Vulnerabilities**: Frost
 - **Damage Resistances**: Lightning
 - **Damage Immunities**: Psychic, Poison, Chemical
-- **Condition Immunities**: Blinded, Terrified, Paralyzed, Poisoned, Stunned
+- **Condition Immunities**: [# kw:condition:Blinded #], [# kw:condition:Terrified #], [# kw:condition:Paralyzed #], [# kw:condition:Poisoned #], [# kw:condition:Stunned #]
 - **Senses**: Darkvision [= 24 stride =], Truesight [= 12 stride =], passive Perception 29
 - **Languages**: All, telepathy [= 24 stride =]
 - **Challenge**: 29 (155,000 XP)
@@ -44,7 +44,7 @@ When Xanthous fails a saving throw, he can expend a legendary deed to succeed in
 
 #### Poison of the Mind
 
-Xanthous's very presence causes the mind to unravel and disassemble itself. If a creature interacts with Xanthous in any way, such as speaking, touching, or being struck by him in any way, they must succeed on a **DC 23 Wisdom saving throw** or be affected by [# kw:Poison of the Mind #]. Characters immune to sickness and curses ignore this feature, and take [% 6d6 psychic %] instead.
+Xanthous's very presence causes the mind to unravel and disassemble itself. If a creature interacts with Xanthous in any way, such as speaking, touching, or being struck by him in any way, they save Wisdom against DC 23 or are affected by [# kw:Poison of the Mind #]. Characters immune to sickness and curses ignore this feature, and take [% 6d6 psychic %] instead.
 
 #### Twin Reactions
 
@@ -60,15 +60,15 @@ All angels are tethered to Xanthous by a [= 12 stride =] long, sulphurous umbili
 #### Dual Spellcasting
 
 Xanthous is a 20th-level spellcaster. He has the following spells slots 1st (4), 2nd (3), 3rd (3), 4th (3), 5th (3), 6th (2), 7th (2), 8th (1), 9th (1).
-Xanthous always casts spells as though he were under the effect of the [_Twinned Spell_](/en/library/character-creation/vocations/scion/metamagic) metamagic option, targeting two creatures instead of one. if the spell imposes an area, Xanthous instead uses [_Heightened Spell_](/en/library/character-creation/vocations/scion/metamagic) on all affected creatures instead of one.
-His spellcasting ability is Charisma (spell save DC 27, +19 to hit with spell attacks). He has the following spells prepared:
+Xanthous always casts spells as though he were under the effect of the [_Twinned Spell_](/en/library/character-creation/vocations/scion/spell-sculpt) sculpting technique, targeting two creatures instead of one. if the spell imposes an area, Xanthous instead uses [_Heightened Spell_](/en/library/character-creation/vocations/scion/spell-sculpt) on all affected creatures instead of one.
+His spellcasting ability is Charisma (spell save DC 27, accuracy +19 with spell attacks). He has the following spells prepared:
 
 - **Cantrips**: [_Envenom_](/en/library/spells/envenom), [_Minor Illusion_](/en/library/spells/minor-illusion), [_Ashen Anointment_](/en/library/spells/ashen-anointment)
 
 - **1st level (4 slots)**: [_Argent Strands_](/en/library/spells/argent-strands), [_Shield_](/en/library/spells/shield)
 - **2nd level (3 slots)**: [_Cystbolt_](/en/library/spells/cystbolt), [_Hold_](/en/library/spells/hold), [_Misty Step_](/en/library/spells/misty-step)
 - **3rd level (3 slots)**: [_Fear_](/en/library/spells/fear), [_Stinking Cloud_](/en/library/spells/stinking-cloud), [_Sulfurous Sphere_](/en/library/spells/sulfurous-sphere)
-- **4th level (3 slots)**: [_Shadow Of The Hunt_](/en/library/spells/shadow-of-the-hunt), [_Invisibility (upcast)_](/en/library/spells/invisibility), [_Phantasmal Force_](/en/library/spells/phantasmal-force)
+- **4th level (3 slots)**: [_Shadow Of The Hunt_](/en/library/spells/shadow-of-the-hunt), [_Invisibility (overcast)_](/en/library/spells/invisibility), [_Phantasmal Force_](/en/library/spells/phantasmal-force)
 - **5th level (3 slots)**: [_Cloudkill_](/en/library/spells/cloudkill), [_Dominate_](/en/library/spells/dominate), [_Enervation_](/en/library/spells/enervation), [_Forbidden Sun_](/en/library/spells/forbidden-sun)
 - **6th level (2 slots)**: [_Psychic Crush_](/en/library/spells/psychic-crush), [_Sunbeam_](/en/library/spells/sunbeam), [_Eyebite_](/en/library/spells/eyebite), [_Disintegrate_](/en/library/spells/disintegrate)
 - **7th level (2 slots)**: [_Invoke Agony_](/en/library/spells/invoke-agony)
@@ -91,7 +91,7 @@ His spellcasting ability is Charisma (spell save DC 27, +19 to hit with spell at
 
 - **Scourge of the Mind**: Xanthous immediately knows when one is withholding information, as it understands when something has not reached the cusp of its being, even words, phrases, or truths, even if he does not know the truth itself. Additionally, Xanthous always knows each creature's vulnerabilities or least developed areas.
 
-- **Aura of Devotion**: As an [# kw:delayed #] effect, a creature within [= 3 stride =] of Xanthous must succeed on a DC 25 Wisdom saving throw or be affected by the [_Charm_](/en/library/spells/charm) spell until the end of its next turn. A creature can only be affected by this once every minute.
+- **Aura of Devotion**: As an [# kw:delayed #] effect, a creature within [= 3 stride =] of Xanthous saves Wisdom against DC 25 or is affected by the [_Charm_](/en/library/spells/charm) spell [# kw:briefly #]. A creature can only be affected by this once every minute.
 
 ---
 
@@ -101,11 +101,11 @@ His spellcasting ability is Charisma (spell save DC 27, +19 to hit with spell at
 
 Xanthous strikes five times, once with a claw, twice with his tendrils, and twice with his Eye Beams.
 
-- **Tombsteel Claws.** _Melee Weapon Attack:_ +19 to hit, reach [= 1 stride =], one target. _Hit:_ 25 ([% 2d12 +10 piercing %]) plus 8 ([% 4d4 frost %]). The target must succeed on a **DC 25 Constitution saving throw** or gain 1 level of exhaustion as tombsteel fragments bite into their marrow.
+- **Tombsteel Claws.** Accuracy +19, reach [= 1 stride =], one creature. On a hit, 25 ([% 2d12 +10 piercing %]) plus 8 ([% 4d4 frost %]). The target saves Constitution against DC 25 or gains 1 level of exhaustion as tombsteel fragments bite into their marrow.
 
-- **Tendrils.** _Melee Weapon Attack:_ +19 to hit, reach [= 2 stride =], one target. _Hit:_ 31 ([% 4d10 +10 piercing %]). The target is grappled (escape DC 25). While grappled, the target is also restrained and silenced (cannot provide verbal or somatic components).
+- **Tendrils.** Accuracy +19, reach [= 2 stride =], one creature. On a hit, 31 ([% 4d10 +10 piercing %]). The target is [# kw:condition:grappled #] (escape DC 25). While [# kw:condition:grappled #], the target is also [# kw:condition:restrained #] and silenced (cannot provide verbal or somatic components).
 
-- **Eye Beams.** _Ranged Weapon Attack:_ +18 to hit, range [= 12 stride =]/[= 24 stride =], one target. _Hit:_ 28 ([% 3d12 +10 holy %]). The target must succeed on a **DC 25 Wisdom saving throw** or suffer psychic backlash, becoming terrified until the end of its next turn. If the creature was already terrified, it instead takes an additional 31 ([% 5d12 psychic %]).
+- **Eye Beams.** Accuracy +18, range [= 12 stride =]/[= 24 stride =], one creature. On a hit, 28 ([% 3d12 +10 holy %]). The target saves Wisdom against DC 25 or suffers psychic backlash, becoming [# kw:condition:terrified #] [# kw:briefly #]. If the creature was already [# kw:condition:terrified #], it instead takes an additional 31 ([% 5d12 psychic %]).
 
 #### Spellcasting
 
@@ -125,7 +125,7 @@ At the start of the creature with the highest initiative's turn, Xanthous can ex
 
 #### First Cross / Second Cross
 
-Xanthous projects a 45-degree cross that's [= 3 stride =] wide and [= 40 stride =] long. The cross is made of egg-shaped **chemical** or **frost** bombs. These count as difficult terrain, and explode as a [# kw:persistent #] effect, forcing the intersecting creature to make a **DC 25 Dexterity saving throw** or take 21 ([% 6d6 %] damage) of the corresponding type and fall prone.
+Xanthous projects a 45-degree cross that's [= 3 stride =] wide and [= 40 stride =] long. The cross is made of egg-shaped **chemical** or **frost** bombs. These count as difficult terrain, and explode as a [# kw:persistent #] effect, forcing the intersecting creature to save Dexterity against DC 25 or take 21 ([% 6d6 %] damage) of the corresponding type and fall [# kw:condition:prone #].
 Each cross counts as a separate deed.
 
 ---
@@ -144,19 +144,19 @@ Xanthous can expend legendary deeds to use the options below. Only one legendary
   As a legendary deed, an awakened angel takes a turn. During this turn, the angel has a +10 accuracy and damage bonus, and a +10 bonus to every saving throw and skill check.
 
 - **Loving Embrace of the Miracle.** (Costs 1 Deed)  
-  If a creature is directly below Xanthous, it must succeed on a **DC 20 Wisdom saving throw**, regardless if Xanthous is currently weakened or not. If the creature fails, Xanthous assumes total control of it until the end of their next turn.
+  If a creature is directly below Xanthous, it saves Wisdom against DC 20, regardless if Xanthous is currently weakened or not. If the creature fails, Xanthous assumes total control of it [# kw:briefly #].
 
 **Pure Radiance** (Recharge 5-6) (Costs 2 Deeds):
 
 _Xanthous emits a pulse of psychic energy in a [= 12 stride;ADJ =] cone._
 
-Each creature in that area must make a Wisdom saving throw (DC 27).
-On a failed save, a creature takes [% 4d10 psychic %], and [% 4d10 holy %] and is charmed by Xanthous for 1 minute.
-While charmed in this way, the creature regards Xanthous as a trusted friend to be heeded and protected.
+Each creature in that area saves Wisdom against DC 27.
+On a failed save, a creature takes [% 4d10 psychic %], and [% 4d10 holy %] and is [# kw:condition:charmed #] by Xanthous for 1 minute.
+While [# kw:condition:charmed #] in this way, the creature regards Xanthous as a trusted friend to be heeded and protected.
 This effect does not end early if Xanthous or his allies harm the creature or their allies, as the creature believes they must have a reason for it.
-The charmed target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+The [# kw:condition:charmed #] target can [# kw:resist #] at the end of each of its turns.
 
-On a successful save, a creature takes half as much damage and is not charmed.
+On a successful save, a creature takes half as much damage and is not [# kw:condition:charmed #].
 
 ---
 
@@ -180,7 +180,7 @@ _Medium Aberration, Lawful Evil_
 - **Saving Throws**: Str +9, Dex +10, Wis +11, Cha +10
 - **Skills**: Athletics +9, Insight +11, Perception +11, Persuasion +10
 - **Damage Resistances**: Holy
-- **Condition Immunities**: Terrified
+- **Condition Immunities**: [# kw:condition:Terrified #]
 - **Senses**: Darkvision [= 12 stride =], passive Perception 20
 - **Languages**: All, Telepathy [= 24 stride =]
 - **Challenge**: 9 (5,000 XP)
@@ -203,7 +203,7 @@ The angel can use its reaction to impose disadvantage on an attack roll made aga
 
 The angel makes two attacks with its Blazing Blade.
 
-- **Blazing Blade.** _Melee Weapon Attack:_ +11 to hit, reach [= 1 stride =], one target. _Hit:_ 21 ([% 3d10 +4 holy %]).
+- **Blazing Blade.** Accuracy +11, reach [= 1 stride =], one creature. On a hit, 21 ([% 3d10 +4 holy %]).
 
 ## Angel of the Seven Wings
 
@@ -225,7 +225,7 @@ _Medium Aberration, Lawful Evil_
 - **Saving Throws**: Dex +13, Con +12, Wis +15, Cha +11
 - **Skills**: Acrobatics +13, Insight +15, Perception +15
 - **Damage Resistances**: Psychic
-- **Condition Immunities**: Terrified
+- **Condition Immunities**: [# kw:condition:Terrified #]
 - **Senses**: Darkvision [= 12 stride =], passive Perception 24
 - **Languages**: All, Telepathy [= 24 stride =]
 - **Challenge**: 9 (5,000 XP)
@@ -250,7 +250,7 @@ As a Minor Action, it can become incorporeal until the start of its next turn, g
 
 ### Major Actions
 
-- **Wing Slash.** _Melee Weapon Attack:_ +13 to hit, reach [= 2 stride =], one target. _Hit:_ 27 ([% 3d12 +6 slashing %]).
+- **Wing Slash.** Accuracy +13, reach [= 2 stride =], one creature. On a hit, 27 ([% 3d12 +6 slashing %]).
 
 ---
 
@@ -274,7 +274,7 @@ _Medium Aberration, Lawful Evil_
 - **Saving Throws**: Str +13, Con +12, Wis +11, Cha +10
 - **Skills**: Intimidation +10, Perception +11, Religion +8
 - **Damage Resistances**: Frost; Dark
-- **Condition Immunities**: Terrified
+- **Condition Immunities**: [# kw:condition:Terrified #]
 - **Senses**: Darkvision [= 12 stride =], passive Perception 20
 - **Languages**: All, Telepathy [= 24 stride =]
 - **Challenge**: 9 (5,000 XP)
@@ -291,7 +291,7 @@ Creatures within [= 2 stride =] take 10 dark damage at the start of their turn.
 
 ### Major Actions
 
-- **Tombsteel Claws.** _Melee Weapon Attack:_ +13 to hit, reach [= 1 stride =], one target. _Hit:_ 28 ([% 4d10 +6 frost %]).
+- **Tombsteel Claws.** Accuracy +13, reach [= 1 stride =], one creature. On a hit, 28 ([% 4d10 +6 frost %]).
 
 ---
 
@@ -322,7 +322,7 @@ _Medium Aberration, Lawful Evil_
 
 - **Saving Throws**: Dex +11, Wis +13, Cha +12
 - **Skills**: Arcana +12, Insight +13, Stealth +11
-- **Condition Immunities**: Terrified, Paralyzed
+- **Condition Immunities**: [# kw:condition:Terrified #], [# kw:condition:Paralyzed #]
 - **Senses**: Darkvision [= 12 stride =], passive Perception 22
 - **Languages**: All, Telepathy [= 24 stride =]
 - **Challenge**: 9 (5,000 XP)
@@ -333,7 +333,7 @@ _Medium Aberration, Lawful Evil_
 
 #### Aura of Somnolence
 
-Creatures within [= 2 stride =] must succeed on a **DC 25 Wisdom saving throw** or be affected by the [_Sleep_](/en/library/spells/sleep) spell (as if cast at 5th level) with maximized damage.
+Creatures within [= 2 stride =] save Wisdom against DC 25 or are affected by the [_Sleep_](/en/library/spells/sleep) spell (as if cast at 5th level) with maximized damage.
 
 #### Song of Invigoration
 
@@ -343,6 +343,6 @@ As a Minor Action, the angel may grant 10 temporary hit points to any creature t
 
 ### Major Actions
 
-- **Dreaming Touch.** _Melee Weapon Attack:_ +11 to hit, reach [= 1 stride =], one target. _Hit:_ 21 ([% 3d10 +4 psychic %]), and the target must make a **DC 25 Wisdom saving throw** or be incapacitated until the end of its next turn.
+- **Dreaming Touch.** Accuracy +11, reach [= 1 stride =], one creature. On a hit, 21 ([% 3d10 +4 psychic %]), and the target saves Wisdom against DC 25 or is [# kw:condition:incapacitated #] [# kw:briefly #].
 
 ---

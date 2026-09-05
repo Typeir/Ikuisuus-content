@@ -19,7 +19,7 @@ _Large Construct (Undead), Chaotic Neutral_
 - **Damage Resistances**: Fire, Lightning, Frost, Holy
 - **Damage Immunities**: Poison, Dark
 - **Damage Vulnerabilities**: Bludgeoning, Chemical
-- **Condition Immunities**: Stunned, Paralyzed, Terrified, Frightened, Charmed, Poisoned
+- **Condition Immunities**: [# kw:condition:Stunned #], [# kw:condition:Paralyzed #], [# kw:condition:Terrified #], [# kw:condition:Frightened #], [# kw:condition:Charmed #], [# kw:condition:Poisoned #]
 - **Senses**: Darkvision [= 24 stride =], Tremorsense [= 12 stride =], Passive Perception 20
 - **Languages**: —
 - **Challenge**: 10 (5,900 XP)
@@ -33,7 +33,7 @@ _Large Construct (Undead), Chaotic Neutral_
 
 When reduced to 0 hit points, the hunter erupts in a [= 60 stride;ADJ =]-radius explosion (blocked by solid terrain).  
 After a three turn delay, the hunter explodes.
-Each creature within range must make a **DC 21 Dexterity saving throw**, taking **180 ([% 40d8 force %])** and becoming **blinded** until the end of its next turn on a failure, or half as much damage on a success.
+Each creature within range saves Dexterity against DC 21, taking **180 ([% 40d8 force %])** and becoming **[# kw:condition:blinded #]** [# kw:briefly #] on a failure, or half as much damage on a success.
 
 #### Fungal overriden Core
 
@@ -41,15 +41,15 @@ The Ventralis variant is considered both a Construct and Undead. It can be affec
 
 #### Spore Exhalation (Recharge 5–6)
 
-Immediately after moving at least [= 2 stride =], the Hunter emits fungal clouds into a **[= 2 stride;ADJ =] radius** centered on itself. Creatures in the area must make a **DC 17 Constitution saving throw** or be **infected** and **blinded** until the end of their next turn. This area becomes **difficult terrain** for 1 minute as the floor blooms with creeping mycelium.
+Immediately after moving at least [= 2 stride =], the Hunter emits fungal clouds into a **[= 2 stride;ADJ =] radius** centered on itself. Creatures in the area save Constitution against DC 17 or are **infected** and **[# kw:condition:blinded #]** [# kw:briefly #]. This area becomes **difficult terrain** for 1 minute as the floor blooms with creeping mycelium.
 
 #### Fungal Spellcasting
 
 After completing its movement, the Hunter may cast one of the following spells as a Minor Action, centered on itself or its space:
 
 - [_Entangle_](/en/library/spells/entangle) (DC 17 Str) — **2 spell points**
-- [_Entangle (Lattice)_](/en/library/spells/entangle) (DC 17 Dex, restrained on failure) — **3 spell points**
-- [_Stinking Cloud_](/en/library/spells/stinking-cloud) (DC 17 Con, poisoned and can't take actions) — **5 spell points**
+- [_Entangle (Lattice)_](/en/library/spells/entangle) (DC 17 Dex, [# kw:condition:restrained #] on failure) — **3 spell points**
+- [_Stinking Cloud_](/en/library/spells/stinking-cloud) (DC 17 Con, [# kw:condition:poisoned #] and can't take actions) — **5 spell points**
 
 Each spell can be used **once per day**, or cast again by expending spell points.
 
@@ -66,19 +66,19 @@ The Hunter has **8 spell points** to recast any of its fungal spells. It cannot 
 The Hunter makes one attack with its Fated Blade and one with its Particle Renders or Thruster Axe-Kick.
 
 - **Fated Blade** _(Melee Weapon, Finesse)_  
-  _Melee Weapon Attack_: +10 to hit, reach [= 1 stride =], one target.  
+  Accuracy +10, reach [= 1 stride =], one creature.  
   **Hit**: [% 2d10 +6 slashing %]  
-  **Effect**: Once per day per creature, the target must succeed on a **DC 19 Charisma saving throw** or become **vulnerable to all damage** from this blade. The Hunter also gains **truesight** on that target for 1 minute.
+  **Effect**: Once per day per creature, the target saves Charisma against DC 19 or becomes **vulnerable to all damage** from this blade. The Hunter also gains **truesight** on that target for 1 minute.
 
 - **Particle Renders** _(Melee Weapon, One-Handed)_  
-  _Melee Weapon Attack_: +10 to hit, reach [= 1 stride =], one target.  
+  Accuracy +10, reach [= 1 stride =], one creature.  
   **Hit**: [% 2d8 +6 slashing %]  
   **Effect**: After a successful hit, the Hunter may make one additional free attack with this weapon (does not stack).
 
 - **Thruster Axe-Kick** _(Gap Closer)_  
-  _Special Melee Weapon Attack_: +10 to hit, range 10–[= 6 stride =], one target.  
+  _Special Accuracy +10, range 10–[= 6 stride =], one creature.  
   **Hit**: [% 3d10 +6 slashing %]  
-  **Effect**: Target must succeed on a **DC 17 Strength saving throw** or be knocked prone.  
+  **Effect**: Target saves Strength against DC 17 or is knocked [# kw:condition:prone #].  
   If the target takes damage, it [catches fire](/en/library/rules/steel-and-strife/conditions#burning).
 
 ---
@@ -86,7 +86,7 @@ The Hunter makes one attack with its Fated Blade and one with its Particle Rende
 ## Infection Mechanic
 
 **Ventralis Infection.**  
-Any creature hit by a melee weapon attack must succeed on a **DC 15 Constitution saving throw** or become **infected** with a latent fungal curse.
+Any creature hit by a melee weapon attack saves Constitution against DC 15 or becomes **infected** with a latent fungal curse.
 If the creature is already infected by any of the [# kw:Black Rot #] effects, they instantly roll on the Table again.
 
 While infected:
@@ -103,11 +103,11 @@ While infected:
 
 ## Coatings
 
-All Ventralis Hunter weapons are coated in necrotic mycelium. Once per day per creature, on hit, the target must make a **DC 15 Constitution saving throw** or suffer one of the following conditions (Hunter’s choice):
+All Ventralis Hunter weapons are coated in necrotic mycelium. Once per day per creature, on hit, the target saves Constitution against DC 15 or suffers one of the following conditions (Hunter’s choice):
 
 - Sleep
 - Paralysis
-- Poisoned
-- Frightened
+- [# kw:condition:Poisoned #]
+- [# kw:condition:Frightened #]
 
 > The **Fated Blade’s** special vulnerability effect can only be attempted **once per day per target**.

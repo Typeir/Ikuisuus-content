@@ -19,7 +19,7 @@ _Huge Aberration, Lawful Good_
 - **Skills**: Perception +18, Intimidation +15
 - **Damage Resistances**: Fire, Holy
 - **Damage Immunities**: Poison
-- **Condition Immunities**: Terrified, Poisoned, Exhaustion
+- **Condition Immunities**: [# kw:condition:Terrified #], [# kw:condition:Poisoned #], Exhaustion
 - **Senses**: Truesight [= 24 stride =], passive Perception 27
 - **Languages**: Common, Empyrean, Hidden
 - **Challenge**: 31 (175,000 XP)
@@ -44,14 +44,14 @@ While Rubedo’s Armor Class is **above 25**, damage dealt by **Flame Belch** is
 #### Ruinous Aura
 
 Rubedo’s supercritical presence irradiates flesh, blood, and thought alike.  
-Once per turn, if a creature is **hit by Rubedo**, caught within [= 3 stride =] of it as an [# kw:delayed #] effect, or **takes damage from one of Rubedo’s spells or lair effects**, it must succeed on a **DC 25 Constitution saving throw** or be affected by [# kw:Red Ruin #].  
+Once per turn, if a creature is **hit by Rubedo**, caught within [= 3 stride =] of it as an [# kw:delayed #] effect, or **takes damage from one of Rubedo’s spells or lair effects**, it saves Constitution against DC 25 or is affected by [# kw:Red Ruin #].  
 This saving throw DC increases to **25 while Rubedo is Wounded**, **26 while Bloodied**, and **27 while Doomed**.  
 Creatures immune to disease or curses do not ignore this effect; instead, they roll with advantage.
 
 #### Spellcasting
 
 Rubedo is a **17th-level spellcaster**. It has the following spell slots: 1st (4), 2nd (3), 3rd (3), 4th (3), 5th (3), 6th (2), 7th (2), 8th (1), 9th (1).  
-Its spellcasting ability is Wisdom (spell save DC 26, +18 to hit with spell attacks). It does not require material components. It has the following spells prepared:
+Its spellcasting ability is Wisdom (spell save DC 26, accuracy +18 with spell attacks). It does not require material components. It has the following spells prepared:
 
 - **Cantrips**: [_Judgement_](/en/library/spells/judgement), [_Pyromancy_](/en/library/spells/pyromancy)
 - **1st level (4 slots)**: [_Death Grips_](/en/library/spells/death-grips), [_Waltzing Blades_](/en/library/spells/waltzing-blades), [_Twilight Bolt_](/en/library/spells/twilight-bolt), [_Burning Hands_](/en/library/spells/burning-hands)
@@ -65,7 +65,7 @@ Its spellcasting ability is Wisdom (spell save DC 26, +18 to hit with spell atta
 
 - **6th level (2 slots)**: [_Blade Barrier_](/en/library/spells/blade-barrier), [_Harm_](/en/library/spells/harm)
 
-- **7th level (2 slots)**: [_Flame Strike_](/en/library/spells/flame-strike) (upcast)
+- **7th level (2 slots)**: [_Flame Strike_](/en/library/spells/flame-strike) (overcast)
 
 - **8th level (1 slot)**: [_Sunburst_](/en/library/spells/sunburst)
 
@@ -87,16 +87,16 @@ Rubedo can replace **one** of these attacks with **No Further Questions**, if av
 ---
 
 - **Sorcery Ring**  
-  _Melee Weapon Attack:_ +23 to hit, reach [= 2 stride =], one target.  
-  _Hit:_ 45 ([% 6d10 +12 force %]) plus 27 ([% 6d8 fire %]).
+  Accuracy +23, reach [= 2 stride =], one creature.  
+  On a hit, 45 ([% 6d10 +12 force %]) plus 27 ([% 6d8 fire %]).
 
 ---
 
 - **Dreamcatcher Relics**  
-  _Melee Weapon Attack:_ +23 to hit, reach [= 3 stride =], one target.  
-  _Hit:_ 36 ([% 8d8 force %]).
+  Accuracy +23, reach [= 3 stride =], one creature.  
+  On a hit, 36 ([% 8d8 force %]).
 
-The target must succeed on a **DC 26 Charisma saving throw** or become **[_Laid Bare_](/en/library/items/heirlooms/dreamcatcher#fate-arisen)** for **1 minute**.  
+The target saves Charisma against DC 26 or becomes **[_Laid Bare_](/en/library/items/heirlooms/dreamcatcher#fate-arisen)** for **1 minute**.  
 A creature that succeeds is immune to this effect until the next dawn.
 
 On a hit, a [**_Cloud of Daggers_**](/en/library/spells/cloud-of-daggers) spell is created in the target’s space:
@@ -110,7 +110,7 @@ On a hit, a [**_Cloud of Daggers_**](/en/library/spells/cloud-of-daggers) spell 
 
 - **No Further Questions** (Recharge 6)  
   Rubedo fires its shotgun in a **[= 4 stride;ADJ =] cone**.  
-  Each creature in the cone must make a **DC 27 Dexterity saving throw**:
+  Each creature in the cone saves Dexterity against DC 27:
 
 - **Fail**: 90 ([% 20d8 piercing %]) and is **pushed [= 4 stride =]** directly away from Rubedo
 - **Success**: Half damage, no push
@@ -119,7 +119,7 @@ On a hit, a [**_Cloud of Daggers_**](/en/library/spells/cloud-of-daggers) spell 
 
 - **Flame Belch** (Recharge 4–6)  
   Rubedo expels output from its stomach-mouth in a **[= 12 stride;ADJ =]-long, [= 2 stride;ADJ =]-wide line**.  
-  Each creature in the line must make a **DC 27 Dexterity saving throw**:
+  Each creature in the line saves Dexterity against DC 27:
 
 - **Fail**: 88 ([% 16d10 force %]) plus 22 ([% 4d10 fire %])
 - **Success**: Half damage
@@ -169,7 +169,7 @@ At the start of the creature with the highest initiative's turn, Rubedo can expe
 
 Rubedo becomes Supercritical for a round.  
 Until the start of the next round, Rubedo produces an aura of [= 3 stride =].  
-As a [# kw:persistent #] effect, creatures in this area take **18 ([% 4d8 force %])** and must make a **DC 26 Constitution saving throw** or roll on [# kw:Red Ruin #].  
+As a [# kw:persistent #] effect, creatures in this area take **18 ([% 4d8 force %])** and save Constitution against DC 26 or roll on [# kw:Red Ruin #].  
 Every [= 1 stride =] of movement in this area costs [= 4 stride =] extra.
 
 ---
@@ -177,7 +177,7 @@ Every [= 1 stride =] of movement in this area costs [= 4 stride =] extra.
 #### Relic Suppression
 
 Rubedo targets up to **three creatures** it can see within **[= 24 stride =]**.  
-Each target must succeed on a **DC 26 Charisma saving throw** or have all heirlooms of rarity **very rare** or higher unattuned until the start of the next round.
+Each target saves Charisma against DC 26 or has all heirlooms of rarity **very rare** or higher unattuned until the start of the next round.
 
 ---
 
@@ -210,8 +210,8 @@ At resolution, a **Fallen Blade** manifests in each designated space.
 > - **Fixed**: The Fallen Blade cannot move.
 > - **Uncanny Reflexes**: The Fallen Blade gains a reaction at the start of each creature's turn if it has none left.
 > - **Reaction — Entropic Cleave**  
->   _Melee Weapon Attack:_ +18 to hit, reach [= 2 stride =]; one target.  
->   **Hit:** 54 ([% 12d8 slashing %]). The target’s speed becomes **0** until the end of its next turn.
+>   Accuracy +18, reach [= 2 stride =], one creature.  
+>   **Hit:** 54 ([% 12d8 slashing %]). The target’s speed becomes **0** [# kw:briefly #].
 > - **Endless Battlefield**  
 >   The fallen blade automatically swings at creatures that enter or move within its reach, as a _Reaction_.
 
@@ -223,7 +223,7 @@ If a Large or larger object obstructs the space designated by Rubedo for a Falle
 #### Storm of Blades
 
 Rubedo starts pulling out the bound blades from its crown.  
-Unless restrained or disarmed at any point until the Stratagem resolves, Rubedo gains **Multiattack (12 attacks)** until the end of its next turn.  
+Unless [# kw:condition:restrained #] or disarmed at any point until the Stratagem resolves, Rubedo gains **Multiattack (12 attacks)** [# kw:briefly #].  
 All attacks this round must be **Dreamcatcher Relics**.
 
 ---
@@ -252,7 +252,7 @@ All attacks this round must be **Dreamcatcher Relics**.
 
 - Rubedo’s **Armor Class is permanently reduced by an additional 3** (total –6).
 - Rubedo may **declare one Stratagem immediately**, even if it has already declared a Stratagem this turn.
-- At initiative count **20** (losing initiative ties), each creature within **[= 8 stride =]** of Rubedo must make a **DC 25 Dexterity saving throw**.
+- At initiative count **20** (losing initiative ties), each creature within **[= 8 stride =]** of Rubedo saves Dexterity against DC 25.
 - As an [# kw:delayed #] effect, creatures in the lair take an additional **[% 3d12 force %]**, for a total of **[% 6d12 %]**.
 - Rubedo becomes perpetually affected by the spells [_Freedom of Movement_](/en/library/spells/freedom-of-movement), [_Haste_](/en/library/spells/haste), and [_Starpath_](/en/library/spells/starpath).
 - All of Rubedo’s attacks cause [# kw:Red Ruin #] on a hit.
@@ -262,9 +262,9 @@ All attacks this round must be **Dreamcatcher Relics**.
 #### Slain
 
 When Rubedo is reduced to 0 hit points, it erupts in a cataclysmic explosion.  
-Each creature within **[= 30 stride =]** must make a **DC 31 Dexterity saving throw**:
+Each creature within **[= 30 stride =]** saves Dexterity against DC 31:
 
-- **Fail**: 150 ([% 20d12 +40 force %]) and is **knocked prone**
-- **Success**: Half damage, not knocked prone
+- **Fail**: 150 ([% 20d12 +40 force %]) and is **knocked [# kw:condition:prone #]**
+- **Success**: Half damage, not knocked [# kw:condition:prone #]
 
 Creatures brought to 0 hit points or less this way are disintegrated along with everything they are carrying.

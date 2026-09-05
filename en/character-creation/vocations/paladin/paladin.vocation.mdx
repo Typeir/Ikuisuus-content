@@ -84,7 +84,7 @@ Your blessed touch can heal wounds. You have a pool of healing power that replen
 
 As a **Minor Action**, you can touch a creature (which could be yourself) and draw power from the pool to restore a number of Hit Points to that creature, up to the amount remaining in the pool.
 
-You can also expend **5 Hit Points** from the pool to remove the **Poisoned** condition from the creature. Those points don’t also restore Hit Points.
+You can also expend **5 Hit Points** from the pool to remove the **[# kw:condition:Poisoned #]** condition from the creature. Those points don’t also restore Hit Points.
 
 </Collapsible>
 
@@ -129,12 +129,12 @@ When you hit a creature with a weapon attack, you can expend a spell slot to smi
 
 | Minimum Slot | Smite          | Extra Damage          | Rider                                                                                                                                                                                                                                                                                                                                         |
 | ------------ | -------------- | --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1st          | **Wrathful**   | [% 1d8 psychic %]     | The target must succeed on a Wisdom saving throw or be frightened of you for 1 minute; it repeats the save at the end of each of its turns.                                                                                                                                                                                                   |
-| 1st          | **Thunderous** | [% 1d8 bludgeoning %] | A crack of thunder sounds, audible within [= 60 stride =]. The target must succeed on a Strength saving throw or be pushed [= 2 stride =] away from you and knocked prone.                                                                                                                                                                                  |
+| 1st          | **Wrathful**   | [% 1d8 psychic %]     | The target saves Wisdom or is [# kw:condition:frightened #] of you for 1 minute; it can [# kw:resist #] at the end of each of its turns.                                                                                                                                                                                                   |
+| 1st          | **Thunderous** | [% 1d8 bludgeoning %] | A crack of thunder sounds, audible within [= 60 stride =]. The target saves Strength or is pushed [= 2 stride =] away from you and knocked [# kw:condition:prone #].                                                                                                                                                                                  |
 | 2nd          | **Branding**   | [% 2d8 holy %]        | The target becomes visible if invisible, sheds dim light in a [= 1 stride;ADJ =] radius, and cannot become invisible for 1 minute.                                                                                                                                                                                                                        |
-| 2nd          | **Scorching**  | [% 2d8 fire %]        | The target has to succeed on a Dexterity saving throw or gain the [# kw:condition:burning #] condition.                                                                                                                                                                                                 |
-| 3rd          | **Blinding**   | [% 3d8 holy %]        | The target must succeed on a Constitution saving throw or be [# kw:condition:blinded #] for 1 minute; it repeats the save at the end of each of its turns.                                                                                                                                              |
-| 4th          | **Staggering** | [% 4d6 psychic %]     | The target must succeed on a Wisdom saving throw or be [# kw:condition:staggered #] and unable to take reactions until the end of its next turn.                                                                                                                                                      |
+| 2nd          | **Scorching**  | [% 2d8 fire %]        | The target saves Dexterity or gains the [# kw:condition:burning #] condition.                                                                                                                                                                                                 |
+| 3rd          | **Blinding**   | [% 3d8 holy %]        | The target saves Constitution or is [# kw:condition:blinded #] for 1 minute; it can [# kw:resist #] at the end of each of its turns.                                                                                                                                              |
+| 4th          | **Staggering** | [% 4d6 psychic %]     | The target saves Wisdom or is [# kw:condition:staggered #] and unable to take reactions [# kw:briefly #].                                                                                                                                                      |
 | 5th          | **Banishing**  | [% 7d8 force %]       | If the attack leaves the target at 50 hit points or fewer, it sinks into the Muck Dimension, [banished](/en/library/rules/steel-and-strife/conditions#banished) and [# kw:condition:incapacitated #], for 1 minute. Afterwards, it reappears in the space it left, or the nearest unoccupied one. |
 
 Spending a slot above your chosen smite's minimum increases its extra damage by [% 1d8 %] for each level above that minimum.
@@ -157,7 +157,7 @@ You can channel divine power through your oath to fuel magical effects.
 If an effect requires a saving throw, the DC equals your Paladin spell save DC.
 
 **Divine Sense.**  
-As a **Minor Action**, you detect Celestials, Aberrations, and Undead within **[= 12 stride =]** for **10 minutes**, unless you become Incapacitated. You also detect consecrated or desecrated places or objects in that area.
+As a **Minor Action**, you detect Celestials, Aberrations, and Undead within **[= 12 stride =]** for **10 minutes**, unless you become [# kw:condition:Incapacitated #]. You also detect consecrated or desecrated places or objects in that area.
 
 </Collapsible>
 
@@ -204,13 +204,20 @@ You always have **Find Steed** prepared. You can cast it once without expending 
 </Collapsible>
 
 <Collapsible>
-## 6th Level – Aura of Protection
+## 6th Level – Well of Perseverance
 
-You radiate a protective aura in a **[= 2 stride;ADJ =] aura**. The aura is inactive while you are Incapacitated.
+Your Oath gives you a near endless well of will and determination, which you can extend to those you share a cause with.
 
-You and your allies in the aura gain a bonus to saving throws equal to your **Charisma modifier** (minimum +1).
+**Perseverance**
+ - You always add your **Charisma** to the **Accuracy** of your saving throws. This is your **Perseverance**.
 
-A creature can benefit from only one Aura of Protection at a time.
+**Comradery**
+- At the end of a recovery, you can designate up to **TB** willing creatures to become **Determined**. These are your **Comrades**.
+Regardless of distance, as long as you are alive, these creatures can add your **Perseverance** to their [# kw:grit #] rolls, and they gain a single, personal [# kw:deed #] at the end of every [# kw:repose #]
+
+If a creature would be affecteed by another **Comradery** effect, they lose the effects of the prior one.
+If a creature would turn **Hostile or Neutral** to you on [# kw:disposition #] track, **Comradery** vanishes too.
+Only those who share your cause will receive the boons from it.
 
 </Collapsible>
 
@@ -219,14 +226,15 @@ A creature can benefit from only one Aura of Protection at a time.
 
 As a **Major Action**, you can expend one use of Channel Divinity to overwhelm foes with awe.
 
-Choose a number of creatures you can see within **[= 12 stride =]** equal to your Charisma modifier (minimum one). Each target must succeed on a Wisdom saving throw or be **Frightened** for 1 minute or until it takes damage. While Frightened this way, a creature can take only one of the following on its turn: move, take a Major Action, or take a Minor Action.
+Choose a number of creatures you can see within **[= 12 stride =]** equal to your Charisma modifier (minimum one). Each target saves Wisdom or is **[# kw:condition:Frightened #]** for 1 minute or until it takes damage. While [# kw:condition:Frightened #] this way, a creature can take only one of the following on its turn: move, take a Major Action, or take a Minor Action.
 
 </Collapsible>
 
 <Collapsible>
-## 10th Level – Aura of Courage
+## 10th Level – Well of Courage
 
-You and your allies have **immunity to the Frightened condition** while within your Aura of Protection.
+Whenever you or one of your **Comrades** rolls a **1** on a **Grit** effect, you can reroll it.
+Whenever you or one of your **Comrades** rolls a **20** on a **Grit** effect, you immediately succeed, regardless of the final result.
 
 </Collapsible>
 
@@ -240,16 +248,20 @@ Paladin's smite extra damage after casting a spell becomes [% 2d8 %] plus your C
 <Collapsible>
 ## 14th Level – Restoring Touch
 
-When you use Lay On Hands on a creature, you can also remove one or more of the following conditions: **Blinded, Deafened, Frightened, Paralyzed, or Stunned**.
+When you use Lay On Hands on a creature, you can also remove one or more of the following conditions: **[# kw:condition:Blinded #], [# kw:condition:Deafened #], [# kw:condition:Frightened #], [# kw:condition:Paralyzed #], or [# kw:condition:Stunned #]**.
 
 You must expend **5 Hit Points** from the Lay On Hands pool for each condition removed.
 
 </Collapsible>
 
 <Collapsible>
-## 18th Level – Aura Expansion
+## 18th Level – Obliterating Smite
 
-Your Aura of Protection is now a **[= 6 stride;ADJ =] aura**.
+Attacks that carry a **Paladin's Smite** or extra holy damage from the **Radiant Strikes** or **Paladin's smite** features are enhanced.
+These attacks have their critical strike range reduced by 1.
+
+You can spend a [# kw:deed #] to further reduce the range by your charisma modifier, before you make the attack.
+Once you've spen a [# kw:deed #] this way and successfully landed a critical hit, you cannot use it in this way again until you finish a [# kw:Recovery #].
 
 </Collapsible>
 
@@ -263,7 +275,8 @@ You gain an **Epic Boon feat** or another feat of your choice for which you qual
 <Collapsible>
 ## 21st Level – Divine Will
 
-When an ally affected by your Aura of Protection makes a saving throw and fails, you can expend one use of Channel Divinity as a reaction to allow the ally to succeed instead.
-Additionally, you gain one additional use of Channel Divinity.
+When you or a **Comrade** fail on a **Deed** roll, you can use your **Channel Divinity** as a **Reaction** to have them reroll it.
+
+Your charisma score increases by **4**.
 
 </Collapsible>

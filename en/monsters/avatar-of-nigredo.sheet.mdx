@@ -17,7 +17,7 @@ _Huge Aberration, Lawful Evil_
 
 - **Saving Throws**: STR +8, CON +9
 - **Damage Resistances**: dark, fire
-- **Condition Immunities**: Charmed, Frightened, Terrified.
+- **Condition Immunities**: [# kw:condition:Charmed #], [# kw:condition:Frightened #], [# kw:condition:Terrified #].
 - **Senses**: Darkvision [= 24 stride =], passive Perception 12
 - **Languages**: Empyrean, telepathy [= 12 stride =]
 - **Challenge**: 8 (3,900 XP)
@@ -33,7 +33,7 @@ This is a splinter of Nigredo’s true body — a localized knot of flesh and cl
 
 #### Spore Cloud Aura
 
-Creatures starting their turn within [= 2 stride =] must succeed on a **DC 16 Constitution saving throw** or immediately roll on the [Ventralis Rot Table](/en/library/monsters/nigredo).
+Creatures starting their turn within [= 2 stride =] save Constitution against DC 16 or immediately roll on the [Ventralis Rot Table](/en/library/monsters/nigredo).
 
 #### Sunlight Vulnerability
 
@@ -66,15 +66,15 @@ The Avatar's body is comprised of scavenged parts, as such it drops **[% 1d4 %] 
 The Avatar makes two **Impaling Claw** attacks or one **Impaling Claw** plus **Flyburst**.
 
 - **Impaling Claw.**  
-  _Melee Weapon Attack:_ +8 to hit, reach [= 2 stride =], one target.  
-  _Hit:_ [% 2d10 +5 piercing %] + [% 2d8 dark %]. Target must succeed on a **DC 16 Strength save** or be grappled (escape DC 16). Grappled creatures take [% 2d8 dark %] at the start of their turn.
+  Accuracy +8, reach [= 2 stride =], one creature.  
+  On a hit, [% 2d10 +5 piercing %] + [% 2d8 dark %]. Target saves Strength against DC 16 or is [# kw:condition:grappled #] (escape DC 16). [# kw:condition:Grappled #] creatures take [% 2d8 dark %] at the start of their turn.
 
 - **Flyburst.**  
-  A cloud of corpse-flies erupts in a [= 3 stride;ADJ =] radius. Creatures in the area must make a **DC 16 Constitution save** or take **[% 4d8 dark %]** and be **blinded** until the start of the Avatar’s next turn. On success, they take half damage and avoid blindness.
+  A cloud of corpse-flies erupts in a [= 3 stride;ADJ =] radius. Creatures in the area save Constitution against DC 16 or take **[% 4d8 dark %]** and are **[# kw:condition:blinded #]** until the start of the Avatar’s next turn. On success, they take half damage and avoid blindness.
 
 #### Exhale the Rot (Recharge 6).
 
-The Avatar exhales spores in a [= 6 stride;ADJ =] cone. Each creature in that area must make a **DC 16 Constitution save**, taking **[% 5d8 dark %]** and triggering **Ventralis Rot** even on a success.
+The Avatar exhales spores in a [= 6 stride;ADJ =] cone. Each creature in that area saves Constitution against DC 16, taking **[% 5d8 dark %]** and triggering **Ventralis Rot** even on a success.
 
 ---
 
@@ -83,7 +83,7 @@ The Avatar exhales spores in a [= 6 stride;ADJ =] cone. Each creature in that ar
 #### Black Mist Step (Recharge 4–6)
 
 The Avatar moves up to **[= 12 stride =] in a straight line**, ignoring difficult terrain and **not provoking opportunity attacks**.  
-Each creature in the line must succeed on a **DC 16 Constitution saving throw** or take **[% 4d8 dark %]** half as much on a success.
+Each creature in the line saves Constitution against DC 16 or takes **[% 4d8 dark %]** half as much on a success.
 
 #### Crushing Weight
 
@@ -101,7 +101,7 @@ When a creature within reach misses the Avatar with a melee attack, it may make 
 
 ## Spellcasting (Limited)
 
-The Avatar is an innate spellcaster (save DC 16, +6 to hit). It can cast the following spells, requiring no components:
+The Avatar is an innate spellcaster (save DC 16, accuracy +6). It can cast the following spells, requiring no components:
 
 - **At will**: [_Omen_](/en/library/spells/omen), [_Ashen Anointment_](/en/library/spells/ashen-anointment)
 - **1/day each**: [_Excision_](/en/library/spells/excision), [_Hold_](/en/library/spells/hold)

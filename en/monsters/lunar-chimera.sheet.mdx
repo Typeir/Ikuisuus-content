@@ -36,7 +36,7 @@ The Lunar Chimera can expend legendary deeds to use the options below. Only one 
 - **Savage Swipe.** (Costs 1 Deed) The lion makes one **claw** attack.
 - **Constriction Flick.** (Costs 1 Deed) The serpent makes one **Tail Strike**.
 - **Baleful Chant (Costs 2 Deeds).** The goat casts a spell.
-- **Drag and Rend (Costs 2 Deeds).** One creature grappled by the lion takes 22 ([% 3d8 +9 slashing %]), and suffers 8 [# kw:condition:Bleeding #] stacks.
+- **Drag and Rend (Costs 2 Deeds).** One creature [# kw:condition:grappled #] by the lion takes 22 ([% 3d8 +9 slashing %]), and suffers 8 [# kw:condition:Bleeding #] stacks.
 
 ---
 
@@ -55,7 +55,7 @@ _Huge Monstrosity, Unaligned_
 - **Saving Throws**: Strength +16, Constitution +15
 - **Skills**: Athletics +16, Perception +11
 - **Damage Resistances**: Frost
-- **Condition Immunities**: Terrified
+- **Condition Immunities**: [# kw:condition:Terrified #]
 - **Senses**: Darkvision [= 24 stride =], passive Perception 21
 - **Languages**: —
 - **Challenge**: 23 (75.000 XP)
@@ -94,17 +94,17 @@ The damage bonus from this trait applies to legendary deeds as well, and cannot 
 The lion makes three attacks: two with its claws and one with its bite, or it can use its Crushing Pounce and make one bite attack.
 
 - **Claw**  
-  _Melee Weapon Attack:_ +17 to hit, reach [= 1 stride =], one target.  
-  _Hit:_ 22 ([% 3d8 +9 slashing %]).
+  Accuracy +17, reach [= 1 stride =], one creature.  
+  On a hit, 22 ([% 3d8 +9 slashing %]).
 
 - **Bite**  
-  _Melee Weapon Attack:_ +17 to hit, reach [= 1 stride =], one target.  
-  _Hit:_ 26 ([% 3d10 +9 piercing %]).
+  Accuracy +17, reach [= 1 stride =], one creature.  
+  On a hit, 26 ([% 3d10 +9 piercing %]).
 
 - #### Crushing Pounce
-  _Melee Weapon Attack:_ +17 to hit, reach [= 1 stride =], one target.  
-  _Hit:_ 18 ([% 2d8 +9 bludgeoning %]), and the target is **grappled** (escape DC 24).  
-  Until the grapple ends, the target is **restrained**.
+  Accuracy +17, reach [= 1 stride =], one creature.  
+  On a hit, 18 ([% 2d8 +9 bludgeoning %]), and the target is **[# kw:condition:grappled #]** (escape DC 24).  
+  Until the grapple ends, the target is **[# kw:condition:restrained #]**.
 
 ---
 
@@ -124,7 +124,7 @@ _Huge Monstrosity, Unaligned_
 - **Skills**: Acrobatics +16, Stealth +16, Perception +11
 - **Damage Resistances**: Frost
 - **Damage Immunities**: Poison
-- **Condition Immunities**: Poisoned
+- **Condition Immunities**: [# kw:condition:Poisoned #]
 - **Senses**: Blindsight [= 6 stride =], darkvision [= 12 stride =], passive Perception 21
 - **Languages**: —
 - **Challenge**: 23 (75.000 XP)
@@ -145,16 +145,16 @@ The serpent can see through magical darkness as if it were normal darkness.
 
 #### Tail Strike
 
-_Melee Weapon Attack:_ +16 to hit, reach [= 3 stride =], one target.  
-_Hit:_ 19 ([% 2d10 +8 bludgeoning %]) plus 18 ([% 4d8 poison %]).  
-The target must succeed on a **DC 22 Constitution saving throw** or become **Paralyzed** until the end of its next turn.
-Paralyzed creatures take maximized damage from this attack. This doubles on critical hits.
+Accuracy +16, reach [= 3 stride =], one creature.  
+On a hit, 19 ([% 2d10 +8 bludgeoning %]) plus 18 ([% 4d8 poison %]).  
+The target saves Constitution against DC 22 or becomes **[# kw:condition:Paralyzed #]** [# kw:briefly #].
+[# kw:condition:Paralyzed #] creatures take maximized damage from this attack. This doubles on critical hits.
 
 #### Bile spray (Recharge 5–6)
 
 As a Minor Action, the serpent can exhale a spray of corrosive bile in a [= 3 stride;ADJ =] cone.
-Each creature in that area must make a **DC 22 Dexterity saving throw**, taking 27 ([% 6d8 chemical %]) on a failed save, or half as much damage on a successful one.
-Creatures that fail the save are also **blinded** until the end of their next turn.
+Each creature in that area saves Dexterity against DC 22, halving 27 ([% 6d8 chemical %]).
+Creatures that fail the save are also **[# kw:condition:blinded #]** [# kw:briefly #].
 
 #### Vitriolic blood
 
@@ -178,7 +178,7 @@ _Huge Monstrosity, Unaligned_
 - **Saving Throws**: Intelligence +14, Wisdom +14, Charisma +13
 - **Skills**: Arcana +14, Perception +14, Insight +14
 - **Damage Resistances**: Frost
-- **Condition Immunities**: Terrified
+- **Condition Immunities**: [# kw:condition:Terrified #]
 - **Senses**: Darkvision [= 24 stride =], passive Perception 24
 - **Languages**: —
 - **Challenge**: 23 (75.000 XP)
@@ -189,7 +189,7 @@ _Huge Monstrosity, Unaligned_
 #### Chimeric Spellcasting
 
 The Lunar Chimera (goat) is a 15th-level spellcaster. It has **80 spell points**, and can spend **up to 8 spell points per round**.
-Spell level corresponds to spell point cost, and lower-level spells may be **upcast** by spending additional points, following the spell’s normal upcasting rules.
+Spell level corresponds to spell point cost, and lower-level spells may be **overcast** by spending additional points, following the spell’s normal overcasting rules.
 
 Its spellcasting ability is Intelligence (**spell save DC 22**, **+14** to hit with spell attacks). It has the following spells prepared:
 
@@ -199,7 +199,7 @@ When the goat casts a spell that allows **subsequent actions, Minor Actions, rea
 
 - The spell is still considered **cast by the goat**.
 - **Concentration**, if required, is maintained solely by the goat.
-- The spell ends immediately if the goat loses concentration or is incapacitated.
+- The spell ends immediately if the goat loses concentration or is [# kw:condition:incapacitated #].
 
 All spells cast in this way are considered **magical effects created by the goat** for the purposes of _One with the Moon_.
 

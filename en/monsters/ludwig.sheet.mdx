@@ -22,7 +22,7 @@ _Large humanoid (Sunborn), Lawful Evil_
 - **Saving Throws**: STR +14, CON +13, WIS +11
 - **Languages**: Empyrean (fluent), Common (broken)
 - **Damage Resistances**: holy, dark, fire
-- **Condition Immunities**: terrified, paralyzed, magical sleep
+- **Condition Immunities**: [# kw:condition:terrified #], [# kw:condition:paralyzed #], magical sleep
 - **Senses**: Darkvision [= 24 stride =], passive Perception 14
 - **Challenge**: 22 (41,000 XP)
 - **Tier Bonus**: +8
@@ -65,7 +65,7 @@ As a **Minor Action**, Ludwig enters a divine fury for **5 rounds** (30 seconds)
 
 ## Spellcasting
 
-Ludwig is a **10th-level spellcaster**. His spellcasting ability is **Constitution** (spell save DC **19**, +12 to hit with spell attacks). He has the following spells prepared:
+Ludwig is a **10th-level spellcaster**. His spellcasting ability is **Constitution** (spell save DC **19**, accuracy +12 with spell attacks). He has the following spells prepared:
 
 | Spell Level             | Slots | Spells                                                                                                                                                                                 |
 | ----------------------- | ----- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -88,20 +88,20 @@ Ludwig is a **10th-level spellcaster**. His spellcasting ability is **Constituti
 Ludwig makes **three attacks**, which can be any combination of _Mooncleaver_, _Gore Hurl_, _Bloodspire Growth_, _Impale_, or a cantrip. While in Bloodrage, he makes **four**.
 
 - **Impale.**  
-  _Melee Weapon Attack:_ +14 to hit, reach [= 1 stride =], one target. Ludwig impales a grappled creature on a blood spire.  
-  _Hit:_ The target takes **[% 4d10 piercing %]** and is **Restrained** until the spire is destroyed (AC 15, 30 HP).  
+  Accuracy +14, reach [= 1 stride =], one creature. Ludwig impales a [# kw:condition:grappled #] creature on a blood spire.  
+  On a hit, The target takes **[% 4d10 piercing %]** and is **[# kw:condition:Restrained #]** until the spire is destroyed (AC 15, 30 HP).  
   A creature can use a Major Action to make a DC 16 Athletics check, freeing itself on a success.
 
 - **Mooncleaver.**  
-  _Melee Weapon Attack:_ +17 to hit, reach [= 2 stride =], one target.  
-  _Hit:_ [% 2d10 +10 slashing %] + [% 2d6 frost %], plus **[% 2d6 fire %]** if Bloodrage is active.
+  Accuracy +17, reach [= 2 stride =], one creature.  
+  On a hit, [% 2d10 +10 slashing %] + [% 2d6 frost %], plus **[% 2d6 fire %]** if Bloodrage is active.
 
 - **Gore Hurl.**  
-  Ludwig throws a **grappled creature** up to [= 12 stride =]. The creature lands in a **[= 4 stride;ADJ =] radius** area. All creatures there must make a **DC 20 Dexterity saving throw** or take **[% 6d6 bludgeoning %]** and fall prone. The thrown creature automatically takes the damage and is no longer grappled.
+  Ludwig throws a **[# kw:condition:grappled #] creature** up to [= 12 stride =]. The creature lands in a **[= 4 stride;ADJ =] radius** area. All creatures there save Dexterity against DC 20 or take **[% 6d6 bludgeoning %]** and fall [# kw:condition:prone #]. The thrown creature automatically takes the damage and is no longer [# kw:condition:grappled #].
 
 - **Bloodspire Growth (Recharge 5–6).**
-  Ludwig charges up to [= 6 stride =] in a straight line. A massive spire of divine blood erupts beneath a target, who must make a **DC 20 Strength saving throw** or take **[% 8d10 piercing %]**, be **Restrained**, and launched atop a **[= 12 stride;ADJ =] tall spire**.
-  Creatures in a **[= 4 stride;ADJ =] wide** trail must succeed on a DC 16 Dexterity saving throw or take **[% 4d6 fire %]** and be **pushed [= 1 stride =] away**.
+  Ludwig charges up to [= 6 stride =] in a straight line. A massive spire of divine blood erupts beneath a target, who saves Strength against DC 20 or takes **[% 8d10 piercing %]**, be **[# kw:condition:Restrained #]**, and launched atop a **[= 12 stride;ADJ =] tall spire**.
+  Creatures in a **[= 4 stride;ADJ =] wide** trail save Dexterity against DC 16 or take **[% 4d6 fire %]** and are **pushed [= 1 stride =] away**.
   The path remains aflame until the start of Ludwig’s next turn, dealing **[% 4d6 fire %]** as a [# kw:persistent #], [# kw:delayed #] effect.
 
 ---
@@ -111,9 +111,9 @@ Ludwig makes **three attacks**, which can be any combination of _Mooncleaver_, _
 #### Grand Mooncleave (Recharge 6)
 
 **Declare (Turn 1)**: Ludwig channels apocalyptic power into Mooncleaver.  
-**Resolve (Turn 2)**: Creatures in a **[= 120 stride;ADJ =]-long**, **[= 8 stride;ADJ =]-wide**, **[= 16 stride;ADJ =]-tall** line must make a **DC 21 Dexterity saving throw**.
+**Resolve (Turn 2)**: Creatures in a **[= 120 stride;ADJ =]-long**, **[= 8 stride;ADJ =]-wide**, **[= 16 stride;ADJ =]-tall** line save Dexterity against DC 21.
 
-- **Fail**: [% 12d10 +50 force %] and are knocked prone.
+- **Fail**: [% 12d10 +50 force %] and are knocked [# kw:condition:prone #].
 - **Success**: Half damage.
 
 ---
@@ -132,24 +132,24 @@ In order to avoid this effect the two creatures must stay within [= 1 stride =] 
 #### Lunar Deluge
 
 A swarming deluge of lunar meteor swarms the lair in [= 1 stride;ADJ =] bands stretching horizontally or vertically (Ludwig's choice) across the arena. Each band is separated by [= 1 stride =] from one another.
-Each creature in the affected area must make a DC 18 Dexterity saving throw, taking [% 6d6 bludgeoning %] on a failed save, or half as much damage on a successful one.
+Each creature in the affected area saves Dexterity against DC 18, halving [% 6d6 bludgeoning %].
 The affected becomes difficult terrain until the next initiative count 20 (losing ties). Ludwig's next use of Lunar deluge must not follow the same direction of the previous one.
 
 #### Spire Burst
 
 Ludwig commands the blood spires in his lair to erupt violently. Each creature pinned by a spire takes 100 piercing damage and is launched [= 20 stride =] into the air.
-The explosion covers a [= 6 stride;ADJ =] radius, forcing all creatures other than the pinned creature to make a DC 19 Dexterity saving throw or take [% 6d6 fire %] and [% 6d6 piercing %], half as much on a success.
+The explosion covers a [= 6 stride;ADJ =] radius, forcing all creatures other than the pinned creature to save Dexterity against DC 19 or take [% 6d6 fire %] and [% 6d6 piercing %], half as much on a success.
 
 ## Legendary Deed: Act
 
 Ludwig can expend legendary deeds to use the options below. Only one legendary deed can be used at a time and only at the end of another creature's turn.
 
 - **Attack.** (Costs 1 Deed) Ludwig makes one _Mooncleaver_ attack.
-- **Dragstep.** (Costs 1 Deed) Ludwig moves up to [= 4 stride =] and attempts to **grapple each creature** he moves through. Grappled creatures are **Restrained by blood chains**, but his hands remain free.
-- **Lesser Spire of Blood (Costs 2 Deeds).** A blood spire erupts beneath a creature within [= 6 stride =]. The target must make a **DC 20 Dexterity saving throw** or take **[% 8d10 piercing %]** and be launched [= 4 stride =] into the air (landing prone unless it succeeds a DC 16 Acrobatics check).
+- **Dragstep.** (Costs 1 Deed) Ludwig moves up to [= 4 stride =] and attempts to **grapple each creature** he moves through. [# kw:condition:Grappled #] creatures are **[# kw:condition:Restrained #] by blood chains**, but his hands remain free.
+- **Lesser Spire of Blood (Costs 2 Deeds).** A blood spire erupts beneath a creature within [= 6 stride =]. The target saves Dexterity against DC 20 or takes **[% 8d10 piercing %]** and is launched [= 4 stride =] into the air (landing [# kw:condition:prone #] unless it succeeds a DC 16 Acrobatics check).
 - **Cast a Spell (Costs 2 Deeds).** Ludwig casts one spell of 5th level or lower.
-- **Severing Blood (Recharge 6) (Costs 2 Deeds).** One creature within [= 12 stride =] must succeed on a **DC 23 Constitution saving throw** or become **Paralyzed** as blood congeals around their veins. While paralyzed this way, the creature also takes **[% 1d10 fire %]** at the start of each of its turns. This burning cannot be extinguished by mundane means.  
-  At the end of each of its turns, the creature may repeat the saving throw, ending the effect on a success.
+- **Severing Blood (Recharge 6) (Costs 2 Deeds).** One creature within [= 12 stride =] saves Constitution against DC 23 or becomes **[# kw:condition:Paralyzed #]** as blood congeals around their veins. While [# kw:condition:paralyzed #] this way, the creature also takes **[% 1d10 fire %]** at the start of each of its turns. This burning cannot be extinguished by mundane means.  
+  At the end of each of its turns, the creature may [# kw:resist #].
 
 ---
 
@@ -159,11 +159,11 @@ Ludwig can expend legendary deeds to use the options below. Only one legendary d
 
 Ludwig leaps into the air, floating [= 60 stride =] above the ground, and using gravity magic he declares a grand Moonfall.
 
-- **Declare (Turn 1)**: Ludwig roars, blood and lunar fire erupting from his body as he leaps into the air to call the heavens down. Ludwig gains immunity to stunned, restrained, prone, and paralyzed during this.
+- **Declare (Turn 1)**: Ludwig roars, blood and lunar fire erupting from his body as he leaps into the air to call the heavens down. Ludwig gains immunity to [# kw:condition:stunned #], [# kw:condition:restrained #], [# kw:condition:prone #], and [# kw:condition:paralyzed #] during this.
 - **Charge (Turn 2)**: The sky above the battlefield fractures. A colossal bone-white meteor swarm descends, its shadow covering the whole arena.
 - **Resolve (Turn 3)**: Ludwig unleashes [_Bolide Bombardment_](/en/library/spells/bolide-bombardment), but with its **blast radius covers the whole lair**.
 
-Each creature must succeed on a **DC 21 Dexterity saving throw** or take **[% 20d6 fire %] + [% 20d6 bludgeoning %]**. On a successful save, a creature takes half damage.
+Each creature saves Dexterity against DC 21 or takes **[% 20d6 fire %] + [% 20d6 bludgeoning %]**. On a successful save, a creature takes half damage.
 
 #### Doomed (25% HP): Long Night
 
@@ -175,13 +175,13 @@ At the brink of death, Ludwig manifests the **Serpentine Dreams**, a curved moon
 
 #### Serpentine Dreams
 
-_Melee Weapon Attack:_ +16 to hit, reach [= 1 stride =], one target.
-_Hit:_ [% 2d12 +10 force %] + [% 4d8 frost %].
+Accuracy +16, reach [= 1 stride =], one creature.
+On a hit, [% 2d12 +10 force %] + [% 4d8 frost %].
 
 #### Mooncleave (Recharge 5–6)
 
 Ludwig sweeps Serpentine Dreams in a great lunar arc.
-All creatures in a **[= 6 stride;ADJ =] cone** must make a **DC 21 Dexterity saving throw**.
+All creatures in a **[= 6 stride;ADJ =] cone** save Dexterity against DC 21.
 
 - **Failure**: [% 4d8 frost %] + [% 4d8 force %].
 - **Success**: Half damage.
@@ -192,7 +192,7 @@ Additionally, Ludwig gains access to the following features:
 
 Ludwig may replace one attack with a [= 4 stride =]-long, [= 1 stride =]-wide line. This includes attacks from his legendary deeds.
 
-- Each creature in the line must succeed on a **DC 21 Dexterity saving throw** or take damage equal to Serpentine Dreams’ base weapon dice ([% 2d12 %] + [% 2d8 %]).
+- Each creature in the line saves Dexterity against DC 21 or takes damage equal to Serpentine Dreams’ base weapon dice ([% 2d12 %] + [% 2d8 %]).
 - Ludwig moves along the line without provoking opportunity attacks.
 
 #### Iron Reserve
@@ -212,7 +212,7 @@ After Ludwig makes a melee attack (hit or miss), he may move **[= 1 stride =]**.
 
 #### Martial Domination
 
-When Ludwig hits a creature with a melee attack, that creature must succeed on a **DC 21 Charisma saving throw** or suffer the effects of [_Bane_](/en/library/spells/bane) for 1 minute.
+When Ludwig hits a creature with a melee attack, that creature saves Charisma against DC 21 or suffers the effects of [_Bane_](/en/library/spells/bane) for 1 minute.
 
 - The target may repeat the save at the end of each of its turns.
 - Once a creature saves against this effect, it is immune to Ludwig’s Martial Domination for 24 hours.

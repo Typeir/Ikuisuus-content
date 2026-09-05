@@ -18,7 +18,7 @@ _Medium Humanoid (Acheron), Lawful Neutral_
 - **Saving Throws**: Dexterity +7, Strength +6  
 - **Skills**: Acrobatics +7, Athletics +6  
 - **Damage Resistances**: —  
-- **Condition Immunities**: Frightened  
+- **Condition Immunities**: [# kw:condition:Frightened #]  
 - **Senses**: Darkvision [= 12 stride =], passive Perception 12  
 - **Languages**: Common  
 - **Challenge**: 7 (2,900 XP)  
@@ -37,7 +37,7 @@ When a creature within **[= 4 stride =]** would fall, the Ribboner fires a grapp
 This can target allies or enemies.
 
 #### Worksite Control
-While the Ribboner has a creature **grappled**, that creature has disadvantage on saving throws made to resist being **moved**, **pulled**, or **knocked prone**.
+While the Ribboner has a creature **[# kw:condition:grappled #]**, that creature has disadvantage on saving throws made to resist being **moved**, **pulled**, or **knocked [# kw:condition:prone #]**.
 
 ---
 
@@ -49,35 +49,35 @@ The Ribboner makes **two attacks**, choosing from **Throwing Dagger**, **Stake**
 ---
 
 #### Throwing Dagger  
-_Ranged Weapon Attack:_ +7 to hit, range [= 4 stride =]/[= 12 stride =], one target  
-_Hit:_ 9 ([% 1d10 +4 piercing %]).
+Accuracy +7, range [= 4 stride =]/[= 12 stride =], one creature.  
+On a hit, 9 ([% 1d10 +4 piercing %]).
 
 If the target is within **[= 2 stride =] of an edge or drop**, the Ribboner may push the target **[= 1 stride =]**.
 
 ---
 
 #### Stake  
-_Melee Weapon Attack:_ +6 to hit, reach [= 1 stride =], one target  
-_Hit:_ 10 ([% 2d6 +3 piercing %]).
+Accuracy +6, reach [= 1 stride =], one creature.  
+On a hit, 10 ([% 2d6 +3 piercing %]).
 
-If the target is adjacent to a wall, chain, corpse-chain, or vertical surface, it must succeed on a **DC 15 Strength saving throw** or be **grappled** (**escape DC 15**).
+If the target is adjacent to a wall, chain, corpse-chain, or vertical surface, it saves Strength against DC 15 or is **[# kw:condition:grappled #]** (**escape DC 15**).
 
-- This grapple **lasts until the end of the target’s next turn**, until the target escapes, or until the Ribboner releases the stake (no action required).
-- While grappled this way, the target’s **speed is 0** and it cannot move away from the surface it is staked to.
+- This grapple **lasts until the end of the target’s next turn**, until the target escapes, or until the Ribboner releases the stake.
+- While [# kw:condition:grappled #] this way, the target’s **speed is 0** and it cannot move away from the surface it is staked to.
 
 ---
 
 #### Hammer  
-_Melee Weapon Attack:_ +6 to hit, reach [= 1 stride =], one target  
-_Hit:_ 11 ([% 2d8 +3 bludgeoning %]).
+Accuracy +6, reach [= 1 stride =], one creature.  
+On a hit, 11 ([% 2d8 +3 bludgeoning %]).
 
-If the target is **grappled**, it must succeed on a **DC 15 Constitution saving throw** or be **stunned until the end of its next turn**.
+If the target is **[# kw:condition:grappled #]**, it saves Constitution against DC 15 or is **[# kw:condition:stunned #] [# kw:briefly #]**.
 
 ---
 
 #### Hook Shot  
-_Ranged Weapon Attack:_ +7 to hit, range [= 8 stride =]/[= 16 stride =], one target or surface  
-_Hit:_ 9 ([% 1d10 +4 piercing %]).
+Accuracy +7, range [= 8 stride =]/[= 16 stride =], one creature. or surface  
+On a hit, 9 ([% 1d10 +4 piercing %]).
 
 On hit, the Ribboner chooses one:
 
@@ -88,7 +88,7 @@ On hit, the Ribboner chooses one:
 ---
 
 #### Tie
-One creature **grappled** by the Ribboner must succeed on a **DC 15 Dexterity saving throw** or be **restrained until the end of its next turn**.
+One creature **[# kw:condition:grappled #]** by the Ribboner saves Dexterity against DC 15 or is **[# kw:condition:restrained #] [# kw:briefly #]**.
 
 ---
 
@@ -98,5 +98,5 @@ One creature **grappled** by the Ribboner must succeed on a **DC 15 Dexterity sa
 When the Ribboner is **slain**, it immediately performs the following before collapsing:
 
 - Uses **Hook Shot** on a creature or surface within **[= 8 stride =]**
-- Pulls itself and **one grappled creature** up to **[= 4 stride =]**
+- Pulls itself and **one [# kw:condition:grappled #] creature** up to **[= 4 stride =]**
 - Immediately releases the hook

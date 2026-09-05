@@ -27,7 +27,7 @@ These creatures fear open sky. They lair in rot-choked caves, collapsed Empyrean
 - **Saving Throws**: Str +7, Con +6
 - **Skills**: Athletics +7, Perception +4, Stealth +5
 - **Damage Resistances**: Dark
-- **Condition Immunities**: Charmed, Terrified
+- **Condition Immunities**: [# kw:condition:Charmed #], [# kw:condition:Terrified #]
 - **Senses**: Darkvision [= 12 stride =], passive Perception 14
 - **Languages**: —
 - **Challenge**: 6 (2,300 XP)
@@ -46,7 +46,7 @@ While the marauder is within **[= 6 stride =]** of another conscious Mycelial Ma
 
 #### Siphon Vigor
 
-A creature **grappled** by the marauder at the start of the marauder's turn must succeed on a **DC 14 Constitution saving throw** or gain **1 level of Withering**. Each Withering level imposes a cumulative **−2 penalty to Strength, Dexterity, and Constitution ability checks and saving throws**. If the total penalty reaches **−6**, the creature is **paralyzed** until the grapple ends.
+A creature **[# kw:condition:grappled #]** by the marauder at the start of the marauder's turn saves Constitution against DC 14 or gains **1 level of Withering**. Each Withering level imposes a cumulative **−2 penalty to Strength, Dexterity, and Constitution ability checks and saving throws**. If the total penalty reaches **−6**, the creature is **[# kw:condition:paralyzed #]** until the grapple ends.
 
 All Withering levels end when the creature finishes a **short or long rest**. _Restoration_ or similar magic also removes them.
 
@@ -63,13 +63,13 @@ While in **direct sunlight**, the marauder has **disadvantage on attack rolls** 
 The marauder makes two **Mycelial Lash** attacks, or one **Mycelial Lash** and one **Constrict**.
 
 - **Mycelial Lash.**  
-  _Melee Weapon Attack:_ +7 to hit, reach [= 3 stride =], one target.  
-  _Hit:_ 13 ([% 2d8 +4 slashing %]) plus 9 ([% 2d8 dark %]).  
-  If the target is a Large or smaller creature, it is **grappled** (escape DC 15). The marauder can grapple up to **two** creatures at a time — one per lash. A lash grappling a creature cannot be used to attack other targets.
+  Accuracy +7, reach [= 3 stride =], one creature.  
+  On a hit, 13 ([% 2d8 +4 slashing %]) plus 9 ([% 2d8 dark %]).  
+  If the target is a Large or smaller creature, it is **[# kw:condition:grappled #]** (escape DC 15). The marauder can grapple up to **two** creatures at a time — one per lash. A lash grappling a creature cannot be used to attack other targets.
 
 - **Constrict.**  
-  One creature **grappled** by the marauder.  
-  The marauder tightens its fungal strands. The target takes **22 ([% 4d8 +4 bludgeoning %])** damage, and the marauder immediately triggers **Siphon Vigor** against that creature (no action required).
+  One creature **[# kw:condition:grappled #]** by the marauder.  
+  The marauder tightens its fungal strands. The target takes **22 ([% 4d8 +4 bludgeoning %])** damage, and the marauder immediately triggers **Siphon Vigor** against that creature.
 
 ---
 
@@ -77,4 +77,4 @@ The marauder makes two **Mycelial Lash** attacks, or one **Mycelial Lash** and o
 
 #### Death Burst
 
-When the marauder is reduced to **0 hit points**, its body ruptures in a final release of spores. Each creature within **[= 2 stride =]** of it must succeed on a **DC 14 Constitution saving throw** or immediately roll once on the [# kw:Black Rot #] table. Any creature **grappled** by the marauder when it dies automatically fails this save.
+When the marauder is reduced to **0 hit points**, its body ruptures in a final release of spores. Each creature within **[= 2 stride =]** of it saves Constitution against DC 14 or immediately rolls once on the [# kw:Black Rot #] table. Any creature **[# kw:condition:grappled #]** by the marauder when it dies automatically fails this save.

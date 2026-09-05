@@ -17,7 +17,7 @@ _Large Monstrosity, Unaligned_
 - **Saving Throws**: Str +8, Con +6  
 - **Skills**: Athletics +8, Perception +3, Stealth +4  
 - **Damage Resistances**: Chemical, Frost  
-- **Condition Immunities**: Grappled, Prone  
+- **Condition Immunities**: [# kw:condition:Grappled #], [# kw:condition:Prone #]  
 - **Senses**: Darkvision [= 12 stride =], Tremorsense [= 12 stride =], passive Perception 13  
 - **Languages**: —  
 - **Challenge**: 7 (2,900 XP)  
@@ -32,10 +32,10 @@ The worm can breathe both air and water.
 While fully submerged in saltwater or industrial brine, it regains **10 hit points** at the start of its turn.
 
 #### Suffocating Coils
-A creature **grappled** by the Brine Sea Worm begins **suffocating** at the start of its next turn as its lungs fill with pressurized brine.  
-While suffocating, the creature can’t speak or cast spells with verbal components.  
+A creature **[# kw:condition:grappled #]** by the Brine Sea Worm begins **[# kw:condition:suffocating #]** at the start of its next turn as its lungs fill with pressurized brine.  
+While [# kw:condition:suffocating #], the creature can’t speak or cast spells with verbal components.  
 This effect ends if the grapple ends or the worm releases the target.  
-A suffocating creature must make a **Constitution saving throw** at the start of each of its turns, suffering **one failed death saving throw** on a failure.
+A [# kw:condition:suffocating #] creature saves Constitution at the start of each of its turns, suffering **one failed death saving throw** on a failure.
 
 #### Burrower’s Ambush
 While underground or submerged, the worm has advantage on **Stealth** checks and can emerge up to [= 6 stride =] as part of a **Bite** attack.
@@ -48,18 +48,18 @@ While underground or submerged, the worm has advantage on **Stealth** checks and
 The Brine Sea Worm makes two attacks: one with its **Bite** and one with its **Coiling Grasp**.
 
 - **Bite.**  
-_Melee Weapon Attack:_ +8 to hit, reach [= 2 stride =], one target.  
-_Hit:_ 21 ([% 3d10 +5 piercing %]) plus 7 ([% 2d6 chemical %]).  
-If the target is a creature, it is **grappled** (escape DC 16). The worm can grapple only one target at a time.
+Accuracy +8, reach [= 2 stride =], one creature.  
+On a hit, 21 ([% 3d10 +5 piercing %]) plus 7 ([% 2d6 chemical %]).  
+If the target is a creature, it is **[# kw:condition:grappled #]** (escape DC 16). The worm can grapple only one target at a time.
 
 - **Coiling Grasp.**  
-_Melee Weapon Attack:_ +8 to hit, reach [= 3 stride =], one target.  
-_Hit:_ 16 ([% 3d8 +3 bludgeoning %]).  
-If the target is already grappled, the damage is **maximized (27)** and the target takes an additional **10 chemical damage**. The creature is **restrained** until the grapple ends.
+Accuracy +8, reach [= 3 stride =], one creature.  
+On a hit, 16 ([% 3d8 +3 bludgeoning %]).  
+If the target is already [# kw:condition:grappled #], the damage is **maximized (27)** and the target takes an additional **10 chemical damage**. The creature is **[# kw:condition:restrained #]** until the grapple ends.
 
 - **Brine Jet (Recharge 5–6).**  
 The worm sprays a high-pressure jet of saltwater in a **[= 6 stride;ADJ =] line**, [= 1 stride =] wide.  
-Each creature in the line must make a **DC 16 Dexterity saving throw**, taking **27 ([% 6d8 bludgeoning %])** and chemical damage on a failed save, or half as much on a success.  
+Each creature in the line saves Dexterity against DC 16, halving **27 ([% 6d8 bludgeoning %])** and chemical damage.  
 A creature that fails the save gains **1 stack of [# kw:Erosion #]**.
 
 ---

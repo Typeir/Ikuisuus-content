@@ -18,7 +18,7 @@ _Medium Humanoid (Empyrean), Lawful Evil_
 - **Saving Throws**: Strength +15, Dexterity +13, Constitution +14, Wisdom +12
 - **Skills**: Athletics +15, Perception +12, Intimidation +13
 - **Damage Resistances**: 
-- **Condition Immunities**:  Terrified
+- **Condition Immunities**:  [# kw:condition:Terrified #]
 - **Senses**: Darkvision [= 12 stride =], passive Perception 21
 - **Languages**: Common, Empyrean
 - **Challenge**: 23 (50,000 XP)
@@ -36,7 +36,7 @@ Arms of the Brume has **3 legendary deeds per round**, and regains all expended 
 Arms of the Brume is encased in a sealed tombsteel shell designed for forward momentum and impact over evasion.
 
 - Arms of the Brume has disadvantage on Dexterity (Stealth) checks
-- Arms of the Brume has advantage on saving throws made to resist being pushed, pulled, or knocked prone
+- Arms of the Brume has advantage on saving throws made to resist being pushed, pulled, or knocked [# kw:condition:prone #]
 - Arms of the Brume cannot benefit from bonuses to movement speed granted by mundane effects
 
 ---
@@ -55,7 +55,7 @@ When a creature hits Arms of the Brume with a melee weapon attack, the attacker 
 
 Arms of the Brume rides an ethereal construct in the shape of a great wolf. The wolf is not a creature.
 
-- The wolf cannot be targeted, damaged, moved, restrained, incapacitated, or affected by any effect
+- The wolf cannot be targeted, damaged, moved, [# kw:condition:restrained #], [# kw:condition:incapacitated #], or affected by any effect
 - The wolf does not occupy a creature space and does not count as a creature for any purpose
 - For all other purposes, the wolf uses the statistics of a standard War Wolf. The wolf cannot take actions other than Dodge, Dash and Disengage.
 - Arms of the Brume cannot be dismounted against it's will.
@@ -82,19 +82,19 @@ For each other rider of the Brume within range, all riders gain the following be
 
   - Resistance to all damage
   - Immunity to forced movement
-  - Cannot be knocked prone
+  - Cannot be knocked [# kw:condition:prone #]
   - Riders automatically Disengage at the start of their turns
 
 - Two active auras:
 
   - Resistance to bludgeoning, piercing, slashing, fire, frost, lightning, and dark damage
-  - Advantage on saving throws against being pushed, pulled, or knocked prone
+  - Advantage on saving throws against being pushed, pulled, or knocked [# kw:condition:prone #]
 
 - One or fewer active auras:
   - No resistances or movement immunities from this feature
 
-A rider’s aura is suppressed only while that rider is incapacitated.  
-Paralyzed, stunned, or unconscious creatures do not contribute to the doctrine.
+A rider’s aura is suppressed only while that rider is [# kw:condition:incapacitated #].  
+[# kw:condition:Paralyzed #], [# kw:condition:stunned #], or [# kw:condition:unconscious #] creatures do not contribute to the doctrine.
 
 ---
 
@@ -108,7 +108,7 @@ Arms of the Brume makes three attacks with **Paivämies Javelin**.
 
 - **Paivämies Javelin**  
   _Weapon (Spear), Heavy, Thrown (60/240), Magical_  
-  Melee or Ranged Weapon Attack: +17 to hit, reach [= 2 stride =] or range [= 12 stride =]/[= 48 stride =], one target.  
+  Accuracy +17, reach [= 2 stride =] or range [= 12 stride =]/[= 48 stride =], one creature.  
   Hit: 26 ([% 3d10 +10 piercing %]) plus 18 ([% 4d8 holy %]).
   The spear reforms in Arms of the Brume’s hand immediately after being thrown.
 
@@ -119,9 +119,9 @@ Arms of the Brume makes three attacks with **Paivämies Javelin**.
 #### Binding Strike (recharge 6)
 
 Whenever Arms of the Brume hits a creature with Paivämies Javelin, it can use a Minor Action to attempt to restrain the target with illusory chains of tombsteel.
-- The target must succeed on a DC 26 charisma saving throw or be restrained for 1 minute.
-- The restrained target can repeat the saving throw at the end of each of its turns, ending the effect on a success.
-- The attack deals an additional 18 ([% 4d8 holy %]) if the target is restrained when hit.
+- The target saves charisma against DC 26 or is [# kw:condition:restrained #] for 1 minute.
+- The [# kw:condition:restrained #] target can [# kw:resist #] at the end of each of its turns.
+- The attack deals an additional 18 ([% 4d8 holy %]) if the target is [# kw:condition:restrained #] when hit.
 
 ---
 
@@ -131,15 +131,15 @@ Whenever Arms of the Brume hits a creature with Paivämies Javelin, it can use a
 
 **Declare:**  
 Arms of the Brume hurls the spear in a precise doctrinal strike, drawing a [= 1 stride;ADJ =]-wide, [= 24 stride;ADJ =]-long line extending from its position.
-When this line appears, each creature in it must make a DC 23 Dexterity saving throw.
-On a failed save, a creature takes 22 ([% 5d8 holy %]), and their speed is halved until the end of their next turn.
+When this line appears, each creature in it saves Dexterity against DC 23.
+On a failed save, a creature takes 22 ([% 5d8 holy %]), and their speed is halved [# kw:briefly #].
 On a successful save, it takes half as much damage.
 
 **Resolve (start of Arms of the Brume’s next turn):**  
 The initial line becomes the axis of execution.
 Two [= 3 stride;ADJ =]-wide, [= 24 stride;ADJ =]-long lines erupt simultaneously, one on each side of the original line, perfectly parallel to it and not overlapping.
-When these secondary lines appear, each creature in either line must make a DC 23 Dexterity saving throw.
-On a failed save, a creature takes 45 ([% 10d8 holy %]) and is blinded for a minute.
+When these secondary lines appear, each creature in either line saves Dexterity against DC 23.
+On a failed save, a creature takes 45 ([% 10d8 holy %]) and is [# kw:condition:blinded #] for a minute.
 On a successful save, it takes half as much damage.
 Any creature that was in the original line automatically fails this saving throw.
 
@@ -166,10 +166,10 @@ Arms of the Brume can expend legendary deeds to use the options below. Only one 
 
 #### Bloodied (50% HP)
 
-While Arms of the Brume is bloodied and not incapacitated:
+While Arms of the Brume is bloodied and not [# kw:condition:incapacitated #]:
 
 - Paivämies Javelin deals an additional [% 2d8 holy %]
 - Binding Strike recharges on 4–6
 - Whenever Arms of the Brume reduces a creature to 0 HP, it may immediately make one additional attack
 
-If Arms of the Brume becomes incapacitated, these benefits end immediately.
+If Arms of the Brume becomes [# kw:condition:incapacitated #], these benefits end immediately.

@@ -22,7 +22,7 @@ A **Cerithol Lunam** is a grotesque, fleshy orb that dwells deep within the corp
 - **Saving Throws**: Con +14, Wis +9, Cha +7
 - **Damage Resistances**: Force, Dark, Frost, Chemical
 - **Damage Immunities**: Poison
-- **Condition Immunities**: Poisoned, Prone
+- **Condition Immunities**: [# kw:condition:Poisoned #], [# kw:condition:Prone #]
 - **Senses**: Blindsight [= 12 stride =], Tremorsense [= 24 stride =], Passive Perception 18
 - **Languages**: Ancient Empyrean
 - **Challenge**: 13 (10,000 XP)
@@ -38,7 +38,7 @@ The Cerithol Lunam has **1 legendary deed per round**, and regains all expended 
 
 #### Lunar Vessel
 
-While closed, the Cerithol Lunam cannot cast spells of level 3 or higher but gains a +4 bonus to AC and is immune to being charmed or stunned.
+While closed, the Cerithol Lunam cannot cast spells of level 3 or higher but gains a +4 bonus to AC and is immune to being [# kw:condition:charmed #] or [# kw:condition:stunned #].
 
 #### Open Form (Minor Action)
 
@@ -68,7 +68,7 @@ The Cerithol opens fully, revealing its vasculomuscular system. It loses the AC 
 | [_Pyroblast_](/en/library/spells/pyroblast)                   | 3       |
 | [_Sandstorm Barrier_](/en/library/spells/sandstorm-barrier)                                              | 3       |
 | [_Bestow Curse_](/en/library/spells/bestow-curse)             | 3       |
-| [_Invisibility (upcast)_](/en/library/spells/invisibility)    | 4       |
+| [_Invisibility (overcast)_](/en/library/spells/invisibility)    | 4       |
 | [_Shadow Of The Hunt_](/en/library/spells/shadow-of-the-hunt) | 4       |
 | [_Perfect Barrier_](/en/library/spells/perfect-barrier)       | 5       |
 | [_Cloudkill_](/en/library/spells/cloudkill)                   | 5       |
@@ -88,12 +88,12 @@ The Cerithol Lunam can take up to **3 reactions per round**, but no more than on
 The Cerithol Lunam makes two _Tentacle Whip_ attacks or one _Pseudopod Surge_ if open.
 
 - **Tentacle Whip.**  
-  _Melee Weapon Attack_: +12 to hit, reach [= 3 stride =], one target.  
+  Accuracy +12, reach [= 3 stride =], one creature.  
   **Hit**: 20 ([% 3d10 +7 slashing %]).
 
 - **Pseudopod Surge (Open Only).**  
-  _Melee Weapon Attack_: +12 to hit, reach [= 12 stride =], one target.  
-  **Hit**: 40 ([% 5d12 +7 bludgeoning %]). The target must succeed on a **DC 20 Strength saving throw** or be hurled up to **[= 12 stride =]** in a direction of the Cerithol’s choosing and knocked prone. Colliding with terrain deals [% 3d6 additional %].
+  Accuracy +12, reach [= 12 stride =], one creature.  
+  **Hit**: 40 ([% 5d12 +7 bludgeoning %]). The target saves Strength against DC 20 or is hurled up to **[= 12 stride =]** in a direction of the Cerithol’s choosing and knocked [# kw:condition:prone #]. Colliding with terrain deals [% 3d6 additional %].
 
 ---
 
@@ -102,7 +102,7 @@ The Cerithol Lunam makes two _Tentacle Whip_ attacks or one _Pseudopod Surge_ if
 **Bloodlash Rebuke (1st-level Unique Spell)**  
  _When a creature within [= 12 stride =] succeeds on a saving throw or hits with an attack roll_  
  The Cerithol Lunam sprays burning acidic blood from a pulsing orifice.  
- The creature must succeed on a **DC 18 Dexterity saving throw** or take **[% 4d10 %] damage**: **[% 2d10 chemical %]** and **[% 2d10 fire %]**. If it fails, it must **reroll the triggering d20**, using the new result. The Cerithol gains **advantage** on the next roll it makes before the end of its next turn.
+ The creature saves Dexterity against DC 18 or takes **[% 4d10 %] damage**: **[% 2d10 chemical %]** and **[% 2d10 fire %]**. If it fails, it must **reroll the triggering d20**, using the new result. The Cerithol gains **advantage** on the next roll it makes before the end of its next turn.
 
 ---
 

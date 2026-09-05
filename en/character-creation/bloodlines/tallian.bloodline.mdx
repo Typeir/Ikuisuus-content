@@ -75,7 +75,7 @@ Your spent Hit Dice are restored as normal when you finish a [# kw:Recovery #].
 Once per [# kw:Repose #], as a Minor Action, you can re-wire your programming.
 You gain all of the following benefits until the next [# kw:Repose #]:
 
-- Choose one condition: blinded, charmed, deafened, frightened, paralyzed, poisoned, or terrified. You are immune to that condition.
+- Choose one condition: [# kw:condition:blinded #], [# kw:condition:charmed #], [# kw:condition:deafened #], [# kw:condition:frightened #], [# kw:condition:paralyzed #], [# kw:condition:poisoned #], or [# kw:condition:terrified #]. You are immune to that condition.
 - Choose one elemental damage type: chemical, frost, fire, lightning, or psychic. You gain resistance to that damage type.
 - Choose one skill and one tool. You gain proficiency in both.
 
@@ -93,7 +93,7 @@ You have a budget of **10 Boon Points**.
 
 ###### Multi-Dimensional Maneuvers <span>7 BP</span>
 
-At the start of each of your turns, if you are not incapacitated, you can reduce your movement by [= 2 stride =] for that turn. If you do, your movement does not provoke opportunity attacks until the end of that turn. This is independent of the [# kw:condition:Steady #] state — you may still move freely and do not sacrifice full mobility.
+At the start of each of your turns, if you are not [# kw:condition:incapacitated #], you can reduce your movement by [= 2 stride =] for that turn. If you do, your movement does not provoke opportunity attacks until the end of that turn. This is independent of the [# kw:condition:Steady #] state — you may still move freely and do not sacrifice full mobility.
 
 Once per [# kw:Repose #], when you move at least [= 2 stride =] before making a melee attack on your turn, you can gain an **accuracy and damage bonus** on that attack equal to your tier bonus.
 
@@ -115,8 +115,8 @@ When you do, you immediately gain temporary hit points equal to your level + you
 If your **Repair Window** is active when this triggers, you can also move up to half your speed without provoking opportunity attacks.
 
 When this feature triggers, **after** you moved if your **Repair Window** was active, you can arm an **End-of-Life Cycle**.
-If you do, a 6 second countdown begins. During this countdown, you are incapacitated and immune to all damage and forced movement effects.
-At the end of the countdown, or if you are reduced to 0 hit points again before it ends, each creature within [= 2 stride =] of you must make a Dexterity saving throw (DC 10 + your tier bonus + your Constitution modifier), taking force damage equal to five times your level on a failed save, or half as much on a success.
+If you do, a 6 second countdown begins. During this countdown, you are [# kw:condition:incapacitated #] and immune to all damage and forced movement effects.
+At the end of the countdown, or if you are reduced to 0 hit points again before it ends, each creature within [= 2 stride =] of you saves Dexterity against DC 10 + your tier bonus + your Constitution modifier, halving force damage equal to five times your level.
 After this detonation, you immediately drop to 0 hit points.
 
 _Notes._
@@ -234,7 +234,7 @@ You gain proficiency in Intimidation. If you gaian another source of proficiency
 
 ###### Static Anchor Jets <span>2 BP</span>
 
-When a creature attempts to push, pull, or knock you prone, you can use your reaction to stabilize.
+When a creature attempts to push, pull, or knock you [# kw:condition:prone #], you can use your reaction to stabilize.
 
 If you do, reduce the forced movement by a number of feet equal to 5 x your tier bonus, and you have advantage on the triggering saving throw or ability check.
 

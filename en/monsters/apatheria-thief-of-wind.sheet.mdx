@@ -29,7 +29,7 @@ _Medium Humanoid (Empyrean), Lawful Evil_
 - **Saving Throws**: Strength +9, Constitution +8, Charisma +7
 - **Skills**: Intimidation +8, Survival +6, Religion +7, Athletics +12, Perception +6
 - **Damage Resistances**: Fire, Frost.
-- **Condition Immunities**: Terrified
+- **Condition Immunities**: [# kw:condition:Terrified #]
 - **Senses**: Darkvision [= 12 stride =], passive Perception 12
 - **Languages**: Common, Empyrean, Hidden, Cavari
 - **Challenge**: 12 (9,500 XP)
@@ -50,7 +50,7 @@ The Thief of Winds wears custom heavy armor forged from tombsteel, the armor has
 - Increases base AC by +1
 - Increases the weight of the armor by +[= 8 burden =]
 - Causes disadvantage on Dexterity (Stealth) checks
-- Grants advantage on saving throws made to resist being **pushed**, **pulled**, or **knocked prone**
+- Grants advantage on saving throws made to resist being **pushed**, **pulled**, or **knocked [# kw:condition:prone #]**
 - Grants the following features:
   **Grave Chill**
   Tombsteel armor holds up to **10 charges**. When a creature hits the Thief of Winds with a **melee weapon attack**, the attacker immediately takes **10 frost damage** as frozen rime shards erupt from the armor. This effect requires no action or reaction.
@@ -58,8 +58,8 @@ The Thief of Winds wears custom heavy armor forged from tombsteel, the armor has
   - Charges **regenerate at midnight**, recovering **[% 1d4 +4 %] charges**
 
   **Cold Eternal**
-  If a creature wearing Tombsteel Armor is **not resistant or immune to frost damage**, they must succeed on a **DC 12 Constitution saving throw at the end of each hour** while wearing it. On a failed save, the creature gains **1 level of exhaustion**.
-  This effect occurs even while sleeping or unconscious. The Thief of Winds is resistant to frost damage and thus ignores this effect.
+  If a creature wearing Tombsteel Armor is **not resistant or immune to frost damage**, they save Constitution against DC 12 at the end of each hour while wearing it. On a failed save, the creature gains **1 level of exhaustion**.
+  This effect occurs even while sleeping or [# kw:condition:unconscious #]. The Thief of Winds is resistant to frost damage and thus ignores this effect.
 
   ** Fraternity** (Integrated)
   The Thief of Winds’s armor contains an embedded permanent **Fraternity** enchantment that links them to their mount. While both the Thief of Winds and their mount are alive and conscious:
@@ -86,12 +86,12 @@ The Thief of Winds gains the following benefits against the chosen prey:
 The Thief of Winds emits an aura that suppresses flight and escape. While creatures are within [= 2 stride =] of the Thief of Winds:
 
 - They **provoke opportunity attacks** even if they take the **Disengage** action
-- If a creature within the aura is **hit by an opportunity attack** from the Thief of Winds or one of their allies, the target’s **movement speed is reduced by [= 2 stride =]** until the end of their next turn
+- If a creature within the aura is **hit by an opportunity attack** from the Thief of Winds or one of their allies, the target’s **movement speed is reduced by [= 2 stride =]** [# kw:briefly #]
 - The aura is always active while the Thief of Winds is conscious
 
 #### Aura of Protection ([= 2 stride;ADJ =] radius)
 
-The Thief of Winds radiates a protective, unseeable aura in a [= 2 stride;ADJ =] radius. The aura is inactive while you have the Incapacitated condition.
+The Thief of Winds radiates a protective, unseeable aura in a [= 2 stride;ADJ =] radius. The aura is inactive while you have the [# kw:condition:Incapacitated #] condition.
 
 - She and her allies in the aura gain a bonus to saving throws equal to her Charisma modifier (minimum bonus of +1).
 
@@ -112,23 +112,23 @@ This creature rides a [Lunar Manticore](/en/library/monsters/lunar-manticore)
 The Thief of Winds makes **two attacks**, choosing from **Grand Empyrean Sword-Spear**, **Dirk**, or **Silencer** (if recharged).
 
 - **Grand Empyrean Sword-Spear**
-  _Melee Weapon Attack:_ +10 to hit, reach [= 2 stride =], one target.  
-  _Hit:_ 12 ([% 1d10 +6 slashing %]) plus 6 ([% 2d6 frost %]).  
+  Accuracy +10, reach [= 2 stride =], one creature.  
+  On a hit, 12 ([% 1d10 +6 slashing %]) plus 6 ([% 2d6 frost %]).  
   This weapon is **Versatile** ([% 1d10 %]), **Heavy**, and **Martial**. It is forged from tombsteel and treated as magical for overcoming resistance.
 
 ---
 
 - **Dirk of Arrested Breath**
-  _Melee Weapon Attack:_ +8 to hit, reach [= 1 stride =], one target.  
-  _Hit:_ 7 ([% 1d4 +5 piercing %]). The target must succeed on a **DC 15 Constitution saving throw** or become **Paralyzed until the end of their next turn**.  
+  Accuracy +8, reach [= 1 stride =], one creature.  
+  On a hit, 7 ([% 1d4 +5 piercing %]). The target saves Constitution against DC 15 or becomes **[# kw:condition:Paralyzed #] [# kw:briefly #]**.  
   A creature that succeeds is immune to this effect until the start of Apatheria’s next turn.
 
 ---
 
 - **Silencer** (Recharge 5–6)
-  Apatheria fires her sawed-off shotgun in a **[= 3 stride;ADJ =] cone**. Each creature in the cone must make a **DC 15 Dexterity saving throw**:
+  Apatheria fires her sawed-off shotgun in a **[= 3 stride;ADJ =] cone**. Each creature in the cone saves Dexterity against DC 15:
 
-- **Fail**: 21 ([% 6d6 piercing %]) and is **knocked prone**
+- **Fail**: 21 ([% 6d6 piercing %]) and is **knocked [# kw:condition:prone #]**
 - **Success**: Half damage, no knockdown
 
 This counts as a ranged attack roll for every creature hit, for the purposes of **added on damage** such as [_Hunter’s Mark_](/en/library/spells/hex).
@@ -140,7 +140,7 @@ This counts as a ranged attack roll for every creature hit, for the purposes of 
 When the Thief of Winds hits a creature with a melee weapon attack, they can use a **Minor Action** to activate this feature.
 
 - The triggering attack deals an **extra [% 2d6 frost %]**
-- The target’s **speed becomes 0 until the end of its next turn**
+- The target’s **speed becomes 0 [# kw:briefly #]**
 - Can only be used **once per [# kw:Repose #] or [# kw:Recovery #]**
 
 ---
@@ -150,7 +150,7 @@ When the Thief of Winds hits a creature with a melee weapon attack, they can use
 The Thief of Winds is a spellcaster. Their spellcasting ability is **Charisma**.
 
 - **Spell Save DC**: 16
-- **Spell Attack Bonus**: +7 to hit
+- **Spell Attack Bonus**: accuracy +7
 - They follow Paladin-style spellcasting and always have certain Oath spells prepared.
 
 **Spell Slots**:
@@ -179,9 +179,9 @@ At the start of the creature with the highest initiative's turn, Apatheria can e
 From distant siege vessels anchored around the island, Apatheria signals a synchronized bombardment. Massive tombsteel harpoons arc through the upper air and crash down like godslaying meteors.
 
 - Apatheria designates **up to three [= 2 stride;ADJ =]-radius impact zones** anywhere on the battlefield within [= 60 stride =].
-- Each creature in an impact zone must succeed on a **DC 15 Dexterity saving throw** or take **44 ([% 8d10 piercing %])** and be **knocked prone**.
+- Each creature in an impact zone saves Dexterity against DC 15 or takes **44 ([% 8d10 piercing %])** and is **knocked [# kw:condition:prone #]**.
 
-- A creature that succeeds takes no damage and is not knocked prone.
+- A creature that succeeds takes no damage and is not knocked [# kw:condition:prone #].
 
 - The ground in each affected zone becomes **difficult terrain** until cleared. The embedded harpoons remain as **full-cover**, impassable unless destroyed or climbed.
 
@@ -238,7 +238,7 @@ Apatheria can expend legendary deeds to use the options below. Only one legendar
 **Declare (on hit)**: Each time Apatheria hits with a melee weapon attack, she pulls the skies down, creating a resonant storm marker at the target’s location.
 
 **Resolve (start of her next turn)**: the skies drop at each marked location, casting the [_Shatter_](/en/library/spells/shatter) spell.  
-Creatures within **[= 2 stride =]** of each marked location must make a **DC 15 Constitution saving throw**.
+Creatures within **[= 2 stride =]** of each marked location save Constitution against DC 15.
 
 - **Fail**: [% 3d8 bludgeoning %].
 - **Success**: Half damage.
@@ -263,12 +263,12 @@ She also unlocks the stolen power of Ukonhemmo’s storm and wind vakis. For the
 - **3rd-level**: [_Call Lightning_](/en/library/spells/call-lightning), [_Breeze Barrier_](/en/library/spells/breeze-barrier), [_Lightning Arrow_](/en/library/spells/lightning-arrow)
 - **4th-level**: [_Storm Sphere_](/en/library/spells/storm-sphere), [_Command The Seas_](/en/library/spells/command-the-seas)
 - **5th-level**: [_Command The Skies_](/en/library/spells/command-the-skies), [_Destructive Wave_](/en/library/spells/destructive-wave)
-  These spells are cast using her normal spellcasting stats (DC 15, +7 to hit).  
+  These spells are cast using her normal spellcasting stats (DC 15, accuracy +7).  
   All of them require **no spell slots**, do **not require material components**, but each can only be cast **once per [# kw:Repose #]**.
 
 #### Doomed (25% HP):
 
 Apatheria tears open the veil between the upper sky and the battlefield, calling down several pillars of lightning.  
- All creatures of her choice within **[= 6 stride =]** must succeed on a **DC 15 Dexterity saving throw** or take **[% 4d12 lightning %]** and be **blinded** until the end of their next turn. On a successful save, they take half damage and are not blinded.  
+ All creatures of her choice within **[= 6 stride =]** save Dexterity against DC 15 or take **[% 4d12 lightning %]** and are **[# kw:condition:blinded #]** [# kw:briefly #]. On a successful save, they take half damage and are not [# kw:condition:blinded #].  
  This effect ignores resistance to lightning damage. Apatheria and her mount immediately gain **flying speed equal to their walking speed** (hover) for 1 minute.
 If Ukkonhemmo has not been freed when Apatheria reaches this threshold, she immediately kills him with the lightning bolt.

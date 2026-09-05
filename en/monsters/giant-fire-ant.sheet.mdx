@@ -37,7 +37,7 @@ _Large Wildlife, Unaligned_
 #### Grappler
 
 Wildfire may attempt to **grapple** as a **Minor Action**.  
-Grappled creatures are also **restrained**.
+[# kw:condition:Grappled #] creatures are also **[# kw:condition:restrained #]**.
 
 ---
 
@@ -47,10 +47,10 @@ Grappled creatures are also **restrained**.
 
 Wildfire makes three attacks: either three **Scorching Ray** attacks or three **Scorching Fangs** attacks.
 
-- **Scorching Ray.** _Ranged Weapon Attack:_ +9 to hit, range [= 24 stride =], one target. _Hit:_ 22 ([% 4d10 fire %]).
-- **Scorching Fangs.** _Melee Weapon Attack:_ +9 to hit, reach [= 1 stride =], one target. _Hit:_ 11 ([% 2d10 fire %]) plus 11 ([% 2d10 chemical %]). The target must succeed on a **DC 15 Constitution saving throw** or be **paralyzed until the end of their next turn**.
-- **Oviposition (Recharge 6).** If a creature is **paralyzed**, Wildfire may implant a **burning egg**. The creature gains the **Incubating Inferno** condition (see below).
-- **Pyroblast (1/day).** Wildfire casts [Pyroblast](/en/library/spells/pyroblast) in a [= 4 stride =] radius sphere. Each creature in the area must make a **DC 15 Dexterity saving throw**, taking **28 ([% 8d6 fire %])** on a failed save, or half as much on a successful one.
+- **Scorching Ray.** Accuracy +9, range [= 24 stride =], one creature. On a hit, 22 ([% 4d10 fire %]).
+- **Scorching Fangs.** Accuracy +9, reach [= 1 stride =], one creature. On a hit, 11 ([% 2d10 fire %]) plus 11 ([% 2d10 chemical %]). The target saves Constitution against DC 15 or is **[# kw:condition:paralyzed #] [# kw:briefly #]**.
+- **Oviposition (Recharge 6).** If a creature is **[# kw:condition:paralyzed #]**, Wildfire may implant a **burning egg**. The creature gains the **Incubating Inferno** condition (see below).
+- **Pyroblast (1/[# kw:Recovery #]).** Wildfire casts [Pyroblast](/en/library/spells/pyroblast) in a [= 4 stride =] radius sphere. Each creature in the area saves Dexterity against DC 15, halving **28 ([% 8d6 fire %])**.
 
 ---
 
@@ -64,8 +64,8 @@ A creature affected by _Incubating Inferno_ suffers the following:
 - The condition does **not deal damage over time**
 - At the end of the creature’s next [# kw:Repose #], the egg **hatches**:
   - The creature takes **22 ([% 4d10 fire %])**
-  - Then makes a **DC 15 Constitution saving throw**
-    - On failure: the creature is **Stunned for 1 minute** (save at end of each turn to end)  
+  - Then saves Constitution against DC 15
+    - On failure: the creature is **[# kw:condition:Stunned #] for 1 minute** (save at end of each turn to end)  
       Only **Restoration**, **Heal**, or **Wish** can remove the condition before hatching.
 
 ---

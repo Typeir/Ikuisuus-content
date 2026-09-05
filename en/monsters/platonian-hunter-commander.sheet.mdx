@@ -19,7 +19,7 @@ _Large Construct, Lawful Neutral_
 - **Damage Resistances**: dark, holy, fire, lightning, frost
 - **Damage Immunities**: poison
 - **Damage Vulnerabilities**: bludgeoning, chemical
-- **Condition Immunities**: stunned, paralyzed, terrified, frightened, charmed
+- **Condition Immunities**: [# kw:condition:stunned #], [# kw:condition:paralyzed #], [# kw:condition:terrified #], [# kw:condition:frightened #], [# kw:condition:charmed #]
 - **Senses**: darkvision [= 24 stride =], passive Perception 21
 - **Languages**: —
 - **Challenge**: 18 (15,000 XP)
@@ -36,7 +36,7 @@ The Platonian Hunter Commander has **3 legendary deeds per round**, and regains 
 
 When reduced to 0 hit points, the hunter erupts in a [= 60 stride;ADJ =]-radius explosion (blocked by solid terrain).  
 After a three turn delay, the hunter explodes.
-Each creature within range must make a **DC 22 Dexterity saving throw**, taking **180 ([% 40d8 force %])** and becoming **blinded** until the end of its next turn on a failure, or half as much damage on a success.
+Each creature within range saves Dexterity against DC 22, taking **180 ([% 40d8 force %])** and becoming **[# kw:condition:blinded #]** [# kw:briefly #] on a failure, or half as much damage on a success.
 
 #### Multi-Purpose Tool
 
@@ -52,7 +52,7 @@ The Commander can cast each of the following spells once per day without compone
 
 - [_Shield_](/en/library/spells/shield) — **1 spell point**
 - [_Misty Step_](/en/library/spells/misty-step) — **2 spell points**
-- [_Invisibility (upcast)_](/en/library/spells/invisibility) — **4 spell points**
+- [_Invisibility (overcast)_](/en/library/spells/invisibility) — **4 spell points**
 
 #### Spell Point Reserve
 
@@ -68,7 +68,7 @@ The Commander has **4 superiority dice (d10s)**. Maneuver save DC = **22** (10 +
 
 - **Commander's Strike.** Order an ally to attack as a reaction, adding the superiority die to damage.
 - **Maneuvering Attack.** On hit, add the die to damage and allow an ally to move up to half speed without provoking opportunity attacks from the target.
-- **Disarming Attack.** On hit, add the die to damage; target must succeed on a Strength save or drop one held item.
+- **Disarming Attack.** On hit, add the die to damage; target saves Strength or drops one held item.
 - **Parry.** Use reaction to reduce melee damage taken by the die + Dexterity modifier.
 - **Riposte.** When a creature misses the Commander with a melee attack, it may attack back as a reaction, adding the die to damage.
 
@@ -85,36 +85,36 @@ The commander regains one superiority die at the start of his turn.
 The Commander makes two attacks with **Bound Athena** and one with the **Disambiguator**, or any three weapon attacks of its choice.
 
 - **Bound Athena.** _(Melee Weapon, Two-Handed)_
-  _Melee Weapon Attack:_ +15 to hit, reach [= 2 stride =], one target.
-  _Hit:_ 27 ([% 3d10 +10 holy %]) plus 9 ([% 2d8 force %]).
+  Accuracy +15, reach [= 2 stride =], one creature.
+  On a hit, 27 ([% 3d10 +10 holy %]) plus 9 ([% 2d8 force %]).
 
 ###### Athena's Judgment (1/Day per creature)
 
-On a hit, the target must succeed on a **DC 21 Wisdom saving throw** or suffer the following:
+On a hit, the target saves Wisdom against DC 21 or suffers the following:
 
 - **Vulnerability** to all damage from Bound Athena for 1 minute.
 - The Commander gains **truesight** on that target for the same duration.
 - All magical effects currently affecting the target (beneficial or harmful) are **immediately siphoned**. These effects end on the target and are transferred to the Commander, persisting for their remaining duration as though it were the original target.
 
 - **Disambiguator (Recharge 4–6).** _(Melee Weapon, One-Handed)_
-  _Melee Weapon Attack:_ +15 to hit, reach [= 2 stride =], one target.
-  _Hit:_ 21 ([% 3d6 +10 slashing %]) plus 20 ([% 3d12 dark %]).
+  Accuracy +15, reach [= 2 stride =], one creature.
+  On a hit, 21 ([% 3d6 +10 slashing %]) plus 20 ([% 3d12 dark %]).
   On hit, the Commander chooses one effect:
 
-  - **The Toll.** Target must succeed on a **DC 21 Constitution saving throw** or suffer 1 failed death save and lose all active magical effects (such as _bless_ or _haste_).
-  - **The Cave.** Target must succeed on a **DC 21 Charisma saving throw** or be stunned, paralyzed, put to sleep, and petrified (petrification takes two full rounds to take effect). The target cannot repeat this saving throw and can only be cured with curse removal.
+  - **The Toll.** Target saves Constitution against DC 21 or suffers 1 failed death save and loses all active magical effects (such as _bless_ or _haste_).
+  - **The Cave.** Target saves Charisma against DC 21 or is [# kw:condition:stunned #], [# kw:condition:paralyzed #], put to sleep, and [# kw:condition:petrified #] (petrification takes two full rounds to take effect). The target cannot repeat this saving throw and can only be cured with curse removal.
 
   The Commander heals for half the total damage dealt by this attack.
 
 - **Particle Render.** _(Melee Weapon, One-Handed)_
-  _Melee Weapon Attack:_ +14 to hit, reach [= 2 stride =], one target.
-  _Hit:_ 17 ([% 2d8 +8 slashing %]).
+  Accuracy +14, reach [= 2 stride =], one creature.
+  On a hit, 17 ([% 2d8 +8 slashing %]).
   After a successful hit, the Commander may make one additional free attack with this weapon (this does not stack).
 
 - **Thruster Axe-Kick** (Gap Closer)
-  _Special Melee Weapon Attack:_ +14 to hit, range 10–[= 6 stride =], one target.  
+  _Special Accuracy +14, range 10–[= 6 stride =], one creature.  
   The Commander launches forward with thrusters, landing in an unoccupied space [= 1 stride =] from the target.  
-  _Hit:_ 25 ([% 3d10 +8 slashing %]). If the target is Large or smaller, it must succeed on a **DC 19 Strength saving throw** or be knocked prone.
+  On a hit, 25 ([% 3d10 +8 slashing %]). If the target is Large or smaller, it saves Strength against DC 19 or is knocked [# kw:condition:prone #].
   If the target takes damage from this attack, it [catches fire](/en/library/rules/steel-and-strife/conditions).
 
 ---

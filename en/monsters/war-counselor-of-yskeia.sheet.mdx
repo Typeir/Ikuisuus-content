@@ -19,7 +19,7 @@ _Medium Humanoid (Dwarf), Lawful Neutral_
 - **Skills**: Athletics +18, Insight +19, Perception +19, Religion +14
 - **Damage Resistances**: Holy, Fire
 - **Damage Immunities**: Poison
-- **Condition Immunities**: Terrified, Poisoned
+- **Condition Immunities**: [# kw:condition:Terrified #], [# kw:condition:Poisoned #]
 - **Senses**: Darkvision [= 12 stride =], passive Perception 29
 - **Languages**: Common, Hidden, Empyrean
 - **Challenge**: 28 (120,000 XP)
@@ -46,7 +46,7 @@ While The War Counselor is within **[= 12 stride =] of [_Yskeia_](/en/library/mo
 
 ### Martyr of Command
 
-When The War Counselor is reduced to 0 hit points, [_Yskeia_](/en/library/monsters/war-goddess-yskeia) immediately regains **200 hit points**, and each creature of [_Yskeia_](/en/library/monsters/war-goddess-yskeia)'s choice within [= 24 stride =] must succeed on a **DC 30 Wisdom saving throw** or become **terrified** of her for 1 minute.
+When The War Counselor is reduced to 0 hit points, [_Yskeia_](/en/library/monsters/war-goddess-yskeia) immediately regains **200 hit points**, and each creature of [_Yskeia_](/en/library/monsters/war-goddess-yskeia)'s choice within [= 24 stride =] saves Wisdom against DC 30 or becomes **[# kw:condition:terrified #]** of her for 1 minute.
 
 ### War Priest Techniques
 
@@ -58,7 +58,7 @@ Whenever The War Counselor uses his action to cast a spell, he gains advantage o
 
 ### Spellcasting
 
-The War Counselor is a **30th-level Pilgrim (War Domain)**. His spellcasting ability is **Wisdom** (spell save DC **27**, +19 to hit with spell attacks).  
+The War Counselor is a **30th-level Pilgrim (War Domain)**. His spellcasting ability is **Wisdom** (spell save DC **27**, accuracy +19 with spell attacks).  
 He has the following Pilgrim spells prepared:
 
 | Spell Level            | Slots | Spells                                                                                                                                                                                     |
@@ -82,13 +82,13 @@ He has the following Pilgrim spells prepared:
 The War Counselor makes **two** melee attacks.
 
 - **Blessings of Yskeia**
-  _Melee Weapon Attack:_ +21 to hit, reach [= 2 stride =], one target.  
-  _Hit:_ 38 ([% 4d12 +12 slashing %]) plus 22 ([% 5d8 holy %]).
+  Accuracy +21, reach [= 2 stride =], one creature.  
+  On a hit, 38 ([% 4d12 +12 slashing %]) plus 22 ([% 5d8 holy %]).
 
 - **Shield Shotguns**
-  _Melee Weapon Attack:_ +21 to hit, reach [= 2 stride =], all creatures in a **[= 3 stride;ADJ =] cone** originating from The War Counselor’s shield.  
-  _Hit:_ 33 ([% 6d10 piercing %]).
-  Each creature hit must succeed on a **DC 25 Strength saving throw** or be **pushed [= 4 stride =] away** from The War Counselor and knocked **prone**.
+  Accuracy +21, reach [= 2 stride =], all creatures in a **[= 3 stride;ADJ =] cone** originating from The War Counselor’s shield.  
+  On a hit, 33 ([% 6d10 piercing %]).
+  Each creature hit saves Strength against DC 25 or is **pushed [= 4 stride =] away** from The War Counselor and knocked **[# kw:condition:prone #]**.
   The War Counselor can choose to travel [= 4 stride =] backwards as part of this attack, using the backblast.
 
 ---
@@ -108,8 +108,8 @@ This effect functions as the spell [_Pyroblast_](/en/library/spells/pyroblast), 
 As a Minor Action, The War Counselor manifests a divine blunderbuss. This functions as [_Spiritual Weapon_](/en/library/spells/spiritual-weapon) with the following changes:
 
 - The blunderbuss makes ranged spell attacks using The War Counselor’s **Wisdom**.
-- _Ranged Spell Attack:_ +21 to hit, range [= 12 stride =], one target.  
-  _Hit:_ 22 ([% 4d10 force %]).
+- Accuracy +21, range [= 12 stride =], one creature.  
+  On a hit, 22 ([% 4d10 force %]).
 - The blunderbuss has the **Loading** property and can fire **only every other round**.
 - The blunderbuss does not require concentration.
 
@@ -121,7 +121,7 @@ When The War Counselor makes an attack roll, he can add **+10** to the roll afte
 
 ## Checkmate (1/Repose)
 
-At the start of his turn (No action required), The War Counselor executes a perfectly drilled killing sequence.
+At the start of his turn, The War Counselor executes a perfectly drilled killing sequence.
 
 The War Counselor immediately gains an action point and gains the following benefits until the end of his turn:
 
@@ -152,4 +152,4 @@ The War Counselor can expend legendary deeds to use the options below. Only one 
   The War Counselor moves up to half his speed and makes one melee attack.
 
 - **Stand Firm (Costs 2 Deeds).**  
-  Until the start of his next turn, The War Counselor and all allies within [= 6 stride =] cannot be moved against their will or knocked prone.
+  Until the start of his next turn, The War Counselor and all allies within [= 6 stride =] cannot be moved against their will or knocked [# kw:condition:prone #].
