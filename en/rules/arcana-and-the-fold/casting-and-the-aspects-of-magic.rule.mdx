@@ -9,28 +9,37 @@ This entry covers the attack and save mechanics for spell effects, and the Aspec
 
 The geometry of area shapes (cone, cube, cylinder, line, sphere), points of origin, lines of effect, and their interaction with cover are covered in [Maps, Grids and Shapes](/en/library/rules/steel-and-strife/maps-grids-and-shapes).
 
-## Spellcasting Mechanics
+## Spell Accuracy and Damage
 
-### Saving Throws
+Spellcasters have a keyed attribute that determines their casting prowess.
+Their spell [# kw:damage #] equals to said attribute, and their spell [# kw:accuracy #] is that same attribute, plus their **Tier Bonus**.
+Certain **Features** or **Traits** may boost these numbers.
+
+_Example:_
+> A Scion has a **Charisma** score of 20 (+5), and a **Tier Bonus** of 4. Since the scion's keyed attribute is **Charisma**, as defined in the **Vocation Rules**, their [# kw:accuracy #] equals 5 plus 4, so **9**, and their [# kw:damage #] is **Just 5**.
+
+## Saving Throws
 
 - When a spell allows a saving throw, the spell specifies which ability the target uses for the save and what happens on a success or failure.
-- The DC to resist one of your spells equals `10 + your accuracy + any special modifiers imposed by features`, items, or other effects.
+- The DC to resist one of your spells equals **10 + your [# kw:accuracy #] + any special modifiers imposed by features**, items, or other effects.
 
-### Attack Rolls for Spells
+## Attack Rolls for Spells
 
 - Some spells require the caster to make an attack roll to determine whether the spell effect hits a target. Most spells that require attack rolls are ranged attacks.
 - Spell attack rolls follow the general attack procedure in [Making an Attack](/en/library/rules/steel-and-strife/making-an-attack).
-- Your spell attack bonus equals your spellcasting ability modifier + your tier bonus, plus any other modifiers that apply.
+- Your spell attacks use your [# kw:accuracy #], plus any other modifiers that apply.
+- If a spell would add [# kw:damage #] to the roll, they would use your **spell [# kw:damage #]**.
 - You have disadvantage on a ranged attack roll if you are within [= 1 stride =] of a hostile creature that can see you and that creature is not [# kw:condition:incapacitated #].
 
 ## Interactions
 
-- Spell saving throw DC and spell attack bonus are used by many other rules and features; calculate them as described above and apply any additional modifiers from vocation features, magic items, or circumstances.
+- Spell [# kw:accuracy #] and spell [# kw:damage #] are used by many other rules and features; calculate them as described above and apply any additional modifiers from vocation features, magic items, or circumstances.
+- These [# kw:accuracy #] and [# kw:damage #] modifiers are not special or innate to spells, and they appear in **all** coined features that **perform attack rolls** or **impose saving throws**.
 - Area geometry and cover interactions are covered in [Maps, Grids and Shapes](/en/library/rules/steel-and-strife/maps-grids-and-shapes).
 
 ## Aspects 
 
-An aspect is a fundamental truth about the nature of a spell, often described in the shape of a group and a discriminator "group:discriminator", like in the case of [( damage:true )] or [( form:hand )].
+An aspect is a fundamental truth about the nature of a spell, often described in the shape of a group and a discriminator "**group**:_discriminator_", like in the case of [( damage:true )] or [( form:hand )].
 Aspects define what a spell _does_, but more importantly, what it **is**.
 
 Aspects often interact with certain **features** that grant special bonuses to spells and features bearing a specific aspect.
