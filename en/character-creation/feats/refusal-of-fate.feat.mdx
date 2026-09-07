@@ -27,17 +27,30 @@ When you select this feat, increase your **Any ability score** by 1, up to a max
 
 When you take this feat, you gain the following features:
 
-- **Will Override.**  
-  When you fail an attack roll, saving throw, or ability check, you may choose to treat the result as a success instead.
+<Feature trigger="when you fail an attack roll, saving throw, or ability check" charges="tier bonus/[# kw:Recovery #]">
 
-- **The Cost of Defiance.**  
-  When you use Will Override, you lose one hit die.  
-  You immediately take **true damage** equal to the maximum roll of said hit die and reduce your **maximum hit points** by the same amount, plus your constitution modifier.
+#### Will Override
 
-- **Recovery.**  
-  Lost Hit Dice and reduced maximum hit points from this feature can only be restored through a [# kw:Recovery #], you only recover one hit dice at a time.
+You may choose to treat the result as a success instead.
 
-You can use this feature a number of times equal to your tier bonus, and you regain all expended uses when you finish a [# kw:Recovery #].
+</Feature>
+
+<Feature trigger="when you use Will Override">
+
+#### The Cost of Defiance
+
+You lose one hit die.  
+You immediately take **true damage** equal to the maximum roll of said hit die and reduce your **maximum hit points** by the same amount, plus your constitution modifier.
+
+</Feature>
+
+<Feature>
+
+#### Recovery
+
+Lost Hit Dice and reduced maximum hit points from this feature can only be restored through a [# kw:Recovery #], you only recover one hit dice at a time.
+
+</Feature>
 
 This is not luck.  
 This is not mercy.  

@@ -25,12 +25,27 @@ You extend your hand and project a puff of noxious gas from your palm. Targets s
 
 **Progression (5th/11th/17th):** the damage increases by [% 1d12 %] at each step.
 
-**Decanting.** Instead of projecting the gas, you can condense it. Choose one:
+<Choice>
 
-- **Coat a weapon.** You fill a vial with the stuff, enough to coat one weapon or up to three pieces of ammunition.
+<Feature targets="one weapon or up to three pieces of ammunition">
+
+#### Coat a weapon
+
+You fill a vial with the stuff, enough to coat them.
 The next hit made with it deals an extra [% 1d6 poison %].
-- **Poison food.** You taint a meal or a drinking vessel.
+
+</Feature>
+
+<Feature targets="a meal or a drinking vessel">
+
+#### Poison food
+
+You taint it.
 Creatures that consume it save Constitution or take [% 1d6 poison %] and are **[# kw:condition:poisoned #]** for 1 minute.
+
+</Feature>
+
+</Choice>
 
 **Both decay one minute after you make them**, vial and all.
 This is not a trade you can stockpile, you commit to it on the way through the door.

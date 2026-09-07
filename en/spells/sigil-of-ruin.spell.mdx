@@ -30,15 +30,27 @@ It triggers on the first among targets whose [# kw:disposition #] toward you —
 Because it reads intent and not allegiance, a disguise, an invisibility, a false uniform, or a kind word cannot fool it; only a creature that genuinely means no harm passes it by.
 When you inscribe the sigil you may name a password, or a specific creature, that it always lets through.
 
-When you inscribe the sigil, choose one of the following effects.
+<Choice>
 
-**Ruin.**  
-**Targets**: creatures within a [= 4 stride;ADJ =]-radius sphere centred on the sigil, spreading around corners  
-When triggered, the sigil bursts.
+<Feature trigger="when the sigil is triggered" targets="creatures within a [= 4 stride;ADJ =]-radius sphere centred on the sigil, spreading around corners">
+
+#### Ruin
+
+The sigil bursts.
 Targets save Dexterity, halving [% 5d8 %] chemical, frost, fire, lightning, or bludgeoning damage, your choice at inscription.
 
-**Stored Casting.** As part of inscribing the sigil, you cast a prepared spell of a level no higher than this one into it; that spell takes no effect until the sigil triggers, at which point it goes off, targeting or centred on the triggering creature.
+</Feature>
+
+<Feature>
+
+#### Stored Casting
+
+As part of inscribing the sigil, you cast a prepared spell of a level no higher than this one into it; that spell takes no effect until the sigil triggers, at which point it goes off, targeting or centred on the triggering creature.
 A stored spell that requires concentration lasts its full duration without your attention.
+
+</Feature>
+
+</Choice>
 
 Once triggered, the sigil is spent and the spell ends.
 

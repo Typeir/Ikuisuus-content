@@ -18,14 +18,29 @@ Increase your **Any ability score** by 1, up to a maximum of **20**.
 
 When you select this feat, you gain the following benefits:
 
-- **Fortune’s Reserve.**  
-  You have a number of **Luck Points** equal to your **tier bonus**. You regain all expended Luck Points when you finish a [# kw:Recovery #].
+<Pool max="tier bonus" recharge="[# kw:Recovery #]">
 
-- **Fortune’s Favor.**  
-  When you make an attack roll, an ability check, or a saving throw, you can spend one Luck Point to roll an additional **d20**. You choose which of the d20s to use for the roll.
+#### Fortune’s Reserve
 
-- **Fortune’s Bane.**  
-  When a creature makes an attack roll against you, you can spend one Luck Point to roll a **d20**, then choose whether the attack uses its roll or yours.
+You have a number of **Luck Points** equal to your **tier bonus**. You regain all expended Luck Points when you finish a [# kw:Recovery #].
+
+</Pool>
+
+<Feature cost="1 Luck Point" trigger="when you make an attack roll, an ability check, or a saving throw">
+
+#### Fortune’s Favor
+
+You can roll an additional **d20**. You choose which of the d20s to use for the roll.
+
+</Feature>
+
+<Feature cost="1 Luck Point" trigger="when a creature makes an attack roll against you">
+
+#### Fortune’s Bane
+
+You can roll a **d20**, then choose whether the attack uses its roll or yours.
+
+</Feature>
 
 This fortune is **not magical**, and so it may be used even on a **Raw Roll [# kw:raw roll;RR #]**.
 

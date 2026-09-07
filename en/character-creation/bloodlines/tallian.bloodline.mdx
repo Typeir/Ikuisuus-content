@@ -20,23 +20,36 @@ Yet most anchor themselves to whatever lucky or unlucky Empyrean they come acros
 
 ---
 
-<Bloodline boonPoints="10">
+<Bloodline>
 
 ## Core Features
 
-| **Ability Scores**                      | **Movement Speeds**                                                 | **Senses**                        |
-| --------------------------------------- | ------------------------------------------------------------------- | --------------------------------- |
-| <ul><li>INT +1</li></ul> | <ul><li>Walk: [= 6 stride =]</li><li>Hover: Same as Walking speed</li></ul> | <ul><li>Standard vision</li></ul> |
+<AbilityScores>INT +1</AbilityScores>
+<Speeds>
 
-| **Size**                                                                                                                                                                                                                                                                                                                                                                                                   | **Creature Types**          | **Age**                                                                                                                                                                                                                                                                                                                                                                                           |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <ul><li>Small</li><li>Medium</li><li><Tooltip><span>Large</span><span>Choose Small, Medium, or Large at character creation. Large creatures must use the Squeeze action to fit through gaps of [= 1 stride =] or less. While Squeezing, attack rolls against you have advantage, your own attack rolls and Dexterity saving throws have disadvantage, and your movement speed is halved.</span></Tooltip></li></ul> | <ul><li>Construct</li></ul> | <ul><li><Tooltip><span>Service cycle (~40 years per major component set)</span><span>Tallians do not age biologically, but their biomechanical parts wear out under stress. Every 40 years, major component groups usually require replacement or full refurbishment to maintain baseline function. A neglected Tallian can remain animate but progressively unstable.</span></Tooltip></li></ul> |
+- Walk: [= 6 stride =]
+- Hover: Same as Walking speed
+
+</Speeds>
+<Senses>Standard vision</Senses>
+
+
+<Size>
+
+- Small
+- Medium
+- <Tooltip><span>Large</span><span>Choose Small, Medium, or Large at character creation. Large creatures must use the Squeeze action to fit through gaps of [= 1 stride =] or less. While Squeezing, attack rolls against you have advantage, your own attack rolls and Dexterity saving throws have disadvantage, and your movement speed is halved.</span></Tooltip>
+
+</Size>
+<CreatureTypes>Construct</CreatureTypes>
+<Age><Tooltip><span>Service cycle (~40 years per major component set)</span><span>Tallians do not age biologically, but their biomechanical parts wear out under stress. Every 40 years, major component groups usually require replacement or full refurbishment to maintain baseline function. A neglected Tallian can remain animate but progressively unstable.</span></Tooltip></Age>
+
 
 <Feature>
 
 ### Maneuverable
 
-When hovering, you hover at 2.[= 1 stride =] x your tier bonus (minimum [= 1 stride =]) from the ground, and can hover over liquids.
+When hovering, you hover at [= 1 stride =] x your tier bonus (minimum [= 1 stride =]) from the ground, and can hover over liquids.
 
 </Feature>
 
@@ -76,6 +89,7 @@ or a [_Tinkers Kit_](/en/library/items/tools/tinkering) and the **Drones** Speci
 
 The [Mending](/en/library/spells/mending) spell can briefly restore your healing interface too.
 
+- During this window, you are vulnerable to all damage, and have disadvantage on all rolls, as your innards are exposed.
 - During this window, you can regain hit points as normal.
 - You can spend one hit die to regain hit points during your Repair Window. When you do so, the repair window immediately ends.
 
@@ -93,10 +107,10 @@ Your spent Hit Dice are restored as normal when you finish a [# kw:Recovery #].
 
 ### Programmed Excellence
 
-Once per [# kw:Repose #], as a Minor Action, you can re-wire your programming.
+At the end of a [# kw:Repose #], you can re-wire your programming.
 You gain all of the following benefits until the next [# kw:Repose #]:
 
-- Choose one condition: [# kw:condition:blinded #], [# kw:condition:charmed #], [# kw:condition:deafened #], [# kw:condition:frightened #], [# kw:condition:paralyzed #], [# kw:condition:poisoned #], or [# kw:condition:terrified #]. You are immune to that condition.
+- Choose one condition: [# kw:condition:blinded #], [# kw:condition:charmed #], [# kw:condition:deafened #], [# kw:condition:frightened #], [# kw:condition:paralyzed #], [# kw:condition:poisoned #]. You are immune to that condition.
 - Choose one elemental damage type: chemical, frost, fire, lightning, or psychic. You gain resistance to that damage type.
 - Choose one skill and one tool. You gain proficiency in both.
 
@@ -111,6 +125,8 @@ You can speak, read, and write Common and Empyrean.
 </Feature>
 
 ---
+
+<Boons>
 
 ## Boons
 
@@ -208,7 +224,7 @@ _Notes._
 
 You were built in a time that is no longer in written record. Most of what you are is lost to the aeons of eternity; you are a husk propelled by forces unseen, as if following a script or being spectated.
 
-**Decrease** all of your scores by 1, and **Increase** one by 4.
+**Decrease** all of your scores by 1, and **Increase** one by 5.
 
 Your **Creature Type** is **Null**. Your alignment is **Unaligned** and you are **Immune** to effects that would employ your alignment, positive and otherwise.
 
@@ -431,5 +447,7 @@ _Notes._
 > A gentle, rusted giant at the outskirts of a village lays immobile and dying. It's core now powers the townsfolks lodgements. It's conscience drifts in and out, realized; happy.
 
 </Feature>
+
+</Boons>
 
 </Bloodline>

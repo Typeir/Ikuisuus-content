@@ -22,20 +22,63 @@ Roots surge from the soil and weave into a ring of gnarled wood, and nature itse
 
 The spell fails if the area includes a building or any other structure.
 
-You can create up to four protections within the area. Choose from the following when you cast the spell:
+<Choice pick="up to four">
 
-- **Fog.** Solid fog fills a [= 4 stride;ADJ =]-square area within the grove, heavily obscuring it.
-As a [# kw:persistent #] effect, creatures in the fog save Constitution or are **[# kw:condition:poisoned #]** until they leave.
+<Feature targets="creatures in the fog">
+
+#### Fog
+
+Solid fog fills a [= 4 stride;ADJ =]-square area within the grove, heavily obscuring it.
+As a [# kw:persistent #] effect, targets save Constitution or are **[# kw:condition:poisoned #]** until they leave.
 The fog lasts for the duration, or until a wind of at least [= 8 league =] per hour disperses it.
-- **Undergrowth.** Grasping undergrowth covers a [= 4 stride;ADJ =]-square area within the grove.
+
+</Feature>
+
+<Feature targets="creatures in the undergrowth">
+
+#### Undergrowth
+
+Grasping undergrowth covers a [= 4 stride;ADJ =]-square area within the grove.
 The area is difficult terrain.
-As a [# kw:delayed #] effect, creatures in the undergrowth save Strength or are **[# kw:condition:restrained #]** until the spell ends.
+As a [# kw:delayed #] effect, targets save Strength or are **[# kw:condition:restrained #]** until the spell ends.
 A [# kw:condition:restrained #] creature can use a Major Action to make a Strength check, freeing itself on a success.
-- **Guardians.** Six awakened trees appear in unoccupied spaces you choose within the grove.
+
+</Feature>
+
+<Feature>
+
+#### Guardians
+
+Six awakened trees appear in unoccupied spaces you choose within the grove.
 They are **wildlife (plant)** of Challenge 2, they act as guardians, they cannot leave the grove, and they go inanimate when the spell ends.
-- **Spikes.** Up to four instances of [Spike Growth](/en/library/spells/spike-growth), each in a [= 2 stride;ADJ =]-square area.
-- **Snares.** Up to four instances of [Entangle](/en/library/spells/entangle), each in a [= 2 stride;ADJ =]-square area.
-- **Winds.** Up to four instances of [Breeze Barrier](/en/library/spells/breeze-barrier), each in a [= 2 stride;ADJ =]-square area.
+
+</Feature>
+
+<Feature>
+
+#### Spikes
+
+Up to four instances of [Spike Growth](/en/library/spells/spike-growth), each in a [= 2 stride;ADJ =]-square area.
+
+</Feature>
+
+<Feature>
+
+#### Snares
+
+Up to four instances of [Entangle](/en/library/spells/entangle), each in a [= 2 stride;ADJ =]-square area.
+
+</Feature>
+
+<Feature>
+
+#### Winds
+
+Up to four instances of [Breeze Barrier](/en/library/spells/breeze-barrier), each in a [= 2 stride;ADJ =]-square area.
+
+</Feature>
+
+</Choice>
 
 When you cast this spell you can specify creatures that are unaffected by one or more of the protections.
 You can also set a password that, spoken aloud, makes the speaker and any creatures they designate immune to the protections for 1 minute.

@@ -17,17 +17,29 @@ They are also deeply spiritual, with a strong connection to the natural world an
 
 ---
 
-<Bloodline boonPoints="10">
+<Bloodline>
 
 ## Core Features
 
-| **Ability Scores**                                                   | **Movement Speeds**                                                                                                                                 | **Senses**                        |
-| -------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------- |
-| <ul><li>CHA -1</li><li>STR or CON +2</li><li>DEX or WIS +2</li></ul> | <ul><li>Walk: [= 6 stride =]</li><Tooltip><li>Climb: Half your walking speed.</li><span>You can **keep one hand free** when climbing.</span></Tooltip></ul> | <ul><li>Standard vision</li></ul> |
+<AbilityScores>
 
-| **Size**                                                                                                                                                                                                                                                                                                                                                                                                     | **Creature Types**         | **Age**                                                                                                                                                                                   |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <ul><li><Tooltip><span>Large</span><span>Large creatures must use the Squeeze action to fit through gaps of [= 1 stride =] or less. <br/>The Squeeze action gives advantage to attackers and grants disadvantage on skill checks, attack rolls, saving throws, and halves movement speed.<br/>Large creatures may use Large weapons without disadvantage, and Huge weapons at disadvantage.</span></Tooltip></li></ul> | <ul><li>Humanoid</li></ul> | <ul><li><Tooltip><span>Up to 150 years</span><span>Edonian Giants reach adulthood around age 15 and can live up to 150 years, though most perish at around 70.</span></Tooltip></li></ul> |
+- CHA -1
+- STR or CON +2
+- DEX or WIS +2
+
+</AbilityScores>
+<Speeds>
+
+- Walk: [= 6 stride =]
+- <Tooltip><span>Climb: Half your walking speed.</span><span>You can **keep one hand free** when climbing.</span></Tooltip>
+
+</Speeds>
+<Senses>Standard vision</Senses>
+
+<Size><Tooltip><span>Large</span><span>Large creatures must use the Squeeze action to fit through gaps of [= 1 stride =] or less. <br/>The Squeeze action gives advantage to attackers and grants disadvantage on skill checks, attack rolls, saving throws, and halves movement speed.<br/>Large creatures may use Large weapons without disadvantage, and Huge weapons at disadvantage.</span></Tooltip></Size>
+<CreatureTypes>Humanoid</CreatureTypes>
+<Age><Tooltip><span>Up to 150 years</span><span>Edonian Giants reach adulthood around age 15 and can live up to 150 years, though most perish at around 70.</span></Tooltip></Age>
+
 
 <Feature>
 
@@ -58,6 +70,8 @@ You can speak, read, and write **Common** and **Edonian**.
 </Feature>
 
 ---
+
+<Boons>
 
 ## Boons
 
@@ -236,5 +250,7 @@ _Notes._
 > Though the existence of souls is **discarded by many**, Edonian Giants hold firm to the belief that a **weapon can tell its story** to those who listen.
 
 </Feature>
+
+</Boons>
 
 </Bloodline>

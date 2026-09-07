@@ -15,7 +15,15 @@ Increase **any** of your scores by 1.
 
 When you take this feat, you gain the following benefits:
 
-- **Anima Assault**: whenever you deal damage from any source, provided the target is within [= 20 stride =] of you, you may choose to expend one use of this feature to bolster the damage one of the following effects:
+<Feature
+  trigger="whenever you deal damage from any source"
+  targets="a target within [= 20 stride =] of you"
+  charges="tier bonus/[# kw:Recovery #]">
+
+#### Anima Assault
+
+You may choose to expend one use of this feature to bolster the damage one of the following effects:
+
   - **Scorching Strike**. The target takes an extra [% 1d6 %] **fire damage**, and saves Dexterity or is affected by the [# kw:condition:Burning #] condition.
   - **Sleet Strike**. The target takes an extra [% 1d6 %] **frost damage**. If the target is a creature, it saves Constitution, or its speed is reduced to 0 until the start of your next turn.
   - **Storm Strike**. The target takes an extra [% 1d6 %] **lightning damage**. If the target is a creature, it saves Constitution, or it has disadvantage on attack rolls until the start of your next turn, and is [# kw:condition:Staggered #].
@@ -34,6 +42,6 @@ You choose which effect to apply when you take this feat, and you may change you
 
 The saving throw DC for these effects equals 10 + your tier bonus + the ability modifier of the stat you increased when you took this feat.
 
-You can use this feat a number of times equal to your tier bonus, and you regain all expended uses when you finish a [# kw:Recovery #].
+</Feature>
 
 </Feat>

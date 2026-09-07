@@ -36,12 +36,23 @@ You can have a maximum of **20 Bone Charges**.
 
 **Bone Storm Effects.** The orbiting bone fragments act automatically:  
 
-- **On Your Attacks.**  
-When you hit with _The Severer_, that target takes a bonus **[% 1d4 piercing %] for each Bone Charge you currently have**.  
-- **When You Are Hit.**  
-When you take damage from an attack, the orbiting bones interpose and absorb part of the blow.  
+<Feature trigger="when you hit with _The Severer_">
+
+#### On Your Attacks
+
+That target takes a bonus **[% 1d4 piercing %] for each Bone Charge you currently have**.
+
+</Feature>
+
+<Feature trigger="when you take damage from an attack">
+
+#### When You Are Hit
+
+The orbiting bones interpose and absorb part of the blow.  
 Gain **damage reduction** equal to **[% 1d4 %] for each Bone Charge you currently have**.
-Lose as many Bone Charges as you rolled dice this way.  
+Lose as many Bone Charges as you rolled dice this way.
+
+</Feature>
 
 **Charge Decay.** If you have not gained any Bone Charges in the last **1 minute**, you lose **1 Bone Charge at the end of each minute** until you gain charges again or have none remaining.  
 
