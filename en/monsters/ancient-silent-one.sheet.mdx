@@ -5,37 +5,51 @@ contentType: monsters
 
 # Ancient Silent One
 
-_Huge Aberration, Chaotic Evil_
-
-| **Armor Class**    | **Hit Points**         | **Speed**            |
-| ------------------ | ---------------------- | -------------------- |
-| 16 (natural armor) | 276 ([% 24d12 +120 %]) | [= 6 stride =], climb [= 6 stride =] |
-
-| **STR** | **DEX** | **CON** | **INT** | **WIS** | **CHA** |
-| ------- | ------- | ------- | ------- | ------- | ------- |
-| 22 (+6) | 14 (+2) | 20 (+5) | 8 (–1)  | 16 (+3) | 14 (+2) |
-
-- **Saving Throws**: Strength +10, Constitution +9, Wisdom +7
-- **Skills**: Athletics +10, Perception +7
-- **Damage Resistances**: Bludgeoning, piercing, and slashing
-- **Condition Immunities**: [# kw:condition:Prone #]
-- **Senses**: Blindsight [= 12 stride =], Tremorsense [= 12 stride =], Darkvision [= 24 stride =], Passive Perception 17
-- **Languages**: Understands Deep Speech; speaks only in faint murmurs
-- **Challenge**: 13 (10,000 XP)
-- **Tier Bonus**: +5
+<Monster
+  size="Huge"
+  type="Aberration"
+  alignment="Chaotic Evil"
+  armorClass="16 (natural armor)"
+  hitPoints="276 ([% 24d12 +120 %])"
+  speed="[= 6 stride =], climb [= 6 stride =]"
+  str="22"
+  dex="14"
+  con="20"
+  int="8"
+  wis="16"
+  cha="14"
+  saves="Strength +10, Constitution +9, Wisdom +7"
+  skills="Athletics +10, Perception +7"
+  resistances="Bludgeoning, piercing, and slashing"
+  conditionImmunities="[# kw:condition:Prone #]"
+  senses="Blindsight [= 12 stride =], Tremorsense [= 12 stride =], Darkvision [= 24 stride =], Passive Perception 17"
+  languages="Understands Deep Speech; speaks only in faint murmurs"
+  challenge="13"
+  xp="10,000"
+  saveDc="15">
 
 ---
 
 ## Traits
 
+<Trait>
+
 #### Amorphous Mass
 
 The Silent One can move through a space as narrow as **[= 1 stride =]** wide without squeezing. It cannot be knocked [# kw:condition:prone #].
+
+</Trait>
+
+<Trait>
 
 #### Many-Armed Horror
 
 The Silent One has twelve arms and makes six **Slam** attacks on its turn.  
 If it begins its turn **grappling no creatures**, each Slam instead deals **double damage**.
+
+</Trait>
+
+<Trait>
 
 #### Digestive Maw (Concentration)
 
@@ -44,6 +58,10 @@ While swallowed, the creature is **[# kw:condition:blinded #]** and **[# kw:cond
 
 The Silent One must maintain this swallow as if **concentrating on a spell**. Each time it takes damage, it saves Constitution against DC 10 or half the damage taken, whichever is higher.  
 On a failure, it immediately **regurgitates all swallowed creatures**, which fall **[# kw:condition:prone #]** in spaces within [= 2 stride =] of it.
+
+</Trait>
+
+<Trait>
 
 #### Innate Spellcasting (Psionics)
 
@@ -54,40 +72,75 @@ The Silent One can innately cast the following spells, requiring no components:
 - **3/day each**: [_Command_](/en/library/spells/command), [_Suggestion_](/en/library/spells/suggestion), [_Zone of Truth_](/en/library/spells/zone-of-truth), [_Knock_](/en/library/spells/knock), [_Arcane Lock_](/en/library/spells/arcane-lock), [_Dimension Door_](/en/library/spells/dimension-door)
 - **1/day each**: [_Divination_](/en/library/spells/divination), [_Magic Missile_](/en/library/spells/magic-missile) (7th level)
 
+</Trait>
+
+<Trait>
+
 #### Silent Presence
 
 The Silent One’s body produces no natural sound, and its voice is heard only as faint murmurs.  
 While this aura is active, creatures within **[= 6 stride =]** have **disadvantage** on Wisdom (Perception) checks that rely on hearing, and spellcasters within this range must succeed on a **DC 15 Concentration check** to cast a spell with a **verbal component**.  
 The Silent One can suppress or reactivate this aura at the start of its turn.
 
+</Trait>
+
+<Trait>
+
 #### All-Around Eyes
 
 The Silent One has **advantage** on Wisdom (Perception) checks and **cannot be surprised**.
+
+</Trait>
+
+<Trait>
 
 #### Whirl of Limbs
 
 As an [# kw:delayed #] effect, each creature of the Silent One’s choice within **[= 2 stride =]** saves Strength against DC 18, halving **35 ([% 10d6 bludgeoning %])**.  
 **[# kw:condition:Grappled #] creatures automatically fail**, and take an additional **10 chemical damage**.
 
+</Trait>
+
 ---
 
 ## Actions
+
+<Action>
 
 #### Multiattack
 
 The Silent One makes **six Slam attacks**, or it uses **Hurl Debris** up to three times.
 
-- **Slam.**  
-  Accuracy +10, reach **[= 2 stride =]**, one creature.  
-  On a hit, 12 ([% 2d4 +6 bludgeoning %]) (**or 24 ([% 4d4 +12 %] if) grappling no creatures).  
-  A Large or smaller target is **[# kw:condition:grappled #]** (escape DC 17). Until the grapple ends, the target is **[# kw:condition:restrained #]\*\*.
+<Attack accuracy="+10" reach="[= 2 stride =]">
+
+##### Slam
+
+On a hit, 12 ([% 2d4 +6 bludgeoning %]) (**or 24 ([% 4d4 +12 %] if) grappling no creatures).  
+A Large or smaller target is **[# kw:condition:grappled #]** (escape DC 17). Until the grapple ends, the target is **[# kw:condition:restrained #]\*\*.
+
+</Attack>
+
+</Action>
+
+<Action>
 
 #### Hurl Debris.
 
-Accuracy +9, range **[= 12 stride =]/[= 36 stride =]**, one creature.  
+<Attack accuracy="+9" range="[= 12 stride =]/[= 36 stride =]">
+
 On a hit, 18 ([% 3d8 +6 bludgeoning %]).  
 The Silent One can target **up to three creatures** if it has **three or more free arms**.
+
+</Attack>
+
+</Action>
+
+<Action>
 
 #### Disintegrate (Recharge 6).
 
 The Silent One casts [_Disintegrate_](/en/library/spells/disintegrate), it's spell save DC is 15.
+
+</Action>
+
+</Monster>

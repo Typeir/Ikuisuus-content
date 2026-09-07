@@ -9,46 +9,68 @@ _Hiisi of Eternal Failure, Scion of Sulphur, Lord of Obsession, Miracle Incarnat
 
 <BlendedImage src='/library/images/monsters/xanthous.webp' alt='Xanthous' />
 
-_Gargantuan Aberration, Lawful Evil_
-
-| **Armor Class**    | **Hit Points**         | **Speed**                  |
-| ------------------ | ---------------------- | -------------------------- |
-| 25 (natural armor) | 850 ([% 50d10 +575 %]) | [= 2 stride =], fly [= 11 stride =] (hover) |
-
-| **STR**  | **DEX** | **CON** | **INT** | **WIS**  | **CHA**  |
-| -------- | ------- | ------- | ------- | -------- | -------- |
-| 30 (+10) | 16 (+3) | 28 (+9) | 25 (+7) | 30 (+10) | 30 (+10) |
-
-- **Saving Throws**: Str +25, Con +19, Int +17, Cha +25
-- **Skills**: Arcana +17, Deception +29, Insight +29, Intimidation +25, Perception +25, Persuasion +25, Religion +17
-- **Damage Vulnerabilities**: Frost
-- **Damage Resistances**: Lightning
-- **Damage Immunities**: Psychic, Poison, Chemical
-- **Condition Immunities**: [# kw:condition:Blinded #], [# kw:condition:Terrified #], [# kw:condition:Paralyzed #], [# kw:condition:Poisoned #], [# kw:condition:Stunned #]
-- **Senses**: Darkvision [= 24 stride =], Truesight [= 12 stride =], passive Perception 29
-- **Languages**: All, telepathy [= 24 stride =]
-- **Challenge**: 29 (155,000 XP)
-- **Tier Bonus**: +10
+<Monster
+  size="Gargantuan"
+  type="Aberration"
+  alignment="Lawful Evil"
+  armorClass="25 (natural armor)"
+  hitPoints="850 ([% 50d10 +575 %])"
+  speed="[= 2 stride =], fly [= 11 stride =] (hover)"
+  str="30"
+  dex="16"
+  con="28"
+  int="25"
+  wis="30"
+  cha="30"
+  saves="Str +25, Con +19, Int +17, Cha +25"
+  skills="Arcana +17, Deception +29, Insight +29, Intimidation +25, Perception +25, Persuasion +25, Religion +17"
+  vulnerabilities="Frost"
+  resistances="Lightning"
+  immunities="Psychic, Poison, Chemical"
+  conditionImmunities="[# kw:condition:Blinded #], [# kw:condition:Terrified #], [# kw:condition:Paralyzed #], [# kw:condition:Poisoned #], [# kw:condition:Stunned #]"
+  senses="Darkvision [= 24 stride =], Truesight [= 12 stride =], passive Perception 29"
+  languages="All, telepathy [= 24 stride =]"
+  challenge="29"
+  xp="185,000"
+  saveDc="27">
 
 ---
 
 ## Traits
 
+<Trait>
+
 #### Legendary Deeds
 
 Xanthous has **3 legendary deeds per round**, and regains all expended deeds at the start of his turn.
 
-#### Legendary Deed: Resist (3/Repose)
+</Trait>
+
+<Trait charges="3/Repose">
+
+#### Legendary Deed: Resist
 
 When Xanthous fails a saving throw, he can expend a legendary deed to succeed instead. This feature can be used **3 times per [# kw:Repose #]**.
+
+</Trait>
+
+<Trait>
 
 #### Poison of the Mind
 
 Xanthous's very presence causes the mind to unravel and disassemble itself. If a creature interacts with Xanthous in any way, such as speaking, touching, or being struck by him in any way, they save Wisdom against DC 23 or are affected by [# kw:Poison of the Mind #]. Characters immune to sickness and curses ignore this feature, and take [% 6d6 psychic %] instead.
 
+</Trait>
+
+<Trait>
+
 #### Twin Reactions
 
 Xanthous can take up to **2 reactions per round**, but no more than one per turn.
+
+</Trait>
+
+<Trait>
 
 #### Angels
 
@@ -57,23 +79,28 @@ Each angel shares Xanthous's hit point pool, and when an angel takes damage, Xan
 When Xanthous is reduced to 0 hit points, all angels immediately perish.
 All angels are tethered to Xanthous by a [= 12 stride =] long, sulphurous umbilical cord.
 
+</Trait>
+
+<Trait>
+
 #### Dual Spellcasting
 
 Xanthous is a 20th-level spellcaster. He has the following spells slots 1st (4), 2nd (3), 3rd (3), 4th (3), 5th (3), 6th (2), 7th (2), 8th (1), 9th (1).
+
 Xanthous always casts spells as though he were under the effect of the [_Twinned Spell_](/en/library/character-creation/vocations/scion/spell-sculpt) sculpting technique, targeting two creatures instead of one. if the spell imposes an area, Xanthous instead uses [_Heightened Spell_](/en/library/character-creation/vocations/scion/spell-sculpt) on all affected creatures instead of one.
 His spellcasting ability is Charisma (spell save DC 27, accuracy +19 with spell attacks). He has the following spells prepared:
 
 - **Cantrips**: [_Envenom_](/en/library/spells/envenom), [_Minor Illusion_](/en/library/spells/minor-illusion), [_Ashen Anointment_](/en/library/spells/ashen-anointment)
 
-- **1st level (4 slots)**: [_Argent Strands_](/en/library/spells/argent-strands), [_Shield_](/en/library/spells/shield)
-- **2nd level (3 slots)**: [_Cystbolt_](/en/library/spells/cystbolt), [_Hold_](/en/library/spells/hold), [_Misty Step_](/en/library/spells/misty-step)
-- **3rd level (3 slots)**: [_Fear_](/en/library/spells/fear), [_Stinking Cloud_](/en/library/spells/stinking-cloud), [_Sulfurous Sphere_](/en/library/spells/sulfurous-sphere)
-- **4th level (3 slots)**: [_Shadow Of The Hunt_](/en/library/spells/shadow-of-the-hunt), [_Invisibility (overcast)_](/en/library/spells/invisibility), [_Phantasmal Force_](/en/library/spells/phantasmal-force)
-- **5th level (3 slots)**: [_Cloudkill_](/en/library/spells/cloudkill), [_Dominate_](/en/library/spells/dominate), [_Enervation_](/en/library/spells/enervation), [_Forbidden Sun_](/en/library/spells/forbidden-sun)
-- **6th level (2 slots)**: [_Psychic Crush_](/en/library/spells/psychic-crush), [_Sunbeam_](/en/library/spells/sunbeam), [_Eyebite_](/en/library/spells/eyebite), [_Disintegrate_](/en/library/spells/disintegrate)
-- **7th level (2 slots)**: [_Invoke Agony_](/en/library/spells/invoke-agony)
-- **8th level (1 slot)**: [_Mind Blank_](/en/library/spells/mind-blank)
-- **9th level (1 slot)**: [_Foresight_](/en/library/spells/foresight), [_Bolide Bombardment_](/en/library/spells/bolide-bombardment)
+- **1st level**: [_Argent Strands_](/en/library/spells/argent-strands), [_Shield_](/en/library/spells/shield)
+- **2nd level**: [_Cystbolt_](/en/library/spells/cystbolt), [_Hold_](/en/library/spells/hold), [_Misty Step_](/en/library/spells/misty-step)
+- **3rd level**: [_Fear_](/en/library/spells/fear), [_Stinking Cloud_](/en/library/spells/stinking-cloud), [_Sulfurous Sphere_](/en/library/spells/sulfurous-sphere)
+- **4th level**: [_Shadow Of The Hunt_](/en/library/spells/shadow-of-the-hunt), [_Invisibility (overcast)_](/en/library/spells/invisibility), [_Phantasmal Force_](/en/library/spells/phantasmal-force)
+- **5th level**: [_Cloudkill_](/en/library/spells/cloudkill), [_Dominate_](/en/library/spells/dominate), [_Enervation_](/en/library/spells/enervation), [_Forbidden Sun_](/en/library/spells/forbidden-sun)
+- **6th level**: [_Psychic Crush_](/en/library/spells/psychic-crush), [_Sunbeam_](/en/library/spells/sunbeam), [_Eyebite_](/en/library/spells/eyebite), [_Disintegrate_](/en/library/spells/disintegrate)
+- **7th level**: [_Invoke Agony_](/en/library/spells/invoke-agony)
+- **8th level**: [_Mind Blank_](/en/library/spells/mind-blank)
+- **9th level**: [_Foresight_](/en/library/spells/foresight), [_Bolide Bombardment_](/en/library/spells/bolide-bombardment)
 
 - **Angelical Link**: Xanthous can summon angels with which he shares a health pool. Anytime an angel takes damage, Xanthous takes half as much "indirect" damage.
 
@@ -93,29 +120,63 @@ His spellcasting ability is Charisma (spell save DC 27, accuracy +19 with spell 
 
 - **Aura of Devotion**: As an [# kw:delayed #] effect, a creature within [= 3 stride =] of Xanthous saves Wisdom against DC 25 or is affected by the [_Charm_](/en/library/spells/charm) spell [# kw:briefly #]. A creature can only be affected by this once every minute.
 
+</Trait>
+
 ---
 
 ## Major Actions
+
+<Action cost="1 Major Action">
 
 #### Multiattack
 
 Xanthous strikes five times, once with a claw, twice with his tendrils, and twice with his Eye Beams.
 
-- **Tombsteel Claws.** Accuracy +19, reach [= 1 stride =], one creature. On a hit, 25 ([% 2d12 +10 piercing %]) plus 8 ([% 4d4 frost %]). The target saves Constitution against DC 25 or gains 1 level of exhaustion as tombsteel fragments bite into their marrow.
+<Attack accuracy="+19" reach="[= 1 stride =]">
 
-- **Tendrils.** Accuracy +19, reach [= 2 stride =], one creature. On a hit, 31 ([% 4d10 +10 piercing %]). The target is [# kw:condition:grappled #] (escape DC 25). While [# kw:condition:grappled #], the target is also [# kw:condition:restrained #] and silenced (cannot provide verbal or somatic components).
+##### Tombsteel Claws
 
-- **Eye Beams.** Accuracy +18, range [= 12 stride =]/[= 24 stride =], one creature. On a hit, 28 ([% 3d12 +10 holy %]). The target saves Wisdom against DC 25 or suffers psychic backlash, becoming [# kw:condition:terrified #] [# kw:briefly #]. If the creature was already [# kw:condition:terrified #], it instead takes an additional 31 ([% 5d12 psychic %]).
+On a hit, 25 ([% 2d12 +10 piercing %]) plus 8 ([% 4d4 frost %]). The target saves Constitution against DC 25 or gains 1 level of exhaustion as tombsteel fragments bite into their marrow.
+
+</Attack>
+
+<Attack accuracy="+19" reach="[= 2 stride =]">
+
+##### Tendrils
+
+On a hit, 31 ([% 4d10 +10 piercing %]). The target is [# kw:condition:grappled #] (escape DC 25). While [# kw:condition:grappled #], the target is also [# kw:condition:restrained #] and silenced (cannot provide verbal or somatic components).
+
+</Attack>
+
+<Attack accuracy="+18" range="[= 12 stride =]/[= 24 stride =]">
+
+##### Eye Beams
+
+On a hit, 28 ([% 3d12 +10 holy %]). The target saves Wisdom against DC 25 or suffers psychic backlash, becoming [# kw:condition:terrified #] [# kw:briefly #]. If the creature was already [# kw:condition:terrified #], it instead takes an additional 31 ([% 5d12 psychic %]).
+
+</Attack>
+
+</Action>
+
+<Action>
 
 #### Spellcasting
 
 Xanthous casts a spell.
 
+</Action>
+
 ---
 
 ## Minor Actions
 
-**Mind Wraps**: As a Minor Action, Xanthous can grab (Athletics contest) a creature and grapple them. Xanthous can grab up to 4 creatures this way. Xanthous must succeed on Concentration checks to keep the grapples.
+<Action cost="1 Minor Action">
+
+#### Mind Wraps
+
+As a Minor Action, Xanthous can grab (Athletics contest) a creature and grapple them. Xanthous can grab up to 4 creatures this way. Xanthous must succeed on Concentration checks to keep the grapples.
+
+</Action>
 
 ---
 
@@ -123,10 +184,14 @@ Xanthous casts a spell.
 
 At the start of the creature with the highest initiative's turn, Xanthous can expend a legendary deed to use one of the following lair deeds. He cannot use the same lair deed two rounds in a row.
 
+<Action deed="lair">
+
 #### First Cross / Second Cross
 
 Xanthous projects a 45-degree cross that's [= 3 stride =] wide and [= 40 stride =] long. The cross is made of egg-shaped **chemical** or **frost** bombs. These count as difficult terrain, and explode as a [# kw:persistent #] effect, forcing the intersecting creature to save Dexterity against DC 25 or take 21 ([% 6d6 %] damage) of the corresponding type and fall [# kw:condition:prone #].
 Each cross counts as a separate deed.
+
+</Action>
 
 ---
 
@@ -134,19 +199,41 @@ Each cross counts as a separate deed.
 
 Xanthous can expend legendary deeds to use the options below. Only one legendary deed can be used at a time and only at the end of another creature's turn.
 
-- **Quick Reflexes.** (Costs 1 Deed)  
-  Xanthous regains two reactions.
+<Action cost="1 Deed" deed="act">
 
-- **Awaken Angel.** (Costs 1 Deed)  
-  One of Xanthous's four angel-appendages drops from their shell, tethered to it by a [= 12 stride =] long cord. Angels count as invocations and take turns after Xanthous.
+#### Quick Reflexes
 
-- **Enact Angelical Will (Costs 1 Deed).**  
-  As a legendary deed, an awakened angel takes a turn. During this turn, the angel has a +10 accuracy and damage bonus, and a +10 bonus to every saving throw and skill check.
+Xanthous regains two reactions.
 
-- **Loving Embrace of the Miracle.** (Costs 1 Deed)  
-  If a creature is directly below Xanthous, it saves Wisdom against DC 20, regardless if Xanthous is currently weakened or not. If the creature fails, Xanthous assumes total control of it [# kw:briefly #].
+</Action>
 
-**Pure Radiance** (Recharge 5-6) (Costs 2 Deeds):
+<Action cost="1 Deed" deed="act">
+
+#### Awaken Angel
+
+One of Xanthous's four angel-appendages drops from their shell, tethered to it by a [= 12 stride =] long cord. Angels count as invocations and take turns after Xanthous.
+
+</Action>
+
+<Action cost="1 Deed" deed="act">
+
+#### Enact Angelical Will
+
+As a legendary deed, an awakened angel takes a turn. During this turn, the angel has a +10 accuracy and damage bonus, and a +10 bonus to every saving throw and skill check.
+
+</Action>
+
+<Action cost="1 Deed" deed="act">
+
+#### Loving Embrace of the Miracle
+
+If a creature is directly below Xanthous, it saves Wisdom against DC 20, regardless if Xanthous is currently weakened or not. If the creature fails, Xanthous assumes total control of it [# kw:briefly #].
+
+</Action>
+
+<Action cost="2 Deeds" recharge="5-6" deed="act">
+
+#### Pure Radiance
 
 _Xanthous emits a pulse of psychic energy in a [= 12 stride;ADJ =] cone._
 
@@ -158,6 +245,10 @@ The [# kw:condition:charmed #] target can [# kw:resist #] at the end of each of 
 
 On a successful save, a creature takes half as much damage and is not [# kw:condition:charmed #].
 
+</Action>
+
+</Monster>
+
 ---
 
 ## Angel of the Blazing Blade
@@ -167,43 +258,67 @@ On a successful save, a creature takes half as much damage and is not [# kw:cond
   alt='XanthousAngel3'
 />
 
-_Medium Aberration, Lawful Evil_
-
-| **Armor Class**    | **Hit Points**                             | **Speed**          |
-| ------------------ | ------------------------------------------ | ------------------ |
-| 18 (natural armor) | 850 (shared with Xanthous), dies at 120 HP | [= 6 stride =], fly [= 9 stride =] |
-
-| **STR** | **DEX** | **CON** | **INT** | **WIS** | **CHA** |
-| ------- | ------- | ------- | ------- | ------- | ------- |
-| 18 (+4) | 20 (+5) | 18 (+4) | 15 (+2) | 22 (+6) | 20 (+5) |
-
-- **Saving Throws**: Str +9, Dex +10, Wis +11, Cha +10
-- **Skills**: Athletics +9, Insight +11, Perception +11, Persuasion +10
-- **Damage Resistances**: Holy
-- **Condition Immunities**: [# kw:condition:Terrified #]
-- **Senses**: Darkvision [= 12 stride =], passive Perception 20
-- **Languages**: All, Telepathy [= 24 stride =]
-- **Challenge**: 9 (5,000 XP)
+<Monster
+  size="Medium"
+  type="Aberration"
+  alignment="Lawful Evil"
+  armorClass="18 (natural armor)"
+  hitPoints="850 (shared with Xanthous), dies at 120 HP"
+  speed="[= 6 stride =], fly [= 9 stride =]"
+  str="18"
+  dex="20"
+  con="18"
+  int="15"
+  wis="22"
+  cha="20"
+  saves="Str +9, Dex +10, Wis +11, Cha +10"
+  skills="Athletics +9, Insight +11, Perception +11, Persuasion +10"
+  resistances="Holy"
+  conditionImmunities="[# kw:condition:Terrified #]"
+  senses="Darkvision [= 12 stride =], passive Perception 20"
+  languages="All, Telepathy [= 24 stride =]"
+  challenge="9"
+  xp="5,000">
 
 ---
 
 ### Traits
 
+<Trait>
+
 #### Divine Aura
 
 All creatures within [= 2 stride =] of the angel take 10 holy damage at the start of their turn.
+
+</Trait>
+
+<Trait>
 
 #### Warding Shield
 
 The angel can use its reaction to impose disadvantage on an attack roll made against a creature within [= 1 stride =] of it.
 
+</Trait>
+
 ### Major Actions
+
+<Action cost="1 Major Action">
 
 #### Multiattack
 
 The angel makes two attacks with its Blazing Blade.
 
-- **Blazing Blade.** Accuracy +11, reach [= 1 stride =], one creature. On a hit, 21 ([% 3d10 +4 holy %]).
+<Attack accuracy="+11" reach="[= 1 stride =]">
+
+##### Blazing Blade
+
+On a hit, 21 ([% 3d10 +4 holy %]).
+
+</Attack>
+
+</Action>
+
+</Monster>
 
 ## Angel of the Seven Wings
 
@@ -212,47 +327,75 @@ The angel makes two attacks with its Blazing Blade.
   alt='XanthousAngel1'
 />
 
-_Medium Aberration, Lawful Evil_
-
-| **Armor Class**    | **Hit Points**                            | **Speed**           |
-| ------------------ | ----------------------------------------- | ------------------- |
-| 17 (natural armor) | 850 (shared with Xanthous), dies at 120HP | [= 6 stride =], fly [= 24 stride =] |
-
-| **STR** | **DEX** | **CON** | **INT** | **WIS** | **CHA** |
-| ------- | ------- | ------- | ------- | ------- | ------- |
-| 16 (+3) | 22 (+6) | 20 (+5) | 14 (+2) | 24 (+7) | 18 (+4) |
-
-- **Saving Throws**: Dex +13, Con +12, Wis +15, Cha +11
-- **Skills**: Acrobatics +13, Insight +15, Perception +15
-- **Damage Resistances**: Psychic
-- **Condition Immunities**: [# kw:condition:Terrified #]
-- **Senses**: Darkvision [= 12 stride =], passive Perception 24
-- **Languages**: All, Telepathy [= 24 stride =]
-- **Challenge**: 9 (5,000 XP)
+<Monster
+  size="Medium"
+  type="Aberration"
+  alignment="Lawful Evil"
+  armorClass="17 (natural armor)"
+  hitPoints="850 (shared with Xanthous), dies at 120HP"
+  speed="[= 6 stride =], fly [= 24 stride =]"
+  str="16"
+  dex="22"
+  con="20"
+  int="14"
+  wis="24"
+  cha="18"
+  saves="Dex +13, Con +12, Wis +15, Cha +11"
+  skills="Acrobatics +13, Insight +15, Perception +15"
+  resistances="Psychic"
+  conditionImmunities="[# kw:condition:Terrified #]"
+  senses="Darkvision [= 12 stride =], passive Perception 24"
+  languages="All, Telepathy [= 24 stride =]"
+  challenge="9"
+  xp="5,000">
 
 ---
 
 ### Traits
 
+<Trait>
+
 #### Sevenfold Wings
 
 The angel can fly up to [= 24 stride =], granting it advantage on Dexterity saving throws while in flight.
+
+</Trait>
+
+<Trait>
 
 #### Blessing of Freedom
 
 The angel's tether is [= 48 stride =] long, instead of 60.
 
+</Trait>
+
+<Trait>
+
 #### Ethereal Shroud
 
 As a Minor Action, it can become incorporeal until the start of its next turn, gaining resistance to all damage and becoming invisible.
+
+</Trait>
 
 ---
 
 ### Major Actions
 
-- **Wing Slash.** Accuracy +13, reach [= 2 stride =], one creature. On a hit, 27 ([% 3d12 +6 slashing %]).
+<Action>
+
+#### Wing Slash
+
+<Attack accuracy="+13" reach="[= 2 stride =]">
+
+On a hit, 27 ([% 3d12 +6 slashing %]).
+
+</Attack>
+
+</Action>
 
 ---
+
+</Monster>
 
 ## Angel of Tombsteel Frame
 
@@ -261,47 +404,71 @@ As a Minor Action, it can become incorporeal until the start of its next turn, g
   alt='XanthousAngel2'
 />
 
-_Medium Aberration, Lawful Evil_
-
-| **Armor Class**    | **Hit Points**                             | **Speed** |
-| ------------------ | ------------------------------------------ | --------- |
-| 20 (natural armor) | 850 (shared with Xanthous), dies at 120 HP | [= 6 stride =]    |
-
-| **STR** | **DEX** | **CON** | **INT** | **WIS** | **CHA** |
-| ------- | ------- | ------- | ------- | ------- | ------- |
-| 22 (+6) | 14 (+2) | 20 (+5) | 12 (+1) | 18 (+4) | 16 (+3) |
-
-- **Saving Throws**: Str +13, Con +12, Wis +11, Cha +10
-- **Skills**: Intimidation +10, Perception +11, Religion +8
-- **Damage Resistances**: Frost; Dark
-- **Condition Immunities**: [# kw:condition:Terrified #]
-- **Senses**: Darkvision [= 12 stride =], passive Perception 20
-- **Languages**: All, Telepathy [= 24 stride =]
-- **Challenge**: 9 (5,000 XP)
+<Monster
+  size="Medium"
+  type="Aberration"
+  alignment="Lawful Evil"
+  armorClass="20 (natural armor)"
+  hitPoints="850 (shared with Xanthous), dies at 120 HP"
+  speed="[= 6 stride =]"
+  str="22"
+  dex="14"
+  con="20"
+  int="12"
+  wis="18"
+  cha="16"
+  saves="Str +13, Con +12, Wis +11, Cha +10"
+  skills="Intimidation +10, Perception +11, Religion +8"
+  resistances="Frost; Dark"
+  conditionImmunities="[# kw:condition:Terrified #]"
+  senses="Darkvision [= 12 stride =], passive Perception 20"
+  languages="All, Telepathy [= 24 stride =]"
+  challenge="9"
+  xp="5,000">
 
 ---
 
 ### Traits
 
+<Trait>
+
 #### Deathly Aura
 
 Creatures within [= 2 stride =] take 10 dark damage at the start of their turn.
+
+</Trait>
 
 ---
 
 ### Major Actions
 
-- **Tombsteel Claws.** Accuracy +13, reach [= 1 stride =], one creature. On a hit, 28 ([% 4d10 +6 frost %]).
+<Action>
+
+#### Tombsteel Claws
+
+<Attack accuracy="+13" reach="[= 1 stride =]">
+
+On a hit, 28 ([% 4d10 +6 frost %]).
+
+</Attack>
+
+</Action>
 
 ---
 
 ### Reactions
 
+<Action cost="1 Reaction">
+
 #### Riposte
 
 When a creature misses the angel with a melee attack, it can use its reaction to make a melee weapon attack against that creature. If it hits, the attack deals an additional 4 ([% 1d8 frost %]).
 
+</Action>
+
 ---
+
+</Monster>
 
 ## Angel of Eternal Slumber
 
@@ -310,39 +477,63 @@ When a creature misses the angel with a melee attack, it can use its reaction to
   alt='XanthousAngel3'
 />
 
-_Medium Aberration, Lawful Evil_
-
-| **Armor Class**    | **Hit Points**                             | **Speed** |
-| ------------------ | ------------------------------------------ | --------- |
-| 17 (natural armor) | 850 (shared with Xanthous), dies at 120 HP | [= 6 stride =]    |
-
-| **STR** | **DEX** | **CON** | **INT** | **WIS** | **CHA** |
-| ------- | ------- | ------- | ------- | ------- | ------- |
-| 14 (+2) | 18 (+4) | 16 (+3) | 20 (+5) | 22 (+6) | 20 (+5) |
-
-- **Saving Throws**: Dex +11, Wis +13, Cha +12
-- **Skills**: Arcana +12, Insight +13, Stealth +11
-- **Condition Immunities**: [# kw:condition:Terrified #], [# kw:condition:Paralyzed #]
-- **Senses**: Darkvision [= 12 stride =], passive Perception 22
-- **Languages**: All, Telepathy [= 24 stride =]
-- **Challenge**: 9 (5,000 XP)
+<Monster
+  size="Medium"
+  type="Aberration"
+  alignment="Lawful Evil"
+  armorClass="17 (natural armor)"
+  hitPoints="850 (shared with Xanthous), dies at 120 HP"
+  speed="[= 6 stride =]"
+  str="14"
+  dex="18"
+  con="16"
+  int="20"
+  wis="22"
+  cha="20"
+  saves="Dex +11, Wis +13, Cha +12"
+  skills="Arcana +12, Insight +13, Stealth +11"
+  conditionImmunities="[# kw:condition:Terrified #], [# kw:condition:Paralyzed #]"
+  senses="Darkvision [= 12 stride =], passive Perception 22"
+  languages="All, Telepathy [= 24 stride =]"
+  challenge="9"
+  xp="5,000">
 
 ---
 
 ### Traits
 
+<Trait>
+
 #### Aura of Somnolence
 
 Creatures within [= 2 stride =] save Wisdom against DC 25 or are affected by the [_Sleep_](/en/library/spells/sleep) spell (as if cast at 5th level) with maximized damage.
+
+</Trait>
+
+<Trait>
 
 #### Song of Invigoration
 
 As a Minor Action, the angel may grant 10 temporary hit points to any creature that can hear it within [= 12 stride =].
 
+</Trait>
+
 ---
 
 ### Major Actions
 
-- **Dreaming Touch.** Accuracy +11, reach [= 1 stride =], one creature. On a hit, 21 ([% 3d10 +4 psychic %]), and the target saves Wisdom against DC 25 or is [# kw:condition:incapacitated #] [# kw:briefly #].
+<Action>
+
+#### Dreaming Touch
+
+<Attack accuracy="+11" reach="[= 1 stride =]">
+
+On a hit, 21 ([% 3d10 +4 psychic %]), and the target saves Wisdom against DC 25 or is [# kw:condition:incapacitated #] [# kw:briefly #].
+
+</Attack>
+
+</Action>
 
 ---
+
+</Monster>

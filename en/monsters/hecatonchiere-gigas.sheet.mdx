@@ -7,59 +7,85 @@ contentType: monsters
 
 _Primordial Null of the Archivist's Court, Claimant to the Hecatoncheire, Bearer of the Red One's Grafted Form_
 
-_Gargantuan Null, Neutral Evil_
-
-| **Armor Class**   | **Hit Points**         | **Speed** |
-| ----------------- | ---------------------- | --------- |
-| 19 (ruinous hide) | 660 ([% 40d20 +240 %]) | [= 8 stride =]    |
-
-| **STR** | **DEX** | **CON** | **INT** | **WIS** | **CHA** |
-| ------- | ------- | ------- | ------- | ------- | ------- |
-| 26 (+8) | 20 (+5) | 22 (+6) | 24 (+7) | 10 (+0) | 8 (−1)  |
-
-- **Saving Throws**: STR +16, CON +14, INT +15
-- **Skills**: Arcana +15, History +15, Perception +8, Stealth +13
-- **Damage Resistances**: fire, dark, force; bludgeoning, piercing, and slashing
-- **Damage Immunities**: frost
-- **Condition Immunities**: [# kw:condition:charmed #], exhaustion, [# kw:condition:frightened #], [# kw:condition:terrified #], [# kw:condition:petrified #], [# kw:condition:poisoned #]
-- **Senses**: Darkvision [= 24 stride =], passive Perception 17
-- **Languages**: Empyrean, Hidden.
-- **Challenge**: 23 (50,000 XP)
-- **Tier Bonus**: +8
+<Monster
+  size="Gargantuan"
+  type="Null"
+  alignment="Neutral Evil"
+  armorClass="19 (ruinous hide)"
+  hitPoints="660 ([% 40d20 +240 %])"
+  speed="[= 8 stride =]"
+  str="26"
+  dex="20"
+  con="22"
+  int="24"
+  wis="10"
+  cha="8"
+  saves="STR +16, CON +14, INT +15"
+  skills="Arcana +15, History +15, Perception +8, Stealth +13"
+  resistances="fire, dark, force; bludgeoning, piercing, and slashing"
+  immunities="frost"
+  conditionImmunities="[# kw:condition:charmed #], exhaustion, [# kw:condition:frightened #], [# kw:condition:terrified #], [# kw:condition:petrified #], [# kw:condition:poisoned #]"
+  senses="Darkvision [= 24 stride =], passive Perception 17"
+  languages="Empyrean, Hidden."
+  challenge="23"
+  xp="50,000"
+  saveDc="22">
 
 ---
 
 ## Traits
 
+<Trait>
+
 #### Legendary Deeds
 
 Gigas has **3 legendary deeds per round**, and regains all expended deeds at the start of its turn.
 
-#### Legendary Deed: Resist (3/Repose)
+</Trait>
+
+<Trait charges="3/Repose">
+
+#### Legendary Deed: Resist
 
 When Gigas fails a saving throw, it can expend a legendary deed to succeed instead. This feature can be used **3 times per [# kw:Repose #]**.
+
+</Trait>
+
+<Trait>
 
 #### Pre-Edict Entity
 
 A Primordial Null predating the Canvas's first Edicts, Gigas cannot be targeted by Divination spells of 5th level or lower, and has **advantage on saving throws** against Divination spells of 6th level or higher. Effects that would forcibly transport Gigas to another plane automatically fail.
 
+</Trait>
+
+<Trait>
+
 #### Graft-Born Arsenal
 
 Gigas bears six additional limbs taken from the corpse of the Red One and fused over thirteen thousand years of deliberate grafting. Gigas cannot be disarmed of the Gigantic Tombsteel Ballista. Gigas ignores the **Loading** property of the Gigantic Tombsteel Ballista for the purpose of its Multiattack action.
+
+</Trait>
+
+<Trait>
 
 #### Hollow Title
 
 Whenever Gigas reduces a creature to 0 hit points, it regains **30 hit points** and recovers **1 expended use of Null and Void** (to a maximum of 3).
 
+</Trait>
+
+<Trait>
+
 #### Preferred Distance
 
 While no hostile creature is within [= 12 stride =] of Gigas, all ranged weapon attacks made by Gigas have **advantage**.
 
+</Trait>
+
 ---
 
 ## Spellcasting
-
-Gigas is a **17th-level spellcaster**. Its spellcasting ability is **Intelligence** (spell save DC **22**, +**14** to hit with spell attacks). It does not require material components. It has the following spells prepared:
 
 | Spell                                                                                                                                                                                                         | Level   |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
@@ -78,37 +104,61 @@ Gigas is a **17th-level spellcaster**. Its spellcasting ability is **Intelligenc
 
 ## Actions
 
+<Action>
+
 #### Multiattack
 
 Gigas makes **three attacks**: two with the **Gigantic Tombsteel Ballista** and one with a **Grafted Limb**. If no hostile creature is within [= 3 stride =], Gigas may replace the Grafted Limb attack with a third Ballista attack.
 
+</Action>
+
 ---
+
+<Action>
 
 #### Gigantic Tombsteel Ballista _(Loading — see Graft-Born Arsenal)_
 
-Accuracy +16, range [= 60 stride =]/[= 240 stride =], one creature.
+<Attack accuracy="+16" range="[= 60 stride =]/[= 240 stride =]">
+
 On a hit, 71 ([% 5d12 +8 piercing %] + [% 4d12 frost %]).
 This weapon deals **double damage** to objects, constructs, and structures.
 
 Whether this attack hits or misses, the bolt continues in a **[= 2 stride;ADJ =]-wide line** from the target's space to the weapon's maximum range. Each creature in this line other than the primary target saves Dexterity against DC 23 or takes **[% 3d12 piercing %] + [% 2d12 frost %]**. On a successful save, a creature takes half as much damage.
 
+</Attack>
+
+</Action>
+
 ---
+
+<Action>
 
 #### Grafted Limb
 
-Accuracy +16, reach [= 3 stride =], one creature.
+<Attack accuracy="+16" reach="[= 3 stride =]">
+
 On a hit, 36 ([% 3d10 +8 force %] plus [% 2d8 fire %]).
 The target saves Constitution against DC 21 or takes an additional **[% 2d8 dark %]** as residual radiance bleeds from the dead graft. Creatures immune to disease and curses are not subject to this secondary effect.
 
+</Attack>
+
+</Action>
+
 ---
+
+<Action>
 
 #### Expulsion Strike _(Minor Action)_
 
 Gigas drives a grafted limb into a creature within [= 3 stride =] and hurls it away. The target saves Strength against DC 23 or takes **[% 4d8 +8 bludgeoning %]**, be pushed **[= 6 stride =]** directly away from Gigas, and falls **[# kw:condition:prone #]**. On a successful save, the target takes half damage and is neither pushed nor knocked [# kw:condition:prone #].
 
+</Action>
+
 ---
 
 ## Reactions
+
+<Action cost="1 Reaction">
 
 #### Null and Void _(3/Recovery)_
 
@@ -127,6 +177,8 @@ Spell slots, ability charges, and other resources expended on the nullified turn
 A creature that fails this save has no clear memory of the nullified turn; it is aware only that a moment has passed without leaving a mark.
 A creature that succeeds on this saving throw is immune to **Null and Void** for 24 hours.
 
+</Action>
+
 ---
 
 ## Legendary Deed: Act
@@ -143,22 +195,36 @@ Gigas can expend legendary deeds to use the options below. Only one legendary de
 
 At the start of the creature with the highest initiative's turn, Gigas can expend a legendary deed to use one of the following lair deeds. It cannot use the same lair deed two rounds in a row.
 
+<Action deed="lair">
+
 #### Fateful Seal
 
 Gigas seals a region of causal space around a point it can see within [= 24 stride =]. Until the start of the next round, creatures within a **[= 6 stride;ADJ =]-radius sphere** centered on that point cannot teleport or be teleported. Abilities already active that would move a creature in this way end immediately.
+
+</Action>
+
+<Action deed="lair">
 
 #### Null Rift
 
 Gigas declares a [= 60 stride =] long, [= 1 stride =] thick, [= 10 stride =] tall line extending from itself in a direction it can see. The line is drained of all will and purpose, and anything that enters it is instantly [# kw:condition:stunned #] until the end of it's next turn, as it's existence is momentarily cessated.
 When gigas declares this line, all creatures in it's path save Dexterity against DC 23. If they succeed, they are pushed [= 2 stride =] away from the line in a direction of their choosing, otherwise they are [# kw:condition:stunned #] as normal.
 
+</Action>
+
+<Action deed="lair">
+
 #### Tomb hail
 
 Gigas fires a hail of tombsteel harpoons into the air. At the start of each creature's turn, one harpoon falls to the ground at a point Gigas can see within [= 24 stride =]. Each creature within [= 2 stride =] of that point saves Dexterity against DC 23 or takes **[% 2d8 piercing %]** and **[% 2d8 frost %]** and is **[# kw:condition:restrained #]** [# kw:briefly #]. On a successful save, a creature takes no damage.
 
+</Action>
+
 ---
 
 ## Legendary Deed: Stratagem
+
+<Action deed="stratagem">
 
 #### Dead Star Calculus
 
@@ -170,9 +236,13 @@ _Declared at the end of Gigas's turn; resolves at the start of its next turn._
 
 Each creature within [= 2 stride =] of the target at the moment of impact must also make the saving throw. On a failure, a creature takes **[% 5d12 piercing %] + [% 4d12 frost %]** and is pushed **[= 4 stride =]** away from the point of impact. On a success, half damage, no push.
 
+</Action>
+
 ---
 
 ## Legendary Deed: Phase
+
+<Action deed="phase">
 
 #### Bloodied (50% HP) — Borrowed Radiance
 
@@ -182,7 +252,11 @@ When Gigas is first reduced to 50% of its maximum hit points, the grafted limbs 
 - All **Grafted Limb** attacks deal an additional **[% 2d8 force %]**.
 - At this moment, all creatures within [= 24 stride =] save Constitution against DC 23 or take **[% 6d8 force %]** and are **[# kw:condition:blinded #] [# kw:briefly #]**. On a successful save, a creature takes half damage and is not [# kw:condition:blinded #].
 
+</Action>
+
 ---
+
+<Action deed="phase">
 
 #### Doomed (25% HP) — Hecatoncheire By Will
 
@@ -192,7 +266,11 @@ Gigas announces, to no one in particular, that it holds the Hecatoncheire title.
 - For the remainder of the fight, Gigas can replace one attack each round with a spell of level 6 or lower.
 - Whenever Gigas deals fire damage to a creature, that creature saves Intelligence against DC 23 or has a memory of its choice be permanently, irrevocably erased.
 
+</Action>
+
 ---
+
+<Action deed="phase">
 
 #### Slain — Null Collapse
 
@@ -200,3 +278,7 @@ When Gigas is reduced to 0 hit points, the void at its core implodes.
 Each creature within [= 12 stride =] saves Charisma against DC 23 or takes **[% 8d12 psychic %]** as the collapsing null pulls at the edges of consciousness. On a successful save, a creature takes half as much damage.
 
 The grafted limbs of the Red One detach and crumble to ash.
+
+</Action>
+
+</Monster>

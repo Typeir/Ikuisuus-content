@@ -7,182 +7,303 @@ contentType: monsters
 
 ---
 
+<Monster
+  size="Medium"
+  type="Construct"
+  alignment="Chaotic Evil"
+  armorClass="17 (rusted armor plating)"
+  hitPoints="120 ([% 16d8 +48 %])"
+  speed="[= 6 stride =], climb [= 6 stride =]"
+  str="18"
+  dex="16"
+  con="16"
+  int="10"
+  wis="14"
+  cha="6"
+  resistances="Frost, Dark"
+  immunities="Poison, Psychic"
+  conditionImmunities="[# kw:condition:Terrified #], [# kw:condition:Frightened #], [# kw:condition:Paralyzed #], [# kw:condition:Poisoned #]"
+  senses="Darkvision [= 12 stride =], tremorsense [= 3 stride =], passive Perception 12"
+  languages="Understands Hidden and Empyrean but does not speak"
+  challenge="9"
+  xp="5,000"
+  tierBonus="+3">
+
 ## Spawn of Hollow Joints
-
-_Medium Construct (Undead), Chaotic Evil_
-
-| **Armor Class**           | **Hit Points**  | **Speed**            |
-| ------------------------- | --------------- | -------------------- |
-| 17 (rusted armor plating) | 120 ([% 16d8 +48 %]) | [= 6 stride =], climb [= 6 stride =] |
-
-| STR     | DEX     | CON     | INT     | WIS     | CHA    |
-| ------- | ------- | ------- | ------- | ------- | ------ |
-| 18 (+4) | 16 (+3) | 16 (+3) | 10 (+0) | 14 (+2) | 6 (–2) |
-
-- **Damage Resistances**: Frost, Dark
-- **Damage Immunities**: Poison, Psychic
-- **Condition Immunities**: [# kw:condition:Terrified #], [# kw:condition:Frightened #], [# kw:condition:Paralyzed #], [# kw:condition:Poisoned #]
-- **Senses**: Darkvision [= 12 stride =], tremorsense [= 3 stride =], passive Perception 12
-- **Languages**: Understands Hidden and Empyrean but does not speak
-- **Challenge**: 9 (5,000 XP)
-- **Tier Bonus**: +3
 
 ---
 
 ### Traits
+
+<Trait>
 
 #### Aura of Entropic Fear
 
 As an [# kw:delayed #] effect, creatures within [= 2 stride =] of the Spawn save Wisdom against DC 18 or are **[# kw:condition:frightened #]** [# kw:briefly #].
 
+</Trait>
+
+<Trait>
+
 #### Mechanical Ruin
 
 When this creature is reduced to 0 HP, it explodes in a spray of freezing oil and metal shards. Each creature within [= 2 stride =] saves Dexterity against DC 16 or takes 14 ([% 4d6 frost %]) and 7 ([% 2d6 piercing %]).
 
+</Trait>
+
 ---
 
 ### Actions
+
+<Action>
 
 #### Multiattack
 
 The Spawn makes two attacks: one with its Crushing Fist and one with its Spinal Latch.
 
-- **Crushing Fist.** Accuracy +8, reach [= 1 stride =], one creature. On a hit, 15 ([% 2d10 +4 bludgeoning %]).
-- **Spinal Latch.** Accuracy +6, range [= 6 stride =], one creature. On a hit, Target is **[# kw:condition:grappled #] and [# kw:condition:restrained #]** (escape DC 14) by a wormy chain of bone and tendons.
+<Attack accuracy="+8" reach="[= 1 stride =]">
+
+##### Crushing Fist
+
+On a hit, 15 ([% 2d10 +4 bludgeoning %]).
+
+</Attack>
+
+<Attack accuracy="+6" range="[= 6 stride =]">
+
+##### Spinal Latch
+
+On a hit, Target is **[# kw:condition:grappled #] and [# kw:condition:restrained #]** (escape DC 14) by a wormy chain of bone and tendons.
+
+</Attack>
+
+</Action>
 
 ---
 
+</Monster>
+
+## Spawn of Hollow Joints
+
+---
+
+<Monster
+  size="Medium"
+  type="Construct"
+  alignment="Chaotic Evil"
+  armorClass="18"
+  hitPoints="105 ([% 14d10 +28 %])"
+  speed="[= 5 stride =]"
+  str="20"
+  dex="14"
+  con="15"
+  int="6"
+  wis="12"
+  cha="5"
+  resistances="Dark, Frost, Fire"
+  conditionImmunities="[# kw:condition:Terrified #], [# kw:condition:Frightened #], Exhaustion"
+  senses="Blindsight [= 6 stride =], passive Perception 11"
+  languages="Understands Hidden and Empyrean but does not speak"
+  challenge="9"
+  xp="5,000"
+  tierBonus="+4">
+
 ## Spawn of Iron Hunger
-
-_Medium Construct (Undead), Chaotic Evil_
-
-| **Armor Class** | **Hit Points**   | **Speed** |
-| --------------- | ---------------- | --------- |
-| 18              | 105 ([% 14d10 +28 %]) | [= 5 stride =]    |
-
-| STR     | DEX     | CON     | INT    | WIS     | CHA    |
-| ------- | ------- | ------- | ------ | ------- | ------ |
-| 20 (+5) | 14 (+2) | 15 (+2) | 6 (–2) | 12 (+1) | 5 (–3) |
-
-- **Damage Resistances**: Dark, Frost, Fire
-- **Condition Immunities**: [# kw:condition:Terrified #], [# kw:condition:Frightened #], Exhaustion
-- **Senses**: Blindsight [= 6 stride =], passive Perception 11
-- **Languages**: Understands Hidden and Empyrean but does not speak
-- **Challenge**: 9 (5,000 XP)
-- **Tier Bonus**: +4
 
 ---
 
 ### Traits
+
+<Trait>
 
 #### Gorge Pulse
 
 When the Spawn kills a creature, it erupts in a necrotic belch. All creatures within [= 2 stride =] save Constitution against DC 17 or take 22 ([% 4d10 dark %]).
 
+</Trait>
+
+<Trait>
+
 #### Corpse Magnetism
 
 This creature has advantage on attacks against **[# kw:condition:prone #] or [# kw:condition:paralyzed #]** targets.
 
+</Trait>
+
 ---
 
 ### Actions
+
+<Action>
 
 #### Multiattack
 
 The Spawn makes two Iron Maul attacks.
 
-- **Iron Maul.** Accuracy +9, reach [= 1 stride =], one creature. On a hit, 19 ([% 3d8 +5 bludgeoning %]) plus 7 ([% 2d6 dark %]).
-- **Centipede Torrent (Recharge 5–6).** The Spawn vomits a stream of undead centipedes in a **[= 6 stride;ADJ =] cone**. Each creature in the area saves Dexterity against DC 16 or takes 21 ([% 6d6 dark %]) and is **[# kw:condition:paralyzed #] [# kw:briefly #]**. On a success, creatures take half damage and are not [# kw:condition:paralyzed #].
+<Attack accuracy="+9" reach="[= 1 stride =]">
+
+##### Iron Maul
+
+On a hit, 19 ([% 3d8 +5 bludgeoning %]) plus 7 ([% 2d6 dark %]).
+
+</Attack>
+
+##### Centipede Torrent (Recharge 5–6)
+
+The Spawn vomits a stream of undead centipedes in a **[= 6 stride;ADJ =] cone**. Each creature in the area saves Dexterity against DC 16 or takes 21 ([% 6d6 dark %]) and is **[# kw:condition:paralyzed #] [# kw:briefly #]**. On a success, creatures take half damage and are not [# kw:condition:paralyzed #].
+
+</Action>
 
 ---
 
+</Monster>
+
+## Spawn of Iron Hunger
+
+---
+
+<Monster
+  size="Medium"
+  type="Construct"
+  alignment="Chaotic Evil"
+  armorClass="16"
+  hitPoints="100 ([% 13d8 +39 %])"
+  speed="[= 6 stride =], fly [= 8 stride =] (hover)"
+  str="14"
+  dex="18"
+  con="16"
+  int="13"
+  wis="20"
+  cha="10"
+  resistances="Frost, Dark, Bludgeoning"
+  conditionImmunities="[# kw:condition:Terrified #], [# kw:condition:Paralyzed #]"
+  senses="Darkvision [= 24 stride =], passive Perception 15"
+  languages="Understands Hidden and Empyrean but does not speak"
+  challenge="9"
+  xp="5,000"
+  tierBonus="+4">
+
 ## Spawn of Dead Air
-
-_Medium Construct (Undead), Chaotic Evil_
-
-| **Armor Class** | **Hit Points**  | **Speed**                  |
-| --------------- | --------------- | -------------------------- |
-| 16              | 100 ([% 13d8 +39 %]) | [= 6 stride =], fly [= 8 stride =] (hover) |
-
-| STR     | DEX     | CON     | INT     | WIS     | CHA     |
-| ------- | ------- | ------- | ------- | ------- | ------- |
-| 14 (+2) | 18 (+4) | 16 (+3) | 13 (+1) | 20 (+5) | 10 (+0) |
-
-- **Damage Resistances**: Frost, Dark, Bludgeoning
-- **Condition Immunities**: [# kw:condition:Terrified #], [# kw:condition:Paralyzed #]
-- **Senses**: Darkvision [= 24 stride =], passive Perception 15
-- **Languages**: Understands Hidden and Empyrean but does not speak
-- **Challenge**: 9 (5,000 XP)
-- **Tier Bonus**: +4
 
 ---
 
 ### Traits
+
+<Trait>
 
 #### Aura of Paralysis
 
 At the start of its turn, creatures within [= 2 stride =] save Constitution against DC 17 or are **[# kw:condition:paralyzed #] [# kw:briefly #]**.
 
+</Trait>
+
+<Trait>
+
 #### Stillborn Flight
 
 This creature floats unnaturally, its wings stitched together from wires and bone. It is always considered under the effect of [_Feather Fall_](/en/library/spells/feather-fall).
 
+</Trait>
+
 ---
 
 ### Actions
+
+<Action>
 
 #### Multiattack
 
 The Spawn makes two Still Touch attacks.
 
-- **Still Touch.** Accuracy +7, reach [= 1 stride =], one creature. On a hit, 14 ([% 3d6 +4 frost %]) and the target is **unable to speak or vocalize** [# kw:briefly #].
-- **Necrostatic Pulse (Recharge 5–6).** Emits a [= 12 stride;ADJ =] cone of null energy. Creatures in the area save Wisdom against DC 17 or fall **[# kw:condition:prone #] and [# kw:condition:frightened #]**. Undead instead **heal 17 ([% 3d10 %] HP)**.
+<Attack accuracy="+7" reach="[= 1 stride =]">
+
+##### Still Touch
+
+On a hit, 14 ([% 3d6 +4 frost %]) and the target is **unable to speak or vocalize** [# kw:briefly #].
+
+</Attack>
+
+##### Necrostatic Pulse (Recharge 5–6)
+
+Emits a [= 12 stride;ADJ =] cone of null energy. Creatures in the area save Wisdom against DC 17 or fall **[# kw:condition:prone #] and [# kw:condition:frightened #]**. Undead instead **heal 17 ([% 3d10 %] HP)**.
+
+</Action>
 
 ---
 
+</Monster>
+
+## Spawn of Dead Air
+
+---
+
+<Monster
+  size="Medium"
+  type="Construct"
+  alignment="Chaotic Evil"
+  armorClass="17"
+  hitPoints="95 ([% 11d8 +44 %])"
+  speed="[= 6 stride =]"
+  str="12"
+  dex="16"
+  con="18"
+  int="16"
+  wis="20"
+  cha="14"
+  resistances="Frost, Dark"
+  conditionImmunities="[# kw:condition:Terrified #]"
+  senses="Darkvision [= 12 stride =], passive Perception 15"
+  languages="Understands Hidden and Empyrean but does not speak"
+  challenge="9"
+  xp="5,000"
+  tierBonus="+4">
+
 ## Spawn of the Carrion Choir
-
-_Medium Construct (Undead), Chaotic Evil_
-
-| **Armor Class** | **Hit Points** | **Speed** |
-| --------------- | -------------- | --------- |
-| 17              | 95 ([% 11d8 +44 %]) | [= 6 stride =]    |
-
-| STR     | DEX     | CON     | INT     | WIS     | CHA     |
-| ------- | ------- | ------- | ------- | ------- | ------- |
-| 12 (+1) | 16 (+3) | 18 (+4) | 16 (+3) | 20 (+5) | 14 (+2) |
-
-- **Damage Resistances**: Frost, Dark
-- **Condition Immunities**: [# kw:condition:Terrified #]
-- **Senses**: Darkvision [= 12 stride =], passive Perception 15
-- **Languages**: Understands Hidden and Empyrean but does not speak
-- **Challenge**: 9 (5,000 XP)
-- **Tier Bonus**: +4
 
 ---
 
 ### Traits
 
+<Trait>
+
 #### Aura of Despair
 
 Creatures within [= 3 stride =] have disadvantage on saving throws against **fear or paralysis** effects.
+
+</Trait>
 
 ---
 
 ### Actions
 
+<Action>
+
 #### Multiattack
 
 The Spawn makes two Rusted Lance attacks.
 
-- **Rusted Lance.** Accuracy +8, reach [= 2 stride =], one creature. On a hit, 15 ([% 2d10 +4 piercing %]). If the target is [# kw:condition:frightened #] or [# kw:condition:paralyzed #], they take an additional 7 ([% 2d6 dark %]).
+<Attack accuracy="+8" reach="[= 2 stride =]">
+
+##### Rusted Lance
+
+On a hit, 15 ([% 2d10 +4 piercing %]). If the target is [# kw:condition:frightened #] or [# kw:condition:paralyzed #], they take an additional 7 ([% 2d6 dark %]).
+
+</Attack>
+
+</Action>
 
 ---
 
 ### Minor Actions
 
+<Action cost="1 Minor Action">
+
 #### Memento Mori
 
 The Spawn unleashes a psionic scream. One creature of its choice within [= 12 stride =] saves Wisdom against DC 16 or takes 18 ([% 4d8 psychic %]) and is unable to cast spells [# kw:briefly #].
 
+</Action>
+
 ---
+
+</Monster>

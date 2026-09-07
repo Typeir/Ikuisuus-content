@@ -22,139 +22,248 @@ scarring_
 
 ## Hunter Frog
 
-_Medium Aberration, Chaotic Evil_
-
-| **Armor Class**    | **Hit Points** | **Speed**           |
-| ------------------ | -------------- | ------------------- |
-| 13 (natural armor) | 65 ([% 10d8 +20 %]) | [= 6 stride =], swim [= 6 stride =] |
-
-| **STR** | **DEX** | **CON** | **INT** | **WIS** | **CHA** |
-| ------- | ------- | ------- | ------- | ------- | ------- |
-| 16 (+3) | 14 (+2) | 15 (+2) | 2 (-4)  | 10 (+0) | 1 (-5)  |
-
-- **Saving Throws**: Str +6, Con +5
-- **Skills**: Perception +3, Stealth +5
-- **Condition Immunities**: [# kw:condition:Terrified #]
-- **Senses**: Darkvision [= 12 stride =], passive Perception 13
-- **Languages**: Understands Abyssal but cannot speak.
-- **Challenge**: 5 (1,600 XP)
-- **Tier Bonus**: +2
+<Monster
+  size="Medium"
+  type="Aberration"
+  alignment="Chaotic Evil"
+  armorClass="13 (natural armor)"
+  hitPoints="65 ([% 10d8 +20 %])"
+  speed="[= 6 stride =], swim [= 6 stride =]"
+  str="16"
+  dex="14"
+  con="15"
+  int="2"
+  wis="10"
+  cha="1"
+  saves="Str +6, Con +5"
+  skills="Perception +3, Stealth +5"
+  conditionImmunities="[# kw:condition:Terrified #]"
+  senses="Darkvision [= 12 stride =], passive Perception 13"
+  languages="Understands Abyssal but cannot speak."
+  challenge="4"
+  xp="1,100">
 
 ### Traits
+
+<Trait>
 
 #### Amphibious
 
 The warrior frog can breathe air and water.
 
+</Trait>
+
+<Trait>
+
 #### Pack Tactics
 
 The frog has advantage on an attack roll against a creature if at least one of the frog's allies is within [= 1 stride =] of the creature and the ally isn't [# kw:condition:incapacitated #].
 
+</Trait>
+
 ### Actions
+
+<Action cost="1 Major Action">
 
 #### Multiattack
 
 The warrior frog makes two attacks: one with its bite and one with its spear.
 
-- **Bite.** Accuracy +6, reach [= 1 stride =], one creature. On a hit, 10 ([% 1d10 +3 piercing %]).
-- **Spear.** Accuracy +6, reach [= 1 stride =], one creature. On a hit, 8 ([% 1d6 +3 piercing %]).
-- **Grapple.** The warrior frog can attempt to grapple a creature as part of its attack.
+<Attack accuracy="+6" reach="[= 1 stride =]">
+
+##### Bite
+
+On a hit, 10 ([% 1d10 +3 piercing %]).
+
+</Attack>
+
+<Attack accuracy="+6" reach="[= 1 stride =]">
+
+##### Spear
+
+On a hit, 8 ([% 1d6 +3 piercing %]).
+
+</Attack>
+
+##### Grapple
+
+The warrior frog can attempt to grapple a creature as part of its attack.
+
+</Action>
 
 ---
 
+</Monster>
+
 ## Ritualist Frog
 
-_Medium Aberration, Chaotic Evil_
-
-| **Armor Class**    | **Hit Points** | **Speed**           |
-| ------------------ | -------------- | ------------------- |
-| 13 (natural armor) | 45 ([% 6d8 +18 %])  | [= 6 stride =], swim [= 6 stride =] |
-
-| **STR** | **DEX** | **CON** | **INT** | **WIS** | **CHA** |
-| ------- | ------- | ------- | ------- | ------- | ------- |
-| 10 (+0) | 16 (+3) | 14 (+2) | 3 (-4)  | 14 (+2) | 12 (+1) |
-
-- **Saving Throws**: Dex +6, Wis +5
-- **Skills**: Arcana +4, Stealth +6
-- **Condition Immunities**: [# kw:condition:Terrified #]
-- **Senses**: Darkvision [= 12 stride =], passive Perception 12
-- **Languages**: Understands Abyssal but cannot speak.
-- **Challenge**: 5 (1,600 XP)
+<Monster
+  size="Medium"
+  type="Aberration"
+  alignment="Chaotic Evil"
+  armorClass="13 (natural armor)"
+  hitPoints="45 ([% 6d8 +18 %])"
+  speed="[= 6 stride =], swim [= 6 stride =]"
+  str="10"
+  dex="16"
+  con="14"
+  int="3"
+  wis="14"
+  cha="12"
+  saves="Dex +6, Wis +5"
+  skills="Arcana +4, Stealth +6"
+  conditionImmunities="[# kw:condition:Terrified #]"
+  senses="Darkvision [= 12 stride =], passive Perception 12"
+  languages="Understands Abyssal but cannot speak."
+  saveDc="14"
+  challenge="4"
+  xp="1,100">
 
 ### Traits
+
+<Trait>
 
 #### Amphibious
 
 The caster frog can breathe air and water.
 
+</Trait>
+
+<Trait>
+
 #### Spellcasting
 
-The caster frog is a 4th-level spellcaster. Its spellcasting ability is Charisma (spell save DC 14, accuracy +6 with spell attacks). It has the following spells prepared:
+The caster frog is a 4th-level spellcaster. Its spellcasting ability is Charisma (spell save DC 14, accuracy +6 with spell attacks).
 
-- **Cantrips (at will)**: [_Envenom_](/en/library/spells/envenom), [_Acid Splash_](/en/library/spells/acid-splash)- **1st level (4 slots)**: [_Hex_](/en/library/spells/hex)
-- **2nd level (3 slots)**: [_Misty Step_](/en/library/spells/misty-step), [_Hold_](/en/library/spells/hold)
+- **Cantrips**: [_Envenom_](/en/library/spells/envenom), [_Acid Splash_](/en/library/spells/acid-splash)
+- **1st level**: [_Hex_](/en/library/spells/hex)
+- **2nd level**: [_Misty Step_](/en/library/spells/misty-step), [_Hold_](/en/library/spells/hold)
+
+</Trait>
 
 ### Actions
+
+<Action cost="1 Major Action">
 
 #### Multiattack
 
 The caster frog makes two attacks: one with its bite and one with its tongue.
 
-- **Bite.** Accuracy +5, reach [= 1 stride =], one creature. On a hit, 7 ([% 1d8 +3 piercing %]).
-- **Sickening Song.** As a Major Action, the caster frog prepares to unleash a sickening song. After one round, the frog sings, and all creatures in a [= 12 stride;ADJ =] sphere save consitution against DC18, or are afflicted by the Whims of Rubedo, the lost **Hiisi**. They will be **[# kw:condition:poisoned #]** and can only be **cured** by ingesting a plant of the **nighshade** variety and **coal worth [= 1 burden =] per 4**. **Every day this sickness is not cured**, the afflicted will gain a **level of exhaustion**.
-- **Tongue.** Accuracy +5, reach [= 3 stride =], one creature. On a hit, 9 ([% 1d6 +3 bludgeoning %]), and the target saves Strength against DC 14 or is pulled [= 2 stride =] closer to the caster frog.
+<Attack accuracy="+5" reach="[= 1 stride =]">
+
+##### Bite
+
+On a hit, 7 ([% 1d8 +3 piercing %]).
+
+</Attack>
+
+##### Sickening Song
+
+As a Major Action, the caster frog prepares to unleash a sickening song. After one round, the frog sings, and all creatures in a [= 12 stride;ADJ =] sphere save consitution against DC18, or are afflicted by the Whims of Rubedo, the lost **Hiisi**. They will be **[# kw:condition:poisoned #]** and can only be **cured** by ingesting a plant of the **nighshade** variety and **coal worth [= 1 burden =] per 4**. **Every day this sickness is not cured**, the afflicted will gain a **level of exhaustion**.
+
+<Attack accuracy="+5" reach="[= 3 stride =]">
+
+##### Tongue
+
+On a hit, 9 ([% 1d6 +3 bludgeoning %]), and the target saves Strength against DC 14 or is pulled [= 2 stride =] closer to the caster frog.
+
+</Attack>
+
+</Action>
 
 ---
 
+</Monster>
+
 ## Golden Frog
 
-_Medium Aberration, Chaotic Evil_
-
-| **Armor Class**    | **Hit Points**  | **Speed**           |
-| ------------------ | --------------- | ------------------- |
-| 16 (natural armor) | 85 ([% 10d10 +30 %]) | [= 6 stride =], swim [= 6 stride =] |
-
-| **STR** | **DEX** | **CON** | **INT** | **WIS** | **CHA** |
-| ------- | ------- | ------- | ------- | ------- | ------- |
-| 14 (+2) | 18 (+4) | 17 (+3) | 4 (-3)  | 12 (+1) | 16 (+3) |
-
-- **Saving Throws**: Dex +8, Con +7, Cha +6
-- **Skills**: Perception +5, Stealth +8, Arcana +5
-- **Condition Immunities**: [# kw:condition:Terrified #]
-- **Senses**: Darkvision [= 12 stride =], passive Perception 15
-- **Languages**: Understands Abyssal but cannot speak.
-- **Challenge**: 7 (2,900 XP)
+<Monster
+  size="Medium"
+  type="Aberration"
+  alignment="Chaotic Evil"
+  armorClass="16 (natural armor)"
+  hitPoints="85 ([% 10d10 +30 %])"
+  speed="[= 6 stride =], swim [= 6 stride =]"
+  str="14"
+  dex="18"
+  con="17"
+  int="4"
+  wis="12"
+  cha="16"
+  saves="Dex +8, Con +7, Cha +6"
+  skills="Perception +5, Stealth +8, Arcana +5"
+  conditionImmunities="[# kw:condition:Terrified #]"
+  senses="Darkvision [= 12 stride =], passive Perception 15"
+  languages="Understands Abyssal but cannot speak."
+  saveDc="15"
+  challenge="7"
+  xp="2,900">
 
 ### Traits
+
+<Trait>
 
 #### Amphibious
 
 The golden frog can breathe air and water.
 
+</Trait>
+
+<Trait>
+
 #### Gold Glimmer
 
 The golden frog emits a faint, mesmerizing glow. Creatures within [= 2 stride =] of the frog save Wisdom against DC 15 or are [# kw:condition:charmed #] [# kw:briefly #].
+
+</Trait>
+
+<Trait>
 
 #### Winged Assault
 
 The golden frog can sprout ethereal wings for 1 round, granting it a flying speed of [= 12 stride =]. While airborne, it can make one attack with a thrown weapon.
 
+</Trait>
+
 ### Actions
+
+<Action>
 
 #### Spellcasting
 
-The golden frog is a 6th-level spellcaster. Its spellcasting ability is Charisma (spell save DC 15, accuracy +7 with spell attacks). It has the following spells prepared:
+The golden frog is a 6th-level spellcaster. Its spellcasting ability is Charisma (spell save DC 15, accuracy +7 with spell attacks).
 
-- **Cantrips (at will)**: 
-- **1st level (4 slots)**: [_Hex_](/en/library/spells/hex)
-- **2nd level (3 slots)**: [_Misty Step_](/en/library/spells/misty-step), [_Hold_](/en/library/spells/hold)
-- **3rd level (3 slots)**: [_Air Bubble_](/en/library/spells/air-bubble), [_Command The Seas_](/en/library/spells/command-the-seas)
+- **Cantrips**: 
+- **1st level**: [_Hex_](/en/library/spells/hex)
+- **2nd level**: [_Misty Step_](/en/library/spells/misty-step), [_Hold_](/en/library/spells/hold)
+- **3rd level**: [_Air Bubble_](/en/library/spells/air-bubble), [_Command The Seas_](/en/library/spells/command-the-seas)
+
+</Action>
+
+<Action cost="1 Major Action">
 
 #### Multiattack
 
 The golden frog makes two attacks: one with its bite and one with its thrown weapon (stone-egg).
 
-- **Bite.** Accuracy +6, reach [= 1 stride =], one creature. On a hit, 10 ([% 1d10 +5 piercing %]).
-- **Stone-Egg Throw.** Accuracy +8, range [= 6 stride =]/[= 12 stride =], one creature. On a hit, 12 ([% 2d6 +5 bludgeoning %]). On a hit, the stone-egg shatters, and each creature within [= 1 stride =] of the target saves Dexterity against DC 13, halving 6 ([% 2d6 chemical %]).
+<Attack accuracy="+6" reach="[= 1 stride =]">
+
+##### Bite
+
+On a hit, 10 ([% 1d10 +5 piercing %]).
+
+</Attack>
+
+<Attack accuracy="+8" range="[= 6 stride =]/[= 12 stride =]">
+
+##### Stone-Egg Throw
+
+On a hit, 12 ([% 2d6 +5 bludgeoning %]). On a hit, the stone-egg shatters, and each creature within [= 1 stride =] of the target saves Dexterity against DC 13, halving 6 ([% 2d6 chemical %]).
+
+</Attack>
+
+</Action>
+
+</Monster>
 
 ---

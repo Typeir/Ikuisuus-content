@@ -3,17 +3,21 @@ source: Ikuisuus
 contentType: trinkets
 ---
 
-# Grease Barrel  
-Adventuring Gear  
+# Grease Barrel
+
+<Trinket
+  category="Adventuring Gear"
+  damage="[% 1d10 %]"
+  range="10 (placement)"
+  properties="Special (terrain, flammable)"
+  burden="[= 5 burden =]">
 
 A wooden drum filled with viscous grease.
 As a Major Action, you can spill its contents in a [= 2 stride;ADJ =] radius.
 The ground becomes difficult terrain.
-Creatures entering or starting their turn there must succeed on a DC 15 Dexterity saving throw or fall prone.
+Creatures entering or starting their turn there save Dexterity against DC 15 or fall [# kw:condition:prone #].
 If the area is ignited, it burns for 2 rounds, dealing [% 1d10 fire %] to creatures entering or starting their turn in the area.
 
-**Damage**: [% 1d10 %] 
 **Damage Type**: Fire  
-**Properties**: Special (terrain, flammable)  
-**Range**: 10 (placement)  
-**Weight**: [= 5 burden =].
+
+</Trinket>

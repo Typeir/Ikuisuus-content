@@ -12,17 +12,16 @@ betray their masters and seek to use their newfound forms for good, be it for th
 
 ---
 
-## Core Revenant Traits
+<Vocation
+  primaryAbility="Strength and Intelligence"
+  hitDie="d12 per Revenant level"
+  saves="**Constitution, Intelligence**"
+  skills="**Pick three from: Athletics, Intimidation, Arcana, History, Religion, Insight, Medicine**"
+  weapons="**Martial, Simple**"
+  armor="**Light, Medium, Heavy**"
+  equipment="**Half plate, longsword, battleaxe or warhammer, explorer’s pack, Alchemist’s fire**">
 
-| Trait                          | Description                                                                                |
-| ------------------------------ | ------------------------------------------------------------------------------------------ |
-| **Primary Abilities**          | Strength and Intelligence                                                                  |
-| **Hit Point Die**              | d12 per Revenant level                                                                     |
-| **Saving Throw Proficiencies** | **Constitution, Intelligence**                                                             |
-| **Skill Proficiencies**        | **Pick three from: Athletics, Intimidation, Arcana, History, Religion, Insight, Medicine** |
-| **Weapon Proficiencies**       | **Martial, Simple**                                                                        |
-| **Armor Training**             | **Light, Medium, Heavy**                                                                   |
-| **Starting Equipment**         | **Half plate, longsword, battleaxe or warhammer, explorer’s pack, Alchemist’s fire**       |
+## Core Revenant Traits
 
 ---
 
@@ -46,33 +45,17 @@ betray their masters and seek to use their newfound forms for good, be it for th
 
 ## Revenant Vocation Features
 
-| Level | Tier Bonus | Features                                                  | Prepared Spells | 1st | 2nd | 3rd | 4th | 5th |
-| ----- | ---------- | --------------------------------------------------------- | --------------- | --- | --- | --- | --- | --- |
-| 1     | +1         | **Execution**, **Obituary**                               | 2               | -   | –   | –   | –   | –   |
-| 2     | +1         | **Death’s Retinue**, **Weapon Mastery**, **Spellcasting** | 3               | 2   | –   | –   | –   | –   |
-| 3     | +1         | **Obituary Feature**                                      | 4               | 3   | –   | –   | –   | –   |
-| 4     | +2         | Feat                                                      | 5               | 3   | –   | –   | –   | –   |
-| 5     | +2         | **Abundance and Decay**                                   | 6               | 4   | 2   | –   | –   | –   |
-| 6     | +2         | **Obituary Feature**                                      | 6               | 4   | 2   | –   | –   | –   |
-| 7     | +3         | **Dark Magicks**                                          | 7               | 4   | 3   | –   | –   | –   |
-| 8     | +3         | Feat                                                      | 7               | 4   | 3   | –   | –   | –   |
-| 9     | +3         | **—**                                                     | 9               | 4   | 3   | 2   | –   | –   |
-| 10    | +4         | **Tools of the End, On a Pale Horse**                     | 9               | 4   | 3   | 2   | –   | –   |
-| 11    | +4         | **Shared Entropy**                                        | 10              | 4   | 3   | 3   | –   | –   |
-| 12    | +4         | Feat                                                      | 10              | 4   | 3   | 3   | –   | –   |
-| 13    | +5         | **—**                                                     | 11              | 4   | 3   | 3   | 1   | –   |
-| 14    | +5         | **Obituary Feature**                                      | 11              | 4   | 3   | 3   | 1   | –   |
-| 15    | +5         | **Deathless Will**                                        | 12              | 4   | 3   | 3   | 2   | –   |
-| 16    | +6         | Feat                                                      | 12              | 4   | 3   | 3   | 2   | –   |
-| 17    | +6         | **—**                                                     | 14              | 4   | 3   | 3   | 3   | 1   |
-| 18    | +6         | **Obituary Feature**                                      | 14              | 4   | 3   | 3   | 3   | 1   |
-| 19    | +7         | Feat                                                      | 15              | 4   | 3   | 3   | 3   | 2   |
-| 20    | +7         | **Funeral Apex**                                          | 15              | 4   | 3   | 3   | 3   | 2   |
+<Progression casting="half" feats="4, 8, 12, 16, 19" specialization="Obituary: 3, 6, 14, 18">
+  <Column label="Prepared Spells" values="2, 3, 4, 5, 6, 6, 7, 7, 9, 9, 10, 10, 11, 11, 12, 12, 14, 14, 15, 15" />
+</Progression>
 
 ---
 
 <Collapsible>
-## 1st Level – Execution
+
+<Feature level="1">
+
+## Execution
 
 You deliver a single, decisive strike to end your foes.
 
@@ -82,10 +65,15 @@ You deliver a single, decisive strike to end your foes.
 - Execution's extra damage is doubled on a critical hit.
 - If a creature is left with less HP than your Revenant level after taking this damage, you can choose to instantly slay it.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible open>
-## 1st Level – Obituary
+
+<Feature level="1">
+
+## Obituary
 
 You choose your **Obituary** at 1st level. Your obituary represents the form of that which made you into a Revenant, forever altering
 your anatomy into a being that flows and ebbs within the veil of life and death.
@@ -97,10 +85,15 @@ your anatomy into a being that flows and ebbs within the veil of life and death.
 | [**Graveherder**](/en/library/character-creation/vocations/revenant/graveherder) |
 | [**Mistreaver**](/en/library/character-creation/vocations/revenant/mistreaver)   |
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 2nd Level – Revenant Spellcasting
+
+<Feature level="2">
+
+## Revenant Spellcasting
 
 Beginning at second level, your studies of death and decay allow you to cast certain spells.
 
@@ -133,19 +126,29 @@ You don't need to have the spell prepared.
 
 You can use an appropriate arcane focus as a spellcasting focus for your revenant spells.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 2nd Level - Weapon mastery
+
+<Feature level="2">
+
+## Weapon mastery
 
 Choose **two Simple or Martial weapons**. You can use the **Mastery properties** of those weapons.
 
 - When you finish a [# kw:Recovery #], you may change one of these choices.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible open>
-## 2nd Level – Death’s Retinue
+
+<Feature level="2">
+
+## Death’s Retinue
 
 You are never alone; your very will echoes through death and decay.
 
@@ -193,10 +196,15 @@ You can have only one Retinue at a time; creating a new one destroys the previou
 > A consumed corpse is destroyed.
 > The Retinue cannot use this feature again until after a [# kw:Repose #] or [# kw:Recovery #].
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 5th Level – Abundance and Decay
+
+<Feature level="5">
+
+## Abundance and Decay
 
 As a **Major Action**, choose a point you can see within [= 6 stride =]. The ground in a **[= 2 stride;ADJ =]-radius circle** centered on that point becomes corrupted for **1 minute**.
 Only one such area can exist at a time, and you can dismiss it at any time **with a Major Action**.
@@ -211,10 +219,15 @@ Moving it farther in a single turn ends the effect until you create it again.
 You can create, dismiss, and reposition this area **at will**.
 if you are [# kw:condition:incapacitated #] the area dissipates.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 7th Level – Dark Magicks
+
+<Feature level="7">
+
+## Dark Magicks
 
 Whenever you cast a **Revenant spell** using a **spell slot of up to 5th level**, you may spend **any number of Dark Magick charges** to increase the spell’s **effective slot level** by the same amount.  
 This increase has **no upper limit**.
@@ -222,27 +235,42 @@ This increase has **no upper limit**.
 - You have **Dark Magick charges** equal to your **INT modifier** (minimum 1).
 - You regain one expended charge on a [# kw:Repose #] and all expended charges return on a [# kw:Recovery #].
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 10th Level – Tools of the End
+
+<Feature level="10">
+
+## Tools of the End
 
 You gain proficiency with **smith’s tools** and **alchemist’s supplies**.  
 If you are already proficient, you **double** your tier bonus when using them.  
 Repairing or crafting metal, bone, or death-related objects takes **half the usual time**.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 10th Level – On a Pale Horse
+
+<Feature level="10">
+
+## On a Pale Horse
 
 You can **ritually cast spells** that summon or create creatures (such as [_find steed_](/en/library/spells/find-steed), [_find familiar_](/en/library/spells/find-familiar), or any similar effect you know) as a **Major Action** instead of 10 minutes.
 doing so provokes opportunity attacks.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 11th Level – Shared Entropy
+
+<Feature level="11">
+
+## Shared Entropy
 
 Your link with your summoned creatures becomes more prevalent, you gain the following features:
 
@@ -251,10 +279,15 @@ Your link with your summoned creatures becomes more prevalent, you gain the foll
 - Spell effects that apply to you also apply to your summons within **[= 6 stride =]**.
 - This sharing ends for any summon that moves farther than [= 6 stride =] from you.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 15th Level – Deathless Will
+
+<Feature level="15">
+
+## Deathless Will
 
 When you are reduced to **0 hit points or fewer**, you do **not** fall [# kw:condition:unconscious #].  
 You continue taking turns normally but still make **death saving throws** each round.
@@ -267,13 +300,22 @@ You continue taking turns normally but still make **death saving throws** each r
 
 You can use this feature once per **[# kw:Repose #] or [# kw:Recovery #]**.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 20th Level – Funeral Apex
+
+<Feature level="20">
+
+## Funeral Apex
 
 Your **Intelligence** and **Constitution** scores each increase by **2**, to a maximum of **24**.  
 Execution deals an additional **10 flat damage**.  
 You add your **INT modifier** to all **death saving throws**.
 
+</Feature>
+
 </Collapsible>
+
+</Vocation>

@@ -3,183 +3,305 @@ source: Ikuisuus
 contentType: monsters
 ---
 
+<Monster
+  size="Medium"
+  type="Wildlife"
+  alignment="Unaligned"
+  armorClass="12"
+  hitPoints="27 ([% 5d8 +5 %])"
+  speed="[= 4 stride =], Gallop Burst [= 6 stride =]"
+  str="12"
+  dex="12"
+  con="13"
+  int="2"
+  wis="10"
+  cha="5"
+  skills="Stealth +1, Survival +1"
+  senses="Darkvision [= 6 stride =], Passive Perception 10"
+  languages="—"
+  challenge="1/2"
+  xp="100">
+
 # Laquirronto (Kynsilaccus moppi) – Cub Variant
 
-_Medium Wildlife, Unaligned_
 **Colloquial Name**: _Laquirronto_ — “Capped little freak” (Silurian rural slang)
-
-| **Armor Class** | **Hit Points** | **Speed**                  |
-| --------------- | -------------- | -------------------------- |
-| 12              | 27 ([% 5d8 +5 %])   | [= 4 stride =], Gallop Burst [= 6 stride =] |
-
-| **STR** | **DEX** | **CON** | **INT** | **WIS** | **CHA** |
-| ------- | ------- | ------- | ------- | ------- | ------- |
-| 12 (+1) | 12 (+1) | 13 (+1) | 2 (–4)  | 10 (+0) | 5 (–3)  |
-
-- **Skills**: Stealth +1, Survival +1
-- **Senses**: Darkvision [= 6 stride =], Passive Perception 10
-- **Languages**: —
-- **Challenge**: 1/2 (100 XP)
-- **Tier Bonus**: +1
 
 ---
 
 ## Traits
+
+<Trait>
 
 #### Gallop Burst
 
 Once per turn, the cub may burst forward up to [= 6 stride =] in a straight line. Creatures in its path must make a DC 10 Dex save or take [% 1d6 bludgeoning %] and fall [# kw:condition:prone #].
 
+</Trait>
+
+<Trait>
+
 #### Sticky Trail
 
 Leaves slippery mucus; area is difficult terrain for 1 minute.
+
+</Trait>
 
 ---
 
 ## Major Actions
 
+<Action>
+
 #### Headbutt
 
-Accuracy +2, reach [= 1 stride =], one creature.  
+<Attack accuracy="+2" reach="[= 1 stride =]">
+
 On a hit, 5 ([% 1d8 +1 bludgeoning %]).
+
+</Attack>
+
+</Action>
+
+</Monster>
 
 ---
 
+<Monster
+  size="Large"
+  type="Wildlife"
+  alignment="Unaligned"
+  armorClass="14"
+  hitPoints="85 ([% 10d10 +30 %])"
+  speed="[= 4 stride =], Gallop Burst [= 8 stride =]"
+  str="16"
+  dex="12"
+  con="16"
+  int="3"
+  wis="12"
+  cha="5"
+  saves="Dex +2, Con +4"
+  skills="Stealth +3, Survival +2"
+  senses="Darkvision [= 12 stride =], Tremorsense [= 6 stride =], Passive Perception 11"
+  languages="—"
+  challenge="4"
+  xp="1,200">
+
 # Laquirronto (Kynsilaccus moppi) – Adult Variant
 
-_Large Wildlife, Unaligned_
 **Colloquial Name**: _Laquirronto_ — “Capped little freak” (Silurian rural slang)
-
-| **Armor Class** | **Hit Points**  | **Speed**                  |
-| --------------- | --------------- | -------------------------- |
-| 14              | 85 ([% 10d10 +30 %]) | [= 4 stride =], Gallop Burst [= 8 stride =] |
-
-| **STR** | **DEX** | **CON** | **INT** | **WIS** | **CHA** |
-| ------- | ------- | ------- | ------- | ------- | ------- |
-| 16 (+3) | 12 (+1) | 16 (+3) | 3 (–4)  | 12 (+1) | 5 (–3)  |
-
-- **Saving Throws**: Dex +2, Con +4
-- **Skills**: Stealth +3, Survival +2
-- **Senses**: Darkvision [= 12 stride =], Tremorsense [= 6 stride =], Passive Perception 11
-- **Languages**: —
-- **Challenge**: 4 (1,200 XP)
-- **Tier Bonus**: +2
 
 ---
 
 ## Traits
+
+<Trait>
 
 #### Stone Shell
 
 The laquirronto has a back and a front, defined by the dungeon master. The laquirronto's back has a +10 to AC, due to its enormous carapace.
 
-#### Shell Slam (Recharge 5–6)
+</Trait>
+
+<Trait recharge="5–6">
+
+#### Shell Slam
 
 [= 2 stride;ADJ =] cone. DC 12 Strength save or [% 2d10 bludgeoning %] and knocked [# kw:condition:prone #].
+
+</Trait>
+
+<Trait>
 
 #### Gallop Burst
 
 Once per turn, the Laquirronto may gallop up to [= 8 stride =] in a straight line. Creatures in its path save Dexterity against DC 12 or take [% 1d10 bludgeoning %] and fall [# kw:condition:prone #].
 
+</Trait>
+
+<Trait>
+
 #### Mucosal Trail
 
 Leaves a greasy, semi-digestive slime trail. Counts as difficult terrain for 1 minute. Creatures dashing through it saves Dexterity against DC 10 or falls [# kw:condition:prone #].
+
+</Trait>
+
+<Trait>
 
 #### Camouflaged Posture
 
 While motionless, indistinguishable from a stone or abandoned shell mound. DC 14 Intelligence (Investigation) to detect.
 
+</Trait>
+
 ---
 
 ## Major Actions
+
+<Action>
 
 #### Trample
 
 The Laquirronto bursts into a charge of [= 20 stride =] in a straight line. Creatures in its path save Strength against DC 16 or take 17 ([% 3d10 bludgeoning %]) and fall [# kw:condition:prone #]. If the laquirronto hits a wall, it takes 17 ([% 3d10 %] damage). The laquirronto may perform a shield bash attack after the charge.
 
+</Action>
+
+<Action>
+
 #### Shell Bash
 
-Accuracy +4, reach [= 1 stride =], one creature.  
+<Attack accuracy="+4" reach="[= 1 stride =]">
+
 On a hit, 12 ([% 2d8 +3 bludgeoning %]).
+
+</Attack>
+
+</Action>
+
+<Action>
 
 #### Lash Frond
 
-Accuracy +3, reach [= 2 stride =], one creature.  
+<Attack accuracy="+3" reach="[= 2 stride =]">
+
 On a hit, 5 ([% 1d6 +2 slashing %]). Target saves Strength against DC 11 or is pulled [= 1 stride =] closer.
+
+</Attack>
+
+</Action>
+
+<Action>
 
 #### Tentacle Cast (Grapple)
 
-Accuracy +3, range [= 6 stride =], one creature.  
+<Attack accuracy="+3" range="[= 6 stride =]">
+
 On a hit, Target is **[# kw:condition:grappled #]** (escape DC 12). While [# kw:condition:grappled #], the Laquirronto may **constrict** as a Minor Action on its turn, dealing 6 ([% 1d10 bludgeoning %]).
 
 A [# kw:condition:grappled #] creature can be freed if another character succeeds on a **DC 12 Strength (Athletics)** check as a Major Action to pull them free. The Laquirronto can only grapple **one creature at a time** with this ability.
 
+</Attack>
+
+</Action>
+
+</Monster>
+
 ---
+
+<Monster
+  size="Large"
+  type="Wildlife"
+  alignment="Unaligned"
+  armorClass="16"
+  hitPoints="168 ([% 16d12 +64 %])"
+  speed="[= 6 stride =], Gallop Burst [= 10 stride =]"
+  str="20"
+  dex="13"
+  con="18"
+  int="4"
+  wis="14"
+  cha="6"
+  saves="Dex +3, Con +7"
+  skills="Stealth +4, Survival +4"
+  senses="Darkvision [= 18 stride =], Tremorsense [= 12 stride =], Passive Perception 12"
+  languages="—"
+  challenge="7"
+  xp="3,000">
 
 # Laquirronto (Kynsilaccus moppi) – Ancient Variant
 
-_Large Wildlife, Unaligned_
 **Colloquial Name**: _Laquirronto_ — “Capped little freak” (Silurian rural slang)
-
-| **Armor Class** | **Hit Points**   | **Speed**                  |
-| --------------- | ---------------- | -------------------------- |
-| 16              | 168 ([% 16d12 +64 %]) | [= 6 stride =], Gallop Burst [= 10 stride =] |
-
-| **STR** | **DEX** | **CON** | **INT** | **WIS** | **CHA** |
-| ------- | ------- | ------- | ------- | ------- | ------- |
-| 20 (+5) | 13 (+1) | 18 (+4) | 4 (–3)  | 14 (+2) | 6 (–2)  |
-
-- **Saving Throws**: Dex +3, Con +7
-- **Skills**: Stealth +4, Survival +4
-- **Senses**: Darkvision [= 18 stride =], Tremorsense [= 12 stride =], Passive Perception 12
-- **Languages**: —
-- **Challenge**: 7 (3,000 XP)
-- **Tier Bonus**: +3
 
 ---
 
 ## Traits
 
+<Trait>
+
 #### Stone Shell
 
 +10 AC from the back.
 
-#### Shell Slam (Recharge 5–6)
+</Trait>
+
+<Trait recharge="5–6">
+
+#### Shell Slam
 
 [= 3 stride;ADJ =] cone. DC 15 Strength save or [% 4d10 bludgeoning %] and knocked [# kw:condition:prone #].
+
+</Trait>
+
+<Trait>
 
 #### Gallop Burst
 
 [= 10 stride;ADJ =] charge. DC 14 Dexterity save or [% 3d10 bludgeoning %] and knocked [# kw:condition:prone #].
 
+</Trait>
+
+<Trait>
+
 #### Boiling Slime
 
 Creatures who enter or begin their turn in its trail take [% 1d8 chemical %].
+
+</Trait>
+
+<Trait>
 
 #### Camouflaged Posture
 
 DC 16 Intelligence (Investigation) to detect while still.
 
+</Trait>
+
 ---
 
 ## Major Actions
+
+<Action>
 
 #### Trample
 
 The Laquirronto charges in a line. Creatures in its path save Strength against DC 17 or take 20 ([% 3d12 bludgeoning %]) and fall [# kw:condition:prone #].
 
+</Action>
+
+<Action>
+
 #### Shell Bash
 
-Accuracy +7, reach [= 1 stride =], one creature.  
+<Attack accuracy="+7" reach="[= 1 stride =]">
+
 On a hit, 22 ([% 3d10 +5 bludgeoning %]).
+
+</Attack>
+
+</Action>
+
+<Action>
 
 #### Lash Frond
 
-Accuracy +5, reach [= 2 stride =], one creature.  
+<Attack accuracy="+5" reach="[= 2 stride =]">
+
 On a hit, 10 ([% 2d6 +3 slashing %]). Target saves Strength against DC 14 or is pulled [= 2 stride =] closer.
 
-### Minor Actions
+</Attack>
 
-#### Rattle Charge (Recharge 6)
+</Action>
 
-_Minor Action._ The Laquirronto gallops and rams in a [= 2 stride;ADJ =]-wide line up to [= 10 stride =]. All creatures in the line save Dexterity against DC 15 or take 28 ([% 5d10 bludgeoning %]) and are thrown [= 2 stride =] into the air.
+---
+
+## Minor Actions
+
+<Action cost="1 Minor Action" recharge="6">
+
+#### Rattle Charge
+
+The Laquirronto gallops and rams in a [= 2 stride;ADJ =]-wide line up to [= 10 stride =]. All creatures in the line save Dexterity against DC 15 or take 28 ([% 5d10 bludgeoning %]) and are thrown [= 2 stride =] into the air.
+
+</Action>
+
+</Monster>

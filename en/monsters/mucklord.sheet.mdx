@@ -12,54 +12,83 @@ contentType: monsters
   />
 </FlexRenderer>
 
-_Gargantuan Construct, Unaligned_
-
-| **Armor Class** | **Hit Points**         | **Speed**                          |
-| --------------- | ---------------------- | ---------------------------------- |
-| 24              | 999 ([% 39d20 +585 %]) | [= 8 stride =], burrow [= 4 stride =], swim [= 12 stride =] |
-
-| **STR**  | **DEX** | **CON**  | **INT** | **WIS** | **CHA** |
-| -------- | ------- | -------- | ------- | ------- | ------- |
-| 36 (+13) | 6 (−2)  | 40 (+15) | 7 (−2)  | 16 (+3) | 20 (+5) |
-
-- **Saving Throws**: Str +23, Con +25, Wis +13, Cha +15
-- **Skills**: Perception +12
-- **Damage Resistances**: Fire, Force
-- **Damage Immunities**: Chemical, Poison, Psychic
-- **Condition Immunities**: [# kw:condition:Poisoned #], Exhaustion, [# kw:condition:Petrified #], [# kw:condition:Paralyzed #], Banishment, Polymorphs, [# kw:condition:Terrified #], [# kw:condition:Frightened #], [# kw:condition:Charmed #]
-- **Senses**: Tremorsense [= 60 stride =], Darkvision [= 24 stride =], passive Perception 21
-- **Languages**: Understands all languages dimly; cannot speak
-- **Challenge**: 28 (120,000 XP)
-- **Tier Bonus**: +10
+<Monster
+  size="Gargantuan"
+  type="Construct"
+  alignment="Unaligned"
+  armorClass="24"
+  hitPoints="999 ([% 39d20 +585 %])"
+  speed="[= 8 stride =], burrow [= 4 stride =], swim [= 12 stride =]"
+  str="36"
+  dex="6"
+  con="40"
+  int="7"
+  wis="16"
+  cha="20"
+  saves="Str +23, Con +25, Wis +13, Cha +15"
+  skills="Perception +12"
+  resistances="Fire, Force"
+  immunities="Chemical, Poison, Psychic"
+  conditionImmunities="[# kw:condition:Poisoned #], Exhaustion, [# kw:condition:Petrified #], [# kw:condition:Paralyzed #], Banishment, Polymorphs, [# kw:condition:Terrified #], [# kw:condition:Frightened #], [# kw:condition:Charmed #]"
+  senses="Tremorsense [= 60 stride =], Darkvision [= 24 stride =], passive Perception 21"
+  languages="Understands all languages dimly; cannot speak"
+  challenge="28"
+  xp="140,000">
 
 ---
 
 ## Traits
 
+<Trait>
+
 #### Legendary Deeds
 
 The Mucklord has **3 legendary deeds per round**, and regains all expended deeds at the start of its turn.
+
+</Trait>
+
+<Trait>
 
 #### Breathless, Inertity
 
 The Mucklord does not need to breathe or eat. Although it may do either of the two just for the sake of it.
 
+</Trait>
+
+<Trait>
+
 #### Aura of Stillness ([= 12 stride;ADJ =] radius)
 
 As an [# kw:delayed #] effect, creatures in the aura save Strength against DC 24 or their speed becomes **0** [# kw:briefly #]. Creatures immune to paralysis instead have their speed **halved**.
 
+</Trait>
+
+<Trait>
+
 #### Garbage Communion
 
 The Mucklord is aware of refuse and corpses within **[= 1 league =]**. As a **Minor Action**, it calls debris in an **[= 16 stride =] radius** to itself, **5 temporary hit points** per corpse CR or Character Level, **consuming said corpses**.
+
+</Trait>
+
+<Trait>
 
 #### Belly of the Muck
 
 A swallowed creature is **banished** to the **Muck Dimension** (see [_Nullbrand_](/en/library/items/heirlooms/nullbrand)). While there, the creature is **[# kw:condition:incapacitated #]** and takes [% 6d10 force %] at the start of each of its turns until it escapes or the effect ends.
 If a creature that is not a **construct** falls below 0HP while in the Muck Dimension, they are **instantly** absorbed into the muck, along with all they are carrying, and dissolve into sludge.
 
+</Trait>
+
+<Trait>
+
 #### Cannon Tongue
 
 The Mucklord’s tongue is a siege cannon. It can target any point it can see within **[= 120 stride =]** It has **disadvantage** on attack rolls against creatures within **[= 2 stride =]**
+
+</Trait>
+
+<Trait>
 
 #### Sad Resilience
 
@@ -67,32 +96,60 @@ Once per round, when the Mucklord takes damage, it gains **temporary hit points*
 If the mucklord then takes damage that does not exceed the temporary hit points, the source of the damage is cursed with a **Curse of indolence**, applying a stack of [# kw:Erosion #] **as if the d4 had landed on a "4"**,
 and forcing them to use their Minor Action to harmlessly sigh when in combat. This effect stacks indefinitely.
 
+</Trait>
+
+<Trait>
+
 #### Gag Reflex
 
 When attacked, the Mucklord must succeed on a **Concentration Saving Throw**, on a failure, it spews out the contents of it's belly, including those transported to the **Muck Dimension**
+
+</Trait>
 
 ---
 
 ## Actions
 
+<Action>
+
 #### Multiattack
 
 The Mucklord makes **one Cannon Tongue** attack and **two Crushing Claw** attacks.
 
+</Action>
+
+<Action>
+
 #### Crushing Claw
 
-Accuracy +18, reach [= 4 stride =], one creature.  
+<Attack accuracy="+18" reach="[= 4 stride =]">
+
 On a hit, 55 ([% 8d10 +10 bludgeoning %]) plus 22 ([% 4d10 chemical %]). If the target is Large or smaller, it saves Strength against DC 23 or is **[# kw:condition:grappled #]** (escape **DC 24**).
+
+</Attack>
+
+</Action>
+
+<Action>
 
 #### Swallow
 
 The Mucklord makes one **Crushing Claw** attack against a **[# kw:condition:grappled #]** Medium or smaller target. On a hit, the target is **swallowed** and transported to the **Muck Dimension** (see _Belly of the Muck_).
 
-#### Cannon Tongue (Recharge 5–6)
+</Action>
 
-Accuracy +21, range [= 120 stride =], one creature.  
+<Action recharge="5–6">
+
+#### Cannon Tongue
+
+<Attack accuracy="+21" range="[= 120 stride =]">
+
 On a hit, 25 + ([% 20d8 force %]), plus an extra 25 force damage per stack of erosion on the target, and the target saves Charisma against DC 26 or suffers the effects of [_Feeblemind_](/en/library/spells/feeblemind).  
 _Miss:_ The shot detonates prematurely; creatures within **[= 3 stride =]** of the Mucklord save Dexterity against DC 24 or take 40 ([% 10d6 chemical %]), 40 ([% 10d6 fire %]) and 40 ([% 10d6 piercing %]).
+
+</Attack>
+
+</Action>
 
 ---
 
@@ -108,6 +165,8 @@ The Mucklord can expend legendary deeds to use the options below. Only one legen
 
 ## Legendary Deed: Stratagem
 
+<Action deed="stratagem">
+
 #### The Pit Remembers
 
 _Declared at the end of the Mucklord’s turn; resolves at the start of its next turn. Recharges after combat._
@@ -115,6 +174,10 @@ _Declared at the end of the Mucklord’s turn; resolves at the start of its next
 The mucklord attempts to consume a **[= 24 stride;ADJ =] cone** in front of it. Creatures in the area save Strength against DC 25 or **sink [= 2 stride =]** and become **[# kw:condition:restrained #]**.  
 At resolution, all **[# kw:condition:restrained #]** creatures are devoured and **banished** to the **Muck Dimension** (see [_Nullbrand_](/en/library/items/heirlooms/nullbrand)) for **1 minute**, taking [% 6d10 force %] at the start of each of their turns there.  
 If the Mucklord dies while this effect is active, the breach collapses, dealing 150 ([% 20d12 force %]) to all creatures within **[= 24 stride =]**
+
+</Action>
+
+<Action deed="stratagem">
 
 #### Gluttony and Hatred
 
@@ -134,6 +197,8 @@ If the Mucklord emerges in a space occupied by one or more creatures, those crea
 Creatures reduced to **0 hit points** by this detonation are **absorbed** along with everything they were carrying, the Mucklord gains **20 temporary hit points per creature** absorbed this way.
 The Mucklord is considered **absent from the battlefield** between disappearance and re-emergence. It cannot be targeted, damaged, or affected during this time.
 
+</Action>
+
 ---
 
 ## Legendary Deed: Lair
@@ -142,6 +207,8 @@ At the start of the creature with the highest initiative's turn, the Mucklord ca
 It cannot use the same lair deed two rounds in a row.
 
 ---
+
+<Action deed="lair">
 
 #### Forlorn Summons
 
@@ -158,7 +225,11 @@ They act immediately after the Mucklord in the initiative order and remain until
 | 3   | **1 [Toxic Avenger](/en/library/monsters/toxic-avenger)**                         |
 | 4   | **1 [Abandoned Old War Machine](/en/library/monsters/abandoned-old-war-machine)** |
 
+</Action>
+
 ---
+
+<Action deed="lair">
 
 #### Forlorn Detonation
 
@@ -170,7 +241,11 @@ On a success, it takes half damage and is not knocked [# kw:condition:prone #].
 
 If **three or more** Forlorn are destroyed this way, the Mucklord regains **50 hit points** and gains **temporary hit points equal to 10 × the forlorn's CR** for every forlorn destroyed.
 
+</Action>
+
 ---
+
+<Action deed="lair">
 
 #### Mass Rusting
 
@@ -182,7 +257,11 @@ Objects and weapons made of metal in contact with the ground take [% 10d10 force
 
 > Everything fades, eventually.
 
+</Action>
+
 ---
+
+<Action deed="lair">
 
 #### Temper Tantrum
 
@@ -201,3 +280,7 @@ The corpses remain where they fall and can be consumed by the Mucklord as part o
 They are inert but reanimate if struck by brine or acid during subsequent rounds.
 
 > The tantrum passes quickly. The corpses stay forever.
+
+</Action>
+
+</Monster>

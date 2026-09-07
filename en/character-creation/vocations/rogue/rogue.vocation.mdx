@@ -16,18 +16,18 @@ Some Rogues began their careers as criminals, while others used their cunning to
 
 ---
 
+<Vocation
+  primaryAbility="Dexterity"
+  hitDie="d8 per Rogue level"
+  saves="Dexterity and Intelligence"
+  skills="Choose 4: Acrobatics, Athletics, Deception, Insight, Intimidation, Investigation, Perception, Persuasion, Sleight of Hand, or Stealth"
+  trades="[Thievery](/en/library/items/tools/thievery)"
+  weapons="Simple weapons and Martial weapons with Finesse or Light"
+  armor="Light armor">
+
 ## Core Rogue Traits
 
-| Trait                          | Value                                                                                                                                                          |
-| ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Primary Ability**            | Dexterity                                                                                                                                                      |
-| **Hit Point Die**              | d8 per Rogue level                                                                                                                                             |
-| **Saving Throw Proficiencies** | Dexterity and Intelligence                                                                                                                                     |
-| **Skill Proficiencies**        | Choose 4: Acrobatics, Athletics, Deception, Insight, Intimidation, Investigation, Perception, Persuasion, Sleight of Hand, or Stealth                          |
-| **Weapon Proficiencies**       | Simple weapons and Martial weapons with Finesse or Light                                                                                                       |
-| **Trade Proficiencies**        | [Thievery](/en/library/items/tools/thievery)                                                                                                                   |
-| **Armor Training**             | Light armor                                                                                                                                                    |
-| **Starting Equipment**         | (A) Leather Armor, 2 Daggers, Shortsword, Shortbow, 20 Arrows, Quiver, a [Thievery](/en/library/items/tools/thievery) kit, Burglar's Pack, 8 GP<br/>(B) 100 GP |
+<Equipment>(A) Leather Armor, 2 Daggers, Shortsword, Shortbow, 20 Arrows, Quiver, a [Thievery](/en/library/items/tools/thievery) kit, Burglar's Pack, 8 GP<br/>(B) 100 GP</Equipment>
 
 ---
 
@@ -51,42 +51,45 @@ Some Rogues began their careers as criminals, while others used their cunning to
 
 ## Rogue Progression
 
-| Level | Tier Bonus | Features                                               | Sneak Attack |
-| ----- | ----------------- | ------------------------------------------------------ | ------------ |
-| 1     | +1                | Expertise, Sneak Attack, Thieves' Cant, Weapon Mastery | [% 1d6 %]          |
-| 2     | +1                | Cunning Action                                         | [% 1d6 %]          |
-| 3     | +1                | Rogue Specialization, Steady Aim                       | [% 2d6 %]          |
-| 4     | +2                | Feat                                                   | [% 2d6 %]          |
-| 5     | +2                | Cunning Strike, Uncanny Dodge                          | [% 3d6 %]          |
-| 6     | +2                | Expertise                                              | [% 3d6 %]          |
-| 7     | +3                | Evasion, Reliable Talent                               | [% 4d6 %]          |
-| 8     | +3                | Feat                                                   | [% 4d6 %]          |
-| 9     | +3                | Specialization Feature                                 | [% 5d6 %]          |
-| 10    | +4                | Feat                                                   | [% 5d6 %]          |
-| 11    | +4                | Improved Cunning Strike                                | [% 6d6 %]          |
-| 12    | +4                | Feat                                                   | [% 6d6 %]          |
-| 13    | +5                | Specialization Feature                                 | [% 7d6 %]          |
-| 14    | +5                | Devious Strikes                                        | [% 7d6 %]          |
-| 15    | +5                | Slippery Mind                                          | [% 8d6 %]          |
-| 16    | +6                | Feat                                                   | [% 8d6 %]          |
-| 17    | +6                | Specialization Feature                                 | [% 9d6 %]          |
-| 18    | +6                | Elusive                                                | [% 9d6 %]          |
-| 19    | +7                | Epic Boon                                              | [% 10d6 %]         |
-| 20    | +7                | Stroke of Luck                                         | [% 10d6 %]         |
+<Progression feats="4, 8, 10, 12, 16" specialization="9, 13, 17">
+  <Column label="Features">
+    <Row at="6" unique>Expertise</Row>
+  </Column>
+  <Column label="Sneak Attack">
+    <Row at="1">[% 1d6 %]</Row>
+    <Row at="3">[% 2d6 %]</Row>
+    <Row at="5">[% 3d6 %]</Row>
+    <Row at="7">[% 4d6 %]</Row>
+    <Row at="9">[% 5d6 %]</Row>
+    <Row at="11">[% 6d6 %]</Row>
+    <Row at="13">[% 7d6 %]</Row>
+    <Row at="15">[% 8d6 %]</Row>
+    <Row at="17">[% 9d6 %]</Row>
+    <Row at="19">[% 10d6 %]</Row>
+  </Column>
+</Progression>
 
 ---
 
 <Collapsible>
-## 1st Level – Expertise
+
+<Feature level="1">
+
+## Expertise
 
 At level 1, choose two skill proficiencies. You double your tier bonus with them.
 
 At level 6, choose two more.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 1st Level – Sneak Attack
+
+<Feature level="1">
+
+## Sneak Attack
 
 Once per turn, when you:
 
@@ -95,38 +98,63 @@ Once per turn, when you:
 
 You deal extra damage. The attack must use a **Finesse or Ranged weapon**. The damage type matches the weapon.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 1st Level – Thieves' Cant
+
+<Feature level="1">
+
+## Thieves' Cant
 
 You know **Thieves' Cant** and one other language of your choice.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 1st Level – Weapon Mastery
+
+<Feature level="1">
+
+## Weapon Mastery
 
 Choose **2 weapons** with which you can use mastery properties. You can change these choices after a [# kw:Recovery #].
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 2nd Level – Cunning Action
+
+<Feature level="2">
+
+## Cunning Action
 
 At level 2, take **Dash**, **Disengage**, or **Hide** as a **Minor Action**.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 3rd Level – Steady Aim
+
+<Feature level="3">
+
+## Steady Aim
 
 At level 3, if you are **steady**, use a **Minor Action** to give yourself Advantage on your next attack this turn.
+
+</Feature>
 
 </Collapsible>
 
 <Collapsible open>
-## 3rd Level – Rogue Specialization
+
+<Feature level="3">
+
+## Rogue Specialization
 
 At level 3, choose one:
 
@@ -138,17 +166,27 @@ At level 3, choose one:
 | **Soulknife**                                                                                      |
 | [Thief](/en/library/character-creation/vocations/rogue/thief)                       |
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 4th Level – Ability Score Improvement
+
+<Feature level="4">
+
+## Feat
 
 At levels 4, 8, 10, 12, and 16, take the [Ability Score Improvement feat](/en/library/character-creation/feats/ability-score-improvement) or another feat.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 5th Level – Cunning Strike
+
+<Feature level="5">
+
+## Cunning Strike
 
 At level 5, when you Sneak Attack, you may sacrifice dice to apply additional effects:
 
@@ -158,38 +196,63 @@ At level 5, when you Sneak Attack, you may sacrifice dice to apply additional ef
 | **Trip**     | [% 1d6 %]  | Dex save or target is [# kw:condition:Prone #].                                                                                    |
 | **Withdraw** | [% 1d6 %]  | Move up to half your speed without provoking Opportunity Attacks.                                               |
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 5th Level – Uncanny Dodge
+
+<Feature level="5">
+
+## Uncanny Dodge
 
 At level 5, when a creature hits you, use your **Reaction** to halve the damage.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 7th Level – Evasion
+
+<Feature level="7">
+
+## Evasion
 
 At level 7, when making a Dex save for half damage, take **no damage** on a success and **half** on a failure.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 7th Level – Reliable Talent
+
+<Feature level="7">
+
+## Reliable Talent
 
 At level 7, when making a check using a proficient skill or tool, treat rolls of **9 or lower as 10**.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 11th Level – Improved Cunning Strike
+
+<Feature level="11">
+
+## Improved Cunning Strike
 
 At level 11, you may use **two Cunning Strike effects** per Sneak Attack.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 14th Level – Devious Strikes
+
+<Feature level="14">
+
+## Devious Strikes
 
 At level 14, new Cunning Strike options:
 
@@ -199,34 +262,58 @@ At level 14, new Cunning Strike options:
 | **Knock Out** | [% 6d6 %]  | Con save or target falls [# kw:condition:Unconscious #] (1 min or until damaged). Save at end of turns. |
 | **Obscure**   | [% 3d6 %]  | Dex save or target is [# kw:condition:Blinded #] until end of next turn.                                |
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 15th Level – Slippery Mind
+
+<Feature level="15">
+
+## Slippery Mind
 
 At level 15, gain proficiency in **Wisdom and Charisma saving throws**.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 18th Level – Elusive
+
+<Feature level="18">
+
+## Elusive
 
 At level 18, **no attack roll can have Advantage** against you unless you are [# kw:condition:Incapacitated #].
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 19th Level – Epic Boon
+
+<Feature level="19">
+
+## Epic Boon
 
 At level 19, take an [Epic Boon feat](/en/library/character-creation/feats).
 
 Recommended: [Boon of the Night Spirit](/en/library/character-creation/feats/boon-of-the-night-spirit)
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 20th Level – Stroke of Luck
+
+<Feature level="20">
+
+## Stroke of Luck
 
 At level 20, if you fail a d20 Test, treat it as a **20**. Use once per [# kw:Repose #] or [# kw:Recovery #].
 
+</Feature>
+
 </Collapsible>
+
+</Vocation>

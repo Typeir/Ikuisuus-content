@@ -9,37 +9,50 @@ _Hiisi of False Life and Eternal Growth_
 
 <BlendedImage src='/library/images/Albedo.webp' alt='Albedo, the Bleak Bloom' />
 
-_Gargantuan Aberration, Lawful Evil_
-
-| **Armor Class** | **Hit Points**         | **Speed**                              |
-| --------------- | ---------------------- | -------------------------------------- |
-| 20 (natural)    | 780 ([% 60d10 +420 %]) | [= 8 stride =], climb [= 6 stride =], **swim [= 24 stride =]** |
-
-| STR     | DEX     | CON     | INT     | WIS     | CHA     |
-| ------- | ------- | ------- | ------- | ------- | ------- |
-| 24 (+7) | 14 (+2) | 24 (+7) | 20 (+5) | 26 (+8) | 28 (+9) |
-
-- **Saving Throws**: Con +15, Wis +16, Cha +17
-- **Skills**: Perception +16, Insight +16, Athletics +15
-- **Damage Resistances**: Chemical, Dark, Psychic
-- **Damage Immunities**: Poison
-- **Condition Immunities**: [# kw:condition:Terrified #], [# kw:condition:Paralyzed #], [# kw:condition:Poisoned #], [# kw:condition:Prone #], Banishment
-- **Senses**: Truesight [= 24 stride =], Tremorsense [= 24 stride =], passive Perception 25
-- **Languages**: Empyrean; telepathy [= 60 stride =]
-- **Challenge**: 23 (32,000 XP)
-- **Tier Bonus**: +8
+<Monster
+  size="Gargantuan"
+  type="Aberration"
+  alignment="Lawful Evil"
+  armorClass="20 (natural)"
+  hitPoints="780 ([% 60d10 +420 %])"
+  speed="[= 8 stride =], climb [= 6 stride =], **swim [= 24 stride =]**"
+  str="24"
+  dex="14"
+  con="24"
+  int="20"
+  wis="26"
+  cha="28"
+  saves="Con +15, Wis +16, Cha +17"
+  skills="Perception +16, Insight +16, Athletics +15"
+  resistances="Chemical, Dark, Psychic"
+  immunities="Poison"
+  conditionImmunities="[# kw:condition:Terrified #], [# kw:condition:Paralyzed #], [# kw:condition:Poisoned #], [# kw:condition:Prone #], Banishment"
+  senses="Truesight [= 24 stride =], Tremorsense [= 24 stride =], passive Perception 25"
+  languages="Empyrean; telepathy [= 60 stride =]"
+  challenge="23"
+  xp="50,000">
 
 ---
 
 ## Traits
 
+<Trait>
+
 #### Legendary Deeds
 
 Albedo has **3 legendary deeds per round**, and regains all expended deeds at the start of her turn.
 
-#### Legendary Deed: Resist (3/Repose)
+</Trait>
+
+<Trait charges="3/Repose">
+
+#### Legendary Deed: Resist
 
 When Albedo fails a saving throw, she can expend a legendary deed to succeed instead. This feature can be used **3 times per [# kw:Repose #]**.
+
+</Trait>
+
+<Trait>
 
 #### Titanic Godmass
 
@@ -47,6 +60,10 @@ The listed statistics represent **Albedo’s control nucleus** (roughly horse-si
 
 - The nucleus can’t be [# kw:condition:grappled #] or knocked [# kw:condition:prone #].
 - If the nucleus would be pushed or pulled, Albedo may instead shift the ground beneath her and remain in place.
+
+</Trait>
+
+<Trait>
 
 #### Cancerous Proliferation
 
@@ -58,6 +75,10 @@ Albedo **spawns** when anything bleeds or breaks near her.
 - **Brood Cap (Soft 20)**: At the end of each round, for each spawn beyond **20**, **merge** the two lowest-HP Petals into **1 Bloom**.
 - **At the start of each turn**: if three **Blooms** are present within [= 2 stride =] of one another, they automatically **merge into 1 Flower** at the end of the round.
 - **At the start of each turn**: if three **Flowers** are present within [= 2 stride =] of one another, they automatically **merge into 1 Bouquet** at the end of the round.
+
+</Trait>
+
+<Trait>
 
 #### Self-Fertilization
 
@@ -71,6 +92,10 @@ Albedo loses all such bonuses if she is reduced to 0 HP, or if she consumes no s
 
 Additionally, whenever Albedo rests for longer than 1 hour, she loses all such bonuses.
 
+</Trait>
+
+<Trait>
+
 #### Endless Reef
 
 Ground Albedo has affected this combat becomes **semi-living reef**:
@@ -79,42 +104,73 @@ Ground Albedo has affected this combat becomes **semi-living reef**:
 - A creature that walks across Endless Reef takes **7 ([% 2d4 chemical %])** per [= 1 stride =], unless it willingly walks at half its speed.
 - Certain effects convert areas into Endless Reef as noted.
 
+</Trait>
+
+<Trait>
+
 #### White Life
 
 Albedo floods the surrounding area with its **endless reef**, a mass of pale coral-like growths that spread and pulse with vile intent.  
 When a creature touches the reef, is caught within **[= 6 stride =]** of Albedo as an [# kw:delayed #] effect, or is struck by one of its attacks, it saves Constitution against DC 21 or rolls on the [# kw:White Life #] table.  
 Creatures **immune to disease and curses** that would roll in the table ignore this effect and instead take **[% 2d4 chemical %]** as the coral burns against their skin.
 
+</Trait>
+
 ## Actions
+
+<Action>
 
 #### Multiattack
 
 Albedo makes **two** **Mitotic Rends** and **one** **Exuvia Sweep**. Each may be replaced with either **Enzyme Torrent** or **Consume the Brood**.
 
-- **Mitotic Rend**
-  Accuracy +15, reach [= 3 stride =], one creature.  
-  On a hit, **16 ([% 3d6 +5 slashing %])** plus **8 ([% 3d4 chemical %])**.  
-  **On hit**: the target is **seeded** with **1 Parasite**.
+<Attack accuracy="+15" reach="[= 3 stride =]">
 
-- **Exuvia Sweep**
-  Accuracy +15, reach [= 4 stride =], up to two targets.  
-  On a hit, **13 ([% 3d4 +5 bludgeoning %])** plus **5 ([% 2d4 dark %])**.  
-  Each creature hit saves Strength against DC 23 or is **pushed [= 3 stride =]** and **knocked [# kw:condition:prone #]**. If at least one creature fails, **spawn 1 Petal** adjacent to one failed target’s space.
+##### Mitotic Rend
 
-- **Enzyme Torrent (Recharge 5–6)**
-  A **[= 12 stride;ADJ =] cone** of dissolving enzymes. Creatures in the area make a **DC 24 Dexterity** saving throw, taking **23 ([% 9d4 chemical %])** + **23 ([% 9d4 dark %])** on a failed save, or half as much on a success.  
-  Creatures that fail are **seeded with 1 Parasite**. All squares in the cone become **Endless Reef**.
+On a hit, **16 ([% 3d6 +5 slashing %])** plus **8 ([% 3d4 chemical %])**.  
+**On hit**: the target is **seeded** with **1 Parasite**.
 
-- **Consume the Brood (1/Turn)**
-  Choose up to **5** spawned creatures within [= 6 stride =]; they **die** as they are reabsorbed into Albedo’s mass.  
-  For each creature consumed, choose one effect:
+</Attack>
 
-- **Petal**: Albedo **heals 15 HP**, or **creates 1 Bloom**, consuming **2 Petals** per Bloom.
-- **Bloom**: Albedo **heals 40 HP**, or **creates 1 Flower**, consuming **2 Blooms**.
-- **Flower**: Albedo **heals 100 HP**, or **creates 1 Bouquet**, consuming **2 Flowers**.
-- **Bouquet**: Albedo **heals 250 HP** and erupts with regenerative sludge; all other spawned creatures within [= 6 stride =] regain **30 HP**.
+<Attack accuracy="+15" reach="[= 4 stride =]" targets="up to two targets">
+
+##### Exuvia Sweep
+
+On a hit, **13 ([% 3d4 +5 bludgeoning %])** plus **5 ([% 2d4 dark %])**.  
+Each creature hit saves Strength against DC 23 or is **pushed [= 3 stride =]** and **knocked [# kw:condition:prone #]**. If at least one creature fails, **spawn 1 Petal** adjacent to one failed target’s space.
+
+</Attack>
+
+##### Enzyme Torrent (Recharge 5–6)
+
+A **[= 12 stride;ADJ =] cone** of dissolving enzymes. Creatures in the area make a **DC 24 Dexterity** saving throw, taking **23 ([% 9d4 chemical %])** + **23 ([% 9d4 dark %])** on a failed save, or half as much on a success.  
+Creatures that fail are **seeded with 1 Parasite**. All squares in the cone become **Endless Reef**.
+
+##### Consume the Brood (1/Turn)
+
+Choose up to **5** spawned creatures within [= 6 stride =]; they **die** as they are reabsorbed into Albedo’s mass.  
+For each creature consumed, choose one effect:
+
+##### Petal
+
+Albedo **heals 15 HP**, or **creates 1 Bloom**, consuming **2 Petals** per Bloom.
+
+##### Bloom
+
+Albedo **heals 40 HP**, or **creates 1 Flower**, consuming **2 Blooms**.
+
+##### Flower
+
+Albedo **heals 100 HP**, or **creates 1 Bouquet**, consuming **2 Flowers**.
+
+##### Bouquet
+
+Albedo **heals 250 HP** and erupts with regenerative sludge; all other spawned creatures within [= 6 stride =] regain **30 HP**.
 
 All merges occur immediately in spaces formerly occupied by the consumed creatures.
+
+</Action>
 
 ---
 
@@ -275,3 +331,5 @@ The nucleus destabilizes; replication overruns structure.
 > - A host can use a **Major Action** to make a **DC 21 Strength (Athletics)** or **Dexterity (Acrobatics)** check to tear it off; on success, the parasite dies.
 
 ---
+
+</Monster>

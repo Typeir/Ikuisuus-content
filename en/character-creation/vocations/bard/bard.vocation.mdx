@@ -16,18 +16,18 @@ Bards are fascinated by almost everything. They become masters of performance, m
 
 ---
 
+<Vocation
+  primaryAbility="Charisma"
+  hitDie="d8 per Bard level"
+  saves="Dexterity and Charisma"
+  skills="Choose any 3 skills"
+  trades="[Music](/en/library/items/tools/music) (choose 3 instruments)"
+  weapons="Simple weapons"
+  armor="Light armor">
+
 ## Core Bard Traits
 
-| Trait                          | Description                                                                                                                                                        |
-| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Primary Ability**            | Charisma                                                                                                                                                           |
-| **Hit Point Die**              | d8 per Bard level                                                                                                                                                  |
-| **Saving Throw Proficiencies** | Dexterity and Charisma                                                                                                                                             |
-| **Skill Proficiencies**        | Choose any 3 skills                                                                                                                                                |
-| **Trade Proficiencies**        | [Music](/en/library/items/tools/music) (choose 3 instruments)                                                                                                      |
-| **Weapon Proficiencies**       | Simple weapons                                                                                                                                                     |
-| **Armor Training**             | Light armor                                                                                                                                                        |
-| **Starting Equipment**         | Choose A or B:<br/>(A) Leather Armor, 2 Daggers, an instrument from your [Music](/en/library/items/tools/music) trade, Entertainer's Pack, and 19 gp<br/>(B) 90 gp |
+<Equipment>Choose A or B:<br/>(A) Leather Armor, 2 Daggers, an instrument from your [Music](/en/library/items/tools/music) trade, Entertainer's Pack, and 19 gp<br/>(B) 90 gp</Equipment>
 
 ---
 
@@ -54,33 +54,22 @@ Bards are fascinated by almost everything. They become masters of performance, m
 
 ## Bard Vocation Features
 
-| Level | Tier Bonus | Features                         | Bardic Die | Cantrips | Prepared Spells | 1st | 2nd | 3rd | 4th | 5th | 6th | 7th | 8th | 9th |
-| ----- | ---------- | -------------------------------- | ---------- | -------- | --------------- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1     | +1         | Bardic Inspiration, Spellcasting | d6         | 2        | 4               | 2   | –   | –   | –   | –   | –   | –   | –   | –   |
-| 2     | +1         | Expertise, Jack of All Trades    | d6         | 2        | 5               | 3   | –   | –   | –   | –   | –   | –   | –   | –   |
-| 3     | +1         | Bard Tale                        | d6         | 2        | 6               | 4   | 2   | –   | –   | –   | –   | –   | –   | –   |
-| 4     | +2         | Feat                             | d6         | 3        | 7               | 4   | 3   | –   | –   | –   | –   | –   | –   | –   |
-| 5     | +2         | Font of Inspiration              | d8         | 3        | 9               | 4   | 3   | 2   | –   | –   | –   | –   | –   | –   |
-| 6     | +2         | Tale Feature                     | d8         | 3        | 10              | 4   | 3   | 3   | –   | –   | –   | –   | –   | –   |
-| 7     | +3         | Countercharm                     | d8         | 3        | 11              | 4   | 3   | 3   | 1   | –   | –   | –   | –   | –   |
-| 8     | +3         | Feat                             | d8         | 3        | 12              | 4   | 3   | 3   | 2   | –   | –   | –   | –   | –   |
-| 9     | +3         | Expertise                        | d8         | 3        | 14              | 4   | 3   | 3   | 3   | 1   | –   | –   | –   | –   |
-| 10    | +4         | Magical Secrets                  | d10        | 4        | 15              | 4   | 3   | 3   | 3   | 2   | –   | –   | –   | –   |
-| 11    | +4         | –                                | d10        | 4        | 16              | 4   | 3   | 3   | 3   | 2   | 1   | –   | –   | –   |
-| 12    | +4         | Feat                             | d10        | 4        | 16              | 4   | 3   | 3   | 3   | 2   | 1   | –   | –   | –   |
-| 13    | +5         | –                                | d10        | 4        | 17              | 4   | 3   | 3   | 3   | 2   | 1   | 1   | –   | –   |
-| 14    | +5         | Tale Feature                     | d10        | 4        | 17              | 4   | 3   | 3   | 3   | 2   | 1   | 1   | –   | –   |
-| 15    | +5         | –                                | d12        | 4        | 18              | 4   | 3   | 3   | 3   | 2   | 1   | 1   | 1   | –   |
-| 16    | +6         | Feat                             | d12        | 4        | 18              | 4   | 3   | 3   | 3   | 2   | 1   | 1   | 1   | –   |
-| 17    | +6         | –                                | d12        | 4        | 19              | 4   | 3   | 3   | 3   | 2   | 1   | 1   | 1   | 1   |
-| 18    | +6         | Superior Inspiration             | d12        | 4        | 20              | 4   | 3   | 3   | 3   | 3   | 1   | 1   | 1   | 1   |
-| 19    | +7         | Epic Boon                        | d12        | 4        | 21              | 4   | 3   | 3   | 3   | 3   | 2   | 1   | 1   | 1   |
-| 20    | +7         | Words of Creation                | d12        | 4        | 22              | 4   | 3   | 3   | 3   | 3   | 2   | 2   | 1   | 1   |
+<Progression casting="full" feats="4, 8, 12, 16" specialization="Tale: 6, 14">
+  <Column label="Features">
+    <Row at="9" unique>Expertise</Row>
+  </Column>
+  <Column label="Bardic Die" values="d6, d6, d6, d6, d8, d8, d8, d8, d8, d10, d10, d10, d10, d10, d12, d12, d12, d12, d12, d12" />
+  <Column label="Cantrips" values="2, 2, 2, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4" />
+  <Column label="Prepared Spells" values="4, 5, 6, 7, 9, 10, 11, 12, 14, 15, 16, 16, 17, 17, 18, 18, 19, 20, 21, 22" />
+</Progression>
 
 ---
 
 <Collapsible>
-## 1st Level – Bardic Inspiration
+
+<Feature level="1">
+
+## Bardic Inspiration
 
 As a **Minor Action**, inspire a creature within **[= 12 stride =]** who can see or hear you. That creature gains a **Bardic Inspiration die (d6)**.
 
@@ -107,10 +96,15 @@ You regain all uses when you finish a [# kw:Recovery #].
 | 10–14      | d10      |
 | 15–20      | d12      |
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 1st Level – Spellcasting
+
+<Feature level="1">
+
+## Spellcasting
 
 You have learned to cast spells using bardic arts.
 
@@ -143,29 +137,44 @@ You regain all expended slots after a [# kw:Recovery #].
 
 You may change your prepared spells when you gain a **Bard level**.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 2nd Level – Expertise
+
+<Feature level="2">
+
+## Expertise
 
 Choose **two skill proficiencies**. Your **Tier Bonus is doubled** for these.
 
 At **9th level**, choose **two additional skills** to gain Expertise.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 2nd Level – Jack of All Trades
+
+<Feature level="2">
+
+## Jack of All Trades
 
 You have **Familiarity** with ability checks that:
 
 - Use a skill in which you are **not proficient**, and
 - Do not otherwise use your Tier Bonus.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 3rd Level – Tale
+
+<Feature level="3">
+
+## Tale
 
 Choose a Bard Tale:
 
@@ -177,37 +186,57 @@ Choose a Bard Tale:
 | [Myth](/en/library/character-creation/vocations/bard/myth)                 |
 | [Threadripper](/en/library/character-creation/vocations/bard/threadripper) |
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 4th Level – Ability Score Improvement
+
+<Feature level="4">
+
+## Feat
 
 Gain the **[Ability Score Improvement feat](/en/library/character-creation/feats/ability-score-improvement)** or another **[feat of your choice](/en/library/character-creation/feats)**.
 
 Repeat at **8th, 12th, and 16th level**.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 5th Level – Font of Inspiration
+
+<Feature level="5">
+
+## Font of Inspiration
 
 - You regain **all uses of Bardic Inspiration on a [# kw:Repose #] or [# kw:Recovery #]**.
 - You can expend a **spell slot** to regain one use of Bardic Inspiration.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 7th Level – Countercharm
+
+<Feature level="7">
+
+## Countercharm
 
 When you or a creature within **[= 6 stride =]** fails a saving throw against being **[# kw:condition:Charmed #] or [# kw:condition:Frightened #]**, you can use your **Reaction** to:
 
 - **Reroll the saving throw**,
 - The new roll has **Advantage**.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 10th Level – Magical Secrets
+
+<Feature level="10">
+
+## Magical Secrets
 
 When you gain a level where your **Prepared Spells** increase, you may choose spells from the:
 
@@ -216,32 +245,49 @@ When you gain a level where your **Prepared Spells** increase, you may choose sp
 
 You may replace spells from these lists when you change your prepared spells.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 18th Level – Superior Inspiration
+
+<Feature level="18">
+
+## Superior Inspiration
 
 When you **roll Initiative**, if you have fewer than **two uses** of Bardic Inspiration remaining, you regain uses until you have two.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 19th Level – Epic Boon
+
+<Feature level="19">
+
+## Epic Boon
 
 Gain an **[Epic Boon feat](/en/library/character-creation/feats)** or another feat of your choice.
 
 **[Boon of Spell Recall](/en/library/character-creation/feats/boon-of-spell-recall)** is recommended.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 20th Level – Words of Creation
 
-You always have the following spells prepared:
+<Feature level="20">
+
+## Words of Creation
 
 - **[Power Word: Heal](/en/library/spells/heal)**
 - **[Power Word: Kill](/en/library/spells/thought-of-oblivion)**
 
 When you cast either spell, you may **target a second creature within [= 2 stride =]** of the first target.
 
+</Feature>
+
 </Collapsible>
+
+</Vocation>

@@ -7,60 +7,86 @@ contentType: monsters
 
 <BlendedImage src='/library/images/Otokrates.webp' alt='Otokrates Mieskarion' />
 
-_Medium Humanoid (Human), Chaotic Neutral_
-
-| **Armor Class** | **Hit Points** | **Speed**                                                                                                              |
-| --------------- | -------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| 14 (no armor)   | 99 (level 9)   | [= 6 stride =] ([_Ashardalon’s Stride_](/en/library/spells/flame-stride) always active: +[= 4 stride =], no opportunity attacks, [% 1d6 fire %] to adjacent creatures once/turn) |
-
-| **STR** | **DEX** | **CON** | **INT** | **WIS** | **CHA** |
-| ------- | ------- | ------- | ------- | ------- | ------- |
-| 10 (+0) | 14 (+2) | 16 (+3) | 12 (+1) | 20 (+5) | 8 (–1)  |
-
-- **Saving Throws**: Wis +8, Con +6
-- **Skills**: Religion +4, Arcana +3
-- **Damage Immunities**: Fire
-- **Languages**: Common, Empyrean
-- **Challenge**: 8 (3,900 XP)
-- **Tier Bonus**: +3
+<Monster
+  size="Medium"
+  type="Humanoid (Human)"
+  alignment="Chaotic Neutral"
+  armorClass="14 (no armor)"
+  hitPoints="99 (level 9)"
+  speed="[= 6 stride =] ([_Ashardalon’s Stride_](/en/library/spells/flame-stride) always active: +[= 4 stride =], no opportunity attacks, [% 1d6 fire %] to adjacent creatures once/turn)"
+  str="10"
+  dex="14"
+  con="16"
+  int="12"
+  wis="20"
+  cha="8"
+  saves="Wis +8, Con +6"
+  skills="Religion +4, Arcana +3"
+  immunities="Fire"
+  languages="Common, Empyrean"
+  challenge="8"
+  xp="3,900"
+  saveDc="15">
 
 ---
 
 ## Traits
 
+<Trait>
+
 #### Ant Rider
 
 Otokrates rides a [giant fire ant called Wildfire](/en/library/monsters/giant-fire-ant) as a mount.
+
+</Trait>
 
 ---
 
 ## Major Actions
 
+<Action>
+
 #### Multiattack
 
 Otokrates makes two melee weapon attacks with his **Perpetual Flameblade**.
 
-- **Perpetual Flameblade**
-  Accuracy +8, reach [= 1 stride =], one creature.  
-  On a hit, 11 ([% 3d6 fire %]). This weapon is always active and is treated as magical.
+<Attack accuracy="+8" reach="[= 1 stride =]">
+
+##### Perpetual Flameblade
+
+On a hit, 11 ([% 3d6 fire %]). This weapon is always active and is treated as magical.
+
+</Attack>
+
+</Action>
 
 ---
 
+<Action>
+
 #### Spellcasting
 
-Otokrates is a **9th-level Pilgrim**. His spellcasting ability is **Wisdom** (spell save DC 15, accuracy +7 with spell attacks). He has the following spells prepared:
+Otokrates is a **9th-level Pilgrim**. His spellcasting ability is **Wisdom** (accuracy +7 with spell attacks).
 
-- **Cantrips (at will)**: [_Judgement_](/en/library/spells/judgement), [_Dancing Lights_](/en/library/spells/dancing-lights)
-- **1st-level (4 slots)**: [_Burning Hands_](/en/library/spells/burning-hands), [_Shield of Faith_](/en/library/spells/shield-of-faith)
-- **2nd-level (3 slots)**: [_Heat Metal_](/en/library/spells/heat-metal), [_Hold_](/en/library/spells/hold)
-- **3rd-level (3 slots)**: [_Pyroblast_](/en/library/spells/pyroblast), [_Dawn_](/en/library/spells/dawn)
-- **4th-level (3 slots)**: [_Burning Barrier_](/en/library/spells/burning-barrier)
-- **5th-level (1 slot)**: [_Flame Strike_](/en/library/spells/flame-strike)
+- **Cantrips**: [_Judgement_](/en/library/spells/judgement), [_Dancing Lights_](/en/library/spells/dancing-lights)
+- **1st-level**: [_Burning Hands_](/en/library/spells/burning-hands), [_Shield of Faith_](/en/library/spells/shield-of-faith)
+- **2nd-level**: [_Heat Metal_](/en/library/spells/heat-metal), [_Hold_](/en/library/spells/hold)
+- **3rd-level**: [_Pyroblast_](/en/library/spells/pyroblast), [_Dawn_](/en/library/spells/dawn)
+- **4th-level**: [_Burning Barrier_](/en/library/spells/burning-barrier)
+- **5th-level**: [_Flame Strike_](/en/library/spells/flame-strike)
+
+</Action>
 
 ---
 
 ## Reactions
 
+<Action cost="1 Reaction">
+
 #### Bloodlash Rebuke
 
 When Otokrates is hit by a melee weapon attack, he may cast [_Bloodlash Rebuke_](/en/library/spells/bloodlash-rebuke) as a reaction. The attacker takes 11 ([% 2d10 fire %]) and saves Strength against DC 15 or is **pushed [= 2 stride =] away**.
+
+</Action>
+
+</Monster>

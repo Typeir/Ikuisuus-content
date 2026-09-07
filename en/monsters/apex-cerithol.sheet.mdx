@@ -5,8 +5,6 @@ contentType: monsters
 
 # Apex Cerithol Lunam
 
-_Large Monstrosity, Unaligned_
-
 <BlendedImage
   src='/library/images/monsters/apex-cerithol.webp'
   alt='Apex Cerithol'
@@ -14,38 +12,57 @@ _Large Monstrosity, Unaligned_
 
 **Apex Cerithol Lunami** are enlarged, ancient [_Cerithols_](/en/library/monsters/cerithol). Creatures that have vastly outpaced and outlived their biological design, their innards now barely contained within their fleshy core, their tentacular network so vast any somatic gesture is but a mere reflex to them. They are called "Apex" and not "Ancient" for a reason; few casters are as fierce as them.
 
-| **Armor Class**        | **Hit Points**         | **Speed**            |
-| ---------------------- | ---------------------- | -------------------- |
-| 25 (closed), 20 (open) | 425 ([% 30d10 +230 %]) | [= 6 stride =], climb [= 6 stride =] |
-
-| **STR** | **DEX** | **CON** | **INT** | **WIS** | **CHA** |
-| ------- | ------- | ------- | ------- | ------- | ------- |
-| 24 (+7) | 12 (+1) | 28 (+9) | 26 (+8) | 20 (+5) | 14 (+2) |
-
-- **Saving Throws**: Con +16, Wis +12, Cha +9
-- **Damage Resistances**: Force, Dark, Frost, Chemical, Psychic
-- **Damage Immunities**: Poison
-- **Condition Immunities**: [# kw:condition:Poisoned #], [# kw:condition:Prone #]
-- **Senses**: Blindsight [= 12 stride =], Tremorsense [= 24 stride =], Passive Perception 18
-- **Languages**: Ancient Empyrean
-- **Challenge**: 20 (80,000 XP)
-- **Tier Bonus**: +7
+<Monster
+  size="Large"
+  type="Monstrosity"
+  alignment="Unaligned"
+  armorClass="25 (closed), 20 (open)"
+  hitPoints="425 ([% 30d10 +230 %])"
+  speed="[= 6 stride =], climb [= 6 stride =]"
+  str="24"
+  dex="12"
+  con="28"
+  int="26"
+  wis="20"
+  cha="14"
+  saves="Con +16, Wis +12, Cha +9"
+  resistances="Force, Dark, Frost, Chemical, Psychic"
+  immunities="Poison"
+  conditionImmunities="[# kw:condition:Poisoned #], [# kw:condition:Prone #]"
+  senses="Blindsight [= 12 stride =], Tremorsense [= 24 stride =], Passive Perception 18"
+  languages="Ancient Empyrean"
+  challenge="22"
+  xp="41,000">
 
 ---
 
 ## Traits
 
+<Trait>
+
 #### Legendary Deeds
 
 The Apex Cerithol Lunam has **1 legendary deed per round**, and regains all expended deeds at the start of its turn.
+
+</Trait>
+
+<Trait>
 
 #### Lunar Vessel
 
 While closed, the Apex Cerithol Lunam cannot cast spells but gains a +5 bonus to AC and is immune to being [# kw:condition:charmed #] or [# kw:condition:stunned #].
 
-#### Open Form (Minor Action)
+</Trait>
+
+<Trait cost="1 Minor Action">
+
+#### Open Form
 
 The Apex Cerithol opens fully, revealing its vasculomuscular system. It loses the AC bonus from **Lunar Vessel**, but gains access to its _Pseudopod Surge_ attack and spellcasting above 3rd level.
+
+</Trait>
+
+<Trait>
 
 #### Mind Mastery
 
@@ -60,6 +77,10 @@ Apex Cerithols have several lesser ganglia to operate their multiple limbs and c
 
 - When subjected to a concentration saving throw, only one of these three concentrations is affected, chosen by them.
 
+</Trait>
+
+<Trait>
+
 #### Spell Point Casting
 
 - The Apex Cerithol has **150 spell points**
@@ -69,55 +90,51 @@ Apex Cerithols have several lesser ganglia to operate their multiple limbs and c
 
 - **Save DC**: 25 | **Spell attack modifier**: +17
 
-| Spell                                                                 | Cost    |
-| --------------------------------------------------------------------- | ------- |
-| [_Omen_](/en/library/spells/omen)                                     | At Will |
-| [_Chill_](/en/library/spells/chill)                                   | At Will |
-| [_Envenom_](/en/library/spells/envenom)                               | At Will |
-| [_Psychic Link_](/en/library/spells/psychic-link)                       | At Will |
-| [_Ray of Sickness_](/en/library/spells/ray-of-sickness)               | 1       |
-| [_Cause Fear_](/en/library/spells/cause-fear)                         | 1       |
-| [_Bloodlash Rebuke_](/en/library/spells/bloodlash-rebuke)             | 1       |
-| [_Misty Step_](/en/library/spells/misty-step)                         | 2       |
-| [_Shatter_](/en/library/spells/shatter)                               | 2       |
-| [_Objection_](/en/library/spells/objection)                           | 3       |
-| [_Black Forest_](/en/library/spells/black-forest)                     | 3       |
-| [_Semblance of Päivämies_](/en/library/spells/semblance-of-paivamies) | 4       |
-| [_Shadow Of The Hunt_](/en/library/spells/shadow-of-the-hunt)         | 4       |
-| [_Perfect Barrier_](/en/library/spells/perfect-barrier)               | 5       |
-| [_Cloudkill_](/en/library/spells/cloudkill)                           | 5       |
-| [_Mind Blast_](/en/library/spells/mind-blast)                         | 5       |
-| [_Disintegrate_](/en/library/spells/disintegrate)                     | 6       |
-| [_Sulfurous Sphere_](/en/library/spells/sulfurous-sphere)             | 6       |
-| [_Harm_](/en/library/spells/harm)                                     | 6       |
-| [_Rot-god's Caress_](/en/library/spells/rot-gods-caress)              | 7       |
-| [_Reverse Gravity_](/en/library/spells/reverse-gravity)               | 7       |
-| [_Forcecage_](/en/library/spells/forcecage)                           | 7       |
-| [_Psychic Crush_](/en/library/spells/psychic-crush)                   | 9       |
+<SpellList spells="omen, chill, envenom, psychic-link, ray-of-sickness, cause-fear, bloodlash-rebuke, misty-step, shatter, objection, black-forest, semblance-of-paivamies, shadow-of-the-hunt, perfect-barrier, cloudkill, mind-blast, disintegrate, sulfurous-sphere, harm, rot-gods-caress, reverse-gravity, forcecage, psychic-crush">
+  <Column label="Cost" values="At Will, At Will, At Will, At Will, 1, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 5, 6, 6, 6, 7, 7, 7, 9" />
+</SpellList>
+
+</Trait>
 
 ---
+
+<Trait>
 
 #### Heightened Reactions
 
 The Apex Cerithol Lunam can take up to **3 reactions per round**, but no more than one per turn.
 
+</Trait>
+
 ---
 
 ## Actions
+
+<Action>
 
 #### Multiattack
 
 The Apex Cerithol Lunam makes **three _Tentacle Whip_ attacks** or **one _Pseudopod Surge_** if open.
 
-- **Tentacle Whip.**  
-  Accuracy +18, reach [= 3 stride =], one creature.  
-  **Hit**: 32 ([% 5d10 +9 slashing %]).
+<Attack accuracy="+18" reach="[= 3 stride =]">
 
-- **Pseudopod Surge (Open Only).**  
-  Accuracy +19, reach [= 12 stride =], one creature.  
-  **Hit**: 66 ([% 8d12 +10 bludgeoning %]).  
-  The target saves Strength against DC 27 or is hurled up to **[= 24 stride =]** in a direction of the Apex Cerithol’s choosing and knocked [# kw:condition:prone #].  
-  If the target collides with a solid surface, it takes an additional **14 ([% 4d6 bludgeoning %])**.
+##### Tentacle Whip
+
+**Hit**: 32 ([% 5d10 +9 slashing %]).
+
+</Attack>
+
+<Attack accuracy="+19" reach="[= 12 stride =]">
+
+##### Pseudopod Surge (Open Only)
+
+**Hit**: 66 ([% 8d12 +10 bludgeoning %]).  
+The target saves Strength against DC 27 or is hurled up to **[= 24 stride =]** in a direction of the Apex Cerithol’s choosing and knocked [# kw:condition:prone #].  
+If the target collides with a solid surface, it takes an additional **14 ([% 4d6 bludgeoning %])**.
+
+</Attack>
+
+</Action>
 
 ## Reactions
 
@@ -132,8 +149,14 @@ The Apex Cerithol Lunam makes **three _Tentacle Whip_ attacks** or **one _Pseudo
 
 The Apex Cerithol Lunam can expend legendary deeds to use the options below. Only one legendary deed can be used at a time and only at the end of another creature's turn.
 
-#### Cantrip Volley (Costs 1 Deed)
+<Action deed="act" cost="1 Deed">
+
+#### Cantrip Volley
 
 The Apex Cerithol Lunam targets up to **10 creatures** within [= 24 stride =] that it can sense. It casts **Envenom**, **Chill**, or **Omen** on each of them as part of the same action, as a level 11 spellcaster.
 
+</Action>
+
 ---
+
+</Monster>

@@ -5,35 +5,50 @@ contentType: monsters
 
 # Great Landshark
 
-_Huge Wildlife, Unaligned_
-
-| **Armor Class**    | **Hit Points**   | **Speed**             |
-| ------------------ | ---------------- | --------------------- |
-| 17 (Natural Armor) | 102 ([% 12d12 +24 %]) | [= 8 stride =], burrow [= 6 stride =] |
-
-| **STR** | **DEX** | **CON** | **INT** | **WIS** | **CHA** |
-| ------- | ------- | ------- | ------- | ------- | ------- |
-| 22 (+6) | 10 (+0) | 15 (+2) | 2 (-4)  | 12 (+1) | 5 (-3)  |
-
-- **Senses**: Tremorsense [= 12 stride =], Passive Perception 11
-- **Languages**: --
-- **Challenge**: 7 (2,900 XP)
-- **Tier Bonus**: +3
-- **Saving Throws**: Strength +9, Constitution +5
+<Monster
+  size="Huge"
+  type="Wildlife"
+  alignment="Unaligned"
+  armorClass="17 (Natural Armor)"
+  hitPoints="102 ([% 12d12 +24 %])"
+  speed="[= 8 stride =], burrow [= 6 stride =]"
+  str="22"
+  dex="10"
+  con="15"
+  int="2"
+  wis="12"
+  cha="5"
+  senses="Tremorsense [= 12 stride =], Passive Perception 11"
+  languages="--"
+  challenge="7"
+  xp="2,900"
+  saves="Strength +9, Constitution +5">
 
 ---
 
 ## Traits
 
+<Trait>
+
 #### Legendary Deeds
 The Great Landshark has **1 legendary deed per round**, and regains all expended deeds at the start of its turn.
 
-#### Legendary Deed: Resist (1/Day)
+</Trait>
+
+<Trait charges="1/Day">
+
+#### Legendary Deed: Resist
 When the Great Landshark fails a saving throw, it can expend a legendary deed to succeed instead. This feature can be used **1 time per day**.
+
+</Trait>
+
+<Trait>
 
 #### Burrow and Ambush
 
 The Landshark can burrow underground as a Minor Action, moving up to [= 6 stride =]. If it ends this movement within [= 1 stride =] of a creature, it can make a bite attack against that creature as part of the same action.
+
+</Trait>
 
 ---
 
@@ -45,14 +60,30 @@ The Great Landshark can expend legendary deeds to use the options below. Only on
 
 ## Actions
 
+<Action>
+
 #### Multiattack
 
 The Landshark makes three attacks: one with its Bite and two with its Claws.
 
-- **Bite**
-  Accuracy +9, reach [= 1 stride =], one creature. On a hit, 22 ([% 3d10 +6 piercing %]). If the target is a creature, it is [# kw:condition:grappled #] (escape DC 17). Until this grapple ends, the target is [# kw:condition:restrained #], and the Landshark can't bite another target.
+<Attack accuracy="+9" reach="[= 1 stride =]">
 
-- **Claw**
-  Accuracy +9, reach [= 1 stride =], one creature. On a hit, 15 ([% 2d8 +6 bludgeoning %]).
+##### Bite
+
+On a hit, 22 ([% 3d10 +6 piercing %]). If the target is a creature, it is [# kw:condition:grappled #] (escape DC 17). Until this grapple ends, the target is [# kw:condition:restrained #], and the Landshark can't bite another target.
+
+</Attack>
+
+<Attack accuracy="+9" reach="[= 1 stride =]">
+
+##### Claw
+
+On a hit, 15 ([% 2d8 +6 bludgeoning %]).
+
+</Attack>
+
+</Action>
 
 ---
+
+</Monster>

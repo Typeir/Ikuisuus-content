@@ -5,32 +5,42 @@ contentType: monsters
 
 # Soul of the Brume
 
-_Medium Humanoid (Empyrean), Lawful Evil_
-
-| **Armor Class**      | **Hit Points**   | **Speed** |
-| -------------------- | ---------------- | --------- |
-| 24 (Tombsteel armor) | 270 ([% 30d8 +135 %]) | [= 6 stride =]    |
-
-| **STR** | **DEX** | **CON** | **INT** | **WIS** | **CHA** |
-| ------- | ------- | ------- | ------- | ------- | ------- |
-| 18 (+4) | 14 (+2) | 20 (+5) | 22 (+6) | 18 (+4) | 20 (+5) |
-
-- **Saving Throws**: Constitution +14, Intelligence +15, Wisdom +13, Charisma +14
-- **Skills**: Arcana +15, Religion +15, Insight +13, Perception +13
-- **Damage Resistances**: Fire, Lightning, Chemical, Holy.
-- **Condition Immunities**: [# kw:condition:Terrified #]
-- **Senses**: Darkvision [= 12 stride =], passive Perception 22
-- **Languages**: Common, Empyrean
-- **Challenge**: 23 (50,000 XP)
-- **Tier Bonus**: +8
+<Monster
+  size="Medium"
+  type="Humanoid (Empyrean)"
+  alignment="Lawful Evil"
+  armorClass="24 (Tombsteel armor)"
+  hitPoints="270 ([% 30d8 +135 %])"
+  speed="[= 6 stride =]"
+  str="18"
+  dex="14"
+  con="20"
+  int="22"
+  wis="18"
+  cha="20"
+  saves="Constitution +14, Intelligence +15, Wisdom +13, Charisma +14"
+  skills="Arcana +15, Religion +15, Insight +13, Perception +13"
+  resistances="Fire, Lightning, Chemical, Holy."
+  conditionImmunities="[# kw:condition:Terrified #]"
+  senses="Darkvision [= 12 stride =], passive Perception 22"
+  languages="Common, Empyrean"
+  challenge="23"
+  xp="50,000"
+  saveDc="23">
 
 ---
 
 ## Traits
 
+<Trait>
+
 #### Legendary Deeds
 
 Soul of the Brume has **3 legendary deeds per round**, and regains all expended deeds at the start of its turn.
+
+</Trait>
+
+<Trait>
 
 #### Entropic Sarcophagus
 
@@ -40,7 +50,11 @@ Soul of the Brume is encased in a sealed tombsteel shell designed to endure anni
 - Soul of the Brume has advantage on saving throws made to resist being pushed, pulled, or knocked [# kw:condition:prone #]
 - Soul of the Brume cannot benefit from bonuses to movement speed granted by mundane effects
 
+</Trait>
+
 ---
+
+<Trait>
 
 #### Grave Chill
 
@@ -50,14 +64,22 @@ When a creature hits Soul of the Brume with a melee weapon attack, the attacker 
 - Each activation consumes 1 charge
 - Charges regenerate at midnight, recovering [% 1d6 +6 %] charges
 
+</Trait>
+
 ---
+
+<Trait>
 
 #### Ferocious Rider
 
 The Soul of the Brume's mount, a Lunar Chimera, can take the Attack action even when used as a mount by Soul of the Brume.  
 While mounted, the Soul of the Brume's mount gains a +7 accuracy and damage bonus, and resistance to all damage.
 
+</Trait>
+
 ---
+
+<Trait>
 
 #### Doctrine of the Brume
 
@@ -86,11 +108,17 @@ For each other rider of the Brume within range, all riders gain the following be
 A rider’s aura is suppressed only while that rider is [# kw:condition:incapacitated #].  
 [# kw:condition:Paralyzed #], [# kw:condition:stunned #], or [# kw:condition:unconscious #] creatures do not contribute to the doctrine.
 
+</Trait>
+
 ---
+
+<Trait>
 
 #### Calculated Ascent
 
 While mounted, Soul of the Brume ignores disadvantage on attack rolls and saving throws.
+
+</Trait>
 
 ---
 
@@ -102,38 +130,49 @@ This creature rides a Lunar Chimera.
 
 ## Actions
 
+<Action>
+
 #### Multiattack
 
 Soul of the Brume makes two attacks with its Heavenpiercing Sword-Spear, and casts a cantrip, or makes one attack and casts a levelled spell.
 
+</Action>
+
 ---
 
-- **Heavenpiercing Sword-Spear**  
-  Accuracy +16, reach [= 2 stride =], one creature.  
-  Hit: 18 ([% 2d10 +7 slashing %]) plus 18 ([% 4d8 fire %]).
+<Action>
+
+#### Heavenpiercing Sword-Spear
+
+<Attack accuracy="+16" reach="[= 2 stride =]">
+
+Hit: 18 ([% 2d10 +7 slashing %]) plus 18 ([% 4d8 fire %]).
+
+</Attack>
+
+</Action>
 
 ---
 
 ## Spellcasting
 
-Soul of the Brume is a 15th-level spellcaster.  
-Its spellcasting ability is Intelligence (spell save DC 23, accuracy +15 with spell attacks).  
-It has the following spell slots: 1st (4), 2nd (3), 3rd (3), 4th (3), 5th (3), 6th (2), 7th (2), 8th (1), 9th (1).  
-Soul of the Brume has the following spells prepared:
+It has the following spell slots: 1st (4), 2nd (3), 3rd (3), 4th (3), 5th (3), 6th (2), 7th (2), 8th (1), 9th (1).
 
 - **Cantrips**: [_Pyromancy_](/en/library/spells/pyromancy), [_Arcane Sense_](/en/library/spells/arcane-sense)
 
-- **1st level (4 slots)**: [_Burning Hands_](/en/library/spells/burning-hands), [_Shield_](/en/library/spells/shield), [_Chromatic Capture_](/en/library/spells/chromatic-capture)
-- **2nd level (3 slots)**: [_Scorching Ray_](/en/library/spells/scorching-ray), [_Hold_](/en/library/spells/hold), [_Cystbolt_](/en/library/spells/cystbolt)
-- **3rd level (3 slots)**: [_Pyroblast_](/en/library/spells/pyroblast), [_Fear_](/en/library/spells/fear), [_Sulfurous Sphere_](/en/library/spells/sulfurous-sphere)
-- **4th level (3 slots)**: [_Excision_](/en/library/spells/excision), [_Burning Barrier_](/en/library/spells/burning-barrier)
-- **5th level (3 slots)**: [_Immolation_](/en/library/spells/immolation), [_Flame Strike_](/en/library/spells/flame-strike), [_Blinding Barrier_](/en/library/spells/blinding-barrier)
-- **6th level (2 slots)**: [_Sunbeam_](/en/library/spells/sunbeam), [_Disintegrate_](/en/library/spells/disintegrate)
-- **7th level (2 slots)**: [_Reverse Gravity_](/en/library/spells/reverse-gravity)
+- **1st level**: [_Burning Hands_](/en/library/spells/burning-hands), [_Shield_](/en/library/spells/shield), [_Chromatic Capture_](/en/library/spells/chromatic-capture)
+- **2nd level**: [_Scorching Ray_](/en/library/spells/scorching-ray), [_Hold_](/en/library/spells/hold), [_Cystbolt_](/en/library/spells/cystbolt)
+- **3rd level**: [_Pyroblast_](/en/library/spells/pyroblast), [_Fear_](/en/library/spells/fear), [_Sulfurous Sphere_](/en/library/spells/sulfurous-sphere)
+- **4th level**: [_Excision_](/en/library/spells/excision), [_Burning Barrier_](/en/library/spells/burning-barrier)
+- **5th level**: [_Immolation_](/en/library/spells/immolation), [_Flame Strike_](/en/library/spells/flame-strike), [_Blinding Barrier_](/en/library/spells/blinding-barrier)
+- **6th level**: [_Sunbeam_](/en/library/spells/sunbeam), [_Disintegrate_](/en/library/spells/disintegrate)
+- **7th level**: [_Reverse Gravity_](/en/library/spells/reverse-gravity)
 
 ---
 
 ## Legendary Deed: Stratagem
+
+<Action deed="stratagem">
 
 #### Scala ad Infernum
 
@@ -149,6 +188,8 @@ The staircase stays as an obscuring, light emitting pillar of fire until the end
 It sheds bright light in a [= 12 stride;ADJ =] radius and dim light for an additional [= 12 stride =].
 When the pillar ends, all creatures on top of it fall to the ground below.
 Damage from this fall is fire damage instead of bludgeoning.
+
+</Action>
 
 ---
 
@@ -169,6 +210,8 @@ Soul of the Brume can expend legendary deeds to use the options below. Only one 
 
 ## Legendary Deed: Phase
 
+<Action deed="phase">
+
 #### Bloodied (50% HP)
 
 While Soul of the Brume is bloodied and not [# kw:condition:incapacitated #]:
@@ -178,3 +221,7 @@ While Soul of the Brume is bloodied and not [# kw:condition:incapacitated #]:
 - Every time the soul of the brume inflicts damage, they also inflict the [# kw:condition:Burning #] condition.
 
 If Soul of the Brume becomes [# kw:condition:incapacitated #], these benefits end immediately.
+
+</Action>
+
+</Monster>

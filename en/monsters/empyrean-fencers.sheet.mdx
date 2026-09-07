@@ -10,76 +10,140 @@ contentType: monsters
   alt='Athanasios'
 />
 
-_Medium Humanoid (Empyrean), Neutral Evil_
-
-| **Armor Class** | **Hit Points**  | **Speed** |
-| --------------- | --------------- | --------- |
-| 17 (Half Palte) | 120 ([% 10d8 +80 %]) | [= 6 stride =]    |
-
-| **STR** | **DEX** | **CON** | **INT** | **WIS** | **CHA** |
-| ------- | ------- | ------- | ------- | ------- | ------- |
-| 26 (+8) | 18 (+4) | 20 (+5) | 14 (+2) | 12 (+1) | 16 (+3) |
-
-- **Saving Throws**: Str +8, Dex +5, Con +7
-- **Skills**: Athletics +8, Perception +5, Intimidation +7
-- **Damage Resistances**: Frost, Lightning
-- **Condition Immunities**: [# kw:condition:Terrified #]
-- **Senses**: Darkvision [= 12 stride =], passive Perception 16
-- **Languages**: Common, Empyrean
-- **Challenge**: 8 (7,200 XP)
-- **Tier Bonus**: +3
+<Monster
+  size="Medium"
+  type="Humanoid (Empyrean)"
+  alignment="Neutral Evil"
+  armorClass="17 (Half Palte)"
+  hitPoints="120 ([% 10d8 +80 %])"
+  speed="[= 6 stride =]"
+  str="26"
+  dex="18"
+  con="20"
+  int="14"
+  wis="12"
+  cha="16"
+  saves="Str +8, Dex +5, Con +7"
+  skills="Athletics +8, Perception +5, Intimidation +7"
+  resistances="Frost, Lightning"
+  conditionImmunities="[# kw:condition:Terrified #]"
+  senses="Darkvision [= 12 stride =], passive Perception 16"
+  languages="Common, Empyrean"
+  challenge="8"
+  xp="3,900">
 
 ---
 
 ## Traits
 
+<Trait>
+
 #### Legendary Deeds
 
 The Fencer of the Quiver has **3 legendary deeds per round**, and regains all expended deeds at the start of their turn.
 
-#### Legendary Deed: Resist (3/Repose)
+</Trait>
+
+<Trait charges="3/Repose">
+
+#### Legendary Deed: Resist
 
 When the Fencer fails a saving throw, they can expend a legendary deed to succeed instead. This feature can be used **3 times per [# kw:Repose #]**.
+
+</Trait>
+
+<Trait>
 
 #### Mighty Strength
 
 The Fencer can wield heavy weapons as if they had the light property.
 
+</Trait>
+
+<Trait>
+
 #### Replica Quiver
 
 The Fencer can throw one of their greatswords as a ranged weapon with a 20/40 range. The sword breaks upon hitting or missing, dealing [% 2d8 slashing %] and [% 2d6 bludgeoning %] if it hits. The swords are considered magical for overcoming resistances.
+
+</Trait>
+
+<Trait>
 
 #### Regeneration
 
 The Fencer regains 10 hit points at the start of their turn unless they are in contact with radiant energy.
 
+</Trait>
+
+<Trait>
+
 #### Fatebound Fencers
 
 While within [= 12 stride =] of their partner (Fencer of the Épée), the Fencer ignores the negative effects of **Mighty Armament** and gains resistance to all damage from thrown weapons.
+
+</Trait>
 
 ---
 
 ## Actions
 
+<Action cost="1 Major Action">
+
 #### Multiattack
 
 The Fencer makes two attacks with their **Thrown Greatswords**.
 
-- **Thrown Greatsword.** Accuracy +9, range [= 4 stride =]/[= 8 stride =], one creature. On a hit, 11 ([% 2d8 +6 slashing %]) plus 7 ([% 2d6 bludgeoning %]). The sword breaks upon impact.
-- **Thunderous Hurl (Recharge 5–6).** The Fencer throws a greatsword in a line [= 12 stride =] long and [= 1 stride =] wide. Each creature in the line saves Dexterity against DC 15, halving [% 4d8 slashing %] and [% 4d6 lightning %]. The sword then explodes with thunderous force, dealing [% 4d6 bludgeoning %] to all creatures within [= 2 stride =] of the target.
+<Attack accuracy="+9" range="[= 4 stride =]/[= 8 stride =]">
+
+##### Thrown Greatsword
+
+On a hit, 11 ([% 2d8 +6 slashing %]) plus 7 ([% 2d6 bludgeoning %]). The sword breaks upon impact.
+
+</Attack>
+
+##### Thunderous Hurl (Recharge 5–6)
+
+The Fencer throws a greatsword in a line [= 12 stride =] long and [= 1 stride =] wide. Each creature in the line saves Dexterity against DC 15, halving [% 4d8 slashing %] and [% 4d6 lightning %]. The sword then explodes with thunderous force, dealing [% 4d6 bludgeoning %] to all creatures within [= 2 stride =] of the target.
+
+</Action>
 
 ---
 
 ## Legendary Deed: Act
 
+<Action deed="act">
+
 The Fencer of the Quiver can expend legendary deeds to use the options below. Only one legendary deed can be used at a time and only at the end of another creature's turn.
 
-- **Call Lightning.** (Costs 1 Deed) The Fencer casts [_Call Lightning_](/en/library/spells/call-lightning) as described below:
+<Action cost="1 Deed">
+
+##### Call Lightning
+
+The Fencer casts [_Call Lightning_](/en/library/spells/call-lightning) as described below:
   - A storm cloud appears [= 20 stride =] above, centered on a point the Fencer can see within [= 24 stride =]. A bolt of lightning strikes down at a point the Fencer chooses. Each creature within [= 1 stride =] of that point saves Dexterity against DC 15, halving [% 3d10 lightning %].
 
-- **Move.** (Costs 1 Deed) The Fencer moves up to their speed without provoking opportunity attacks.
+</Action>
 
-- **Hurl to Partner.** (Costs 2 Deeds) The Fencer hurls a greatsword toward their partner, the **Fencer of the Épée**. The Fencer of the Épée may use their reaction to automatically deflect the greatsword and send it flying toward a target within [= 6 stride =], forcing the target to save Dexterity against DC 16 or take [% 2d8 slashing %] and [% 2d6 bludgeoning %]. The sword breaks after this deflection.
+<Action cost="1 Deed">
+
+##### Move
+
+The Fencer moves up to their speed without provoking opportunity attacks.
+
+</Action>
+
+<Action cost="2 Deeds">
+
+##### Hurl to Partner
+
+The Fencer hurls a greatsword toward their partner, the **Fencer of the Épée**. The Fencer of the Épée may use their reaction to automatically deflect the greatsword and send it flying toward a target within [= 6 stride =], forcing the target to save Dexterity against DC 16 or take [% 2d8 slashing %] and [% 2d6 bludgeoning %]. The sword breaks after this deflection.
+
+</Action>
+
+</Action>
+
+</Monster>
 
 ---
 
@@ -90,61 +154,116 @@ The Fencer of the Quiver can expend legendary deeds to use the options below. On
   alt='Hoplomachia'
 />
 
-_Medium Humanoid (Empyrean), Neutral Evil_
-
-| **Armor Class**            | **Hit Points** | **Speed** |
-| -------------------------- | -------------- | --------- |
-| 21 (Half Plate +1, shield) | 90 ([% 12d8 +60 %]) | [= 7 stride =]    |
-
-| STR     | DEX     | CON     | INT     | WIS     | CHA     |
-| ------- | ------- | ------- | ------- | ------- | ------- |
-| 20 (+5) | 26 (+8) | 18 (+4) | 14 (+2) | 16 (+3) | 14 (+2) |
-
-- **Saving Throws**: Dex +7, Con +7, Wis +5
-- **Skills**: Acrobatics +7, Deception +7, Perception +5
-- **Damage Resistances**: Frost, Lightning
-- **Condition Immunities**: [# kw:condition:Terrified #]
-- **Senses**: Darkvision [= 12 stride =], passive Perception 16
-- **Languages**: Common, Empyrean
-- **Challenge**: 8 (7,200 XP)
-- **Tier Bonus**: +4
+<Monster
+  size="Medium"
+  type="Humanoid (Empyrean)"
+  alignment="Neutral Evil"
+  armorClass="21 (Half Plate +1, shield)"
+  hitPoints="90 ([% 12d8 +60 %])"
+  speed="[= 7 stride =]"
+  str="20"
+  dex="26"
+  con="18"
+  int="14"
+  wis="16"
+  cha="14"
+  saves="Dex +7, Con +7, Wis +5"
+  skills="Acrobatics +7, Deception +7, Perception +5"
+  resistances="Frost, Lightning"
+  conditionImmunities="[# kw:condition:Terrified #]"
+  senses="Darkvision [= 12 stride =], passive Perception 16"
+  languages="Common, Empyrean"
+  challenge="8"
+  xp="3,900">
 
 ---
 
 ## Traits
 
+<Trait>
+
 #### Legendary Deeds
 
 The Fencer of the Épée has **3 legendary deeds per round**, and regains all expended deeds at the start of their turn.
+
+</Trait>
+
+<Trait>
 
 #### Deflect
 
 When a melee or ranged attack is made against the Fencer, but before the result is known, the Fencer can use their reaction to force the attacker to reroll. On a failed melee attack against them, they can make a retaliatory attack and step [= 1 stride =] away without provoking opportunity attacks.
 
+</Trait>
+
+<Trait>
+
 #### Fatebound Fencers
 
 While within [= 12 stride =] of their partner (Fencer of the Quiver), the Fencer ignores the negative effects of **Mighty Armament** and gains immunity to damage from thrown weapons.
+
+</Trait>
+
+<Trait>
 
 #### Shining Spark
 
 The Fencer's **Great Épée** can automatically deflect any thrown greatswords from their partner without rolling.
 
+</Trait>
+
 ---
 
 ## Actions
+
+<Action cost="1 Major Action">
 
 #### Multiattack
 
 The Fencer makes two attacks with their **Great Épée**.
 
-- **Great Épée.** Accuracy +9, reach [= 1 stride =], one creature. On a hit, 13 ([% 2d8 +6 piercing %]). The target saves Constitution against DC 15 or is [# kw:condition:paralyzed #] for 1 minute. The target can [# kw:resist #] at the end of each of its turns.
+<Attack accuracy="+9" reach="[= 1 stride =]">
+
+##### Great Épée
+
+On a hit, 13 ([% 2d8 +6 piercing %]). The target saves Constitution against DC 15 or is [# kw:condition:paralyzed #] for 1 minute. The target can [# kw:resist #] at the end of each of its turns.
+
+</Attack>
+
+</Action>
 
 ---
 
 ## Legendary Deed: Act
 
+<Action deed="act">
+
 The Fencer of the Épée can expend legendary deeds to use the options below. Only one legendary deed can be used at a time and only at the end of another creature's turn.
 
-- **Attack.** (Costs 1 Deed) The Fencer makes one attack with their **Great Épée**.
-- **Parry.** (Costs 1 Deed) The Fencer adds +3 to their AC until the next melee attack that would hit them.
-- **Move.** (Costs 1 Deed) The Fencer moves up to their speed without provoking opportunity attacks.
+<Action cost="1 Deed">
+
+##### Attack
+
+The Fencer makes one attack with their **Great Épée**.
+
+</Action>
+
+<Action cost="1 Deed">
+
+##### Parry
+
+The Fencer adds +3 to their AC until the next melee attack that would hit them.
+
+</Action>
+
+<Action cost="1 Deed">
+
+##### Move
+
+The Fencer moves up to their speed without provoking opportunity attacks.
+
+</Action>
+
+</Action>
+
+</Monster>

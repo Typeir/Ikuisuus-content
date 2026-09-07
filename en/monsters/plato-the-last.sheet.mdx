@@ -5,31 +5,41 @@ contentType: monsters
 
 # Plato the Last
 
-_Medium Humanoid (Empyrean), Lawful Neutral_
-
-| **Armor Class** | **Hit Points**       | **Speed**      |
-| --------------- | -------------------- | -------------- |
-| 12              | 180 ([% 24d8 +72 %]) | [= 6 stride =] |
-
-| **STR** | **DEX** | **CON** | **INT** | **WIS** | **CHA** |
-| ------- | ------- | ------- | ------- | ------- | ------- |
-| 10 (+0) | 12 (+1) | 18 (+4) | 24 (+7) | 20 (+5) | 14 (+2) |
-
-- **Saving Throws**: Intelligence +17, Wisdom +15
-- **Damage Resistances**: Force, Holy
-- **Condition Immunities**: [# kw:condition:Petrified #], [# kw:condition:Terrified #]
-- **Senses**: Truesight [= 24 stride =], passive Perception 15
-- **Languages**: Common, Empyrean, Hidden
-- **Challenge**: 30 (155,000 XP)
-- **Tier Bonus**: +10
+<Monster
+  size="Medium"
+  type="Humanoid (Empyrean)"
+  alignment="Lawful Neutral"
+  armorClass="12"
+  hitPoints="180 ([% 24d8 +72 %])"
+  speed="[= 6 stride =]"
+  str="10"
+  dex="12"
+  con="18"
+  int="24"
+  wis="20"
+  cha="14"
+  saves="Intelligence +17, Wisdom +15"
+  resistances="Force, Holy"
+  conditionImmunities="[# kw:condition:Petrified #], [# kw:condition:Terrified #]"
+  senses="Truesight [= 24 stride =], passive Perception 15"
+  languages="Common, Empyrean, Hidden"
+  challenge="30"
+  xp="245,000"
+  saveDc="28">
 
 ---
 
 ## Traits
 
+<Trait>
+
 #### Legendary Deeds
 
 Plato has **3 legendary deeds per round**, and regains all expended deeds at the start of his turn.
+
+</Trait>
+
+<Trait>
 
 #### Bound Reflex
 
@@ -39,7 +49,11 @@ Every time Plato is **targeted by an attack**, before the attack roll is resolve
 - These temporary hit points **stack with themselves**.
 - The effect triggers even if the attack is later redirected, negated, or absorbed.
 
+</Trait>
+
 ---
+
+<Trait>
 
 #### Bound Will
 
@@ -48,7 +62,11 @@ Every time Plato is **subjected to a saving throw**, before rolling, Plato gains
 - This applies even if the effect deals no damage.
 - This applies even if the saving throw is automatically successful or negated.
 
+</Trait>
+
 ---
+
+<Trait>
 
 #### Homuncular Retinue
 
@@ -58,9 +76,13 @@ Additional homunculi may be introduced by Battlefield or Lair effects.
 - Each homunculus can use **one reaction per round** to protect Plato.
 - If Plato would take damage, a homunculus may take that damage instead.
 
+</Trait>
+
 ---
 
-#### Reprise of the First (1/Repose)
+<Trait charges="1/Repose">
+
+#### Reprise of the First
 
 When Plato casts a spell of **1st level or higher**, he may mark it for reprise.
 
@@ -73,15 +95,16 @@ At any point before the end of the encounter, Plato may invoke **Reprise of the 
 
 Once used, this trait cannot be used again.
 
+</Trait>
+
 ---
 
 ## Spellcasting
 
-Plato the Last is a **30th-level spellcaster**. He has the following spell slots:  
+He has the following spell slots:  
 1st (4), 2nd (3), 3rd (3), 4th (3), 5th (3), 6th (2), 7th (2), 8th (1), 9th (1), 12th (1).
 
 His spellcasting ability is **Intelligence** (spell save DC **28**, +**20** to hit with spell attacks).  
-He does not require material components.  
 He has the following spells prepared:
 
 - **Cantrips**:  
@@ -89,44 +112,44 @@ He has the following spells prepared:
   [_Psychic Link_](/en/library/spells/psychic-link),  
   _Message_
 
-- **1st level (4 slots)**:  
+- **1st level**:  
   [_Shield_](/en/library/spells/shield),  
   [_Command_](/en/library/spells/command),  
   [_Arcane Sense_](/en/library/spells/arcane-sense),
   [_Chromatic Capture_](/en/library/spells/chromatic-capture)
 
-- **2nd level (3 slots)**:  
+- **2nd level**:  
   [_Hold_](/en/library/spells/hold),  
   [_Psychic Nail_](/en/library/spells/psychic-nail),  
   [_Entangle (Lattice)_](/en/library/spells/entangle)
 
-- **3rd level (3 slots)**:  
+- **3rd level**:  
   [_Objection_](/en/library/spells/objection),  
   [_Slow_](/en/library/spells/slow),  
   [_Hypnotic Pattern_](/en/library/spells/hypnotic-pattern)
 
-- **4th level (3 slots)**:  
+- **4th level**:  
   [_Banishment_](/en/library/spells/banishment),  
   [_Gravity Collapse_](/en/library/spells/gravity-collapse)
 
-- **5th level (3 slots)**:  
+- **5th level**:  
   [_Perfect Barrier_](/en/library/spells/perfect-barrier),  
   [_Hold_](/en/library/spells/hold)
 
-- **6th level (2 slots)**:  
+- **6th level**:  
   [_Forcecage_](/en/library/spells/forcecage),  
   [_Suggestion_](/en/library/spells/suggestion)
 
-- **7th level (2 slots)**:  
+- **7th level**:  
   [_Reverse Gravity_](/en/library/spells/reverse-gravity)
 
-- **8th level (1 slot)**:  
+- **8th level**:  
   [_Lost in the Muck_](/en/library/spells/lost-in-the-muck)
 
-- **9th level (1 slot)**:  
+- **9th level**:  
   [_Imprisonment_](/en/library/spells/imprisonment)
 
-- **12th level (1 slot)**:  
+- **12th level**:  
   [_Gaol_](/en/library/spells/gaol)
 
 #### Perfect Reactions
@@ -137,11 +160,17 @@ Plato gains a reaction at the start of each creature's turn if he has none left.
 
 ## Actions
 
+<Action>
+
 #### Fracture Command
 
 Plato targets one creature he can see within [= 24 stride =].
 
 The target saves Wisdom against DC 25 or is **[# kw:condition:restrained #]** [# kw:briefly #].
+
+</Action>
+
+<Action>
 
 #### Ambition's end
 
@@ -150,6 +179,8 @@ Plato can only use this if within **[= 1 league =]** of [_War Goddess Yskeia_](/
 Plato strikes an object with a lance made of pure Arkhé, if the object is of a quality lesser than legendary, it is destroyed instantly, or up to [= 200 volume =] or [= 200 burden =] of it are.
 If the object is magical, it takes 100 force damage. If the object has any modifiers to hit or AC, they lose [% 1d4 +1 %] of those modifiers until repaired.
 Plato does not roll to hit with this attack, for it is fated.
+
+</Action>
 
 ---
 
@@ -170,6 +201,8 @@ Plato can expend legendary deeds to use the options below. Only one legendary de
 
 ## Legendary Deed: Stratagem
 
+<Action deed="stratagem">
+
 #### Tethered Destiny
 
 Plato marks up to **three creatures** he can see within [= 24 stride =].
@@ -177,17 +210,25 @@ Plato marks up to **three creatures** he can see within [= 24 stride =].
 At the start of Plato’s next turn, if Plato is free to use verbal components, each marked creature saves Constitution against DC 35 or is **unable to teleport, plane shift, or benefit from movement other than walking** [# kw:briefly #].
 Additionally, creatures immediately fail saving throws that cause forced movement, and their movement speed is halved.
 
+</Action>
+
 ---
 
 ## Reactions
+
+<Action cost="1 Reaction">
 
 #### Interposition
 
 When Plato would take damage or be subjected to an effect, a homunculus within [= 6 stride =] may move up to [= 4 stride =] and become the new target.
 
+</Action>
+
 ---
 
 ## Legendary Deed: Phase
+
+<Action deed="phase">
 
 #### Bloodied (50% HP)
 
@@ -197,7 +238,11 @@ From this point onward:
 
 - All of Plato's damage becomes force damage.
 
+</Action>
+
 ---
+
+<Action deed="phase">
 
 #### Doomed (25% HP)
 
@@ -208,11 +253,17 @@ Reality destabilizes around Plato.
 - Plato gains resistance to all damage.
 - All of Plato's damage rolls are true damage.
 
+</Action>
+
 ---
+
+<Action deed="phase">
 
 #### Slain
 
 When Plato is reduced to 0 hit points, he immediately casts [_Invoke Death_](/en/library/spells/invoke-death) on every creature within one mile.
+
+</Action>
 
 ---
 
@@ -289,3 +340,5 @@ When Plato is reduced to 0 hit points, he immediately casts [_Invoke Death_](/en
 > - **Will-Mend (Recharge 5–6).**  
 >   All allies of the homunculus’s creator within **[= 6 stride =]** regain **30 hit points** and may end **one** of the following conditions:
 >   **[# kw:condition:blinded #], [# kw:condition:deafened #], [# kw:condition:terrified #], or [# kw:condition:poisoned #]**
+
+</Monster>

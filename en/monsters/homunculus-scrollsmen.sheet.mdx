@@ -5,28 +5,34 @@ contentType: monsters
 
 # Scrollsman
 
-_Small Humanoid (Homunculus), Any Alignment_
-
-| **Armor Class** | **Hit Points** | **Speed** |
-| --------------- | -------------- | --------- |
-| 14              | 99 ([% 12d8 +48 %]) | [= 7 stride =]    |
-
-| **STR** | **DEX** | **CON** | **INT** | **WIS** | **CHA** |
-| ------- | ------- | ------- | ------- | ------- | ------- |
-| 8 (–1)  | 14 (+2) | 18 (+4) | 12 (+1) | 18 (+4) | 10 (+0) |
-
-- **Saving Throws**: Constitution +7, Wisdom +7
-- **Skills**: Arcana +4, Insight +7, Medicine +7
-- **Damage Resistances**: Fire
-- **Condition Immunities**: Exhaustion
-- **Senses**: Passive Perception 14
-- **Languages**: Common, plus one taught by its creator
-- **Challenge**: 8 (3,900 XP)
-- **Tier Bonus**: +3
+<Monster
+  size="Small"
+  type="Humanoid (Homunculus)"
+  alignment="Any Alignment"
+  armorClass="14"
+  hitPoints="99 ([% 12d8 +48 %])"
+  speed="[= 7 stride =]"
+  str="8"
+  dex="14"
+  con="18"
+  int="12"
+  wis="18"
+  cha="10"
+  saves="Constitution +7, Wisdom +7"
+  skills="Arcana +4, Insight +7, Medicine +7"
+  resistances="Fire"
+  conditionImmunities="Exhaustion"
+  senses="Passive Perception 14"
+  languages="Common, plus one taught by its creator"
+  challenge="8"
+  xp="3,900"
+  saveDc="15">
 
 ---
 
 ## Traits
+
+<Trait>
 
 #### Living Flame
 
@@ -39,7 +45,11 @@ The Scrollsman carries a magical flame atop its body.
 - Relighting the flame requires a [# kw:Repose #] or magical flame from a spell, item, or similar source.
 - The flame ignites flammable objects that come into contact with it.
 
+</Trait>
+
 ---
+
+<Trait>
 
 #### Wax Physiology
 
@@ -48,7 +58,11 @@ The Scrollsman is an artificial being animated by primordial wax.
 - It has **advantage on saving throws** against effects that would reduce its movement speed or inflict exhaustion.
 - This advantage does **not** apply against paralysis, petrification, or similar total incapacitation effects.
 
+</Trait>
+
 ---
+
+<Trait>
 
 #### Core Flame: Green (The Resilience of Kalmora)
 
@@ -59,13 +73,21 @@ The Scrollsman's flame burns a steady emerald, attuned to endurance and survival
 - The Scrollsman can use this trait **once per round**, and can do so **after seeing the roll but before knowing the outcome**.
 - The Scrollsman has **12 Hit Dice** (d8). Spent Hit Dice are regained after a [# kw:Repose #].
 
+</Trait>
+
 ---
+
+<Trait>
 
 #### Scroll-Bound Mind
 
 The Scrollsman was purpose-built to handle spell scrolls. It can read and use **any spell scroll** regardless of class or spell list restrictions. If the spell is of a higher level than it can normally cast, it must still succeed on the required Arcana check.
 
+</Trait>
+
 ---
+
+<Trait>
 
 #### Cartouche of Scrolls
 
@@ -80,34 +102,57 @@ As a **Minor Action**, the Scrollsman can pluck and cast one of the following sp
 
 Each spell can be cast this way **once**, and all uses are regained after a [# kw:Repose #].
 
+</Trait>
+
 ---
 
 ## Actions
+
+<Action>
 
 #### Multiattack
 
 The Scrollsman makes two **Stylus Dagger** attacks.
 
-- **Stylus Dagger.** Accuracy +5, reach [= 1 stride =], one creature.  
-  On a hit, 5 ([% 1d4 +2 piercing %]).
+<Attack accuracy="+5" reach="[= 1 stride =]">
+
+##### Stylus Dagger
+
+On a hit, 5 ([% 1d4 +2 piercing %]).
+
+</Attack>
+
+</Action>
 
 ---
 
+<Action>
+
 #### Spellcasting
 
-The Scrollsman is a **10th-level Pilgrim**. Its spellcasting ability is **Wisdom** (spell save DC **15**, +**7** to hit with spell attacks). It has the following spells prepared from its scroll collection:
+The Scrollsman is a **10th-level Pilgrim** with +**7** to hit with spell attacks.
 
-- **Cantrips (at will)**: [_Focus_](/en/library/spells/focus), [_Judgement_](/en/library/spells/judgement)- **1st level (4 slots)**: [_Bless_](/en/library/spells/bless), [_Healing Word_](/en/library/spells/healing-word), [_Shield of Faith_](/en/library/spells/shield-of-faith)
-- **2nd level (3 slots)**: [_Aid_](/en/library/spells/aid), [_Spiritual Weapon_](/en/library/spells/spiritual-weapon), [_Fraternity_](/en/library/spells/fraternity)
-- **3rd level (3 slots)**: [_Beacon of Hope_](/en/library/spells/beacon-of-hope), [_Healing Word_](/en/library/spells/healing-word)- **4th level (3 slots)**: [_Aura of Life_](/en/library/spells/aura-of-life), [_Denial_](/en/library/spells/denial), [_Freedom of Movement_](/en/library/spells/freedom-of-movement)
-- **5th level (2 slots)**: [_Dawn_](/en/library/spells/dawn), [_Restoration_](/en/library/spells/restoration)
+- **Cantrips**: [_Focus_](/en/library/spells/focus), [_Judgement_](/en/library/spells/judgement)
+- **1st level**: [_Bless_](/en/library/spells/bless), [_Healing Word_](/en/library/spells/healing-word), [_Shield of Faith_](/en/library/spells/shield-of-faith)
+- **2nd level**: [_Aid_](/en/library/spells/aid), [_Spiritual Weapon_](/en/library/spells/spiritual-weapon), [_Fraternity_](/en/library/spells/fraternity)
+- **3rd level**: [_Beacon of Hope_](/en/library/spells/beacon-of-hope), [_Healing Word_](/en/library/spells/healing-word)
+- **4th level**: [_Aura of Life_](/en/library/spells/aura-of-life), [_Denial_](/en/library/spells/denial), [_Freedom of Movement_](/en/library/spells/freedom-of-movement)
+- **5th level**: [_Dawn_](/en/library/spells/dawn), [_Restoration_](/en/library/spells/restoration)
+
+</Action>
 
 ---
 
 ## Reactions
+
+<Action cost="1 Reaction">
 
 #### Protective Lantern
 
 When a creature the Scrollsman can see targets it with an attack, it flares its flame as a reaction. The attacker saves Constitution against DC 15 or is **[# kw:condition:blinded #]** until the start of its next turn and takes **8 (2 × CON mod) fire damage**.
 
 The Scrollsman can use this reaction a number of times equal to its **tier bonus (3)**, regaining all uses after a [# kw:Recovery #].
+
+</Action>
+
+</Monster>

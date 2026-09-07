@@ -12,86 +12,125 @@ contentType: monsters
 
 A **Child of Ukkonhemmo** is a massive, kite-winged wasp-like being—one of the divine offspring of the storm god. Though their forms are monstrous, they act with serene intention. They strike only when the sacred balance is broken.
 
-_Huge Aberration, Chaotic Neutral_
-
-| **Armor Class**   | **Hit Points**  | **Speed**          |
-| ----------------- | --------------- | ------------------ |
-| 16 (storm-chitin) | 95 ([% 10d12 +30 %]) | [= 8 stride =], fly [= 12 stride =] |
-
-| **STR** | **DEX** | **CON** | **INT** | **WIS** | **CHA** |
-| ------- | ------- | ------- | ------- | ------- | ------- |
-| 25 (+7) | 14 (+2) | 16 (+3) | 8 (–1)  | 14 (+2) | 8 (–1)  |
-
-- **Saving Throws**: Str +9, Con +5
-- **Skills**: Animal Handling +5, Perception +5, Performance +4, Arcana +1
-- **Damage Resistances**: Bludgeoning
-- **Condition Immunities**: [# kw:condition:Terrified #]
-- **Senses**: Darkvision [= 12 stride =], Passive Perception 16
-- **Languages**: Common, Hidden
-- **Challenge**: 6 (2,300 XP)
-- **Tier Bonus**: +2
+<Monster
+  size="Huge"
+  type="Aberration"
+  alignment="Chaotic Neutral"
+  armorClass="16 (storm-chitin)"
+  hitPoints="95 ([% 10d12 +30 %])"
+  speed="[= 8 stride =], fly [= 12 stride =]"
+  str="25"
+  dex="14"
+  con="16"
+  int="8"
+  wis="14"
+  cha="8"
+  saves="Str +9, Con +5"
+  skills="Animal Handling +5, Perception +5, Performance +4, Arcana +1"
+  resistances="Bludgeoning"
+  conditionImmunities="[# kw:condition:Terrified #]"
+  senses="Darkvision [= 12 stride =], Passive Perception 16"
+  languages="Common, Hidden"
+  challenge="6"
+  xp="2,300">
 
 ---
 
 ## Traits
 
+<Trait>
+
 #### Children of the Winds
 
 The Child does not breathe and is unaffected by high winds or fall distance, as if under constant [_Feather Fall_](/en/library/spells/feather-fall).
+
+</Trait>
+
+<Trait>
 
 #### Protective Instinct
 
 When a creature within [= 2 stride =] is reduced to 0 HP, the Child may use its reaction to fly up to [= 6 stride =] and interpose itself between that creature and its attacker. This movement does not provoke opportunity attacks.
 
+</Trait>
+
+<Trait>
+
 #### Elemental Resilience
 
 The child **ignores resistance** to bludgeoning damage, and is resistant to it.
+
+</Trait>
+
+<Trait>
 
 #### Unnerving Mind
 
 The Child has **advantage on saving throws** against being affected by **mind-altering magic**.
 
+</Trait>
+
+<Trait>
+
 #### Innate Spellcasting
 
 It can innately cast the following spells without components or slots, each of them once per [# kw:Repose #]:
 
-- [_Arcane Sense_](/en/library/spells/arcane-sense)
-- [_Arcane Lock_](/en/library/spells/arcane-lock)
-- [_Knock_](/en/library/spells/knock)
-- [_Zone of Truth_](/en/library/spells/zone-of-truth)
-- [_Thunderwave_](/en/library/spells/thunderwave)
-- [_Echoing Strike_](/en/library/spells/echoing-strike)
-- [_Shatter_](/en/library/spells/shatter)
+<SpellList spells="arcane-sense, arcane-lock, knock, zone-of-truth, thunderwave, echoing-strike, shatter" />
+
+</Trait>
 
 ---
 
 ## Actions
 
+<Action>
+
 #### Sonic Screech
 
 (range [= 12 stride =], accuracy +4, [% 1d8 bludgeoning %], target is pushed [= 1 stride =] on hit).
+
+</Action>
+
+<Action>
 
 #### Multiattack
 
 Makes two Slam attacks.
 
-- **Slam.**  
-  Accuracy +9, reach [= 2 stride =], one creature.  
-  On a hit, 32 ([% 5d8 +7 bludgeoning %])
+<Attack accuracy="+9" reach="[= 2 stride =]">
 
-- **Divebomb.**  
-  Accuracy +9, reach [= 1 stride =], one creature.  
-  On a hit, 41 ([% 6d10 +7 bludgeoning %]) and the target is knocked **[# kw:condition:prone #]**  
-  If the target is **already [# kw:condition:prone #] or flying**, the attack deals **67 damage** and reduces its speed to **0** [# kw:briefly #]  
-  _Only usable after falling at least [= 6 stride =]._
+##### Slam
+
+On a hit, 32 ([% 5d8 +7 bludgeoning %])
+
+</Attack>
+
+<Attack accuracy="+9" reach="[= 1 stride =]">
+
+##### Divebomb
+
+On a hit, 41 ([% 6d10 +7 bludgeoning %]) and the target is knocked **[# kw:condition:prone #]**  
+If the target is **already [# kw:condition:prone #] or flying**, the attack deals **67 damage** and reduces its speed to **0** [# kw:briefly #]  
+_Only usable after falling at least [= 6 stride =]._
+
+</Attack>
 
 -   
   All creatures in a **[= 6 stride;ADJ =] cone** save Strength against DC 16 or are **pushed [= 4 stride =]**, **[# kw:condition:blinded #]**, and **knocked [# kw:condition:prone #]**.
+
+</Action>
 
 ---
 
 ## Minor Actions
 
+<Action cost="1 Minor Action">
+
 #### Wind Drift
 
 Moves up to [= 4 stride =] in any direction without provoking opportunity attacks. Must end movement in open air.
+
+</Action>
+
+</Monster>

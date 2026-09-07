@@ -7,38 +7,55 @@ contentType: monsters
 
 <BlendedImage src='/library/images/monsters/kelpybara-mount.webp' alt='Kelpy' />
 
-_Large Monstrosity, Unaligned_
-
-| **Armor Class** | **Hit Points** | **Speed** |
-| --------------- | -------------- | --------- |
-| 12              | 42 ([% 6d10 +18 %]) | [= 10 stride =]    |
-
-| **STR** | **DEX** | **CON** | **INT** | **WIS** | **CHA** |
-| ------- | ------- | ------- | ------- | ------- | ------- |
-| 17 (+3) | 8 (-1)  | 13 (+1) | 12 (+1) | 12 (+1) | 13 (+1) |
-
-- **Senses**: Passive Perception 14, darkvision [= 12 stride =]
-- **Languages**: --
-- **Challenge**: 2 (420 XP)
-- **Tier Bonus**: +1
+<Monster
+  size="Large"
+  type="Monstrosity"
+  alignment="Unaligned"
+  armorClass="12"
+  hitPoints="42 ([% 6d10 +18 %])"
+  speed="[= 10 stride =]"
+  str="17"
+  dex="8"
+  con="13"
+  int="12"
+  wis="12"
+  cha="13"
+  senses="Passive Perception 14, darkvision [= 12 stride =]"
+  languages="--"
+  challenge="1"
+  xp="200">
 
 ---
 
 ## Traits
 
+<Trait>
+
 #### Trampling Charge
 
 If the **Kelpybara** moves at least [= 4 stride =] straight toward a creature and then hits it with a **Jaws** attack, the creature becomes [# kw:condition:grappled #] unless it saves Strength against DC 13. Additionally, as a Minor Action, the **Kelpybara** can attempt to restrain the creature and itself with a grapple (contested check).
+
+</Trait>
 
 ---
 
 ## Major Actions
 
+<Action>
+
 #### Jaws
 
-Accuracy +4, reach [= 1 stride =], one creature. On a hit, 11 ([% 2d6 +4 bludgeoning %]).
+<Attack accuracy="+4" reach="[= 1 stride =]">
+
+On a hit, 11 ([% 2d6 +4 bludgeoning %]).
+
+</Attack>
+
+</Action>
 
 ---
+
+<Action>
 
 #### Spellcasting
 
@@ -47,12 +64,18 @@ The **Kelpybara** is a 4th-level Villein spellcaster. It has **two 2nd-level spe
 - **Cantrips (at will)**: _Eldritch Blast_ (as the Villein feature; accuracy +1)
 - **2nd-level (2 slots)**: [_Empty Skies_](/en/library/spells/empty-skies), [_Misty Step_](/en/library/spells/misty-step)
 
+</Action>
+
 ---
+
+<Action>
 
 #### Umbral Spellcasting
 
 While obscured or under the night sky, the **Kelpybara** may ritually cast the following spells. Only one effect may be active at a time, and it may target only itself:
 
-- [_Jump_](/en/library/spells/jump)
-- [_Water Walk_](/en/library/spells/water-walk)
-- [_Expeditious Retreat_](/en/library/spells/expeditious-retreat)
+<SpellList spells="jump, water-walk, expeditious-retreat" />
+
+</Action>
+
+</Monster>

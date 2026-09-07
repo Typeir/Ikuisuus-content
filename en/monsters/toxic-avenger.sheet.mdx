@@ -5,29 +5,34 @@ contentType: monsters
 
 # Toxic Avenger
 
-_Large Construct, Unaligned_
-
-| **Armor Class** | **Hit Points**   | **Speed**                   |
-| --------------- | ---------------- | --------------------------- |
-| 17              | 148 ([% 16d10 +64 %]) | [= 0 stride =], see **Pipe Network** |
-
-| **STR** | **DEX** | **CON** | **INT** | **WIS** | **CHA** |
-| ------- | ------- | ------- | ------- | ------- | ------- |
-| 18 (+4) | 10 (+0) | 22 (+6) | 8 (–1)  | 14 (+2) | 14 (+2) |
-
-- **Saving Throws**: Constitution +10, Wisdom +6
-- **Skills**: Perception +6, Stealth +4 (when submerged in filth)
-- **Damage Resistances**: Bludgeoning, piercing, and slashing
-- **Damage Immunities**: Chemical, Poison
-- **Condition Immunities**: [# kw:condition:Grappled #], [# kw:condition:Poisoned #], [# kw:condition:Prone #], [# kw:condition:Restrained #], [# kw:condition:Terrified #], [# kw:condition:Frightened #], [# kw:condition:Charmed #]
-- **Senses**: Blindsight [= 24 stride =] (blind beyond this radius), passive Perception 16
-- **Languages**: Understands Empyrean and Common but cannot speak
-- **Challenge**: 12 (8,400 XP)
-- **Tier Bonus**: +4
+<Monster
+  size="Large"
+  type="Construct"
+  alignment="Unaligned"
+  armorClass="17"
+  hitPoints="148 ([% 16d10 +64 %])"
+  speed="[= 0 stride =], see **Pipe Network**"
+  str="18"
+  dex="10"
+  con="22"
+  int="8"
+  wis="14"
+  cha="14"
+  saves="Constitution +10, Wisdom +6"
+  skills="Perception +6, Stealth +4 (when submerged in filth)"
+  resistances="Bludgeoning, piercing, and slashing"
+  immunities="Chemical, Poison"
+  conditionImmunities="[# kw:condition:Grappled #], [# kw:condition:Poisoned #], [# kw:condition:Prone #], [# kw:condition:Restrained #], [# kw:condition:Terrified #], [# kw:condition:Frightened #], [# kw:condition:Charmed #]"
+  senses="Blindsight [= 24 stride =] (blind beyond this radius), passive Perception 16"
+  languages="Understands Empyrean and Common but cannot speak"
+  challenge="12"
+  xp="8,400">
 
 ---
 
 ## Traits
+
+<Trait>
 
 #### Legendary Deeds
 
@@ -56,9 +61,17 @@ This does not provoke opportunity attacks.
 _As a Major Action_, the Avenger extrudes a new pipe segment up to **[= 12 stride =]** long through stone, earth, or metal, creating a new outlet for **Pipe Network**.
 Outside a sewer/lair, the pipe remains as a slime-filled tunnel large enough for a Medium creature to crawl through (difficult terrain).
 
+</Trait>
+
+<Trait>
+
 #### Reforming body
 
 The avenger regenerates 40 hit points at the start of it's round.
+
+</Trait>
+
+<Trait>
 
 #### Corrosive Bulk
 
@@ -71,26 +84,42 @@ If struck by equipment, the attacker gains **one stack of [# kw:Erosion #]**.
 The ground in a [= 2 stride;ADJ =] radius around any active pipe outlet is slick and is difficult terrain.
 As an [# kw:delayed #] effect, creatures there save Dexterity against DC 18 or **fall [# kw:condition:prone #]**.
 
+</Trait>
+
 ---
 
 ## Actions
+
+<Action>
 
 #### Multiattack
 
 The Avenger makes **two** attacks with its **Spine Sickle** or **Acid Tendrils**.
 
-- **Spine Sickle.**  
-  Accuracy +10, reach **[= 3 stride =]**, one creature.  
-  On a hit, 26 ([% 4d10 +4 slashing %]) and **10 ([% 3d6 chemical %])**. The target is **knocked [# kw:condition:prone #]** and is affected by the effects of the [_Slow_](/en/library/spells/slow) spell [# kw:briefly #].  
-  If this attack **reduces a creature to 0 hit points**, the Spine Sickle draws and consumes that creature's spine, killing them instantly.  
-  The creature **dies instantly**.  
-  After consuming a spine this way, the Spine Sickle's reach **permanently increases by [= 1 stride =]** This effect has no upper limit.
+<Attack accuracy="+10" reach="[= 3 stride =]">
 
-- **Acid Tendrils.**  
-  Accuracy +8, reach **[= 6 stride =]**, one creature.  
-  On a hit, 21 ([% 3d10 +4 chemical %]).  
-  The target saves Strength against DC 18 or is [# kw:condition:grappled #], forcing its movement within the Avenger's range.  
-  If a creature is already [# kw:condition:grappled #], the Avenger restrains them instead. Only one creature at a time may be [# kw:condition:restrained #] this way.
+##### Spine Sickle
+
+On a hit, 26 ([% 4d10 +4 slashing %]) and **10 ([% 3d6 chemical %])**. The target is **knocked [# kw:condition:prone #]** and is affected by the effects of the [_Slow_](/en/library/spells/slow) spell [# kw:briefly #].  
+If this attack **reduces a creature to 0 hit points**, the Spine Sickle draws and consumes that creature's spine, killing them instantly.  
+The creature **dies instantly**.  
+After consuming a spine this way, the Spine Sickle's reach **permanently increases by [= 1 stride =]** This effect has no upper limit.
+
+</Attack>
+
+<Attack accuracy="+8" reach="[= 6 stride =]">
+
+##### Acid Tendrils
+
+On a hit, 21 ([% 3d10 +4 chemical %]).  
+The target saves Strength against DC 18 or is [# kw:condition:grappled #], forcing its movement within the Avenger's range.  
+If a creature is already [# kw:condition:grappled #], the Avenger restrains them instead. Only one creature at a time may be [# kw:condition:restrained #] this way.
+
+</Attack>
+
+</Action>
+
+<Action>
 
 #### Deathcall (Recharge 6).
 
@@ -100,6 +129,8 @@ On a failed save, the creature takes **27 ([% 6d8 psychic %])** and is **[# kw:c
 If the creature was already [# kw:condition:terrified #], it additionally takes **48** chemical damage.  
 On a successful save, the creature takes half damage and is not [# kw:condition:terrified #].  
 If **Toxic Surge** is available, it immediately activates.
+
+</Action>
 
 ## Toxic Surge (Recharge 3–6).##
 
@@ -128,3 +159,5 @@ Each creature in the area saves Dexterity against DC 18 or takes **31 ([% 7d8 bl
 **Backflow**
 
 As part of this action, the Avenger reverses sewage currents and immediately **relocates to a pipe within [= 24 stride =]**, even if it has already shifted using **Pipe Network** this round.
+
+</Monster>

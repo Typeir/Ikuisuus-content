@@ -20,74 +20,112 @@ _(Fragment of the One True Heir)_
 
 ---
 
-_Huge Monstrosity, Lawful Neutral_
-
-| **Armor Class**  | **Hit Points**    | **Speed**            |
-| ---------------- | ----------------- | -------------------- |
-| 16 natural armor | 235 ([% 17d12 +125 %]) | [= 9 stride =], hover [= 12 stride =] |
-
-| **STR** | **DEX** | **CON** | **INT** | **WIS** | **CHA** |
-| ------- | ------- | ------- | ------- | ------- | ------- |
-| 20 (+5) | 13 (+1) | 18 (+4) | 22 (+6) | 18 (+4) | 10 (+0) |
-
-- **Saving Throws**: STR +9, CON +8, WIS +8
-- **Skills**: Perception +8, Intimidation +7, Insight +8
-- **Damage Resistances**: Frost, Lightning, Dark
-- **Damage Immunities**: Psychic
-- **Condition Immunities**: [# kw:condition:Terrified #], [# kw:condition:Paralyzed #]
-- **Senses**: Darkvision [= 24 stride =], Passive Perception 18
-- **Languages**: Tongue of Dragons, Common.
-- **Challenge**: 10 (5,900 XP)
-- **Tier Bonus**: +4
+<Monster
+  size="Huge"
+  type="Monstrosity"
+  alignment="Lawful Neutral"
+  armorClass="16 natural armor"
+  hitPoints="235 ([% 17d12 +125 %])"
+  speed="[= 9 stride =], hover [= 12 stride =]"
+  str="20"
+  dex="13"
+  con="18"
+  int="22"
+  wis="18"
+  cha="10"
+  saves="STR +9, CON +8, WIS +8"
+  skills="Perception +8, Intimidation +7, Insight +8"
+  resistances="Frost, Lightning, Dark"
+  immunities="Psychic"
+  conditionImmunities="[# kw:condition:Terrified #], [# kw:condition:Paralyzed #]"
+  senses="Darkvision [= 24 stride =], Passive Perception 18"
+  languages="Tongue of Dragons, Common."
+  challenge="10"
+  xp="5,900"
+  saveDc="16">
 
 ---
 
 ## Traits
 
+<Trait>
+
 #### Legendary Deeds
 
 The Lesser Terror has **3 legendary deeds per round**, and regains all expended deeds at the start of its turn.
 
-#### Legendary Deed: Resist (2/Day)
+</Trait>
+
+<Trait charges="2/Day">
+
+#### Legendary Deed: Resist
 
 When the Lesser Terror fails a saving throw, it can expend a legendary deed to succeed instead. This feature can be used **2 times per day**.
 
+</Trait>
+
+<Trait>
+
 #### Spellcasting
 
-The Lesser Terror Of The Vastness Of The World is a 7th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 16, accuracy +8 with spell attacks). It has the following wizard spells prepared:
+It has the following wizard spells prepared:
 
-- **Cantrips (at will)**: [_Ashen Anointment_](/en/library/spells/ashen-anointment), [_Minor Illusion_](/en/library/spells/minor-illusion), [_Chill_](/en/library/spells/chill)
-- **1st level (4 slots)**: [_Burning Hands_](/en/library/spells/burning-hands), [_Magic Missile_](/en/library/spells/magic-missile), [_Shield_](/en/library/spells/shield)
-- **2nd level (3 slots)**: [_Mirror Image_](/en/library/spells/mirror-image), [_Misty Step_](/en/library/spells/misty-step)
-- **3rd level (3 slots)**: [_Objection_](/en/library/spells/objection), [_Fear_](/en/library/spells/fear)
-- **4th level (1 slot)**: [_Shadow Of The Hunt_](/en/library/spells/shadow-of-the-hunt)
+- **Cantrips**: [_Ashen Anointment_](/en/library/spells/ashen-anointment), [_Minor Illusion_](/en/library/spells/minor-illusion), [_Chill_](/en/library/spells/chill)
+- **1st level**: [_Burning Hands_](/en/library/spells/burning-hands), [_Magic Missile_](/en/library/spells/magic-missile), [_Shield_](/en/library/spells/shield)
+- **2nd level**: [_Mirror Image_](/en/library/spells/mirror-image), [_Misty Step_](/en/library/spells/misty-step)
+- **3rd level**: [_Objection_](/en/library/spells/objection), [_Fear_](/en/library/spells/fear)
+- **4th level**: [_Shadow Of The Hunt_](/en/library/spells/shadow-of-the-hunt)
+
+</Trait>
 
 ---
 
 ## Actions
 
+<Action>
+
 #### Multiattack
 
 The Lesser Terror makes one Boot attack and one Maw attack, or one Blade of Chaos: Creation attack and one Maw attack.
 
-- **The Boot.** _(Melee Weapon, Special)_  
-  Accuracy +9, reach [= 1 stride =], one creature.
-  On a hit, 16 ([% 3d6 +6 bludgeoning %]), and the target is pushed back [= 1 stride =].
-- **Maw.** _(Melee Weapon, Natural)_  
-  Accuracy +9, reach [= 1 stride =], one creature.
-  On a hit, 17 ([% 2d10 +6 bludgeoning %]).
-- **Blade of Chaos: Creation.** _(Melee Weapon, One-Handed)_  
-  Accuracy +9, reach [= 2 stride =], one creature.
-  On a hit, 14 ([% 2d6 +7 slashing %]) plus 6 ([% 1d12 force %]).
-  The target saves Intelligence against DC 16 or is [# kw:condition:terrified #] [# kw:briefly #]. While [# kw:condition:terrified #] in this way, the target cannot willingly move closer to the Lesser Terror.
+<Attack accuracy="+9" reach="[= 1 stride =]">
+
+##### The Boot. _(Melee Weapon, Special)_
+
+On a hit, 16 ([% 3d6 +6 bludgeoning %]), and the target is pushed back [= 1 stride =].
+
+</Attack>
+
+<Attack accuracy="+9" reach="[= 1 stride =]">
+
+##### Maw. _(Melee Weapon, Natural)_
+
+On a hit, 17 ([% 2d10 +6 bludgeoning %]).
+
+</Attack>
+
+<Attack accuracy="+9" reach="[= 2 stride =]">
+
+##### Blade of Chaos: Creation. _(Melee Weapon, One-Handed)_
+
+On a hit, 14 ([% 2d6 +7 slashing %]) plus 6 ([% 1d12 force %]).
+The target saves Intelligence against DC 16 or is [# kw:condition:terrified #] [# kw:briefly #]. While [# kw:condition:terrified #] in this way, the target cannot willingly move closer to the Lesser Terror.
+
+</Attack>
+
+</Action>
 
 ---
 
 ## Minor Actions
 
-#### Maddening Presence (2/Day)
+<Action cost="1 Minor Action" charges="2/Day">
+
+#### Maddening Presence
 
 As a Minor Action, the **Lesser Terror** can force a creature it can see within [= 12 stride =] to save Charisma against DC 16. On a failed save, the creature is overwhelmed with visions of the vastness of the cosmos and is shunted into a different world-space until the end of the **Lesser Terror's** next turn. The creature also learns a grim truth about the world, of minor importance.
+
+</Action>
 
 ---
 
@@ -107,17 +145,29 @@ The Lesser Terror can expend legendary deeds to use the options below. Only one 
 
 At the start of the creature with the highest initiative's turn, the Lesser Terror can expend a legendary deed to use one of the following lair deeds. It cannot use the same lair deed two rounds in a row.
 
+<Action deed="lair">
+
 #### Twisting Reality
 
 The Lesser Terror warps the space around it. All terrain within a [= 12 stride;ADJ =] radius becomes difficult terrain for 1 minute.
+
+</Action>
+
+<Action deed="lair">
 
 #### Cosmic Echoes
 
 The Lesser Terror taps into the horrors of the universe. Each creature within [= 6 stride =] of the Lesser Terror saves Intelligence against DC 16 or is compelled to spend their next turn **trying to build a roof** to shield them from the vastness of space, wasting their action, Minor Action and reaction on doing so.
 
+</Action>
+
+<Action deed="lair">
+
 #### The Open Fields
 
 The Lesser Terror turns all space within [= 12 stride =] of it into a flat field of wheat for 1 minute. Creatures within the field save Wisdom against DC 16, halving 10 ([% 3d6 psychic %]). Additionally, for each [= 1 stride =] any creature moves through the field, they take 2 ([% 1d4 psychic %]).
+
+</Action>
 
 ---
 
@@ -138,3 +188,5 @@ Faint, unintelligible whispers can be heard within [= 1 league =] of the lair. T
 Creatures that sleep within [= 1 league =] of the lair experience vivid, terrifying dreams of vast, endless space. Upon waking, they save Wisdom against DC 15 or gain one level of exhaustion.
 
 ---
+
+</Monster>

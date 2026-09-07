@@ -5,35 +5,48 @@ contentType: monsters
 
 # Avatar of Nigredo, Lord of Flies
 
-_Huge Aberration, Lawful Evil_
-
-| **Armor Class** | **Hit Points**        | **Speed**            |
-| --------------- | --------------------- | -------------------- |
-| 17              | 150 ([% 12d12 +72 %]) | [= 6 stride =], climb [= 6 stride =] |
-
-| **STR** | **DEX** | **CON** | **INT** | **WIS** | **CHA** |
-| ------- | ------- | ------- | ------- | ------- | ------- |
-| 20 (+5) | 10 (+0) | 22 (+6) | 14 (+2) | 14 (+2) | 16 (+3) |
-
-- **Saving Throws**: STR +8, CON +9
-- **Damage Resistances**: dark, fire
-- **Condition Immunities**: [# kw:condition:Charmed #], [# kw:condition:Frightened #], [# kw:condition:Terrified #].
-- **Senses**: Darkvision [= 24 stride =], passive Perception 12
-- **Languages**: Empyrean, telepathy [= 12 stride =]
-- **Challenge**: 8 (3,900 XP)
-- **Tier Bonus**: +3
+<Monster
+  size="Huge"
+  type="Aberration"
+  alignment="Lawful Evil"
+  armorClass="17"
+  hitPoints="150 ([% 12d12 +72 %])"
+  speed="[= 6 stride =], climb [= 6 stride =]"
+  str="20"
+  dex="10"
+  con="22"
+  int="14"
+  wis="14"
+  cha="16"
+  saves="STR +8, CON +9"
+  resistances="dark, fire"
+  conditionImmunities="[# kw:condition:Charmed #], [# kw:condition:Frightened #], [# kw:condition:Terrified #]."
+  senses="Darkvision [= 24 stride =], passive Perception 12"
+  languages="Empyrean, telepathy [= 12 stride =]"
+  challenge="8"
+  xp="3,900">
 
 ---
 
 ## Traits
 
+<Trait>
+
 #### Avatar Form
 
 This is a splinter of Nigredo’s true body — a localized knot of flesh and clockwork. It does not have Endless Form, but leaves behind **rot-slick terrain** ([= 2 stride;ADJ =] radius around it is difficult terrain).
 
+</Trait>
+
+<Trait>
+
 #### Spore Cloud Aura
 
 Creatures starting their turn within [= 2 stride =] save Constitution against DC 16 or immediately roll on the [Ventralis Rot Table](/en/library/monsters/nigredo).
+
+</Trait>
+
+<Trait>
 
 #### Sunlight Vulnerability
 
@@ -57,45 +70,72 @@ The Avatar's body is comprised of scavenged parts, as such it drops **[% 1d4 %] 
 
 > unique items can only drop once, and must be rerolled if already obtained
 
+</Trait>
+
 ---
 
 ## Actions
+
+<Action>
 
 #### Multiattack
 
 The Avatar makes two **Impaling Claw** attacks or one **Impaling Claw** plus **Flyburst**.
 
-- **Impaling Claw.**  
-  Accuracy +8, reach [= 2 stride =], one creature.  
-  On a hit, [% 2d10 +5 piercing %] + [% 2d8 dark %]. Target saves Strength against DC 16 or is [# kw:condition:grappled #] (escape DC 16). [# kw:condition:Grappled #] creatures take [% 2d8 dark %] at the start of their turn.
+<Attack accuracy="+8" reach="[= 2 stride =]">
 
-- **Flyburst.**  
-  A cloud of corpse-flies erupts in a [= 3 stride;ADJ =] radius. Creatures in the area save Constitution against DC 16 or take **[% 4d8 dark %]** and are **[# kw:condition:blinded #]** until the start of the Avatar’s next turn. On success, they take half damage and avoid blindness.
+##### Impaling Claw
+
+On a hit, [% 2d10 +5 piercing %] + [% 2d8 dark %]. Target saves Strength against DC 16 or is [# kw:condition:grappled #] (escape DC 16). [# kw:condition:Grappled #] creatures take [% 2d8 dark %] at the start of their turn.
+
+</Attack>
+
+##### Flyburst
+
+A cloud of corpse-flies erupts in a [= 3 stride;ADJ =] radius. Creatures in the area save Constitution against DC 16 or take **[% 4d8 dark %]** and are **[# kw:condition:blinded #]** until the start of the Avatar’s next turn. On success, they take half damage and avoid blindness.
+
+</Action>
+
+<Action>
 
 #### Exhale the Rot (Recharge 6).
 
 The Avatar exhales spores in a [= 6 stride;ADJ =] cone. Each creature in that area saves Constitution against DC 16, taking **[% 5d8 dark %]** and triggering **Ventralis Rot** even on a success.
 
+</Action>
+
 ---
 
 ## Minor Actions
 
-#### Black Mist Step (Recharge 4–6)
+<Action cost="1 Minor Action" recharge="4–6">
+
+#### Black Mist Step
 
 The Avatar moves up to **[= 12 stride =] in a straight line**, ignoring difficult terrain and **not provoking opportunity attacks**.  
 Each creature in the line saves Constitution against DC 16 or takes **[% 4d8 dark %]** half as much on a success.
+
+</Action>
+
+<Action cost="1 Minor Action">
 
 #### Crushing Weight
 
 If the Avatar is grappling a creature, it can use a Minor Action to crush them, dealing **[% 2d8 bludgeoning %]** automatically.
 
+</Action>
+
 ---
 
 ## Reactions
 
+<Action cost="1 Reaction">
+
 #### Rotting Grasp
 
 When a creature within reach misses the Avatar with a melee attack, it may make one Impaling Claw attack against that creature.
+
+</Action>
 
 ---
 
@@ -105,3 +145,5 @@ The Avatar is an innate spellcaster (save DC 16, accuracy +6). It can cast the f
 
 - **At will**: [_Omen_](/en/library/spells/omen), [_Ashen Anointment_](/en/library/spells/ashen-anointment)
 - **1/day each**: [_Excision_](/en/library/spells/excision), [_Hold_](/en/library/spells/hold)
+
+</Monster>

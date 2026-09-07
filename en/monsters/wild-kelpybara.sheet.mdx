@@ -5,37 +5,48 @@ contentType: monsters
 
 # Wild Kelpybara
 
-_Medium Monstrosity, Unaligned_
-
-| **Armor Class**  | **Hit Points** | **Speed**           |
-| ---------------- | -------------- | ------------------- |
-| 14 (matted hide) | 67 ([% 9d8 +27 %])  | [= 8 stride =], swim [= 6 stride =] |
-
-| **STR** | **DEX** | **CON** | **INT** | **WIS** | **CHA** |
-| ------- | ------- | ------- | ------- | ------- | ------- |
-| 18 (+4) | 14 (+2) | 16 (+3) | 6 (–2)  | 12 (+1) | 6 (–2)  |
-
-- **Saving Throws**: Str +4, Dex +2
-- **Skills**: Athletics +4, Perception +1, Stealth +2
-- **Condition Immunities**: [# kw:condition:Frightened #]
-- **Senses**: Darkvision [= 12 stride =], Passive Perception 13
-- **Languages**: Understands Kelpybara signal language
-- **Challenge**: 3 (450 XP)
-- **Tier Bonus**: +1
+<Monster
+  size="Medium"
+  type="Monstrosity"
+  alignment="Unaligned"
+  armorClass="14 (matted hide)"
+  hitPoints="67 ([% 9d8 +27 %])"
+  speed="[= 8 stride =], swim [= 6 stride =]"
+  str="18"
+  dex="14"
+  con="16"
+  int="6"
+  wis="12"
+  cha="6"
+  saves="Str +4, Dex +2"
+  skills="Athletics +4, Perception +1, Stealth +2"
+  conditionImmunities="[# kw:condition:Frightened #]"
+  senses="Darkvision [= 12 stride =], Passive Perception 13"
+  languages="Understands Kelpybara signal language"
+  challenge="3"
+  xp="700">
 
 ---
 
 ## Traits
+
+<Trait>
 
 #### Innate Spellcasting (Optional)
 Some kelpybaras are capable of manifesting hostile arcane effects without a discernible source. The kelpybara may innately cast the following spells:
 
 - _Eldritch Blast_ (as the Villein feature; Charisma, accuracy +1)
 
+</Trait>
+
+<Trait>
+
 #### Opossable Thumbs
 The kelpybara has the ability to use its forelimbs as hands, allowing it to manipulate objects and use tools.
 
 the kelpybara may wield equipment according to the following table:
+
+</Trait>
 
 ## Kelpybara Equipment – Armor Table
 
@@ -73,21 +84,43 @@ The kelpybara gain Multiattack if wielding weapons.
 
 ## Actions
 
+<Action>
+
 #### Multiattack
 
 The kelpybara makes one Gnash & Cling attack and one Body Slam attack, or two attacks with a wielded weapon (if equipped).
 
-- **Gnash & Cling.** Accuracy +5, reach [= 1 stride =], one creature. On a hit, 11 ([% 2d6 +4 piercing %]). If the target is Medium or smaller, it is [# kw:condition:grappled #] (escape DC 12). While grappling a creature: the kelpybara occupies the same space as the target, the kelpybara has half cover against attacks from creatures other than the target, and the kelpybara may move the [# kw:condition:grappled #] creature with it at full speed.
+<Attack accuracy="+5" reach="[= 1 stride =]">
 
-- **Body Slam.** Accuracy +5, reach [= 1 stride =], one creature. On a hit, 14 ([% 3d6 +4 bludgeoning %]). If the target is [# kw:condition:prone #] or [# kw:condition:grappled #], it saves Strength against DC 12 or is pushed [= 2 stride =] and knocked [# kw:condition:prone #].
+##### Gnash & Cling
 
-#### Luminous Blast (1/Repose)
+On a hit, 11 ([% 2d6 +4 piercing %]). If the target is Medium or smaller, it is [# kw:condition:grappled #] (escape DC 12). While grappling a creature: the kelpybara occupies the same space as the target, the kelpybara has half cover against attacks from creatures other than the target, and the kelpybara may move the [# kw:condition:grappled #] creature with it at full speed.
+
+</Attack>
+
+<Attack accuracy="+5" reach="[= 1 stride =]">
+
+##### Body Slam
+
+On a hit, 14 ([% 3d6 +4 bludgeoning %]). If the target is [# kw:condition:prone #] or [# kw:condition:grappled #], it saves Strength against DC 12 or is pushed [= 2 stride =] and knocked [# kw:condition:prone #].
+
+</Attack>
+
+</Action>
+
+<Action charges="1/Repose">
+
+#### Luminous Blast
 
 The kelpybara emits a controlled flash from its lateral bulbs. All creatures within [= 3 stride =] save Wisdom against DC 11 or suffer **disadvantage on attack rolls and Perception checks** [# kw:briefly #].
+
+</Action>
 
 ---
 
 ## Minor Actions
+
+<Action cost="1 Minor Action">
 
 #### Horse Mode
 
@@ -99,14 +132,26 @@ As a Minor Action, the kelpybara may enter quadrupedal acceleration [# kw:briefl
 - It ignores difficult terrain during movement
 - It must drop its hand held equipment
 
+</Action>
+
+<Action cost="1 Minor Action">
+
 #### Fast Shove
 
 If the kelpybara hits a creature that is [# kw:condition:grappled #] or [# kw:condition:prone #], it may immediately shove that creature [= 2 stride =] in any direction of its choosing as a Minor Action.
+
+</Action>
 
 ---
 
 ## Reactions
 
+<Action cost="1 Reaction">
+
 #### Ear-Shutter Reflex
 
 The kelpybara may use a reaction to fold its ears over its eyes, gaining advantage on saving throws against effects that cause blindness or rely on vision.
+
+</Action>
+
+</Monster>

@@ -13,17 +13,17 @@ A Berserker who keeps something in reserve has already lost, because Abandon ans
 
 ---
 
+<Vocation
+  primaryAbility="Strength"
+  hitDie="d12 per Berserker level"
+  saves="Strength and Constitution"
+  skills="Choose 2: Animal Handling, Athletics, Intimidation, Nature, Perception, or Survival"
+  weapons="Simple and Martial weapons"
+  armor="Light and Medium Armor, Shields">
+
 ## Core Berserker Traits
 
-| Trait                          | Description                                                                           |
-| ------------------------------ | ------------------------------------------------------------------------------------- |
-| **Primary Ability**            | Strength                                                                              |
-| **Hit Point Die**              | d12 per Berserker level                                                               |
-| **Saving Throw Proficiencies** | Strength and Constitution                                                             |
-| **Skill Proficiencies**        | Choose 2: Animal Handling, Athletics, Intimidation, Nature, Perception, or Survival   |
-| **Weapon Proficiencies**       | Simple and Martial weapons                                                            |
-| **Armor Training**             | Light and Medium Armor, Shields                                                       |
-| **Starting Equipment**         | Choose A or B:<br/>(A) Greataxe, 4 Handaxes, Explorer’s Pack, and 15 gp<br/>(B) 75 gp |
+<Equipment>Choose A or B:<br/>(A) Greataxe, 4 Handaxes, Explorer’s Pack, and 15 gp<br/>(B) 75 gp</Equipment>
 
 ---
 
@@ -45,33 +45,18 @@ A Berserker who keeps something in reserve has already lost, because Abandon ans
 
 ## Berserker Vocation Features
 
-| Level | Tier Bonus | Features                                   | Abandon | Weapon Mastery |
-| ----- | ---------- | ------------------------------------------ | ------- | -------------- |
-| 1     | +1         | Reckless Abandon, Weapon Mastery           | 12      | 2              |
-| 2     | +1         | Reckless Attack                            | 14      | 2              |
-| 3     | +1         | Berserker Specialization, Primal Knowledge | 18      | 2              |
-| 4     | +2         | Feat                                       | 20      | 3              |
-| 5     | +2         | Extra Attack, Feral Instinct               | 22      | 3              |
-| 6     | +2         | Specialization Feature                     | 24      | 3              |
-| 7     | +3         | Crushing Pounce                            | 25      | 3              |
-| 8     | +3         | Feat                                       | 26      | 3              |
-| 9     | +3         | Brutal Strike                              | 27      | 3              |
-| 10    | +4         | Specialization Feature                     | 28      | 4              |
-| 11    | +4         | True Wrath, Retaliatory Blow               | 30      | 4              |
-| 12    | +4         | Feat                                       | 32      | 4              |
-| 13    | +5         | Improved Brutal Strike                     | 34      | 4              |
-| 14    | +5         | Specialization Feature                     | 35      | 4              |
-| 15    | +5         | Trancing Steps                             | 36      | 4              |
-| 16    | +6         | Feat                                       | 38      | 4              |
-| 17    | +6         | Specialization Feature                     | 39      | 4              |
-| 18    | +6         | Indomitable Might                          | 40      | 4              |
-| 19    | +7         | Epic Boon                                  | 41      | 4              |
-| 20    | +7         | Primal Champion                            | 42      | 4              |
+<Progression feats="4, 8, 12, 16" specialization="6, 10, 14, 17">
+  <Column label="Abandon" values="12, 14, 18, 20, 22, 24, 25, 26, 27, 28, 30, 32, 34, 35, 36, 38, 39, 40, 41, 42" />
+  <Column label="Weapon Mastery" values="2, 2, 2, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4" />
+</Progression>
 
 ---
 
 <Collapsible>
-## 1st Level – Reckless Abandon
+
+<Feature level="1">
+
+## Reckless Abandon
 
 You hold a reserve of ruinous want called **Abandon**. The size of your pool is shown in the **Abandon** column of the Berserker Features table.
 
@@ -121,30 +106,45 @@ Reckless Abandon ends after 1 minute, when you become **[# kw:condition:Incapaci
 
 You regain Abandon points equal to your **Constitution modifier** when you finish a [# kw:Repose #], and your **entire pool** when you finish a [# kw:Recovery #].
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 1st Level – Weapon Mastery
+
+<Feature level="1">
+
+## Weapon Mastery
 
 You can use the **Mastery properties** of **two melee weapons** of your choice.
 
 - Whenever you finish a [# kw:Recovery #], you can change one of these choices.
 - You gain additional Mastery options at higher levels (see table).
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 2nd Level – Reckless Attack
+
+<Feature level="2">
+
+## Reckless Attack
 
 When you make your first attack roll on your turn, you may choose to forego all intent of protecting yourself from retaliation.
 
 - You gain **Advantage** on all **Strength-based attack rolls** this turn.
 - All attack rolls against you have **Advantage** until your next turn.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible open>
-## 3rd Level – Berserker Specialization
+
+<Feature level="3">
+
+## Berserker Specialization
 
 You gain a Berserker specialization. Options include:
 
@@ -156,49 +156,79 @@ You gain a Berserker specialization. Options include:
 | [Want of the World Tree](/en/library/character-creation/vocations/berserker/want-of-the-world-tree) |
 | [Want of the Zealot](/en/library/character-creation/vocations/berserker/want-of-the-zealot)         |
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 3rd Level – Primal Knowledge
+
+<Feature level="3">
+
+## Primal Knowledge
 
 - Gain proficiency in **one additional skill** from the Berserker skill list.
 - While **Reckless Abandon** is active, you may add half of it to **Acrobatics, Intimidation, Perception, Stealth, or Survival** rolls.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 4th Level – Ability Score Improvement
+
+<Feature level="4">
+
+## Feat
 
 You gain the **[Ability Score Improvement feat](/en/library/character-creation/feats/ability-score-improvement)** or another **[feat of your choice](/en/library/character-creation/feats)**.
 
 You also gain this feature at levels **8th, 12th, and 16th level**.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 5th Level – Extra Attack
+
+<Feature level="5">
+
+## Extra Attack
 
 When you take the **Attack action**, you can attack **twice** instead of once.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 5th Level – Feral Instinct
+
+<Feature level="5">
+
+## Feral Instinct
 
 You have **Advantage on Initiative rolls**.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 7th Level – Crushing Pounce
+
+<Feature level="7">
+
+## Crushing Pounce
 
 As part of the **Minor Action** you take to Pour into **Reckless Abandon**, you can move up to **half your Speed**, through a leap, ignoring difficult terrain and non-solid ground.
 Any creature within [= 1 stride =] of your landing point saves Dexterity against **10 + your Pour** or is knocked [# kw:condition:prone #].
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 9th Level – Brutal Strike
+
+<Feature level="9">
+
+## Brutal Strike
 
 When using **Reckless Attack**, you may choose to forgo Advantage on one **Strength-based attack** that has no Disadvantage.
 
@@ -213,28 +243,43 @@ Push the target **[= 3 stride =] away**, then move **up to half your Speed** tow
 
 Reduce the target’s **Speed by [= 3 stride =]** until the start of your next turn.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 11th Level – True Wrath
+
+<Feature level="11">
+
+## True Wrath
 
 While you are in **Reckless Abandon**, the **Damage Reduction** applies to **Any Source**, and is doubled while you are **Doomed**.
 
 Additionally, your **Reckless Abandon** now lasts **10 minutes** instead of 1 minute. It still ends early if you fall **[# kw:condition:Unconscious #]**.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 11th Level – Retaliatory Blow
+
+<Feature level="11">
+
+## Retaliatory Blow
 
 When you get hit by an attack, you may spend your reaction to temporarily gain **resistance to that attacks damage**.
 
 If you are in **Reckless Abandon** when you use this feature, you may deal **bludgeoning** damage equal to your **Pour** to the source of the attack.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 13th Level – Improved Brutal Strike
+
+<Feature level="13">
+
+## Improved Brutal Strike
 
 Gain new Brutal Strike options:
 
@@ -246,10 +291,15 @@ The target has **Disadvantage on its next saving throw** and cannot make **Oppor
 
 Gain a **+10 accuracy bonus** for that attack. Only one Sundering Blow bonus can apply to a creature at a time.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 15th Level – Trancing Steps
+
+<Feature level="15">
+
+## Trancing Steps
 
 While in **Reckless Abandon**, your movement speed increases by **[= 3 stride =]**, and you gain a **swimming and climbing speed** equal to your walking speed.
 
@@ -257,27 +307,46 @@ Additionally, Your trance allows you to ignore barriers you would otherwise have
 
 You may burrow through **stone, dirt, wood, and similar materials**, but not through **metal or supernatural barriers**.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 18th Level – Indomitable Might
+
+<Feature level="18">
+
+## Indomitable Might
 
 If the total of your **Strength check or saving throw** is less than your **Strength score**, you may use your **Strength score** instead, and you gain proficiency in **Dexterity Saving throws**.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 19th Level – Epic Boon
+
+<Feature level="19">
+
+## Epic Boon
 
 Gain an **[Epic Boon feat](/en/library/character-creation/feats)** or another feat of your choice.
 
 **[Boon of Irresistible Offense](/en/library/character-creation/feats/boon-of-irresistible-offense)** is recommended.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 20th Level – Primal Champion
+
+<Feature level="20">
+
+## Primal Champion
 
 Increase your **Strength** and **Constitution** by **+4**, to a maximum of **25**.
 
+</Feature>
+
 </Collapsible>
+
+</Vocation>

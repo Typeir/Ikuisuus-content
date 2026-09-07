@@ -10,28 +10,34 @@ contentType: monsters
   alt='Empyrean God-Challenger'
 />
 
-_Medium Humanoid (Empyrean), Lawful Evil_
-
-| **Armor Class**             | **Hit Points**  | **Speed** |
-| --------------------------- | --------------- | --------- |
-| 19 (Bonded Tombsteel armor) | 178 ([% 21d8 +84 %]) | [= 6 stride =]    |
-
-| **STR** | **DEX** | **CON** | **INT** | **WIS** | **CHA** |
-| ------- | ------- | ------- | ------- | ------- | ------- |
-| 20 (+5) | 14 (+2) | 18 (+4) | 16 (+3) | 14 (+2) | 20 (+5) |
-
-- **Saving Throws**: Strength +8, Constitution +6, Charisma +7
-- **Skills**: Intimidation +8, Survival +4, Religion +5
-- **Damage Resistances**: Frost.
-- **Condition Immunities**: [# kw:condition:Terrified #]
-- **Senses**: Darkvision [= 12 stride =], passive Perception 12
-- **Languages**: Common, Empyrean, [Prey Language]
-- **Challenge**: 6 (2,300 XP)
-- **Tier Bonus**: +2
+<Monster
+  size="Medium"
+  type="Humanoid (Empyrean)"
+  alignment="Lawful Evil"
+  armorClass="19 (Bonded Tombsteel armor)"
+  hitPoints="178 ([% 21d8 +84 %])"
+  speed="[= 6 stride =]"
+  str="20"
+  dex="14"
+  con="18"
+  int="16"
+  wis="14"
+  cha="20"
+  saves="Strength +8, Constitution +6, Charisma +7"
+  skills="Intimidation +8, Survival +4, Religion +5"
+  resistances="Frost."
+  conditionImmunities="[# kw:condition:Terrified #]"
+  senses="Darkvision [= 12 stride =], passive Perception 12"
+  languages="Common, Empyrean, [Prey Language]"
+  challenge="6"
+  xp="2,300"
+  saveDc="16">
 
 ---
 
 ## Traits
+
+<Trait>
 
 #### Tombsteel Armor
 
@@ -59,7 +65,11 @@ The God-Challenger wears custom heavy armor forged from tombsteel, The armor has
   - **All damage** that the bonded creature takes is **split equally** between them (each takes half)
   - The bond **ends immediately** if either creature drops to 0 HP or dies
 
+</Trait>
+
 ---
+
+<Trait>
 
 #### Target of the Hunt
 
@@ -71,6 +81,10 @@ The God-Challenger gains the following benefits against the chosen prey:
 - Gains **double tier bonus** on Charisma (Intimidation) checks made against them
 - Speaks **one additional language** used by the selected prey type (Hidden, in this case)
 
+</Trait>
+
+<Trait>
+
 #### Aura of Interception ([= 2 stride;ADJ =] radius)
 
 The God-Challenger emits an aura that suppresses flight and escape. While creatures are within [= 2 stride =] of the God-Challenger:
@@ -79,9 +93,17 @@ The God-Challenger emits an aura that suppresses flight and escape. While creatu
 - If a creature within the aura is **hit by an opportunity attack** from the God-Challenger or one of their allies, the target’s **movement speed is reduced by [= 2 stride =]** [# kw:briefly #]
 - The aura is always active while the God-Challenger is conscious
 
+</Trait>
+
+<Trait>
+
 #### Mounted Brutality
 
 While mounted, the God-Challenger’s melee weapon attacks deal **an additional [% 1d6 %] damage** of the weapon’s type.
+
+</Trait>
+
+<Trait>
 
 #### Mounted Combatant
 
@@ -96,24 +118,35 @@ This character may ride any of the following creatures:
 
 > Some mounts require training or magical control to remain loyal in combat.
 
+</Trait>
+
 ---
 
 ### Actions
+
+<Action>
 
 ##### Multiattack
 
 The God-Challenger makes **two melee weapon attacks** with their **Grand Empyrean Sword-Spear**.
 
-- **Grand Empyrean Sword-Spear.**  
-  Accuracy +8, reach [= 2 stride =], one creature.  
-  On a hit, 12 ([% 1d10 +6 slashing %]) plus 6 ([% 2d6 frost %]).  
-  This weapon is **Versatile** ([% 1d10 %]), **Heavy**, and **Martial**. It is forged from tombsteel and treated as magical for overcoming resistance.
+<Attack accuracy="+8" reach="[= 2 stride =]">
 
-- **Bound to the Earth (Channel Divinity).**  
-  When the God-Challenger hits a creature with a melee weapon attack, they can use a **Minor Action** to activate this feature.
-  - The triggering attack deals an **extra [% 2d6 frost %]**
-  - The target’s **speed becomes 0 [# kw:briefly #]**
-  - Can only be used **once per [# kw:Repose #] or [# kw:Recovery #]**
+###### Grand Empyrean Sword-Spear
+
+On a hit, 12 ([% 1d10 +6 slashing %]) plus 6 ([% 2d6 frost %]).  
+This weapon is **Versatile** ([% 1d10 %]), **Heavy**, and **Martial**. It is forged from tombsteel and treated as magical for overcoming resistance.
+
+</Attack>
+
+###### Bound to the Earth (Channel Divinity)
+
+When the God-Challenger hits a creature with a melee weapon attack, they can use a **Minor Action** to activate this feature.
+- The triggering attack deals an **extra [% 2d6 frost %]**
+- The target’s **speed becomes 0 [# kw:briefly #]**
+- Can only be used **once per [# kw:Repose #] or [# kw:Recovery #]**
+
+</Action>
 
 ---
 
@@ -139,3 +172,5 @@ The God-Challenger is a spellcaster. Their spellcasting ability is **Charisma**.
 
 - 1st: [_Shield of Faith_](/en/library/spells/shield-of-faith), [_Bless_](/en/library/spells/bless), [_Command_](/en/library/spells/command), [_Bane_](/en/library/spells/bane)
 - 2nd: [_Hold_](/en/library/spells/hold), [_Magic Weapon_](/en/library/spells/magic-weapon)
+
+</Monster>

@@ -11,15 +11,14 @@ Drawing on the ancient knowledge of celestials, Hiisi, the greater väki, Nulls 
 
 Once a pact is made, a Villein’s thirst for power and knowledge often leads to adventure.
 
-| Core Villein Traits            |                                                                                                                                      |
-| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------ |
-| **Primary Ability**            | Charisma                                                                                                                             |
-| **Hit Point Die**              | d8 per Villein level                                                                                                                 |
-| **Saving Throw Proficiencies** | Wisdom and Charisma                                                                                                                  |
-| **Skill Proficiencies**        | Choose 2: Arcana, Deception, History, Intimidation, Investigation, Nature, or Religion                                               |
-| **Weapon Proficiencies**       | Simple Weapons                                                                                                                       |
-| **Armor Training**             | Light Armor                                                                                                                          |
-| **Starting Equipment**         | Choose A or B: (A) Leather Armor, Sickle, 2 Daggers, Arcane Focus (orb), Book (occult lore), Scholar's Pack and 15 GP; or (B) 100 GP |
+<Vocation
+  primaryAbility="Charisma"
+  hitDie="d8 per Villein level"
+  saves="Wisdom and Charisma"
+  skills="Choose 2: Arcana, Deception, History, Intimidation, Investigation, Nature, or Religion"
+  weapons="Simple Weapons"
+  armor="Light Armor"
+  equipment="Choose A or B: (A) Leather Armor, Sickle, 2 Daggers, Arcane Focus (orb), Book (occult lore), Scholar's Pack and 15 GP; or (B) 100 GP">
 
 ---
 
@@ -40,28 +39,17 @@ Once a pact is made, a Villein’s thirst for power and knowledge often leads to
 
 ## Villein Progression
 
-| Level | Tier Bonus | Vocation Features                                  | Invocations | Cantrips | Prepared Spells | Spell Slots | Slot Level |
-| ----- | ---------- | -------------------------------------------------- | ----------- | -------- | --------------- | ----------- | ---------- |
-| 1     | +1         | Villein Specialization, Pact Magic, Eldritch Blast | 0           | 2        | 2               | 1           | 1          |
-| 2     | +1         | Magical Cunning                                    | 0           | 2        | 3               | 2           | 1          |
-| 3     | +1         | Eldritch Invocations                               | 1           | 2        | 4               | 2           | 2          |
-| 4     | +2         | Feat                                               | 2           | 3        | 5               | 2           | 2          |
-| 5     | +2         | —                                                  | 3           | 3        | 6               | 2           | 3          |
-| 6     | +2         | Specialization Feature                             | 4           | 3        | 7               | 2           | 3          |
-| 7     | +3         | —                                                  | 5           | 3        | 8               | 2           | 4          |
-| 8     | +3         | Feat                                               | 6           | 3        | 9               | 2           | 4          |
-| 9     | +3         | Contact Patron                                     | 6           | 3        | 10              | 2           | 5          |
-| 10    | +4         | Specialization Feature                             | 7           | 4        | 10              | 2           | 5          |
-| 11    | +4         | Mystic Arcanum (6th Level Spell)                   | 7           | 4        | 11              | 3           | 5          |
-| 12    | +4         | Feat                                               | 7           | 4        | 11              | 3           | 5          |
-| 13    | +5         | Mystic Arcanum (7th Level Spell)                   | 8           | 4        | 12              | 3           | 5          |
-| 14    | +5         | Specialization Feature                             | 8           | 4        | 12              | 3           | 5          |
-| 15    | +5         | Mystic Arcanum (8th Level Spell)                   | 8           | 4        | 13              | 3           | 5          |
-| 16    | +6         | Feat                                               | 9           | 4        | 13              | 3           | 5          |
-| 17    | +6         | Mystic Arcanum (9th Level Spell)                   | 9           | 4        | 14              | 4           | 5          |
-| 18    | +6         | —                                                  | 9           | 4        | 14              | 4           | 5          |
-| 19    | +7         | Epic Boon                                          | 9           | 4        | 15              | 4           | 5          |
-| 20    | +7         | Eldritch Master                                    | 10          | 4        | 15              | 4           | 5          |
+<Progression casting="pact" feats="4, 8, 12, 16" specialization="6, 10, 14">
+  <Column label="Features">
+    <Row at="13" unique>Mystic Arcanum (7th Level Spell)</Row>
+    <Row at="15" unique>Mystic Arcanum (8th Level Spell)</Row>
+    <Row at="17" unique>Mystic Arcanum (9th Level Spell)</Row>
+    <Row at="19" unique>Epic Boon</Row>
+  </Column>
+  <Column label="Invocations" values="0, 0, 1, 2, 3, 4, 5, 6, 6, 7, 7, 7, 8, 8, 8, 9, 9, 9, 9, 10" />
+  <Column label="Cantrips" values="2, 2, 2, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4" />
+  <Column label="Prepared Spells" values="2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 11, 11, 12, 12, 13, 13, 14, 14, 15, 15" />
+</Progression>
 
 ---
 
@@ -123,9 +111,14 @@ Whenever you gain a Villein level, you can replace one invocation you know with 
 </Collapsible>
 
 <Collapsible>
-## 9th Level – Contact Patron
+
+<Feature level="9">
+
+## Contact Patron
 
 You can cast Contact Other Plane to communicate directly with your patron without risk of psychic damage. Once per [# kw:Recovery #], you can cast it without a spell slot.
+
+</Feature>
 
 </Collapsible>
 
@@ -137,8 +130,15 @@ At level 11, you gain a **Mystic Arcanum**—a powerful spell you can cast once 
 </Collapsible>
 
 <Collapsible>
-## 20th Level – Eldritch Master
+
+<Feature level="20">
+
+## Eldritch Master
 
 At level 20, using **Magical Cunning** now restores **all** Pact Magic spell slots.
 
+</Feature>
+
 </Collapsible>
+
+</Vocation>

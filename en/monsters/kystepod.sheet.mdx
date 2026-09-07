@@ -12,67 +12,104 @@ contentType: monsters
 
 **Lunar Kystepods** are bloated, many-limbed insectoid monstrosities resembling a grotesque blend between a cockroach and a deep-buried tick with uncannily humanoid features. Created through parasitic grafting and blood rituals, they serve the **Cerithol Lunam** as guardians, scouts, and blood gatherers. Though they lack higher intelligence, their instincts are perfectly tuned to the will of the Cerithol. Their shells pulse with a thick antimagic mucus, and their joints leak slow trails of acidic lymph that burn wherever they step. In groups, their speed and cruelty are overwhelming.
 
-_Medium Monstrosity, Unaligned_
-
-| **Armor Class**    | **Hit Points** | **Speed**            |
-| ------------------ | -------------- | -------------------- |
-| 16 (natural armor) | 78 ([% 12d8 +24 %]) | [= 8 stride =], climb [= 8 stride =] |
-
-| **STR** | **DEX** | **CON** | **INT** | **WIS** | **CHA** |
-| ------- | ------- | ------- | ------- | ------- | ------- |
-| 15 (+2) | 18 (+4) | 14 (+2) | 6 (-2)  | 12 (+1) | 5 (-3)  |
-
-- **Saving Throws**: Dex +5, Wis +2
-- **Skills**: Stealth +5, Perception +2
-- **Damage Resistances**: Dark, Frost
-- **Damage Immunities**: Poison
-- **Condition Immunities**: [# kw:condition:Poisoned #]
-- **Senses**: Tremorsense [= 12 stride =], Darkvision [= 24 stride =], Passive Perception 13
-- **Languages**: Ancient Empyrean
-- **Challenge**: 3 (700 XP)
-- **Tier Bonus**: +1
+<Monster
+  size="Medium"
+  type="Monstrosity"
+  alignment="Unaligned"
+  armorClass="16 (natural armor)"
+  hitPoints="78 ([% 12d8 +24 %])"
+  speed="[= 8 stride =], climb [= 8 stride =]"
+  str="15"
+  dex="18"
+  con="14"
+  int="6"
+  wis="12"
+  cha="5"
+  saves="Dex +5, Wis +2"
+  skills="Stealth +5, Perception +2"
+  resistances="Dark, Frost"
+  immunities="Poison"
+  conditionImmunities="[# kw:condition:Poisoned #]"
+  senses="Tremorsense [= 12 stride =], Darkvision [= 24 stride =], Passive Perception 13"
+  languages="Ancient Empyrean"
+  challenge="3"
+  xp="700">
 
 ---
 
 ## Traits
 
+<Trait>
+
 #### Loyal Symbiote
 
 The Lunar Kystepod is biologically tethered to Cerithol Lunami. While within [= 60 stride =] of a Cerithol, it gains **pack tactics** and **cannot be [# kw:condition:frightened #]**. Additionally, the Cerithol can communicate telepathically with it.
+
+</Trait>
+
+<Trait>
 
 #### Lunar Chitin
 
 The Kystepod's outer shell reflects spell energy in strange ways. When the Kystepod is targeted by a damaging spell that requires a saving throw, roll a d6. On a **6**, the spell rebounds at the original caster using the same attack or save DC.
 
+</Trait>
+
+<Trait>
+
 #### Five-Legged Skitter
 
 The Kystepod can move across ceilings, walls, and rough surfaces without needing to make checks. Its movement ignores difficult terrain caused by organic or fleshy terrain.
+
+</Trait>
 
 ---
 
 ## Actions
 
+<Action>
+
 #### Multiattack
 
 The Lunar Kystepod makes two attacks: either with _Chitin Claws_, with _Acidic Ventral Harpoon_, its _Tendrils_, or its _Held Weapons_.
 
-- **Chitin Claws**
-  Accuracy +5, reach [= 1 stride =], one creature.  
-  On a hit, 12 ([% 2d6 +4 slashing %]). If the target is a creature, it saves Strength against DC 12 or is knocked [# kw:condition:prone #].
+<Attack accuracy="+5" reach="[= 1 stride =]">
 
-- **Acidic Ventral Harpoon**
-  Accuracy +5, reach [= 2 stride =], one creature.  
-  On a hit, 14 ([% 2d8 +4 piercing %]) plus 7 ([% 2d6 chemical %]). If the target is already [# kw:condition:prone #], it suffers **maximum chemical damage**.
+##### Chitin Claws
 
-- **Tendril**
-  Accuracy +5, reach [= 2 stride =], one creature.  
-  On a hit, 16 ([% 2d10 +4 piercing %]).
+On a hit, 12 ([% 2d6 +4 slashing %]). If the target is a creature, it saves Strength against DC 12 or is knocked [# kw:condition:prone #].
+
+</Attack>
+
+<Attack accuracy="+5" reach="[= 2 stride =]">
+
+##### Acidic Ventral Harpoon
+
+On a hit, 14 ([% 2d8 +4 piercing %]) plus 7 ([% 2d6 chemical %]). If the target is already [# kw:condition:prone #], it suffers **maximum chemical damage**.
+
+</Attack>
+
+<Attack accuracy="+5" reach="[= 2 stride =]">
+
+##### Tendril
+
+On a hit, 16 ([% 2d10 +4 piercing %]).
+
+</Attack>
+
+</Action>
 
 ---
 
 ## Reactions
 
+<Action cost="1 Reaction">
+
 #### Spasm of Obedience
 
 _When a Cerithol Lunam within [= 60 stride =] takes damage:_  
 The Kystepod may move up to its full movement toward the Cerithol and immediately use _Chitin Claws_ if a target is within range.
+
+</Action>
+
+</Monster>

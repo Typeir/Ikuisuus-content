@@ -5,38 +5,54 @@ contentType: monsters
 
 # Golden Pig
 
-_Large Aberration, Neutral_
-
-| **Armor Class**    | **Hit Points**  | **Speed** |
-| ------------------ | --------------- | --------- |
-| 16 (natural armor) | 170 ([% 16d8 +98 %]) | [= 5 stride =]    |
-
-| **STR** | **DEX** | **CON** | **INT** | **WIS** | **CHA** |
-| ------- | ------- | ------- | ------- | ------- | ------- |
-| 16 (+3) | 12 (+1) | 20 (+5) | 1 (-5)  | 10 (+0) | 22 (+6) |
-
-- **Saving Throws**: Dex +5, Con +9, Cha +10
-- **Skills**: Insight +6, Persuasion +10, Deception +10
-- **Damage Immunities**: Psychic
-- **Condition Immunities**:  [# kw:condition:Poisoned #]
-- **Senses**: Darkvision [= 12 stride =], passive Perception 12
-- **Languages**: Understands the languages of its nurturer but cannot speak.
-- **Challenge**: 11 (7,200 XP)
-- **Tier Bonus**: +4
+<Monster
+  size="Large"
+  type="Aberration"
+  alignment="Neutral"
+  armorClass="16 (natural armor)"
+  hitPoints="170 ([% 16d8 +98 %])"
+  speed="[= 5 stride =]"
+  str="16"
+  dex="12"
+  con="20"
+  int="1"
+  wis="10"
+  cha="22"
+  saves="Dex +5, Con +9, Cha +10"
+  skills="Insight +6, Persuasion +10, Deception +10"
+  immunities="Psychic"
+  conditionImmunities="[# kw:condition:Poisoned #]"
+  senses="Darkvision [= 12 stride =], passive Perception 12"
+  languages="Understands the languages of its nurturer but cannot speak."
+  challenge="11"
+  xp="7,200"
+  saveDc="18">
 
 ---
 
 ## Traits
 
+<Trait>
+
 #### Legendary Deeds
 The Golden Pig has **3 legendary deeds per round**, and regains all expended deeds at the start of its turn.
 
-#### Legendary Deed: Resist (2/Day)
+</Trait>
+
+<Trait charges="2/Day">
+
+#### Legendary Deed: Resist
 When the Golden Pig fails a saving throw, it can expend a legendary deed to succeed instead. This feature can be used **2 times per day**.
+
+</Trait>
+
+<Trait>
 
 #### Aura of Mockery
 
 The golden pig emanates an aura of mockery in a [= 2 stride;ADJ =] radius. As an [# kw:delayed #] effect, creatures in this aura save Wisdom against DC 18 or take 8 ([% 2d6 psychic %]) and have disadvantage on the next Intelligence check or saving throw they make before the end of their next turn.
+
+</Trait>
 
 ---
 
@@ -53,13 +69,25 @@ The Golden Pig can expend legendary deeds to use the options below. Only one leg
 
 ## Actions
 
+<Action>
+
 #### Multiattack
 
 The Pig makes two attacks with its **Beak** or casts two cantrips.
 
-- **Beak.** Accuracy +7, reach [= 1 stride =], one creature. On a hit, 10 ([% 2d6 +3 piercing %]) plus 7 ([% 2d6 psychic %]).
+<Attack accuracy="+7" reach="[= 1 stride =]">
+
+##### Beak
+
+On a hit, 10 ([% 2d6 +3 piercing %]) plus 7 ([% 2d6 psychic %]).
+
+</Attack>
+
+</Action>
 
 ---
+
+<Action>
 
 #### Spellcasting
 
@@ -72,16 +100,28 @@ The Golden Pig is a 10th-level spellcaster. Its spellcasting ability is Charisma
 - **4th level (3 slots)**: [_Invisibility (overcast)_](/en/library/spells/invisibility), [_Shadow Of The Hunt_](/en/library/spells/shadow-of-the-hunt)
 - **5th level (2 slots)**: [_Dominate_](/en/library/spells/dominate), [_Cloudkill_](/en/library/spells/cloudkill)
 
+</Action>
+
 ---
 
 ## Legendary Deed: Lair
 
 At the start of the creature with the highest initiative's turn, the Golden Pig can expend a legendary deed to use one of the following lair deeds. It cannot use the same lair deed two rounds in a row.
 
+<Action deed="lair">
+
 #### Burrowed Angels
 
 Angelic eggs sprout from the ground in a [= 4 stride;ADJ =] radius centered on a point within the pig's lair. Each creature in that area saves Dexterity against DC 18 or takes 14 ([% 4d6 holy %]) and becomes [# kw:condition:blinded #] [# kw:briefly #]. The eggs remain for 1 minute, providing difficult terrain.
 
+</Action>
+
+<Action deed="lair">
+
 #### Winged Mockery
 
 The pig sprouts ethereal wings for 1 round, granting it a flying speed of [= 12 stride =]. During this time, it can make one attack with its beak, dealing 21 ([% 6d6 psychic %]) on a hit. Additionally, each creature within [= 6 stride =] of the pig saves Wisdom against DC 18 or is [# kw:condition:terrified #] [# kw:briefly #].
+
+</Action>
+
+</Monster>

@@ -5,44 +5,63 @@ contentType: monsters
 
 # Rotworm
 
-_Small monstrosity, Unaligned_
-
 <BlendedImage src='/library/images/monsters/rotworm.webp' alt='Rotworm' />
 
-| **Armor Class** | **Hit Points** | **Speed**             |
-| --------------- | -------------- | --------------------- |
-| 12              | 18 ([% 4d6 +4 %])   | [= 4 stride =], burrow [= 2 stride =] |
-
-| STR     | DEX     | CON     | INT    | WIS     | CHA    |
-| ------- | ------- | ------- | ------ | ------- | ------ |
-| 12 (+1) | 10 (+0) | 13 (+1) | 2 (−4) | 10 (+0) | 5 (−3) |
-
-- **Challenge**: 1
-- **Tier Bonus**: +1
-- **Saving Throws**: Con +2
-- **Damage Resistances**: Dark
-- **Condition Immunities**: [# kw:condition:Terrified #]
-- **Senses**: Blindsight [= 2 stride =], passive Perception 10
-- **Languages**: —
+<Monster
+  size="Small"
+  type="monstrosity"
+  alignment="Unaligned"
+  armorClass="12"
+  hitPoints="18 ([% 4d6 +4 %])"
+  speed="[= 4 stride =], burrow [= 2 stride =]"
+  str="12"
+  dex="10"
+  con="13"
+  int="2"
+  wis="10"
+  cha="5"
+  challenge="1"
+  saves="Con +2"
+  resistances="Dark"
+  conditionImmunities="[# kw:condition:Terrified #]"
+  senses="Blindsight [= 2 stride =], passive Perception 10"
+  languages="—">
 
 ---
 
 ### Traits
 
+<Trait>
+
 ##### Rot-Fed Husk
 
 The rotworm does not require air, food, drink, or sleep.
+
+</Trait>
+
+<Trait>
 
 ##### Necrotic Instability
 
 When the rotworm is reduced to **0 hit points**, it ruptures violently.  
 One creature **of its choice** within **[= 1 stride =]** of it regains **7 ([% 2d6 %] hit) points.
 
+</Trait>
+
 ---
 
 ### Actions
 
+<Action>
+
 ##### Gnawing Bite
 
-Accuracy +2, reach [= 1 stride =], one creature.  
+<Attack accuracy="+2" reach="[= 1 stride =]">
+
 On a hit, 7 ([% 1d8 +1 dark %]).
+
+</Attack>
+
+</Action>
+
+</Monster>

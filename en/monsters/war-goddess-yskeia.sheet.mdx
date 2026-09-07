@@ -9,38 +9,51 @@ _War Goddess_
 
 <BlendedImage src='/library/images/Yskeia.webp' alt='Yskeia' />
 
-_Gargantuan Construct, Lawful Neutral_
-
-| **Armor Class**                           | **Hit Points**      | **Speed**                                 |
-| ----------------------------------------- | ------------------- | ----------------------------------------- |
-| 35 (Primeval Plating; see mechanics) → 23 | 1,640 ([% 80d20 +800 %]) | [= 10 stride =], fly [= 24 stride =] (hover), climb [= 6 stride =] |
-
-| STR      | DEX     | CON      | INT     | WIS      | CHA     |
-| -------- | ------- | -------- | ------- | -------- | ------- |
-| 30 (+10) | 28 (+9) | 30 (+10) | 26 (+8) | 40 (+15) | 28 (+9) |
-
-- **Saving Throws**: Str +22, Dex +18, Con +22, Int +20, Wis +27, Cha +21
-- **Skills**: Athletics +22, Insight +27, Intimidation +21, Perception +27, Religion +20, History +20
-- **Damage Vulnerabilities**: —
-- **Damage Resistances**: Frost, Lightning, Dark, Bludgeoning, Holy; Bludgeoning, Piercing, and Slashing
-- **Damage Immunities**: Fire, Poison, Psychic.
-- **Condition Immunities**: Burning, Bleeding, Banishment, Exhaustion, [# kw:condition:Terrified #], [# kw:condition:Frightened #], [# kw:condition:Charmed #], [# kw:condition:Paralyzed #], [# kw:condition:Petrified #], [# kw:condition:Poisoned #], [# kw:condition:Stunned #]
-- **Senses**: Truesight [= 24 stride =], passive Perception 37
-- **Languages**: All; telepathy [= 60 stride =]
-- **Challenge**: 35 (425,000 XP)
-- **Tier Bonus**: +12
+<Monster
+  size="Gargantuan"
+  type="Construct"
+  alignment="Lawful Neutral"
+  armorClass="35 (Primeval Plating; see mechanics) → 23"
+  hitPoints="1,640 ([% 80d20 +800 %])"
+  speed="[= 10 stride =], fly [= 24 stride =] (hover), climb [= 6 stride =]"
+  str="30"
+  dex="28"
+  con="30"
+  int="26"
+  wis="40"
+  cha="28"
+  saves="Str +22, Dex +18, Con +22, Int +20, Wis +27, Cha +21"
+  skills="Athletics +22, Insight +27, Intimidation +21, Perception +27, Religion +20, History +20"
+  vulnerabilities="—"
+  resistances="Frost, Lightning, Dark, Bludgeoning, Holy; Bludgeoning, Piercing, and Slashing"
+  immunities="Fire, Poison, Psychic."
+  conditionImmunities="[# kw:condition:Burning #], [# kw:condition:Bleeding #], [# kw:condition:Banishment #], [# kw:condition:Exhaustion #], [# kw:condition:Terrified #], [# kw:condition:Frightened #], [# kw:condition:Charmed #], [# kw:condition:Paralyzed #], [# kw:condition:Petrified #], [# kw:condition:Poisoned #], [# kw:condition:Stunned #]"
+  senses="Truesight [= 24 stride =], passive Perception 37"
+  languages="All; telepathy [= 60 stride =]"
+  challenge="35"
+  xp="425,000">
 
 ---
 
 ## Traits
 
+<Trait>
+
 #### Legendary Deeds
 
 Yskeia has **3 legendary deeds per round**, and regains all expended deeds at the start of her turn.
 
-#### Legendary Deed: Resist (3/Repose)
+</Trait>
+
+<Trait charges="3/Repose">
+
+#### Legendary Deed: Resist
 
 When Yskeia fails a saving throw, she can expend a legendary deed to succeed instead. This feature can be used **3 times per [# kw:Repose #]**.
+
+</Trait>
+
+<Trait>
 
 #### Primeval Plating
 
@@ -73,17 +86,33 @@ When a plating is destroyed, Yskeia loses 3 AC (to a minimum of 23) and takes 10
 >
 > **Infallible**: The Primeval Plating cannot be targeted by spells or abilities that would impose a saving throw or condition.
 
+</Trait>
+
+<Trait>
+
 #### Magic Resistance
 
 Yskeia has advantage on saving throws against spells and other magical effects.
+
+</Trait>
+
+<Trait>
 
 #### Magical Weapons
 
 All of yskeias attacks are considered magical for the purposes of overcomming resistances.
 
+</Trait>
+
+<Trait>
+
 #### Siege Monster
 
 Yskeia deals quadruple damage to objects and structures.
+
+</Trait>
+
+<Trait>
 
 #### Marked for Decommission
 
@@ -96,39 +125,66 @@ Yskeia deals quadruple damage to objects and structures.
 
 When Yskeia strikes a creature with any of its attacks, the target is **Marked for Decommission** until the end of Yskeia's next turn. Only one creature can be marked at a time.
 
+</Trait>
+
+<Trait>
+
 #### Protected Air space
 
 When a creature Yskeia can see within her lair attempts flight, Yskeia can use her Reaction to force the creature to save Dexterity against DC 35.  
 On a failed save, the creature takes **243 force damage** and is **[# kw:condition:stunned #] until the start of its next turn**.  
 On a success, it is forced [= 2 stride =] toward the ground, and takes no damage.
 
+</Trait>
+
 ---
 
 ## Major Actions
+
+<Action>
 
 #### Multiattack
 
 Yskeia makes up to **three attacks per turn**, choosing an attack with her main cannon, and any combination of weapons.
 She can replace any attack with a **drone deployment**, **Missile Batteries**, or **mortar volley**.
 
+</Action>
+
 ---
+
+<Action>
 
 #### The Frontline (Shield)
 
-Accuracy +22, reach [= 2 stride =], one creature.  
+<Attack accuracy="+22" reach="[= 2 stride =]">
+
 On a hit, 51 ([% 7d10 +10 bludgeoning %]).  
 A creature hit by The Frontline saves Strength against DC 25 or is **pushed [= 4 stride =] away**.
 
+</Attack>
+
+</Action>
+
 ---
+
+<Action>
 
 #### Spear of Retribution
 
-Accuracy +22, reach [= 4 stride =] or range [= 24 stride =]/[= 72 stride =], one creature. This attack critically strikes on a roll of 18, 19 or 20.  
+<Attack accuracy="+22" reach="[= 4 stride =]" range="[= 24 stride =]/[= 72 stride =]">
+
+This attack critically strikes on a roll of 18, 19 or 20.  
 On a hit, 67 ([% 12d8 +13 piercing %]) plus 31 ([% 7d8 holy %]).  
 On a critical hit, the spear permanently reduces the creature’s tier bonus by **1**, until removed by a spell such as [_Restoration_](/en/library/spells/restoration) or similar, cast at a minimum slot level of 9.  
 On hit, Yskeia may choose to **reel the target [= 6 stride =] toward her**. The target saves Strength against DC 25 to resist being pulled.
 
+</Attack>
+
+</Action>
+
 ---
+
+<Action>
 
 #### Missile Batteries (4 charges, Recharge 4–6)
 
@@ -159,24 +215,42 @@ The attack ignores cover and resistance, and penetrates all forms of magical bar
 >
 > **Infallible**: The Missile Battery cannot be targeted by spells or abilities that would impose a saving throw or condition.
 
+</Action>
+
 ---
+
+<Action>
 
 #### Main Cannon – The Stratagem
 
-Accuracy +22, range [= 240 stride =], one creature.  
+<Attack accuracy="+22" range="[= 240 stride =]">
+
 On a hit, 88 ([% 16d10 +10 force %]) plus 44 ([% 8d10 bludgeoning %]).  
 The attack ignores cover and deals **maximum damage** against objects and structures.
 
+</Attack>
+
+</Action>
+
 ---
+
+<Action>
 
 #### Secondary Cannon – Myriad
 
-Accuracy +22, range [= 60 stride =], one creature.  
+<Attack accuracy="+22" range="[= 60 stride =]">
+
 On a hit, 46 ([% 9d8 +12 piercing %]).  
 After attacking, Yskeia can fire this weapon in **suppression mode**, creating a [= 6 stride;ADJ =]-radius area of heavy fire until the start of her next turn.  
 As an [# kw:delayed #] effect, creatures in the area take **27 ([% 6d8 piercing %])**.
 
+</Attack>
+
+</Action>
+
 ---
+
+<Action>
 
 #### Shoulder Mortars (2 charges, Recharge 4–6)
 
@@ -184,7 +258,11 @@ Each mortar can target a point within **[= 4 league =]**.
 All creatures in a **[= 4 stride;ADJ =]-radius sphere** centered on that point save Dexterity against DC 25, halving **56 ([% 16d6 fire %])**.  
 Creatures that fail the saving throw are **pushed [= 6 stride =] away** from the blast center and knocked **[# kw:condition:prone #]**.
 
+</Action>
+
 ---
+
+<Action>
 
 #### Flamethrower Legs
 
@@ -194,9 +272,13 @@ Creatures reduced to 0 HP by this damage are **disintegrated into molten slag**.
 Creatures that fail the save are **pushed [= 3 stride =] away** from Yskeia.  
 Yskeia can also make a **kick or stomp** attack (melee accuracy +22, [= 2 stride =] reach, 32 ([% 4d10 +10 bludgeoning %]) + 17 ([% 3d10 fire %])) as a Minor Action after using this ability.
 
+</Action>
+
 ---
 
-#### Warlings (Recharge 5–6)
+<Action recharge="5–6">
+
+#### Warlings
 
 <Meta
   target='generator'
@@ -229,6 +311,8 @@ As a Major Action, Yskeia deploys up to four **Warlings** into empty spaces with
 >
 > **Tethered**: When Yskeia is [# kw:condition:incapacitated #], all active Warlings immediately fall inert.
 
+</Action>
+
 ---
 
 ## Legendary Deed: Act
@@ -237,7 +321,9 @@ Yskeia can expend legendary deeds to use the options below. Only one legendary d
 
 ---
 
-#### Reposition (Costs 1 Deed)
+<Action deed="act" cost="1 Deed">
+
+#### Reposition
 
 <Meta
   target='generator'
@@ -249,9 +335,13 @@ Yskeia can expend legendary deeds to use the options below. Only one legendary d
 Yskeia instantly relocates to any point that maintains the exact same distance from the creature currently **Marked for Decommission**.  
 This movement does not provoke opportunity attacks, ignores terrain, and renders her immune to all damage and effects until the repositioning ends.
 
+</Action>
+
 ---
 
-#### Mutually Assured Destruction (Costs 2 Deeds)
+<Action deed="act" cost="2 Deeds">
+
+#### Mutually Assured Destruction
 
 <Meta
   target='generator'
@@ -263,18 +353,26 @@ This movement does not provoke opportunity attacks, ignores terrain, and renders
 Yskeia designates one creature she can see within [= 60 stride =].  
 The target saves Charisma against DC 32 or becomes linked to her for 1 minute.  
 While linked, all damage the target deals to Yskeia is reflected back to it as **true damage**, and any healing the creature receives is instead granted to Yskeia.  
-The effect ends early if the creature succeeds on another **DC 32 Charisma saving throw** at the end of its turns.  
+The effect ends early if the creature saves Charisma against DC 32 at the end of its turns.  
 A creature that succeeds on either saving throw is immune to this effect for 24 hours.
+
+</Action>
 
 ---
 
-#### Attack (Costs 1 Deed)
+<Action deed="act" cost="1 Deed">
+
+#### Attack
 
 Yskeia makes one weapon attack of her choice.
 
+</Action>
+
 ---
 
-#### Faterender Railgun (Recharge 6) (Costs 1 Deed)
+<Action deed="act" cost="1 Deed" recharge="6">
+
+#### Faterender Railgun
 
 <Meta
   target='generator'
@@ -296,11 +394,15 @@ If the target is **Marked for Decommission**, it takes double damage and is also
 
 Once fired, the Faterender Railgun cannot be used again until it recharges.
 
+</Action>
+
 ---
 
 ## Legendary Deed: Lair
 
 At the start of the creature with the highest initiative's turn, Yskeia can expend a legendary deed to use one of the following lair deeds. She cannot use the same lair deed two rounds in a row.
+
+<Action deed="lair">
 
 #### Arms Race
 
@@ -337,6 +439,10 @@ After detonation, both maelstroms are destroyed and cannot be redeployed until t
 > - **Targets**: All creatures whose space the maelstrom’s edge passes through
 > - **Notes**: Treated as high-velocity debris; cannot be dispelled or destroyed by magical means, save for disintegration effects.
 
+</Action>
+
+<Action deed="lair">
+
 #### Sky Aflame
 
 <Meta
@@ -359,7 +465,11 @@ All creatures in the area immediately gain the conditions **[# kw:condition:Burn
 
 When the effect ends, the atmosphere reforms over [% 1d4 %] minutes, leaving behind vitrified glass and scorched terrain.
 
+</Action>
+
 ---
+
+<Action deed="lair">
 
 #### Tides of Ruin
 
@@ -385,9 +495,13 @@ On a success, it takes half as much damage and is pushed [= 6 stride =] ahead of
 - When a tide reaches the far edge of the arena, it collapses, creating a shrapnel storm.  
   All creatures within **[= 8 stride =]** of the collapse save Dexterity against DC 25, halving **200 ([% 40d10 piercing %])**.
 
+</Action>
+
 ---
 
 ## Legendary Deed: Stratagem
+
+<Action deed="stratagem">
 
 #### Lattice of Fire
 
@@ -402,11 +516,15 @@ A creature that fails the save is also **knocked [# kw:condition:prone #]**.
 - All mundane structures and terrain features caught in the grid are obliterated.
 - Yskeia can chose whether the lines are horizontal or vertical, but never in any other orientation.
 
+</Action>
+
 ---
 
 ---
 
 ## Legendary Deed: Phase
+
+<Action deed="phase">
 
 #### Wounded (75%) — Call to Counsel
 
@@ -417,7 +535,11 @@ He joins the initiative immediately after Yskeia.
 
 > “Her voice did not falter. Nor did my shield.” — War Counselor Of Yskeia
 
+</Action>
+
 ---
+
+<Action deed="phase">
 
 #### Doomed (25%) — Athena Protocol
 
@@ -427,6 +549,10 @@ Unburdened, Yskeia reaches for the blade that was made to end Fate itself — **
 
 **Athena** is a +4 divine weapon of impossible radiance.  
 From this point onward, Yskeia replaces all attacks made with the Spear of Retribution with Athena.
+
+</Action>
+
+<Action deed="phase">
 
 #### Athena, Blade of Resolution
 
@@ -443,4 +569,8 @@ While wielding Athena:
 
 > _“She laid down command and took up judgment.” — The Dreamcatcher, on their confrontation with Yskeia_
 
+</Action>
+
 ---
+
+</Monster>

@@ -14,17 +14,16 @@ Thanks to their connection with nature, Striders can also cast spells that harne
 
 ---
 
-## Core Strider Traits
+<Vocation
+  primaryAbility="Dexterity and Wisdom"
+  hitDie="D10 per Strider level"
+  saves="Strength and Dexterity"
+  skills="Choose 3: Animal Handling, Athletics, Insight, Investigation, Nature, Perception, Stealth, or Survival"
+  weapons="Simple and Martial weapons"
+  armor="Light and Medium armor and Shields"
+  equipment="Choose A or B: (A) Studded Leather Armor, Scimitar, Shortsword, Longbow, 20 Arrows, Quiver, Druidic Focus (sprig of mistletoe), Explorer's Pack and 7 GP; or (B) 150 GP">
 
-| Trait                          | Value                                                                                                                                                                   |
-| ------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Primary Ability**            | Dexterity and Wisdom                                                                                                                                                    |
-| **Hit Point Die**              | D10 per Strider level                                                                                                                                                   |
-| **Saving Throw Proficiencies** | Strength and Dexterity                                                                                                                                                  |
-| **Skill Proficiencies**        | Choose 3: Animal Handling, Athletics, Insight, Investigation, Nature, Perception, Stealth, or Survival                                                                  |
-| **Weapon Proficiencies**       | Simple and Martial weapons                                                                                                                                              |
-| **Armor Training**             | Light and Medium armor and Shields                                                                                                                                      |
-| **Starting Equipment**         | Choose A or B: (A) Studded Leather Armor, Scimitar, Shortsword, Longbow, 20 Arrows, Quiver, Druidic Focus (sprig of mistletoe), Explorer's Pack and 7 GP; or (B) 150 GP |
+## Core Strider Traits
 
 ---
 
@@ -49,28 +48,15 @@ Thanks to their connection with nature, Striders can also cast spells that harne
 
 ### Strider Progression
 
-| Level | Tier Bonus | Lay of the Land | Features                                      | Prepared Spells | 1st | 2nd | 3rd | 4th | 5th |
-| ----- | ---------- | --------------- | --------------------------------------------- | --------------- | --- | --- | --- | --- | --- |
-| 1     | +1         | 3               | Spellcasting, Lay of the Land, Weapon Mastery | 2               | 2   | -   | -   | -   | -   |
-| 2     | +1         | 3               | Deft Explorer, Fighting Style                 | 3               | 2   | -   | -   | -   | -   |
-| 3     | +1         | 3               | Strider Specialization                        | 4               | 3   | -   | -   | -   | -   |
-| 4     | +2         | 3               | Feat                                          | 5               | 3   | -   | -   | -   | -   |
-| 5     | +2         | 5               | Extra Attack, Lay of the Land                 | 6               | 4   | 2   | -   | -   | -   |
-| 6     | +2         | 5               | Cunning Hunter                                | 6               | 4   | 2   | -   | -   | -   |
-| 7     | +3         | 5               | Specialization Feature                        | 7               | 4   | 3   | -   | -   | -   |
-| 8     | +3         | 5               | Feat                                          | 7               | 4   | 3   | -   | -   | -   |
-| 9     | +3         | 7               | To Take The Better Beast, Lay of the Land     | 9               | 4   | 3   | 2   | -   | -   |
-| 10    | +4         | 7               | Tireless                                      | 9               | 4   | 3   | 2   | -   | -   |
-| 11    | +4         | 7               | Specialization Feature                        | 10              | 4   | 3   | 3   | -   | -   |
-| 12    | +4         | 7               | Feat                                          | 10              | 4   | 3   | 3   | -   | -   |
-| 13    | +5         | 9               | One with the Land, Lay of the Land            | 11              | 4   | 3   | 3   | 1   | -   |
-| 14    | +5         | 9               | Nature's Veil                                 | 11              | 4   | 3   | 3   | 1   | -   |
-| 15    | +5         | 9               | Specialization Feature                        | 12              | 4   | 3   | 3   | 2   | -   |
-| 16    | +6         | 9               | Feat                                          | 12              | 4   | 3   | 3   | 2   | -   |
-| 17    | +6         | 11              | Precise Hunter, Lay of the Land               | 14              | 4   | 3   | 3   | 3   | 1   |
-| 18    | +6         | 11              | Feral Senses                                  | 14              | 4   | 3   | 3   | 3   | 1   |
-| 19    | +7         | 11              | Epic Boon                                     | 15              | 4   | 3   | 3   | 3   | 2   |
-| 20    | +7         | 11              | Foe Slayer                                    | 15              | 4   | 3   | 3   | 3   | 2   |
+<Progression casting="half" feats="4, 8, 12, 16" specialization="7, 11, 15">
+  <Column label="Features">
+    <Row at="5" unique>Lay of the Land</Row>
+    <Row at="9" unique>Lay of the Land</Row>
+    <Row at="17" unique>Lay of the Land</Row>
+  </Column>
+  <Column label="Lay of the Land" values="3, 3, 3, 3, 5, 5, 5, 5, 7, 7, 7, 7, 9, 9, 9, 9, 11, 11, 11, 11" />
+  <Column label="Prepared Spells" values="2, 3, 4, 5, 6, 6, 7, 7, 9, 9, 10, 10, 11, 11, 12, 12, 14, 14, 15, 15" />
+</Progression>
 
 ---
 
@@ -79,7 +65,10 @@ Thanks to their connection with nature, Striders can also cast spells that harne
 ---
 
 <Collapsible>
-## 1st Level – Spellcasting
+
+<Feature level="1">
+
+## Spellcasting
 
 You can channel the magical essence of nature to cast spells. Wisdom is your spellcasting ability.
 You can use a **Druidic Focus** as a spellcasting focus. You choose your spells from the [_Ranger spell list_](/en/library/character-creation/vocations/strider/spells).
@@ -90,10 +79,15 @@ You can use a **Druidic Focus** as a spellcasting focus. You choose your spells 
 
 **Changing Spells.** You can change one spell from your list of prepared spells after a [# kw:Recovery #].
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 1st Level – Lay of the Land
+
+<Feature level="1">
+
+## Lay of the Land
 
 You understand the world as a hunter does, through prey and through paths.
 
@@ -133,25 +127,40 @@ If you are traveling alone, you can move stealthily at a normal pace.
 When you forage, you find twice as much food as you normally would.
 While tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 1st Level – Weapon Mastery
+
+<Feature level="1">
+
+## Weapon Mastery
 
 You can use the **mastery properties of two weapons** you have proficiency with. You can change these weapons after a [# kw:Recovery #].
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 2nd Level – Deft Explorer
+
+<Feature level="2">
+
+## Deft Explorer
 
 - **Expertise.** Gain Expertise in one skill you're proficient with.
 - **Languages.** Learn two additional languages.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible open>
-## 2nd Level – Fighting Style
+
+<Feature level="2">
+
+## Fighting Style
 
 Choose a [Fighting Style feat](/en/library/character-creation/feats/fighting-styles), or select:
 
@@ -159,10 +168,15 @@ When you gain a Fighting Style this way, you do not increase an ability score.
 
 **Druidic Warrior.** Learn two Druid cantrips. Wisdom is your spellcasting ability.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible open>
-## 3rd Level – Strider Specialization
+
+<Feature level="3">
+
+## Strider Specialization
 
 You gain a Strider Specialization, representing a particular focus of your training and experience.
 Each specialization grants you features at 3rd, 7th, 11th, and 15th level.
@@ -173,90 +187,149 @@ Each specialization grants you features at 3rd, 7th, 11th, and 15th level.
 | [Gloom Stalker](/en/library/character-creation/vocations/strider/gloom-stalker) |
 | [Hunter](/en/library/character-creation/vocations/strider/hunter)               |
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 4th Level – Ability Score Improvement
+
+<Feature level="4">
+
+## Feat
 
 At levels 4, 8, 12, and 16, you gain an [Ability Score Improvement feat](/en/library/character-creation/feats/ability-score-improvement) or another feat of your choice.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 5th Level – Extra Attack
+
+<Feature level="5">
+
+## Extra Attack
 
 You can attack twice when you take the Attack action.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 6th Level – Cunning Hunter
+
+<Feature level="6">
+
+## Cunning Hunter
 
 Whenever you take the **Magic**, **Dodge**, **Hide**, **Dash** or **Disengage** actions, you can use [_Trinkets_](/en/library/items/trinkets/main) as part of the same Action, provided the trinket has a usage time of 1 Major Action or less.
 If those trinkets would impose a saving throw, the DC equals your spell save DC, and you can use your spell attack bonus instead of the normal attack bonus.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 9th Level – To Take The Better Beast
+
+<Feature level="9">
+
+## To Take The Better Beast
 
 Once per [# kw:Repose #], you can choose to gain the benefits of a [_Path_](/en/library/character-creation/vocations/strider/lay-of-the-land#path) your current terrain qualifies for, and
 the benefits of [_Prey_](/en/library/character-creation/vocations/strider/lay-of-the-land#prey) against the _creature type_ of a creature you can see within [= 24 stride =] of you.
 
 This effect lasts for an hour, and it ends early if you are [# kw:condition:incapacitated #] or die.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 10th Level – Tireless
+
+<Feature level="10">
+
+## Tireless
 
 - **Temporary Hit Points.** As a Major Action, gain [% 1d8 %] + Wisdom modifier Temp HP.
 - **Decrease Exhaustion.** When you finish a [# kw:Repose #], reduce your Exhaustion level by 1.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 13th Level – One With Land
+
+<Feature level="13">
+
+## One With Land
 
 While you are on your [_Path_](/en/library/character-creation/vocations/strider/lay-of-the-land#path)
 You can cast Rituals you know as a Major Action, ignoring the normal casting time of the spell.
 
 Additionally, your movement speed increases by an additional [= 1 stride =] while you are on your [_Path_](/en/library/character-creation/vocations/strider/lay-of-the-land#path).
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 14th Level – Nature's Veil
 
-As a Minor Action, you can become Invisible until the end of your next turn.
+<Feature level="14">
+
+## Nature's Veil
+
+As a Minor Action, you can become [# kw:condition:invisible #] until the end of your next turn.
 You can use this feature a number of times equal to your Wisdom modifier, and regain all expended uses after a [# kw:Recovery #].
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 17th Level – Precise Hunter
+
+<Feature level="17">
+
+## Precise Hunter
 
 Your [_Prey_](/en/library/character-creation/vocations/strider/lay-of-the-land#prey) damage die becomes **[% 2d6 %]** instead of **[% 1d6 %]**.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 18th Level – Feral Senses
+
+<Feature level="18">
+
+## Feral Senses
 
 You gain **Blindsight** to [= 6 stride =].
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 19th Level – Epic Boon
+
+<Feature level="19">
+
+## Epic Boon
 
 You gain an [Epic Boon feat](/en/library/character-creation/feats). **Boon of Fold Stepping** is recommended.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 20th Level – Foe Slayer
+
+<Feature level="20">
+
+## Foe Slayer
 
 Your [_Prey_](/en/library/character-creation/vocations/strider/lay-of-the-land#prey) damage die becomes **[% 3d6 %]**, and you have advantage on attack rolls while you are on your [_Path_](/en/library/character-creation/vocations/strider/lay-of-the-land#path).
 
+</Feature>
+
 </Collapsible>
+
+</Vocation>

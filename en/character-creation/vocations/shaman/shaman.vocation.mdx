@@ -5,8 +5,6 @@ grants:
   "Minor Rite": []
 ---
 
-<Meta target='generator' type='feature' print-mode='single' />
-
 # Shaman
 
 Some magics demand devotion and study. Others demand lineage and sacrifice — or a contract sealed in blood under broken moons.
@@ -26,18 +24,18 @@ Scatter across many Idea-fragments, and each link in the chain remains short.
 
 ---
 
+<Vocation
+  primaryAbility="Wisdom"
+  hitDie="d8 per Shaman level"
+  saves="Wisdom and Constitution"
+  skills="Choose 2: Animal Handling, Performance, Insight, Medicine, Nature, Perception, Religion, or Survival"
+  trades="One [Trade](/en/library/items/tools) of your choice (for crafting effigies)"
+  weapons="Simple weapons"
+  armor="Light and Medium Armor, Shields">
+
 ## Core Shaman Traits
 
-| Trait                          | Description                                                                                                   |
-| ------------------------------ | ------------------------------------------------------------------------------------------------------------- |
-| **Primary Ability**            | Wisdom                                                                                                        |
-| **Hit Point Die**              | d8 per Shaman level                                                                                           |
-| **Saving Throw Proficiencies** | Wisdom and Constitution                                                                                       |
-| **Skill Proficiencies**        | Choose 2: Animal Handling, Performance, Insight, Medicine, Nature, Perception, Religion, or Survival          |
-| **Weapon Proficiencies**       | Simple weapons                                                                                                |
-| **Trade Proficiencies**        | One [Trade](/en/library/items/tools) of your choice (for crafting effigies)                                   |
-| **Armor Training**             | Light and Medium Armor, Shields                                                                               |
-| **Starting Equipment**         | Choose A or B:<br/>(A) Scale Mail, Shield, Quarterstaff, Effigy Kit, Explorer's Pack, and 5 GP<br/>(B) 100 GP |
+<Equipment>Choose A or B:<br/>(A) Scale Mail, Shield, Quarterstaff, Effigy Kit, Explorer's Pack, and 5 GP<br/>(B) 100 GP</Equipment>
 
 ---
 
@@ -60,35 +58,22 @@ Scatter across many Idea-fragments, and each link in the chain remains short.
 
 ## Shaman Vocation Features
 
-| Level | Tier Bonus | Features                              | Rites Known | 1st | 2nd | 3rd | 4th | 5th | 6th | 7th | 8th | 9th |
-| ----- | ----------------- | ------------------------------------- | ----------- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1     | +1                | Spellcasting, Effigy & Rites          | 2           | 2   | –   | –   | –   | –   | –   | –   | –   | –   |
-| 2     | +1                | Minor Rite, Canticle                  | 2           | 3   | –   | –   | –   | –   | –   | –   | –   | –   |
-| 3     | +1                | Class Feature                         | 2           | 4   | 2   | –   | –   | –   | –   | –   | –   | –   |
-| 4     | +2                | Feat                                  | 2           | 4   | 3   | –   | –   | –   | –   | –   | –   | –   |
-| 5     | +2                | Minor Rite Improvement                | 3           | 4   | 3   | 2   | –   | –   | –   | –   | –   | –   |
-| 6     | +2                | Canticle Feature                      | 3           | 4   | 3   | 3   | –   | –   | –   | –   | –   | –   |
-| 7     | +3                | Class Feature                         | 3           | 4   | 3   | 3   | 1   | –   | –   | –   | –   | –   |
-| 8     | +3                | Feat                                  | 3           | 4   | 3   | 3   | 2   | –   | –   | –   | –   | –   |
-| 9     | +3                | Major Rites, Minor Rite Improvement   | 4           | 4   | 3   | 3   | 3   | 1   | –   | –   | –   | –   |
-| 10    | +4                | Canticle Feature                      | 4           | 4   | 3   | 3   | 3   | 2   | –   | –   | –   | –   |
-| 11    | +4                | Class Feature                         | 4           | 4   | 3   | 3   | 3   | 2   | 1   | –   | –   | –   |
-| 12    | +4                | Feat                                  | 4           | 4   | 3   | 3   | 3   | 2   | 1   | –   | –   | –   |
-| 13    | +5                | Minor Rite Improvement                | 5           | 4   | 3   | 3   | 3   | 2   | 1   | 1   | –   | –   |
-| 14    | +5                | Canticle Feature                      | 5           | 4   | 3   | 3   | 3   | 2   | 1   | 1   | –   | –   |
-| 15    | +5                | Ancient Rites                         | 5           | 4   | 3   | 3   | 3   | 2   | 1   | 1   | 1   | –   |
-| 16    | +6                | Feat                                  | 5           | 4   | 3   | 3   | 3   | 2   | 1   | 1   | 1   | –   |
-| 17    | +6                | Supreme Rites, Minor Rite Improvement | 6           | 4   | 3   | 3   | 3   | 2   | 1   | 1   | 1   | 1   |
-| 18    | +6                | Class Feature                         | 6           | 4   | 3   | 3   | 3   | 3   | 1   | 1   | 1   | 1   |
-| 19    | +7                | Epic Boon                             | 6           | 4   | 3   | 3   | 3   | 3   | 2   | 1   | 1   | 1   |
-| 20    | +7                | Canticle Feature                      | 6           | 4   | 3   | 3   | 3   | 3   | 2   | 2   | 1   | 1   |
+<Progression casting="full" feats="4, 8, 12, 16" specialization="Class: 3, 7, 11, 18">
+  <Column label="Features">
+    <Row at="15" unique>Ancient Rites</Row>
+  </Column>
+  <Column label="Rites Known" values="2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 6, 6, 6, 6" />
+</Progression>
 
 > **Effigies per [# kw:Repose #]**: Equal to your Wisdom modifier. See _Effigy & Rites_ below.
 
 ---
 
 <Collapsible>
-## 1st Level – Spellcasting
+
+<Feature level="1">
+
+## Spellcasting
 
 Shaman spellcasting is channeled exclusively through the domain of held rites. Rather than drawing from a broad class spell list, the shaman may only cast spells attached to their currently held rites.
 
@@ -102,10 +87,15 @@ Shaman spellcasting is channeled exclusively through the domain of held rites. R
 
 You can only cast spells from rites for which you have an **active placed effigy** within **[= 12 stride =]**. Without an active effigy bound to a rite, that rite's spells remain inaccessible.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible open>
-## 1st Level – Effigy & Rites
+
+<Feature level="1">
+
+## Effigy & Rites
 
 Through ritual incantation, you call Väkis from the borderlands and lure them into physical lodgments. Your power flows through these temporary anchors.
 
@@ -153,10 +143,15 @@ An effigy is a crude physical object — carved wood, packed clay, bundled wire 
 - **Multiple Effigies**: You may have multiple effigies active simultaneously, each calling to a different held rite (or the same rite).
 - **Placement is the constraint**: A rite whose effigy has not been placed, has expired, or has been destroyed is inaccessible until a new effigy calls to it again.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 2nd Level – Minor Rite
+
+<Feature level="2">
+
+## Minor Rite
 
 At 2nd level, the shaman masters a Minor Rite — a performed ritual and vocal pattern that becomes woven into their body and voice, requiring no effigy and consuming no spell slot.
 
@@ -201,10 +196,15 @@ The cornerstone is automatically overcast at higher effective spell levels on th
 
 > [NEEDS SOURCE: Specific Minor Rites (with their enhancement type, starting die, and cornerstone spell) are defined per Canticle and have not yet been provided. Each Minor Rite is unique to its associated Canticle or chosen freely from a Minor Rite list.]
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible open>
-## 2nd Level – Canticle
+
+<Feature level="2">
+
+## Canticle
 
 At 2nd level, the shaman recognizes their primary Väki calling and chooses a **Canticle** — a tradition of incantation aligned with a specific domain of spirit.
 
@@ -216,40 +216,65 @@ The Canticle defines which Minor Rite the shaman masters and shapes a set of add
 | ----------------- |
 | _(To be defined)_ |
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 4th Level – Feat
+
+<Feature level="4">
+
+## Feat
 
 Gain the **[Ability Score Improvement feat](/en/library/character-creation/feats/ability-score-improvement)** or another **feat of your choice**.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 5th Level – Minor Rite Improvement
+
+<Feature level="5">
+
+## Minor Rite Improvement
 
 Your Minor Rite's **Enhancement die increases by one step** along the dice progression.
 
 See the _Minor Rite_ die table for the updated value.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 6th Level – Canticle Feature
+
+<Feature level="6">
+
+## Canticle Feature
 
 You gain a feature from your chosen Canticle.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 8th Level – Feat
+
+<Feature level="8">
+
+## Feat
 
 Gain the **[Ability Score Improvement feat](/en/library/character-creation/feats/ability-score-improvement)** or another **feat of your choice**.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 9th Level – Major Rites
+
+<Feature level="9">
+
+## Major Rites
 
 Your mastery of Väki incantation deepens. You unlock access to **Major Rites** — the second tier of each rite tradition.
 
@@ -257,77 +282,127 @@ Your mastery of Väki incantation deepens. You unlock access to **Major Rites** 
 - Major Rites occupy rite slots like standard rites.
 - Major Rite spell lists contain spells of 5th through 7th level.
 
+</Feature>
+
 ---
 
-## 9th Level – Minor Rite Improvement
+<Feature level="9">
+
+## Minor Rite Improvement
 
 Your **Cornerstone Incantation** is now always cast as a **2nd-level spell**.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 10th Level – Canticle Feature
+
+<Feature level="10">
+
+## Canticle Feature
 
 You gain a feature from your chosen Canticle.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 12th Level – Feat
+
+<Feature level="12">
+
+## Feat
 
 Gain the **[Ability Score Improvement feat](/en/library/character-creation/feats/ability-score-improvement)** or another **feat of your choice**.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 13th Level – Minor Rite Improvement
+
+<Feature level="13">
+
+## Minor Rite Improvement
 
 Your Minor Rite's **Enhancement die increases by one step** along the dice progression.
 
 See the _Minor Rite_ die table for the updated value.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 14th Level – Canticle Feature
+
+<Feature level="14">
+
+## Canticle Feature
 
 You gain a feature from your chosen Canticle.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 16th Level – Feat
+
+<Feature level="16">
+
+## Feat
 
 Gain the **[Ability Score Improvement feat](/en/library/character-creation/feats/ability-score-improvement)** or another **feat of your choice**.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 17th Level – Supreme Rites
+
+<Feature level="17">
+
+## Supreme Rites
 
 You unlock access to **Ancient Rites** and **Supreme Rites** — the third and fourth tiers of each rite tradition.
 
 - You may now select **Ancient Rites** (8th–9th level spells) and **Supreme Rites** (10th–11th level spells) when preparing your held rites.
 
+</Feature>
+
 ---
 
-## 17th Level – Minor Rite Improvement
+<Feature level="17">
+
+## Minor Rite Improvement
 
 Your **Cornerstone Incantation** is now always cast as a **3rd-level spell**.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 20th Level – Canticle Feature
+
+<Feature level="20">
+
+## Canticle Feature
 
 You gain a feature from your chosen Canticle.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 19th Level – Epic Boon
+
+<Feature level="19">
+
+## Epic Boon
 
 You gain an **Epic Boon** feat or another feat of your choice.
+
+</Feature>
 
 </Collapsible>
 
@@ -336,3 +411,5 @@ You gain an **Epic Boon** feat or another feat of your choice.
 > **Epic Play** (Levels 21–30): At level 21, **True Rites** — the fifth and final tier of rite traditions containing 12th-level spells — become available. The Minor Rite enhancement die increases again at level 21 and 29, and the Cornerstone Incantation advances to 4th-level at level 25 and 5th-level at level 30. See [character progression](/en/library/rules/the-measure-of-the-self/character-progression) for epic-level spell slots.
 
 > [NEEDS SOURCE: Level 20 capstone feature has not been defined in current design notes.]
+
+</Vocation>

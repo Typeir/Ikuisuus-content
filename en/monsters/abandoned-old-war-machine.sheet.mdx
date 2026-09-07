@@ -5,33 +5,42 @@ contentType: monsters
 
 # Abandoned Old War Machine
 
-_Large Construct, Chaotic Neutral_
-
-| **Armor Class**       | **Hit Points**         | **Speed**                                                  |
-| --------------------- | ---------------------- | ---------------------------------------------------------- |
-| 18 (corroded plating) | 212 ([% 12d12 +134 %]) | [= 7 stride =], climb [= 7 stride =], hover [= 7 stride =] |
-
-| STR     | DEX     | CON     | INT     | WIS     | CHA     |
-| ------- | ------- | ------- | ------- | ------- | ------- |
-| 22 (+6) | 14 (+2) | 24 (+7) | 12 (+1) | 12 (+1) | 20 (+5) |
-
-- **Saving Throws**: Str +10, Con +11, Wis +5, Cha +9
-- **Damage Resistances**: Chemical, Frost, Fire, Force, Dark
-- **Damage Immunities**: Poison, Psychic
-- **Damage Vulnerabilities**: Bludgeoning
-- **Condition Immunities**: [# kw:condition:Terrified #], [# kw:condition:Frightened #], [# kw:condition:Poisoned #], [# kw:condition:Paralyzed #]
-- **Senses**: Darkvision [= 18 stride =], passive Perception 11
-- **Languages**: —
-- **Challenge**: 16 (10,900 XP)
-- **Tier Bonus**: +6
+<Monster
+  size="Large"
+  type="Construct"
+  alignment="Chaotic Neutral"
+  armorClass="18 (corroded plating)"
+  hitPoints="212 ([% 12d12 +134 %])"
+  speed="[= 7 stride =], climb [= 7 stride =], hover [= 7 stride =]"
+  str="22"
+  dex="14"
+  con="24"
+  int="12"
+  wis="12"
+  cha="20"
+  saves="Str +10, Con +11, Wis +5, Cha +9"
+  resistances="Chemical, Frost, Fire, Force, Dark"
+  immunities="Poison, Psychic"
+  vulnerabilities="Bludgeoning"
+  conditionImmunities="[# kw:condition:Terrified #], [# kw:condition:Frightened #], [# kw:condition:Poisoned #], [# kw:condition:Paralyzed #]"
+  senses="Darkvision [= 18 stride =], passive Perception 11"
+  languages="—"
+  challenge="16"
+  xp="15,000">
 
 ---
 
 ## Traits
 
+<Trait>
+
 #### Legendary Deeds
 
 The Abandoned Old War Machine has **3 legendary deeds per round**, and regains all expended deeds at the start of its turn.
+
+</Trait>
+
+<Trait>
 
 #### Null Core
 
@@ -40,58 +49,90 @@ All ongoing spells or magical effects in the area end instantly.
 After a three turn delay, the war machine explodes.
 Each creature within range saves Dexterity against DC 23, taking **180 ([% 40d8 force %])** and becoming **[# kw:condition:blinded #]** [# kw:briefly #] on a failure, or half as much damage on a success.
 
+</Trait>
+
+<Trait>
+
 #### Acid Overflow
 
 When the War Machine takes damage, chemical leaks from its seams.  
 All creatures within [= 1 stride =] of the machine take **8 ([% 2d8 chemical %])** and each saves Dexterity against DC 23 or gains **1 stack of [# kw:Erosion #]**.
 
+</Trait>
+
+<Trait>
+
 #### Rust Breaker
 
 The War Machine scores a critical hit on a roll of 20; this threshold is lowered by 1 for each stack of **[# kw:Erosion #]** on the target.
+
+</Trait>
+
+<Trait>
 
 #### Construct Nature
 
 The War Machine does not require air, food, drink, or sleep.
 
+</Trait>
+
 ---
 
 ## Actions
+
+<Action>
 
 #### Multiattack
 
 The War Machine makes three attacks with any combination of its weapons.
 
-- **Pseudopod Slam.**  
-  Accuracy +14, reach [= 4 stride =], one creature.  
-  On a hit, 18 ([% 3d8 +6 bludgeoning %]) and chemical damage.  
-  The target gains **1 stack of [# kw:Erosion #]** and saves Strength against DC 20 or is **knocked [# kw:condition:prone #]**.
+<Attack accuracy="+14" reach="[= 4 stride =]">
 
-- **Acid Shotgun.**  
-  The War Machine fires a cone of acidic shrapnel in a **[= 6 stride;ADJ =] cone**.  
-  Each creature in the area saves Dexterity against DC 20, halving **37 ([% 8d8 chemical %])**.  
-  Creatures that fail are **[# kw:condition:blinded #]** [# kw:briefly #] and gain **1 stack of [# kw:Erosion #]**.
+##### Pseudopod Slam
 
-- **Nulled Blade (Recharge 4–6).**  
-  Accuracy +16, reach [= 2 stride =], one creature.  
-  On a hit, 22 ([% 4d10 +9 force %]).  
-  The target saves Charisma against DC 21 or loses all magical effects currently affecting it, taking **10 force damage** for each effect removed and for each stack of **Erosion** on it.  
-  The creature becomes **immune to those effects** until it finishes a [# kw:Repose #] or [# kw:Recovery #] and is **vulnerable to damage from the Nulled Blade** [# kw:briefly #].
+On a hit, 18 ([% 3d8 +6 bludgeoning %]) and chemical damage.  
+The target gains **1 stack of [# kw:Erosion #]** and saves Strength against DC 20 or is **knocked [# kw:condition:prone #]**.
 
-- **Barely Functional Disambiguator (Recharge 4–6).**  
-   Accuracy +16, reach [= 1 stride =], one creature.  
-   On a hit, [% 2d6 +9 slashing %] plus [% 2d12 dark %].  
-   The War Machine heals **half of the damage dealt** with this attack.  
-   After each attack with the Disambiguator, it saves Constitution against DC 26 or immediately casts **[_Pyroblast_](/en/library/spells/pyroblast)** as an 8th-level spell centered on itself and automatically fail the save.
-  After hitting, if the war machine passed the save, the War Machine chooses one effect:
-  - **Effect — The Toll**: The target saves Constitution against DC 21 or fails one death saving throw. It also loses all magical effects currently affecting it.
-  - **Effect — The Cave**: The target saves Charisma against DC 20 or is **[# kw:condition:stunned #], [# kw:condition:paralyzed #], put to sleep, and [# kw:condition:petrified #]** (petrification completes after two rounds). This effect cannot be repeated and can only be removed by a curse removal.
+</Attack>
 
-- **Thruster Axe-Kick.**  
-_Special Accuracy +14, range 10–[= 6 stride =], one creature.  
+##### Acid Shotgun
+
+The War Machine fires a cone of acidic shrapnel in a **[= 6 stride;ADJ =] cone**.  
+Each creature in the area saves Dexterity against DC 20, halving **37 ([% 8d8 chemical %])**.  
+Creatures that fail are **[# kw:condition:blinded #]** [# kw:briefly #] and gain **1 stack of [# kw:Erosion #]**.
+
+<Attack accuracy="+16" reach="[= 2 stride =]">
+
+##### Nulled Blade (Recharge 4–6)
+
+On a hit, 22 ([% 4d10 +9 force %]).  
+The target saves Charisma against DC 21 or loses all magical effects currently affecting it, taking **10 force damage** for each effect removed and for each stack of **Erosion** on it.  
+The creature becomes **immune to those effects** until it finishes a [# kw:Repose #] or [# kw:Recovery #] and is **vulnerable to damage from the Nulled Blade** [# kw:briefly #].
+
+</Attack>
+
+<Attack accuracy="+16" reach="[= 1 stride =]">
+
+##### Barely Functional Disambiguator (Recharge 4–6)
+
+On a hit, [% 2d6 +9 slashing %] plus [% 2d12 dark %].  
+The War Machine heals **half of the damage dealt** with this attack.  
+After each attack with the Disambiguator, it saves Constitution against DC 26 or immediately casts **[_Pyroblast_](/en/library/spells/pyroblast)** as an 8th-level spell centered on itself and automatically fail the save.
+After hitting, if the war machine passed the save, the War Machine chooses one effect:
+- **Effect — The Toll**: The target saves Constitution against DC 21 or fails one death saving throw. It also loses all magical effects currently affecting it.
+- **Effect — The Cave**: The target saves Charisma against DC 20 or is **[# kw:condition:stunned #], [# kw:condition:paralyzed #], put to sleep, and [# kw:condition:petrified #]** (petrification completes after two rounds). This effect cannot be repeated and can only be removed by a curse removal.
+
+</Attack>
+
+##### Thruster Axe-Kick
+
+Accuracy +14, range 10–[= 6 stride =], one creature.  
 The War Machine launches forward on hydraulic thrusters, landing [= 1 stride =] from its target.  
 On a hit, [% 3d10 +6 slashing %].  
 If the target is Large or smaller, it saves Strength against DC 20 or is **knocked [# kw:condition:prone #]**.  
 A target that takes damage also gains **1 stack of [# kw:Erosion #]**.
+
+</Action>
 
 ---
 
@@ -101,3 +142,5 @@ The Abandoned Old War Machine can expend legendary deeds to use the options belo
 
 - **Pseudopod Lash.** (Costs 1 Deed) The War Machine makes one **Pseudopod Slam** attack.
 - **Null Spark.** (Costs 2 Deeds) The War Machine emits a brief nullwave; all ongoing magical effects on creatures within [= 3 stride =] are suppressed until the start of its next turn.
+
+</Monster>

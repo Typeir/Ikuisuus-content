@@ -5,32 +5,41 @@ contentType: monsters
 
 # Elite Platonian Hunter
 
-_Large Construct, Lawful Neutral_
-
-| **Armor Class** | **Hit Points**    | **Speed** |
-| --------------- | ----------------- | --------- |
-| 20              | 258 ([% 18d12 +120 %]) | [= 9 stride =]    |
-
-| **STR** | **DEX** | **CON** | **INT** | **WIS** | **CHA** |
-| ------- | ------- | ------- | ------- | ------- | ------- |
-| 24 (+7) | 24 (+7) | 24 (+7) | 24 (+7) | 24 (+7) | 6 (-2)  |
-
-- **Saving Throws**: Str +13, Dex +13, Con +13, Int +13, Wis +13
-- **Damage Resistances**: Dark, Holy, Fire, Lightning, Frost
-- **Damage Immunities**: Poison
-- **Damage Vulnerabilities**: Bludgeoning, Chemical
-- **Condition Immunities**: [# kw:condition:Stunned #], [# kw:condition:Paralyzed #], [# kw:condition:Terrified #], [# kw:condition:Frightened #], [# kw:condition:Charmed #]
-- **Senses**: Darkvision [= 24 stride =], Passive Perception 21
-- **Languages**: —
-- **Challenge**: 12 (8,300 XP)
-- **Tier Bonus**: +4
+<Monster
+  size="Large"
+  type="Construct"
+  alignment="Lawful Neutral"
+  armorClass="20"
+  hitPoints="258 ([% 18d12 +120 %])"
+  speed="[= 9 stride =]"
+  str="24"
+  dex="24"
+  con="24"
+  int="24"
+  wis="24"
+  cha="6"
+  saves="Str +13, Dex +13, Con +13, Int +13, Wis +13"
+  resistances="Dark, Holy, Fire, Lightning, Frost"
+  immunities="Poison"
+  vulnerabilities="Bludgeoning, Chemical"
+  conditionImmunities="[# kw:condition:Stunned #], [# kw:condition:Paralyzed #], [# kw:condition:Terrified #], [# kw:condition:Frightened #], [# kw:condition:Charmed #]"
+  senses="Darkvision [= 24 stride =], Passive Perception 21"
+  languages="—"
+  challenge="14"
+  xp="11,500">
 
 ---
 
 ## Traits
 
+<Trait>
+
 #### Legendary Deeds
 The Elite Platonian Hunter has **3 legendary deeds per round**, and regains all expended deeds at the start of its turn.
+
+</Trait>
+
+<Trait>
 
 #### End Of Life Cycle
 
@@ -38,70 +47,114 @@ When reduced to 0 hit points, the hunter erupts in a [= 60 stride;ADJ =]-radius 
 After a three turn delay, the hunter explodes.
 Each creature within range saves Dexterity against DC 21, taking **180 ([% 40d8 force %])** and becoming **[# kw:condition:blinded #]** [# kw:briefly #] on a failure, or half as much damage on a success.
 
+</Trait>
+
+<Trait>
+
 #### Multi-Purpose Tool
 
 The Elite Platonian Hunter is proficient in all skills and has expertise in **Intimidation**.
+
+</Trait>
+
+<Trait>
 
 #### Multi-Dimensional Movement Maneuvers
 
 The Elite Platonian Hunter disengages automatically at the start of every turn, without spending an action point.
 
+</Trait>
+
+<Trait>
+
 #### Innate Spellcasting
 
 The Elite Platonian Hunter can cast each of the following spells once per day without expending spell points or components:
 
-- [_Shield_](/en/library/spells/shield) — **2 spell points**
-- [_Pass Without Trace_](/en/library/spells/pass-without-trace) — **2 spell points**
-- [_Misty Step_](/en/library/spells/misty-step) — **3 spell points**
-- [_Invisibility_](/en/library/spells/invisibility) — **3 spell points**
-- [_Invisibility (overcast)_](/en/library/spells/invisibility) — **5 spell points**
+<SpellList spells="shield, pass-without-trace, misty-step, invisibility, invisibility">
+  <Column label="Cost" values="2 spell points, 2 spell points, 3 spell points, 3 spell points, 5 spell points" />
+</SpellList>
+
+</Trait>
+
+<Trait>
 
 #### Spell Point Reserve
 
 The Elite Platonian Hunter has **4 spell points**, which can be spent to cast any of its known spells again.
 
+</Trait>
+
+<Trait>
+
 #### Clockwork Reactions
 
 The hunter does not consume a reaction for opportunity attacks, but can only perform one per target per round
+
+</Trait>
 
 ---
 
 ## Actions
 
+<Action>
+
 #### Multiattack
 
 The Elite Platonian Hunter makes one attack with its main weapon and two attacks with its Fated Blade, or two attacks with any weapon, plus an attack with a Disambiguator, if it has one available.
 
-- **Muon Blaster** _(Ranged Weapon, Two-Handed)_  
-  Accuracy +12, range [= 24 stride =]/[= 60 stride =], one creature.  
-  **Hit**: [% 4d12 +8 force %]
+<Attack accuracy="+12" range="[= 24 stride =]/[= 60 stride =]">
 
-- **Fated Blade** _(Melee Weapon, Finesse, One-Handed)_  
-  Accuracy +11, reach [= 2 stride =], one creature.  
-  **Hit**: [% 2d10 +7 slashing %]  
-  **Effect**: Once per day per creature, the target saves Charisma against DC 19 or becomes **vulnerable to all damage** from this blade. The Hunter also gains **truesight** on that target for 1 minute. Additionally, the target loses all magic effects currently affecting it, such as _bless_ or _haste_.
+##### Muon Blaster
 
-- **Particle Renders** _(Melee Weapon, One-Handed)_  
-  Accuracy +11, reach [= 2 stride =], one creature.  
-  **Hit**: [% 2d8 +7 slashing %]  
-  **Effect**: After a successful hit, the Hunter may make one additional free attack with this weapon. This extra attack does not stack.
+_(Ranged Weapon, Two-Handed)_  
+**Hit**: [% 4d12 +8 force %]
 
-- **Disambiguator** _(Melee Weapon, One-Handed, recharge 4-6)_
-  Accuracy +14, reach [= 1 stride =], one creature.  
-  **Hit**: [% 2d6 +9 slashing %], [% 2d12 dark %].
-  The plationian hunter choses an effect from the following list after it hits:
+</Attack>
+
+<Attack accuracy="+11" reach="[= 2 stride =]">
+
+##### Fated Blade
+
+_(Melee Weapon, Finesse, One-Handed)_  
+**Hit**: [% 2d10 +7 slashing %]  
+**Effect**: Once per day per creature, the target saves Charisma against DC 19 or becomes **vulnerable to all damage** from this blade. The Hunter also gains **truesight** on that target for 1 minute. Additionally, the target loses all magic effects currently affecting it, such as _bless_ or _haste_.
+
+</Attack>
+
+<Attack accuracy="+11" reach="[= 2 stride =]">
+
+##### Particle Renders
+
+_(Melee Weapon, One-Handed)_  
+**Hit**: [% 2d8 +7 slashing %]  
+**Effect**: After a successful hit, the Hunter may make one additional free attack with this weapon. This extra attack does not stack.
+
+</Attack>
+
+<Attack accuracy="+14" reach="[= 1 stride =]" recharge="4-6">
+
+##### Disambiguator
+
+_(Melee Weapon, One-Handed)_
+**Hit**: [% 2d6 +9 slashing %], [% 2d12 dark %].
+The plationian hunter choses an effect from the following list after it hits:
 
 - **Effect, the Toll**: The target must roll a DC 19 Constituion saving throw, or fail a death saving throw. Additionally, the target loses all magic effects currently affecting it, such as _bless_ or _haste_.
 - **Effect, the Cave**: The target saves charisma against DC 17 or is [# kw:condition:Stunned #], [# kw:condition:Paralyzed #], Put to Sleep and [# kw:condition:Petrified #] (Petrification takes two full rounds to take effect). The target cannot repeat this saving throw and can only be cured with curse removal.
 
 The hunter heals half of the damage dealt with this attack.
 
+</Attack>
+
 - **Thruster Axe-Kick** (Gap Closer)
-  _Special Accuracy +11, range 10–[= 6 stride =], one creature.  
+  Accuracy +11, range 10–[= 6 stride =], one creature.  
   The Hunter launches forward on hydraulic thrusters, kicking with its bladed limb, it lands on an unoccupied space [= 1 stride =] away from it's target.  
   **Hit**: [% 3d10 +7 slashing %]  
   **Effect**: If the target is Large or smaller, it saves Strength against DC 17 or is knocked [# kw:condition:prone #].  
   If the target takes damage from this attack, it [catches fire](/en/library/rules/steel-and-strife/conditions).
+
+</Action>
 
 ---
 
@@ -128,3 +181,5 @@ The Elite Platonian Hunter can expend legendary deeds to use the options below. 
 > - **Self-Detonate (Leap).** The drone moves up to [= 4 stride =] toward a target it can see and explodes. Each creature within [= 2 stride =] saves Constitution against DC 15 or takes **18 ([% 4d8 bludgeoning %])** and loses all active magical effects (such as _bless_ or _haste_). On a success, a creature takes half damage and does not lose effects. The drone is destroyed after exploding.
 
 - **Plasma Burst.** (Costs 2 Deeds) The Hunter fires a compressed energy blast at a point within [= 24 stride =]. Each creature in a [= 4 stride;ADJ =] radius sphere saves Dexterity against DC 17, halving **[% 6d8 force %]**.
+
+</Monster>

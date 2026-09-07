@@ -5,74 +5,124 @@ contentType: monsters
 
 # Golden Pride
 
-_Large Väki, Neutral_
-
-| **Armor Class**    | **Hit Points**       | **Speed**          |
-| ------------------ | -------------------- | ------------------ |
-| 16 (natural armor) | 170 ([% 16d8 +98 %]) | [= 8 stride =], fly [= 8 stride =] |
-
-| **STR** | **DEX** | **CON** | **INT** | **WIS** | **CHA** |
-| ------- | ------- | ------- | ------- | ------- | ------- |
-| 18 (+4) | 14 (+2) | 20 (+5) | 8 (−1)  | 12 (+1) | 20 (+5) |
-
-- **Saving Throws**: Dex +6, Con +9, Cha +9
-- **Skills**: Insight +5, Intimidation +9
-- **Damage Resistances**: Radiant
-- **Damage Immunities**: —
-- **Condition Immunities**: [# kw:condition:Frightened #]
-- **Senses**: Darkvision [= 12 stride =], passive Perception 11
-- **Languages**: Understands the languages of its summoner but cannot speak.
-- **Challenge**: 11 (7,200 XP)
-- **Tier Bonus**: +4
+<Monster
+  size="Large"
+  type="Väki"
+  alignment="Neutral"
+  armorClass="16 (natural armor)"
+  hitPoints="170 ([% 16d8 +98 %])"
+  speed="[= 8 stride =], fly [= 8 stride =]"
+  str="18"
+  dex="14"
+  con="20"
+  int="8"
+  wis="12"
+  cha="20"
+  saves="Dex +6, Con +9, Cha +9"
+  skills="Insight +5, Intimidation +9"
+  resistances="Radiant"
+  immunities="—"
+  conditionImmunities="[# kw:condition:Frightened #]"
+  senses="Darkvision [= 12 stride =], passive Perception 11"
+  languages="Understands the languages of its summoner but cannot speak."
+  challenge="11"
+  xp="7,200"
+  saveDc="17">
 
 ---
 
 ## Traits
 
+<Trait>
+
 #### Aura of Splendor
 
 The Golden Pride emanates an aura of radiant authority in a [= 2 stride;ADJ =] radius. Creatures of the pride's choice within the aura gain a **+1 bonus to saving throws**. This bonus stacks with the auras of other Golden Prides (maximum +5).
+
+</Trait>
+
+<Trait>
 
 #### Unshakable
 
 The first time the Golden Pride fails a saving throw, it succeeds instead. Once per [# kw:Recovery #].
 
+</Trait>
+
 ---
 
 ## Actions
+
+<Action>
 
 #### Multiattack
 
 The pride makes two **Claw** attacks and one **Bite** attack, or casts two cantrips.
 
+</Action>
+
+<Action>
+
 #### Claw
 
-Accuracy +8, reach [= 1 stride =], one creature. On a hit, 9 ([% 1d8 +4 slashing %]) plus 7 ([% 2d6 holy %]).
+<Attack accuracy="+8" reach="[= 1 stride =]">
+
+On a hit, 9 ([% 1d8 +4 slashing %]) plus 7 ([% 2d6 holy %]).
+
+</Attack>
+
+</Action>
+
+<Action>
 
 #### Bite
 
-Accuracy +8, reach [= 1 stride =], one creature. On a hit, 11 ([% 2d6 +4 piercing %]) plus 7 ([% 2d6 holy %]).
+<Attack accuracy="+8" reach="[= 1 stride =]">
 
-#### Roar of Majesty (1/recovery)
+On a hit, 11 ([% 2d6 +4 piercing %]) plus 7 ([% 2d6 holy %]).
+
+</Attack>
+
+</Action>
+
+<Action charges="1/recovery">
+
+#### Roar of Majesty
 
 The pride looses a thunderous roar. Each creature of its choice within [= 4 stride =] saves Charisma against DC 17 or takes 10 ([% 3d6 holy %]) and is **[# kw:condition:frightened #]** [# kw:briefly #].
 
-#### Crown of Dominion (1/recovery)
+</Action>
+
+<Action charges="1/recovery">
+
+#### Crown of Dominion
 
 _Range: [= 24 stride =], Duration: Concentration, up to 1 minute._ One humanoid of the pride's choice that the pride can see within range saves Charisma against DC 17 or becomes **[# kw:condition:charmed #]** by the pride for the duration. While the target is [# kw:condition:charmed #] in this way, a burning halo of golden light appears above its head. The [# kw:condition:charmed #] target must use a Major Action before moving on each of its turns to make a melee attack against a creature other than itself that the pride mentally chose. If there are no creatures, the target takes 8 ([% 2d6 holy %]) and can act normally. The target can [# kw:resist #] at the end of each of its turns.
 
-#### Overwhelming Presence (1/recovery)
+</Action>
+
+<Action charges="1/recovery">
+
+#### Overwhelming Presence
 
 The pride fixes its gaze upon a creature within [= 6 stride =]. That creature saves Charisma against DC 17. On a failed save, the creature is **[# kw:condition:stunned #]** and **[# kw:condition:prone #]** [# kw:briefly #].
 
+</Action>
+
 ---
+
+<Action>
 
 #### Spellcasting
 
 The Golden Pride is a **7th-level spellcaster**. Its spellcasting ability is Charisma (spell save DC 17, accuracy +9 with spell attacks). It has the following spells prepared:
 
-- **Cantrips (at will)**: [_Judgement_](/en/library/spells/judgement), [_Omen_](/en/library/spells/omen)
-- **1st level (4 slots)**: [_Command_](/en/library/spells/command), [_Twilight Bolt_](/en/library/spells/twilight-bolt), [_Shield of Faith_](/en/library/spells/shield-of-faith)
-- **2nd level (3 slots)**: [_Hold_](/en/library/spells/hold), [_Zone of Truth_](/en/library/spells/zone-of-truth)
-- **3rd level (3 slots)**: [_Fear_](/en/library/spells/fear), [_Spirit Guardians_](/en/library/spells/spirit-guardians)
-- **4th level (1 slot)**: [_Banishment_](/en/library/spells/banishment)
+- **Cantrips**: [_Judgement_](/en/library/spells/judgement), [_Omen_](/en/library/spells/omen)
+- **1st level**: [_Command_](/en/library/spells/command), [_Twilight Bolt_](/en/library/spells/twilight-bolt), [_Shield of Faith_](/en/library/spells/shield-of-faith)
+- **2nd level**: [_Hold_](/en/library/spells/hold), [_Zone of Truth_](/en/library/spells/zone-of-truth)
+- **3rd level**: [_Fear_](/en/library/spells/fear), [_Spirit Guardians_](/en/library/spells/spirit-guardians)
+- **4th level**: [_Banishment_](/en/library/spells/banishment)
+
+</Action>
+
+</Monster>

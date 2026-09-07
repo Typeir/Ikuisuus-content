@@ -5,50 +5,79 @@ contentType: monsters
 
 # Spinning Mule
 
-_Medium Humanoid (Acheron), Unaligned_
-
-| **Armor Class** | **Hit Points** | **Speed** |
-| ---------------- | -------------- | --------- |
-| 23 (Reinforced Wheel Harness) | 78 ([% 12d10 +12 %]) | [= 12 stride =], climb [= 6 stride =] |
-
-| **STR** | **DEX** | **CON** | **INT** | **WIS** | **CHA** |
-| ------- | ------- | ------- | ------- | ------- | ------- |
-| 20 (+5) | 14 (+2) | 14 (+2) | 6 (-2) | 10 (+0) | 5 (-3) |
-
-- **Saving Throws**: Strength +8, Constitution +5  
-- **Damage Resistances**: —
-- **Condition Immunities**: [# kw:condition:Terrified #]  
-- **Senses**: Darkvision [= 12 stride =], passive Perception 10  
-- **Languages**: Common  
-- **Challenge**: 7 (2,900 XP)  
-- **Tier Bonus**: +3
+<Monster
+  size="Medium"
+  type="Humanoid (Acheron)"
+  alignment="Unaligned"
+  armorClass="23 (Reinforced Wheel Harness)"
+  hitPoints="78 ([% 12d10 +12 %])"
+  speed="[= 12 stride =], climb [= 6 stride =]"
+  str="20"
+  dex="14"
+  con="14"
+  int="6"
+  wis="10"
+  cha="5"
+  saves="Strength +8, Constitution +5"
+  resistances="—"
+  conditionImmunities="[# kw:condition:Terrified #]"
+  senses="Darkvision [= 12 stride =], passive Perception 10"
+  languages="Common"
+  challenge="7"
+  xp="2,900">
 
 ---
 
 ## Traits
 
+<Trait>
+
 #### Charge-Only Attacker
 The Spinning Mule can only make attacks as part of a **Charge**.  
 It can make **only one attack per turn**.
 
+</Trait>
+
+<Trait>
+
 #### Charging Accuracy
 The Spinning Mule gains a **+1 accuracy and damage bonus** made as part of a Charge for every **[= 2 stride =]** moved during that Charge.
+
+</Trait>
+
+<Trait>
 
 #### Moving Target
 The Spinning Mule gains a **+1 bonus to AC and saving throws** until the start of its next turn for every **[= 2 stride =]** moved during a Charge.
 
+</Trait>
+
+<Trait>
+
 #### Rolling Frame
 After the Spinning Mule has moved at least **[= 4 stride =]** in a straight line, it does not provoke opportunity attacks **this round**.
+
+</Trait>
+
+<Trait>
 
 #### Turning and Braking
 The Spinning Mule uses **vehicle turning and braking rules**, with a maneuverability score of **10**.
 
+</Trait>
+
+<Trait>
+
 #### Bound Survivor
 The Spinning Mule has disadvantage on saving throws against **stun** and **paralysis**.
+
+</Trait>
 
 ---
 
 ## Actions
+
+<Action>
 
 #### Charge
 The Spinning Mule moves in a straight line up to its speed.  
@@ -56,10 +85,15 @@ If it moves at least **[= 4 stride =]** and ends its movement adjacent to a crea
 
 The Spinning Mule may Dash before or during this movement.
 
+</Action>
+
 ---
 
-#### Ram  
-Accuracy +8, reach [= 1 stride =], one creature.  
+<Action>
+
+#### Ram
+
+<Attack accuracy="+8" reach="[= 1 stride =]">
 
 On a hit, [% 1d4 +6 slashing %], plus **Charge Damage**.
 
@@ -67,9 +101,19 @@ For every **[= 1 stride =]** the Spinning Mule moved this turn, the Ram deals **
 
 On hit, the target saves Constitution with a base **DC 13**, increased by **+1 for every [= 2 stride =]** the Spinning Mule moved this turn; on a failure, the target gains **1 Bleed stack per [= 2 stride =]** moved, and on a success gains none.
 
+</Attack>
+
+</Action>
+
 ---
 
 ## Legendary Deed: Phase
 
+<Action deed="phase">
+
 #### Slain
 When the Spinning Mule is **slain**, it ruptures outward in a spray of spikes; all creatures within **[= 1 stride =]** save Constitution against DC 13, taking **[% 1d4 piercing %]** and gaining **[% 1d4 %] Bleed stacks** on a failed save, or half damage and no Bleed stacks on a success.
+
+</Action>
+
+</Monster>

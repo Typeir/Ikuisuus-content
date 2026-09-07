@@ -7,142 +7,212 @@ contentType: monsters
 
 These creatures are old empyrean and human inhabitants of the original city of the brume, buried in sulphur, fire and xanthosis when their god-patron Xanthous destroyed his own empire in a mad fit of rage and self sabotage.
 
+<Monster
+  size="Medium"
+  type="Construct (Undead)"
+  alignment="Neutral Evil"
+  armorClass="13"
+  hitPoints="36 ([% 6d8 +6 %])"
+  speed="[= 5 stride =]"
+  str="14"
+  dex="10"
+  con="12"
+  int="6"
+  wis="10"
+  cha="5"
+  resistances="Dark"
+  conditionImmunities="Exhaustion, [# kw:condition:Frightened #], [# kw:condition:Terrified #], [# kw:condition:Charmed #], [# kw:condition:Paralyzed #], [# kw:condition:Poisoned #]"
+  senses="Darkvision [= 12 stride =], Passive Perception 10"
+  languages="Understands Common and Empyrean but it's speech is gibberish"
+  challenge="1/2"
+  xp="100">
+
 ## Husk of Xanthosis (Sword-Wielder)
-
-_Medium Construct (Undead), Neutral Evil_
-
-| **Armor Class** | **Hit Points** | **Speed** |
-| --------------- | -------------- | --------- |
-| 13              | 36 ([% 6d8 +6 %])   | [= 5 stride =]    |
-
-| STR     | DEX     | CON     | INT    | WIS     | CHA    |
-| ------- | ------- | ------- | ------ | ------- | ------ |
-| 14 (+2) | 10 (+0) | 12 (+1) | 6 (–2) | 10 (+0) | 5 (–3) |
-
-- **Damage Resistances**: Dark
-- **Condition Immunities**: Exhaustion, [# kw:condition:Frightened #], [# kw:condition:Terrified #], [# kw:condition:Charmed #], [# kw:condition:Paralyzed #], [# kw:condition:Poisoned #]
-- **Senses**: Darkvision [= 12 stride =], Passive Perception 10
-- **Languages**: Understands Common and Empyrean but it's speech is gibberish
-- **Challenge**: 1/2 (100 XP)
-- **Tier Bonus**: +1
 
 ---
 
-### Traits
+## Traits
 
-#### Diseased Body
+<Trait>
+
+### Diseased Body
 
 Any creature hit by the husk's sword saves Constitution against DC 10 or is infected with a minor disease. After 1 hour, the infected creature gains disadvantage on Constitution saving throws and skill checks for 24 hours. The disease can be cured with _Restoration_ or after 24 hours without a failed saving throw.
 
-#### Undead Fortitude
+</Trait>
+
+<Trait>
+
+### Undead Fortitude
 
 If damage reduces the husk to 0 hit points, it saves Constitution with a DC equal to the damage taken, unless the damage is holy or from a critical hit. On a success, the husk drops to 1 hit point instead.
 
+</Trait>
+
 ---
 
-### Actions
+## Actions
 
-#### Multiattack
+<Action cost="1 Major Action">
+
+### Multiattack
 
 The husk makes two attacks with its Rusty Sword.
 
-- **Rusty Sword.** Accuracy +3, reach [= 1 stride =], one creature. On a hit, 6 ([% 1d8 +2 slashing %]) plus 2 ([% 1d4 dark %]). The target saves Constitution against DC 10 or is infected with the husk's disease.
+<Attack accuracy="+3" reach="[= 1 stride =]">
+
+#### Rusty Sword
+
+On a hit, 6 ([% 1d8 +2 slashing %]) plus 2 ([% 1d4 dark %]). The target saves Constitution against DC 10 or is infected with the husk's disease.
+
+</Attack>
+
+</Action>
+
+</Monster>
 
 ---
+
+<Monster
+  size="Medium"
+  type="Construct (Undead)"
+  alignment="Neutral Evil"
+  armorClass="12"
+  hitPoints="30 ([% 5d8 +5 %])"
+  speed="[= 7 stride =]"
+  str="14"
+  dex="12"
+  con="12"
+  int="6"
+  wis="10"
+  cha="5"
+  resistances="Dark"
+  conditionImmunities="Exhaustion, [# kw:condition:Frightened #], [# kw:condition:Terrified #], [# kw:condition:Charmed #], [# kw:condition:Paralyzed #], [# kw:condition:Poisoned #]"
+  senses="Darkvision [= 12 stride =], Passive Perception 10"
+  languages="Understands Common and Empyrean but it's speech is gibberish"
+  challenge="1/2"
+  xp="100"
+  tierBonus="+2">
 
 ## Husk of Xanthosis (Biter)
 
-_Medium Construct (Undead), Neutral Evil_
-
-| **Armor Class** | **Hit Points** | **Speed** |
-| --------------- | -------------- | --------- |
-| 12              | 30 ([% 5d8 +5 %])   | [= 7 stride =]    |
-
-| STR     | DEX     | CON     | INT    | WIS     | CHA    |
-| ------- | ------- | ------- | ------ | ------- | ------ |
-| 14 (+2) | 12 (+1) | 12 (+1) | 6 (–2) | 10 (+0) | 5 (–3) |
-
-- **Damage Resistances**: Dark
-- **Condition Immunities**: Exhaustion, [# kw:condition:Frightened #], [# kw:condition:Terrified #], [# kw:condition:Charmed #], [# kw:condition:Paralyzed #], [# kw:condition:Poisoned #]
-- **Senses**: Darkvision [= 12 stride =], Passive Perception 10
-- **Languages**: Understands Common and Empyrean but it's speech is gibberish
-- **Challenge**: 1/2 (100 XP)
-- **Tier Bonus**: +2
-
 ---
 
-### Traits
+## Traits
 
-#### Diseased Bite
+<Trait>
+
+### Diseased Bite
 
 Any creature hit by the husk's bite saves Constitution against DC 10 or is infected with a minor disease. After 1 hour, the infected creature gains disadvantage on Constitution saving throws and skill checks for 24 hours. The disease can be cured with _Restoration_ or after 24 hours without a failed saving throw.
 
-#### Undead Fortitude
+</Trait>
+
+<Trait>
+
+### Undead Fortitude
 
 If damage reduces the husk to 0 hit points, it saves Constitution with a DC equal to the damage taken, unless the damage is holy or from a critical hit. On a success, the husk drops to 1 hit point instead.
 
+</Trait>
+
 ---
 
-### Actions
+## Actions
 
-#### Multiattack
+<Action cost="1 Major Action">
+
+### Multiattack
 
 The husk makes two Bite attacks.
 
-- **Bite.** Accuracy +3, reach [= 1 stride =], one creature.
-  On a hit, 6 ([% 1d6 +2 piercing %]) plus 2 ([% 1d4 dark %]). The target saves Constitution against DC 10 or is infected with the husk's disease.
+<Attack accuracy="+3" reach="[= 1 stride =]">
 
----
+#### Bite
 
-### Minor Actions
+On a hit, 6 ([% 1d6 +2 piercing %]) plus 2 ([% 1d4 dark %]). The target saves Constitution against DC 10 or is infected with the husk's disease.
 
-#### Leap
+</Attack>
+
+</Action>
+
+<Action cost="1 Minor Action">
+
+### Leap
 
 The husk can leap up to [= 2 stride =], landing within [= 1 stride =] of a target and making a Bite attack.
 
+</Action>
+
+</Monster>
+
 ---
+
+<Monster
+  size="Medium"
+  type="Construct (Undead)"
+  alignment="Neutral Evil"
+  armorClass="12"
+  hitPoints="28 ([% 5d8 +5 %])"
+  speed="[= 5 stride =]"
+  str="10"
+  dex="12"
+  con="12"
+  int="10"
+  wis="12"
+  cha="6"
+  resistances="Dark"
+  conditionImmunities="Exhaustion, [# kw:condition:Frightened #], [# kw:condition:Terrified #], [# kw:condition:Charmed #], [# kw:condition:Paralyzed #], [# kw:condition:Poisoned #]"
+  senses="Darkvision [= 12 stride =], Passive Perception 11"
+  languages="Understands Common and Empyrean but it's speech is gibberish"
+  challenge="1"
+  xp="200"
+  tierBonus="+2"
+  saveDc="10">
 
 ## Husk of Xanthosis (Spellcaster/Ranged)
 
-_Medium Construct (Undead), Neutral Evil_
-
-| **Armor Class** | **Hit Points** | **Speed** |
-| --------------- | -------------- | --------- |
-| 12              | 28 ([% 5d8 +5 %])   | [= 5 stride =]    |
-
-| STR     | DEX     | CON     | INT     | WIS     | CHA    |
-| ------- | ------- | ------- | ------- | ------- | ------ |
-| 10 (+0) | 12 (+1) | 12 (+1) | 10 (+0) | 12 (+1) | 6 (–2) |
-
-- **Damage Resistances**: Dark
-- **Condition Immunities**: Exhaustion, [# kw:condition:Frightened #], [# kw:condition:Terrified #], [# kw:condition:Charmed #], [# kw:condition:Paralyzed #], [# kw:condition:Poisoned #]
-- **Senses**: Darkvision [= 12 stride =], Passive Perception 11
-- **Languages**: Understands Common and Empyrean but it's speech is gibberish
-- **Challenge**: 1 (200 XP)
-- **Tier Bonus**: +2
-
 ---
 
-### Traits
+## Traits
 
-#### Diseased Arrows
+<Trait>
+
+### Diseased Arrows
 
 The Husks of Xanthosis launches arrows tainted with minor diseases. Any creature hit by a ranged spell or attack saves Constitution against DC 10 or is infected with the husk's disease. After 1 hour, the infected creature gains disadvantage on Constitution saving throws and skill checks for 24 hours. The disease can be cured with [_Restoration_](/en/library/spells/restoration) or after 24 hours without a failed saving throw.
 
+</Trait>
+
 ---
 
-### Actions
+## Actions
 
-#### Multiattack
+<Action cost="1 Major Action">
+
+### Multiattack
 
 The husk makes one Rotting Arrow attack or casts a cantrip.
 
-- **Rotting Arrow.** Accuracy +3, range [= 12 stride =]/[= 48 stride =], one creature.
-  On a hit, 6 ([% 1d8 +2 piercing %]) plus 3 ([% 1d6 dark %]). The target saves Constitution against DC 10 or is infected with the husk’s disease.
+<Attack accuracy="+3" range="[= 12 stride =]/[= 48 stride =]">
 
-#### Spellcasting
+#### Rotting Arrow
+
+On a hit, 6 ([% 1d8 +2 piercing %]) plus 3 ([% 1d6 dark %]). The target saves Constitution against DC 10 or is infected with the husk’s disease.
+
+</Attack>
+
+</Action>
+
+<Action>
+
+### Spellcasting
 
 The husk is a 2nd-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 10, accuracy +2 with spell attacks). It has the following spells prepared:
 
 - **Cantrips (at will)**: [_Ashen Anointment_](/en/library/spells/ashen-anointment), [_Envenom_](/en/library/spells/envenom)
 - **1st level (2 slots)**: [_Ray of Sickness_](/en/library/spells/ray-of-sickness), [_Bane_](/en/library/spells/bane)
+
+</Action>
+
+</Monster>

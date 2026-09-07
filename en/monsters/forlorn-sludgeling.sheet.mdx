@@ -5,49 +5,62 @@ contentType: monsters
 
 # Forlorn Sludgeling
 
-_Small Construct (Ooze), Unaligned_
-
 <BlendedImage
   src='/library/images/monsters/forlorn-sludgeling.webp'
   alt='Forlorn Sludgeling'
 />
 
-| **Armor Class** | **Hit Points**     | **Speed**            |
-| --------------- | ------------------ | -------------------- |
-| 13              | 42 ([% 8d6 +16 %]) | [= 5 stride =], climb [= 3 stride =] |
-
-| STR     | DEX    | CON     | INT    | WIS     | CHA     |
-| ------- | ------ | ------- | ------ | ------- | ------- |
-| 16 (+3) | 8 (−1) | 18 (+4) | 4 (−3) | 10 (+0) | 10 (+0) |
-
-- **Challenge**: 4
-- **Tier Bonus**: +2
-- **Saving Throws**: Con +6
-- **Damage Resistances**: Chemical, Frost, Fire, Lightning
-- **Damage Immunities**: Poison, Psychic
-- **Condition Immunities**: [# kw:condition:Blinded #], [# kw:condition:Deafened #], Exhaustion, [# kw:condition:Frightened #], [# kw:condition:Charmed #], [# kw:condition:Paralyzed #], [# kw:condition:Poisoned #]
-- **Senses**: Blindsight [= 12 stride =] (blind beyond this radius), passive Perception 10
-- **Languages**: —
+<Monster
+  size="Small"
+  type="Construct (Ooze)"
+  alignment="Unaligned"
+  armorClass="13"
+  hitPoints="42 ([% 8d6 +16 %])"
+  speed="[= 5 stride =], climb [= 3 stride =]"
+  str="16"
+  dex="8"
+  con="18"
+  int="4"
+  wis="10"
+  cha="10"
+  challenge="4"
+  saves="Con +6"
+  resistances="Chemical, Frost, Fire, Lightning"
+  immunities="Poison, Psychic"
+  conditionImmunities="[# kw:condition:Blinded #], [# kw:condition:Deafened #], Exhaustion, [# kw:condition:Frightened #], [# kw:condition:Charmed #], [# kw:condition:Paralyzed #], [# kw:condition:Poisoned #]"
+  senses="Blindsight [= 12 stride =] (blind beyond this radius), passive Perception 10"
+  languages="—">
 
 ---
 
 ### Traits
 
+<Trait>
+
 ##### Erosive Body
 
 Any creature that hits the Sludgeling with a melee attack or touches it takes **3 ([% 1d6 chemical %])** and gains **1 stack of Erosion**.
+
+</Trait>
+
+<Trait>
 
 ##### Construct Nature
 
 The Sludgeling does not require air, food, drink, or sleep.
 
+</Trait>
+
 ---
 
 ### Actions
 
+<Action>
+
 ##### Rusting bite
 
-Accuracy +5, reach [= 1 stride =], one creature.  
+<Attack accuracy="+5" reach="[= 1 stride =]">
+
 On a hit, 8 ([% 1d8 +3 slashing %]).  
 The target’s Dexterity score is reduced by **2** (minimum 1) as its joints harden and corrode.  
 Each hit also applies **one stack of [# kw:Erosion #]**.  
@@ -58,4 +71,10 @@ The Dexterity reduction lasts until the creature finishes a [# kw:Recovery #] or
 The forlorn sludgeling eviscerates out in a [= 3 stride;ADJ =] cone of guts, chemical and muck. Each creature saves dexterity against DC 13 or becomes **[# kw:condition:petrified #]**.
 The saving throw difficulty grows by 1 per erosion stack on the target.
 
+</Attack>
+
+</Action>
+
 ---
+
+</Monster>

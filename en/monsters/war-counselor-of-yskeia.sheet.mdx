@@ -5,33 +5,41 @@ contentType: monsters
 
 # The War Counselor of Yskeia
 
-_Medium Humanoid (Dwarf), Lawful Neutral_
-
-| **Armor Class**                          | **Hit Points**        | **Speed** |
-| ---------------------------------------- | --------------------- | --------- |
-| 28 (Blessed Plate, Greatshield, Defense) | 520 ([% 30d8 +320 %]) | [= 5 stride =]    |
-
-| **STR** | **DEX** | **CON** | **INT** | **WIS** | **CHA** |
-| ------- | ------- | ------- | ------- | ------- | ------- |
-| 26 (+8) | 16 (+3) | 25 (+7) | 18 (+4) | 28 (+9) | 22 (+6) |
-
-- **Saving Throws**: Str +18, Con +17, Wis +19, Cha +16
-- **Skills**: Athletics +18, Insight +19, Perception +19, Religion +14
-- **Damage Resistances**: Holy, Fire
-- **Damage Immunities**: Poison
-- **Condition Immunities**: [# kw:condition:Terrified #], [# kw:condition:Poisoned #]
-- **Senses**: Darkvision [= 12 stride =], passive Perception 29
-- **Languages**: Common, Hidden, Empyrean
-- **Challenge**: 28 (120,000 XP)
-- **Tier Bonus**: +10
+<Monster
+  size="Medium"
+  type="Humanoid (Dwarf)"
+  alignment="Lawful Neutral"
+  armorClass="28 (Blessed Plate, Greatshield, Defense)"
+  hitPoints="520 ([% 30d8 +320 %])"
+  speed="[= 5 stride =]"
+  str="26"
+  dex="16"
+  con="25"
+  int="18"
+  wis="28"
+  cha="22"
+  saves="Str +18, Con +17, Wis +19, Cha +16"
+  skills="Athletics +18, Insight +19, Perception +19, Religion +14"
+  resistances="Holy, Fire"
+  immunities="Poison"
+  conditionImmunities="[# kw:condition:Terrified #], [# kw:condition:Poisoned #]"
+  senses="Darkvision [= 12 stride =], passive Perception 29"
+  languages="Common, Hidden, Empyrean"
+  challenge="28"
+  xp="140,000"
+  saveDc="27">
 
 ---
 
 ## Traits
 
+<Trait>
+
 #### Legendary Deeds
 
 The War Counselor has **2 legendary deeds per round**, and regains all expended deeds at the start of his turn.
+
+</Trait>
 
 ### Kratteous Core
 
@@ -58,12 +66,12 @@ Whenever The War Counselor uses his action to cast a spell, he gains advantage o
 
 ### Spellcasting
 
-The War Counselor is a **30th-level Pilgrim (War Domain)**. His spellcasting ability is **Wisdom** (spell save DC **27**, accuracy +19 with spell attacks).  
+The War Counselor is a **30th-level Pilgrim (War Domain)** (accuracy +19 with spell attacks).  
 He has the following Pilgrim spells prepared:
 
 | Spell Level            | Slots | Spells                                                                                                                                                                                     |
 | ---------------------- | ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Cantrips (at will)** | —     | [_Judgement_](/en/library/spells/judgement), [_Focus_](/en/library/spells/focus), [_Dancing Lights_](/en/library/spells/dancing-lights), [_Omen_](/en/library/spells/omen)                                                                          |
+| **Cantrips** | —     | [_Judgement_](/en/library/spells/judgement), [_Focus_](/en/library/spells/focus), [_Dancing Lights_](/en/library/spells/dancing-lights), [_Omen_](/en/library/spells/omen)                                                                          |
 | **1st level**          | 4     | [_Bless_](/en/library/spells/bless), [_Command_](/en/library/spells/command), [_Shield of Faith_](/en/library/spells/shield-of-faith), [_Twilight Bolt_](/en/library/spells/twilight-bolt) |
 | **2nd level**          | 4     | [_Spiritual Weapon_](/en/library/spells/spiritual-weapon), [_Hold_](/en/library/spells/hold), [_Restoration_](/en/library/spells/restoration)                                              |
 | **3rd level**          | 3     | [_Spirit Guardians_](/en/library/spells/spirit-guardians), [_Revivify_](/en/library/spells/revivify), [_Objection_](/en/library/spells/objection)                                          |
@@ -113,7 +121,7 @@ As a Minor Action, The War Counselor manifests a divine blunderbuss. This functi
 - The blunderbuss has the **Loading** property and can fire **only every other round**.
 - The blunderbuss does not require concentration.
 
-### Channel Divinity (2/Day): Guided Strike
+### Channel Divinity (2/[# kw:Repose #]): Guided Strike
 
 When The War Counselor makes an attack roll, he can add **+10** to the roll after seeing the result.
 
@@ -153,3 +161,5 @@ The War Counselor can expend legendary deeds to use the options below. Only one 
 
 - **Stand Firm (Costs 2 Deeds).**  
   Until the start of his next turn, The War Counselor and all allies within [= 6 stride =] cannot be moved against their will or knocked [# kw:condition:prone #].
+
+</Monster>

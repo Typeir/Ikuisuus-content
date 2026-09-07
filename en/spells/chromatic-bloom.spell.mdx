@@ -12,27 +12,29 @@ The shape light takes while within a prism, a scattered radiance, searching for 
 
 ---
 
-> **Chromatic Bloom**  
-> _1st-level Spell_  
-> **Casting Time**: 1 Major Action  
-> **Components**: V, S, M (a shard of refined alchemical precursor worth at least 50 gp)  
-> **Duration**: Instantaneous  
-> **Range**: Self ([= 3 stride;ADJ =] cone)  
-> **Targets**: Creatures within a [= 3 stride;ADJ =] cone  
->
-> Choose a damage type from a stratum your slot level has unlocked (see the table below). 
-> Targets save Dexterity, halving [% 2d8 %] damage of the chosen type.
->
-> If two damage dice show the same number, failing targets are **[# kw:condition:blinded #]** until the end of your next turn.
->
-> | Slot Level | Strata unlocked                       |
-> | ---------- | ------------------------------------- |
-> | 1st        | Elemental (frost, fire, lightning)    |
-> | 4th        | + Somatic (poison, chemical, psychic) |
-> | 8th        | + Akashic (holy, dark, force)         |
-> | 12th       | + True                                |
->
-> **Overcast:** the spell gains [% 1d8 %] damage.
+<Spell
+  level="1"
+  cost="1 Major Action"
+  components="V, S, M (a shard of refined alchemical precursor worth at least 50 gp)"
+  duration="Instantaneous"
+  range="Self ([= 3 stride;ADJ =] cone)"
+  targets="Creatures within a [= 3 stride;ADJ =] cone">
+
+Choose a damage type from a stratum your slot level has unlocked (see the table below). 
+Targets save Dexterity, halving [% 2d8 %] damage of the chosen type.
+
+If two damage dice show the same number, failing targets are **[# kw:condition:blinded #]** until the end of your next turn.
+
+| Slot Level | Strata unlocked                       |
+| ---------- | ------------------------------------- |
+| 1st        | Elemental (frost, fire, lightning)    |
+| 4th        | + Somatic (poison, chemical, psychic) |
+| 8th        | + Akashic (holy, dark, force)         |
+| 12th       | + True                                |
+
+**Overcast:** the spell gains [% 1d8 %] damage.
+
+</Spell>
 
 #### Spell Lists
 

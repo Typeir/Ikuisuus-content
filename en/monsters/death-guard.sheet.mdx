@@ -7,24 +7,28 @@ contentType: monsters
 
 <BlendedImage src='/library/images/death-guard.webp' alt='Death Guard' />
 
-_Medium Humanoid, Any Alignment_
-
-| **Armor Class** | **Hit Points**        | **Speed**      |
-| --------------- | --------------------- | -------------- |
-| 18 (plate)      | 207 ([% 18d12 +90 %]) | [= 6 stride =] |
-
-| **STR** | **DEX** | **CON** | **INT** | **WIS** | **CHA** |
-| ------- | ------- | ------- | ------- | ------- | ------- |
-| 22 (+6) | 12 (+1) | 20 (+5) | 18 (+4) | 14 (+2) | 10 (+0) |
-
-- **Saving Throws**: Constitution +9, Intelligence +8, Wisdom +6
-- **Skills**: Athletics +10, Arcana +8
-- **Damage Resistances**: Frost, Dark
-- **Condition Immunities**: [# kw:condition:Terrified #], [# kw:condition:Frightened #], [# kw:condition:Charmed #], [# kw:condition:Poisoned #]
-- **Senses**: Darkvision [= 12 stride =], Passive Perception 12
-- **Languages**: Common, plus two others
-- **Challenge**: 12 (8,400 XP)
-- **Tier Bonus**: +4
+<Monster
+  size="Medium"
+  type="Humanoid"
+  alignment="Any Alignment"
+  armorClass="18 (plate)"
+  hitPoints="207 ([% 18d12 +90 %])"
+  speed="[= 6 stride =]"
+  str="22"
+  dex="12"
+  con="20"
+  int="18"
+  wis="14"
+  cha="10"
+  saves="Constitution +9, Intelligence +8, Wisdom +6"
+  skills="Athletics +10, Arcana +8"
+  resistances="Frost, Dark"
+  conditionImmunities="[# kw:condition:Terrified #], [# kw:condition:Frightened #], [# kw:condition:Charmed #], [# kw:condition:Poisoned #]"
+  senses="Darkvision [= 12 stride =], Passive Perception 12"
+  languages="Common, plus two others"
+  challenge="12"
+  xp="8,400"
+  saveDc="18">
 
 ---
 
@@ -168,7 +172,6 @@ When the death guard hits a creature [# kw:condition:grappled #] by Bloodspire, 
 
 The death guard is an **9th-level spellcaster**. Intelligence is its spellcasting ability (spell save DC **18**, spell attack **+10**). It has the following spell slots: **1st (4), 2nd (3), 3rd (3), 4th (3), 5th (1)**.
 
-It has the following spells prepared:
 
 - **1st level**: [_Death Grips_](/en/library/spells/death-grips), [_Arcane Sense_](/en/library/spells/arcane-sense), [_Fog_](/en/library/spells/fog), [_False Life_](/en/library/spells/false-life)
 - **2nd level**: [_Hold_](/en/library/spells/hold), [_Ray of Enfeeblement_](/en/library/spells/ray-of-enfeeblement), [_Silm_](/en/library/spells/silmä)
@@ -285,3 +288,5 @@ Prepared spells:
 - **3rd level**: [_Fear_](/en/library/spells/fear), [_Sleet Storm_](/en/library/spells/sleet-storm), [_Objection_](/en/library/spells/objection)
 - **4th level**: [_Excision_](/en/library/spells/excision), [_Mantle of the Everdark_](/en/library/spells/mantle-of-the-everdark), [_Invisibility (overcast)_](/en/library/spells/invisibility)
 - **5th level**: [_Far Step_](/en/library/spells/far-step)
+
+</Monster>

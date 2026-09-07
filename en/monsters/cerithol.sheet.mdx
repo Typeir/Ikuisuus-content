@@ -5,44 +5,61 @@ contentType: monsters
 
 # Cerithol Lunam
 
-_Large Monstrosity, Unaligned_
-
 <BlendedImage src='/library/images/monsters/cerithol.webp' alt='Cerithol' />
 
 A **Cerithol Lunam** is a grotesque, fleshy orb that dwells deep within the corpse-womb of the half-slain moon goddess. Half-Blind and bulbous, it moves on four bloated intestine-like ungulate hooves and is covered in translucent, sticky mucus. When threatened, it splits open to reveal a writhing core of veins, flesh and razor-sharp bones that lashes out across impossible distance. It casts spells from holes that open briefly to hiss, bleed, or scream, uses malformed apendages to communicate in windings, and its acidic blood burns like starfire.
 
-| **Armor Class**        | **Hit Points**         | **Speed**            |
-| ---------------------- | ---------------------- | -------------------- |
-| 24 (closed), 20 (open) | 325 ([% 25d10 +180 %]) | [= 5 stride =], climb [= 5 stride =] |
-
-| **STR** | **DEX** | **CON** | **INT** | **WIS** | **CHA** |
-| ------- | ------- | ------- | ------- | ------- | ------- |
-| 24 (+7) | 12 (+1) | 28 (+9) | 18 (+4) | 18 (+4) | 14 (+2) |
-
-- **Saving Throws**: Con +14, Wis +9, Cha +7
-- **Damage Resistances**: Force, Dark, Frost, Chemical
-- **Damage Immunities**: Poison
-- **Condition Immunities**: [# kw:condition:Poisoned #], [# kw:condition:Prone #]
-- **Senses**: Blindsight [= 12 stride =], Tremorsense [= 24 stride =], Passive Perception 18
-- **Languages**: Ancient Empyrean
-- **Challenge**: 13 (10,000 XP)
-- **Tier Bonus**: +5
+<Monster
+  size="Large"
+  type="Monstrosity"
+  alignment="Unaligned"
+  armorClass="24 (closed), 20 (open)"
+  hitPoints="325 ([% 25d10 +180 %])"
+  speed="[= 5 stride =], climb [= 5 stride =]"
+  str="24"
+  dex="12"
+  con="28"
+  int="18"
+  wis="18"
+  cha="14"
+  saves="Con +14, Wis +9, Cha +7"
+  resistances="Force, Dark, Frost, Chemical"
+  immunities="Poison"
+  conditionImmunities="[# kw:condition:Poisoned #], [# kw:condition:Prone #]"
+  senses="Blindsight [= 12 stride =], Tremorsense [= 24 stride =], Passive Perception 18"
+  languages="Ancient Empyrean"
+  challenge="13"
+  xp="10,000">
 
 ---
 
 ## Traits
 
+<Trait>
+
 #### Legendary Deeds
 
 The Cerithol Lunam has **1 legendary deed per round**, and regains all expended deeds at the start of its turn.
+
+</Trait>
+
+<Trait>
 
 #### Lunar Vessel
 
 While closed, the Cerithol Lunam cannot cast spells of level 3 or higher but gains a +4 bonus to AC and is immune to being [# kw:condition:charmed #] or [# kw:condition:stunned #].
 
-#### Open Form (Minor Action)
+</Trait>
+
+<Trait cost="1 Minor Action">
+
+#### Open Form
 
 The Cerithol opens fully, revealing its vasculomuscular system. It loses the AC bonus from **Lunar Vessel**, but gains access to its _Pseudopod Surge_ attack and spellcasting above 3rd level.
+
+</Trait>
+
+<Trait>
 
 #### Spell Point Casting
 
@@ -53,47 +70,49 @@ The Cerithol opens fully, revealing its vasculomuscular system. It loses the AC 
 
 - **Save DC**: 18 | **Spell attack modifier**: +9
 
-| Spell                                                         | Cost    |
-| ------------------------------------------------------------- | ------- |
-| [_Omen_](/en/library/spells/omen)                             | At Will |
-| [_Chill_](/en/library/spells/chill)                           | At Will |
-| [_Envenom_](/en/library/spells/envenom)                       | At Will |
-| [_Ray of Sickness_](/en/library/spells/ray-of-sickness)       | 1       |
-| [_Bloodlash Rebuke_](/en/library/spells/bloodlash-rebuke)     | 1       |
-| [_Cause Fear_](/en/library/spells/cause-fear)                 | 1       |
-| [_Misty Step_](/en/library/spells/misty-step)                 | 2       |
-| [_Scorching Ray_](/en/library/spells/scorching-ray)           | 2       |
-| [_Shatter_](/en/library/spells/shatter)                       | 2       |
-| [_Objection_](/en/library/spells/objection)                   | 3       |
-| [_Pyroblast_](/en/library/spells/pyroblast)                   | 3       |
-| [_Sandstorm Barrier_](/en/library/spells/sandstorm-barrier)                                              | 3       |
-| [_Bestow Curse_](/en/library/spells/bestow-curse)             | 3       |
-| [_Invisibility (overcast)_](/en/library/spells/invisibility)    | 4       |
-| [_Shadow Of The Hunt_](/en/library/spells/shadow-of-the-hunt) | 4       |
-| [_Perfect Barrier_](/en/library/spells/perfect-barrier)       | 5       |
-| [_Cloudkill_](/en/library/spells/cloudkill)                   | 5       |
+<SpellList spells="omen, chill, envenom, ray-of-sickness, bloodlash-rebuke, cause-fear, misty-step, scorching-ray, shatter, objection, pyroblast, sandstorm-barrier, bestow-curse, invisibility, shadow-of-the-hunt, perfect-barrier, cloudkill">
+  <Column label="Cost" values="At Will, At Will, At Will, 1, 1, 1, 2, 2, 2, 3, 3, 3, 3, 4, 4, 5, 5" />
+</SpellList>
+
+</Trait>
 
 ---
+
+<Trait>
 
 #### Heightened Reactions
 
 The Cerithol Lunam can take up to **3 reactions per round**, but no more than one per turn.
 
+</Trait>
+
 ---
 
 ## Actions
+
+<Action>
 
 #### Multiattack
 
 The Cerithol Lunam makes two _Tentacle Whip_ attacks or one _Pseudopod Surge_ if open.
 
-- **Tentacle Whip.**  
-  Accuracy +12, reach [= 3 stride =], one creature.  
-  **Hit**: 20 ([% 3d10 +7 slashing %]).
+<Attack accuracy="+12" reach="[= 3 stride =]">
 
-- **Pseudopod Surge (Open Only).**  
-  Accuracy +12, reach [= 12 stride =], one creature.  
-  **Hit**: 40 ([% 5d12 +7 bludgeoning %]). The target saves Strength against DC 20 or is hurled up to **[= 12 stride =]** in a direction of the Cerithol’s choosing and knocked [# kw:condition:prone #]. Colliding with terrain deals [% 3d6 additional %].
+##### Tentacle Whip
+
+**Hit**: 20 ([% 3d10 +7 slashing %]).
+
+</Attack>
+
+<Attack accuracy="+12" reach="[= 12 stride =]">
+
+##### Pseudopod Surge (Open Only)
+
+**Hit**: 40 ([% 5d12 +7 bludgeoning %]). The target saves Strength against DC 20 or is hurled up to **[= 12 stride =]** in a direction of the Cerithol’s choosing and knocked [# kw:condition:prone #]. Colliding with terrain deals [% 3d6 additional %].
+
+</Attack>
+
+</Action>
 
 ---
 
@@ -110,8 +129,14 @@ The Cerithol Lunam makes two _Tentacle Whip_ attacks or one _Pseudopod Surge_ if
 
 The Cerithol Lunam can expend legendary deeds to use the options below. Only one legendary deed can be used at a time and only at the end of another creature's turn.
 
-#### Cantrip Volley (Costs 1 Deed)
+<Action deed="act" cost="1 Deed">
+
+#### Cantrip Volley
 
 The Cerithol Lunam targets up to **10 creatures** within [= 24 stride =] that it can sense. It casts **Envenom**, **Chill**, or **Toll the Dead** on each of them as part of the same action, as a level 5 spellcaster.
 
+</Action>
+
 ---
+
+</Monster>

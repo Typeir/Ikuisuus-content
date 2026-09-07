@@ -11,18 +11,18 @@ Revering nature above all, Druids unite to mark the passage of the seasons and s
 
 ---
 
+<Vocation
+  primaryAbility="Wisdom"
+  hitDie="d8 per Druid level"
+  saves="Intelligence and Wisdom"
+  skills="Choose 2: Arcana, Animal Handling, Insight, Medicine, Nature, Perception, Religion, or Survival"
+  trades="[Herbalism](/en/library/items/tools/herbalism)"
+  weapons="Simple weapons"
+  armor="Light Armor, Shields">
+
 ## Core Druid Traits
 
-| Trait                          | Description                                                                                                                                                                       |
-| ------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Primary Ability**            | Wisdom                                                                                                                                                                            |
-| **Hit Point Die**              | d8 per Druid level                                                                                                                                                                |
-| **Saving Throw Proficiencies** | Intelligence and Wisdom                                                                                                                                                           |
-| **Skill Proficiencies**        | Choose 2: Arcana, Animal Handling, Insight, Medicine, Nature, Perception, Religion, or Survival                                                                                   |
-| **Weapon Proficiencies**       | Simple weapons                                                                                                                                                                    |
-| **Trade Proficiencies**        | [Herbalism](/en/library/items/tools/herbalism)                                                                                                                                    |
-| **Armor Training**             | Light Armor, Shields                                                                                                                                                              |
-| **Starting Equipment**         | Choose A or B:<br/>(A) Leather Armor, Shield, Sickle, Druidic Focus (Quarterstaff), Explorer's Pack, a [Herbalism](/en/library/items/tools/herbalism) kit, and 9 GP<br/>(B) 50 GP |
+<Equipment>Choose A or B:<br/>(A) Leather Armor, Shield, Sickle, Druidic Focus (Quarterstaff), Explorer's Pack, a [Herbalism](/en/library/items/tools/herbalism) kit, and 9 GP<br/>(B) 50 GP</Equipment>
 
 ---
 
@@ -45,33 +45,19 @@ Revering nature above all, Druids unite to mark the passage of the seasons and s
 
 ## Druid Vocation Features
 
-| Level | Tier Bonus | Features                          | Wild Shape Uses | Cantrips | Prepared Spells | 1st | 2nd | 3rd | 4th | 5th | 6th | 7th | 8th | 9th |
-| ----- | ---------- | --------------------------------- | --------------- | -------- | --------------- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1     | +1         | Spellcasting, Druidic, Shillelagh | –               | 2        | 4               | 2   | –   | –   | –   | –   | –   | –   | –   | –   |
-| 2     | +1         | Wild Shape, Wild Companion        | 2               | 2        | 5               | 3   | –   | –   | –   | –   | –   | –   | –   | –   |
-| 3     | +1         | Druid Specialization              | 2               | 2        | 6               | 4   | 2   | –   | –   | –   | –   | –   | –   | –   |
-| 4     | +2         | Feat                              | 2               | 3        | 7               | 4   | 3   | –   | –   | –   | –   | –   | –   | –   |
-| 5     | +2         | Wild Resurgence                   | 2               | 3        | 9               | 4   | 3   | 2   | –   | –   | –   | –   | –   | –   |
-| 6     | +2         | Specialization Feature            | 3               | 3        | 10              | 4   | 3   | 3   | –   | –   | –   | –   | –   | –   |
-| 7     | +3         | Elemental Fury                    | 3               | 3        | 11              | 4   | 3   | 3   | 1   | –   | –   | –   | –   | –   |
-| 8     | +3         | Feat                              | 3               | 3        | 12              | 4   | 3   | 3   | 2   | –   | –   | –   | –   | –   |
-| 9     | +3         | –                                 | 3               | 3        | 14              | 4   | 3   | 3   | 3   | 1   | –   | –   | –   | –   |
-| 10    | +4         | Specialization Feature            | 3               | 4        | 15              | 4   | 3   | 3   | 3   | 2   | –   | –   | –   | –   |
-| 11    | +4         | –                                 | 3               | 4        | 16              | 4   | 3   | 3   | 3   | 2   | 1   | –   | –   | –   |
-| 12    | +4         | Feat                              | 3               | 4        | 16              | 4   | 3   | 3   | 3   | 2   | 1   | –   | –   | –   |
-| 13    | +5         | –                                 | 3               | 4        | 17              | 4   | 3   | 3   | 3   | 2   | 1   | 1   | –   | –   |
-| 14    | +5         | Specialization Feature            | 3               | 4        | 17              | 4   | 3   | 3   | 3   | 2   | 1   | 1   | –   | –   |
-| 15    | +5         | Improved Elemental Fury           | 3               | 4        | 18              | 4   | 3   | 3   | 3   | 2   | 1   | 1   | 1   | –   |
-| 16    | +6         | Feat                              | 3               | 4        | 18              | 4   | 3   | 3   | 3   | 2   | 1   | 1   | 1   | –   |
-| 17    | +6         | –                                 | 4               | 4        | 19              | 4   | 3   | 3   | 3   | 2   | 1   | 1   | 1   | 1   |
-| 18    | +6         | Beast Spells                      | 4               | 4        | 20              | 4   | 3   | 3   | 3   | 3   | 1   | 1   | 1   | 1   |
-| 19    | +7         | Epic Boon                         | 4               | 4        | 21              | 4   | 3   | 3   | 3   | 3   | 2   | 1   | 1   | 1   |
-| 20    | +7         | Archdruid                         | 4               | 4        | 22              | 4   | 3   | 3   | 3   | 3   | 2   | 2   | 1   | 1   |
+<Progression casting="full" feats="4, 8, 12, 16" specialization="6, 10, 14">
+  <Column label="Wild Shape Uses" values=", 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4" />
+  <Column label="Cantrips" values="2, 2, 2, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4" />
+  <Column label="Prepared Spells" values="4, 5, 6, 7, 9, 10, 11, 12, 14, 15, 16, 16, 17, 17, 18, 18, 19, 20, 21, 22" />
+</Progression>
 
 ---
 
 <Collapsible>
-## 1st Level – Spellcasting
+
+<Feature level="1">
+
+## Spellcasting
 
 See the [_Druid spell list_](/en/library/character-creation/vocations/druid/spells).
 
@@ -81,19 +67,29 @@ See the [_Druid spell list_](/en/library/character-creation/vocations/druid/spel
 - **Spellcasting Ability**: Wisdom.
 - **Focus**: Druidic Focus.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 1st Level – Druidic
+
+<Feature level="1">
+
+## Druidic
 
 - Learn **Druidic**, the secret language of Druids.
 - Always have **[Communion](/en/library/spells/communion)** prepared.
 - You can hide messages in Druidic, noticed only with a **DC 15 Intelligence (Investigation)** check unless the reader knows the language.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible open>
-## 1st Level – Shillelagh
+
+<Feature level="1">
+
+## Shillelagh
 
 _Stub — ported from the retired Shillelagh spell; the full design lands with the Druid rework._
 
@@ -104,10 +100,15 @@ The wood knows you. As a **Minor Action**, you imbue a club or quarterstaff you 
 
 Shillelagh is a **vocation feature, not a spell or cantrip**: it cannot be learned, copied, or granted by anything that grants spells — but weapon buffs, imbuements, and attack effects stack with it freely.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 2nd Level – Wild Shape
+
+<Feature level="2">
+
+## Wild Shape
 
 As a **Minor Action**, assume a **Beast form** you know. You remain in this form for hours equal to half your Druid level, until you **dismiss it**, become **[# kw:condition:Incapacitated #]**, or die.
 
@@ -129,19 +130,29 @@ As a **Minor Action**, assume a **Beast form** you know. You remain in this form
 - No spellcasting while in Beast form.
 - Equipment merges, falls off, or is worn (Game Director's discretion).
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 2nd Level – Wild Companion
+
+<Feature level="2">
+
+## Wild Companion
 
 As a **Major Action**, expend a spell slot or Wild Shape use to cast **[Find Familiar](/en/library/spells/find-familiar)**.
 
 - The familiar is **Fey** and lasts until you finish a [# kw:Recovery #].
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible open>
-## 3rd Level – Druid Circle
+
+<Feature level="3">
+
+## Druid Circle
 
 Choose a **Circle**:
 
@@ -152,25 +163,40 @@ Choose a **Circle**:
 | [Sea](/en/library/character-creation/vocations/druid/circle-of-the-sea)     |
 | [Stars](/en/library/character-creation/vocations/druid/circle-of-the-stars) |
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 4th Level – Ability Score Improvement
+
+<Feature level="4">
+
+## Feat
 
 Gain the **[Ability Score Improvement feat](/en/library/character-creation/feats/ability-score-improvement)** or another **[feat of your choice](/en/library/character-creation/feats)**.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 5th Level – Wild Resurgence
+
+<Feature level="5">
+
+## Wild Resurgence
 
 - **Regain 1 use of Wild Shape** by expending a spell slot (no action).
 - **Convert 1 use of Wild Shape into a level 1 spell slot** (once per [# kw:Recovery #]).
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 7th Level – Elemental Fury
+
+<Feature level="7">
+
+## Elemental Fury
 
 Choose one:
 
@@ -184,35 +210,55 @@ Choose one:
 
 - Once per turn, deal **+[% 1d8 Frost %], Fire, Lightning, or Bludgeoning damage** on a weapon or Beast attack.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 15th Level – Improved Elemental Fury
+
+<Feature level="15">
+
+## Improved Elemental Fury
 
 Your **Elemental Fury** improves:
 
 - **Potent Spellcasting**: Your cantrip range increases by **[= 60 stride =]** (if [= 2 stride =] or greater).
 - **Primal Strike**: Extra damage increases to **[% 2d8 %]**.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 18th Level – Beast Spells
+
+<Feature level="18">
+
+## Beast Spells
 
 You may **cast spells while in Wild Shape**, except spells that require **costly Material components**.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 19th Level – Epic Boon
+
+<Feature level="19">
+
+## Epic Boon
 
 Gain an **[Epic Boon feat](/en/library/character-creation/feats)**.  
 **[Boon of Fold Stepping](/en/library/character-creation/feats/boon-of-fold-stepping)** is recommended.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 20th Level – Archdruid
+
+<Feature level="20">
+
+## Archdruid
 
 You are a living extension of nature itself.
 
@@ -234,4 +280,8 @@ You are a living extension of nature itself.
 
 - For every **10 years** that pass, you age only **1 year**.
 
+</Feature>
+
 </Collapsible>
+
+</Vocation>

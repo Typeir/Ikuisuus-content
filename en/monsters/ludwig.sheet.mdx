@@ -9,43 +9,64 @@ contentType: monsters
   <BlendedImage src='/library/images/monsters/ludwig.webp' alt='LudwigFront' />
   <BlendedImage src='/library/images/monsters/ludwig2.webp' alt='LudwigSide' />
 </FlexRenderer>
-_Large humanoid (Sunborn), Lawful Evil_
 
-| **Armor Class** | **Hit Points** | **Speed** |
-| --------------- | -------------- | --------- |
-| 20              | 352            | [= 8 stride =]    |
-
-| **STR** | **DEX** | **CON** | **INT** | **WIS** | **CHA** |
-| ------- | ------- | ------- | ------- | ------- | ------- |
-| 24 (+7) | 14 (+2) | 22 (+6) | 10 (+0) | 18 (+4) | 12 (+1) |
-
-- **Saving Throws**: STR +14, CON +13, WIS +11
-- **Languages**: Empyrean (fluent), Common (broken)
-- **Damage Resistances**: holy, dark, fire
-- **Condition Immunities**: [# kw:condition:terrified #], [# kw:condition:paralyzed #], magical sleep
-- **Senses**: Darkvision [= 24 stride =], passive Perception 14
-- **Challenge**: 22 (41,000 XP)
-- **Tier Bonus**: +8
+<Monster
+  size="Large"
+  type="humanoid (Sunborn)"
+  alignment="Lawful Evil"
+  armorClass="20"
+  hitPoints="352"
+  speed="[= 8 stride =]"
+  str="24"
+  dex="14"
+  con="22"
+  int="10"
+  wis="18"
+  cha="12"
+  saves="STR +14, CON +13, WIS +11"
+  languages="Empyrean (fluent), Common (broken)"
+  resistances="holy, dark, fire"
+  conditionImmunities="[# kw:condition:terrified #], [# kw:condition:paralyzed #], magical sleep"
+  senses="Darkvision [= 24 stride =], passive Perception 14"
+  challenge="22"
+  xp="41,000"
+  saveDc="19">
 
 ---
 
 ## Traits
 
+<Trait>
+
 #### Legendary Deeds
 
 Ludwig has **3 legendary deeds per round**, and regains all expended deeds at the start of his turn.
 
-#### Legendary Deed: Resist (3/Recovery)
+</Trait>
+
+<Trait charges="3/Recovery">
+
+#### Legendary Deed: Resist
 
 When Ludwig fails a saving throw, he can expend a legendary deed to succeed instead. This feature can be used **3 times per [# kw:Recovery #]**.
+
+</Trait>
+
+<Trait>
 
 #### Bloodboil Aura
 
 Constant. As an [# kw:delayed #] effect, creatures within [= 3 stride =] take **5 true damage**, unavoidable.
 
+</Trait>
+
+<Trait>
+
 #### Regeneration
 
 Ludwig regains **20 HP** at the start of each of his turns. While in Bloodrage, he instead regains **30 HP**.
+
+</Trait>
 
 ---
 
@@ -69,12 +90,12 @@ Ludwig is a **10th-level spellcaster**. His spellcasting ability is **Constituti
 
 | Spell Level             | Slots | Spells                                                                                                                                                                                 |
 | ----------------------- | ----- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Cantrips (at will)**  | —     | [_Focus_](/en/library/spells/focus), [_Ashen Anointment_](/en/library/spells/ashen-anointment), [_Blade Ward_](/en/library/spells/blade-ward) |
-| **1st level (4 slots)** | 4     | [_Bloodlash Rebuke_](/en/library/spells/bloodlash-rebuke), [_Chromatic Capture_](/en/library/spells/chromatic-capture)                                                                 |
-| **2nd level (3 slots)** | 3     | [_Hold_](/en/library/spells/hold), [_Misty Step_](/en/library/spells/misty-step), [_Mirror Image_](/en/library/spells/mirror-image)                                                    |
-| **3rd level (3 slots)** | 3     | [_Objection_](/en/library/spells/objection), [_Bestow Curse_](/en/library/spells/bestow-curse)                                                                                         |
-| **4th level (3 slots)** | 3     | [_Shadow Of The Hunt_](/en/library/spells/shadow-of-the-hunt)                                                                                                                          |
-| **5th level (2 slots)** | 2     | [_Steel Wind Strike_](/en/library/spells/steel-wind-strike), [_Perfect Barrier_](/en/library/spells/perfect-barrier)                                                                   |
+| **Cantrips**  | —     | [_Focus_](/en/library/spells/focus), [_Ashen Anointment_](/en/library/spells/ashen-anointment), [_Blade Ward_](/en/library/spells/blade-ward) |
+| **1st level** | 4     | [_Bloodlash Rebuke_](/en/library/spells/bloodlash-rebuke), [_Chromatic Capture_](/en/library/spells/chromatic-capture)                                                                 |
+| **2nd level** | 3     | [_Hold_](/en/library/spells/hold), [_Misty Step_](/en/library/spells/misty-step), [_Mirror Image_](/en/library/spells/mirror-image)                                                    |
+| **3rd level** | 3     | [_Objection_](/en/library/spells/objection), [_Bestow Curse_](/en/library/spells/bestow-curse)                                                                                         |
+| **4th level** | 3     | [_Shadow Of The Hunt_](/en/library/spells/shadow-of-the-hunt)                                                                                                                          |
+| **5th level** | 2     | [_Steel Wind Strike_](/en/library/spells/steel-wind-strike), [_Perfect Barrier_](/en/library/spells/perfect-barrier)                                                                   |
 
 - **Heightened Reactions.**  
   Ludwig can take up to **3 reactions per round**, but no more than one per turn.
@@ -83,32 +104,49 @@ Ludwig is a **10th-level spellcaster**. His spellcasting ability is **Constituti
 
 ## Actions
 
+<Action>
+
 #### Multiattack
 
 Ludwig makes **three attacks**, which can be any combination of _Mooncleaver_, _Gore Hurl_, _Bloodspire Growth_, _Impale_, or a cantrip. While in Bloodrage, he makes **four**.
 
-- **Impale.**  
-  Accuracy +14, reach [= 1 stride =], one creature. Ludwig impales a [# kw:condition:grappled #] creature on a blood spire.  
-  On a hit, The target takes **[% 4d10 piercing %]** and is **[# kw:condition:Restrained #]** until the spire is destroyed (AC 15, 30 HP).  
-  A creature can use a Major Action to make a DC 16 Athletics check, freeing itself on a success.
+<Attack accuracy="+14" reach="[= 1 stride =]">
 
-- **Mooncleaver.**  
-  Accuracy +17, reach [= 2 stride =], one creature.  
-  On a hit, [% 2d10 +10 slashing %] + [% 2d6 frost %], plus **[% 2d6 fire %]** if Bloodrage is active.
+##### Impale
 
-- **Gore Hurl.**  
-  Ludwig throws a **[# kw:condition:grappled #] creature** up to [= 12 stride =]. The creature lands in a **[= 4 stride;ADJ =] radius** area. All creatures there save Dexterity against DC 20 or take **[% 6d6 bludgeoning %]** and fall [# kw:condition:prone #]. The thrown creature automatically takes the damage and is no longer [# kw:condition:grappled #].
+Ludwig impales a [# kw:condition:grappled #] creature on a blood spire.  
+On a hit, The target takes **[% 4d10 piercing %]** and is **[# kw:condition:Restrained #]** until the spire is destroyed (AC 15, 30 HP).  
+A creature can use a Major Action to make a DC 16 Athletics check, freeing itself on a success.
 
-- **Bloodspire Growth (Recharge 5–6).**
-  Ludwig charges up to [= 6 stride =] in a straight line. A massive spire of divine blood erupts beneath a target, who saves Strength against DC 20 or takes **[% 8d10 piercing %]**, be **[# kw:condition:Restrained #]**, and launched atop a **[= 12 stride;ADJ =] tall spire**.
-  Creatures in a **[= 4 stride;ADJ =] wide** trail save Dexterity against DC 16 or take **[% 4d6 fire %]** and are **pushed [= 1 stride =] away**.
-  The path remains aflame until the start of Ludwig’s next turn, dealing **[% 4d6 fire %]** as a [# kw:persistent #], [# kw:delayed #] effect.
+</Attack>
+
+<Attack accuracy="+17" reach="[= 2 stride =]">
+
+##### Mooncleaver
+
+On a hit, [% 2d10 +10 slashing %] + [% 2d6 frost %], plus **[% 2d6 fire %]** if Bloodrage is active.
+
+</Attack>
+
+##### Gore Hurl
+
+Ludwig throws a **[# kw:condition:grappled #] creature** up to [= 12 stride =]. The creature lands in a **[= 4 stride;ADJ =] radius** area. All creatures there save Dexterity against DC 20 or take **[% 6d6 bludgeoning %]** and fall [# kw:condition:prone #]. The thrown creature automatically takes the damage and is no longer [# kw:condition:grappled #].
+
+##### Bloodspire Growth (Recharge 5–6)
+
+Ludwig charges up to [= 6 stride =] in a straight line. A massive spire of divine blood erupts beneath a target, who saves Strength against DC 20 or takes **[% 8d10 piercing %]**, be **[# kw:condition:Restrained #]**, and launched atop a **[= 12 stride;ADJ =] tall spire**.
+Creatures in a **[= 4 stride;ADJ =] wide** trail save Dexterity against DC 16 or take **[% 4d6 fire %]** and are **pushed [= 1 stride =] away**.
+The path remains aflame until the start of Ludwig’s next turn, dealing **[% 4d6 fire %]** as a [# kw:persistent #], [# kw:delayed #] effect.
+
+</Action>
 
 ---
 
 ## Legendary Deed: Stratagem
 
-#### Grand Mooncleave (Recharge 6)
+<Action deed="stratagem" recharge="6">
+
+#### Grand Mooncleave
 
 **Declare (Turn 1)**: Ludwig channels apocalyptic power into Mooncleaver.  
 **Resolve (Turn 2)**: Creatures in a **[= 120 stride;ADJ =]-long**, **[= 8 stride;ADJ =]-wide**, **[= 16 stride;ADJ =]-tall** line save Dexterity against DC 21.
@@ -116,11 +154,15 @@ Ludwig makes **three attacks**, which can be any combination of _Mooncleaver_, _
 - **Fail**: [% 12d10 +50 force %] and are knocked [# kw:condition:prone #].
 - **Success**: Half damage.
 
+</Action>
+
 ---
 
 ## Legendary Deed: Lair
 
 At the start of the creature with the highest initiative's turn, Ludwig can expend a legendary deed to use one of the following lair deeds. He cannot use the same lair deed two rounds in a row.
+
+<Action deed="lair">
 
 #### Blood Sublimation / Blood Deposition
 
@@ -129,16 +171,26 @@ The creature with the lowest result has its blood Deposition, taking 50 frost da
 
 In order to avoid this effect the two creatures must stay within [= 1 stride =] of each other until the next initiative count 20 (losing ties).
 
+</Action>
+
+<Action deed="lair">
+
 #### Lunar Deluge
 
 A swarming deluge of lunar meteor swarms the lair in [= 1 stride;ADJ =] bands stretching horizontally or vertically (Ludwig's choice) across the arena. Each band is separated by [= 1 stride =] from one another.
 Each creature in the affected area saves Dexterity against DC 18, halving [% 6d6 bludgeoning %].
 The affected becomes difficult terrain until the next initiative count 20 (losing ties). Ludwig's next use of Lunar deluge must not follow the same direction of the previous one.
 
+</Action>
+
+<Action deed="lair">
+
 #### Spire Burst
 
 Ludwig commands the blood spires in his lair to erupt violently. Each creature pinned by a spire takes 100 piercing damage and is launched [= 20 stride =] into the air.
 The explosion covers a [= 6 stride;ADJ =] radius, forcing all creatures other than the pinned creature to save Dexterity against DC 19 or take [% 6d6 fire %] and [% 6d6 piercing %], half as much on a success.
+
+</Action>
 
 ## Legendary Deed: Act
 
@@ -155,6 +207,8 @@ Ludwig can expend legendary deeds to use the options below. Only one legendary d
 
 ## Legendary Deed: Phase
 
+<Action deed="phase">
+
 #### Bloodied (50% HP): Moonfall
 
 Ludwig leaps into the air, floating [= 60 stride =] above the ground, and using gravity magic he declares a grand Moonfall.
@@ -165,6 +219,10 @@ Ludwig leaps into the air, floating [= 60 stride =] above the ground, and using 
 
 Each creature saves Dexterity against DC 21 or takes **[% 20d6 fire %] + [% 20d6 bludgeoning %]**. On a successful save, a creature takes half damage.
 
+</Action>
+
+<Action deed="phase">
+
 #### Doomed (25% HP): Long Night
 
 At the brink of death, Ludwig manifests the **Serpentine Dreams**, a curved moonlight greatsword shimmering with the cerulean light of kuutar, and fights with it alongside Mooncleaver. His stance becomes eerily calm, each movement carrying both crushing weight and blinding speed.
@@ -173,12 +231,23 @@ At the brink of death, Ludwig manifests the **Serpentine Dreams**, a curved moon
 - **Overclocked Will**: Whenever ludwig takes the attack action and misses, he can choose to succeed instead. Ludwig can use this feature once per round.
 - **Bonus Attack**: Ludwig can make one additional Serpentine Dreams attack as a **Minor Action** on his turn.
 
+</Action>
+
+<Action deed="phase">
+
 #### Serpentine Dreams
 
-Accuracy +16, reach [= 1 stride =], one creature.
+<Attack accuracy="+16" reach="[= 1 stride =]">
+
 On a hit, [% 2d12 +10 force %] + [% 4d8 frost %].
 
-#### Mooncleave (Recharge 5–6)
+</Attack>
+
+</Action>
+
+<Action deed="phase" recharge="5–6">
+
+#### Mooncleave
 
 Ludwig sweeps Serpentine Dreams in a great lunar arc.
 All creatures in a **[= 6 stride;ADJ =] cone** save Dexterity against DC 21.
@@ -188,6 +257,10 @@ All creatures in a **[= 6 stride;ADJ =] cone** save Dexterity against DC 21.
 
 Additionally, Ludwig gains access to the following features:
 
+</Action>
+
+<Action deed="phase">
+
 #### Surgical Lunge
 
 Ludwig may replace one attack with a [= 4 stride =]-long, [= 1 stride =]-wide line. This includes attacks from his legendary deeds.
@@ -195,20 +268,36 @@ Ludwig may replace one attack with a [= 4 stride =]-long, [= 1 stride =]-wide li
 - Each creature in the line saves Dexterity against DC 21 or takes damage equal to Serpentine Dreams’ base weapon dice ([% 2d12 %] + [% 2d8 %]).
 - Ludwig moves along the line without provoking opportunity attacks.
 
+</Action>
+
+<Action deed="phase">
+
 #### Iron Reserve
 
 Once per round, Ludwig may replace a Mooncleaver attack with a Serpentine Dreams Strike. He gains **temporary hit points equal to the damage rolled** (dice only, no modifiers).
 
-#### Saint’s Reversal (Reaction)
+</Action>
+
+<Action deed="phase" cost="1 Reaction">
+
+#### Saint’s Reversal
 
 When Ludwig is targeted by a melee attack, he may contest the attack roll with one of his own.
 
 - If he wins, the attack misses and he makes one Serpentine Dreams Strike against the attacker.
 - If he loses, resolve the attack normally.
 
+</Action>
+
+<Action deed="phase">
+
 #### Saint’s Footwork
 
 After Ludwig makes a melee attack (hit or miss), he may move **[= 1 stride =]**. This movement can provoke opportunity attacks.
+
+</Action>
+
+<Action deed="phase">
 
 #### Martial Domination
 
@@ -217,6 +306,14 @@ When Ludwig hits a creature with a melee attack, that creature saves Charisma ag
 - The target may repeat the save at the end of each of its turns.
 - Once a creature saves against this effect, it is immune to Ludwig’s Martial Domination for 24 hours.
 
+</Action>
+
+<Action deed="phase">
+
 #### Hesitation is Defeat (Legendary Deed, Costs 2)
 
 Ludwig makes one Serpentine Dreams Strike. If the attack hits, he regains his reaction.
+
+</Action>
+
+</Monster>

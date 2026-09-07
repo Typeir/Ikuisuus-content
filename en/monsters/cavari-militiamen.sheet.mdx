@@ -10,31 +10,44 @@ contentType: monsters
   alt='Cavari Mercenary Militiaman'
 />
 
-_Medium Humanoid, Neutral_
-
-| **Armor Class**      | **Hit Points** | **Speed** |
-| -------------------- | -------------- | --------- |
-| 15 (studded leather) | 45 ([% 6d8 +18 %])  | [= 6 stride =]    |
-
-| **STR** | **DEX** | **CON** | **INT** | **WIS** | **CHA** |
-| ------- | ------- | ------- | ------- | ------- | ------- |
-| 14 (+2) | 14 (+2) | 16 (+3) | 10 (+0) | 11 (+0) | 9 (–1)  |
-
-- **Saving Throws**: Con +4, Dex +3
-- **Skills**: Athletics +3, Survival +1, Perception +1
-- **Languages**: Common, Cavari
-- **Challenge**: 1 (200 XP)
-- **Tier Bonus**: +1
+<Monster
+  size="Medium"
+  type="Humanoid"
+  alignment="Neutral"
+  armorClass="15 (studded leather)"
+  hitPoints="45 ([% 6d8 +18 %])"
+  speed="[= 6 stride =]"
+  str="14"
+  dex="14"
+  con="16"
+  int="10"
+  wis="11"
+  cha="9"
+  saves="Con +4, Dex +3"
+  skills="Athletics +3, Survival +1, Perception +1"
+  languages="Common, Cavari"
+  challenge="1"
+  xp="200">
 
 ---
 
 ## Traits
 
+<Trait>
+
 #### Curved-Blade Discipline
 The militiaman treats curved weapons (shotel, khopesh, hooked halberd) or falchions, bows and daggers as **finesse weapons** and may **reroll 1s** on their damage rolls, **once per turn**.
 
+</Trait>
+
+<Trait>
+
 #### Shield Catch
 When the militiaman hits a creature wielding a shield with a curved weapon, they may **immediately attempt to shove or disarm** the target as a **Minor Action**. The contest is **Athletics vs. Athletics**, and the target has **disadvantage** if the attempt targets their shield.
+
+</Trait>
+
+<Trait>
 
 #### Equipment
 
@@ -52,6 +65,8 @@ Roll [% 1d6 %] or assign:
 | 6      | Reinforced laminar | 16     | Traditional Cavari; decorative    |
 
 > Reinforced laminar is a Cavari-style layered banded armor—mechanically identical to scale mail.
+
+</Trait>
 
 ---
 
@@ -72,19 +87,38 @@ Roll [% 1d6 %] or assign:
 
 ## Actions
 
+<Action>
+
 #### Multiattack
+
 The militiaman makes two melee attacks.
 
-- **Shotel Slash.**  
-Accuracy +4, reach [= 1 stride =], one creature.  
+<Attack accuracy="+4" reach="[= 1 stride =]">
+
+##### Shotel Slash
+
 On a hit, 7 ([% 1d8 +3 slashing %]).
 
-- **Hooked Halberd.**  
-Accuracy +4, reach [= 2 stride =], one creature.  
+</Attack>
+
+<Attack accuracy="+4" reach="[= 2 stride =]">
+
+##### Hooked Halberd
+
 On a hit, 9 ([% 1d10 +3 slashing %]).  
 On hit, the target saves Strength against DC 11 or is **pulled [= 1 stride =] closer**.
 
-- **Falchion Bash.**  
-Accuracy +4, reach [= 1 stride =], one creature.  
+</Attack>
+
+<Attack accuracy="+4" reach="[= 1 stride =]">
+
+##### Falchion Bash
+
 On a hit, 6 ([% 1d6 +3 bludgeoning %]).  
 If the target is concentrating on a spell, it makes its concentration saving throw with **disadvantage**.
+
+</Attack>
+
+</Action>
+
+</Monster>

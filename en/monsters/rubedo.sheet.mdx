@@ -5,41 +5,59 @@ contentType: monsters
 
 # Rubedo – The Red Rebis
 
-_Huge Aberration, Lawful Good_
-
-| **Armor Class**    | **Hit Points**           | **Speed**                           |
-| ------------------ | ------------------------ | ----------------------------------- |
-| 28 (natural armor) | 1,020 ([% 60d12 +600 %]) | [= 8 stride =], fly [= 12 stride =] |
-
-| **STR** | **DEX**  | **CON**  | **INT** | **WIS** | **CHA** |
-| ------- | -------- | -------- | ------- | ------- | ------- |
-| 24 (+7) | 35 (+12) | 30 (+10) | 22 (+6) | 26 (+8) | 20 (+5) |
-
-- **Saving Throws**: Dexterity +23, Constitution +20, Wisdom +18
-- **Skills**: Perception +18, Intimidation +15
-- **Damage Resistances**: Fire, Holy
-- **Damage Immunities**: Poison
-- **Condition Immunities**: [# kw:condition:Terrified #], [# kw:condition:Poisoned #], Exhaustion
-- **Senses**: Truesight [= 24 stride =], passive Perception 27
-- **Languages**: Common, Empyrean, Hidden
-- **Challenge**: 31 (175,000 XP)
-- **Tier Bonus**: +11
+<Monster
+  size="Huge"
+  type="Aberration"
+  alignment="Lawful Good"
+  armorClass="28 (natural armor)"
+  hitPoints="1,020 ([% 60d12 +600 %])"
+  speed="[= 8 stride =], fly [= 12 stride =]"
+  str="24"
+  dex="35"
+  con="30"
+  int="22"
+  wis="26"
+  cha="20"
+  saves="Dexterity +23, Constitution +20, Wisdom +18"
+  skills="Perception +18, Intimidation +15"
+  resistances="Fire, Holy"
+  immunities="Poison"
+  conditionImmunities="[# kw:condition:Terrified #], [# kw:condition:Poisoned #], Exhaustion"
+  senses="Truesight [= 24 stride =], passive Perception 27"
+  languages="Common, Empyrean, Hidden"
+  challenge="31"
+  xp="325,000"
+  saveDc="26">
 
 ---
 
 ## Traits
 
+<Trait>
+
 #### Legendary Deeds
 
 Rubedo has **3 legendary deeds per round**, and regains all expended deeds at the start of its turn.
 
-#### Legendary Deed: Resist (3/Repose)
+</Trait>
+
+<Trait charges="3/Repose">
+
+#### Legendary Deed: Resist
 
 When Rubedo fails a saving throw, it can expend a legendary deed to succeed instead. This feature can be used **3 times per [# kw:Repose #]**.
+
+</Trait>
+
+<Trait>
 
 #### Armor Constraint
 
 While Rubedo’s Armor Class is **above 25**, damage dealt by **Flame Belch** is **halved** (round down).
+
+</Trait>
+
+<Trait>
 
 #### Ruinous Aura
 
@@ -48,53 +66,70 @@ Once per turn, if a creature is **hit by Rubedo**, caught within [= 3 stride =] 
 This saving throw DC increases to **25 while Rubedo is Wounded**, **26 while Bloodied**, and **27 while Doomed**.  
 Creatures immune to disease or curses do not ignore this effect; instead, they roll with advantage.
 
+</Trait>
+
+<Trait>
+
 #### Spellcasting
 
 Rubedo is a **17th-level spellcaster**. It has the following spell slots: 1st (4), 2nd (3), 3rd (3), 4th (3), 5th (3), 6th (2), 7th (2), 8th (1), 9th (1).  
 Its spellcasting ability is Wisdom (spell save DC 26, accuracy +18 with spell attacks). It does not require material components. It has the following spells prepared:
 
+
 - **Cantrips**: [_Judgement_](/en/library/spells/judgement), [_Pyromancy_](/en/library/spells/pyromancy)
-- **1st level (4 slots)**: [_Death Grips_](/en/library/spells/death-grips), [_Waltzing Blades_](/en/library/spells/waltzing-blades), [_Twilight Bolt_](/en/library/spells/twilight-bolt), [_Burning Hands_](/en/library/spells/burning-hands)
+- **1st level**: [_Death Grips_](/en/library/spells/death-grips), [_Waltzing Blades_](/en/library/spells/waltzing-blades), [_Twilight Bolt_](/en/library/spells/twilight-bolt), [_Burning Hands_](/en/library/spells/burning-hands)
 
-- **2nd level (3 slots)**: [_Scorching Ray_](/en/library/spells/scorching-ray), [_Ardent Prism_](/en/library/spells/ardent-prism), [_Shatter_](/en/library/spells/shatter)
+- **2nd level**: [_Scorching Ray_](/en/library/spells/scorching-ray), [_Ardent Prism_](/en/library/spells/ardent-prism), [_Shatter_](/en/library/spells/shatter)
 
-- **3rd level (3 slots)**: [_Pyroblast_](/en/library/spells/pyroblast), [_Sandstorm Barrier_](/en/library/spells/sandstorm-barrier), [_Dawn_](/en/library/spells/dawn)
+- **3rd level**: [_Pyroblast_](/en/library/spells/pyroblast), [_Sandstorm Barrier_](/en/library/spells/sandstorm-barrier), [_Dawn_](/en/library/spells/dawn)
 
-- **4th level (3 slots)**: [_Burning Barrier_](/en/library/spells/burning-barrier)
-- **5th level (3 slots)**: [_Flame Strike_](/en/library/spells/flame-strike), [_Destructive Wave_](/en/library/spells/destructive-wave), [_Immolation_](/en/library/spells/immolation)
+- **4th level**: [_Burning Barrier_](/en/library/spells/burning-barrier)
+- **5th level**: [_Flame Strike_](/en/library/spells/flame-strike), [_Destructive Wave_](/en/library/spells/destructive-wave), [_Immolation_](/en/library/spells/immolation)
 
-- **6th level (2 slots)**: [_Blade Barrier_](/en/library/spells/blade-barrier), [_Harm_](/en/library/spells/harm)
+- **6th level**: [_Blade Barrier_](/en/library/spells/blade-barrier), [_Harm_](/en/library/spells/harm)
 
-- **7th level (2 slots)**: [_Flame Strike_](/en/library/spells/flame-strike) (overcast)
+- **7th level**: [_Flame Strike_](/en/library/spells/flame-strike) (overcast)
 
-- **8th level (1 slot)**: [_Sunburst_](/en/library/spells/sunburst)
+- **8th level**: [_Sunburst_](/en/library/spells/sunburst)
 
-- **9th level (1 slot)**: [_Storm of Vengeance_](/en/library/spells/storm-of-vengeance)
+- **9th level**: [_Storm of Vengeance_](/en/library/spells/storm-of-vengeance)
+
+</Trait>
+
+<Trait>
 
 #### Overlapping Annihilation
 
 Whenever Rubedo casts a spell of 1st level or higher, it may immediately cast [_Judgement_](/en/library/spells/judgement) targeting a different creature it can see within range.
 
+</Trait>
+
 ---
 
 ## Actions
+
+<Action>
 
 #### Multiattack
 
 Rubedo makes **four attacks**, choosing from **Sorcery Ring** or **Dreamcatcher Relics**.  
 Rubedo can replace **one** of these attacks with **No Further Questions**, if available.
 
+</Action>
+
 ---
 
 - **Sorcery Ring**  
-  Accuracy +23, reach [= 2 stride =], one creature.  
+  <Attack accuracy="+23" reach="[= 2 stride =]">
   On a hit, 45 ([% 6d10 +12 force %]) plus 27 ([% 6d8 fire %]).
+  </Attack>
 
 ---
 
 - **Dreamcatcher Relics**  
-  Accuracy +23, reach [= 3 stride =], one creature.  
+  <Attack accuracy="+23" reach="[= 3 stride =]">
   On a hit, 36 ([% 8d8 force %]).
+  </Attack>
 
 The target saves Charisma against DC 26 or becomes **[_Laid Bare_](/en/library/items/heirlooms/dreamcatcher#fate-arisen)** for **1 minute**.  
 A creature that succeeds is immune to this effect until the next dawn.
@@ -128,9 +163,13 @@ On a hit, a [**_Cloud of Daggers_**](/en/library/spells/cloud-of-daggers) spell 
 
 ## Reactions
 
+<Action cost="1 Reaction">
+
 #### Inertial Shift
 
 When Rubedo takes **60 or more damage** from a single source, it may move up to half its speed **without provoking opportunity attacks**.
+
+</Action>
 
 ---
 
@@ -165,6 +204,8 @@ At the start of the creature with the highest initiative's turn, Rubedo can expe
 
 ---
 
+<Action deed="lair">
+
 #### Supercritical Core
 
 Rubedo becomes Supercritical for a round.  
@@ -172,14 +213,22 @@ Until the start of the next round, Rubedo produces an aura of [= 3 stride =].
 As a [# kw:persistent #] effect, creatures in this area take **18 ([% 4d8 force %])** and save Constitution against DC 26 or roll on [# kw:Red Ruin #].  
 Every [= 1 stride =] of movement in this area costs [= 4 stride =] extra.
 
+</Action>
+
 ---
+
+<Action deed="lair">
 
 #### Relic Suppression
 
 Rubedo targets up to **three creatures** it can see within **[= 24 stride =]**.  
 Each target saves Charisma against DC 26 or has all heirlooms of rarity **very rare** or higher unattuned until the start of the next round.
 
+</Action>
+
 ---
+
+<Action deed="lair">
 
 #### Blades of Wars Past
 
@@ -188,9 +237,13 @@ Terrain in the entire lair erupts with blades, blackened with ruin.
 Rubedo’s attack range increases to cover the entire lair.  
 Every [= 1 stride =] of willing movement deals **[% 1d4 %] damage** to creatures other than Rubedo.
 
+</Action>
+
 ---
 
 ## Legendary Deed: Stratagem
+
+<Action deed="stratagem">
 
 #### Fallen Blade Manifestation
 
@@ -220,15 +273,23 @@ Rubedo may have up to **six** Fallen Blades active at once.
 
 If a Large or larger object obstructs the space designated by Rubedo for a Fallen Blade, the Fallen Blade cannot manifest there, and Rubedo takes **30 ([% 6d10 psychic %])**.
 
+</Action>
+
+<Action deed="stratagem">
+
 #### Storm of Blades
 
 Rubedo starts pulling out the bound blades from its crown.  
 Unless [# kw:condition:restrained #] or disarmed at any point until the Stratagem resolves, Rubedo gains **Multiattack (12 attacks)** [# kw:briefly #].  
 All attacks this round must be **Dreamcatcher Relics**.
 
+</Action>
+
 ---
 
 ## Legendary Deed: Phase
+
+<Action deed="phase">
 
 #### Wounded (75% HP)
 
@@ -236,7 +297,11 @@ All attacks this round must be **Dreamcatcher Relics**.
 - Rubedo may **declare one Stratagem immediately**, even if it has already declared a Stratagem this turn.
 - As an [# kw:delayed #] effect, creatures in the lair take **[% 1d12 force %]**.
 
+</Action>
+
 ---
+
+<Action deed="phase">
 
 #### Bloodied (50% HP)
 
@@ -246,7 +311,11 @@ All attacks this round must be **Dreamcatcher Relics**.
 - As an [# kw:delayed #] effect, creatures in the lair take an additional **[% 2d12 force %]**.
 - All of Rubedo’s attacks score a critical hit on a roll of **19 or 20**.
 
+</Action>
+
 ---
+
+<Action deed="phase">
 
 #### Doomed (25% HP)
 
@@ -257,7 +326,11 @@ All attacks this round must be **Dreamcatcher Relics**.
 - Rubedo becomes perpetually affected by the spells [_Freedom of Movement_](/en/library/spells/freedom-of-movement), [_Haste_](/en/library/spells/haste), and [_Starpath_](/en/library/spells/starpath).
 - All of Rubedo’s attacks cause [# kw:Red Ruin #] on a hit.
 
+</Action>
+
 ---
+
+<Action deed="phase">
 
 #### Slain
 
@@ -268,3 +341,7 @@ Each creature within **[= 30 stride =]** saves Dexterity against DC 31:
 - **Success**: Half damage, not knocked [# kw:condition:prone #]
 
 Creatures brought to 0 hit points or less this way are disintegrated along with everything they are carrying.
+
+</Action>
+
+</Monster>

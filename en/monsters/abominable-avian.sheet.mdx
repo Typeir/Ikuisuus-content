@@ -19,8 +19,6 @@ contentType: monsters
   />
 </FloatedContainer>
 
-_Large Aberration, Chaotic Evil_
-
 Discarded flesh born from great Silent Ones often develops an animalistic, brutal nature. This leads to them being routinely mistaken by
 great wyrms or dragons of legend, and subsequently hunted down by the locals of their areas.
 
@@ -28,22 +26,27 @@ great wyrms or dragons of legend, and subsequently hunted down by the locals of 
 
 ---
 
-| **Armor Class**    | **Hit Points**   | **Speed**                       |
-| ------------------ | ---------------- | ------------------------------- |
-| 16 (natural armor) | 170 ([% 20d10 +60 %]) | [= 6 stride =], fly [= 12 stride =], swim [= 6 stride =] |
-
-| **STR** | **DEX** | **CON** | **INT** | **WIS** | **CHA** |
-| ------- | ------- | ------- | ------- | ------- | ------- |
-| 16 (+3) | 16 (+3) | 18 (+4) | 6 (-2)  | 12 (+1) | 16 (+3) |
-
-- **Saving Throws**: Dex +7, Con +8, Cha +7
-- **Skills**: Perception +5, Stealth +7, Arcana +6
-- **Damage Resistances**: lightning, bludgeoning
-- **Condition Immunities**: [# kw:condition:Terrified #], [# kw:condition:frightened #].
-- **Senses**: Darkvision [= 12 stride =], passive Perception 15
-- **Languages**: Understands Hidden but cannot speak.
-- **Challenge**: 10 (5,900 XP)
-- **Tier Bonus**: +4
+<Monster
+  size="Large"
+  type="Aberration"
+  alignment="Chaotic Evil"
+  armorClass="16 (natural armor)"
+  hitPoints="170 ([% 20d10 +60 %])"
+  speed="[= 6 stride =], fly [= 12 stride =], swim [= 6 stride =]"
+  str="16"
+  dex="16"
+  con="18"
+  int="6"
+  wis="12"
+  cha="16"
+  saves="Dex +7, Con +8, Cha +7"
+  skills="Perception +5, Stealth +7, Arcana +6"
+  resistances="lightning, bludgeoning"
+  conditionImmunities="[# kw:condition:Terrified #], [# kw:condition:frightened #]."
+  senses="Darkvision [= 12 stride =], passive Perception 15"
+  languages="Understands Hidden but cannot speak."
+  challenge="10"
+  xp="5,900">
 
 ---
 
@@ -51,36 +54,62 @@ great wyrms or dragons of legend, and subsequently hunted down by the locals of 
 
 ## Traits
 
+<Trait>
+
 #### Amphibious
 
 The abominable avian can breathe air and water.
 
+</Trait>
+
+<Trait>
+
 #### Gold Glimmer
 
 The abominable avian emits a faint, mesmerizing glow. As a [# kw:persistent #] effect, creatures within [= 2 stride =] of it saves Wisdom against DC 16 or is **[# kw:condition:charmed #]** [# kw:briefly #].
+
+</Trait>
+
+<Trait>
 
 #### Storm Bladder
 
 The abominable avian’s body is swollen with volatile electrical organs.  
 It has advantage on Constitution saving throws against being [# kw:condition:stunned #] or [# kw:condition:paralyzed #].
 
+</Trait>
+
 ---
 
 ## Actions
+
+<Action>
 
 #### Multiattack
 
 The abominable avian makes **two attacks**: one with its bite and one with its talons.
 
-- **Bite.**  
-  Accuracy +8, reach [= 1 stride =], one creature.  
-  On a hit, 13 ([% 2d8 +4 piercing %]).
+<Attack accuracy="+8" reach="[= 1 stride =]">
 
-- **Talons.**  
-  Accuracy +8, reach [= 1 stride =], one creature.  
-  On a hit, 11 ([% 2d6 +4 slashing %]).
+##### Bite
 
-#### Quacke (Recharge 5–6)
+On a hit, 13 ([% 2d8 +4 piercing %]).
+
+</Attack>
+
+<Attack accuracy="+8" reach="[= 1 stride =]">
+
+##### Talons
+
+On a hit, 11 ([% 2d6 +4 slashing %]).
+
+</Attack>
+
+</Action>
+
+<Action recharge="5–6">
+
+#### Quacke
 
 The abominable avian releases a catastrophic blast of compressed air in a **[= 12 stride;ADJ =] cone**.  
 Each creature in the area saves Constitution against DC 16, halving **50 ([% 10d8 bludgeoning %])**.
@@ -88,15 +117,27 @@ Each creature in the area saves Constitution against DC 16, halving **50 ([% 10d
 Creatures that fail the save are also **[# kw:condition:deafened #] and knocked [# kw:condition:prone #]** [# kw:briefly #].  
 Objects and structures in the area take double damage.
 
+</Action>
+
+<Action>
+
 #### Lightning Dive
 
 The abominable avian flies up to **[= 12 stride =]** in a straight line. Each creature whose space it passes through saves Dexterity against DC 15 or takes **22 ([% 4d10 lightning %])** and is knocked [# kw:condition:prone #].
 The abominable avian does not provoke opportunity attacks when it flies out of an enemy’s reach.
 
+</Action>
+
 ---
 
 ## Reactions
 
+<Action cost="1 Reaction">
+
 #### Abominable Reflex
 
 When a creature the abominable avian can see targets it with a melee attack, the abominable avian can use its reaction to have its lightning organs lash out, forcing the attacker to save Dexterity against DC 15 or take 9 ([% 2d8 lightning %]) become **[# kw:condition:paralyzed #]** [# kw:briefly #].
+
+</Action>
+
+</Monster>

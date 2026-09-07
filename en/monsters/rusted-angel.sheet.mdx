@@ -5,38 +5,47 @@ contentType: monsters
 
 # Rusted Angel
 
-_Huge Construct, Lawful Evil_
-
 <BlendedImage
   src='/library/images/monsters/rusted-angel.webp'
   alt='Rusted Angel'
 />
 
-| **Armor Class**      | **Hit Points**         | **Speed**                            |
-| -------------------- | ---------------------- | ------------------------------------ |
-| 20 (rusted godplate) | 285 ([% 19d12 +152 %]) | [= 8 stride =], climb [= 4 stride =] |
-
-| STR     | DEX     | CON     | INT     | WIS     | CHA     |
-| ------- | ------- | ------- | ------- | ------- | ------- |
-| 26 (+8) | 16 (+3) | 26 (+8) | 10 (+0) | 16 (+3) | 18 (+4) |
-
-- **Saving Throws**: Str +14, Dex +9, Con +14, Wis +9
-- **Damage Resistances**: Chemical, Frost, Dark
-- **Damage Immunities**: Poison
-- **Damage Vulnerabilities**: Bludgeoning
-- **Condition Immunities**: [# kw:condition:Charmed #], [# kw:condition:Frightened #], [# kw:condition:Poisoned #], [# kw:condition:Paralyzed #], [# kw:condition:Petrified #]
-- **Senses**: Darkvision [= 24 stride =], passive Perception 13
-- **Languages**: —
-- **Challenge**: 18 (20,000 XP)
-- **Tier Bonus**: +6
+<Monster
+  size="Huge"
+  type="Construct"
+  alignment="Lawful Evil"
+  armorClass="20 (rusted godplate)"
+  hitPoints="285 ([% 19d12 +152 %])"
+  speed="[= 8 stride =], climb [= 4 stride =]"
+  str="26"
+  dex="16"
+  con="26"
+  int="10"
+  wis="16"
+  cha="18"
+  saves="Str +14, Dex +9, Con +14, Wis +9"
+  resistances="Chemical, Frost, Dark"
+  immunities="Poison"
+  vulnerabilities="Bludgeoning"
+  conditionImmunities="[# kw:condition:Charmed #], [# kw:condition:Frightened #], [# kw:condition:Poisoned #], [# kw:condition:Paralyzed #], [# kw:condition:Petrified #]"
+  senses="Darkvision [= 24 stride =], passive Perception 13"
+  languages="—"
+  challenge="18"
+  xp="20,000">
 
 ---
 
 ## Traits
 
+<Trait>
+
 #### Legendary Deeds
 
 The Rusted Angel has **3 legendary deeds per round**, and regains all expended deeds at the start of its turn.
+
+</Trait>
+
+<Trait>
 
 #### Black Ice Consumption
 
@@ -45,6 +54,10 @@ When it does, it gains **20 temporary hit points**, gains **1 Black Ice Charge**
 Its maximum number of **Black Ice Charges** is **3**.  
 The Rusted Angel can consume only one fragment per turn.
 
+</Trait>
+
+<Trait>
+
 #### Black Ice Charges
 
 The Rusted Angel fuels its dead winter techniques with harvested black ice.  
@@ -52,9 +65,17 @@ It starts combat with **0 Black Ice Charges**.
 Whenever it consumes a **black ice fragment**, it gains **1 Black Ice Charge**.  
 It may spend these charges to use certain actions. If an action requires a charge and none remain, it cannot use that action.
 
+</Trait>
+
+<Trait>
+
 #### Eroding Presence
 
 At the start of each of the Rusted Angel’s turns, each creature of its choice within [= 2 stride =] takes **7 ([% 2d6 chemical %])** and saves Constitution against DC 21 or gains **1 stack of [# kw:Erosion #]**.
+
+</Trait>
+
+<Trait>
 
 #### Rimeforged Armament
 
@@ -65,50 +86,72 @@ At the end of each of its turns in which it takes the Attack action, the Rusted 
 - **Crushing Maul — Bludgeoning.** The attack deals bludgeoning damage instead of slashing. On a hit, the target is pushed **[= 2 stride =]**.
 - **Frostbite Brand — Frost.** The attack deals frost damage instead of slashing. On a hit, the target’s speed is reduced by **[= 2 stride =]** [# kw:briefly #].
 
+</Trait>
+
+<Trait>
+
 #### Corroded Sword Saint
 
 The Rusted Angel scores a critical hit on a roll of 19–20; this threshold is lowered by 1 per stack of **[# kw:Erosion #]** the target has.
+
+</Trait>
+
+<Trait>
 
 #### Construct Nature
 
 The Rusted Angel does not require air, food, drink, or sleep.
 
+</Trait>
+
 ---
 
 ## Actions
+
+<Action>
 
 #### Multiattack
 
 The Rusted Angel makes three attacks with any combination of its weapons.
 
-- **Ruinblade.**  
-  Accuracy +14, reach [= 3 stride =], one creature.  
-  On a hit, 25 ([% 3d10 +8 slashing %]) plus **9 ([% 2d8 frost %])**.  
-  The target gains **1 stack of [# kw:Erosion #]**.
+<Attack accuracy="+14" reach="[= 3 stride =]">
 
-- **Ice Blade Volley.**  
-  The Rusted Angel summons a storm of dancing glacier blades in a **[= 12 stride;ADJ =] line that is [= 2 stride =] wide**.  
-  Each creature in the area saves Dexterity against DC 21, halving **45 ([% 10d8 frost %])** and slashing damage.  
-  Creatures that fail also gain **1 stack of [# kw:Erosion #]** and have their **speed reduced by [= 2 stride =]** [# kw:briefly #].
+##### Ruinblade
 
-- **Glacial Judgment (Costs 1 Black Ice Charge).**  
-  Accuracy +14, reach [= 3 stride =], one creature.  
-  On a hit, 33 ([% 4d10 +8 %] plus [% 2d8 %]) slashing and frost damage.  
-  The target saves Constitution against DC 21 or becomes **[# kw:condition:restrained #]** as black ice spears erupt through its limbs until the end of the Rusted Angel’s next turn.  
-  A creature [# kw:condition:restrained #] this way takes **9 ([% 2d8 frost %])** at the start of each of its turns and gains **1 stack of [# kw:Erosion #]**.
+On a hit, 25 ([% 3d10 +8 slashing %]) plus **9 ([% 2d8 frost %])**.  
+The target gains **1 stack of [# kw:Erosion #]**.
+
+</Attack>
+
+##### Ice Blade Volley
+
+The Rusted Angel summons a storm of dancing glacier blades in a **[= 12 stride;ADJ =] line that is [= 2 stride =] wide**.  
+Each creature in the area saves Dexterity against DC 21, halving **45 ([% 10d8 frost %])** and slashing damage.  
+Creatures that fail also gain **1 stack of [# kw:Erosion #]** and have their **speed reduced by [= 2 stride =]** [# kw:briefly #].
+
+<Attack accuracy="+14" reach="[= 3 stride =]">
+
+##### Glacial Judgment (Costs 1 Black Ice Charge)
+
+On a hit, 33 ([% 4d10 +8 %] plus [% 2d8 %]) slashing and frost damage.  
+The target saves Constitution against DC 21 or becomes **[# kw:condition:restrained #]** as black ice spears erupt through its limbs until the end of the Rusted Angel’s next turn.  
+A creature [# kw:condition:restrained #] this way takes **9 ([% 2d8 frost %])** at the start of each of its turns and gains **1 stack of [# kw:Erosion #]**.
+
+</Attack>
 
 **Falling Cathedral Step.**  
-_Special Accuracy +14, range 20–[= 8 stride =], one creature.  
+Accuracy +14, range 20–[= 8 stride =], one creature.  
 The Rusted Angel launches itself in a screaming arc of rust and frost, landing within [= 1 stride =] of its target.  
 On a hit, 21 ([% 3d8 +8 bludgeoning %]) plus **9 ([% 2d8 frost %])**.  
 If the target is Large or smaller, it saves Strength against DC 21 or is **knocked [# kw:condition:prone #]**.  
 A target that takes damage also gains **1 stack of [# kw:Erosion #]**.
 
-- **Black Ice Meteor (Costs 1 Black Ice Charge).**  
-  The Rusted Angel conjures and hurls a screaming mass of dead winter at a point on the ground it can see within **[= 24 stride =]**, provided that point is at least **[= 12 stride =]** away from it.  
-  Each creature within a **[= 3 stride;ADJ =]-radius sphere** centered on that point saves Dexterity against DC 21, halving **35 ([% 10d6 frost %])** and bludgeoning damage.  
-  Creatures that fail also gain **1 stack of [# kw:Erosion #]** and are **knocked [# kw:condition:prone #]**.  
-  After the impact, a **black ice fragment** forms in the center of the area.
+##### Black Ice Meteor (Costs 1 Black Ice Charge)
+
+The Rusted Angel conjures and hurls a screaming mass of dead winter at a point on the ground it can see within **[= 24 stride =]**, provided that point is at least **[= 12 stride =]** away from it.  
+Each creature within a **[= 3 stride;ADJ =]-radius sphere** centered on that point saves Dexterity against DC 21, halving **35 ([% 10d6 frost %])** and bludgeoning damage.  
+Creatures that fail also gain **1 stack of [# kw:Erosion #]** and are **knocked [# kw:condition:prone #]**.  
+After the impact, a **black ice fragment** forms in the center of the area.
 
 > #### Black Ice Fragment
 >
@@ -129,8 +172,9 @@ A target that takes damage also gains **1 stack of [# kw:Erosion #]**.
 
 A black ice fragment lasts until consumed, destroyed, or until the Rusted Angel dies.
 
-- **Avalanche Blade (Costs 2 Black Ice Charges).**  
-  The Rusted Angel manifests a gargantuan, quasi-intangible ice blade in an unoccupied space it can see within **[= 6 stride =]**.
+##### Avalanche Blade (Costs 2 Black Ice Charges)
+
+The Rusted Angel manifests a gargantuan, quasi-intangible ice blade in an unoccupied space it can see within **[= 6 stride =]**.
 
 > #### Avalanche Blade
 >
@@ -152,7 +196,7 @@ A black ice fragment lasts until consumed, destroyed, or until the Rusted Angel 
 The blade lasts for **1 minute**, until the Rusted Angel dismisses it, or until it is destroyed. It cannot normally move on its own.  
 Once per turn, as a [# kw:persistent #] effect, the blade makes **Cold Cleave** against a creature of the Rusted Angel’s choice in its space.
 
-- **Black Star** (Costs 3 Black Ice Charges).
+##### Black Star (Costs 3 Black Ice Charges)
 
 The rusted angel howls to the fathomless stars above, calling down a shard of the seventh winter's hatred.
 
@@ -161,6 +205,8 @@ The shard strikes a point on the ground the Rusted Angel can see within **[= 30 
 Creatures in the area save Dexterity against DC 21, halving **37 ([% 8d8 frost %])** plus **37 ([% 8d8 bludgeoning %])**.
 Creatures that fail the saving throw also gain **1 stack of [# kw:Erosion #]** and are **knocked [# kw:condition:prone #]**.
 Creatures struck by the shard are immediately [# kw:condition:slowed #] for 1 minute, and have their erosion stacks, if any doubled.
+
+</Action>
 
 ---
 
@@ -172,3 +218,5 @@ The Rusted Angel can expend legendary deeds to use the options below. Only one l
 - **Black Ice Call.** (Costs 2 Deeds) The Rusted Angel conjures **one black ice fragment** in an unoccupied space it can see within [= 6 stride =]
 - **Mana Ring Drift.** (Costs 2 Deeds) One **Avalanche Blade** the Rusted Angel created moves up to **[= 6 stride =]** in a straight line. Each creature in its path saves Dexterity against DC 21 or takes **18 ([% 4d8 frost %])**.
 - **Wingless Ascension.** (Costs 2 Deeds) The Rusted Angel moves up to half its speed without provoking opportunity attacks. Creatures whose spaces it moves adjacent to during this movement take **7 ([% 2d6 frost %])**.
+
+</Monster>

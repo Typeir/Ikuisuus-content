@@ -11,17 +11,16 @@ Paladins master weapons and armor but rely even more on divine magic to heal the
 
 ---
 
-## Core Paladin Traits
+<Vocation
+  primaryAbility="Strength and Charisma"
+  hitDie="d10 per Paladin level"
+  saves="Wisdom and Charisma"
+  skills="Choose 2: Athletics, Insight, Intimidation, Medicine, Persuasion, or Religion"
+  weapons="Simple and Martial weapons"
+  armor="Light, Medium, Heavy armor and Shields"
+  equipment="(A) Chain Mail, Shield, Longsword, 6 Javelins, Holy Symbol, Priest's Pack, 9 GP; or (B) 150 GP">
 
-| Trait                          | Value                                                                                          |
-| ------------------------------ | ---------------------------------------------------------------------------------------------- |
-| **Primary Ability**            | Strength and Charisma                                                                          |
-| **Hit Point Die**              | d10 per Paladin level                                                                          |
-| **Saving Throw Proficiencies** | Wisdom and Charisma                                                                            |
-| **Skill Proficiencies**        | Choose 2: Athletics, Insight, Intimidation, Medicine, Persuasion, or Religion                  |
-| **Weapon Proficiencies**       | Simple and Martial weapons                                                                     |
-| **Armor Training**             | Light, Medium, Heavy armor and Shields                                                         |
-| **Starting Equipment**         | (A) Chain Mail, Shield, Longsword, 6 Javelins, Holy Symbol, Priest's Pack, 9 GP; or (B) 150 GP |
+## Core Paladin Traits
 
 ---
 
@@ -50,35 +49,20 @@ If you unrepentantly violate your oath, speak with your Game Director about appr
 
 ## Paladin Features
 
-| Level | Tier Bonus | Features                                   | Channel Divinity | Prepared Spells | 1st | 2nd | 3rd | 4th | 5th |
-| ----- | ---------- | ------------------------------------------ | ---------------- | --------------- | --- | --- | --- | --- | --- |
-| 1     | +1         | Lay On Hands, Spellcasting, Weapon Mastery | –                | 2               | 2   | –   | –   | –   | –   |
-| 2     | +1         | Fighting Style, Paladin’s Smite            | –                | 3               | 2   | –   | –   | –   | –   |
-| 3     | +1         | Channel Divinity, Paladin Specialization   | 2                | 4               | 3   | –   | –   | –   | –   |
-| 4     | +2         | Feat                                       | 2                | 5               | 3   | –   | –   | –   | –   |
-| 5     | +2         | Extra Attack, Faithful Steed               | 2                | 6               | 4   | 2   | –   | –   | –   |
-| 6     | +2         | Aura of Protection                         | 2                | 6               | 4   | 2   | –   | –   | –   |
-| 7     | +3         | Specialization Feature                     | 2                | 7               | 4   | 3   | –   | –   | –   |
-| 8     | +3         | Feat                                       | 2                | 7               | 4   | 3   | –   | –   | –   |
-| 9     | +3         | Abjure Foes                                | 2                | 9               | 4   | 3   | 2   | –   | –   |
-| 10    | +4         | Aura of Courage                            | 2                | 9               | 4   | 3   | 2   | –   | –   |
-| 11    | +4         | Radiant Strikes                            | 3                | 10              | 4   | 3   | 3   | –   | –   |
-| 12    | +4         | Feat                                       | 3                | 10              | 4   | 3   | 3   | –   | –   |
-| 13    | +5         | –                                          | 3                | 11              | 4   | 3   | 3   | 1   | –   |
-| 14    | +5         | Restoring Touch                            | 3                | 11              | 4   | 3   | 3   | 1   | –   |
-| 15    | +5         | Specialization Feature                     | 3                | 12              | 4   | 3   | 3   | 2   | –   |
-| 16    | +6         | Feat                                       | 3                | 12              | 4   | 3   | 3   | 2   | –   |
-| 17    | +6         | –                                          | 3                | 14              | 4   | 3   | 3   | 3   | 1   |
-| 18    | +6         | Aura Expansion                             | 3                | 14              | 4   | 3   | 3   | 3   | 1   |
-| 19    | +7         | Epic Boon                                  | 3                | 15              | 4   | 3   | 3   | 3   | 2   |
-| 20    | +7         | Specialization Feature                     | 3                | 15              | 4   | 3   | 3   | 3   | 2   |
+<Progression casting="half" feats="4, 8, 12, 16" specialization="7, 15, 20">
+  <Column label="Channel Divinity" values=", , 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3" />
+  <Column label="Prepared Spells" values="2, 3, 4, 5, 6, 6, 7, 7, 9, 9, 10, 10, 11, 11, 12, 12, 14, 14, 15, 15" />
+</Progression>
 
 ---
 
 ## Vocation Features
 
 <Collapsible>
-## 1st Level – Lay On Hands
+
+<Feature level="1">
+
+## Lay On Hands
 
 Your blessed touch can heal wounds. You have a pool of healing power that replenishes when you finish a [# kw:Recovery #]. With that pool, you can restore a total number of Hit Points equal to **five times your Paladin level**.
 
@@ -86,10 +70,15 @@ As a **Minor Action**, you can touch a creature (which could be yourself) and dr
 
 You can also expend **5 Hit Points** from the pool to remove the **[# kw:condition:Poisoned #]** condition from the creature. Those points don’t also restore Hit Points.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 1st Level – Spellcasting
+
+<Feature level="1">
+
+## Spellcasting
 
 You have learned to cast spells through prayer and meditation. You choose your spells from the [_Paladin spell list_](/en/library/character-creation/vocations/paladin/spells).
 
@@ -99,19 +88,29 @@ You have learned to cast spells through prayer and meditation. You choose your s
 - **Spellcasting Ability.** Charisma is your spellcasting ability for Paladin spells.
 - **Spellcasting Focus.** You can use a Holy Symbol as a spellcasting focus for Paladin spells.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 1st Level – Weapon Mastery
+
+<Feature level="1">
+
+## Weapon Mastery
 
 Your training allows you to use the mastery properties of **two weapons of your choice** with which you have proficiency.
 
 Whenever you finish a [# kw:Recovery #], you can change your chosen weapons.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible open>
-## 2nd Level – Fighting Style
+
+<Feature level="2">
+
+## Fighting Style
 
 You gain a **[Fighting Style feat](/en/library/character-creation/feats/fighting-styles)** of your choice. When you gain a Fighting Style this way, you do not increase an ability score.
 
@@ -120,10 +119,15 @@ Instead of choosing a feat, you can choose the option below:
 **Blessed Warrior.**  
 You learn two Pilgrim cantrips of your choice. They count as Paladin spells for you, and Charisma is your spellcasting ability for them. Whenever you gain a Paladin level, you can replace one of these cantrips with another Pilgrim cantrip.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 2nd Level – Paladin’s Smite
+
+<Feature level="2">
+
+## Paladin’s Smite
 
 When you hit a creature with a weapon attack, you can expend a spell slot to smite it. Choose one smite from the table below whose **minimum slot** the expended slot meets: the attack deals the listed extra damage and its rider takes effect. Smiting costs nothing.
 
@@ -131,7 +135,7 @@ When you hit a creature with a weapon attack, you can expend a spell slot to smi
 | ------------ | -------------- | --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 1st          | **Wrathful**   | [% 1d8 psychic %]     | The target saves Wisdom or is [# kw:condition:frightened #] of you for 1 minute; it can [# kw:resist #] at the end of each of its turns.                                                                                                                                                                                                   |
 | 1st          | **Thunderous** | [% 1d8 bludgeoning %] | A crack of thunder sounds, audible within [= 60 stride =]. The target saves Strength or is pushed [= 2 stride =] away from you and knocked [# kw:condition:prone #].                                                                                                                                                                                  |
-| 2nd          | **Branding**   | [% 2d8 holy %]        | The target becomes visible if invisible, sheds dim light in a [= 1 stride;ADJ =] radius, and cannot become invisible for 1 minute.                                                                                                                                                                                                                        |
+| 2nd          | **Branding**   | [% 2d8 holy %]        | The target becomes visible if [# kw:condition:invisible #], sheds dim light in a [= 1 stride;ADJ =] radius, and cannot become [# kw:condition:invisible #] for 1 minute.                                                                                                                                                                                                                        |
 | 2nd          | **Scorching**  | [% 2d8 fire %]        | The target saves Dexterity or gains the [# kw:condition:burning #] condition.                                                                                                                                                                                                 |
 | 3rd          | **Blinding**   | [% 3d8 holy %]        | The target saves Constitution or is [# kw:condition:blinded #] for 1 minute; it can [# kw:resist #] at the end of each of its turns.                                                                                                                                              |
 | 4th          | **Staggering** | [% 4d6 psychic %]     | The target saves Wisdom or is [# kw:condition:staggered #] and unable to take reactions [# kw:briefly #].                                                                                                                                                      |
@@ -143,10 +147,15 @@ Once per [# kw:Recovery #] you can smite **without expending a spell slot**, tre
 
 Additionally, whenever you cast a spell, your next attack automatically deals an extra [% 1d8 holy %].
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 3rd Level – Channel Divinity
+
+<Feature level="3">
+
+## Channel Divinity
 
 You can channel divine power through your oath to fuel magical effects.
 
@@ -159,10 +168,15 @@ If an effect requires a saving throw, the DC equals your Paladin spell save DC.
 **Divine Sense.**  
 As a **Minor Action**, you detect Celestials, Aberrations, and Undead within **[= 12 stride =]** for **10 minutes**, unless you become [# kw:condition:Incapacitated #]. You also detect consecrated or desecrated places or objects in that area.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible open>
-## 3rd Level – Paladin Specialization
+
+<Feature level="3">
+
+## Paladin Specialization
 
 ### Specialization
 
@@ -176,35 +190,55 @@ You gain a Paladin specialization of your choice. Your specialization grants fea
 | [Oath of Vengeance](/en/library/character-creation/vocations/paladin/oath-of-vengeance)       |
 | [Oath of the Hunt](/en/library/character-creation/vocations/paladin/oath-of-the-hunt)         |
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 4th Level – Ability Score Improvement
+
+<Feature level="4">
+
+## Feat
 
 You gain the **[Ability Score Improvement feat](/en/library/character-creation/feats/ability-score-improvement)** or another **[feat of your choice](/en/library/character-creation/feats)**.
 
 You gain this feature again at levels **8, 12 and 16**.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 5th Level – Extra Attack
+
+<Feature level="5">
+
+## Extra Attack
 
 You can attack **twice**, instead of once, whenever you take the Attack action on your turn.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 5th Level – Faithful Steed
+
+<Feature level="5">
+
+## Faithful Steed
 
 You can call on the aid of an otherworldly steed.
 
 You always have **Find Steed** prepared. You can cast it once without expending a spell slot, and you regain the ability to do so when you finish a [# kw:Recovery #].
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 6th Level – Well of Perseverance
+
+<Feature level="6">
+
+## Well of Perseverance
 
 Your Oath gives you a near endless well of will and determination, which you can extend to those you share a cause with.
 
@@ -219,43 +253,68 @@ If a creature would be affecteed by another **Comradery** effect, they lose the 
 If a creature would turn **Hostile or Neutral** to you on [# kw:disposition #] track, **Comradery** vanishes too.
 Only those who share your cause will receive the boons from it.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 9th Level – Abjure Foes
+
+<Feature level="9">
+
+## Abjure Foes
 
 As a **Major Action**, you can expend one use of Channel Divinity to overwhelm foes with awe.
 
 Choose a number of creatures you can see within **[= 12 stride =]** equal to your Charisma modifier (minimum one). Each target saves Wisdom or is **[# kw:condition:Frightened #]** for 1 minute or until it takes damage. While [# kw:condition:Frightened #] this way, a creature can take only one of the following on its turn: move, take a Major Action, or take a Minor Action.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 10th Level – Well of Courage
+
+<Feature level="10">
+
+## Well of Courage
 
 Whenever you or one of your **Comrades** rolls a **1** on a **Grit** effect, you can reroll it.
 Whenever you or one of your **Comrades** rolls a **20** on a **Grit** effect, you immediately succeed, regardless of the final result.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 11th Level – Radiant Strikes
+
+<Feature level="11">
+
+## Radiant Strikes
 
 Paladin's smite extra damage after casting a spell becomes [% 2d8 %] plus your Charisma modifier.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 14th Level – Restoring Touch
+
+<Feature level="14">
+
+## Restoring Touch
 
 When you use Lay On Hands on a creature, you can also remove one or more of the following conditions: **[# kw:condition:Blinded #], [# kw:condition:Deafened #], [# kw:condition:Frightened #], [# kw:condition:Paralyzed #], or [# kw:condition:Stunned #]**.
 
 You must expend **5 Hit Points** from the Lay On Hands pool for each condition removed.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 18th Level – Obliterating Smite
+
+<Feature level="18">
+
+## Obliterating Smite
 
 Attacks that carry a **Paladin's Smite** or extra holy damage from the **Radiant Strikes** or **Paladin's smite** features are enhanced.
 These attacks have their critical strike range reduced by 1.
@@ -263,20 +322,34 @@ These attacks have their critical strike range reduced by 1.
 You can spend a [# kw:deed #] to further reduce the range by your charisma modifier, before you make the attack.
 Once you've spen a [# kw:deed #] this way and successfully landed a critical hit, you cannot use it in this way again until you finish a [# kw:Recovery #].
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 19th Level – Epic Boon
+
+<Feature level="19">
+
+## Epic Boon
 
 You gain an **Epic Boon feat** or another feat of your choice for which you qualify.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 21st Level – Divine Will
+
+<Feature level="21">
+
+## Divine Will
 
 When you or a **Comrade** fail on a **Deed** roll, you can use your **Channel Divinity** as a **Reaction** to have them reroll it.
 
 Your charisma score increases by **4**.
 
+</Feature>
+
 </Collapsible>
+
+</Vocation>

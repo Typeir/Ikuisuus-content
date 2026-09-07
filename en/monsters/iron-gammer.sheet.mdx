@@ -5,52 +5,77 @@ contentType: monsters
 
 # Iron Gammer
 
-_Large Construct, Unaligned_
-
-| **Armor Class** | **Hit Points** | **Speed** |
-| ---------------- | -------------- | --------- |
-| 21 (Iron Plating) | 210 ([% 20d10 +100 %]) | [= 6 stride =] |
-
-| **STR** | **DEX** | **CON** | **INT** | **WIS** | **CHA** |
-| ------- | ------- | ------- | ------- | ------- | ------- |
-| 24 (+7) | 10 (+0) | 20 (+5) | 6 (-2) | 12 (+1) | 8 (-1) |
-
-- **Saving Throws**: Strength +12, Constitution +10  
-- **Skills**: Athletics +12  
-- **Damage Resistances**: bludgeoning, piercing, and slashing  
-- **Damage Immunities**: poison, psychic  
-- **Condition Immunities**: [# kw:condition:Terrified #], [# kw:condition:Frightened #], [# kw:condition:Charmed #], Exhaustion, [# kw:condition:Poisoned #]  
-- **Senses**: Darkvision [= 12 stride =], passive Perception 11  
-- **Languages**: Common  
-- **Challenge**: 13 (10,000 XP)  
-- **Tier Bonus**: +5
+<Monster
+  size="Large"
+  type="Construct"
+  alignment="Unaligned"
+  armorClass="21 (Iron Plating)"
+  hitPoints="210 ([% 20d10 +100 %])"
+  speed="[= 6 stride =]"
+  str="24"
+  dex="10"
+  con="20"
+  int="6"
+  wis="12"
+  cha="8"
+  saves="Strength +12, Constitution +10"
+  skills="Athletics +12"
+  resistances="bludgeoning, piercing, and slashing"
+  immunities="poison, psychic"
+  conditionImmunities="[# kw:condition:Terrified #], [# kw:condition:Frightened #], [# kw:condition:Charmed #], Exhaustion, [# kw:condition:Poisoned #]"
+  senses="Darkvision [= 12 stride =], passive Perception 11"
+  languages="Common"
+  challenge="13"
+  xp="10,000">
 
 ---
 
 ## Traits
 
+<Trait>
+
 #### Heavy Frame
 The Iron Gammer has advantage on Strength checks and Strength saving throws made to grapple or restrain creatures.
 
+</Trait>
+
+<Trait>
+
 #### Built for the Drop
 The Iron Gammer does not take damage from falling and cannot be knocked [# kw:condition:prone #].
+
+</Trait>
 
 ---
 
 ## Actions
 
+<Action>
+
 #### Multiattack
 The Iron Gammer makes **two Slam attacks**, or it uses **Throw**.
 
+</Action>
+
 ---
 
-#### Slam  
-Accuracy +12, reach [= 1 stride =], one creature.  
+<Action>
+
+#### Slam
+
+<Attack accuracy="+12" reach="[= 1 stride =]">
+
 On a hit, 18 ([% 3d8 +7 bludgeoning %]).
 
+</Attack>
+
+</Action>
+
 ---
 
-#### Throw  
+<Action>
+
+#### Throw
 **Major Action**
 
 The Iron Gammer throws **one creature or object** it is holding, grappling, or that is within reach and unsecured, of **Large size or smaller**, up to **[= 12 stride =]** in a straight line to an unoccupied space it can see.
@@ -65,18 +90,30 @@ The object then comes to rest in the landing space.
 
 If a creature is unwilling, it saves Strength against DC 20 or is thrown. On a success, the creature takes half damage and is not moved.
 
+</Action>
+
 ---
 
 ## Reactions
+
+<Action cost="1 Reaction">
 
 #### Catch
 When a creature within **[= 2 stride =]** of the Iron Gammer would fall, the Iron Gammer grabs the creature, preventing the fall.  
 The creature is [# kw:condition:grappled #] and placed in an adjacent unoccupied space of the Iron Gammer’s choice.
 
+</Action>
+
 ---
 
 ## Legendary Deed: Phase
 
+<Action deed="phase">
+
 #### Slain
 When the Iron Gammer is **slain**, it collapses forward violently.  
 All creatures within **[= 2 stride =]** save Dexterity against DC 18 or take **[% 4d10 bludgeoning %]** and are knocked [# kw:condition:prone #].
+
+</Action>
+
+</Monster>

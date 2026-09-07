@@ -5,36 +5,49 @@ contentType: monsters
 
 # Moonblessed Warrior
 
-_Medium Humanoid (Sunborn), Lawful Evil_
-
-| **Armor Class** | **Hit Points** | **Speed** |
-| --------------- | -------------- | --------- |
-| 18 (half plate) | 127 ([% 15d8 +60 %])  | [= 8 stride =]    |
-
-| **STR** | **DEX** | **CON** | **INT** | **WIS** | **CHA** |
-| ------- | ------- | ------- | ------- | ------- | ------- |
-| 18 (+4) | 16 (+3) | 18 (+4) | 10 (+0) | 14 (+2) | 12 (+1) |
-
-- **Saving Throws**: STR +7, CON +7, WIS +5
-- **Skills**: Athletics +7, Intimidation +4
-- **Damage Resistances**: **frost**
-- **Condition Immunities**: [# kw:condition:Terrified #]
-- **Senses**: Darkvision [= 12 stride =], passive Perception 12
-- **Languages**: Empyrean, Common
-- **Challenge**: 9 (5,000 XP)
-- **Tier Bonus**: +3
+<Monster
+  size="Medium"
+  type="Humanoid (Sunborn)"
+  alignment="Lawful Evil"
+  armorClass="18 (half plate)"
+  hitPoints="127 ([% 15d8 +60 %])"
+  speed="[= 8 stride =]"
+  str="18"
+  dex="16"
+  con="18"
+  int="10"
+  wis="14"
+  cha="12"
+  saves="STR +7, CON +7, WIS +5"
+  skills="Athletics +7, Intimidation +4"
+  resistances="**frost**"
+  conditionImmunities="[# kw:condition:Terrified #]"
+  senses="Darkvision [= 12 stride =], passive Perception 12"
+  languages="Empyrean, Common"
+  challenge="9"
+  xp="5,000">
 
 ---
 
 ## Traits
 
+<Trait>
+
 #### Bloodgift of the Moon
 
 At the start of each of its turns, the warrior gains **10 temporary hit points**. If it begins its turn with no temporary hit points, it may teleport up to [= 2 stride =] to an unoccupied space it can see.
 
+</Trait>
+
+<Trait>
+
 #### Moon Step Technique
 
 If the Moonblessed Warrior forgoes all movement on its turn, it regains **10 hit points** and gains **+1 to AC, saving throws, and skill checks** until the start of its next turn.
+
+</Trait>
+
+<Trait>
 
 #### Innate Spellcasting
 
@@ -42,34 +55,62 @@ The Moonblessed Warrior can use its Alfanjón as a spellcasting focus and casts 
 
 - At will: [_Lesser Mooncleave_](/en/library/spells/lesser-mooncleave)- 1/Repose: Mooncleave (weapon feature, [= 6 stride =] cone, DC 16)
 
+</Trait>
+
+<Trait>
+
 #### Lunar Dissolution
 
 As a Minor Action, the Alfanjón can vanish or reappear in its hand in a shimmer of silver mist.
+
+</Trait>
 
 ---
 
 ## Actions
 
+<Action>
+
 #### Multiattack
 
 The Moonblessed Warrior makes three attacks with the Alfanjón of the Crescent Moon.
 
-- **Alfanjón of the Crescent Moon**
-Accuracy +7, reach [= 1 stride =], one creature.
+<Attack accuracy="+7" reach="[= 1 stride =]">
+
+##### Alfanjón of the Crescent Moon
+
 On a hit, [% 1d12 +4 slashing %].** On hit, the target’s movement speed is reduced by [= 2 stride =] [# kw:briefly #] (Slow mastery).
+
+</Attack>
+
+</Action>
+
+<Action>
 
 #### Moon Step
 
 The warrior teleports up to [= 4 stride =] to a space it can see, then immediately makes one Alfanjón attack against a creature within range. This attack has advantage.
 
-#### Moonflare (Recharge 6)
+</Action>
+
+<Action recharge="6">
+
+#### Moonflare
 
 The warrior sweeps the Alfanjón in a killing arc. Each creature of its choice within [= 3 stride =] saves Dexterity against DC 15, taking **[% 4d8 frost %]** and becoming **[# kw:condition:blinded #]** until the start of the warrior’s next turn on a failed save, or half as much on a success.
+
+</Action>
 
 ---
 
 ## Minor Actions
 
-#### Cantrip Surge (1/Turn)
+<Action cost="1 Minor Action" charges="1/Turn">
+
+#### Cantrip Surge
 
 If the warrior uses Moon Step Technique, it may cast a cantrip as a Minor Action.
+
+</Action>
+
+</Monster>

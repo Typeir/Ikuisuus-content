@@ -3,18 +3,22 @@ source: Ikuisuus
 contentType: trinkets
 ---
 
-# Gore-Hook  
-Adventuring Gear  
+# Gore-Hook
+
+<Trinket
+  category="Adventuring Gear"
+  damage="[% 1d6 %]"
+  range="10 (melee) / 20 (thrown)"
+  properties="Melee or Thrown, Special (grapple, pull)"
+  burden="[= 1 burden =]">
 
 A hooked blade on a cord.
 The cord is [= 6 stride =] long unless stated otherwise.
 As a Major Action, you can use it as a melee or thrown weapon.
-On a hit, the target takes slashing damage and must succeed on a DC 15 Strength saving throw or become grappled.
+On a hit, the target takes slashing damage and saves Strength against DC 15 or [# kw:condition:grappled #].
 As a Minor Action, you can pull a grappled creature up to [= 1 stride =] closer to you.
 The grappled creature takes [= 4 stride =] extra per [= 1 stride =] of movement spent.
 
-**Damage**: [% 1d6 %]  
 **Damage Type**: Slashing  
-**Properties**: Melee or Thrown, Special (grapple, pull)  
-**Range**: 10 (melee) / 20 (thrown)  
-**Weight**: [= 1 burden =].
+
+</Trinket>

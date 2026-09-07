@@ -42,43 +42,66 @@ The Lunar Chimera can expend legendary deeds to use the options below. Only one 
 
 ## Lunar Chimera, Lion
 
-_Huge Monstrosity, Unaligned_
+<Monster
+  size="Huge"
+  type="Monstrosity"
+  alignment="Unaligned"
+  armorClass="21 (natural armor)"
+  hitPoints="420 ([% 24d12 +264 %])"
+  speed="[= 10 stride =], climb —"
+  str="28"
+  dex="16"
+  con="26"
+  int="6"
+  wis="16"
+  cha="10"
+  saves="Strength +16, Constitution +15"
+  skills="Athletics +16, Perception +11"
+  resistances="Frost"
+  conditionImmunities="[# kw:condition:Terrified #]"
+  senses="Darkvision [= 24 stride =], passive Perception 21"
+  languages="—"
+  challenge="23"
+  xp="75,000">
 
-| **Armor Class**    | **Hit Points**         | **Speed**       |
-| ------------------ | ---------------------- | --------------- |
-| 21 (natural armor) | 420 ([% 24d12 +264 %]) | [= 10 stride =], climb — |
+---
 
-| **STR** | **DEX** | **CON** | **INT** | **WIS** | **CHA** |
-| ------- | ------- | ------- | ------- | ------- | ------- |
-| 28 (+9) | 16 (+3) | 26 (+8) | 6 (−2)  | 16 (+3) | 10 (+0) |
+## Traits
 
-- **Saving Throws**: Strength +16, Constitution +15
-- **Skills**: Athletics +16, Perception +11
-- **Damage Resistances**: Frost
-- **Condition Immunities**: [# kw:condition:Terrified #]
-- **Senses**: Darkvision [= 24 stride =], passive Perception 21
-- **Languages**: —
-- **Challenge**: 23 (75.000 XP)
-- **Tier Bonus**: +8
-
-### Traits
+<Trait>
 
 #### One with the Moon
 
 This member is immune to magical effects created by the other chimeric members, and vice versa.
 When the Chimera recieves healing or gains temporary hit points from any source, they can choose which member benefits from it, provided that member is still alive.
 
+</Trait>
+
+<Trait>
+
 #### Antimagic Fur
 
 The lion is resistant to damage from spells and has advantage on saving throws against spells.
+
+</Trait>
+
+<Trait>
 
 #### Night Stalker
 
 The lion can see through magical darkness as if it were normal darkness.
 
+</Trait>
+
+<Trait>
+
 #### Undying Resolve
 
 When the lion is reduced to 0 hit points, but members of the Lunar Chimera are still active, it can still move, but cannot take actions or reactions of any kind.
+
+</Trait>
+
+<Trait>
 
 #### Metabolic engine
 
@@ -87,111 +110,172 @@ Additionally, it's attacks deal an extra 8 damage of their type per dead member.
 If any member is revived, the rage persists, and, if the same member were to fall again, the damage bonuses stack.
 The damage bonus from this trait applies to legendary deeds as well, and cannot exceed +32 damage.
 
-### Actions
+</Trait>
+
+---
+
+## Actions
+
+<Action>
 
 #### Multiattack
 
 The lion makes three attacks: two with its claws and one with its bite, or it can use its Crushing Pounce and make one bite attack.
 
-- **Claw**  
-  Accuracy +17, reach [= 1 stride =], one creature.  
-  On a hit, 22 ([% 3d8 +9 slashing %]).
+<Attack accuracy="+17" reach="[= 1 stride =]">
 
-- **Bite**  
-  Accuracy +17, reach [= 1 stride =], one creature.  
-  On a hit, 26 ([% 3d10 +9 piercing %]).
+##### Claw
 
-- #### Crushing Pounce
-  Accuracy +17, reach [= 1 stride =], one creature.  
-  On a hit, 18 ([% 2d8 +9 bludgeoning %]), and the target is **[# kw:condition:grappled #]** (escape DC 24).  
-  Until the grapple ends, the target is **[# kw:condition:restrained #]**.
+On a hit, 22 ([% 3d8 +9 slashing %]).
+
+</Attack>
+
+<Attack accuracy="+17" reach="[= 1 stride =]">
+
+##### Bite
+
+On a hit, 26 ([% 3d10 +9 piercing %]).
+
+</Attack>
+
+<Attack accuracy="+17" reach="[= 1 stride =]">
+
+##### Crushing Pounce
+
+On a hit, 18 ([% 2d8 +9 bludgeoning %]), and the target is **[# kw:condition:grappled #]** (escape DC 24).
+Until the grapple ends, the target is **[# kw:condition:restrained #]**.
+
+</Attack>
+
+</Action>
+
+</Monster>
 
 ---
 
 ## Lunar Chimera, Serpent
 
-_Huge Monstrosity, Unaligned_
+<Monster
+  size="Huge"
+  type="Monstrosity"
+  alignment="Unaligned"
+  armorClass="22"
+  hitPoints="210 ([% 20d10 +100 %])"
+  speed="—"
+  str="14"
+  dex="26"
+  con="18"
+  int="14"
+  wis="16"
+  cha="10"
+  saves="Dexterity +16, Constitution +12"
+  skills="Acrobatics +16, Stealth +16, Perception +11"
+  resistances="Frost"
+  immunities="Poison"
+  conditionImmunities="[# kw:condition:Poisoned #]"
+  senses="Blindsight [= 6 stride =], darkvision [= 12 stride =], passive Perception 21"
+  languages="—"
+  challenge="23"
+  xp="75,000">
 
-| **Armor Class** | **Hit Points**         | **Speed** |
-| --------------- | ---------------------- | --------- |
-| 22              | 210 ([% 20d10 +100 %]) | —         |
+---
 
-| **STR** | **DEX** | **CON** | **INT** | **WIS** | **CHA** |
-| ------- | ------- | ------- | ------- | ------- | ------- |
-| 14 (+2) | 26 (+8) | 18 (+4) | 14 (+2) | 16 (+3) | 10 (+0) |
+## Traits
 
-- **Saving Throws**: Dexterity +16, Constitution +12
-- **Skills**: Acrobatics +16, Stealth +16, Perception +11
-- **Damage Resistances**: Frost
-- **Damage Immunities**: Poison
-- **Condition Immunities**: [# kw:condition:Poisoned #]
-- **Senses**: Blindsight [= 6 stride =], darkvision [= 12 stride =], passive Perception 21
-- **Languages**: —
-- **Challenge**: 23 (75.000 XP)
-- **Tier Bonus**: +8
-
-### Traits
+<Trait>
 
 #### One with the Moon
 
 This member is immune to magical effects created by the other chimeric members, and vice versa.
 When the Chimera recieves healing or gains temporary hitpoints from any source, they can choose which member benefits from it, provided that member is still alive.
 
+</Trait>
+
+<Trait>
+
 #### Night Stalker
 
 The serpent can see through magical darkness as if it were normal darkness.
 
-### Actions
+</Trait>
+
+---
+
+## Actions
+
+<Action>
 
 #### Tail Strike
 
-Accuracy +16, reach [= 3 stride =], one creature.  
-On a hit, 19 ([% 2d10 +8 bludgeoning %]) plus 18 ([% 4d8 poison %]).  
+<Attack accuracy="+16" reach="[= 3 stride =]">
+
+On a hit, 19 ([% 2d10 +8 bludgeoning %]) plus 18 ([% 4d8 poison %]).
 The target saves Constitution against DC 22 or becomes **[# kw:condition:Paralyzed #]** [# kw:briefly #].
 [# kw:condition:Paralyzed #] creatures take maximized damage from this attack. This doubles on critical hits.
 
-#### Bile spray (Recharge 5–6)
+</Attack>
+
+</Action>
+
+<Action recharge="5–6">
+
+#### Bile spray
 
 As a Minor Action, the serpent can exhale a spray of corrosive bile in a [= 3 stride;ADJ =] cone.
 Each creature in that area saves Dexterity against DC 22, halving 27 ([% 6d8 chemical %]).
 Creatures that fail the save are also **[# kw:condition:blinded #]** [# kw:briefly #].
+
+</Action>
+
+<Action>
 
 #### Vitriolic blood
 
 When the lion or goat dies, the serpent can, on each of it's subsequent turns, use it's reaction to emit a Bile Spray from the dead member's body.
 The spray originates from the dead member's position, and uses the serpent's saving throw DC.
 
+</Action>
+
+</Monster>
 ---
 
 ## Lunar Chimera, Goat
 
-_Huge Monstrosity, Unaligned_
+<Monster
+  size="Huge"
+  type="Monstrosity"
+  alignment="Unaligned"
+  armorClass="19 (three-quarters cover from ground level)"
+  hitPoints="160 ([% 20d8 +60 %])"
+  speed="—"
+  str="8"
+  dex="12"
+  con="16"
+  int="22"
+  wis="22"
+  cha="20"
+  saves="Intelligence +14, Wisdom +14, Charisma +13"
+  skills="Arcana +14, Perception +14, Insight +14"
+  resistances="Frost"
+  conditionImmunities="[# kw:condition:Terrified #]"
+  senses="Darkvision [= 24 stride =], passive Perception 24"
+  languages="—"
+  challenge="23"
+  xp="75,000"
+  saveDc="22">
 
-| **Armor Class**                             | **Hit Points**       | **Speed** |
-| ------------------------------------------- | -------------------- | --------- |
-| 19 (three-quarters cover from ground level) | 160 ([% 20d8 +60 %]) | —         |
+---
 
-| **STR** | **DEX** | **CON** | **INT** | **WIS** | **CHA** |
-| ------- | ------- | ------- | ------- | ------- | ------- |
-| 8 (−1)  | 12 (+1) | 16 (+3) | 22 (+6) | 22 (+6) | 20 (+5) |
+## Traits
 
-- **Saving Throws**: Intelligence +14, Wisdom +14, Charisma +13
-- **Skills**: Arcana +14, Perception +14, Insight +14
-- **Damage Resistances**: Frost
-- **Condition Immunities**: [# kw:condition:Terrified #]
-- **Senses**: Darkvision [= 24 stride =], passive Perception 24
-- **Languages**: —
-- **Challenge**: 23 (75.000 XP)
-- **Tier Bonus**: +8
-
-### Spell Point Casting
+<Trait>
 
 #### Chimeric Spellcasting
 
-The Lunar Chimera (goat) is a 15th-level spellcaster. It has **80 spell points**, and can spend **up to 8 spell points per round**.
+The Lunar Chimera (goat) has **80 spell points**, and can spend **up to 8 spell points per round**.
 Spell level corresponds to spell point cost, and lower-level spells may be **overcast** by spending additional points, following the spell’s normal overcasting rules.
 
-Its spellcasting ability is Intelligence (**spell save DC 22**, **+14** to hit with spell attacks). It has the following spells prepared:
+Its spellcasting ability is Intelligence (**spell save DC 22**, **+14** to hit with spell attacks).
 
 The Lunar Chimera’s spellcasting is performed by the **goat**, but the effects of its magic may be exploited by the **entire chimeric congregation**.
 
@@ -203,39 +287,19 @@ When the goat casts a spell that allows **subsequent actions, Minor Actions, rea
 
 All spells cast in this way are considered **magical effects created by the goat** for the purposes of _One with the Moon_.
 
-#### Spell List
+<SpellList spells="omen, chill, envenom, bane, cause-fear, ray-of-sickness, bloodlash-rebuke, sleep, despairing-lash, hold, bestow-curse, black-forest, spirit-guardians, vampiric-touch, sulfurous-sphere, call-lightning, excision, shadow-of-the-hunt, storm-sphere, golden-grasp, cloudkill, perfect-barrier, disintegrate, suggestion, orrery, invoke-agony">
 
-| Spell                                                         | Cost    |
-| ------------------------------------------------------------- | ------- |
-| [_Omen_]                                                      | At Will |
-| [_Chill_](/en/library/spells/chill)                           | At Will |
-| [_Envenom_](/en/library/spells/envenom)                       | At Will |
-| [_Bane_](/en/library/spells/bane)                             | 1       |
-| [_Cause Fear_](/en/library/spells/cause-fear)                 | 1       |
-| [_Ray of Sickness_](/en/library/spells/ray-of-sickness)       | 1       |
-| [_Bloodlash Rebuke_](/en/library/spells/bloodlash-rebuke)     | 1       |
-| [_Sleep_](/en/library/spells/sleep)                           | 1       |
-| [_Despairing Lash_](/en/library/spells/despairing-lash)       | 2       |
-| [_Hold_](/en/library/spells/hold)                             | 2       |
-| [_Bestow Curse_](/en/library/spells/bestow-curse)             | 3       |
-| [_Black Forest_](/en/library/spells/black-forest)             | 3       |
-| [_Spirit Guardians_](/en/library/spells/spirit-guardians)     | 3       |
-| [_Vampiric Touch_](/en/library/spells/vampiric-touch)         | 3       |
-| [_Sulfurous Sphere_](/en/library/spells/sulfurous-sphere)    | 3       |
-| [_Call Lightning_](/en/library/spells/call-lightning)         | 3       |
-| [_Excision_](/en/library/spells/excision)                     | 4       |
-| [_Black Forest_](/en/library/spells/black-forest)             | 4       |
-| [_Shadow Of The Hunt_](/en/library/spells/shadow-of-the-hunt) | 4       |
-| [_Storm Sphere_](/en/library/spells/storm-sphere)             | 4       |
-| [_Golden Grasp_](/en/library/spells/golden-grasp)             | 5       |
-| [_Cloudkill_](/en/library/spells/cloudkill)                   | 5       |
-| [_Perfect Barrier_](/en/library/spells/perfect-barrier)       | 5       |
-| [_Disintegrate_](/en/library/spells/disintegrate)             | 6       |
-| [_Suggestion_](/en/library/spells/suggestion)                 | 6       |
-| [_Orrery_](/en/library/spells/orrery)                         | 7       |
-| [_Invoke Agony_](/en/library/spells/invoke-agony)             | 8       |
+<Column label="Cost" values="At Will, At Will, At Will, 1, 1, 1, 1, 1, 2, 2, 3, 3, 3, 3, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 7, 8" />
 
-### Actions
+</SpellList>
+
+</Trait>
+
+---
+
+## Actions
+
+<Action>
 
 #### Lunar Reconstitution
 
@@ -246,5 +310,9 @@ When it does so, the goat expends its **Major Action**, **Minor Action**, and **
 The reconstituted member immediately returns to life with **half hit points** and acts normally on its next turn.
 
 This effect does not require concentration, does not consume spell points, and cannot be counterspelled.
+
+</Action>
+
+</Monster>
 
 ---

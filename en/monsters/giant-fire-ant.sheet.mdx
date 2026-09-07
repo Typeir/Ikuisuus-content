@@ -10,47 +10,77 @@ contentType: monsters
   alt='Wildfire, Flame Ant'
 />
 
-_Large Wildlife, Unaligned_
-
-| **Armor Class**    | **Hit Points**   | **Speed**                                                                                            |
-| ------------------ | ---------------- | ---------------------------------------------------------------------------------------------------- |
-| 18 (natural armor) | 125 ([% 17d10 +34 %]) | [= 12 stride =] ([_Ashardalon’s Stride_](/en/library/spells/flame-stride) always active: +[= 4 stride =], ignores opportunity attacks, leaves fire trail) |
-
-| **STR** | **DEX** | **CON** | **INT** | **WIS** | **CHA** |
-| ------- | ------- | ------- | ------- | ------- | ------- |
-| 18 (+4) | 14 (+2) | 18 (+4) | 3 (–4)  | 12 (+1) | 5 (–3)  |
-
-- **Saving Throws**: Dex +5, Con +7
-- **Skills**: Athletics +7
-- **Damage Resistances**: Frost, Chemical, Poison
-- **Damage Immunities**: Fire
-- **Condition Immunities**: Paralysis (except self-induced for oviposition)
-- **Senses**: Darkvision [= 12 stride =], Tremorsense [= 6 stride =], Passive Perception 11
-- **Languages**: —
-- **Challenge**: 9 (5,000 XP)
-- **Tier Bonus**: +3
+<Monster
+  size="Large"
+  type="Wildlife"
+  alignment="Unaligned"
+  armorClass="18 (natural armor)"
+  hitPoints="125 ([% 17d10 +34 %])"
+  speed="[= 12 stride =] ([_Ashardalon’s Stride_](/en/library/spells/flame-stride) always active: +[= 4 stride =], ignores opportunity attacks, leaves fire trail)"
+  str="18"
+  dex="14"
+  con="18"
+  int="3"
+  wis="12"
+  cha="5"
+  saves="Dex +5, Con +7"
+  skills="Athletics +7"
+  resistances="Frost, Chemical, Poison"
+  immunities="Fire"
+  conditionImmunities="Paralysis (except self-induced for oviposition)"
+  senses="Darkvision [= 12 stride =], Tremorsense [= 6 stride =], Passive Perception 11"
+  languages="—"
+  challenge="9"
+  xp="5,000">
 
 ---
 
 ## Traits
+
+<Trait>
 
 #### Grappler
 
 Wildfire may attempt to **grapple** as a **Minor Action**.  
 [# kw:condition:Grappled #] creatures are also **[# kw:condition:restrained #]**.
 
+</Trait>
+
 ---
 
 ## Actions
+
+<Action>
 
 #### Multiattack
 
 Wildfire makes three attacks: either three **Scorching Ray** attacks or three **Scorching Fangs** attacks.
 
-- **Scorching Ray.** Accuracy +9, range [= 24 stride =], one creature. On a hit, 22 ([% 4d10 fire %]).
-- **Scorching Fangs.** Accuracy +9, reach [= 1 stride =], one creature. On a hit, 11 ([% 2d10 fire %]) plus 11 ([% 2d10 chemical %]). The target saves Constitution against DC 15 or is **[# kw:condition:paralyzed #] [# kw:briefly #]**.
-- **Oviposition (Recharge 6).** If a creature is **[# kw:condition:paralyzed #]**, Wildfire may implant a **burning egg**. The creature gains the **Incubating Inferno** condition (see below).
-- **Pyroblast (1/[# kw:Recovery #]).** Wildfire casts [Pyroblast](/en/library/spells/pyroblast) in a [= 4 stride =] radius sphere. Each creature in the area saves Dexterity against DC 15, halving **28 ([% 8d6 fire %])**.
+<Attack accuracy="+9" range="[= 24 stride =]">
+
+##### Scorching Ray
+
+On a hit, 22 ([% 4d10 fire %]).
+
+</Attack>
+
+<Attack accuracy="+9" reach="[= 1 stride =]">
+
+##### Scorching Fangs
+
+On a hit, 11 ([% 2d10 fire %]) plus 11 ([% 2d10 chemical %]). The target saves Constitution against DC 15 or is **[# kw:condition:paralyzed #] [# kw:briefly #]**.
+
+</Attack>
+
+##### Oviposition (Recharge 6)
+
+If a creature is **[# kw:condition:paralyzed #]**, Wildfire may implant a **burning egg**. The creature gains the **Incubating Inferno** condition (see below).
+
+##### Pyroblast (1/[# kw:Recovery #])
+
+Wildfire casts [Pyroblast](/en/library/spells/pyroblast) in a [= 4 stride =] radius sphere. Each creature in the area saves Dexterity against DC 15, halving **28 ([% 8d6 fire %])**.
+
+</Action>
 
 ---
 
@@ -69,3 +99,5 @@ A creature affected by _Incubating Inferno_ suffers the following:
       Only **Restoration**, **Heal**, or **Wish** can remove the condition before hatching.
 
 ---
+
+</Monster>

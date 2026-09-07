@@ -13,64 +13,98 @@ contentType: monsters
 Where ordinary Hounds of Tindalos devour space, **Gapers rewrite it**. Their large, yawning torsos contain both flesh and prophecy — divine code etched into unknowable space.
 They are the whispering agents of the Canvas, and the only prayer they offer is annihilation.
 
-_Medium Celestial (Fold), Lawful Neutral_
-
-| **Armor Class** | **Hit Points**     | **Speed** |
-| --------------- | ------------------ | --------- |
-| 19              | 55 ([% 9d8 +15 %]) | [= 3 stride =]    |
-
-| **STR** | **DEX** | **CON** | **INT** | **WIS** | **CHA** |
-| ------- | ------- | ------- | ------- | ------- | ------- |
-| 8 (-1)  | 10 (+0) | 12 (+1) | 14 (+2) | 16 (+3) | 8 (-1)  |
-
-- **Saving Throws**: Wis +4, Con +2
-- **Skills**: Arcana +3, Perception +4
-- **Damage Resistances**: Holy, Bludgeoning, Force, Dark
-- **Damage Immunities**: Psychic
-- **Condition Immunities**: [# kw:condition:Blinded #], [# kw:condition:Terrified #]
-- **Senses**: Blindsight [= 24 stride =], Fold-Sense [= 12 stride =]. Passive Perception 15
-- **Challenge**: 3 (700 XP)
-- **Tier Bonus**: +1
-- **Languages**: Understands Celestial; cannot speak
+<Monster
+  size="Medium"
+  type="Celestial (Fold)"
+  alignment="Lawful Neutral"
+  armorClass="19"
+  hitPoints="55 ([% 9d8 +15 %])"
+  speed="[= 3 stride =]"
+  str="8"
+  dex="10"
+  con="12"
+  int="14"
+  wis="16"
+  cha="8"
+  saves="Wis +4, Con +2"
+  skills="Arcana +3, Perception +4"
+  resistances="Holy, Bludgeoning, Force, Dark"
+  immunities="Psychic"
+  conditionImmunities="[# kw:condition:Blinded #], [# kw:condition:Terrified #]"
+  senses="Blindsight [= 24 stride =], Fold-Sense [= 12 stride =]. Passive Perception 15"
+  challenge="3"
+  xp="700"
+  languages="Understands Celestial; cannot speak"
+  saveDc="12">
 
 ---
 
 ## Traits
 
+<Trait>
+
 #### Gaping Maw of Revelation
 
 As an [# kw:delayed #] effect, creatures within [= 1 stride =] save Wisdom against DC 12 or become **[# kw:condition:Charmed #]** [# kw:briefly #]. If already they are instead **[# kw:condition:Paralyzed #]** for 1 round.
+
+</Trait>
+
+<Trait>
 
 #### Fold-sense
 
 Can detect magical auras, spellcasting, and enchantments within [= 12 stride =], even through walls.
 
+</Trait>
+
+<Trait>
+
 #### Celestial Logic
 
 When a creature fails a saving throw against one of the Gaper's spells, it cannot take reactions until the start of its next turn.
+
+</Trait>
+
+<Trait>
 
 #### Hovering Stillness
 
 If the Gaper does not move on its turn, it gains **+2 AC** and is immune to being [# kw:condition:Grappled #] or [# kw:condition:Restrained #] until the start of its next turn.
 
+</Trait>
+
 ---
 
 ## Actions
+
+<Action>
 
 #### Twin Mantra (At-Will)
 
 The Gaper casts two cantrips per round: one [_Omen_](/en/library/spells/omen) (DC 12 Wis save) and one [_Judgement_](/en/library/spells/judgement) (DC 12 Dex save), targeting different creatures within [= 12 stride =]
 
-#### Fold Static (Recharge 5–6)
+</Action>
+
+<Action recharge="5–6">
+
+#### Fold Static
 
 Unleashes fold energy in a [= 3 stride =] cone. Each creature saves Constitution against DC 12 or takes [% 3d8 bludgeoning %] and falls [# kw:condition:prone #]. Half on success.
 
+</Action>
+
 ---
+
+<Action>
 
 #### Spellcasting
 
-The Gaper is a spellcaster. Its spellcasting ability is Wisdom (spell save DC 12, accuracy +4 with spell attacks). It requires no components to cast its spells and has the following spells prepared:
+The Gaper is a spellcaster. It requires no components to cast its spells:
 
-- **Cantrips (at will)**: [_Omen_](/en/library/spells/omen), [_Judgement_](/en/library/spells/judgement),
+- **Cantrips**: [_Omen_](/en/library/spells/omen), [_Judgement_](/en/library/spells/judgement),
 - **1st-level (3/[# kw:Recovery #])**: [_Sanctuary_](/en/library/spells/sanctuary), [_Shield of Faith_](/en/library/spells/shield-of-faith), [_Command_](/en/library/spells/command), [_Arcane Sense_](/en/library/spells/arcane-sense)
 - **2nd-level (2/[# kw:Recovery #])**: [_Hold_](/en/library/spells/hold), [_Shatter_](/en/library/spells/shatter), [_Misty Step_](/en/library/spells/misty-step), [_Silence_](/en/library/spells/silence)
+
+</Action>
+
+</Monster>

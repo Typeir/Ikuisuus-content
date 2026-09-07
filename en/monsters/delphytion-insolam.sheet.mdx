@@ -5,8 +5,6 @@ contentType: monsters
 
 # Delphytion Insolam
 
-_Huge Monstrosity, Unaligned_
-
 <BlendedImage
   src='/library/images/monsters/delphytion.webp'
   alt='Delphytion Insolam'
@@ -18,34 +16,49 @@ Within this sun-womb writhe hundreds of larval **Sunspawn**: serpentine, shrimp-
 The Delphytion’s needle-limbs float a full foot from the orb, held in place by an unseen repulsive field, and its long dolphin-tail sports spout-like vents that hiss superheated vapor.
 When threatened, the orb’s glow intensifies to blinding brilliance as the creature lowers its core and lets its limbs whirl in a screaming cyclone of chitin and light.
 
-| **Armor Class**        | **Hit Points**         | **Speed**                         |
-| ---------------------- | ---------------------- | --------------------------------- |
-| 19 (closed), 13 (open) | 300 ([% 20d10 +190 %]) | [= 9 stride =], climb [= 6 stride =], swim [= 6 stride =] |
-
-| **STR** | **DEX** | **CON** | **INT** | **WIS** | **CHA** |
-| ------- | ------- | ------- | ------- | ------- | ------- |
-| 24 (+7) | 20 (+5) | 26 (+8) | 8 (–1)  | 16 (+3) | 12 (+1) |
-
-- **Saving Throws**: Str +12, Con +13, Wis +8
-- **Damage Resistances**: All damage while not [# kw:condition:prone #] and not attacked from above [= 4 stride =]
-- **Damage Immunities**: Holy
-- **Condition Immunities**: [# kw:condition:Poisoned #], [# kw:condition:Blinded #]
-- **Senses**: Blindsight [= 12 stride =], Tremorsense [= 24 stride =], Passive Perception 18
-- **Languages**: Ancient Empyrean
-- **Challenge**: 15 (13,000 XP)
-- **Tier Bonus**: +5
+<Monster
+  size="Huge"
+  type="Monstrosity"
+  alignment="Unaligned"
+  armorClass="19 (closed), 13 (open)"
+  hitPoints="300 ([% 20d10 +190 %])"
+  speed="[= 9 stride =], climb [= 6 stride =], swim [= 6 stride =]"
+  str="24"
+  dex="20"
+  con="26"
+  int="8"
+  wis="16"
+  cha="12"
+  saves="Str +12, Con +13, Wis +8"
+  resistances="All damage while not [# kw:condition:prone #] and not attacked from above [= 4 stride =]"
+  immunities="Holy"
+  conditionImmunities="[# kw:condition:Poisoned #], [# kw:condition:Blinded #]"
+  senses="Blindsight [= 12 stride =], Tremorsense [= 24 stride =], Passive Perception 18"
+  languages="Ancient Empyrean"
+  challenge="15"
+  xp="13,000">
 
 ---
 
 ## Traits
 
+<Trait>
+
 #### Legendary Deeds
 
 The Delphytion Insolam has **1 legendary deed per round**, and regains all expended deeds at the start of its turn.
 
+</Trait>
+
+<Trait>
+
 #### Solar Vessel
 
 While not [# kw:condition:prone #] and not attacked from above [= 4 stride =], the Delphytion Insolam has **resistance to all damage** and cannot be knocked [# kw:condition:prone #]. It emits **bright light in a [= 12 stride;ADJ =] radius** and dim light for an additional [= 12 stride =].
+
+</Trait>
+
+<Trait>
 
 #### Twilit Weakness
 
@@ -58,13 +71,21 @@ It has the following vulnerabilities:
 
 Whenever the Delphytion takes damage to which it is vulnerable, it reflexively births **[% 1d4 %] Sunspawn** (see **Sunspawn**) into unoccupied spaces within [= 2 stride =] of it. Sunspawn created this way act immediately after the Delphytion in initiative.
 
+</Trait>
+
+<Trait>
+
 #### Spout Vents
 
 The Delphytion has no conventional anatomy. Vents near its tail and anchor-head expel superheated vapor. At the start of each of its turns, each creature within [= 2 stride =] of it saves Constitution against DC 20 or takes **7 ([% 2d6 fire %])** and is [# kw:condition:blinded #] until the start of its next turn.
 
+</Trait>
+
 ---
 
 ## Minor Actions
+
+<Action cost="1 Minor Action">
 
 #### Dusk Star
 
@@ -76,29 +97,48 @@ The Delphytion falls **[# kw:condition:prone #]** and enters its **dusk form**. 
 
 The Delphytion can end dusk form as a Minor Action (see **Dawning Glory**).
 
+</Action>
+
 ---
 
 ## Actions
+
+<Action>
 
 #### Multiattack
 
 The Delphytion Insolam makes three attacks: two with its **Needle Limbs** and one with either its **Barbed Proboscis** or **Tail Sweep**.
 
-- **Needle Limb.**  
-  Accuracy +12, reach [= 4 stride =], one creature.  
-  **Hit**: 18 ([% 2d10 +7 piercing %]). If the target is Large or smaller, it saves Strength against DC 20 or is [# kw:condition:grappled #]. The Delphytion can grapple up to two creatures this way.
+<Attack accuracy="+12" reach="[= 4 stride =]">
 
-- **Barbed Proboscis (Recharge 5–6).**  
-  Accuracy +12, reach [= 3 stride =], one creature. **[# kw:condition:grappled #]** by the Delphytion.  
-  **Hit**: 27 ([% 4d10 +7 piercing %]).
-  The target saves Constitution against DC 20 or is implanted with a **Sunspawn embryo**.
-  At the start of each of the implanted creature’s turns, it takes **11 ([% 2d10 poison %])** as the embryo feeds.
-  The embryo dies if the host receives **20 or more points of holy damage** or if any effect cures disease.
-  After **3 rounds**, the embryo erupts: the host takes **33 ([% 6d10 piercing %])** and a fully formed **Sunspawn** appears in an unoccupied space within [= 1 stride =] of it.
+##### Needle Limb
 
-- **Tail Sweep.**  
-  Accuracy +12, reach [= 3 stride =], cone (all creatures in a [= 3 stride;ADJ =] cone).  
-  **Hit**: 16 ([% 2d8 +7 bludgeoning %]). Each Large or smaller creature hit saves Strength against DC 20 or is pushed **[= 3 stride =]** away and knocked [# kw:condition:prone #].
+**Hit**: 18 ([% 2d10 +7 piercing %]). If the target is Large or smaller, it saves Strength against DC 20 or is [# kw:condition:grappled #]. The Delphytion can grapple up to two creatures this way.
+
+</Attack>
+
+<Attack accuracy="+12" reach="[= 3 stride =]">
+
+##### Barbed Proboscis (Recharge 5–6)
+
+**[# kw:condition:grappled #]** by the Delphytion.  
+**Hit**: 27 ([% 4d10 +7 piercing %]).
+The target saves Constitution against DC 20 or is implanted with a **Sunspawn embryo**.
+At the start of each of the implanted creature’s turns, it takes **11 ([% 2d10 poison %])** as the embryo feeds.
+The embryo dies if the host receives **20 or more points of holy damage** or if any effect cures disease.
+After **3 rounds**, the embryo erupts: the host takes **33 ([% 6d10 piercing %])** and a fully formed **Sunspawn** appears in an unoccupied space within [= 1 stride =] of it.
+
+</Attack>
+
+<Attack accuracy="+12" reach="[= 3 stride =]" targets="cone (all creatures in a [= 3 stride;ADJ =] cone)">
+
+##### Tail Sweep
+
+**Hit**: 16 ([% 2d8 +7 bludgeoning %]). Each Large or smaller creature hit saves Strength against DC 20 or is pushed **[= 3 stride =]** away and knocked [# kw:condition:prone #].
+
+</Attack>
+
+</Action>
 
 ---
 
@@ -114,17 +154,25 @@ The Delphytion releases a burst of superheated vapor from its spout vents. The a
 
 The Delphytion Insolam can expend legendary deeds to use the options below. Only one legendary deed can be used at a time and only at the end of another creature’s turn.
 
-#### Engender Sunspawn (Costs 1 Deed)
+<Action deed="act" cost="1 Deed">
+
+#### Engender Sunspawn
 
 The Delphytion regurgitates a larval Sunspawn and hurls it as a projectile at a creature within **[= 12 stride =]** that it can sense.
 
 Accuracy +10, one creature.  
 **Hit**: 11 ([% 2d6 +4 chemical %]), and a **Sunspawn** appears in an unoccupied space adjacent to the target. The Sunspawn acts immediately after the Delphytion in initiative.
 
-#### Dawning Glory (Costs 1 Deed)
+</Action>
+
+<Action deed="act" cost="1 Deed">
+
+#### Dawning Glory
 
 The Delphytion ends its **dusk form**, stands up (removing the [# kw:condition:prone #] condition), and its **Solar Vessel** trait reactivates. When it rises, amniotic fluid splashes from its orb in a [= 3 stride;ADJ =] radius. Each creature in that area saves Dexterity against DC 20, halving **18 ([% 4d8 holy %])**.
 The fluid lingers as a **radiant pool** until the end of the Delphytion’s next turn; As a [# kw:persistent #] effect, it deals **9 ([% 2d8 holy %])**.
+
+</Action>
 
 ---
 
@@ -158,6 +206,8 @@ The fluid lingers as a **radiant pool** until the end of the Delphytion’s next
 > The target or a creature within [= 1 stride =] can use a Major Action to attempt detaching one Sunspawn.
 > Make a **DC 14 Wisdom (Medicine) check**. On a success, the Sunspawn detaches safely.
 > On a failure, the Sunspawn remains attached and the target's [# kw:condition:Bleeding #] stacks **double**.
-> Alternatively, a creature can use a Major Action to simply **yank** the Sunspawn free (no check)—it detaches, but the target's Bleeding stacks **double**.
+> Alternatively, a creature can use a Major Action to simply **yank** the Sunspawn free (no check)—it detaches, but the target's [# kw:condition:Bleeding #] stacks **double**.
 
 ---
+
+</Monster>

@@ -5,32 +5,41 @@ contentType: monsters
 
 # Platonian Hunter Commander
 
-_Large Construct, Lawful Neutral_
-
-| **Armor Class** | **Hit Points**    | **Speed** |
-| --------------- | ----------------- | --------- |
-| 22              | 292 ([% 23d12 +141 %]) | [= 9 stride =]    |
-
-| **STR** | **DEX** | **CON** | **INT** | **WIS** | **CHA** |
-| ------- | ------- | ------- | ------- | ------- | ------- |
-| 26 (+8) | 24 (+7) | 25 (+7) | 24 (+7) | 24 (+7) | 10 (+0) |
-
-- **Saving Throws**: Str +16, Dex +15, Con +15, Int +15, Wis +15
-- **Damage Resistances**: dark, holy, fire, lightning, frost
-- **Damage Immunities**: poison
-- **Damage Vulnerabilities**: bludgeoning, chemical
-- **Condition Immunities**: [# kw:condition:stunned #], [# kw:condition:paralyzed #], [# kw:condition:terrified #], [# kw:condition:frightened #], [# kw:condition:charmed #]
-- **Senses**: darkvision [= 24 stride =], passive Perception 21
-- **Languages**: —
-- **Challenge**: 18 (15,000 XP)
-- **Tier Bonus**: +6
+<Monster
+  size="Large"
+  type="Construct"
+  alignment="Lawful Neutral"
+  armorClass="22"
+  hitPoints="292 ([% 23d12 +141 %])"
+  speed="[= 9 stride =]"
+  str="26"
+  dex="24"
+  con="25"
+  int="24"
+  wis="24"
+  cha="10"
+  saves="Str +16, Dex +15, Con +15, Int +15, Wis +15"
+  resistances="dark, holy, fire, lightning, frost"
+  immunities="poison"
+  vulnerabilities="bludgeoning, chemical"
+  conditionImmunities="[# kw:condition:stunned #], [# kw:condition:paralyzed #], [# kw:condition:terrified #], [# kw:condition:frightened #], [# kw:condition:charmed #]"
+  senses="darkvision [= 24 stride =], passive Perception 21"
+  languages="—"
+  challenge="18"
+  xp="20,000">
 
 ---
 
 ## Traits
 
+<Trait>
+
 #### Legendary Deeds
 The Platonian Hunter Commander has **3 legendary deeds per round**, and regains all expended deeds at the start of its turn.
+
+</Trait>
+
+<Trait>
 
 #### End Of Life Cycle
 
@@ -38,29 +47,53 @@ When reduced to 0 hit points, the hunter erupts in a [= 60 stride;ADJ =]-radius 
 After a three turn delay, the hunter explodes.
 Each creature within range saves Dexterity against DC 22, taking **180 ([% 40d8 force %])** and becoming **[# kw:condition:blinded #]** [# kw:briefly #] on a failure, or half as much damage on a success.
 
+</Trait>
+
+<Trait>
+
 #### Multi-Purpose Tool
 
 The Commander is proficient in all skills and has expertise in **Intimidation**.
+
+</Trait>
+
+<Trait>
 
 #### Multi-Dimensional Maneuvers
 
 The Commander automatically disengages at the start of each of its turns.
 
+</Trait>
+
+<Trait>
+
 #### Innate Spellcasting
 
 The Commander can cast each of the following spells once per day without components:
 
-- [_Shield_](/en/library/spells/shield) — **1 spell point**
-- [_Misty Step_](/en/library/spells/misty-step) — **2 spell points**
-- [_Invisibility (overcast)_](/en/library/spells/invisibility) — **4 spell points**
+<SpellList spells="shield, misty-step, invisibility">
+  <Column label="Cost" values="1 spell point, 2 spell points, 4 spell points" />
+</SpellList>
+
+</Trait>
+
+<Trait>
 
 #### Spell Point Reserve
 
 The Commander has **5 spell points**, which can be spent to cast its innate spells again.
 
+</Trait>
+
+<Trait>
+
 #### Clockwork Reactions
 
 The Commander does not expend its reaction when making opportunity attacks, but it can only make **one per target per round**.
+
+</Trait>
+
+<Trait>
 
 #### Maneuvers
 
@@ -72,13 +105,21 @@ The Commander has **4 superiority dice (d10s)**. Maneuver save DC = **22** (10 +
 - **Parry.** Use reaction to reduce melee damage taken by the die + Dexterity modifier.
 - **Riposte.** When a creature misses the Commander with a melee attack, it may attack back as a reaction, adding the die to damage.
 
+</Trait>
+
+<Trait>
+
 #### Unyielding Resolve
 
 The commander regains one superiority die at the start of his turn.
 
+</Trait>
+
 ---
 
 ## Actions
+
+<Action>
 
 #### Multiattack
 
@@ -112,10 +153,12 @@ On a hit, the target saves Wisdom against DC 21 or suffers the following:
   After a successful hit, the Commander may make one additional free attack with this weapon (this does not stack).
 
 - **Thruster Axe-Kick** (Gap Closer)
-  _Special Accuracy +14, range 10–[= 6 stride =], one creature.  
+  Accuracy +14, range 10–[= 6 stride =], one creature.  
   The Commander launches forward with thrusters, landing in an unoccupied space [= 1 stride =] from the target.  
   On a hit, 25 ([% 3d10 +8 slashing %]). If the target is Large or smaller, it saves Strength against DC 19 or is knocked [# kw:condition:prone #].
   If the target takes damage from this attack, it [catches fire](/en/library/rules/steel-and-strife/conditions).
+
+</Action>
 
 ---
 
@@ -127,3 +170,5 @@ The Platonian Hunter Commander can expend legendary deeds to use the options bel
 - **Thruster Step.** (Costs 1 Deed) The Commander moves up to [= 6 stride =] without provoking opportunity attacks.
 - **Maneuver.** (Costs 2 Deeds) The Commander uses one of its maneuvers.
 - **Disambiguate.** (Costs 3 Deeds) The Commander makes one Disambiguator attack.
+
+</Monster>

@@ -24,7 +24,7 @@ Sufferers lose hit points from accumulated open wounds.
 - Sufferers can use a **Major Action** to attempt to **stanch the bleeding**, making a DC 10 + stacks **Wisdom (Medicine)** check.  
   On a success, they reduce the Bleeding Counter by their Medicine modifier + **[% 1d4 %].**
 - **Magical healing** reduces the Bleeding Counter by sufferers' spellcasting modifier (minimum 1), regardless of the amount healed.
-- The **Bleeding condition ends** when the Bleeding Counter reaches 0.
+- The **[# kw:condition:bleeding #] ends** when the Bleeding Counter reaches 0.
 
 ---
 
@@ -41,7 +41,7 @@ Sufferers are on fire and take ongoing heat damage.
 
 - At the start of each of their turns, sufferers take **[% 1d10 fire %].**
 - Sufferers can use a **Major Action** to **extinguish the flames** by dropping prone, rolling, or smothering themselves.
-  - Doing so **automatically ends the Burning condition**, and they end their turn **prone.**
+  - Doing so **automatically ends the [# kw:condition:burning #]**, and they end their turn **[# kw:condition:prone #].**
 - Another creature within [= 1 stride =] may also use a **Major Action** to extinguish the flames.
 - While burning, sufferers shed **bright light in a [= 2 stride;ADJ =] radius** and **dim light for another [= 2 stride =].**
 
@@ -62,12 +62,12 @@ Sufferers are on fire and take ongoing heat damage.
 
 ## Dying
 
-- A creature below **1 HP** is **dying**, and is also [# kw:condition:unconscious #].
+- A creature below **1 HP** is **[# kw:condition:dying #]**, and is also [# kw:condition:unconscious #].
 - A dying creature makes a **death saving throw** at the start of its turn, [# kw:chained #](3/3). On **three successes** it **stabilizes**; on **three failures** it **dies**.
 - On a roll of **20**, it regains **1 HP** and becomes conscious immediately.
 - Taking damage while dying costs **one failed death saving throw**. A **critical hit** still costs only one.
 - A single hit dealing damage equal to or greater than **half the creature's maximum HP** kills it outright.
-- Stabilizing ends the dying condition and leaves the creature in a **coma**. See [Healing, Restoration, and Death](/en/library/rules/life-blood-and-ruin/healing-restoration-and-death) for waking from one.
+- Stabilizing ends the [# kw:condition:dying #] and leaves the creature in a **coma**. See [Healing, Restoration, and Death](/en/library/rules/life-blood-and-ruin/healing-restoration-and-death) for waking from one.
 
 ## Exhaustion
 
@@ -98,7 +98,7 @@ Exhaustion is measured in six levels.
 ## Grappled
 
 - Sufferers’ **speed becomes 0**, and they **can’t benefit from bonuses to speed**.
-- The condition **ends if the grappler is incapacitated**.
+- The condition **ends if the grappler is [# kw:condition:incapacitated #]**.
 - The condition also ends if an effect **removes a sufferer from the reach** of the grappler or grappling effect, such as when an effect would [# kw:displace #] them.
 
 ---
@@ -119,7 +119,7 @@ Exhaustion is measured in six levels.
 
 ## Paralyzed
 
-- Sufferers are **incapacitated**, can’t move or speak, and **automatically fail Strength and Dexterity saving throws**.
+- Sufferers are **[# kw:condition:incapacitated #]**, can’t move or speak, and **automatically fail Strength and Dexterity saving throws**.
 - **Attack rolls** against them have **advantage**.
 - Any attack that hits them is a **critical hit** if the attacker is within [= 1 stride =] of them.
 
@@ -128,9 +128,9 @@ Exhaustion is measured in six levels.
 ## Petrified
 
 - Sufferers are **transformed into an inanimate substance** (usually stone), along with any mundane objects they are wearing or carrying.
-- They are considered **restrained** while petrification is being applied.
+- They are considered **[# kw:condition:restrained #]** while petrification is being applied.
 - They have **resistance to all damage** and are **immune to poison and disease**, although a poison or disease already in their system is suspended.
-- They are **incapacitated**, can’t move or speak, and are **unaware of their surroundings**.
+- They are **[# kw:condition:incapacitated #]**, can’t move or speak, and are **unaware of their surroundings**.
 - **Attack rolls** against them have **advantage**, and they **automatically fail Strength and Dexterity saving throws**.
 - They can [# kw:resist #], [# kw:chained #](3/3), to avoid petrification. 
 - If petrification completes, the sufferer **dies instantly** and turns into a mundane object. A _sculpture_.
@@ -182,13 +182,13 @@ Sufferers’ bodies and perception are weighed down by temporal drag or magical 
 - Sufferers have **advantage** against effects that would [# kw:displace #] them.
 - The condition ends when they move more than [= 1 stride =].
 - They can use any feature that requires them to be steady.
-- They cannot become steady while **restrained**, **grappled**, **incapacitated**, or while riding a mount or vehicle.
+- They cannot become steady while **[# kw:condition:restrained #]**, **[# kw:condition:grappled #]**, **[# kw:condition:incapacitated #]**, or while riding a mount or vehicle.
 
 ---
 
 ## Stunned
 
-- Sufferers are **incapacitated**, can’t move, and can speak only falteringly.
+- Sufferers are **[# kw:condition:incapacitated #]**, can’t move, and can speak only falteringly.
 - They **automatically fail Strength and Dexterity saving throws**.
 - **Attack rolls** against them have **advantage**.
 
@@ -210,7 +210,7 @@ Sufferers are **deprived of air** and begin to **die slowly while conscious**.
 
 Sufferers have their armour or protection compromised by mighty blows, corrosive substances, or other destructive forces.
 
-They lose 1 point of AC for each instance of the sundered condition they have.
+They lose 1 point of AC for each instance of the [# kw:condition:sundered #] they have.
 
 ---
 
@@ -223,14 +223,14 @@ Sufferers are overwhelmed by panic and survival instinct.
 - At the start of each of their turns, if the source of their terror is within **[= 12 stride =]** and they have a path away from it, they must take the **Dash action** to move as far from the source as possible.
 - They automatically fail any ability check to interact socially with the source of their terror, unless the check involves pleading or submission.
 
-> **Note**: Terrified supersedes Frightened. A sufferer affected by both suffers only the Terrified condition.
+> **Note**: [# kw:condition:terrified #] supersedes [# kw:condition:frightened #]. A sufferer affected by both suffers only the [# kw:condition:terrified #].
 
 ---
 
 ## Unconscious
 
-- Sufferers are **incapacitated**, can't move, and can only **speak falteringly**. They are **unaware of their surroundings**.
-- They **drop whatever they are holding** and **fall prone**.
+- Sufferers are **[# kw:condition:incapacitated #]**, can't move, and can only **speak falteringly**. They are **unaware of their surroundings**.
+- They **drop whatever they are holding** and **fall [# kw:condition:prone #]**.
 - They **automatically fail Strength and Dexterity saving throws** and any **skill check that requires a roll**.
 - **Attack rolls** against them have **advantage**.- They **lose their Dexterity bonus to AC**.- Any melee attack that hits them is a **critical hit** if the attacker is within [= 1 stride =] of them.
 - When a sufferer is restored to positive HP from the unconscious state, they **lose one action point** [# kw:briefly #]. They may still move, take Minor Actions, and use Reactions.

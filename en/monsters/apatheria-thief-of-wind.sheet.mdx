@@ -16,32 +16,42 @@ contentType: monsters
   />
 </FlexRenderer>
 
-_Medium Humanoid (Empyrean), Lawful Evil_
-
-| **Armor Class**       | **Hit Points**  | **Speed** |
-| --------------------- | --------------- | --------- |
-| 20 (Bonded Tombsteel) | 178 ([% 21d8 +84 %]) | [= 6 stride =]    |
-
-| **STR** | **DEX** | **CON** | **INT** | **WIS** | **CHA** |
-| ------- | ------- | ------- | ------- | ------- | ------- |
-| 20 (+5) | 14 (+2) | 18 (+4) | 16 (+3) | 14 (+2) | 16 (+3) |
-
-- **Saving Throws**: Strength +9, Constitution +8, Charisma +7
-- **Skills**: Intimidation +8, Survival +6, Religion +7, Athletics +12, Perception +6
-- **Damage Resistances**: Fire, Frost.
-- **Condition Immunities**: [# kw:condition:Terrified #]
-- **Senses**: Darkvision [= 12 stride =], passive Perception 12
-- **Languages**: Common, Empyrean, Hidden, Cavari
-- **Challenge**: 12 (9,500 XP)
-- **Tier Bonus**: +4
+<Monster
+  size="Medium"
+  type="Humanoid (Empyrean)"
+  alignment="Lawful Evil"
+  armorClass="20 (Bonded Tombsteel)"
+  hitPoints="178 ([% 21d8 +84 %])"
+  speed="[= 6 stride =]"
+  str="20"
+  dex="14"
+  con="18"
+  int="16"
+  wis="14"
+  cha="16"
+  saves="Strength +9, Constitution +8, Charisma +7"
+  skills="Intimidation +8, Survival +6, Religion +7, Athletics +12, Perception +6"
+  resistances="Fire, Frost."
+  conditionImmunities="[# kw:condition:Terrified #]"
+  senses="Darkvision [= 12 stride =], passive Perception 12"
+  languages="Common, Empyrean, Hidden, Cavari"
+  challenge="12"
+  xp="9,500"
+  saveDc="16">
 
 ---
 
 ## Traits
 
+<Trait>
+
 #### Legendary Deeds
 
 Apatheria has **3 legendary deeds per round**, and regains all expended deeds at the start of her turn.
+
+</Trait>
+
+<Trait>
 
 #### Tombsteel Armor
 
@@ -69,7 +79,11 @@ The Thief of Winds wears custom heavy armor forged from tombsteel, the armor has
   - **All damage** that the bonded creature takes is **split equally** between them (each takes half)
   - The bond **ends immediately** if either creature drops to 0 HP or dies
 
+</Trait>
+
 ---
+
+<Trait>
 
 #### Target of the Hunt
 
@@ -81,6 +95,10 @@ The Thief of Winds gains the following benefits against the chosen prey:
 - Gains **double tier bonus** on Charisma (Intimidation) checks made against them
 - Speaks **one additional language** used by the selected prey type (Hidden, in this case)
 
+</Trait>
+
+<Trait>
+
 #### Aura of Interception ([= 2 stride;ADJ =] radius)
 
 The Thief of Winds emits an aura that suppresses flight and escape. While creatures are within [= 2 stride =] of the Thief of Winds:
@@ -89,15 +107,25 @@ The Thief of Winds emits an aura that suppresses flight and escape. While creatu
 - If a creature within the aura is **hit by an opportunity attack** from the Thief of Winds or one of their allies, the target’s **movement speed is reduced by [= 2 stride =]** [# kw:briefly #]
 - The aura is always active while the Thief of Winds is conscious
 
+</Trait>
+
+<Trait>
+
 #### Aura of Protection ([= 2 stride;ADJ =] radius)
 
 The Thief of Winds radiates a protective, unseeable aura in a [= 2 stride;ADJ =] radius. The aura is inactive while you have the [# kw:condition:Incapacitated #] condition.
 
 - She and her allies in the aura gain a bonus to saving throws equal to her Charisma modifier (minimum bonus of +1).
 
+</Trait>
+
+<Trait>
+
 #### Mounted Brutality
 
 While mounted, the Thief of Winds’s melee weapon attacks deal **an additional [% 1d6 %] damage** of the weapon’s type.
+
+</Trait>
 
 ## Mounted Combatant
 
@@ -107,21 +135,37 @@ This creature rides a [Lunar Manticore](/en/library/monsters/lunar-manticore)
 
 ## Actions
 
+<Action>
+
 #### Multiattack
 
 The Thief of Winds makes **two attacks**, choosing from **Grand Empyrean Sword-Spear**, **Dirk**, or **Silencer** (if recharged).
 
-- **Grand Empyrean Sword-Spear**
-  Accuracy +10, reach [= 2 stride =], one creature.  
-  On a hit, 12 ([% 1d10 +6 slashing %]) plus 6 ([% 2d6 frost %]).  
-  This weapon is **Versatile** ([% 1d10 %]), **Heavy**, and **Martial**. It is forged from tombsteel and treated as magical for overcoming resistance.
+<Attack accuracy="+10" reach="[= 2 stride =]">
+
+##### Grand Empyrean Sword-Spear
+
+On a hit, 12 ([% 1d10 +6 slashing %]) plus 6 ([% 2d6 frost %]).  
+This weapon is **Versatile** ([% 1d10 %]), **Heavy**, and **Martial**. It is forged from tombsteel and treated as magical for overcoming resistance.
+
+</Attack>
+
+</Action>
 
 ---
 
-- **Dirk of Arrested Breath**
-  Accuracy +8, reach [= 1 stride =], one creature.  
-  On a hit, 7 ([% 1d4 +5 piercing %]). The target saves Constitution against DC 15 or becomes **[# kw:condition:Paralyzed #] [# kw:briefly #]**.  
-  A creature that succeeds is immune to this effect until the start of Apatheria’s next turn.
+<Action>
+
+#### Dirk of Arrested Breath
+
+<Attack accuracy="+8" reach="[= 1 stride =]">
+
+On a hit, 7 ([% 1d4 +5 piercing %]). The target saves Constitution against DC 15 or becomes **[# kw:condition:Paralyzed #] [# kw:briefly #]**.
+A creature that succeeds is immune to this effect [# kw:briefly #].
+
+</Attack>
+
+</Action>
 
 ---
 
@@ -135,6 +179,8 @@ This counts as a ranged attack roll for every creature hit, for the purposes of 
 
 ---
 
+<Action>
+
 #### Bound to the Earth (Channel Divinity)
 
 When the Thief of Winds hits a creature with a melee weapon attack, they can use a **Minor Action** to activate this feature.
@@ -142,6 +188,8 @@ When the Thief of Winds hits a creature with a melee weapon attack, they can use
 - The triggering attack deals an **extra [% 2d6 frost %]**
 - The target’s **speed becomes 0 [# kw:briefly #]**
 - Can only be used **once per [# kw:Repose #] or [# kw:Recovery #]**
+
+</Action>
 
 ---
 
@@ -174,6 +222,8 @@ At the start of the creature with the highest initiative's turn, Apatheria can e
 
 ---
 
+<Action deed="lair">
+
 #### Tombsteel Harpoon Rain
 
 From distant siege vessels anchored around the island, Apatheria signals a synchronized bombardment. Massive tombsteel harpoons arc through the upper air and crash down like godslaying meteors.
@@ -188,7 +238,11 @@ From distant siege vessels anchored around the island, Apatheria signals a synch
 > These harpoons are made of **tombsteel**. Their presence suppresses magical effects within [= 1 stride =] of impact
 > (no magic effects can occur within [= 1 stride =] of the impact zone, and ongoing effects are suppressed until they exit the area).
 
+</Action>
+
 ---
+
+<Action deed="lair">
 
 #### Gale Deluge
 
@@ -196,6 +250,10 @@ The wind violently swirls and pours around Apatheria's enemies.
 
 All creatures of Apatheria’s choice within [= 60 stride =] are subjected to the effects of the [_Echoing Strike_](/en/library/spells/echoing-strike) cantrip,
 taking [% 3d8 bludgeoning %] if they move willingly.
+
+</Action>
+
+<Action deed="lair">
 
 #### Reinforcements
 
@@ -205,6 +263,8 @@ Apatheria signals to allied forces positioned throughout the shattered island pe
 - They act on initiative count 10 and are hostile to Apatheria’s enemies.
 
 > The mercenaries fight tactically, positioning to intercept threats to Apatheria, and will not willingly enter her Warding Wind unless ordered.
+
+</Action>
 
 ---
 
@@ -233,6 +293,8 @@ Apatheria can expend legendary deeds to use the options below. Only one legendar
 
 ## Legendary Deed: Stratagem
 
+<Action deed="stratagem">
+
 #### Resonant Shatter
 
 **Declare (on hit)**: Each time Apatheria hits with a melee weapon attack, she pulls the skies down, creating a resonant storm marker at the target’s location.
@@ -245,7 +307,11 @@ Creatures within **[= 2 stride =]** of each marked location save Constitution ag
 
 > Creatures **inside Apatheria’s Warding Wind aura** are **immune to these effects** due to the deafening roar.
 
+</Action>
+
 ## Legendary Deed: Phase
+
+<Action deed="phase">
 
 #### Bloodied (50% HP):
 
@@ -266,9 +332,17 @@ She also unlocks the stolen power of Ukonhemmo’s storm and wind vakis. For the
   These spells are cast using her normal spellcasting stats (DC 15, accuracy +7).  
   All of them require **no spell slots**, do **not require material components**, but each can only be cast **once per [# kw:Repose #]**.
 
+</Action>
+
+<Action deed="phase">
+
 #### Doomed (25% HP):
 
 Apatheria tears open the veil between the upper sky and the battlefield, calling down several pillars of lightning.  
  All creatures of her choice within **[= 6 stride =]** save Dexterity against DC 15 or take **[% 4d12 lightning %]** and are **[# kw:condition:blinded #]** [# kw:briefly #]. On a successful save, they take half damage and are not [# kw:condition:blinded #].  
  This effect ignores resistance to lightning damage. Apatheria and her mount immediately gain **flying speed equal to their walking speed** (hover) for 1 minute.
 If Ukkonhemmo has not been freed when Apatheria reaches this threshold, she immediately kills him with the lightning bolt.
+
+</Action>
+
+</Monster>

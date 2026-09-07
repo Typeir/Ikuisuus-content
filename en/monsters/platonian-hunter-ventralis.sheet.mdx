@@ -5,29 +5,34 @@ contentType: monsters
 
 # Platonian Hunter – Ventralis Strain
 
-_Large Construct (Undead), Chaotic Neutral_
-
-| **Armor Class** | **Hit Points**        | **Speed** |
-| --------------- | --------------------- | --------- |
-| 17              | 148 ([% 13d10 +65 %]) | [= 9 stride =]    |
-
-| **STR** | **DEX** | **CON** | **INT** | **WIS** | **CHA** |
-| ------- | ------- | ------- | ------- | ------- | ------- |
-| 22 (+6) | 22 (+6) | 20 (+5) | 24 (+7) | 20 (+5) | 6 (-2)  |
-
-- **Saving Throws**: Con +9, Dex +10
-- **Damage Resistances**: Fire, Lightning, Frost, Holy
-- **Damage Immunities**: Poison, Dark
-- **Damage Vulnerabilities**: Bludgeoning, Chemical
-- **Condition Immunities**: [# kw:condition:Stunned #], [# kw:condition:Paralyzed #], [# kw:condition:Terrified #], [# kw:condition:Frightened #], [# kw:condition:Charmed #], [# kw:condition:Poisoned #]
-- **Senses**: Darkvision [= 24 stride =], Tremorsense [= 12 stride =], Passive Perception 20
-- **Languages**: —
-- **Challenge**: 10 (5,900 XP)
-- **Tier Bonus**: +4
+<Monster
+  size="Large"
+  type="Construct (Undead)"
+  alignment="Chaotic Neutral"
+  armorClass="17"
+  hitPoints="148 ([% 13d10 +65 %])"
+  speed="[= 9 stride =]"
+  str="22"
+  dex="22"
+  con="20"
+  int="24"
+  wis="20"
+  cha="6"
+  saves="Con +9, Dex +10"
+  resistances="Fire, Lightning, Frost, Holy"
+  immunities="Poison, Dark"
+  vulnerabilities="Bludgeoning, Chemical"
+  conditionImmunities="[# kw:condition:Stunned #], [# kw:condition:Paralyzed #], [# kw:condition:Terrified #], [# kw:condition:Frightened #], [# kw:condition:Charmed #], [# kw:condition:Poisoned #]"
+  senses="Darkvision [= 24 stride =], Tremorsense [= 12 stride =], Passive Perception 20"
+  languages="—"
+  challenge="10"
+  xp="5,900">
 
 ---
 
 ## Traits
+
+<Trait>
 
 #### End Of Life Cycle
 
@@ -35,13 +40,25 @@ When reduced to 0 hit points, the hunter erupts in a [= 60 stride;ADJ =]-radius 
 After a three turn delay, the hunter explodes.
 Each creature within range saves Dexterity against DC 21, taking **180 ([% 40d8 force %])** and becoming **[# kw:condition:blinded #]** [# kw:briefly #] on a failure, or half as much damage on a success.
 
+</Trait>
+
+<Trait>
+
 #### Fungal overriden Core
 
 The Ventralis variant is considered both a Construct and Undead. It can be affected by effects that target either.
 
-#### Spore Exhalation (Recharge 5–6)
+</Trait>
+
+<Trait recharge="5–6">
+
+#### Spore Exhalation
 
 Immediately after moving at least [= 2 stride =], the Hunter emits fungal clouds into a **[= 2 stride;ADJ =] radius** centered on itself. Creatures in the area save Constitution against DC 17 or are **infected** and **[# kw:condition:blinded #]** [# kw:briefly #]. This area becomes **difficult terrain** for 1 minute as the floor blooms with creeping mycelium.
+
+</Trait>
+
+<Trait>
 
 #### Fungal Spellcasting
 
@@ -53,33 +70,51 @@ After completing its movement, the Hunter may cast one of the following spells a
 
 Each spell can be used **once per day**, or cast again by expending spell points.
 
+</Trait>
+
+<Trait>
+
 #### Spell Point Reserve
 
 The Hunter has **8 spell points** to recast any of its fungal spells. It cannot use spell points for other spells.
+
+</Trait>
 
 ---
 
 ## Actions
 
+<Action>
+
 #### Multiattack
 
 The Hunter makes one attack with its Fated Blade and one with its Particle Renders or Thruster Axe-Kick.
 
-- **Fated Blade** _(Melee Weapon, Finesse)_  
-  Accuracy +10, reach [= 1 stride =], one creature.  
-  **Hit**: [% 2d10 +6 slashing %]  
-  **Effect**: Once per day per creature, the target saves Charisma against DC 19 or becomes **vulnerable to all damage** from this blade. The Hunter also gains **truesight** on that target for 1 minute.
+<Attack accuracy="+10" reach="[= 1 stride =]">
 
-- **Particle Renders** _(Melee Weapon, One-Handed)_  
-  Accuracy +10, reach [= 1 stride =], one creature.  
-  **Hit**: [% 2d8 +6 slashing %]  
-  **Effect**: After a successful hit, the Hunter may make one additional free attack with this weapon (does not stack).
+##### Fated Blade _(Melee Weapon, Finesse)_
+
+**Hit**: [% 2d10 +6 slashing %]  
+**Effect**: Once per day per creature, the target saves Charisma against DC 19 or becomes **vulnerable to all damage** from this blade. The Hunter also gains **truesight** on that target for 1 minute.
+
+</Attack>
+
+<Attack accuracy="+10" reach="[= 1 stride =]">
+
+##### Particle Renders _(Melee Weapon, One-Handed)_
+
+**Hit**: [% 2d8 +6 slashing %]  
+**Effect**: After a successful hit, the Hunter may make one additional free attack with this weapon (does not stack).
+
+</Attack>
 
 - **Thruster Axe-Kick** _(Gap Closer)_  
-  _Special Accuracy +10, range 10–[= 6 stride =], one creature.  
+  Accuracy +10, range 10–[= 6 stride =], one creature.  
   **Hit**: [% 3d10 +6 slashing %]  
   **Effect**: Target saves Strength against DC 17 or is knocked [# kw:condition:prone #].  
   If the target takes damage, it [catches fire](/en/library/rules/steel-and-strife/conditions#burning).
+
+</Action>
 
 ---
 
@@ -111,3 +146,5 @@ All Ventralis Hunter weapons are coated in necrotic mycelium. Once per day per c
 - [# kw:condition:Frightened #]
 
 > The **Fated Blade’s** special vulnerability effect can only be attempted **once per day per target**.
+
+</Monster>

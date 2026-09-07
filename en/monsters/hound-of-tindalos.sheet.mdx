@@ -13,51 +13,79 @@ contentType: monsters
 A lesser hound of the Fold, this being is still dangerous when encountered in places where the veils of reality are thin.
 It stalks magical activity and slips through the geometry of the world in search of prey marked by temporal anomalies.
 
-_Medium Celestial (Fold), Lawful Neutral_
-
-| **Armor Class**       | **Hit Points** | **Speed**            |
-| --------------------- | -------------- | -------------------- |
-| 14 (fold-warped hide) | 45 ([% 6d8 +18 %])  | [= 8 stride =], Climb [= 4 stride =] |
-
-| **STR** | **DEX** | **CON** | **INT** | **WIS** | **CHA** |
-| ------- | ------- | ------- | ------- | ------- | ------- |
-| 14 (+2) | 16 (+3) | 16 (+3) | 6 (−2)  | 12 (+1) | 6 (−2)  |
-
-- **Saving Throws**: Dex +4, Wis +2
-- **Skills**: Perception +2, Stealth +4
-- **Damage Resistances**: Force, Holy, Bludgeoning
-- **Damage Immunities**: Dark
-- **Condition Immunities**: [# kw:condition:Terrified #]
-- **Senses**: Blindsight [= 12 stride =], Fold-Sense [= 6 stride =]
-- **Challenge**: 2 (450 XP)
-- **Tier Bonus**: +1
-- **Languages**: —
+<Monster
+  size="Medium"
+  type="Celestial (Fold)"
+  alignment="Lawful Neutral"
+  armorClass="14 (fold-warped hide)"
+  hitPoints="45 ([% 6d8 +18 %])"
+  speed="[= 8 stride =], Climb [= 4 stride =]"
+  str="14"
+  dex="16"
+  con="16"
+  int="6"
+  wis="12"
+  cha="6"
+  saves="Dex +4, Wis +2"
+  skills="Perception +2, Stealth +4"
+  resistances="Force, Holy, Bludgeoning"
+  immunities="Dark"
+  conditionImmunities="[# kw:condition:Terrified #]"
+  senses="Blindsight [= 12 stride =], Fold-Sense [= 6 stride =]"
+  challenge="2"
+  xp="450"
+  languages="—">
 
 ---
 
 ## Traits
 
+<Trait>
+
 #### Non-Euclidean Anatomy
 
 Ignores difficult terrain and can move through spaces as narrow as 1 inch without squeezing. Once per turn, it can teleport up to [= 4 stride =] through a wall if the entry point forms a sharp angle.
+
+</Trait>
+
+<Trait>
 
 #### Fold-Sense
 
 Can detect magical auras, spellcasting, and enchantments within [= 6 stride =], even through walls.
 
+</Trait>
+
+<Trait>
+
 #### Spellbreaker Aura
 
 Creatures concentrating on spells within [= 1 stride =] of the hound make concentration checks with disadvantage.
+
+</Trait>
 
 ---
 
 ## Actions
 
+<Action>
+
 #### Slashing Tendrils
 
-Accuracy +4, reach [= 1 stride =], one creature.  
+<Attack accuracy="+4" reach="[= 1 stride =]">
+
 On a hit, 9 ([% 2d6 +2 slashing %]) plus 3 ([% 1d6 holy %]).
 
-#### Angular Howl (Recharge 6)
+</Attack>
+
+</Action>
+
+<Action recharge="6">
+
+#### Angular Howl
 
 The hound emits a warped cry that fractures local space. Each creature within [= 2 stride =] saves Constitution against DC 11. On a failure, the creature is **[# kw:condition:stunned #] until the start of its next turn** and takes 9 ([% 2d8 force %]). On a success, it takes half damage and isn't [# kw:condition:stunned #].
+
+</Action>
+
+</Monster>

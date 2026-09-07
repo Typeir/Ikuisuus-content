@@ -19,32 +19,41 @@ contentType: monsters
   />
 </FloatedContainer>
 
-_Medium Humanoid (Empyrean), Lawful Evil_
-
-| **Armor Class**   | **Hit Points**   | **Speed** |
-| ----------------- | ---------------- | --------- |
-| 26 (Thorny armor) | 315 ([% 30d8 +180 %]) | [= 6 stride =]    |
-
-| **STR** | **DEX** | **CON** | **INT** | **WIS** | **CHA** |
-| ------- | ------- | ------- | ------- | ------- | ------- |
-| 24 (+7) | 12 (+1) | 22 (+6) | 18 (+4) | 16 (+3) | 22 (+6) |
-
-- **Saving Throws**: Strength +16, Constitution +15, Wisdom +12, Charisma +15
-- **Skills**: Athletics +16, Intimidation +15, Religion +13, Perception +12
-- **Damage Resistances**: Fire, Frost, 
-- **Condition Immunities**: [# kw:condition:Terrified #]
-- **Senses**: Darkvision [= 12 stride =], passive Perception 21
-- **Languages**: Common, Empyrean
-- **Challenge**: 23 (50,000 XP)
-- **Tier Bonus**: +8
+<Monster
+  size="Medium"
+  type="Humanoid (Empyrean)"
+  alignment="Lawful Evil"
+  armorClass="26 (Thorny armor)"
+  hitPoints="315 ([% 30d8 +180 %])"
+  speed="[= 6 stride =]"
+  str="24"
+  dex="12"
+  con="22"
+  int="18"
+  wis="16"
+  cha="22"
+  saves="Strength +16, Constitution +15, Wisdom +12, Charisma +15"
+  skills="Athletics +16, Intimidation +15, Religion +13, Perception +12"
+  resistances="Fire, Frost,"
+  conditionImmunities="[# kw:condition:Terrified #]"
+  senses="Darkvision [= 12 stride =], passive Perception 21"
+  languages="Common, Empyrean"
+  challenge="23"
+  xp="50,000">
 
 ---
 
 ## Traits
 
+<Trait>
+
 #### Legendary Deeds
 
 Heart of the Brume has **3 legendary deeds per round**, and regains all expended deeds at the start of his turn.
+
+</Trait>
+
+<Trait>
 
 #### Entropic Sarcophagus
 
@@ -54,6 +63,10 @@ Heart of the Brume is encased in an extremely heavy armor.
 - Heart of the Brume has advantage on saving throws made to resist being pushed, pulled, or knocked [# kw:condition:prone #]
 - Heart of the Brume cannot benefit from bonuses to movement speed granted by mundane effects
 
+</Trait>
+
+<Trait>
+
 #### Thorns of penitence
 
 Heart of the Brume’s thorny armor holds up to 12 charges.  
@@ -61,6 +74,10 @@ When a creature hits Heart of the Brume with a melee weapon attack, the attacker
 
 - Each activation consumes 1 charge
 - Charges regenerate at midnight, recovering [% 1d6 +6 %] charges
+
+</Trait>
+
+<Trait>
 
 #### Ferocious Rider
 
@@ -71,6 +88,10 @@ While mounted, Heart of the Brume gains the following benefits:
 
 - Cannot be critically hit
 - Automatically succeeds on the first saving throw it makes each round
+
+</Trait>
+
+<Trait>
 
 #### Doctrine of the Brume
 
@@ -99,6 +120,10 @@ For each other rider of the Brume within range, all riders gain the following be
 A rider’s aura is suppressed only while that rider is [# kw:condition:incapacitated #].  
 [# kw:condition:Paralyzed #], [# kw:condition:stunned #], or [# kw:condition:unconscious #] creatures do not contribute to the doctrine.
 
+</Trait>
+
+<Trait>
+
 #### Central Dogma
 
 At the start of each of Heart of the Brume’s turns, each allied rider of the Brume within Doctrine range regains 30 hit points.
@@ -106,32 +131,54 @@ At the start of each of Heart of the Brume’s turns, each allied rider of the B
 - This effect does not stack with itself
 - This is the only passive healing effect available to the trio
 
+</Trait>
+
 ---
 
 ## Actions
+
+<Action>
 
 #### Multiattack
 
 Heart of the Brume makes two attacks with its Grand Empyrean Sword-Spear, replacing any with their other weapons if available.
 
+</Action>
+
 ---
 
-- **Heavenpiercing Sword-Spear**  
-  Accuracy +18, reach [= 2 stride =], one creature.  
-  Hit: 21 ([% 2d10 +10 slashing %]) plus 22 ([% 5d8 holy %]).  
-  This weapon is Heavy, Martial, and forged from silver. It is treated as magical for overcoming resistance.
+<Action>
+
+#### Heavenpiercing Sword-Spear
+
+<Attack accuracy="+18" reach="[= 2 stride =]">
+
+Hit: 21 ([% 2d10 +10 slashing %]) plus 22 ([% 5d8 holy %]).
+This weapon is Heavy, Martial, and forged from silver. It is treated as magical for overcoming resistance.
+
+</Attack>
+
+</Action>
 
 - **Silencer** (Recharge 5–6)
   The Heart fires their rifle in a **[= 6 stride;ADJ =] cone**. Each creature in the cone saves Dexterity against DC 26:
 - **Failure**: 70 ([% 10d10 %]) + 10 piercing damage and knocked [# kw:condition:prone #]
 - **Success**: Half damage, no knockdown
 
-- **Hand of Judgment** (Recharge 6)
-  Accuracy +13, range [= 12 stride =], one creature.
-  On a hit, 80 ([% 10d10 +25 bludgeoning %]).
-  The target saves Constitution against DC 21 or is **[# kw:condition:stunned #] for 1 minute**.
-  The target can [# kw:resist #] at the end of each of its turns.
-  The Heart must concentrate on the stun.
+<Action recharge="6">
+
+#### Hand of Judgment
+
+<Attack accuracy="+13" range="[= 12 stride =]">
+
+On a hit, 80 ([% 10d10 +25 bludgeoning %]).
+The target saves Constitution against DC 21 or is **[# kw:condition:stunned #] for 1 minute**.
+The target can [# kw:resist #] at the end of each of its turns.
+The Heart must concentrate on the stun.
+
+</Attack>
+
+</Action>
 
 ---
 
@@ -159,6 +206,8 @@ Heart of the Brume can expend legendary deeds to use the options below. Only one
 
 ## Legendary Deed: Stratagem
 
+<Action deed="stratagem">
+
 #### Empire Breaker
 
 The Heart of the Brume slams its sword-spear into the ground, creating a shockwave that ripples through the battlefield.
@@ -174,9 +223,13 @@ While [# kw:condition:incapacitated #] this way, the creatures is [# kw:conditio
 On a success, the creature takes half damage and is not swallowed.
 [# kw:condition:Prone #] creatures automatically fail the saving throw against being swallowed.
 
+</Action>
+
 ---
 
 ## Legendary Deed: Phase
+
+<Action deed="phase">
 
 #### Bloodied (50% HP)
 
@@ -186,3 +239,7 @@ While Heart of the Brume is bloodied and not [# kw:condition:incapacitated #]:
 - Heart of the Brume gains advantage on Constitution saving throws
 
 If Heart of the Brume becomes [# kw:condition:incapacitated #], these benefits end immediately.
+
+</Action>
+
+</Monster>

@@ -5,52 +5,81 @@ contentType: monsters
 
 # Nigredo, Lord of Flies and Rot
 
-_Gargantuan Aberration, Lawful Evil_
-
-| **Armor Class** | **Hit Points**         | **Speed**                                                                 |
-| --------------- | ---------------------- | ------------------------------------------------------------------------- |
-| 22              | 455 ([% 35d12 +245 %]) | [= 8 stride =], climb [= 8 stride =], burrow [= 8 stride =] (clockwork drills), bonus move [= 12 stride =] |
-
-| **STR** | **DEX** | **CON** | **INT** | **WIS** | **CHA** |
-| ------- | ------- | ------- | ------- | ------- | ------- |
-| 26 (+8) | 10 (+0) | 24 (+7) | 20 (+5) | 18 (+4) | 20 (+5) |
-
-- **Saving Throws**: STR +15, CON +14, INT +12, WIS +11
-- **Damage Resistances**: holy, dark, fire
-- **Condition Immunities**: [# kw:condition:terrified #], exhaustion
-- **Senses**: truesight [= 24 stride =], passive Perception 14
-- **Languages**: Empyrean, Hidden, Any dead tongue, telepathy [= 24 stride =]
-- **Challenge**: 19 (22,000 XP)
-- **Tier Bonus**: +7
+<Monster
+  size="Gargantuan"
+  type="Aberration"
+  alignment="Lawful Evil"
+  armorClass="22"
+  hitPoints="455 ([% 35d12 +245 %])"
+  speed="[= 8 stride =], climb [= 8 stride =], burrow [= 8 stride =] (clockwork drills), bonus move [= 12 stride =]"
+  str="26"
+  dex="10"
+  con="24"
+  int="20"
+  wis="18"
+  cha="20"
+  saves="STR +15, CON +14, INT +12, WIS +11"
+  resistances="holy, dark, fire"
+  conditionImmunities="[# kw:condition:terrified #], exhaustion"
+  senses="truesight [= 24 stride =], passive Perception 14"
+  languages="Empyrean, Hidden, Any dead tongue, telepathy [= 24 stride =]"
+  challenge="19"
+  xp="22,000">
 
 ---
 
 ## Traits
 
+<Trait>
+
 #### Legendary Deeds
 
 Nigredo has **3 legendary deeds per round**, and regains all expended deeds at the start of their turn.
 
-#### Legendary Deed: Resist (3/Repose)
+</Trait>
+
+<Trait charges="3/Repose">
+
+#### Legendary Deed: Resist
 
 When Nigredo fails a saving throw, they can expend a legendary deed to succeed instead. This feature can be used **3 times per [# kw:Repose #]**.
+
+</Trait>
+
+<Trait>
 
 #### Endless Form
 
 Nigredo’s lower body is an endlessly long, winding mass extending as a [= 24 stride;ADJ =] stretch of terrain. As a Minor Action, they shifts up to [= 12 stride =] of this terrain.
 It counts a solid object, grants cover, the top of it is difficult terrain, and it is immune to damage.
 
+</Trait>
+
+<Trait>
+
 #### Claimed Death
 
 Nigredo grows every time they claim a death. Every 3 claimed deaths add [= 6 stride =] to Endless Form and grant them one extra legendary deed per round (maximum 6).
+
+</Trait>
+
+<Trait>
 
 #### Spore Cloud Aura
 
 Creatures starting their turn within [= 3 stride =] must succeed on a DC 22 CON save or take [% 4d8 dark %] and become diseased (disadvantage on saves, healing halved) for 1 minute.
 
+</Trait>
+
+<Trait>
+
 #### Sunlight Vulnerability
 
 In direct sunlight, Nigredo has disadvantage on attacks and saving throws. If reduced to 0 HP in direct sunlight, Nigredo is instantly destroyed, disintegrating into rust and rot.
+
+</Trait>
+
+<Trait>
 
 #### Ventralis Rot
 
@@ -58,24 +87,38 @@ Nigredo saturates the air with **Stachybotrys Ventralis** spores.
 If a creature interacts with Nigredo in any way (touching, **starting its turn within [= 6 stride =]** of them, or being struck by them), it saves Constitution against DC 22 or rolls in the [# kw:Black Rot #] table
 Creatures **immune to disease and curses** ignore this feature and instead take **[% 2d6 dark %]**.
 
+</Trait>
+
 ## Actions
+
+<Action>
 
 #### Multiattack
 
 Nigredo makes three **Impale Drive** attacks, or two plus **Flyburst** or **Exhale the Rot**.
 
-- **Impale Drive**
-  Accuracy +15, reach [= 3 stride =].
-  Hit: [% 4d10 +8 piercing %] plus [% 4d8 dark %]. Target makes a DC 22 STR save or is impaled, [# kw:condition:grappled #], and dragged [= 3 stride =]. If already impaled, the target has vulnerability to dark damage until Nigredo’s next turn.
+<Attack accuracy="+15" reach="[= 3 stride =]">
 
-- **Flyburst (Recharge 4–6)**
-  Nigredo releases swarms of necrotic flies from every segment of their Endless Form.  
-  All creatures within [= 3 stride =] of any part of Nigredo's body must succeed on a DC 22 CON save or take **[% 10d8 dark %]** and become **[# kw:condition:blinded #]** until the start of their next turn. On success, creatures take half damage and avoid blindness.
+##### Impale Drive
 
-- **Exhale the Rot (Recharge 5–6)**
-  Nigredo exhales spores in a [= 18 stride;ADJ =] cone. Creatures make a DC 22 CON save or take [% 12d8 dark %] and become rotted (disadvantage on CON saves, healing halved) for 1 minute, half as much damage on a save.
+Hit: [% 4d10 +8 piercing %] plus [% 4d8 dark %]. Target makes a DC 22 STR save or is impaled, [# kw:condition:grappled #], and dragged [= 3 stride =]. If already impaled, the target has vulnerability to dark damage until Nigredo’s next turn.
 
-#### Ashfall of Empires (1/day)
+</Attack>
+
+##### Flyburst (Recharge 4–6)
+
+Nigredo releases swarms of necrotic flies from every segment of their Endless Form.  
+All creatures within [= 3 stride =] of any part of Nigredo's body must succeed on a DC 22 CON save or take **[% 10d8 dark %]** and become **[# kw:condition:blinded #]** until the start of their next turn. On success, creatures take half damage and avoid blindness.
+
+##### Exhale the Rot (Recharge 5–6)
+
+Nigredo exhales spores in a [= 18 stride;ADJ =] cone. Creatures make a DC 22 CON save or take [% 12d8 dark %] and become rotted (disadvantage on CON saves, healing halved) for 1 minute, half as much damage on a save.
+
+</Action>
+
+<Action charges="1/day">
+
+#### Ashfall of Empires
 
 Rotting spores fall in a [= 24 stride;ADJ =] radius. Creatures make three DC 22 DEX saves with escalating effects depending on their current Black Rot failed saves:
 
@@ -83,6 +126,8 @@ Rotting spores fall in a [= 24 stride;ADJ =] radius. Creatures make three DC 22 
 - 1 failed save: [% 10d10 dark %]
 - 2 failed saves: [% 12d10 dark %], [# kw:condition:blinded #] (1 minute)
 - 3 failed saves: [% 14d10 dark %], [# kw:condition:stunned #] until the start of Nigredo's next turn, [# kw:condition:blinded #] (1 hour)
+
+</Action>
 
 ---
 
@@ -99,25 +144,10 @@ Nigredo can expend legendary deeds to use the options below. Only one legendary 
 
 ## Spellcasting
 
-Nigredo is an **INT-based spellcaster** (spell save **DC 22**, spell attack **+14**).  
-He has the following spells prepared:
+Nigredo is an **INT-based spellcaster** (spell save **DC 22**, spell attack **+14**).
 
-| **Spell**                                                     | **Slots / Level** |
-| ------------------------------------------------------------- | ----------------- |
-| [_Omen_](/en/library/spells/omen)                             | At Will           |
-| [_Ashen Anointment_](/en/library/spells/ashen-anointment)    | At Will           |
-| [_Minor Illusion_](/en/library/spells/minor-illusion)         | At Will           |
-| [_Command_](/en/library/spells/command)                       | 4 (1st)           |
-| [_Shield_](/en/library/spells/shield)                         | 4 (1st)           |
-| [_Twilight Bolt_](/en/library/spells/twilight-bolt)           | 4 (1st)           |
-| [_Hold_](/en/library/spells/hold)                             | 3 (2nd)           |
-| [_Silence_](/en/library/spells/silence)                       | 3 (2nd)           |
-| [_Bestow Curse_](/en/library/spells/bestow-curse)             | 3 (3rd)           |
-| [_Objection_](/en/library/spells/objection)                   | 3 (3rd)           |
-| [_Excision_](/en/library/spells/excision)                     | 3 (4th)           |
-| [_Shadow Of The Hunt_](/en/library/spells/shadow-of-the-hunt) | 3 (4th)           |
-| [_Cloudkill_](/en/library/spells/cloudkill)                   | 2 (5th)           |
-| [_Perfect Barrier_](/en/library/spells/perfect-barrier)       | 2 (5th)           |
-| [_Harm_](/en/library/spells/harm)                             | 1 (6th)           |
-| [_Rot-god's Caress_](/en/library/spells/rot-gods-caress)      | 1 (7th)           |
-| [_Feeblemind_](/en/library/spells/feeblemind)                 | 1 (8th)           |
+<SpellList spells="omen, ashen-anointment, minor-illusion, command, shield, twilight-bolt, hold, silence, bestow-curse, objection, excision, shadow-of-the-hunt, cloudkill, perfect-barrier, harm, rot-gods-caress, feeblemind">
+  <Column label="Slots / Level" values="At Will, At Will, At Will, 4 (1st), 4 (1st), 4 (1st), 3 (2nd), 3 (2nd), 3 (3rd), 3 (3rd), 3 (4th), 3 (4th), 2 (5th), 2 (5th), 1 (6th), 1 (7th), 1 (8th)" />
+</SpellList>
+
+</Monster>

@@ -18,35 +18,49 @@ _(Star Dragon, Terror)_
   />
 </FlexRenderer>
 
-_Colossal Celestial (Terror), Lawful Evil_
-
-| **Armor Class**    | **Hit Points**    | **Speed** |
-| ------------------ | ----------------- | --------- |
-| 20 (Natural Armor) | 540 ([% 24d20 +288 %]) | [= 8 stride =]    |
-
-| **STR** | **DEX** | **CON** | **INT** | **WIS** | **CHA** |
-| ------- | ------- | ------- | ------- | ------- | ------- |
-| 28 (+9) | 14 (+2) | 26 (+8) | 24 (+7) | 18 (+4) | 22 (+6) |
-
-- **Saving Throws**: Strength +17, Constitution +16, Wisdom +12, Charisma +14
-- **Skills**: Perception +12, Insight +12, Intimidation +14
-- **Damage Immunities**: Psychic, Poison
-- **Condition Immunities**: [# kw:condition:Poisoned #], [# kw:condition:Terrified #], [# kw:condition:Frightened #], [# kw:condition:Charmed #]
-- **Damage Resistances**: Fire, Holy, Dark
-- **Senses**: Truesight [= 24 stride =], passive Perception 21
-- **Languages**: Tongue of Dragons, Ancient Empyrean, Empyrean, Common, Hidden
-- **Challenge**: 23 (50,000 XP)
-- **Tier Bonus**: +8
+<Monster
+  size="Colossal"
+  type="Celestial (Terror)"
+  alignment="Lawful Evil"
+  armorClass="20 (Natural Armor)"
+  hitPoints="540 ([% 24d20 +288 %])"
+  speed="[= 8 stride =]"
+  str="28"
+  dex="14"
+  con="26"
+  int="24"
+  wis="18"
+  cha="22"
+  saves="Strength +17, Constitution +16, Wisdom +12, Charisma +14"
+  skills="Perception +12, Insight +12, Intimidation +14"
+  immunities="Psychic, Poison"
+  conditionImmunities="[# kw:condition:Poisoned #], [# kw:condition:Terrified #], [# kw:condition:Frightened #], [# kw:condition:Charmed #]"
+  resistances="Fire, Holy, Dark"
+  senses="Truesight [= 24 stride =], passive Perception 21"
+  languages="Tongue of Dragons, Ancient Empyrean, Empyrean, Common, Hidden"
+  challenge="23"
+  xp="50,000"
+  saveDc="22">
 
 ---
 
 ## Traits
 
+<Trait>
+
 #### Legendary Deeds
 The Terror has **2 legendary deeds per round** (3 while Doomed), and regains all expended deeds at the start of its turn.
 
-#### Legendary Deed: Resist (3/Repose)
+</Trait>
+
+<Trait charges="3/Repose">
+
+#### Legendary Deed: Resist
 When the Terror fails a saving throw, it can expend a legendary deed to succeed instead. This feature can be used **3 times per [# kw:Repose #]**.
+
+</Trait>
+
+<Trait>
 
 #### Terror of Otherness (Aura, [= 24 stride =])
 
@@ -56,13 +70,15 @@ Creatures of Huge size or smaller suffer dislocation of perception.
 - Creatures cannot gain advantage on saving throws from allied effects.
 - The aura is always active while the Terror is conscious.
 
-#### Spellcasting
+</Trait>
 
-The Terror of Otherness is a **20th-level spellcaster**. Its spellcasting ability is **Intelligence** (spell save DC **22**, accuracy +15 with spell attacks). It has the following spells prepared:
+<Trait>
+
+#### Spellcasting
 
 | Spell Level            | Slots | Spells                                                                                                                                                                                                                                                                                                     |
 | ---------------------- | ----- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Cantrips (at will)** | —     | [_Minor Illusion_](/en/library/spells/minor-illusion), [_Psychic Link_](/en/library/spells/psychic-link), [_Thunderwave_](/en/library/spells/thunderwave), [_Blade Ward_](/en/library/spells/blade-ward) |
+| **Cantrips** | —     | [_Minor Illusion_](/en/library/spells/minor-illusion), [_Psychic Link_](/en/library/spells/psychic-link), [_Thunderwave_](/en/library/spells/thunderwave), [_Blade Ward_](/en/library/spells/blade-ward) |
 | **1st level**          | 4     | [_Cause Fear_](/en/library/spells/cause-fear), [_Burning Hands_](/en/library/spells/burning-hands)                                                                                                                                                                               |
 | **2nd level**          | 3     | [_Empty Skies_](/en/library/spells/empty-skies), [_Hold_](/en/library/spells/hold)\*                                                                                                                                                                                     |
 | **3rd level**          | 3     | [_Fear_](/en/library/spells/fear), [_Objection_](/en/library/spells/objection), [_Black Forest_](/en/library/spells/black-forest)                                                                                                                       |
@@ -73,33 +89,57 @@ The Terror of Otherness is a **20th-level spellcaster**. Its spellcasting abilit
 | **8th level**          | 1     | [_Despairing Darkness_](/en/library/spells/despairing-darkness)                                                                                                                                                                                                                                 |
 | **9th level**          | 1     | [_Foresight_](/en/library/spells/foresight)                                                                                                                                                                                                                                                   |
 
+</Trait>
+
 ---
 
 ## Actions
+
+<Action>
 
 #### Multiattack
 
 The Terror of Otherness makes **three attacks**, choosing from **Bite**, **Claw**, **Tail**, or **Wing Slam**.  
 
-- **Bite**  
-  Accuracy +17, reach [= 4 stride =], one creature.  
-  On a hit, 32 ([% 4d10 +10 piercing %]) plus 13 ([% 3d8 force %]).
+<Attack accuracy="+17" reach="[= 4 stride =]">
 
-- **Claw**  
-  Accuracy +17, reach [= 3 stride =], one creature.  
-  On a hit, 25 ([% 3d8 +10 slashing %]).
+##### Bite
 
-- **Tail**  
-  Accuracy +17, reach [= 6 stride =], one creature.  
-  On a hit, 28 ([% 4d8 +10 bludgeoning %]).  
-  The target saves Strength against DC 23 or is pushed [= 6 stride =] and knocked [# kw:condition:prone #].
+On a hit, 32 ([% 4d10 +10 piercing %]) plus 13 ([% 3d8 force %]).
 
-- **Wing Slam**  
-  Accuracy +17, reach [= 6 stride =], one creature.  
-  On a hit, 26 ([% 4d6 +10 bludgeoning %]).  
-  Creatures of Huge size or smaller save Strength against DC 23 or are knocked [# kw:condition:prone #].
+</Attack>
 
-#### Breath of Unbecoming (Recharge 5–6)
+<Attack accuracy="+17" reach="[= 3 stride =]">
+
+##### Claw
+
+On a hit, 25 ([% 3d8 +10 slashing %]).
+
+</Attack>
+
+<Attack accuracy="+17" reach="[= 6 stride =]">
+
+##### Tail
+
+On a hit, 28 ([% 4d8 +10 bludgeoning %]).  
+The target saves Strength against DC 23 or is pushed [= 6 stride =] and knocked [# kw:condition:prone #].
+
+</Attack>
+
+<Attack accuracy="+17" reach="[= 6 stride =]">
+
+##### Wing Slam
+
+On a hit, 26 ([% 4d6 +10 bludgeoning %]).  
+Creatures of Huge size or smaller save Strength against DC 23 or are knocked [# kw:condition:prone #].
+
+</Attack>
+
+</Action>
+
+<Action recharge="5–6">
+
+#### Breath of Unbecoming
 
 The Terror exhales fractured reality in a **[= 18 stride;ADJ =] cone**.
 
@@ -107,6 +147,8 @@ Each creature in the area saves Wisdom against DC 23.
 
 - **Fail**: 54 ([% 12d8 force %]) and is **[# kw:condition:Terrified #]** [# kw:briefly #].
 - **Success**: Half damage, no [# kw:condition:terrified #] condition.
+
+</Action>
 
 ---
 
@@ -124,6 +166,8 @@ The Terror of Otherness can expend legendary deeds to use the options below. Onl
 ## Legendary Deed: Lair
 
 At the start of the creature with the highest initiative's turn, the Terror can expend a legendary deed to use one of the following lair deeds. It cannot use the same lair deed two rounds in a row.
+
+<Action deed="lair">
 
 #### Shades of Otherness
 
@@ -144,9 +188,14 @@ A Shade:
 
 When a Shade is destroyed, its anchor takes **22 psychic damage** (no save).
 > If the target is unavailable, unknown, or cannot be replicated, use a Shade Statlet instead.
+
+</Action>
+
 ---
 
 ## Legendary Deed: Phase
+
+<Action deed="phase">
 
 #### Wounded (50% HP) — Angry Rattling Beast
 
@@ -157,6 +206,10 @@ The Terror’s internal scaffolding ruptures.
 - The terror inflicts [# kw:condition:Bleeding #] and [# kw:condition:Burning #] with its attacks.
 - The terror takes 25 true damage at the start of its turn.
 
+</Action>
+
+<Action deed="phase">
+
 #### Doomed (25% HP) — Lucid Martyr
 
 The containment chamber collapses and the battlefield opens vertically (minimum [= 24 stride =]).
@@ -165,6 +218,8 @@ The containment chamber collapses and the battlefield opens vertically (minimum 
 - Legendary Deeds increase to **3 per round**.
 - **Flyby Attacks**: The Terror may move up to its flying speed and make **one attack** during that movement without provoking opportunity attacks.
 - The terror gains access to [_True Light_](/en/library/spells/true-light), and can cast it once.
+
+</Action>
 
 ## Shade Statlets
 
@@ -189,7 +244,7 @@ In case the shades cannot replicate a creature, they can manifest as one of the 
 >
 > - **Bag of Limbs.**  
 >   Accuracy +13, reach [= 1 stride =]; **24 ([% 4d8 +6 psychic %])**.  
->   If the target is Burning, deal **+10 psychic**.
+>   If the target is [# kw:condition:Burning #], deal **+10 psychic**.
 >
 > - **Cinderburst.**  
 >   _Spell._ [= 3 stride;ADJ =] cone; **28 ([% 8d6 psychic %])**, inflicts the [# kw:condition:Burning #] condition. Dex save half, no burning.
@@ -409,3 +464,5 @@ In case the shades cannot replicate a creature, they can manifest as one of the 
 >   When the Shade takes **30 or more damage in a single hit**, it becomes **[# kw:condition:Restrained #]** [# kw:briefly #].
 >
 > ---
+
+</Monster>

@@ -5,31 +5,40 @@ contentType: monsters
 
 # Arms of the Brume
 
-_Medium Humanoid (Empyrean), Lawful Evil_
-
-| **Armor Class**       | **Hit Points**   | **Speed** |
-| --------------------- | ---------------- | --------- |
-| 23 (Bonded Tombsteel) | 285 ([% 30d8 +150 %]) | [= 6 stride =]    |
-
-| **STR** | **DEX** | **CON** | **INT** | **WIS** | **CHA** |
-| ------- | ------- | ------- | ------- | ------- | ------- |
-| 22 (+6) | 18 (+4) | 20 (+5) | 14 (+2) | 16 (+3) | 18 (+4) |
-
-- **Saving Throws**: Strength +15, Dexterity +13, Constitution +14, Wisdom +12
-- **Skills**: Athletics +15, Perception +12, Intimidation +13
-- **Damage Resistances**: 
-- **Condition Immunities**:  [# kw:condition:Terrified #]
-- **Senses**: Darkvision [= 12 stride =], passive Perception 21
-- **Languages**: Common, Empyrean
-- **Challenge**: 23 (50,000 XP)
-- **Tier Bonus**: +8
+<Monster
+  size="Medium"
+  type="Humanoid (Empyrean)"
+  alignment="Lawful Evil"
+  armorClass="23 (Bonded Tombsteel)"
+  hitPoints="285 ([% 30d8 +150 %])"
+  speed="[= 6 stride =]"
+  str="22"
+  dex="18"
+  con="20"
+  int="14"
+  wis="16"
+  cha="18"
+  saves="Strength +15, Dexterity +13, Constitution +14, Wisdom +12"
+  skills="Athletics +15, Perception +12, Intimidation +13"
+  resistances=""
+  conditionImmunities="[# kw:condition:Terrified #]"
+  senses="Darkvision [= 12 stride =], passive Perception 21"
+  languages="Common, Empyrean"
+  challenge="23"
+  xp="50,000">
 
 ---
 
 ## Traits
 
+<Trait>
+
 #### Legendary Deeds
 Arms of the Brume has **3 legendary deeds per round**, and regains all expended deeds at the start of its turn.
+
+</Trait>
+
+<Trait>
 
 #### Entropic Sarcophagus
 
@@ -39,7 +48,11 @@ Arms of the Brume is encased in a sealed tombsteel shell designed for forward mo
 - Arms of the Brume has advantage on saving throws made to resist being pushed, pulled, or knocked [# kw:condition:prone #]
 - Arms of the Brume cannot benefit from bonuses to movement speed granted by mundane effects
 
+</Trait>
+
 ---
+
+<Trait>
 
 #### Grave Chill
 
@@ -49,7 +62,11 @@ When a creature hits Arms of the Brume with a melee weapon attack, the attacker 
 - Each activation consumes 1 charge
 - Charges regenerate at midnight, recovering [% 1d6 +6 %] charges
 
+</Trait>
+
 ---
+
+<Trait>
 
 #### Ferocious Rider
 
@@ -65,7 +82,11 @@ While mounted, Arms of the Brume gains the following benefits:
 - Cannot be critically hit
 - Opportunity attacks against Arms of the Brume are made at disadvantage
 
+</Trait>
+
 ---
+
+<Trait>
 
 #### Doctrine of the Brume
 
@@ -96,36 +117,55 @@ For each other rider of the Brume within range, all riders gain the following be
 A rider’s aura is suppressed only while that rider is [# kw:condition:incapacitated #].  
 [# kw:condition:Paralyzed #], [# kw:condition:stunned #], or [# kw:condition:unconscious #] creatures do not contribute to the doctrine.
 
+</Trait>
+
 ---
 
 ## Actions
+
+<Action>
 
 #### Multiattack
 
 Arms of the Brume makes three attacks with **Paivämies Javelin**.
 
----
+</Action>
 
-- **Paivämies Javelin**  
-  _Weapon (Spear), Heavy, Thrown (60/240), Magical_  
-  Accuracy +17, reach [= 2 stride =] or range [= 12 stride =]/[= 48 stride =], one creature.  
-  Hit: 26 ([% 3d10 +10 piercing %]) plus 18 ([% 4d8 holy %]).
-  The spear reforms in Arms of the Brume’s hand immediately after being thrown.
+<Action>
+
+#### Paivämies Javelin
+
+_Weapon (Spear), Heavy, Thrown (60/240), Magical_
+
+<Attack accuracy="+17" reach="[= 2 stride =]" range="[= 12 stride =]/[= 48 stride =]">
+
+Hit: 26 ([% 3d10 +10 piercing %]) plus 18 ([% 4d8 holy %]).
+The spear reforms in Arms of the Brume’s hand immediately after being thrown.
+
+</Attack>
+
+</Action>
 
 ---
 
 ## Minor Actions
 
-#### Binding Strike (recharge 6)
+<Action cost="1 Minor Action" recharge="6">
+
+#### Binding Strike
 
 Whenever Arms of the Brume hits a creature with Paivämies Javelin, it can use a Minor Action to attempt to restrain the target with illusory chains of tombsteel.
 - The target saves charisma against DC 26 or is [# kw:condition:restrained #] for 1 minute.
 - The [# kw:condition:restrained #] target can [# kw:resist #] at the end of each of its turns.
 - The attack deals an additional 18 ([% 4d8 holy %]) if the target is [# kw:condition:restrained #] when hit.
 
+</Action>
+
 ---
 
 ## Legendary Deed: Stratagem
+
+<Action deed="stratagem">
 
 #### Blinding Cascade
 
@@ -144,6 +184,8 @@ On a successful save, it takes half as much damage.
 Any creature that was in the original line automatically fails this saving throw.
 
 After the effect resolves, the spear reforms in Arms of the Brume’s hand.
+
+</Action>
 
 ---
 
@@ -164,6 +206,8 @@ Arms of the Brume can expend legendary deeds to use the options below. Only one 
 
 ## Legendary Deed: Phase
 
+<Action deed="phase">
+
 #### Bloodied (50% HP)
 
 While Arms of the Brume is bloodied and not [# kw:condition:incapacitated #]:
@@ -173,3 +217,7 @@ While Arms of the Brume is bloodied and not [# kw:condition:incapacitated #]:
 - Whenever Arms of the Brume reduces a creature to 0 HP, it may immediately make one additional attack
 
 If Arms of the Brume becomes [# kw:condition:incapacitated #], these benefits end immediately.
+
+</Action>
+
+</Monster>

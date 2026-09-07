@@ -7,31 +7,46 @@ contentType: monsters
 
 ## Borderlander Blademaster
 
-_Large Humanoid, Lawful Evil_
-
-| **Armor Class** | **Hit Points**    | **Speed**            |
-| --------------- | ----------------- | -------------------- |
-| 17              | 210 ([% 20d10 +100 %]) | [= 8 stride =], climb [= 6 stride =] |
-
-| **STR** | **DEX** | **CON** | **INT** | **WIS** | **CHA** |
-| ------- | ------- | ------- | ------- | ------- | ------- |
-| 24 (+7) | 12 (+1) | 22 (+6) | 8 (−1)  | 14 (+2) | 9 (−1)  |
-
-- **Challenge**: 8  
-- **Tier Bonus**: +3  
+<Monster
+  size="Large"
+  type="Humanoid"
+  alignment="Lawful Evil"
+  armorClass="17"
+  hitPoints="210 ([% 20d10 +100 %])"
+  speed="[= 8 stride =], climb [= 6 stride =]"
+  str="24"
+  dex="12"
+  con="22"
+  int="8"
+  wis="14"
+  cha="9"
+  challenge="8">
 
 ---
 
 ### Actions
 
+<Action>
+
 ##### Edge-Hammer
 
-Accuracy +10, reach [= 2 stride =], one creature.
-  On a hit, [% 3d12 +6 bludgeoning %]. Target saves Strength against DC 16 or is knocked [# kw:condition:prone #].
+<Attack accuracy="+10" reach="[= 2 stride =]">
 
-##### Cragstep (Recharge 5–6)
+On a hit, [% 3d12 +6 bludgeoning %]. Target saves Strength against DC 16 or is knocked [# kw:condition:prone #].
+
+</Attack>
+
+</Action>
+
+<Action recharge="5–6">
+
+##### Cragstep
 
 The blademaster may move up to [= 6 stride =] across vertical surfaces as though they were flat terrain. This movement does not provoke opportunity attacks.
+
+</Action>
+
+<Action>
 
 ##### Trinkets & Throwables
 
@@ -41,36 +56,56 @@ The blademaster may use any of the following trinkets as a Minor Action on their
   [Smoke Flask](/en/library/items/trinkets/smoke-flask),  
   [Heavy Nets](/en/library/items/trinkets/heavy-net).
 
+</Action>
+
+</Monster>
+
 ---
 
 ## Borderlander Barrel-lord
 
-_Large Humanoid, Lawful Evil_
-
-| **Armor Class** | **Hit Points**   | **Speed** |
-| --------------- | ---------------- | --------- |
-| 16              | 185 ([% 18d10 +90 %]) | [= 7 stride =]    |
-
-| **STR** | **DEX** | **CON** | **INT** | **WIS** | **CHA** |
-| ------- | ------- | ------- | ------- | ------- | ------- |
-| 20 (+5) | 10 (+0) | 24 (+7) | 13 (+1) | 10 (+0) | 15 (+2) |
-
-- **Challenge**: 8  
-- **Tier Bonus**: +3  
+<Monster
+  size="Large"
+  type="Humanoid"
+  alignment="Lawful Evil"
+  armorClass="16"
+  hitPoints="185 ([% 18d10 +90 %])"
+  speed="[= 7 stride =]"
+  str="20"
+  dex="10"
+  con="24"
+  int="13"
+  wis="10"
+  cha="15"
+  challenge="8">
 
 ---
 
 ### Actions
 
-##### Siege Cannon
- Accuracy +9, range [= 60 stride =], one creature.  
-  On a hit, [% 4d10 piercing %] or fire. Reload required after each shot.
+<Action>
 
-##### Scatter Shell (Recharge 5–6).
+##### Siege Cannon
+
+<Attack accuracy="+9" range="[= 60 stride =]">
+
+On a hit, [% 4d10 piercing %] or fire. Reload required after each shot.
+
+</Attack>
+
+</Action>
+
+<Action recharge="5–6">
+
+##### Scatter Shell
 
 All creatures in a [= 6 stride;ADJ =] cone save Dexterity against DC 16 or take **[% 6d8 fire %] and piercing damage** and are pushed [= 2 stride =] back (half on success, no push).
 
-##### Trinkets & Throwables. 
+</Action>
+
+<Action>
+
+##### Trinkets & Throwables
 
 The Barrel-lord may use any of the following trinkets as a Minor Action on their turn:
 
@@ -78,35 +113,52 @@ The Barrel-lord may use any of the following trinkets as a Minor Action on their
   [Flash-Salt Pot](/en/library/items/trinkets/flash-salt-pot),  
   [Spike Traps](/en/library/items/trinkets/spike-trap).
 
+</Action>
+
+</Monster>
+
 ---
 
 ## Borderlander Gunner
 
-_Large Humanoid, Lawful Evil_
-
-| **Armor Class** | **Hit Points**  | **Speed** |
-| --------------- | --------------- | --------- |
-| 15              | 85 ([% 10d10 +30 %]) | [= 6 stride =]    |
-
-| **STR** | **DEX** | **CON** | **INT** | **WIS** | **CHA** |
-| ------- | ------- | ------- | ------- | ------- | ------- |
-| 14 (+2) | 18 (+4) | 16 (+3) | 10 (+0) | 12 (+1) | 8 (−1)  |
-
-- **Challenge**: 5  
-- **Tier Bonus**: +3  
+<Monster
+  size="Large"
+  type="Humanoid"
+  alignment="Lawful Evil"
+  armorClass="15"
+  hitPoints="85 ([% 10d10 +30 %])"
+  speed="[= 6 stride =]"
+  str="14"
+  dex="18"
+  con="16"
+  int="10"
+  wis="12"
+  cha="8"
+  challenge="5"
+  tierBonus="+3">
 
 ---
 
 ### Actions
+
+<Action>
 
 ##### Hand-Cannon
 
 Accuracy +6, [= 24 stride =], one creature.
   On a hit, [% 3d10 piercing %].
 
+</Action>
+
+<Action>
+
 ##### Alchemist Fire Flask
 
 Thrown weapon. DC 13 DEX save or take **[% 2d6 fire %]** now and **[% 1d6 %] at the start of next turn**.
+
+</Action>
+
+<Action>
 
 ##### Trinkets & Throwables
 
@@ -117,35 +169,54 @@ The Borderlander Gunner may use any of the following trinkets as a Minor Action 
   [Caltrops](/en/library/items/trinkets/caltrops),  
   [Firecrackers](/en/library/items/trinkets/firecracker).
 
+</Action>
+
+</Monster>
+
 ---
 
 ## Borderlander Warrior
 
-_Large Humanoid, Lawful Evil_
-
-| **Armor Class** | **Hit Points**  | **Speed**            |
-| --------------- | --------------- | -------------------- |
-| 16              | 95 ([% 11d10 +33 %]) | [= 8 stride =], climb [= 4 stride =] |
-
-| **STR** | **DEX** | **CON** | **INT** | **WIS** | **CHA** |
-| ------- | ------- | ------- | ------- | ------- | ------- |
-| 18 (+4) | 14 (+2) | 17 (+3) | 9 (−1)  | 11 (+0) | 7 (−2)  |
-
-- **Challenge**: 4  
-- **Tier Bonus**: +2  
+<Monster
+  size="Large"
+  type="Humanoid"
+  alignment="Lawful Evil"
+  armorClass="16"
+  hitPoints="95 ([% 11d10 +33 %])"
+  speed="[= 8 stride =], climb [= 4 stride =]"
+  str="18"
+  dex="14"
+  con="17"
+  int="9"
+  wis="11"
+  cha="7"
+  challenge="4">
 
 ---
 
 ### Actions
 
+<Action>
+
 ##### Jagged Blade / Greatclub
 
-Accuracy +7, [= 2 stride =] reach, one creature.
-  On a hit, [% 2d10 +4 slashing %] or bludgeoning.
+<Attack accuracy="+7" reach="[= 2 stride =]">
+
+On a hit, [% 2d10 +4 slashing %] or bludgeoning.
+
+</Attack>
+
+</Action>
+
+<Action>
 
 ##### Net Throw
 
 Target is [# kw:condition:restrained #]; **DC 14 Strength** to escape.
+
+</Action>
+
+<Action>
 
 ##### Trinkets & Throwables
 
@@ -155,3 +226,7 @@ The Borderlander Warrior may use any of the following trinkets as a Minor Action
   [Bolas](/en/library/items/trinkets/bolas),  
   [Gore-Hooks](/en/library/items/trinkets/gore-hook),  
   [Jawbone Shivs](/en/library/items/trinkets/throwable-shiv).
+
+</Action>
+
+</Monster>

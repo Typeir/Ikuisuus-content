@@ -5,29 +5,35 @@ contentType: monsters
 
 # Silent Magic Hoarder
 
-_Huge Aberration, Chaotic Neutral_
-
-| **Armor Class**    | **Hit Points**   | **Speed**            |
-| ------------------ | ---------------- | -------------------- |
-| 17 (natural armor) | 248 ([% 23d12 +92 %]) | [= 6 stride =], climb [= 6 stride =] |
-
-| **STR** | **DEX** | **CON** | **INT** | **WIS** | **CHA** |
-| ------- | ------- | ------- | ------- | ------- | ------- |
-| 22 (+6) | 14 (+2) | 18 (+4) | 16 (+3) | 14 (+2) | 18 (+4) |
-
-- **Saving Throws**: Strength +9, Constitution +8, Wisdom +6, Charisma +8
-- **Skills**: Arcana +7, Perception +6, Deception +8
-- **Damage Resistances**: —
-- **Damage Immunities**: psychic
-- **Condition Immunities**: [# kw:condition:Charmed #], [# kw:condition:Frightened #]
-- **Senses**: Blindsight [= 12 stride =], Tremorsense [= 12 stride =], Darkvision [= 24 stride =], Passive Perception 16
-- **Languages**: Understands Deep Speech and Common; speaks only in faint murmurs
-- **Challenge**: 15 (13,000 XP)
-- **Tier Bonus**: +5
+<Monster
+  size="Huge"
+  type="Aberration"
+  alignment="Chaotic Neutral"
+  armorClass="17 (natural armor)"
+  hitPoints="248 ([% 23d12 +92 %])"
+  speed="[= 6 stride =], climb [= 6 stride =]"
+  str="22"
+  dex="14"
+  con="18"
+  int="16"
+  wis="14"
+  cha="18"
+  saves="Strength +9, Constitution +8, Wisdom +6, Charisma +8"
+  skills="Arcana +7, Perception +6, Deception +8"
+  resistances="—"
+  immunities="psychic"
+  conditionImmunities="[# kw:condition:Charmed #], [# kw:condition:Frightened #]"
+  senses="Blindsight [= 12 stride =], Tremorsense [= 12 stride =], Darkvision [= 24 stride =], Passive Perception 16"
+  languages="Understands Deep Speech and Common; speaks only in faint murmurs"
+  challenge="15"
+  xp="13,000"
+  saveDc="16">
 
 ## Traits
 
 ---
+
+<Trait>
 
 #### More Than One Ring
 
@@ -154,6 +160,10 @@ Roll a d100 on the table below.
 | 99 | **Regain Hit Points.** The hoarder regains all hit points. |
 | 100 | **Regain Spell Slots.** The hoarder regains all expended spell slots. |
 
+</Trait>
+
+<Trait>
+
 #### Innate Spellcasting (Psionics)
 
 **Spell Save DC**: 16  
@@ -163,50 +173,87 @@ The Hoarder can innately cast the following spells, requiring no components:
 - **3/day each**: [_Blur_](/en/library/spells/blur), [_Mirror Image_](/en/library/spells/mirror-image), [_Misty Step_](/en/library/spells/misty-step), [_Suggestion_](/en/library/spells/suggestion), [_Silence_](/en/library/spells/silence)
 - **1/day each**: [_Confusion_](/en/library/spells/confusion), [_Dimension Door_](/en/library/spells/dimension-door), [_Polymorph_](/en/library/spells/polymorph), [_Mind Blast_](/en/library/spells/mind-blast)
 
+</Trait>
+
+<Trait>
+
 #### Silent Presence
 
 The Hoarder produces no natural sound, and its voice is heard only as faint murmurs.  
 Creatures within **[= 6 stride =]** have disadvantage on Wisdom (Perception) checks that rely on hearing, and spellcasters within this range must succeed on a **DC 16 Concentration check** to cast a spell with a verbal component.
 
+</Trait>
+
+<Trait>
+
 #### All-Around Eyes
 
 The Hoarder has advantage on Wisdom (Perception) checks and cannot be surprised.
+
+</Trait>
+
+<Trait>
 
 #### Reality Saturation
 
 The Hoarder has advantage on saving throws against spells and magical effects.  
 Whenever it succeeds on such a saving throw, it regains **10 hit points**.
 
+</Trait>
+
 ---
 
 ## Actions
+
+<Action>
 
 #### Multiattack
 
 The Hoarder makes **three Slam attacks**, or it uses **Hurl Relic** once and makes two Slam attacks.
 
-- **Slam.**  
-  Accuracy +9, reach **[= 2 stride =]**, one creature.  
-  On a hit, 12 ([% 2d4 +6 bludgeoning %]).
+<Attack accuracy="+9" reach="[= 2 stride =]">
+
+##### Slam
+
+On a hit, 12 ([% 2d4 +6 bludgeoning %]).
+
+</Attack>
+
+</Action>
+
+<Action>
 
 #### Hurl Relic.
 
-Accuracy +7, range **[= 12 stride =]/[= 36 stride =]**, one creature.  
+<Attack accuracy="+7" range="[= 12 stride =]/[= 36 stride =]">
+
 On a hit, 18 ([% 3d8 +5 bludgeoning %]).  
 On a hit, roll once on **More Than One Ring** and apply the effect centered on the target.
+
+</Attack>
+
+</Action>
+
+<Action>
 
 #### Disruptive Pulse (Recharge 5–6).
 
 Each creature of The Hoarder’s choice within **[= 6 stride =]** saves Constitution against DC 16, halving **27 ([% 6d8 psychic %])**.  
 Creatures that fail are also **[# kw:condition:stunned #] [# kw:briefly #]**.
 
+</Action>
+
 ---
 
 ## Reactions
 
+<Action cost="1 Reaction">
+
 #### Phase Flicker
 
 When The Hoarder is hit by an attack, it can teleport up to **[= 6 stride =]** to an unoccupied space it can see.
+
+</Action>
 
 ---
 
@@ -214,7 +261,7 @@ When The Hoarder is hit by an attack, it can teleport up to **[= 6 stride =]** t
 
 The Hoarder has **2 legendary deeds per round**, and regains all expended deeds at the start of its turn.
 
-#### Legendary Deed: Resist (1/Day)
+#### Legendary Deed: Resist 1/[# kw:Recovery #]
 
 When The Hoarder fails a saving throw, it can expend a legendary deed to succeed instead.
 
@@ -231,10 +278,20 @@ The Hoarder can expend legendary deeds to use the options below. Only one legend
 
 ## Legendary Deed: Phase
 
+<Action deed="phase">
+
 #### Doomed
 
 The Hoarder summons [Bayle the Great](/en/library/monsters/abominable-avian), a giant abominable duck, to fight by his side.
 
+</Action>
+
+<Action deed="phase">
+
 #### Slain
 
 When The Hoarder is **slain**, it activates **More Than One Ring** three times, resolving each roll in sequence, centered on itself.
+
+</Action>
+
+</Monster>

@@ -5,8 +5,6 @@ contentType: monsters
 
 # Mycelial Marauder
 
-_Large Aberration, Neutral Evil_
-
 <BlendedImage
   src='/library/images/monsters/mycelial-marauder.webp'
   alt='Mycelial Marauder'
@@ -16,26 +14,33 @@ A shambling column of writhing black mycelial strands, the Mycelial Marauder is 
 
 These creatures fear open sky. They lair in rot-choked caves, collapsed Empyrean undercrofts, and the corpse-forests of [Kalmora](/en/library/world/the-great-tale-of-everything). Where two are found, a third is seldom far — they bud asexually, and a mated pair produces a sporeling within a fortnight of claiming fresh territory.
 
-| **Armor Class**        | **Hit Points**    | **Speed**            |
-| ---------------------- | ----------------- | -------------------- |
-| 13 (unarmored strands) | 136 ([% 16d10 +48 %]) | [= 6 stride =], climb [= 6 stride =] |
-
-| **STR** | **DEX** | **CON** | **INT** | **WIS** | **CHA** |
-| ------- | ------- | ------- | ------- | ------- | ------- |
-| 19 (+4) | 14 (+2) | 17 (+3) | 6 (–2)  | 12 (+1) | 8 (–1)  |
-
-- **Saving Throws**: Str +7, Con +6
-- **Skills**: Athletics +7, Perception +4, Stealth +5
-- **Damage Resistances**: Dark
-- **Condition Immunities**: [# kw:condition:Charmed #], [# kw:condition:Terrified #]
-- **Senses**: Darkvision [= 12 stride =], passive Perception 14
-- **Languages**: —
-- **Challenge**: 6 (2,300 XP)
-- **Tier Bonus**: +2
+<Monster
+  size="Large"
+  type="Aberration"
+  alignment="Neutral Evil"
+  armorClass="13 (unarmored strands)"
+  hitPoints="136 ([% 16d10 +48 %])"
+  speed="[= 6 stride =], climb [= 6 stride =]"
+  str="19"
+  dex="14"
+  con="17"
+  int="6"
+  wis="12"
+  cha="8"
+  saves="Str +7, Con +6"
+  skills="Athletics +7, Perception +4, Stealth +5"
+  resistances="Dark"
+  conditionImmunities="[# kw:condition:Charmed #], [# kw:condition:Terrified #]"
+  senses="Darkvision [= 12 stride =], passive Perception 14"
+  languages="—"
+  challenge="6"
+  xp="2,300">
 
 ---
 
 ## Traits
+
+<Trait>
 
 #### Paired Hunters
 
@@ -44,37 +49,62 @@ While the marauder is within **[= 6 stride =]** of another conscious Mycelial Ma
 - It has **advantage on attack rolls** against creatures it is grappling.
 - The **escape DC** of its grapples increases by **2**.
 
+</Trait>
+
+<Trait>
+
 #### Siphon Vigor
 
 A creature **[# kw:condition:grappled #]** by the marauder at the start of the marauder's turn saves Constitution against DC 14 or gains **1 level of Withering**. Each Withering level imposes a cumulative **−2 penalty to Strength, Dexterity, and Constitution ability checks and saving throws**. If the total penalty reaches **−6**, the creature is **[# kw:condition:paralyzed #]** until the grapple ends.
 
 All Withering levels end when the creature finishes a **short or long rest**. _Restoration_ or similar magic also removes them.
 
+</Trait>
+
+<Trait>
+
 #### Sunlight Sensitivity
 
 While in **direct sunlight**, the marauder has **disadvantage on attack rolls** and **Wisdom (Perception) checks** that rely on sight.
+
+</Trait>
 
 ---
 
 ## Actions
 
+<Action>
+
 #### Multiattack
 
 The marauder makes two **Mycelial Lash** attacks, or one **Mycelial Lash** and one **Constrict**.
 
-- **Mycelial Lash.**  
-  Accuracy +7, reach [= 3 stride =], one creature.  
-  On a hit, 13 ([% 2d8 +4 slashing %]) plus 9 ([% 2d8 dark %]).  
-  If the target is a Large or smaller creature, it is **[# kw:condition:grappled #]** (escape DC 15). The marauder can grapple up to **two** creatures at a time — one per lash. A lash grappling a creature cannot be used to attack other targets.
+<Attack accuracy="+7" reach="[= 3 stride =]">
 
-- **Constrict.**  
-  One creature **[# kw:condition:grappled #]** by the marauder.  
-  The marauder tightens its fungal strands. The target takes **22 ([% 4d8 +4 bludgeoning %])** damage, and the marauder immediately triggers **Siphon Vigor** against that creature.
+##### Mycelial Lash
+
+On a hit, 13 ([% 2d8 +4 slashing %]) plus 9 ([% 2d8 dark %]).  
+If the target is a Large or smaller creature, it is **[# kw:condition:grappled #]** (escape DC 15). The marauder can grapple up to **two** creatures at a time — one per lash. A lash grappling a creature cannot be used to attack other targets.
+
+</Attack>
+
+##### Constrict
+
+One creature **[# kw:condition:grappled #]** by the marauder.  
+The marauder tightens its fungal strands. The target takes **22 ([% 4d8 +4 bludgeoning %])** damage, and the marauder immediately triggers **Siphon Vigor** against that creature.
+
+</Action>
 
 ---
 
 ## Reactions
 
+<Action cost="1 Reaction">
+
 #### Death Burst
 
 When the marauder is reduced to **0 hit points**, its body ruptures in a final release of spores. Each creature within **[= 2 stride =]** of it saves Constitution against DC 14 or immediately rolls once on the [# kw:Black Rot #] table. Any creature **[# kw:condition:grappled #]** by the marauder when it dies automatically fails this save.
+
+</Action>
+
+</Monster>

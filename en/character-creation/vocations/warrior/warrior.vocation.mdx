@@ -11,17 +11,17 @@ Warriors master various weapon techniques, and a well-equipped Warrior always ha
 
 ---
 
+<Vocation
+  primaryAbility="Strength or Dexterity"
+  hitDie="d10 per Warrior level"
+  saves="Strength and Constitution"
+  skills="Choose 2: Acrobatics, Animal Handling, Athletics, History, Insight, Intimidation, Persuasion, Perception, or Survival"
+  weapons="Simple and Martial weapons"
+  armor="Light, Medium, and Heavy Armor; Shields">
+
 ## Core Warrior Traits
 
-| Trait                          | Description                                                                                                                                                                                                                    |
-| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Primary Ability**            | Strength or Dexterity                                                                                                                                                                                                          |
-| **Hit Point Die**              | d10 per Warrior level                                                                                                                                                                                                          |
-| **Saving Throw Proficiencies** | Strength and Constitution                                                                                                                                                                                                      |
-| **Skill Proficiencies**        | Choose 2: Acrobatics, Animal Handling, Athletics, History, Insight, Intimidation, Persuasion, Perception, or Survival                                                                                                          |
-| **Weapon Proficiencies**       | Simple and Martial weapons                                                                                                                                                                                                     |
-| **Armor Training**             | Light, Medium, and Heavy Armor; Shields                                                                                                                                                                                        |
-| **Starting Equipment**         | Choose A, B, or C:<br/>(A) Chain Mail, Greatsword, Flail, 8 Javelins, Dungeoneer’s Pack, and 4 gp<br/>(B) Studded Leather Armor, Scimitar, Shortsword, Longbow, 20 Arrows, Quiver, Dungeoneer’s Pack, and 11 gp<br/>(C) 155 gp |
+<Equipment>Choose A, B, or C:<br/>(A) Chain Mail, Greatsword, Flail, 8 Javelins, Dungeoneer’s Pack, and 4 gp<br/>(B) Studded Leather Armor, Scimitar, Shortsword, Longbow, 20 Arrows, Quiver, Dungeoneer’s Pack, and 11 gp<br/>(C) 155 gp</Equipment>
 
 ---
 
@@ -41,44 +41,39 @@ Warriors master various weapon techniques, and a well-equipped Warrior always ha
 
 ## Warrior Vocation Features
 
-| Level | Tier Bonus | Features                                          | Second Wind Uses | Weapon Mastery |
-| ----- | ---------- | ------------------------------------------------- | ---------------- | -------------- |
-| 1     | +1         | Fighting Style, Second Wind, Weapon Mastery       | 2                | 3              |
-| 2     | +1         | Action Surge (One Use), Tactical Mind             | 2                | 3              |
-| 3     | +1         | Warrior Specialization                            | 2                | 3              |
-| 4     | +2         | Feat                                              | 3                | 4              |
-| 5     | +2         | Extra Attack, Tactical Shift                      | 3                | 4              |
-| 6     | +2         | Feat                                              | 3                | 4              |
-| 7     | +3         | Specialization Feature                            | 3                | 4              |
-| 8     | +3         | Feat                                              | 3                | 4              |
-| 9     | +3         | Indomitable (One Use), Tactical Master            | 3                | 4              |
-| 10    | +4         | Specialization Feature                            | 4                | 5              |
-| 11    | +4         | Two Extra Attacks                                 | 4                | 5              |
-| 12    | +4         | Feat                                              | 4                | 5              |
-| 13    | +5         | Indomitable (Two Uses), Studied Attacks           | 4                | 5              |
-| 14    | +5         | Feat                                              | 4                | 5              |
-| 15    | +5         | Specialization Feature                            | 4                | 5              |
-| 16    | +6         | Feat                                              | 4                | 6              |
-| 17    | +6         | Action Surge (Two Uses), Indomitable (Three Uses) | 4                | 6              |
-| 18    | +6         | Specialization Feature                            | 4                | 6              |
-| 19    | +7         | Epic Boon                                         | 4                | 6              |
-| 20    | +7         | Three Extra Attacks                               | 4                | 6              |
-| 21    | +7         | Specialization feature                            | 4                | 6              |
-| 22    | +8         | Masterful Warrior                                 | 5                | -              |
+<Progression feats="4, 6, 8, 12, 14, 16" specialization="7, 10, 15, 18" levels="22">
+  <Column label="Features">
+    <Row at="13" unique>Indomitable (Two Uses)</Row>
+    <Row at="17" unique>Action Surge (Two Uses), Indomitable (Three Uses)</Row>
+    <Row at="20" unique>Three Extra Attacks</Row>
+    <Row at="21" unique>Specialization feature</Row>
+    <Row at="22" unique>Masterful Warrior</Row>
+  </Column>
+  <Column label="Second Wind Uses" values="2, 2, 2, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 5" />
+  <Column label="Weapon Mastery" values="3, 3, 3, 4, 4, 4, 4, 4, 4, 5, 5, 5, 5, 5, 5, 6, 6, 6, 6, 6, 6, " />
+</Progression>
 
 ---
 
 <Collapsible>
-## 1st Level – Fighting Style
+
+<Feature level="1">
+
+## Fighting Style
 
 You gain a **[Fighting Style feat](/en/library/character-creation/feats/fighting-styles)** of your choice. **Defense** is recommended. When you gain a Fighting Style this way, you do not increase an ability score.
 
 Whenever you gain a Warrior level, you may replace your chosen Fighting Style feat with a different one.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 1st Level – Second Wind
+
+<Feature level="1">
+
+## Second Wind
 
 As a **Minor Action**, you regain hit points equal to **[% 1d10 %] + your Warrior level**.
 
@@ -87,20 +82,30 @@ As a **Minor Action**, you regain hit points equal to **[% 1d10 %] + your Warrio
 
 Refer to the **Second Wind Uses** column in the Warrior Features table for scaling.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 1st Level – Weapon Mastery
+
+<Feature level="1">
+
+## Weapon Mastery
 
 Choose **three Simple or Martial weapons**. You can use the **Mastery properties** of those weapons.
 
 - When you finish a [# kw:Recovery #], you may change one of these choices.
 - Your number of mastered weapons increases at higher levels (see the Warrior Features table).
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 2nd Level – Action Surge
+
+<Feature level="2">
+
+## Action Surge
 
 When you use this feature, you gain **one additional Action**, which you can take as a **Major Action**, regardless of if you have already taken a Major Action or not,
 This action can be used ad libitum for any valid purpose.
@@ -108,19 +113,29 @@ This action can be used ad libitum for any valid purpose.
 - You regain this feature after a **[# kw:Repose #] or [# kw:Recovery #]**.
 - At **level 17**, you may use it **twice** per rest (but only once per turn).
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 2nd Level – Tactical Mind
+
+<Feature level="2">
+
+## Tactical Mind
 
 When you fail an **ability check**, you may expend a use of **Second Wind** to reroll a **d10** and add it to the check.
 
 - If the check still fails, this use of Second Wind is **not expended**.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible open>
-## 3rd Level – Warrior Specialization
+
+<Feature level="3">
+
+## Warrior Specialization
 
 You gain a Warrior specialization. Options include:
 
@@ -132,33 +147,53 @@ You gain a Warrior specialization. Options include:
 | **Psi Warrior**                                                                                    |
 | [Sword Saint](/en/library/character-creation/vocations/warrior/sword-saint)         |
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 4th Level – Ability Score Improvement
+
+<Feature level="4">
+
+## Feat
 
 You gain the **[Ability Score Improvement feat](/en/library/character-creation/feats/ability-score-improvement)** or another **[feat of your choice](/en/library/character-creation/feats)**.
 
 You gain this feature again at levels **6, 8, 12, 14, and 16**.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 5th Level – Extra Attack
+
+<Feature level="5">
+
+## Extra Attack
 
 When you take the **Attack action**, you may attack **twice** instead of once.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 5th Level – Tactical Shift
+
+<Feature level="5">
+
+## Tactical Shift
 
 When you activate **Second Wind**, you may move up to **half your Speed** without provoking Opportunity Attacks.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 9th Level – Indomitable
+
+<Feature level="9">
+
+## Indomitable
 
 When you fail a **saving throw**, you may reroll it and add a bonus equal to your **Warrior level**.
 
@@ -167,35 +202,57 @@ When you fail a **saving throw**, you may reroll it and add a bonus equal to you
 - At **level 13**, use it **twice** per rest.
 - At **level 17**, use it **three times** per rest.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 9th Level – Tactical Master
+
+<Feature level="9">
+
+## Tactical Master
 
 When you attack with a weapon you have **Mastery** of, you may replace its property with **Push**, **Sap**, or **Slow** for that attack.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 11th Level – Two Extra Attacks
+
+<Feature level="11">
+
+## Two Extra Attacks
 
 When you take the **Attack action**, you may attack **three times** instead of once.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 13th Level – Studied Attacks
+
+<Feature level="13">
+
+## Studied Attacks
 
 When you make an **attack roll** against a creature and miss, you gain **Advantage** on your next attack roll against that creature before the end of your next turn.
 
+</Feature>
+
 </Collapsible>
 
 <Collapsible>
-## 19th Level – Epic Boon
+
+<Feature level="19">
+
+## Epic Boon
 
 You gain an **[Epic Boon feat](/en/library/character-creation/feats)** or another feat of your choice.
 
 **[Boon of Perfect Aim](/en/library/character-creation/feats/boon-of-perfect-aim)** is recommended.
+
+</Feature>
 
 </Collapsible>
 
@@ -217,3 +274,5 @@ You have fought battles unending, mastering every form of combat.
 - Once per turn When you use **Tactical Master**, you may apply two different properties to the same attack, or apply a property from \*_Tactical Master_ in addition to your weapons own mastery.
 
 </Collapsible>
+
+</Vocation>
