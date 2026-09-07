@@ -26,28 +26,30 @@ This spell has no effect on the undead or constructs.
 Targets that are plant creatures or magical plants save with disadvantage and take maximum damage.
 A mundane plant that isn't a creature simply withers and dies.
 
-**Overcast:** the spell gains [% 1d8 %] damage.
+<Overcast>
 
-**Overcast (6th+):** **The Hollow.**  
-**Targets**: creatures within a [= 8 stride;ADJ =]-radius sphere centered on a point within range  
+**(per +1):** the spell gains [% 1d8 %] damage.
+
+<Feature targets="creatures within a [= 8 stride;ADJ =]-radius sphere centered on a point within range">
+
+#### Hollowing <span>6th+</span>
+
 Targets save Constitution, halving [% 8d8 dark %].
 The corpses of creatures slain in the area are hollowed out, leaving a crumbling husk behind; these corpses cannot be reanimated or healed by any means.
 
-**Overcast (8th+):** **Finality.**  
-**Targets**: creatures within a [= 8 stride;ADJ =] cube of momentary, impenetrable darkness centered on a point within range  
+</Feature>
+
+<Feature targets="creatures within a [= 8 stride;ADJ =] cube of momentary, impenetrable darkness centered on a point within range">
+
+#### Finality <span>8th+</span>
+
 Targets save Constitution, halving [% 10d8 dark %].
 Aberrations, Monstrosities, and Celestials take maximum damage from it.
 Corpses suffer the same fate as in **The Hollow**.
 
+</Feature>
+</Overcast>
+
 </Spell>
 
-#### Spell Lists
-
-This spell appears on the following spell lists:
-
-- [_Druid Spell List_](/en/library/character-creation/vocations/druid/spells)
-- [_Esper Spell List_](/en/library/character-creation/vocations/esper/spells)
-- [_Revenant Spell List_](/en/library/character-creation/vocations/revenant/spells)
-- [_Scion Spell List_](/en/library/character-creation/vocations/scion/spells)
-- [_Villein Spell List_](/en/library/character-creation/vocations/villein/spells)
-- [_Wizard Spell List_](/en/library/character-creation/vocations/wizard/spells)
+<SpellLists members={["druid", "esper", "revenant", "scion", "villein", "wizard"]} />

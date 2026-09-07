@@ -25,22 +25,21 @@ Phantom locusts pour from your shadow and swarm the target's head, filling its s
 For the duration, the target has disadvantage on **Wisdom (Perception)** checks, **Dexterity (Stealth)** checks, and [# kw:Concentration #] checks, and it cannot benefit from [# kw:condition:Invisible #].  
 They can [# kw:resist #] Constitution.  
 
-**Overcast:** target one additional creature.  
+<Overcast>
 
-**Overcast (4th+):** **The Swarm.**  
-**Targets**: creatures within a [= 2 stride;ADJ =]-radius sphere centred on a point you choose within range  
+**(per +1):** target one additional creature.  
+
+<Feature targets="creatures within a [= 2 stride;ADJ =]-radius sphere centred on a point you choose within range">
+
+#### The Swarm <span>4th+</span>
+
 The locusts fill the sphere, spreading around corners, and the spell gains the [( form:swarm )] aspect. As a [# kw:persistent #] effect, targets suffer the spell's effects. As a [# kw:delayed #] effect, they take [% 6d4 slashing %].  
 
-**Overcast (4th+) (per +1):** the delayed damage gains [% 1d4 %].
+</Feature>
+
+**(4th+) (per +1):** the delayed damage gains [% 1d4 %].
+</Overcast>
 
 </Spell>
 
-#### Spell Lists
-
-This spell appears on the following spell lists:
-
-- [_Druid Spell List_](/en/library/character-creation/vocations/druid/spells)
-- [_Shaman Spell List_](/en/library/character-creation/vocations/shaman/spells)
-- [_Wizard Spell List_](/en/library/character-creation/vocations/wizard/spells)
-- [_Pilgrim Spell List_](/en/library/character-creation/vocations/pilgrim/spells)
-- [_Revenant Spell List_](/en/library/character-creation/vocations/revenant/spells)
+<SpellLists members={["druid", "shaman", "wizard", "pilgrim", "revenant"]} />

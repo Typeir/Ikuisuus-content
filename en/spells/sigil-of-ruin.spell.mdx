@@ -54,10 +54,14 @@ A stored spell that requires concentration lasts its full duration without your 
 
 Once triggered, the sigil is spent and the spell ends.
 
-**Overcast:** a **Ruin** sigil gains [% 1d8 %] damage, and a **Stored Casting** sigil can hold a spell of up to the slot's level.
+<Overcast>
 
-**Overcast (7th+):** **Sigil of Oblieration.**  
-**Targets**: creatures within a [= 12 stride;ADJ =]-radius sphere centred on the sigil  
+**(per +1):** a **Ruin** sigil gains [% 1d8 %] damage, and a **Stored Casting** sigil can hold a spell of up to the slot's level.
+
+<Feature targets="creatures within a [= 12 stride;ADJ =]-radius sphere centred on the sigil">
+
+#### Sigil of Oblieration <span>7th+</span>
+
 On triggering, it flares to fill the sphere with dim light for 10 minutes.
 As a [# kw:persistent #], [# kw:delayed #] effect before the light fades, choose one of the following effects at inscription:
 
@@ -71,16 +75,11 @@ They can [# kw:resist #] Wisdom.
 - **Discord.** Targets save Constitution or are **[# kw:condition:incapacitated #]** with uncontrollable laughter for a minute.
 They can [# kw:resist #] Constitution.
 
-**Overcast (7th+) (per +1):** the **Death** effect gains [% 1d10 %] damage.
+</Feature>
+
+**(7th+) (per +1):** the **Death** effect gains [% 1d10 %] damage.
+</Overcast>
 
 </Spell>
 
-#### Spell Lists
-
-This spell appears on the following spell lists:
-
-- [_Bard Spell List_](/en/library/character-creation/vocations/bard/spells)
-- [_Pilgrim Spell List_](/en/library/character-creation/vocations/pilgrim/spells)
-- [_Druid Spell List_](/en/library/character-creation/vocations/druid/spells)
-- [_Tinker Spell List_](/en/library/character-creation/vocations/tinker/spells)
-- [_Wizard Spell List_](/en/library/character-creation/vocations/wizard/spells)
+<SpellLists members={["bard", "pilgrim", "druid", "tinker", "wizard"]} />
