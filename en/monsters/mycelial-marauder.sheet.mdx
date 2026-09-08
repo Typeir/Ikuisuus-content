@@ -38,6 +38,8 @@ These creatures fear open sky. They lair in rot-choked caves, collapsed Empyrean
 
 ---
 
+<Sheet>
+
 ## Traits
 
 <Trait>
@@ -71,9 +73,11 @@ While in **direct sunlight**, the marauder has **disadvantage on attack rolls** 
 
 ---
 
-## Actions
+## Features
 
-<Action>
+### Actions
+
+<Action cost="1 Major Action">
 
 #### Multiattack
 
@@ -88,16 +92,21 @@ If the target is a Large or smaller creature, it is **[# kw:condition:grappled #
 
 </Attack>
 
-##### Constrict
+<Feature>
+
+##### Constrict <span>[# kw:attack alteration #]</span>
 
 One creature **[# kw:condition:grappled #]** by the marauder.  
 The marauder tightens its fungal strands. The target takes **22 ([% 4d8 +4 bludgeoning %])** damage, and the marauder immediately triggers **Siphon Vigor** against that creature.
+
+</Feature>
 
 </Action>
 
 ---
 
-## Reactions
+
+### Reactions
 
 <Action cost="1 Reaction">
 
@@ -106,5 +115,7 @@ The marauder tightens its fungal strands. The target takes **22 ([% 4d8 +4 bludg
 When the marauder is reduced to **0 hit points**, its body ruptures in a final release of spores. Each creature within **[= 2 stride =]** of it saves Constitution against DC 14 or immediately rolls once on the [# kw:Black Rot #] table. Any creature **[# kw:condition:grappled #]** by the marauder when it dies automatically fails this save.
 
 </Action>
+
+</Sheet>
 
 </Monster>

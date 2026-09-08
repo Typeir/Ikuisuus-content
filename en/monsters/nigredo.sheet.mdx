@@ -89,9 +89,22 @@ Creatures **immune to disease and curses** ignore this feature and instead take 
 
 </Trait>
 
-## Actions
 
-<Action>
+### Spellcasting
+
+Nigredo is an **INT-based spellcaster** (save **DC 22**, accuracy **+14**).
+
+<SpellList spells="omen, ashen-anointment, minor-illusion, command, shield, twilight-bolt, hold, silence, bestow-curse, objection, excision, shadow-of-the-hunt, cloudkill, perfect-barrier, harm, rot-gods-caress, feeblemind">
+  <Column label="Slots / Level" values="At Will, At Will, At Will, 4 (1st), 4 (1st), 4 (1st), 3 (2nd), 3 (2nd), 3 (3rd), 3 (3rd), 3 (4th), 3 (4th), 2 (5th), 2 (5th), 1 (6th), 1 (7th), 1 (8th)" />
+</SpellList>
+
+</Monster>
+
+## Features
+
+### Actions
+
+<Action cost="1 Major Action">
 
 #### Multiattack
 
@@ -105,18 +118,26 @@ Hit: [% 4d10 +8 piercing %] plus [% 4d8 dark %]. Target makes a DC 22 STR save o
 
 </Attack>
 
-##### Flyburst (Recharge 4–6)
+<Feature>
+
+##### Flyburst (Recharge 4–6) <span>[# kw:attack alteration #]</span>
 
 Nigredo releases swarms of necrotic flies from every segment of their Endless Form.  
 All creatures within [= 3 stride =] of any part of Nigredo's body must succeed on a DC 22 CON save or take **[% 10d8 dark %]** and become **[# kw:condition:blinded #]** until the start of their next turn. On success, creatures take half damage and avoid blindness.
 
-##### Exhale the Rot (Recharge 5–6)
+</Feature>
+
+<Feature>
+
+##### Exhale the Rot (Recharge 5–6) <span>[# kw:attack alteration #]</span>
 
 Nigredo exhales spores in a [= 18 stride;ADJ =] cone. Creatures make a DC 22 CON save or take [% 12d8 dark %] and become rotted (disadvantage on CON saves, healing halved) for 1 minute, half as much damage on a save.
 
+</Feature>
+
 </Action>
 
-<Action charges="1/day">
+<Action charges="1/day" cost="1 Major Action">
 
 #### Ashfall of Empires
 
@@ -131,7 +152,11 @@ Rotting spores fall in a [= 24 stride;ADJ =] radius. Creatures make three DC 22 
 
 ---
 
-## Legendary Deed: Act
+
+### Deeds
+
+
+#### Act
 
 Nigredo can expend legendary deeds to use the options below. Only one legendary deed can be used at a time and only at the end of another creature's turn.
 
@@ -141,13 +166,3 @@ Nigredo can expend legendary deeds to use the options below. Only one legendary 
 - **Cast Spell.** (Costs 2 Deeds) Cast a spell of 4th level or lower.
 
 ---
-
-## Spellcasting
-
-Nigredo is an **INT-based spellcaster** (spell save **DC 22**, spell attack **+14**).
-
-<SpellList spells="omen, ashen-anointment, minor-illusion, command, shield, twilight-bolt, hold, silence, bestow-curse, objection, excision, shadow-of-the-hunt, cloudkill, perfect-barrier, harm, rot-gods-caress, feeblemind">
-  <Column label="Slots / Level" values="At Will, At Will, At Will, 4 (1st), 4 (1st), 4 (1st), 3 (2nd), 3 (2nd), 3 (3rd), 3 (3rd), 3 (4th), 3 (4th), 2 (5th), 2 (5th), 1 (6th), 1 (7th), 1 (8th)" />
-</SpellList>
-
-</Monster>

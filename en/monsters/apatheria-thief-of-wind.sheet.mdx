@@ -41,6 +41,8 @@ contentType: monsters
 
 ---
 
+<Sheet>
+
 ## Traits
 
 <Trait>
@@ -127,15 +129,34 @@ While mounted, the Thief of Winds’s melee weapon attacks deal **an additional 
 
 </Trait>
 
-## Mounted Combatant
 
-This creature rides a [Lunar Manticore](/en/library/monsters/lunar-manticore)
+### Spellcasting
 
----
+The Thief of Winds is a spellcaster. Their casting ability is **Charisma**.
 
-## Actions
+- **Accuracy**: +7
+- They follow Paladin-style spellcasting and always have certain Oath spells prepared.
 
-<Action>
+**Spell Slots**:
+
+- 1st-level: 4 slots
+- 2nd-level: 2 slots
+
+**Always Prepared Oath Spells (Oath of the Hunt)**:
+
+- 1st: [_Hunter’s Mark_](/en/library/spells/hex), [_Zephyr Strike_](/en/library/spells/zephyr-strike), [_Communion_](/en/library/spells/communion)
+- 2nd: [_Pass Without Trace_](/en/library/spells/pass-without-trace), [_Beast Bond_](/en/library/spells/beast-bond)
+
+**Prepared Spells (manually prepared)**:
+
+- 1st: [_Shield of Faith_](/en/library/spells/shield-of-faith), [_Bless_](/en/library/spells/bless), [_Command_](/en/library/spells/command), [_Cause Fear_](/en/library/spells/cause-fear)
+- 2nd: [_Hold_](/en/library/spells/hold), [_Magic Weapon_](/en/library/spells/magic-weapon)
+
+## Features
+
+### Actions
+
+<Action cost="1 Major Action">
 
 #### Multiattack
 
@@ -154,7 +175,7 @@ This weapon is **Versatile** ([% 1d10 %]), **Heavy**, and **Martial**. It is for
 
 ---
 
-<Action>
+<Action cost="1 Major Action">
 
 #### Dirk of Arrested Breath
 
@@ -179,7 +200,7 @@ This counts as a ranged attack roll for every creature hit, for the purposes of 
 
 ---
 
-<Action>
+<Action cost="1 Major Action">
 
 #### Bound to the Earth (Channel Divinity)
 
@@ -193,30 +214,11 @@ When the Thief of Winds hits a creature with a melee weapon attack, they can use
 
 ---
 
-## Spellcasting
 
-The Thief of Winds is a spellcaster. Their spellcasting ability is **Charisma**.
+## Deeds
 
-- **Spell Save DC**: 16
-- **Spell Attack Bonus**: accuracy +7
-- They follow Paladin-style spellcasting and always have certain Oath spells prepared.
 
-**Spell Slots**:
-
-- 1st-level: 4 slots
-- 2nd-level: 2 slots
-
-**Always Prepared Oath Spells (Oath of the Hunt)**:
-
-- 1st: [_Hunter’s Mark_](/en/library/spells/hex), [_Zephyr Strike_](/en/library/spells/zephyr-strike), [_Communion_](/en/library/spells/communion)
-- 2nd: [_Pass Without Trace_](/en/library/spells/pass-without-trace), [_Beast Bond_](/en/library/spells/beast-bond)
-
-**Prepared Spells (manually prepared)**:
-
-- 1st: [_Shield of Faith_](/en/library/spells/shield-of-faith), [_Bless_](/en/library/spells/bless), [_Command_](/en/library/spells/command), [_Cause Fear_](/en/library/spells/cause-fear)
-- 2nd: [_Hold_](/en/library/spells/hold), [_Magic Weapon_](/en/library/spells/magic-weapon)
-
-## Legendary Deed: Lair
+#### Lair
 
 At the start of the creature with the highest initiative's turn, Apatheria can expend a legendary deed to use one of the following lair deeds. She cannot use the same lair deed two rounds in a row.
 
@@ -268,7 +270,9 @@ Apatheria signals to allied forces positioned throughout the shattered island pe
 
 ---
 
-## Legendary Deed: Act
+
+
+#### Act
 
 Apatheria can expend legendary deeds to use the options below. Only one legendary deed can be used at a time and only at the end of another creature's turn.
 
@@ -291,9 +295,14 @@ Apatheria can expend legendary deeds to use the options below. Only one legendar
 
 ---
 
-## Legendary Deed: Stratagem
 
-<Action deed="stratagem">
+
+#### Stratagem
+
+
+#### Phase
+
+<Action deed="stratagem" cost="1 Deed">
 
 #### Resonant Shatter
 
@@ -309,7 +318,6 @@ Creatures within **[= 2 stride =]** of each marked location save Constitution ag
 
 </Action>
 
-## Legendary Deed: Phase
 
 <Action deed="phase">
 
@@ -345,4 +353,12 @@ If Ukkonhemmo has not been freed when Apatheria reaches this threshold, she imme
 
 </Action>
 
+</Sheet>
+
 </Monster>
+
+## Mounted Combatant
+
+This creature rides a [Lunar Manticore](/en/library/monsters/lunar-manticore)
+
+---

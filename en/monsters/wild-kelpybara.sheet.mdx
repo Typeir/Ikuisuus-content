@@ -48,6 +48,82 @@ the kelpybara may wield equipment according to the following table:
 
 </Trait>
 
+## Features
+
+### Actions
+
+<Action cost="1 Major Action">
+
+#### Multiattack
+
+The kelpybara makes one Gnash & Cling attack and one Body Slam attack, or two attacks with a wielded weapon (if equipped).
+
+<Attack accuracy="+5" reach="[= 1 stride =]">
+
+##### Gnash & Cling
+
+On a hit, 11 ([% 2d6 +4 piercing %]). If the target is Medium or smaller, it is [# kw:condition:grappled #] (escape DC 12). While grappling a creature: the kelpybara occupies the same space as the target, the kelpybara has half cover against attacks from creatures other than the target, and the kelpybara may move the [# kw:condition:grappled #] creature with it at full speed.
+
+</Attack>
+
+<Attack accuracy="+5" reach="[= 1 stride =]">
+
+##### Body Slam
+
+On a hit, 14 ([% 3d6 +4 bludgeoning %]). If the target is [# kw:condition:prone #] or [# kw:condition:grappled #], it saves Strength against DC 12 or is pushed [= 2 stride =] and knocked [# kw:condition:prone #].
+
+</Attack>
+
+</Action>
+
+<Action charges="1/Repose" cost="1 Major Action">
+
+#### Luminous Blast
+
+The kelpybara emits a controlled flash from its lateral bulbs. All creatures within [= 3 stride =] save Wisdom against DC 11 or suffer **disadvantage on attack rolls and Perception checks** [# kw:briefly #].
+
+</Action>
+
+---
+
+
+<Action cost="1 Minor Action">
+
+#### Horse Mode
+
+As a Minor Action, the kelpybara may enter quadrupedal acceleration [# kw:briefly #]. While in Horse Mode, it gains the following:
+
+- Its movement speed increases by [= 4 stride =]
+- It gains advantage on Strength (Athletics) checks
+- It does not provoke opportunity attacks from creatures it moves past
+- It ignores difficult terrain during movement
+- It must drop its hand held equipment
+
+</Action>
+
+<Action cost="1 Minor Action">
+
+#### Fast Shove
+
+If the kelpybara hits a creature that is [# kw:condition:grappled #] or [# kw:condition:prone #], it may immediately shove that creature [= 2 stride =] in any direction of its choosing as a Minor Action.
+
+</Action>
+
+---
+
+
+### Reactions
+
+<Action cost="1 Reaction">
+
+#### Ear-Shutter Reflex
+
+The kelpybara may use a reaction to fold its ears over its eyes, gaining advantage on saving throws against effects that cause blindness or rely on vision.
+
+</Action>
+
+</Monster>
+
 ## Kelpybara Equipment – Armor Table
 
 Roll [% 1d6 %] or assign:
@@ -81,77 +157,3 @@ Roll [% 1d6 %] or assign:
 The kelpybara gain Multiattack if wielding weapons.
 
 ---
-
-## Actions
-
-<Action>
-
-#### Multiattack
-
-The kelpybara makes one Gnash & Cling attack and one Body Slam attack, or two attacks with a wielded weapon (if equipped).
-
-<Attack accuracy="+5" reach="[= 1 stride =]">
-
-##### Gnash & Cling
-
-On a hit, 11 ([% 2d6 +4 piercing %]). If the target is Medium or smaller, it is [# kw:condition:grappled #] (escape DC 12). While grappling a creature: the kelpybara occupies the same space as the target, the kelpybara has half cover against attacks from creatures other than the target, and the kelpybara may move the [# kw:condition:grappled #] creature with it at full speed.
-
-</Attack>
-
-<Attack accuracy="+5" reach="[= 1 stride =]">
-
-##### Body Slam
-
-On a hit, 14 ([% 3d6 +4 bludgeoning %]). If the target is [# kw:condition:prone #] or [# kw:condition:grappled #], it saves Strength against DC 12 or is pushed [= 2 stride =] and knocked [# kw:condition:prone #].
-
-</Attack>
-
-</Action>
-
-<Action charges="1/Repose">
-
-#### Luminous Blast
-
-The kelpybara emits a controlled flash from its lateral bulbs. All creatures within [= 3 stride =] save Wisdom against DC 11 or suffer **disadvantage on attack rolls and Perception checks** [# kw:briefly #].
-
-</Action>
-
----
-
-## Minor Actions
-
-<Action cost="1 Minor Action">
-
-#### Horse Mode
-
-As a Minor Action, the kelpybara may enter quadrupedal acceleration [# kw:briefly #]. While in Horse Mode, it gains the following:
-
-- Its movement speed increases by [= 4 stride =]
-- It gains advantage on Strength (Athletics) checks
-- It does not provoke opportunity attacks from creatures it moves past
-- It ignores difficult terrain during movement
-- It must drop its hand held equipment
-
-</Action>
-
-<Action cost="1 Minor Action">
-
-#### Fast Shove
-
-If the kelpybara hits a creature that is [# kw:condition:grappled #] or [# kw:condition:prone #], it may immediately shove that creature [= 2 stride =] in any direction of its choosing as a Minor Action.
-
-</Action>
-
----
-
-## Reactions
-
-<Action cost="1 Reaction">
-
-#### Ear-Shutter Reflex
-
-The kelpybara may use a reaction to fold its ears over its eyes, gaining advantage on saving throws against effects that cause blindness or rely on vision.
-
-</Action>
-
-</Monster>

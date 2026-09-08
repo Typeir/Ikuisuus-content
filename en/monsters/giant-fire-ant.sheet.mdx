@@ -35,6 +35,8 @@ contentType: monsters
 
 ---
 
+<Sheet>
+
 ## Traits
 
 <Trait>
@@ -48,9 +50,11 @@ Wildfire may attempt to **grapple** as a **Minor Action**.
 
 ---
 
-## Actions
+## Features
 
-<Action>
+### Actions
+
+<Action cost="1 Major Action">
 
 #### Multiattack
 
@@ -72,13 +76,21 @@ On a hit, 11 ([% 2d10 fire %]) plus 11 ([% 2d10 chemical %]). The target saves C
 
 </Attack>
 
-##### Oviposition (Recharge 6)
+<Feature>
+
+##### Oviposition (Recharge 6) <span>[# kw:attack alteration #]</span>
 
 If a creature is **[# kw:condition:paralyzed #]**, Wildfire may implant a **burning egg**. The creature gains the **Incubating Inferno** condition (see below).
 
-##### Pyroblast (1/[# kw:Recovery #])
+</Feature>
+
+<Feature>
+
+##### Pyroblast (1/[# kw:Recovery #]) <span>[# kw:attack alteration #]</span>
 
 Wildfire casts [Pyroblast](/en/library/spells/pyroblast) in a [= 4 stride =] radius sphere. Each creature in the area saves Dexterity against DC 15, halving **28 ([% 8d6 fire %])**.
+
+</Feature>
 
 </Action>
 
@@ -99,5 +111,7 @@ A creature affected by _Incubating Inferno_ suffers the following:
       Only **Restoration**, **Heal**, or **Wish** can remove the condition before hatching.
 
 ---
+
+</Sheet>
 
 </Monster>

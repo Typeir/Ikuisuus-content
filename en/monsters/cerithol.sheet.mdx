@@ -33,6 +33,8 @@ A **Cerithol Lunam** is a grotesque, fleshy orb that dwells deep within the corp
 
 ---
 
+<Sheet>
+
 ## Traits
 
 <Trait>
@@ -59,16 +61,14 @@ The Cerithol opens fully, revealing its vasculomuscular system. It loses the AC 
 
 </Trait>
 
-<Trait>
+<Trait saveDc="18" accuracy="+9">
 
 #### Spell Point Casting
 
 - The Cerithol has **50 spell points**
 
 - The Cerithol Lunam can spend **5 spell points per round**, choosing as many spells as it wants for that cost if open (barring cantrips).
-  Else it can only cast one spell, using the points to cast the following spells. Spell levels correspond to point costs. The apex cerithol is a 18th level spellcaster.
-
-- **Save DC**: 18 | **Spell attack modifier**: +9
+  Else it can only cast one spell, using the points to cast the following spells. Spell levels correspond to point costs.
 
 <SpellList spells="omen, chill, envenom, ray-of-sickness, bloodlash-rebuke, cause-fear, misty-step, scorching-ray, shatter, objection, pyroblast, sandstorm-barrier, bestow-curse, invisibility, shadow-of-the-hunt, perfect-barrier, cloudkill">
   <Column label="Cost" values="At Will, At Will, At Will, 1, 1, 1, 2, 2, 2, 3, 3, 3, 3, 4, 4, 5, 5" />
@@ -88,9 +88,11 @@ The Cerithol Lunam can take up to **3 reactions per round**, but no more than on
 
 ---
 
-## Actions
+## Features
 
-<Action>
+### Actions
+
+<Action cost="1 Major Action">
 
 #### Multiattack
 
@@ -116,7 +118,8 @@ The Cerithol Lunam makes two _Tentacle Whip_ attacks or one _Pseudopod Surge_ if
 
 ---
 
-## Reactions
+
+### Reactions
 
 **Bloodlash Rebuke (1st-level Unique Spell)**  
  _When a creature within [= 12 stride =] succeeds on a saving throw or hits with an attack roll_  
@@ -125,7 +128,11 @@ The Cerithol Lunam makes two _Tentacle Whip_ attacks or one _Pseudopod Surge_ if
 
 ---
 
-## Legendary Deed: Act
+
+## Deeds
+
+
+#### Act
 
 The Cerithol Lunam can expend legendary deeds to use the options below. Only one legendary deed can be used at a time and only at the end of another creature's turn.
 
@@ -138,5 +145,7 @@ The Cerithol Lunam targets up to **10 creatures** within [= 24 stride =] that it
 </Action>
 
 ---
+
+</Sheet>
 
 </Monster>

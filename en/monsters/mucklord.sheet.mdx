@@ -37,6 +37,8 @@ contentType: monsters
 
 ---
 
+<Sheet>
+
 ## Traits
 
 <Trait>
@@ -102,15 +104,17 @@ and forcing them to use their Minor Action to harmlessly sigh when in combat. Th
 
 #### Gag Reflex
 
-When attacked, the Mucklord must succeed on a **Concentration Saving Throw**, on a failure, it spews out the contents of it's belly, including those transported to the **Muck Dimension**
+When attacked, the Mucklord saves Concentration or spews out the contents of it's belly, including those transported to the **Muck Dimension**
 
 </Trait>
 
 ---
 
-## Actions
+## Features
 
-<Action>
+### Actions
+
+<Action cost="1 Major Action">
 
 #### Multiattack
 
@@ -118,7 +122,7 @@ The Mucklord makes **one Cannon Tongue** attack and **two Crushing Claw** attack
 
 </Action>
 
-<Action>
+<Action cost="1 Major Action">
 
 #### Crushing Claw
 
@@ -130,7 +134,7 @@ On a hit, 55 ([% 8d10 +10 bludgeoning %]) plus 22 ([% 4d10 chemical %]). If the 
 
 </Action>
 
-<Action>
+<Action cost="1 Major Action">
 
 #### Swallow
 
@@ -138,7 +142,7 @@ The Mucklord makes one **Crushing Claw** attack against a **[# kw:condition:grap
 
 </Action>
 
-<Action recharge="5–6">
+<Action recharge="5–6" cost="1 Major Action">
 
 #### Cannon Tongue
 
@@ -153,7 +157,11 @@ _Miss:_ The shot detonates prematurely; creatures within **[= 3 stride =]** of t
 
 ---
 
-## Legendary Deed: Act
+
+## Deeds
+
+
+#### Act
 
 The Mucklord can expend legendary deeds to use the options below. Only one legendary deed can be used at a time and only at the end of another creature's turn.
 
@@ -163,9 +171,11 @@ The Mucklord can expend legendary deeds to use the options below. Only one legen
 
 ---
 
-## Legendary Deed: Stratagem
 
-<Action deed="stratagem">
+
+#### Stratagem
+
+<Action deed="stratagem" cost="1 Deed">
 
 #### The Pit Remembers
 
@@ -177,7 +187,7 @@ If the Mucklord dies while this effect is active, the breach collapses, dealing 
 
 </Action>
 
-<Action deed="stratagem">
+<Action deed="stratagem" cost="1 Deed">
 
 #### Gluttony and Hatred
 
@@ -201,7 +211,9 @@ The Mucklord is considered **absent from the battlefield** between disappearance
 
 ---
 
-## Legendary Deed: Lair
+
+
+#### Lair
 
 At the start of the creature with the highest initiative's turn, the Mucklord can expend a legendary deed to use one of the following lair deeds.  
 It cannot use the same lair deed two rounds in a row.
@@ -282,5 +294,7 @@ They are inert but reanimate if struck by brine or acid during subsequent rounds
 > The tantrum passes quickly. The corpses stay forever.
 
 </Action>
+
+</Sheet>
 
 </Monster>

@@ -35,6 +35,8 @@ contentType: monsters
 
 ---
 
+<Sheet>
+
 ## Traits
 
 <Trait>
@@ -106,9 +108,11 @@ The Rusted Angel does not require air, food, drink, or sleep.
 
 ---
 
-## Actions
+## Features
 
-<Action>
+### Actions
+
+<Action cost="1 Major Action">
 
 #### Multiattack
 
@@ -123,11 +127,15 @@ The target gains **1 stack of [# kw:Erosion #]**.
 
 </Attack>
 
-##### Ice Blade Volley
+<Feature>
+
+##### Ice Blade Volley <span>[# kw:attack alteration #]</span>
 
 The Rusted Angel summons a storm of dancing glacier blades in a **[= 12 stride;ADJ =] line that is [= 2 stride =] wide**.  
 Each creature in the area saves Dexterity against DC 21, halving **45 ([% 10d8 frost %])** and slashing damage.  
 Creatures that fail also gain **1 stack of [# kw:Erosion #]** and have their **speed reduced by [= 2 stride =]** [# kw:briefly #].
+
+</Feature>
 
 <Attack accuracy="+14" reach="[= 3 stride =]">
 
@@ -146,7 +154,9 @@ On a hit, 21 ([% 3d8 +8 bludgeoning %]) plus **9 ([% 2d8 frost %])**.
 If the target is Large or smaller, it saves Strength against DC 21 or is **knocked [# kw:condition:prone #]**.  
 A target that takes damage also gains **1 stack of [# kw:Erosion #]**.
 
-##### Black Ice Meteor (Costs 1 Black Ice Charge)
+<Feature>
+
+##### Black Ice Meteor (Costs 1 Black Ice Charge) <span>[# kw:attack alteration #]</span>
 
 The Rusted Angel conjures and hurls a screaming mass of dead winter at a point on the ground it can see within **[= 24 stride =]**, provided that point is at least **[= 12 stride =]** away from it.  
 Each creature within a **[= 3 stride;ADJ =]-radius sphere** centered on that point saves Dexterity against DC 21, halving **35 ([% 10d6 frost %])** and bludgeoning damage.  
@@ -172,7 +182,11 @@ After the impact, a **black ice fragment** forms in the center of the area.
 
 A black ice fragment lasts until consumed, destroyed, or until the Rusted Angel dies.
 
-##### Avalanche Blade (Costs 2 Black Ice Charges)
+</Feature>
+
+<Feature>
+
+##### Avalanche Blade (Costs 2 Black Ice Charges) <span>[# kw:attack alteration #]</span>
 
 The Rusted Angel manifests a gargantuan, quasi-intangible ice blade in an unoccupied space it can see within **[= 6 stride =]**.
 
@@ -196,7 +210,11 @@ The Rusted Angel manifests a gargantuan, quasi-intangible ice blade in an unoccu
 The blade lasts for **1 minute**, until the Rusted Angel dismisses it, or until it is destroyed. It cannot normally move on its own.  
 Once per turn, as a [# kw:persistent #] effect, the blade makes **Cold Cleave** against a creature of the Rusted Angel’s choice in its space.
 
-##### Black Star (Costs 3 Black Ice Charges)
+</Feature>
+
+<Feature>
+
+##### Black Star (Costs 3 Black Ice Charges) <span>[# kw:attack alteration #]</span>
 
 The rusted angel howls to the fathomless stars above, calling down a shard of the seventh winter's hatred.
 
@@ -206,11 +224,17 @@ Creatures in the area save Dexterity against DC 21, halving **37 ([% 8d8 frost %
 Creatures that fail the saving throw also gain **1 stack of [# kw:Erosion #]** and are **knocked [# kw:condition:prone #]**.
 Creatures struck by the shard are immediately [# kw:condition:slowed #] for 1 minute, and have their erosion stacks, if any doubled.
 
+</Feature>
+
 </Action>
 
 ---
 
-## Legendary Deed: Act
+
+## Deeds
+
+
+#### Act
 
 The Rusted Angel can expend legendary deeds to use the options below. Only one legendary deed can be used at a time and only at the end of another creature's turn.
 
@@ -218,5 +242,7 @@ The Rusted Angel can expend legendary deeds to use the options below. Only one l
 - **Black Ice Call.** (Costs 2 Deeds) The Rusted Angel conjures **one black ice fragment** in an unoccupied space it can see within [= 6 stride =]
 - **Mana Ring Drift.** (Costs 2 Deeds) One **Avalanche Blade** the Rusted Angel created moves up to **[= 6 stride =]** in a straight line. Each creature in its path saves Dexterity against DC 21 or takes **18 ([% 4d8 frost %])**.
 - **Wingless Ascension.** (Costs 2 Deeds) The Rusted Angel moves up to half its speed without provoking opportunity attacks. Creatures whose spaces it moves adjacent to during this movement take **7 ([% 2d6 frost %])**.
+
+</Sheet>
 
 </Monster>

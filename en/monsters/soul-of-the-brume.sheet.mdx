@@ -122,39 +122,8 @@ While mounted, Soul of the Brume ignores disadvantage on attack rolls and saving
 
 ---
 
-## Mounted Combatant
 
-This creature rides a Lunar Chimera.
-
----
-
-## Actions
-
-<Action>
-
-#### Multiattack
-
-Soul of the Brume makes two attacks with its Heavenpiercing Sword-Spear, and casts a cantrip, or makes one attack and casts a levelled spell.
-
-</Action>
-
----
-
-<Action>
-
-#### Heavenpiercing Sword-Spear
-
-<Attack accuracy="+16" reach="[= 2 stride =]">
-
-Hit: 18 ([% 2d10 +7 slashing %]) plus 18 ([% 4d8 fire %]).
-
-</Attack>
-
-</Action>
-
----
-
-## Spellcasting
+### Spellcasting
 
 It has the following spell slots: 1st (4), 2nd (3), 3rd (3), 4th (3), 5th (3), 6th (2), 7th (2), 8th (1), 9th (1).
 
@@ -170,9 +139,41 @@ It has the following spell slots: 1st (4), 2nd (3), 3rd (3), 4th (3), 5th (3), 6
 
 ---
 
-## Legendary Deed: Stratagem
+## Features
 
-<Action deed="stratagem">
+### Actions
+
+<Action cost="1 Major Action">
+
+#### Multiattack
+
+Soul of the Brume makes two attacks with its Heavenpiercing Sword-Spear, and casts a cantrip, or makes one attack and casts a levelled spell.
+
+</Action>
+
+---
+
+<Action cost="1 Major Action">
+
+#### Heavenpiercing Sword-Spear
+
+<Attack accuracy="+16" reach="[= 2 stride =]">
+
+Hit: 18 ([% 2d10 +7 slashing %]) plus 18 ([% 4d8 fire %]).
+
+</Attack>
+
+</Action>
+
+---
+
+
+### Deeds
+
+
+#### Stratagem
+
+<Action deed="stratagem" cost="1 Deed">
 
 #### Scala ad Infernum
 
@@ -193,7 +194,9 @@ Damage from this fall is fire damage instead of bludgeoning.
 
 ---
 
-## Legendary Deed: Act
+
+
+#### Act
 
 Soul of the Brume can expend legendary deeds to use the options below. Only one legendary deed can be used at a time and only at the end of another creature's turn.
 
@@ -208,7 +211,9 @@ Soul of the Brume can expend legendary deeds to use the options below. Only one 
 
 ---
 
-## Legendary Deed: Phase
+
+
+#### Phase
 
 <Action deed="phase">
 
@@ -225,3 +230,9 @@ If Soul of the Brume becomes [# kw:condition:incapacitated #], these benefits en
 </Action>
 
 </Monster>
+
+## Mounted Combatant
+
+This creature rides a Lunar Chimera.
+
+---

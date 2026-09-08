@@ -34,6 +34,8 @@ contentType: monsters
 
 ---
 
+<Sheet>
+
 ## Traits
 
 <Trait>
@@ -70,23 +72,10 @@ Ludwig regains **20 HP** at the start of each of his turns. While in Bloodrage, 
 
 ---
 
-## Bloodrage (1/Repose)
 
-As a **Minor Action**, Ludwig enters a divine fury for **5 rounds** (30 seconds). While active:
+### Spellcasting
 
-- Gains **50 temporary HP** immediately.
-- Gains **advantage on the first attack** he makes each round.
-- Can make **one extra attack** as part of his Multiattack.
-- All his attacks deal an extra **[% 2d6 fire %]**.
-- Gains **15 temporary HP** at the start of each turn.
-
-**If Ludwig neither deals no damage during his turn, Bloodrage ends early.**
-
----
-
-## Spellcasting
-
-Ludwig is a **10th-level spellcaster**. His spellcasting ability is **Constitution** (spell save DC **19**, accuracy +12 with spell attacks). He has the following spells prepared:
+His casting ability is **Constitution** (accuracy **+12**).
 
 | Spell Level             | Slots | Spells                                                                                                                                                                                 |
 | ----------------------- | ----- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -102,9 +91,11 @@ Ludwig is a **10th-level spellcaster**. His spellcasting ability is **Constituti
 
 ---
 
-## Actions
+## Features
 
-<Action>
+### Actions
+
+<Action cost="1 Major Action">
 
 #### Multiattack
 
@@ -128,23 +119,35 @@ On a hit, [% 2d10 +10 slashing %] + [% 2d6 frost %], plus **[% 2d6 fire %]** if 
 
 </Attack>
 
-##### Gore Hurl
+<Feature>
+
+##### Gore Hurl <span>[# kw:attack alteration #]</span>
 
 Ludwig throws a **[# kw:condition:grappled #] creature** up to [= 12 stride =]. The creature lands in a **[= 4 stride;ADJ =] radius** area. All creatures there save Dexterity against DC 20 or take **[% 6d6 bludgeoning %]** and fall [# kw:condition:prone #]. The thrown creature automatically takes the damage and is no longer [# kw:condition:grappled #].
 
-##### Bloodspire Growth (Recharge 5–6)
+</Feature>
+
+<Feature>
+
+##### Bloodspire Growth (Recharge 5–6) <span>[# kw:attack alteration #]</span>
 
 Ludwig charges up to [= 6 stride =] in a straight line. A massive spire of divine blood erupts beneath a target, who saves Strength against DC 20 or takes **[% 8d10 piercing %]**, be **[# kw:condition:Restrained #]**, and launched atop a **[= 12 stride;ADJ =] tall spire**.
 Creatures in a **[= 4 stride;ADJ =] wide** trail save Dexterity against DC 16 or take **[% 4d6 fire %]** and are **pushed [= 1 stride =] away**.
 The path remains aflame until the start of Ludwig’s next turn, dealing **[% 4d6 fire %]** as a [# kw:persistent #], [# kw:delayed #] effect.
 
+</Feature>
+
 </Action>
 
 ---
 
-## Legendary Deed: Stratagem
 
-<Action deed="stratagem" recharge="6">
+## Deeds
+
+
+#### Stratagem
+
+<Action deed="stratagem" recharge="6" cost="1 Deed">
 
 #### Grand Mooncleave
 
@@ -158,7 +161,9 @@ The path remains aflame until the start of Ludwig’s next turn, dealing **[% 4d
 
 ---
 
-## Legendary Deed: Lair
+
+
+#### Lair
 
 At the start of the creature with the highest initiative's turn, Ludwig can expend a legendary deed to use one of the following lair deeds. He cannot use the same lair deed two rounds in a row.
 
@@ -192,7 +197,9 @@ The explosion covers a [= 6 stride;ADJ =] radius, forcing all creatures other th
 
 </Action>
 
-## Legendary Deed: Act
+
+
+#### Act
 
 Ludwig can expend legendary deeds to use the options below. Only one legendary deed can be used at a time and only at the end of another creature's turn.
 
@@ -205,7 +212,9 @@ Ludwig can expend legendary deeds to use the options below. Only one legendary d
 
 ---
 
-## Legendary Deed: Phase
+
+
+#### Phase
 
 <Action deed="phase">
 
@@ -316,4 +325,20 @@ Ludwig makes one Serpentine Dreams Strike. If the attack hits, he regains his re
 
 </Action>
 
+</Sheet>
+
 </Monster>
+
+## Bloodrage (1/Repose)
+
+As a **Minor Action**, Ludwig enters a divine fury for **5 rounds** (30 seconds). While active:
+
+- Gains **50 temporary HP** immediately.
+- Gains **advantage on the first attack** he makes each round.
+- Can make **one extra attack** as part of his Multiattack.
+- All his attacks deal an extra **[% 2d6 fire %]**.
+- Gains **15 temporary HP** at the start of each turn.
+
+**If Ludwig neither deals no damage during his turn, Bloodrage ends early.**
+
+---

@@ -3,7 +3,7 @@ source: Ikuisuus
 contentType: monsters
 ---
 
-# Abandoned Old War Machine
+# Abandoned Old War Machine (Rows)
 
 <Monster
   size="Large"
@@ -30,7 +30,7 @@ contentType: monsters
 
 ---
 
-<Sheet>
+<Fold sections="traits, features, actions, attacks, deeds">
 
 ## Traits
 
@@ -99,9 +99,8 @@ The War Machine makes three attacks with any combination of its weapons.
 ##### Pseudopod Slam
 
 On a hit, 18 ([% 3d8 +6 bludgeoning %]) and chemical damage.  
-Targets suffer **Crushing Weight**.  
 
-<Feature mark="other" accuracy="+10">
+<Feature cost="1 Reflex" accuracy="+10" trigger="on a hit" targets="Pseudopod Slam's targets">
 
 ###### Crushing Weight
 
@@ -125,9 +124,8 @@ Creatures that fail are **[# kw:condition:blinded #]** [# kw:briefly #] and gain
 ##### Nulled Blade (Recharge 4–6)
 
 On a hit, 22 ([% 4d10 +9 force %]).  
-Targets suffer **Nulling**.  
 
-<Feature mark="other" accuracy="+11">
+<Feature cost="1 Reflex" accuracy="+11" trigger="on a hit" targets="Nulled Blade's targets">
 
 ###### Nulling
 
@@ -144,9 +142,8 @@ The creature becomes **immune to those effects** until it finishes a [# kw:Repos
 
 On a hit, [% 2d6 +9 slashing %] plus [% 2d12 dark %].  
 The War Machine heals **half of the damage dealt** with this attack.  
-It saves against **Backfire**, or it cannot use **The Toll** and **The Cave** for this attack.  
 
-<Feature mark="other" accuracy="+16" targets="the War Machine">
+<Feature cost="1 Reflex" accuracy="+16" trigger="after each attack with the Disambiguator" targets="the War Machine">
 
 ###### Backfire
 
@@ -154,7 +151,7 @@ The War Machine saves Constitution or immediately casts **[_Pyroblast_](/en/libr
 
 </Feature>
 
-<Feature mark="other" accuracy="+11">
+<Feature cost="1 Reflex" accuracy="+11" trigger="on a hit, if the War Machine passed its Backfire" targets="Barely Functional Disambiguator's targets">
 
 ###### The Toll
 
@@ -162,7 +159,7 @@ A creature the Disambiguator hits saves Constitution or fails one death saving t
 
 </Feature>
 
-<Feature mark="other" accuracy="+10">
+<Feature cost="1 Reflex" accuracy="+10" trigger="on a hit, if the War Machine passed its Backfire" targets="Barely Functional Disambiguator's targets">
 
 ###### The Cave
 
@@ -178,10 +175,9 @@ A creature the Disambiguator hits saves Charisma or is **[# kw:condition:stunned
 
 The War Machine launches forward on hydraulic thrusters, landing [= 1 stride =] from its target.  
 On a hit, [% 3d10 +6 slashing %].  
-A target that takes damage also gains **1 stack of [# kw:Erosion #]**.  
-Targets suffer **Driven Down**.
+A target that takes damage also gains **1 stack of [# kw:Erosion #]**.
 
-<Feature mark="other" accuracy="+10" targets="targets that are Large or smaller">
+<Feature cost="1 Reflex" accuracy="+10" trigger="on a hit" targets="Thruster Axe-Kick's targets that are Large or smaller">
 
 ###### Driven Down
 
@@ -213,6 +209,6 @@ The War Machine emits a brief nullwave; all ongoing magical effects on them are 
 
 </Feature>
 
-</Sheet>
+</Fold>
 
 </Monster>

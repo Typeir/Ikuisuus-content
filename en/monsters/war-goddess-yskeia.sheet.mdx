@@ -35,6 +35,8 @@ _War Goddess_
 
 ---
 
+<Sheet>
+
 ## Traits
 
 <Trait>
@@ -90,14 +92,6 @@ When a plating is destroyed, Yskeia loses 3 AC (to a minimum of 23) and takes 10
 
 <Trait>
 
-#### Magic Resistance
-
-Yskeia has advantage on saving throws against spells and other magical effects.
-
-</Trait>
-
-<Trait>
-
 #### Magical Weapons
 
 All of yskeias attacks are considered magical for the purposes of overcomming resistances.
@@ -139,9 +133,11 @@ On a success, it is forced [= 2 stride =] toward the ground, and takes no damage
 
 ---
 
-## Major Actions
+## Features
 
-<Action>
+### Actions
+
+<Action cost="1 Major Action">
 
 #### Multiattack
 
@@ -152,7 +148,7 @@ She can replace any attack with a **drone deployment**, **Missile Batteries**, o
 
 ---
 
-<Action>
+<Action cost="1 Major Action">
 
 #### The Frontline (Shield)
 
@@ -167,7 +163,7 @@ A creature hit by The Frontline saves Strength against DC 25 or is **pushed [= 4
 
 ---
 
-<Action>
+<Action cost="1 Major Action">
 
 #### Spear of Retribution
 
@@ -184,7 +180,7 @@ On hit, Yskeia may choose to **reel the target [= 6 stride =] toward her**. The 
 
 ---
 
-<Action>
+<Action cost="1 Major Action">
 
 #### Missile Batteries (4 charges, Recharge 4–6)
 
@@ -219,7 +215,7 @@ The attack ignores cover and resistance, and penetrates all forms of magical bar
 
 ---
 
-<Action>
+<Action cost="1 Major Action">
 
 #### Main Cannon – The Stratagem
 
@@ -234,7 +230,7 @@ The attack ignores cover and deals **maximum damage** against objects and struct
 
 ---
 
-<Action>
+<Action cost="1 Major Action">
 
 #### Secondary Cannon – Myriad
 
@@ -250,7 +246,7 @@ As an [# kw:delayed #] effect, creatures in the area take **27 ([% 6d8 piercing 
 
 ---
 
-<Action>
+<Action cost="1 Major Action">
 
 #### Shoulder Mortars (2 charges, Recharge 4–6)
 
@@ -262,7 +258,7 @@ Creatures that fail the saving throw are **pushed [= 6 stride =] away** from the
 
 ---
 
-<Action>
+<Action cost="1 Major Action">
 
 #### Flamethrower Legs
 
@@ -276,7 +272,7 @@ Yskeia can also make a **kick or stomp** attack (melee accuracy +22, [= 2 stride
 
 ---
 
-<Action recharge="5–6">
+<Action recharge="5–6" cost="1 Major Action">
 
 #### Warlings
 
@@ -315,7 +311,11 @@ As a Major Action, Yskeia deploys up to four **Warlings** into empty spaces with
 
 ---
 
-## Legendary Deed: Act
+
+## Deeds
+
+
+#### Act
 
 Yskeia can expend legendary deeds to use the options below. Only one legendary deed can be used at a time and only at the end of another creature's turn.
 
@@ -398,9 +398,17 @@ Once fired, the Faterender Railgun cannot be used again until it recharges.
 
 ---
 
-## Legendary Deed: Lair
+
+
+#### Lair
 
 At the start of the creature with the highest initiative's turn, Yskeia can expend a legendary deed to use one of the following lair deeds. She cannot use the same lair deed two rounds in a row.
+
+
+#### Stratagem
+
+
+#### Phase
 
 <Action deed="lair">
 
@@ -499,9 +507,8 @@ On a success, it takes half as much damage and is pushed [= 6 stride =] ahead of
 
 ---
 
-## Legendary Deed: Stratagem
 
-<Action deed="stratagem">
+<Action deed="stratagem" cost="1 Deed">
 
 #### Lattice of Fire
 
@@ -522,7 +529,6 @@ A creature that fails the save is also **knocked [# kw:condition:prone #]**.
 
 ---
 
-## Legendary Deed: Phase
 
 <Action deed="phase">
 
@@ -572,5 +578,7 @@ While wielding Athena:
 </Action>
 
 ---
+
+</Sheet>
 
 </Monster>

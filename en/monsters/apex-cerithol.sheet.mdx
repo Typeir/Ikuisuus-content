@@ -36,6 +36,8 @@ contentType: monsters
 
 ---
 
+<Sheet>
+
 ## Traits
 
 <Trait>
@@ -79,16 +81,14 @@ Apex Cerithols have several lesser ganglia to operate their multiple limbs and c
 
 </Trait>
 
-<Trait>
+<Trait saveDc="25" accuracy="+17">
 
 #### Spell Point Casting
 
 - The Apex Cerithol has **150 spell points**
 
 - The Apex Cerithol Lunam can spend **10 spell points per round**, choosing as many spells as it wants for that cost if open (barring cantrips).
-  Else it can only cast one spell, using the points to cast the following spells. Spell levels correspond to point costs. The apex cerithol is a 18th level spellcaster.
-
-- **Save DC**: 25 | **Spell attack modifier**: +17
+  Else it can only cast one spell, using the points to cast the following spells. Spell levels correspond to point costs.
 
 <SpellList spells="omen, chill, envenom, psychic-link, ray-of-sickness, cause-fear, bloodlash-rebuke, misty-step, shatter, objection, black-forest, semblance-of-paivamies, shadow-of-the-hunt, perfect-barrier, cloudkill, mind-blast, disintegrate, sulfurous-sphere, harm, rot-gods-caress, reverse-gravity, forcecage, psychic-crush">
   <Column label="Cost" values="At Will, At Will, At Will, At Will, 1, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 5, 6, 6, 6, 7, 7, 7, 9" />
@@ -108,9 +108,11 @@ The Apex Cerithol Lunam can take up to **3 reactions per round**, but no more th
 
 ---
 
-## Actions
+## Features
 
-<Action>
+### Actions
+
+<Action cost="1 Major Action">
 
 #### Multiattack
 
@@ -136,7 +138,8 @@ If the target collides with a solid surface, it takes an additional **14 ([% 4d6
 
 </Action>
 
-## Reactions
+
+### Reactions
 
 **Bloodlash Rebuke (1st-level Unique Spell)**  
  _When a creature within [= 12 stride =] succeeds on a saving throw or hits with an attack roll_  
@@ -145,7 +148,11 @@ If the target collides with a solid surface, it takes an additional **14 ([% 4d6
 
 ---
 
-## Legendary Deed: Act
+
+## Deeds
+
+
+#### Act
 
 The Apex Cerithol Lunam can expend legendary deeds to use the options below. Only one legendary deed can be used at a time and only at the end of another creature's turn.
 
@@ -158,5 +165,7 @@ The Apex Cerithol Lunam targets up to **10 creatures** within [= 24 stride =] th
 </Action>
 
 ---
+
+</Sheet>
 
 </Monster>
