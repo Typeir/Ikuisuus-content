@@ -72,21 +72,26 @@ Yskeia has 4 Primeval Platings that can be destroyed, each facing a different di
 Each plating has AC 30, 100 HP, and resistance to all damage types barring force.
 When a plating is destroyed, Yskeia loses 3 AC (to a minimum of 23) and takes 100 true damage as the plating shatters internal mechanisms.
 
-> #### Primeval Plating
->
-> | **Armor Class** | **Hit Points** | **Damage Threshold** |
-> | --------------- | -------------- | -------------------- |
-> | 30              | 100            | 25                   |
->
-> - **Size**: Medium or Large object (5–[= 2 stride =] section)
-> - **Resistances**: All damage except **Force**
-> - **Immunities**: **Poison**, **Psychic**, **Dark**, **Holy**
->
-> ---
->
-> ##### Traits
->
-> **Infallible**: The Primeval Plating cannot be targeted by spells or abilities that would impose a saving throw or condition.
+<Statlet
+  kind="object"
+  size="Medium or Large object (5–[= 2 stride =] section)"
+  armorClass="30"
+  hitPoints="100"
+  damageThreshold="25"
+  resistances="All damage except Force"
+  immunities="Poison, Psychic, Dark, Holy">
+
+##### Primeval Plating
+
+<Trait>
+
+###### Infallible
+
+The Primeval Plating cannot be targeted by spells or abilities that would impose a saving throw or condition.
+
+</Trait>
+
+</Statlet>
 
 </Trait>
 
@@ -195,21 +200,26 @@ Yskeia targets a creature of her choice within **[= 1 league =]**.
 The targeted creature takes **23 force damage**. This attack cannot miss except by the usage of the [_shield_](/en/library/spells/shield) spell.
 The attack ignores cover and resistance, and penetrates all forms of magical barriers.
 
-> #### Missile Battery
->
-> | **Armor Class** | **Hit Points** | **Damage Threshold** |
-> | --------------- | -------------- | -------------------- |
-> | 25              | 100            | 20                   |
->
-> - **Size**: Medium object ([= 1 stride =] section)
-> - **Resistances**: All damage except **Force**
-> - **Immunities**: **Poison**, **Psychic**, **Dark**, **Holy**
->
-> ---
->
-> ## Traits
->
-> **Infallible**: The Missile Battery cannot be targeted by spells or abilities that would impose a saving throw or condition.
+<Statlet
+  kind="object"
+  size="Medium object ([= 1 stride =] section)"
+  armorClass="25"
+  hitPoints="100"
+  damageThreshold="20"
+  resistances="All damage except Force"
+  immunities="Poison, Psychic, Dark, Holy">
+
+##### Missile Battery
+
+<Trait>
+
+###### Infallible
+
+The Missile Battery cannot be targeted by spells or abilities that would impose a saving throw or condition.
+
+</Trait>
+
+</Statlet>
 
 </Action>
 
@@ -285,27 +295,45 @@ Yskeia can also make a **kick or stomp** attack (melee accuracy +22, [= 2 stride
 
 As a Major Action, Yskeia deploys up to four **Warlings** into empty spaces within [= 6 stride =] of her.
 
-> #### Warling
->
-> _Medium Construct, Unaligned_
->
-> | **Armor Class** | **Hit Points** | **Speed**          |
-> | --------------- | -------------- | ------------------ |
-> | 18              | 50             | [= 8 stride =], fly [= 12 stride =] |
->
-> - **Damage Resistances**: All damage except **Force**
-> - **Damage Immunities**: **Poison**, **Psychic**, **Dark**, **Holy**
->
-> ---
->
-> ## Traits
->
-> **Infallible**: The Warling cannot be targeted by spells or abilities that would impose a saving throw or condition.
->
-> **The Weight of War**: The Warling uses Yskeia’s attack bonus and deals **10 ([% 3d6 force %])** on hit.  
-> Each hit reduces the target’s movement speed by **[= 2 stride =]** until the start of the Warling’s next turn; this reduction stacks.
->
-> **Tethered**: When Yskeia is [# kw:condition:incapacitated #], all active Warlings immediately fall inert.
+<Statlet
+  kind="creature"
+  size="Medium"
+  type="Construct"
+  alignment="Unaligned"
+  armorClass="18"
+  hitPoints="50"
+  speed="[= 8 stride =], fly [= 12 stride =]"
+  resistances="All damage except Force"
+  immunities="Poison, Psychic, Dark, Holy">
+
+##### Warling
+
+<Trait>
+
+###### Infallible
+
+The Warling cannot be targeted by spells or abilities that would impose a saving throw or condition.
+
+</Trait>
+
+<Trait>
+
+###### The Weight of War
+
+The Warling uses Yskeia’s attack bonus and deals **10 ([% 3d6 force %])** on hit.  
+Each hit reduces the target’s movement speed by **[= 2 stride =]** until the start of the Warling’s next turn; this reduction stacks.
+
+</Trait>
+
+<Trait>
+
+###### Tethered
+
+When Yskeia is [# kw:condition:incapacitated #], all active Warlings immediately fall inert.
+
+</Trait>
+
+</Statlet>
 
 </Action>
 
