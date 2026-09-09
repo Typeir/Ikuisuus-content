@@ -34,6 +34,8 @@ contentType: monsters
 
 ---
 
+<Sheet>
+
 ## Traits
 
 <Trait>
@@ -86,6 +88,107 @@ While within [= 12 stride =] of their partner (Fencer of the Épée), the Fencer
 
 ---
 
+## Features
+
+### Actions
+
+<Action cost="1 Major Action">
+
+#### Multiattack
+
+The Fencer makes two attacks with their **Thrown Greatswords**.
+
+</Action>
+
+### Attacks
+
+<Attack accuracy="+9" range="[= 4 stride =]/[= 8 stride =]">
+
+##### Thrown Greatsword
+
+On a hit, 11 ([% 2d8 +6 slashing %]) plus 7 ([% 2d6 bludgeoning %]). The sword breaks upon impact.
+
+</Attack>
+
+<Feature recharge="5–6">
+
+##### Thunderous Hurl <span>[# kw:attack alteration #]</span>
+
+The Fencer throws a greatsword in a line [= 12 stride =] long and [= 1 stride =] wide. Each creature in the line saves Dexterity against DC 15, halving [% 4d8 slashing %] and [% 4d6 lightning %]. The sword then explodes with thunderous force, dealing [% 4d6 bludgeoning %] to all creatures within [= 2 stride =] of the target.
+
+</Feature>
+
+---
+
+## Deeds
+
+The Fencer of the Quiver can expend legendary deeds to use the options below, each taken with different timing, as described in [Legendary Deeds](/en/library/rules/creatures-critters-and-characters/legendary-deeds).
+
+<Feature deed="act" cost="1 Deed">
+
+#### Call Lightning
+
+The Fencer casts [_Call Lightning_](/en/library/spells/call-lightning) as described below:
+  - A storm cloud appears [= 20 stride =] above, centered on a point the Fencer can see within [= 24 stride =]. A bolt of lightning strikes down at a point the Fencer chooses. Each creature within [= 1 stride =] of that point saves Dexterity against DC 15, halving [% 3d10 lightning %].
+
+</Feature>
+
+<Feature deed="act" cost="1 Deed">
+
+#### Move
+
+The Fencer moves up to their speed without provoking opportunity attacks.
+
+</Feature>
+
+<Feature deed="act" cost="2 Deeds">
+
+#### Hurl to Partner
+
+The Fencer hurls a greatsword toward their partner, the **Fencer of the Épée**. The Fencer of the Épée may use their reaction to automatically deflect the greatsword and send it flying toward a target within [= 6 stride =], forcing the target to save Dexterity against DC 16 or take [% 2d8 slashing %] and [% 2d6 bludgeoning %]. The sword breaks after this deflection.
+
+</Feature>
+
+</Sheet>
+
+</Monster>
+
+---
+
+# Fencer of the Épée, Hoplomachia
+
+<BlendedImage
+  src='/library/images/monsters/empyrean-fencers.webp'
+  alt='Hoplomachia'
+/>
+
+<Monster
+  size="Medium"
+  type="Humanoid (Empyrean)"
+  alignment="Neutral Evil"
+  armorClass="21 (Half Plate +1, shield)"
+  hitPoints="90 ([% 12d8 +60 %])"
+  speed="[= 7 stride =]"
+  str="20"
+  dex="26"
+  con="18"
+  int="14"
+  wis="16"
+  cha="14"
+  saves="Dex +7, Con +7, Wis +5"
+  skills="Acrobatics +7, Deception +7, Perception +5"
+  resistances="Frost, Lightning"
+  conditionImmunities="[# kw:condition:Terrified #]"
+  senses="Darkvision [= 12 stride =], passive Perception 16"
+  languages="Common, Empyrean"
+  challenge="8"
+  xp="3,900">
+
+---
+
+<Sheet>
+
+## Traits
 
 <Trait>
 
@@ -129,34 +232,11 @@ The Fencer's **Great Épée** can automatically deflect any thrown greatswords f
 
 #### Multiattack
 
-The Fencer makes two attacks with their **Thrown Greatswords**.
-
-<Attack accuracy="+9" range="[= 4 stride =]/[= 8 stride =]">
-
-##### Thrown Greatsword
-
-On a hit, 11 ([% 2d8 +6 slashing %]) plus 7 ([% 2d6 bludgeoning %]). The sword breaks upon impact.
-
-</Attack>
-
-<Feature>
-
-##### Thunderous Hurl (Recharge 5–6) <span>[# kw:attack alteration #]</span>
-
-The Fencer throws a greatsword in a line [= 12 stride =] long and [= 1 stride =] wide. Each creature in the line saves Dexterity against DC 15, halving [% 4d8 slashing %] and [% 4d6 lightning %]. The sword then explodes with thunderous force, dealing [% 4d6 bludgeoning %] to all creatures within [= 2 stride =] of the target.
-
-</Feature>
+The Fencer makes two attacks with their **Great Épée**.
 
 </Action>
 
----
-
-
-<Action cost="1 Major Action">
-
-#### Multiattack
-
-The Fencer makes two attacks with their **Great Épée**.
+### Attacks
 
 <Attack accuracy="+9" reach="[= 1 stride =]">
 
@@ -166,114 +246,36 @@ On a hit, 13 ([% 2d8 +6 piercing %]). The target saves Constitution against DC 1
 
 </Attack>
 
-</Action>
-
 ---
 
+## Deeds
 
-### Deeds
+The Fencer of the Épée can expend legendary deeds to use the options below, each taken with different timing, as described in [Legendary Deeds](/en/library/rules/creatures-critters-and-characters/legendary-deeds).
 
+<Feature deed="act" cost="1 Deed">
 
-#### Act
-
-
-#### Act
-
-<Action deed="act" cost="1 Deed">
-
-The Fencer of the Quiver can expend legendary deeds to use the options below. Only one legendary deed can be used at a time and only at the end of another creature's turn.
-
-<Action cost="1 Deed">
-
-##### Call Lightning
-
-The Fencer casts [_Call Lightning_](/en/library/spells/call-lightning) as described below:
-  - A storm cloud appears [= 20 stride =] above, centered on a point the Fencer can see within [= 24 stride =]. A bolt of lightning strikes down at a point the Fencer chooses. Each creature within [= 1 stride =] of that point saves Dexterity against DC 15, halving [% 3d10 lightning %].
-
-</Action>
-
-<Action cost="1 Deed">
-
-##### Move
-
-The Fencer moves up to their speed without provoking opportunity attacks.
-
-</Action>
-
-<Action cost="2 Deeds">
-
-##### Hurl to Partner
-
-The Fencer hurls a greatsword toward their partner, the **Fencer of the Épée**. The Fencer of the Épée may use their reaction to automatically deflect the greatsword and send it flying toward a target within [= 6 stride =], forcing the target to save Dexterity against DC 16 or take [% 2d8 slashing %] and [% 2d6 bludgeoning %]. The sword breaks after this deflection.
-
-</Action>
-
-</Action>
-
-</Monster>
-
----
-
-# Fencer of the Épée, Hoplomachia
-
-<BlendedImage
-  src='/library/images/monsters/empyrean-fencers.webp'
-  alt='Hoplomachia'
-/>
-
-<Monster
-  size="Medium"
-  type="Humanoid (Empyrean)"
-  alignment="Neutral Evil"
-  armorClass="21 (Half Plate +1, shield)"
-  hitPoints="90 ([% 12d8 +60 %])"
-  speed="[= 7 stride =]"
-  str="20"
-  dex="26"
-  con="18"
-  int="14"
-  wis="16"
-  cha="14"
-  saves="Dex +7, Con +7, Wis +5"
-  skills="Acrobatics +7, Deception +7, Perception +5"
-  resistances="Frost, Lightning"
-  conditionImmunities="[# kw:condition:Terrified #]"
-  senses="Darkvision [= 12 stride =], passive Perception 16"
-  languages="Common, Empyrean"
-  challenge="8"
-  xp="3,900">
-
----
-
-
-<Action deed="act" cost="1 Deed">
-
-The Fencer of the Épée can expend legendary deeds to use the options below. Only one legendary deed can be used at a time and only at the end of another creature's turn.
-
-<Action cost="1 Deed">
-
-##### Attack
+#### Attack
 
 The Fencer makes one attack with their **Great Épée**.
 
-</Action>
+</Feature>
 
-<Action cost="1 Deed">
+<Feature deed="act" cost="1 Deed">
 
-##### Parry
+#### Parry
 
 The Fencer adds +3 to their AC until the next melee attack that would hit them.
 
-</Action>
+</Feature>
 
-<Action cost="1 Deed">
+<Feature deed="act" cost="1 Deed">
 
-##### Move
+#### Move
 
 The Fencer moves up to their speed without provoking opportunity attacks.
 
-</Action>
+</Feature>
 
-</Action>
+</Sheet>
 
 </Monster>

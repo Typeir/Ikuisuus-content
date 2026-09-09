@@ -30,6 +30,8 @@ contentType: monsters
 
 ---
 
+<Sheet>
+
 ## Traits
 
 <Trait>
@@ -113,6 +115,18 @@ As an [# kw:delayed #] effect, each creature of the Silent One’s choice within
 
 The Silent One makes **six Slam attacks**, or it uses **Hurl Debris** up to three times.
 
+</Action>
+
+<Action saveDc="15" cost="1 Major Action" recharge="6">
+
+#### Disintegrate.
+
+The Silent One casts [_Disintegrate_](/en/library/spells/disintegrate).
+
+</Action>
+
+### Attacks
+
 <Attack accuracy="+10" reach="[= 2 stride =]">
 
 ##### Slam
@@ -122,27 +136,16 @@ A Large or smaller target is **[# kw:condition:grappled #]** (escape DC 17). Unt
 
 </Attack>
 
-</Action>
-
-<Action cost="1 Major Action">
-
-#### Hurl Debris.
-
 <Attack accuracy="+9" range="[= 12 stride =]/[= 36 stride =]">
+
+##### Hurl Debris.
 
 On a hit, 18 ([% 3d8 +6 bludgeoning %]).  
 The Silent One can target **up to three creatures** if it has **three or more free arms**.
 
 </Attack>
 
-</Action>
 
-<Action saveDc="15" cost="1 Major Action">
-
-#### Disintegrate (Recharge 6).
-
-The Silent One casts [_Disintegrate_](/en/library/spells/disintegrate).
-
-</Action>
-
+</Sheet>
 </Monster>
+

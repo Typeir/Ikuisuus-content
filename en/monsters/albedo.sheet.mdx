@@ -128,27 +128,9 @@ Creatures **immune to disease and curses** that would roll in the table ignore t
 
 Albedo makes **two** **Mitotic Rends** and **one** **Exuvia Sweep**. Each may be replaced with either **Enzyme Torrent** or **Consume the Brood**.
 
-<Attack accuracy="+15" reach="[= 3 stride =]">
+<Feature recharge="5–6">
 
-##### Mitotic Rend
-
-On a hit, **16 ([% 3d6 +5 slashing %])** plus **8 ([% 3d4 chemical %])**.  
-**On hit**: the target is **seeded** with **1 Parasite**.
-
-</Attack>
-
-<Attack accuracy="+15" reach="[= 4 stride =]" targets="up to two targets">
-
-##### Exuvia Sweep
-
-On a hit, **13 ([% 3d4 +5 bludgeoning %])** plus **5 ([% 2d4 dark %])**.  
-Each creature hit saves Strength against DC 23 or is **pushed [= 3 stride =]** and **knocked [# kw:condition:prone #]**. If at least one creature fails, **spawn 1 Petal** adjacent to one failed target’s space.
-
-</Attack>
-
-<Feature>
-
-##### Enzyme Torrent (Recharge 5–6) <span>[# kw:attack alteration #]</span>
+##### Enzyme Torrent <span>[# kw:attack alteration #]</span>
 
 A **[= 12 stride;ADJ =] cone** of dissolving enzymes. Creatures in the area make a **DC 24 Dexterity** saving throw, taking **23 ([% 9d4 chemical %])** + **23 ([% 9d4 dark %])** on a failed save, or half as much on a success.  
 Creatures that fail are **seeded with 1 Parasite**. All squares in the cone become **Endless Reef**.
@@ -160,7 +142,7 @@ Creatures that fail are **seeded with 1 Parasite**. All squares in the cone beco
 ##### Consume the Brood (1/Turn) <span>[# kw:attack alteration #]</span>
 
 Choose up to **5** spawned creatures within [= 6 stride =]; they **die** as they are reabsorbed into Albedo’s mass.  
-For each creature consumed, choose one effect:
+For each creature consumed, Albedo gains the effect of what it ate:
 
 </Feature>
 
@@ -200,6 +182,26 @@ All merges occur immediately in spaces formerly occupied by the consumed creatur
 
 </Action>
 
+### Attacks
+
+<Attack accuracy="+15" reach="[= 3 stride =]">
+
+##### Mitotic Rend
+
+On a hit, **16 ([% 3d6 +5 slashing %])** plus **8 ([% 3d4 chemical %])**.  
+**On hit**: the target is **seeded** with **1 Parasite**.
+
+</Attack>
+
+<Attack accuracy="+15" reach="[= 4 stride =]" targets="up to two targets">
+
+##### Exuvia Sweep
+
+On a hit, **13 ([% 3d4 +5 bludgeoning %])** plus **5 ([% 2d4 dark %])**.  
+Each creature hit saves Strength against DC 23 or is **pushed [= 3 stride =]** and **knocked [# kw:condition:prone #]**. If at least one creature fails, **spawn 1 Petal** adjacent to one failed target’s space.
+
+</Attack>
+
 ---
 
 
@@ -219,19 +221,9 @@ Whether it hits or misses, **spawn 1 Petal** adjacent to the attacker.
 
 ## Deeds
 
+Albedo has **3 legendary deeds per round**, and regains all expended deeds at the start of her turn.
 
-#### Act
-
-Albedo can expend legendary deeds to use the options below. Only one legendary deed can be used at a time and only at the end of another creature's turn.
-
-- **Spawn Petal.** (Costs 1 Deed) Create **1 Petal** in an empty space within [= 3 stride =]
-- **Detonate Parasites.** (Costs 2 Deeds) Each **Parasite** on creatures within [= 12 stride =] **detonates** for **10 ([% 4d4 chemical %])** + **10 ([% 4d4 psychic %])**.
-- **Reef Stride.** (Costs 2 Deeds) Albedo **teleports up to [= 12 stride =]** to a square of **Endless Reef** she can sense.
-- **Merge Swarm.** (Costs 3 Deeds) Choose up to **3 Petals** within [= 4 stride =]; they merge into **1 Bloom** at full HP.
-
----
-
-
+Albedo can expend legendary deeds to use the options below, each taken with different timing, as described in [Legendary Deeds](/en/library/rules/creatures-critters-and-characters/legendary-deeds).
 
 #### Lair
 
@@ -262,6 +254,19 @@ The nucleus destabilizes; replication overruns structure.
 - All ground within **[= 24 stride =]** becomes **Endless Reef**.
 
 ---
+
+#### Act
+
+Act deeds are taken at the end of another creature’s turn, as described in [Legendary Deeds](/en/library/rules/creatures-critters-and-characters/legendary-deeds).
+
+- **Spawn Petal.** (Costs 1 Deed) Create **1 Petal** in an empty space within [= 3 stride =]
+- **Detonate Parasites.** (Costs 2 Deeds) Each **Parasite** on creatures within [= 12 stride =] **detonates** for **10 ([% 4d4 chemical %])** + **10 ([% 4d4 psychic %])**.
+- **Reef Stride.** (Costs 2 Deeds) Albedo **teleports up to [= 12 stride =]** to a square of **Endless Reef** she can sense.
+- **Merge Swarm.** (Costs 3 Deeds) Choose up to **3 Petals** within [= 4 stride =]; they merge into **1 Bloom** at full HP.
+
+---
+
+
 
 ## Spawn Statlets
 

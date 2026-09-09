@@ -28,6 +28,8 @@ contentType: monsters
 
 ---
 
+<Sheet>
+
 ## Traits
 
 <Trait>
@@ -57,22 +59,6 @@ the kelpybara may wield equipment according to the following table:
 #### Multiattack
 
 The kelpybara makes one Gnash & Cling attack and one Body Slam attack, or two attacks with a wielded weapon (if equipped).
-
-<Attack accuracy="+5" reach="[= 1 stride =]">
-
-##### Gnash & Cling
-
-On a hit, 11 ([% 2d6 +4 piercing %]). If the target is Medium or smaller, it is [# kw:condition:grappled #] (escape DC 12). While grappling a creature: the kelpybara occupies the same space as the target, the kelpybara has half cover against attacks from creatures other than the target, and the kelpybara may move the [# kw:condition:grappled #] creature with it at full speed.
-
-</Attack>
-
-<Attack accuracy="+5" reach="[= 1 stride =]">
-
-##### Body Slam
-
-On a hit, 14 ([% 3d6 +4 bludgeoning %]). If the target is [# kw:condition:prone #] or [# kw:condition:grappled #], it saves Strength against DC 12 or is pushed [= 2 stride =] and knocked [# kw:condition:prone #].
-
-</Attack>
 
 </Action>
 
@@ -109,8 +95,25 @@ If the kelpybara hits a creature that is [# kw:condition:grappled #] or [# kw:co
 
 </Action>
 
----
+### Attacks
 
+<Attack accuracy="+5" reach="[= 1 stride =]">
+
+##### Gnash & Cling
+
+On a hit, 11 ([% 2d6 +4 piercing %]). If the target is Medium or smaller, it is [# kw:condition:grappled #] (escape DC 12). While grappling a creature: the kelpybara occupies the same space as the target, the kelpybara has half cover against attacks from creatures other than the target, and the kelpybara may move the [# kw:condition:grappled #] creature with it at full speed.
+
+</Attack>
+
+<Attack accuracy="+5" reach="[= 1 stride =]">
+
+##### Body Slam
+
+On a hit, 14 ([% 3d6 +4 bludgeoning %]). If the target is [# kw:condition:prone #] or [# kw:condition:grappled #], it saves Strength against DC 12 or is pushed [= 2 stride =] and knocked [# kw:condition:prone #].
+
+</Attack>
+
+---
 
 ### Reactions
 
@@ -122,7 +125,6 @@ The kelpybara may use a reaction to fold its ears over its eyes, gaining advanta
 
 </Action>
 
-</Monster>
 
 ## Kelpybara Equipment – Armor Table
 
@@ -157,3 +159,6 @@ Roll [% 1d6 %] or assign:
 The kelpybara gain Multiattack if wielding weapons.
 
 ---
+
+</Sheet>
+</Monster>

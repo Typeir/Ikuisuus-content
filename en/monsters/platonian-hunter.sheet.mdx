@@ -30,6 +30,8 @@ contentType: monsters
 
 ---
 
+<Sheet>
+
 ## Traits
 
 <Trait>
@@ -80,6 +82,10 @@ The Platonian Hunter has **8 spell points**, which can be spent to cast any of i
 
 The Platonian Hunter makes one attack with its main weapon and two attacks with its Fated Blade, or two attacks with any weapon, plus an attack with a Disambiguator, if it has one available.
 
+</Action>
+
+### Attacks
+
 <Attack accuracy="+12" range="[= 24 stride =]/[= 60 stride =]">
 
 ##### Muon Blaster _(Ranged Weapon, Two-Handed)_
@@ -108,9 +114,9 @@ On a hit, [% 2d8 +7 slashing %]
 
 </Attack>
 
-<Attack accuracy="+14" reach="[= 1 stride =]">
+<Attack accuracy="+14" reach="[= 1 stride =]" recharge="4–6">
 
-##### Disambiguator _(Melee Weapon, One-Handed, recharge 4-6)_
+##### Disambiguator _(Melee Weapon, One-Handed)_
 
 On a hit, [% 2d6 +9 slashing %], [% 2d12 dark %]. The plationian hunter choses an effect from the following list after it hits:
 
@@ -129,8 +135,6 @@ The hunter heals half of the damage dealt with this attack.
   **Effect**: If the target is Large or smaller, it saves Strength against DC 17 or is knocked [# kw:condition:prone #].  
   If the target takes damage from this attack, it [catches fire](/en/library/rules/steel-and-strife/conditions).
 
-</Action>
-
 ---
 
 ## Coatings
@@ -144,4 +148,7 @@ Each of the Platonian Hunter’s weapons is coated in a potent toxin. Once per d
 
 > The **Fated Blade’s** special vulnerability effect can only be attempted **once per day per target**.
 
+
+</Sheet>
 </Monster>
+

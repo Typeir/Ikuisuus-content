@@ -36,6 +36,8 @@ _Hiisi of Eternal Failure, Scion of Sulphur, Lord of Obsession, Miracle Incarnat
 
 ---
 
+<Sheet>
+
 ## Traits
 
 <Trait>
@@ -133,30 +135,6 @@ Xanthous always casts spells as though he were under the effect of the [_Twinned
 
 Xanthous strikes five times, once with a claw, twice with his tendrils, and twice with his Eye Beams.
 
-<Attack accuracy="+19" reach="[= 1 stride =]">
-
-##### Tombsteel Claws
-
-On a hit, 25 ([% 2d12 +10 piercing %]) plus 8 ([% 4d4 frost %]). The target saves Constitution against DC 25 or gains 1 level of exhaustion as tombsteel fragments bite into their marrow.
-
-</Attack>
-
-<Attack accuracy="+19" reach="[= 2 stride =]">
-
-##### Tendrils
-
-On a hit, 31 ([% 4d10 +10 piercing %]). The target is [# kw:condition:grappled #] (escape DC 25). While [# kw:condition:grappled #], the target is also [# kw:condition:restrained #] and silenced (cannot provide verbal or somatic components).
-
-</Attack>
-
-<Attack accuracy="+18" range="[= 12 stride =]/[= 24 stride =]">
-
-##### Eye Beams
-
-On a hit, 28 ([% 3d12 +10 holy %]). The target saves Wisdom against DC 25 or suffers psychic backlash, becoming [# kw:condition:terrified #] [# kw:briefly #]. If the creature was already [# kw:condition:terrified #], it instead takes an additional 31 ([% 5d12 psychic %]).
-
-</Attack>
-
 </Action>
 
 <Action cost="1 Major Action">
@@ -167,9 +145,6 @@ Xanthous casts a spell.
 
 </Action>
 
----
-
-
 <Action cost="1 Minor Action">
 
 #### Mind Wraps
@@ -178,11 +153,36 @@ As a Minor Action, Xanthous can grab (Athletics contest) a creature and grapple 
 
 </Action>
 
----
+### Attacks
+
+<Attack accuracy="+19" reach="[= 1 stride =]" cost="1 Major Action">
+
+##### Tombsteel Claws
+
+On a hit, 25 ([% 2d12 +10 piercing %]) plus 8 ([% 4d4 frost %]). The target saves Constitution against DC 25 or gains 1 level of exhaustion as tombsteel fragments bite into their marrow.
+
+</Attack>
+
+<Attack accuracy="+19" reach="[= 2 stride =]" cost="1 Major Action">
+
+##### Tendrils
+
+On a hit, 31 ([% 4d10 +10 piercing %]). The target is [# kw:condition:grappled #] (escape DC 25). While [# kw:condition:grappled #], the target is also [# kw:condition:restrained #] and silenced (cannot provide verbal or somatic components).
+
+</Attack>
+
+<Attack accuracy="+18" range="[= 12 stride =]/[= 24 stride =]" cost="1 Major Action">
+
+##### Eye Beams
+
+On a hit, 28 ([% 3d12 +10 holy %]). The target saves Wisdom against DC 25 or suffers psychic backlash, becoming [# kw:condition:terrified #] [# kw:briefly #]. If the creature was already [# kw:condition:terrified #], it instead takes an additional 31 ([% 5d12 psychic %]).
+
+</Attack>
 
 
-### Deeds
+## Deeds
 
+Xanthous has **3 legendary deeds per round**, and regains all expended deeds at the start of his turn.
 
 #### Lair
 
@@ -203,7 +203,7 @@ Each cross counts as a separate deed.
 
 #### Act
 
-Xanthous can expend legendary deeds to use the options below. Only one legendary deed can be used at a time and only at the end of another creature's turn.
+Xanthous can expend legendary deeds to use the options below, each taken with different timing, as described in [Legendary Deeds](/en/library/rules/creatures-critters-and-characters/legendary-deeds). Only one legendary deed can be used at a time and only at the end of another creature's turn.
 
 <Action cost="1 Deed" deed="act">
 
@@ -253,11 +253,13 @@ On a successful save, a creature takes half as much damage and is not [# kw:cond
 
 </Action>
 
+</Sheet>
+
 </Monster>
 
 ---
 
-## Angel of the Blazing Blade
+# Angel of the Blazing Blade
 
 <BlendedImage
   src='/library/images/monsters/xanthous-angel4.webp'
@@ -288,6 +290,8 @@ On a successful save, a creature takes half as much damage and is not [# kw:cond
 
 ---
 
+<Sheet>
+
 ### Traits
 
 <Trait>
@@ -306,7 +310,9 @@ The angel can use its reaction to impose disadvantage on an attack roll made aga
 
 </Trait>
 
-### Major Actions
+---
+
+### Actions
 
 <Action cost="1 Major Action">
 
@@ -314,7 +320,11 @@ The angel can use its reaction to impose disadvantage on an attack roll made aga
 
 The angel makes two attacks with its Blazing Blade.
 
-<Attack accuracy="+11" reach="[= 1 stride =]">
+</Action>
+
+### Attacks
+
+<Attack accuracy="+11" reach="[= 1 stride =]" cost="1 Major Action">
 
 ##### Blazing Blade
 
@@ -322,11 +332,11 @@ On a hit, 21 ([% 3d10 +4 holy %]).
 
 </Attack>
 
-</Action>
+</Sheet>
 
 </Monster>
 
-## Angel of the Seven Wings
+# Angel of the Seven Wings
 
 <BlendedImage
   src='/library/images/monsters/xanthous-angel.webp'
@@ -357,6 +367,8 @@ On a hit, 21 ([% 3d10 +4 holy %]).
 
 ---
 
+<Sheet>
+
 ### Traits
 
 <Trait>
@@ -385,25 +397,21 @@ As a Minor Action, it can become incorporeal until the start of its next turn, g
 
 ---
 
-### Major Actions
-
-<Action>
-
-#### Wing Slash
+### Attacks
 
 <Attack accuracy="+13" reach="[= 2 stride =]">
+
+##### Wing Slash
 
 On a hit, 27 ([% 3d12 +6 slashing %]).
 
 </Attack>
 
-</Action>
-
----
+</Sheet>
 
 </Monster>
 
-## Angel of Tombsteel Frame
+# Angel of Tombsteel Frame
 
 <BlendedImage
   src='/library/images/monsters/xanthous-angel2.webp'
@@ -434,6 +442,8 @@ On a hit, 27 ([% 3d12 +6 slashing %]).
 
 ---
 
+<Sheet>
+
 ### Traits
 
 <Trait>
@@ -446,19 +456,15 @@ Creatures within [= 2 stride =] take 10 dark damage at the start of their turn.
 
 ---
 
-### Major Actions
-
-<Action>
-
-#### Tombsteel Claws
+### Attacks
 
 <Attack accuracy="+13" reach="[= 1 stride =]">
+
+##### Tombsteel Claws
 
 On a hit, 28 ([% 4d10 +6 frost %]).
 
 </Attack>
-
-</Action>
 
 ---
 
@@ -472,11 +478,11 @@ When a creature misses the angel with a melee attack, it can use its reaction to
 
 </Action>
 
----
+</Sheet>
 
 </Monster>
 
-## Angel of Eternal Slumber
+# Angel of Eternal Slumber
 
 <BlendedImage
   src='/library/images/monsters/xanthous-angel3.webp'
@@ -506,6 +512,8 @@ When a creature misses the angel with a melee attack, it can use its reaction to
 
 ---
 
+<Sheet>
+
 ### Traits
 
 <Trait>
@@ -526,20 +534,16 @@ As a Minor Action, the angel may grant 10 temporary hit points to any creature t
 
 ---
 
-### Major Actions
-
-<Action>
-
-#### Dreaming Touch
+### Attacks
 
 <Attack accuracy="+11" reach="[= 1 stride =]">
+
+##### Dreaming Touch
 
 On a hit, 21 ([% 3d10 +4 psychic %]), and the target saves Wisdom against DC 25 or is [# kw:condition:incapacitated #] [# kw:briefly #].
 
 </Attack>
 
-</Action>
-
----
+</Sheet>
 
 </Monster>

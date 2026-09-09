@@ -31,7 +31,7 @@ The Lunar Chimera has **3 legendary deeds per round**, shared across its three s
 
 ## Legendary Deed: Act
 
-The Lunar Chimera can expend legendary deeds to use the options below. Only one legendary deed can be used at a time and only at the end of another creature's turn.
+The Lunar Chimera can expend legendary deeds to use the options below, each taken with different timing, as described in [Legendary Deeds](/en/library/rules/creatures-critters-and-characters/legendary-deeds).
 
 - **Savage Swipe.** (Costs 1 Deed) The lion makes one **claw** attack.
 - **Constriction Flick.** (Costs 1 Deed) The serpent makes one **Tail Strike**.
@@ -40,7 +40,7 @@ The Lunar Chimera can expend legendary deeds to use the options below. Only one 
 
 ---
 
-## Lunar Chimera, Lion
+# Lunar Chimera, Lion
 
 <Monster
   size="Huge"
@@ -65,6 +65,8 @@ The Lunar Chimera can expend legendary deeds to use the options below. Only one 
   xp="75,000">
 
 ---
+
+<Sheet>
 
 ## Traits
 
@@ -114,13 +116,19 @@ The damage bonus from this trait applies to legendary deeds as well, and cannot 
 
 ---
 
-## Actions
+## Features
+
+### Actions
 
 <Action>
 
 #### Multiattack
 
 The lion makes three attacks: two with its claws and one with its bite, or it can use its Crushing Pounce and make one bite attack.
+
+</Action>
+
+### Attacks
 
 <Attack accuracy="+17" reach="[= 1 stride =]">
 
@@ -147,13 +155,13 @@ Until the grapple ends, the target is **[# kw:condition:restrained #]**.
 
 </Attack>
 
-</Action>
+</Sheet>
 
 </Monster>
 
 ---
 
-## Lunar Chimera, Serpent
+# Lunar Chimera, Serpent
 
 <Monster
   size="Huge"
@@ -180,6 +188,8 @@ Until the grapple ends, the target is **[# kw:condition:restrained #]**.
 
 ---
 
+<Sheet>
+
 ## Traits
 
 <Trait>
@@ -201,21 +211,9 @@ The serpent can see through magical darkness as if it were normal darkness.
 
 ---
 
-## Actions
+## Features
 
-<Action>
-
-#### Tail Strike
-
-<Attack accuracy="+16" reach="[= 3 stride =]">
-
-On a hit, 19 ([% 2d10 +8 bludgeoning %]) plus 18 ([% 4d8 poison %]).
-The target saves Constitution against DC 22 or becomes **[# kw:condition:Paralyzed #]** [# kw:briefly #].
-[# kw:condition:Paralyzed #] creatures take maximized damage from this attack. This doubles on critical hits.
-
-</Attack>
-
-</Action>
+### Actions
 
 <Action recharge="5–6">
 
@@ -236,10 +234,24 @@ The spray originates from the dead member's position, and uses the serpent's sav
 
 </Action>
 
+### Attacks
+
+<Attack accuracy="+16" reach="[= 3 stride =]">
+
+##### Tail Strike
+
+On a hit, 19 ([% 2d10 +8 bludgeoning %]) plus 18 ([% 4d8 poison %]).
+The target saves Constitution against DC 22 or becomes **[# kw:condition:Paralyzed #]** [# kw:briefly #].
+[# kw:condition:Paralyzed #] creatures take maximized damage from this attack. This doubles on critical hits.
+
+</Attack>
+
+</Sheet>
+
 </Monster>
 ---
 
-## Lunar Chimera, Goat
+# Lunar Chimera, Goat
 
 <Monster
   size="Huge"
@@ -265,6 +277,8 @@ The spray originates from the dead member's position, and uses the serpent's sav
   saveDc="22">
 
 ---
+
+<Sheet>
 
 ## Traits
 
@@ -297,7 +311,9 @@ All spells cast in this way are considered **magical effects created by the goat
 
 ---
 
-## Actions
+## Features
+
+### Actions
 
 <Action>
 
@@ -312,6 +328,8 @@ The reconstituted member immediately returns to life with **half hit points** an
 This effect does not require concentration, does not consume spell points, and cannot be counterspelled.
 
 </Action>
+
+</Sheet>
 
 </Monster>
 

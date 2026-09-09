@@ -7,7 +7,7 @@ contentType: monsters
 
 These bandits are devout followers of [The Golden Pig](/en/library/monsters/golden-pig), the vessel for xanthous's second coming. Though the lesser ranks are oblivious to the reality of their situation, the driving forces of their band will stop at nothing to see their heavenly master returned.
 
-## Pig Mask Bandit
+# Pig Mask Bandit
 
 <Monster
   size="Medium"
@@ -32,13 +32,21 @@ These bandits are devout followers of [The Golden Pig](/en/library/monsters/gold
 
 ---
 
-## Actions
+<Sheet>
+
+## Features
+
+### Actions
 
 <Action cost="1 Major Action">
 
 #### Multiattack
 
 The Bandit makes two attacks with his weapons.
+
+</Action>
+
+### Attacks
 
 <Attack accuracy="+6" reach="[= 1 stride =]">
 
@@ -64,13 +72,13 @@ On a hit, 8 ([% 1d8 +3 bludgeoning %]).
 
 </Attack>
 
-</Action>
+</Sheet>
 
 </Monster>
 
 ---
 
-## Trapper Bandit
+# Trapper Bandit
 
 <Monster
   size="Medium"
@@ -95,6 +103,8 @@ On a hit, 8 ([% 1d8 +3 bludgeoning %]).
 
 ---
 
+<Sheet>
+
 ## Traits
 
 <Trait>
@@ -107,19 +117,9 @@ On each of its turns, the bandit can take the Dash, Disengage, or Hide action as
 
 ---
 
-## Actions
+## Features
 
-<Action cost="1 Major Action">
-
-#### Shortsword
-
-<Attack accuracy="+2" reach="[= 1 stride =]">
-
-On a hit, 3 ([% 1d6 piercing %]).
-
-</Attack>
-
-</Action>
+### Actions
 
 <Action saveDc="13" accuracy="+5">
 
@@ -133,11 +133,23 @@ The trapper carries two [Grease Bottles](/en/library/items/trinkets/grease-bottl
 
 </Action>
 
+### Attacks
+
+<Attack accuracy="+2" reach="[= 1 stride =]" cost="1 Major Action">
+
+##### Shortsword
+
+On a hit, 3 ([% 1d6 piercing %]).
+
+</Attack>
+
+</Sheet>
+
 </Monster>
 
 ---
 
-## Malformed Bandit
+# Malformed Bandit
 
 <Monster
   size="Medium"
@@ -162,6 +174,8 @@ The trapper carries two [Grease Bottles](/en/library/items/trinkets/grease-bottl
 
 ---
 
+<Sheet>
+
 ## Traits
 
 <Trait>
@@ -182,29 +196,15 @@ The Malformed Bandit can sprout ethereal wings for 1 round, granting it a flying
 
 ---
 
-## Actions
+## Features
+
+### Actions
 
 <Action cost="1 Major Action">
 
 #### Multiattack
 
 The Malformed Bandit makes four attacks: two with its greatsword and two ranged attacks with its wings. The wings and the sword must hit different targets.
-
-<Attack accuracy="+6" reach="[= 1 stride =]">
-
-##### Greatsword
-
-On a hit, 10 ([% 2d6 +3 slashing %]).
-
-</Attack>
-
-<Attack accuracy="+6" reach="[= 2 stride =]">
-
-##### Wings
-
-On a hit, 7 ([% 1d6 +3 psychic %]).
-
-</Attack>
 
 </Action>
 
@@ -226,13 +226,33 @@ On each of its turns, the bandit can take the Dash, Disengage, or Hide action as
 
 </Action>
 
+### Attacks
+
+<Attack accuracy="+6" reach="[= 1 stride =]">
+
+##### Greatsword
+
+On a hit, 10 ([% 2d6 +3 slashing %]).
+
+</Attack>
+
+<Attack accuracy="+6" reach="[= 2 stride =]">
+
+##### Wings
+
+On a hit, 7 ([% 1d6 +3 psychic %]).
+
+</Attack>
+
+</Sheet>
+
 </Monster>
 
 ---
 
 ## Aftermath
 
-After the fight, roll a d4, if it lands on 4, one bandit regains consciousness, and roll the d4 again. Do so untill you stop getting 4's then, roll the following table to see which bandit woke up and what information they have, provided the party don't finish them off.
+After the fight, roll a d4, if it lands on 4, one bandit regains consciousness, and roll the d4 again. Repeat until the roll stops landing on 4, then roll the following table to see which bandit woke up and what information they have, provided the party don't finish them off.
 
 | **Roll** | **Name**    | **Info**                                                                                                                               |
 | -------- | ----------- | -------------------------------------------------------------------------------------------------------------------------------------- |

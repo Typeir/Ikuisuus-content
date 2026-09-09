@@ -5,7 +5,7 @@ contentType: monsters
 
 # Spawn of the Black One – Servants of Nigredo
 
----
+# Spawn of Hollow Joints
 
 <Monster
   size="Medium"
@@ -29,11 +29,11 @@ contentType: monsters
   xp="5,000"
   tierBonus="+3">
 
-## Spawn of Hollow Joints
-
 ---
 
-### Traits
+<Sheet>
+
+## Traits
 
 <Trait>
 
@@ -53,13 +53,19 @@ When this creature is reduced to 0 HP, it explodes in a spray of freezing oil an
 
 ---
 
+## Features
+
 ### Actions
 
-<Action>
+<Action cost="1 Major Action">
 
 #### Multiattack
 
 The Spawn makes two attacks: one with its Crushing Fist and one with its Spinal Latch.
+
+</Action>
+
+### Attacks
 
 <Attack accuracy="+8" reach="[= 1 stride =]">
 
@@ -77,15 +83,13 @@ On a hit, Target is **[# kw:condition:grappled #] and [# kw:condition:restrained
 
 </Attack>
 
-</Action>
-
----
+</Sheet>
 
 </Monster>
 
-## Spawn of Hollow Joints
-
 ---
+
+# Spawn of Iron Hunger
 
 <Monster
   size="Medium"
@@ -108,11 +112,11 @@ On a hit, Target is **[# kw:condition:grappled #] and [# kw:condition:restrained
   xp="5,000"
   tierBonus="+4">
 
-## Spawn of Iron Hunger
-
 ---
 
-### Traits
+<Sheet>
+
+## Traits
 
 <Trait>
 
@@ -132,13 +136,19 @@ This creature has advantage on attacks against **[# kw:condition:prone #] or [# 
 
 ---
 
+## Features
+
 ### Actions
 
-<Action>
+<Action cost="1 Major Action">
 
 #### Multiattack
 
 The Spawn makes two Iron Maul attacks.
+
+</Action>
+
+### Attacks
 
 <Attack accuracy="+9" reach="[= 1 stride =]">
 
@@ -148,23 +158,21 @@ On a hit, 19 ([% 3d8 +5 bludgeoning %]) plus 7 ([% 2d6 dark %]).
 
 </Attack>
 
-<Feature>
+<Feature recharge="5–6">
 
-##### Centipede Torrent (Recharge 5–6) <span>[# kw:attack alteration #]</span>
+##### Centipede Torrent <span>[# kw:attack alteration #]</span>
 
 The Spawn vomits a stream of undead centipedes in a **[= 6 stride;ADJ =] cone**. Each creature in the area saves Dexterity against DC 16 or takes 21 ([% 6d6 dark %]) and is **[# kw:condition:paralyzed #] [# kw:briefly #]**. On a success, creatures take half damage and are not [# kw:condition:paralyzed #].
 
 </Feature>
 
-</Action>
-
----
+</Sheet>
 
 </Monster>
 
-## Spawn of Iron Hunger
-
 ---
+
+# Spawn of Dead Air
 
 <Monster
   size="Medium"
@@ -187,11 +195,11 @@ The Spawn vomits a stream of undead centipedes in a **[= 6 stride;ADJ =] cone**.
   xp="5,000"
   tierBonus="+4">
 
-## Spawn of Dead Air
-
 ---
 
-### Traits
+<Sheet>
+
+## Traits
 
 <Trait>
 
@@ -211,13 +219,19 @@ This creature floats unnaturally, its wings stitched together from wires and bon
 
 ---
 
+## Features
+
 ### Actions
 
-<Action>
+<Action cost="1 Major Action">
 
 #### Multiattack
 
 The Spawn makes two Still Touch attacks.
+
+</Action>
+
+### Attacks
 
 <Attack accuracy="+7" reach="[= 1 stride =]">
 
@@ -227,23 +241,21 @@ On a hit, 14 ([% 3d6 +4 frost %]) and the target is **unable to speak or vocaliz
 
 </Attack>
 
-<Feature>
+<Feature recharge="5–6">
 
-##### Necrostatic Pulse (Recharge 5–6) <span>[# kw:attack alteration #]</span>
+##### Necrostatic Pulse <span>[# kw:attack alteration #]</span>
 
 Emits a [= 12 stride;ADJ =] cone of null energy. Creatures in the area save Wisdom against DC 17 or fall **[# kw:condition:prone #] and [# kw:condition:frightened #]**. Undead instead **heal 17 ([% 3d10 %] HP)**.
 
 </Feature>
 
-</Action>
-
----
+</Sheet>
 
 </Monster>
 
-## Spawn of Dead Air
-
 ---
+
+# Spawn of the Carrion Choir
 
 <Monster
   size="Medium"
@@ -266,11 +278,11 @@ Emits a [= 12 stride;ADJ =] cone of null energy. Creatures in the area save Wisd
   xp="5,000"
   tierBonus="+4">
 
-## Spawn of the Carrion Choir
-
 ---
 
-### Traits
+<Sheet>
+
+## Traits
 
 <Trait>
 
@@ -282,27 +294,17 @@ Creatures within [= 3 stride =] have disadvantage on saving throws against **fea
 
 ---
 
+## Features
+
 ### Actions
 
-<Action>
+<Action cost="1 Major Action">
 
 #### Multiattack
 
 The Spawn makes two Rusted Lance attacks.
 
-<Attack accuracy="+8" reach="[= 2 stride =]">
-
-##### Rusted Lance
-
-On a hit, 15 ([% 2d10 +4 piercing %]). If the target is [# kw:condition:frightened #] or [# kw:condition:paralyzed #], they take an additional 7 ([% 2d6 dark %]).
-
-</Attack>
-
 </Action>
-
----
-
-### Minor Actions
 
 <Action cost="1 Minor Action">
 
@@ -312,6 +314,16 @@ The Spawn unleashes a psionic scream. One creature of its choice within [= 12 st
 
 </Action>
 
----
+### Attacks
+
+<Attack accuracy="+8" reach="[= 2 stride =]">
+
+##### Rusted Lance
+
+On a hit, 15 ([% 2d10 +4 piercing %]). If the target is [# kw:condition:frightened #] or [# kw:condition:paralyzed #], they take an additional 7 ([% 2d6 dark %]).
+
+</Attack>
+
+</Sheet>
 
 </Monster>

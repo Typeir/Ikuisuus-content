@@ -102,6 +102,19 @@ It can innately cast the following spells without components or slots, each of t
 
 Makes two Slam attacks.
 
+
+</Action>
+
+<Action cost="1 Minor Action">
+
+#### Wind Drift
+
+Moves up to [= 4 stride =] in any direction without provoking opportunity attacks. Must end movement in open air.
+
+</Action>
+
+### Attacks
+
 <Attack accuracy="+9" reach="[= 2 stride =]">
 
 ##### Slam
@@ -116,25 +129,18 @@ On a hit, 32 ([% 5d8 +7 bludgeoning %])
 
 On a hit, 41 ([% 6d10 +7 bludgeoning %]) and the target is knocked **[# kw:condition:prone #]**  
 If the target is **already [# kw:condition:prone #] or flying**, the attack deals **67 damage** and reduces its speed to **0** [# kw:briefly #]  
-_Only usable after falling at least [= 6 stride =]._
+_Only usable after falling at least [= 6 stride =]._  
+Everything around the impact suffers **Thunder Crush**.
+
+<Feature mark="other" accuracy="+6" targets="all creatures in a [= 6 stride;ADJ =] cone">
+
+###### Thunder Crush
+
+All creatures in a **[= 6 stride;ADJ =] cone** save Strength or are **pushed [= 4 stride =]**, **[# kw:condition:blinded #]**, and **knocked [# kw:condition:prone #]**.
+
+</Feature>
 
 </Attack>
-
--   
-  All creatures in a **[= 6 stride;ADJ =] cone** save Strength against DC 16 or are **pushed [= 4 stride =]**, **[# kw:condition:blinded #]**, and **knocked [# kw:condition:prone #]**.
-
-</Action>
-
----
-
-
-<Action cost="1 Minor Action">
-
-#### Wind Drift
-
-Moves up to [= 4 stride =] in any direction without provoking opportunity attacks. Must end movement in open air.
-
-</Action>
 
 </Sheet>
 

@@ -29,6 +29,8 @@ contentType: monsters
 
 ---
 
+<Sheet>
+
 ## Traits
 
 <Trait>
@@ -133,24 +135,6 @@ Arms of the Brume makes three attacks with **Paivämies Javelin**.
 
 </Action>
 
-<Action cost="1 Major Action">
-
-#### Paivämies Javelin
-
-_Weapon (Spear), Heavy, Thrown (60/240), Magical_
-
-<Attack accuracy="+17" reach="[= 2 stride =]" range="[= 12 stride =]/[= 48 stride =]">
-
-Hit: 26 ([% 3d10 +10 piercing %]) plus 18 ([% 4d8 holy %]).
-The spear reforms in Arms of the Brume’s hand immediately after being thrown.
-
-</Attack>
-
-</Action>
-
----
-
-
 <Action cost="1 Minor Action" recharge="6">
 
 #### Binding Strike
@@ -162,11 +146,24 @@ Whenever Arms of the Brume hits a creature with Paivämies Javelin, it can use a
 
 </Action>
 
+### Attacks
+
+<Attack accuracy="+17" reach="[= 2 stride =]" range="[= 12 stride =]/[= 48 stride =]">
+
+##### Paivämies Javelin
+
+_Weapon (Spear), Heavy, Thrown (60/240), Magical_
+
+Hit: 26 ([% 3d10 +10 piercing %]) plus 18 ([% 4d8 holy %]).
+The spear reforms in Arms of the Brume’s hand immediately after being thrown.
+
+</Attack>
+
 ---
 
+## Deeds
 
-### Deeds
-
+Arms of the Brume has **3 legendary deeds per round**, and regains all expended deeds at the start of its turn. Arms of the Brume can expend legendary deeds to use the options below, each taken with different timing, as described in [Legendary Deeds](/en/library/rules/creatures-critters-and-characters/legendary-deeds).
 
 #### Stratagem
 
@@ -198,7 +195,7 @@ After the effect resolves, the spear reforms in Arms of the Brume’s hand.
 
 #### Act
 
-Arms of the Brume can expend legendary deeds to use the options below. Only one legendary deed can be used at a time and only at the end of another creature's turn.
+Act deeds are taken at the end of another creature’s turn, as described in [Legendary Deeds](/en/library/rules/creatures-critters-and-characters/legendary-deeds).
 
 - **Punitive Strike.** (Costs 1 Deed)  
   Arms of the Brume makes one attack with Paivämies Javelin.
@@ -229,4 +226,7 @@ If Arms of the Brume becomes [# kw:condition:incapacitated #], these benefits en
 
 </Action>
 
+
+</Sheet>
 </Monster>
+

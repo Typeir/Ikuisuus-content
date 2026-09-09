@@ -30,6 +30,8 @@ contentType: monsters
 
 ---
 
+<Sheet>
+
 ## Traits
 
 <Trait>
@@ -68,6 +70,10 @@ The Duke has advantage on Charisma checks and saving throws.
 
 The Duke makes two attacks with his **Shadow Dagger**.
 
+</Action>
+
+### Attacks
+
 <Attack accuracy="+10" reach="[= 1 stride =]">
 
 ##### Shadow Dagger
@@ -76,14 +82,15 @@ On a hit, 15 ([% 2d6 +5 piercing %]) plus 10 ([% 3d6 psychic %]).
 
 </Attack>
 
-<Feature>
+<Feature recharge="5–6">
 
-##### Commanding Presence (Recharge 5–6) <span>[# kw:attack alteration #]</span>
+##### Commanding Presence <span>[# kw:attack alteration #]</span>
 
 The Duke can force all creatures of his choice within [= 6 stride =] to make a **Wisdom saving throw (DC 19)**. On a failed save, creatures are [# kw:condition:charmed #] by the Duke for 1 minute. A creature can [# kw:resist #] at the end of each of its turns.
 
 </Feature>
 
-</Action>
 
+</Sheet>
 </Monster>
+

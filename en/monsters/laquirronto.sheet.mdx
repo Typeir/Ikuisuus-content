@@ -3,6 +3,10 @@ source: Ikuisuus
 contentType: monsters
 ---
 
+# Laquirronto (Kynsilaccus moppi) – Cub Variant
+
+**Colloquial Name**: _Laquirronto_ — “Capped little freak” (Silurian rural slang)
+
 <Monster
   size="Medium"
   type="Wildlife"
@@ -22,11 +26,9 @@ contentType: monsters
   challenge="1/2"
   xp="100">
 
-# Laquirronto (Kynsilaccus moppi) – Cub Variant
-
-**Colloquial Name**: _Laquirronto_ — “Capped little freak” (Silurian rural slang)
-
 ---
+
+<Sheet>
 
 ## Traits
 
@@ -48,6 +50,53 @@ Leaves slippery mucus; area is difficult terrain for 1 minute.
 
 ---
 
+## Features
+
+### Attacks
+
+<Attack accuracy="+2" reach="[= 1 stride =]">
+
+##### Headbutt
+
+On a hit, 5 ([% 1d8 +1 bludgeoning %]).
+
+</Attack>
+
+</Sheet>
+
+</Monster>
+
+---
+
+# Laquirronto (Kynsilaccus moppi) – Adult Variant
+
+**Colloquial Name**: _Laquirronto_ — “Capped little freak” (Silurian rural slang)
+
+<Monster
+  size="Large"
+  type="Wildlife"
+  alignment="Unaligned"
+  armorClass="14"
+  hitPoints="85 ([% 10d10 +30 %])"
+  speed="[= 4 stride =], Gallop Burst [= 8 stride =]"
+  str="16"
+  dex="12"
+  con="16"
+  int="3"
+  wis="12"
+  cha="5"
+  saves="Dex +2, Con +4"
+  skills="Stealth +3, Survival +2"
+  senses="Darkvision [= 12 stride =], Tremorsense [= 6 stride =], Passive Perception 11"
+  languages="—"
+  challenge="4"
+  xp="1,200">
+
+---
+
+<Sheet>
+
+## Traits
 
 <Trait>
 
@@ -91,6 +140,81 @@ While motionless, indistinguishable from a stone or abandoned shell mound. DC 14
 
 ---
 
+## Features
+
+### Actions
+
+<Action cost="1 Major Action">
+
+#### Trample
+
+The Laquirronto bursts into a charge of [= 20 stride =] in a straight line. Creatures in its path save Strength against DC 16 or take 17 ([% 3d10 bludgeoning %]) and fall [# kw:condition:prone #]. If the laquirronto hits a wall, it takes 17 ([% 3d10 %] damage). The laquirronto may perform a shield bash attack after the charge.
+
+</Action>
+
+### Attacks
+
+<Attack accuracy="+4" reach="[= 1 stride =]">
+
+##### Shell Bash
+
+On a hit, 12 ([% 2d8 +3 bludgeoning %]).
+
+</Attack>
+
+<Attack accuracy="+3" reach="[= 2 stride =]">
+
+##### Lash Frond
+
+On a hit, 5 ([% 1d6 +2 slashing %]). Target saves Strength against DC 11 or is pulled [= 1 stride =] closer.
+
+</Attack>
+
+<Attack accuracy="+3" range="[= 6 stride =]">
+
+##### Tentacle Cast (Grapple)
+
+On a hit, Target is **[# kw:condition:grappled #]** (escape DC 12). While [# kw:condition:grappled #], the Laquirronto may **constrict** as a Minor Action on its turn, dealing 6 ([% 1d10 bludgeoning %]).
+
+A [# kw:condition:grappled #] creature can be freed if another character succeeds on a **DC 12 Strength (Athletics)** check as a Major Action to pull them free. The Laquirronto can only grapple **one creature at a time** with this ability.
+
+</Attack>
+
+</Sheet>
+
+</Monster>
+
+---
+
+# Laquirronto (Kynsilaccus moppi) – Ancient Variant
+
+**Colloquial Name**: _Laquirronto_ — “Capped little freak” (Silurian rural slang)
+
+<Monster
+  size="Large"
+  type="Wildlife"
+  alignment="Unaligned"
+  armorClass="16"
+  hitPoints="168 ([% 16d12 +64 %])"
+  speed="[= 6 stride =], Gallop Burst [= 10 stride =]"
+  str="20"
+  dex="13"
+  con="18"
+  int="4"
+  wis="14"
+  cha="6"
+  saves="Dex +3, Con +7"
+  skills="Stealth +4, Survival +4"
+  senses="Darkvision [= 18 stride =], Tremorsense [= 12 stride =], Passive Perception 12"
+  languages="—"
+  challenge="7"
+  xp="3,000">
+
+---
+
+<Sheet>
+
+## Traits
 
 <Trait>
 
@@ -140,158 +264,11 @@ DC 16 Intelligence (Investigation) to detect while still.
 
 <Action cost="1 Major Action">
 
-#### Headbutt
-
-<Attack accuracy="+2" reach="[= 1 stride =]">
-
-On a hit, 5 ([% 1d8 +1 bludgeoning %]).
-
-</Attack>
-
-</Action>
-
-</Monster>
-
----
-
-<Monster
-  size="Large"
-  type="Wildlife"
-  alignment="Unaligned"
-  armorClass="14"
-  hitPoints="85 ([% 10d10 +30 %])"
-  speed="[= 4 stride =], Gallop Burst [= 8 stride =]"
-  str="16"
-  dex="12"
-  con="16"
-  int="3"
-  wis="12"
-  cha="5"
-  saves="Dex +2, Con +4"
-  skills="Stealth +3, Survival +2"
-  senses="Darkvision [= 12 stride =], Tremorsense [= 6 stride =], Passive Perception 11"
-  languages="—"
-  challenge="4"
-  xp="1,200">
-
-# Laquirronto (Kynsilaccus moppi) – Adult Variant
-
-**Colloquial Name**: _Laquirronto_ — “Capped little freak” (Silurian rural slang)
-
----
-
-
-<Action cost="1 Major Action">
-
-#### Trample
-
-The Laquirronto bursts into a charge of [= 20 stride =] in a straight line. Creatures in its path save Strength against DC 16 or take 17 ([% 3d10 bludgeoning %]) and fall [# kw:condition:prone #]. If the laquirronto hits a wall, it takes 17 ([% 3d10 %] damage). The laquirronto may perform a shield bash attack after the charge.
-
-</Action>
-
-<Action cost="1 Major Action">
-
-#### Shell Bash
-
-<Attack accuracy="+4" reach="[= 1 stride =]">
-
-On a hit, 12 ([% 2d8 +3 bludgeoning %]).
-
-</Attack>
-
-</Action>
-
-<Action cost="1 Major Action">
-
-#### Lash Frond
-
-<Attack accuracy="+3" reach="[= 2 stride =]">
-
-On a hit, 5 ([% 1d6 +2 slashing %]). Target saves Strength against DC 11 or is pulled [= 1 stride =] closer.
-
-</Attack>
-
-</Action>
-
-<Action cost="1 Major Action">
-
-#### Tentacle Cast (Grapple)
-
-<Attack accuracy="+3" range="[= 6 stride =]">
-
-On a hit, Target is **[# kw:condition:grappled #]** (escape DC 12). While [# kw:condition:grappled #], the Laquirronto may **constrict** as a Minor Action on its turn, dealing 6 ([% 1d10 bludgeoning %]).
-
-A [# kw:condition:grappled #] creature can be freed if another character succeeds on a **DC 12 Strength (Athletics)** check as a Major Action to pull them free. The Laquirronto can only grapple **one creature at a time** with this ability.
-
-</Attack>
-
-</Action>
-
-</Monster>
-
----
-
-<Monster
-  size="Large"
-  type="Wildlife"
-  alignment="Unaligned"
-  armorClass="16"
-  hitPoints="168 ([% 16d12 +64 %])"
-  speed="[= 6 stride =], Gallop Burst [= 10 stride =]"
-  str="20"
-  dex="13"
-  con="18"
-  int="4"
-  wis="14"
-  cha="6"
-  saves="Dex +3, Con +7"
-  skills="Stealth +4, Survival +4"
-  senses="Darkvision [= 18 stride =], Tremorsense [= 12 stride =], Passive Perception 12"
-  languages="—"
-  challenge="7"
-  xp="3,000">
-
-# Laquirronto (Kynsilaccus moppi) – Ancient Variant
-
-**Colloquial Name**: _Laquirronto_ — “Capped little freak” (Silurian rural slang)
-
----
-
-
-<Action cost="1 Major Action">
-
 #### Trample
 
 The Laquirronto charges in a line. Creatures in its path save Strength against DC 17 or take 20 ([% 3d12 bludgeoning %]) and fall [# kw:condition:prone #].
 
 </Action>
-
-<Action cost="1 Major Action">
-
-#### Shell Bash
-
-<Attack accuracy="+7" reach="[= 1 stride =]">
-
-On a hit, 22 ([% 3d10 +5 bludgeoning %]).
-
-</Attack>
-
-</Action>
-
-<Action cost="1 Major Action">
-
-#### Lash Frond
-
-<Attack accuracy="+5" reach="[= 2 stride =]">
-
-On a hit, 10 ([% 2d6 +3 slashing %]). Target saves Strength against DC 14 or is pulled [= 2 stride =] closer.
-
-</Attack>
-
-</Action>
-
----
-
 
 <Action cost="1 Minor Action" recharge="6">
 
@@ -300,5 +277,25 @@ On a hit, 10 ([% 2d6 +3 slashing %]). Target saves Strength against DC 14 or is 
 The Laquirronto gallops and rams in a [= 2 stride;ADJ =]-wide line up to [= 10 stride =]. All creatures in the line save Dexterity against DC 15 or take 28 ([% 5d10 bludgeoning %]) and are thrown [= 2 stride =] into the air.
 
 </Action>
+
+### Attacks
+
+<Attack accuracy="+7" reach="[= 1 stride =]">
+
+##### Shell Bash
+
+On a hit, 22 ([% 3d10 +5 bludgeoning %]).
+
+</Attack>
+
+<Attack accuracy="+5" reach="[= 2 stride =]">
+
+##### Lash Frond
+
+On a hit, 10 ([% 2d6 +3 slashing %]). Target saves Strength against DC 14 or is pulled [= 2 stride =] closer.
+
+</Attack>
+
+</Sheet>
 
 </Monster>

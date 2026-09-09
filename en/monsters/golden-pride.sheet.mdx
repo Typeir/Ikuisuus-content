@@ -31,6 +31,8 @@ contentType: monsters
 
 ---
 
+<Sheet>
+
 ## Traits
 
 <Trait>
@@ -63,30 +65,6 @@ The pride makes two **Claw** attacks and one **Bite** attack, or casts two cantr
 
 </Action>
 
-<Action cost="1 Major Action">
-
-#### Claw
-
-<Attack accuracy="+8" reach="[= 1 stride =]">
-
-On a hit, 9 ([% 1d8 +4 slashing %]) plus 7 ([% 2d6 holy %]).
-
-</Attack>
-
-</Action>
-
-<Action cost="1 Major Action">
-
-#### Bite
-
-<Attack accuracy="+8" reach="[= 1 stride =]">
-
-On a hit, 11 ([% 2d6 +4 piercing %]) plus 7 ([% 2d6 holy %]).
-
-</Attack>
-
-</Action>
-
 <Action charges="1/recovery" cost="1 Major Action">
 
 #### Roar of Majesty
@@ -111,8 +89,6 @@ The pride fixes its gaze upon a creature within [= 6 stride =]. That creature sa
 
 </Action>
 
----
-
 <Action accuracy="+9" cost="1 Major Action">
 
 #### Spellcasting
@@ -125,4 +101,25 @@ The pride fixes its gaze upon a creature within [= 6 stride =]. That creature sa
 
 </Action>
 
+### Attacks
+
+<Attack accuracy="+8" reach="[= 1 stride =]">
+
+##### Claw
+
+On a hit, 9 ([% 1d8 +4 slashing %]) plus 7 ([% 2d6 holy %]).
+
+</Attack>
+
+<Attack accuracy="+8" reach="[= 1 stride =]">
+
+##### Bite
+
+On a hit, 11 ([% 2d6 +4 piercing %]) plus 7 ([% 2d6 holy %]).
+
+</Attack>
+
+
+</Sheet>
 </Monster>
+

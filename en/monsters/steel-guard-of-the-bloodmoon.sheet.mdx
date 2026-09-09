@@ -28,7 +28,17 @@ contentType: monsters
 
 ---
 
+<Sheet>
+
 ## Traits
+
+<Trait>
+
+#### Legendary Deeds
+
+The Steel Guard has **1 legendary deed per round**, and regains all expended deeds at the start of its turn.
+
+</Trait>
 
 <Trait>
 
@@ -87,6 +97,18 @@ Its weapons deal double damage to objects and structures.
 
 The Steel Guard makes two attacks with its weapon.
 
+</Action>
+
+### Attacks
+
+<Attack accuracy="+10" reach="[= 2 stride =]" cost="1 Major Action">
+
+##### Giant Hammer
+
+On a hit, 32 ([% 4d12 +6 bludgeoning %]). When using the hammer, the Steel Guard cannot Multiattack. The hammer's attacks are cleaving arcs, dealing half damage to all creatures within [= 1 stride =] of the target. All creatures that take damage from the attack are pushed [= 2 stride =] away from the Steel Guard.
+
+</Attack>
+
 <Attack accuracy="+10" reach="[= 2 stride =]">
 
 ##### Giant Stake
@@ -103,22 +125,7 @@ On a hit, 14 ([% 3d4 +6 bludgeoning %]).
 
 </Attack>
 
-</Action>
-
-<Action cost="1 Major Action">
-
-#### Giant Hammer
-
-<Attack accuracy="+10" reach="[= 2 stride =]">
-
-On a hit, 32 ([% 4d12 +6 bludgeoning %]). When using the hammer, the Steel Guard cannot Multiattack. The hammer's attacks are cleaving arcs, dealing half damage to all creatures within [= 1 stride =] of the target. All creatures that take damage from the attack are pushed [= 2 stride =] away from the Steel Guard.
-
-</Attack>
-
-</Action>
-
 ---
-
 
 ### Reactions
 
@@ -133,11 +140,18 @@ When hit by an attack from the front, the Steel Guard may roll a d10. On an 8–
 ---
 
 
-### Deeds
+## Deeds
 
+The Steel Guard has **1 legendary deed per round**, and regains all expended deeds at the start of its turn. It can expend deeds to use the options below, each taken with different timing, as described in [Legendary Deeds](/en/library/rules/creatures-critters-and-characters/legendary-deeds).
 
-#### Act
+<Feature deed="act" cost="1 Deed">
 
-If Ludwig is present, he may spend **1 legendary deed** at the end of another creature's turn to command one Steel Guard to make a single weapon attack or move up to half its speed without provoking opportunity attacks.
+#### Bloodmoon Drill
 
+The Steel Guard makes a single weapon attack, or moves up to half its speed without provoking opportunity attacks.
+
+</Feature>
+
+</Sheet>
 </Monster>
+

@@ -96,18 +96,10 @@ The War Machine makes three attacks with any combination of its weapons.
 
 <Attack accuracy="+14" reach="[= 4 stride =]">
 
-##### Pseudopod Slam
+##### Pseudopod Slam <span>Melee Weapon Attack</span>
 
 On a hit, 18 ([% 3d8 +6 bludgeoning %]) and chemical damage.  
-Targets suffer **Crushing Weight**.  
-
-<Feature mark="other" accuracy="+10">
-
-###### Crushing Weight
-
-A creature the slam hits gains **1 stack of [# kw:Erosion #]** and saves Strength or is **knocked [# kw:condition:prone #]**.
-
-</Feature>
+Targets gain **1 stack of [# kw:Erosion #]** and save Strength against **DC 20** or are **knocked [# kw:condition:prone #]**.
 
 </Attack>
 
@@ -120,9 +112,9 @@ Creatures that fail are **[# kw:condition:blinded #]** [# kw:briefly #] and gain
 
 </Feature>
 
-<Attack accuracy="+16" reach="[= 2 stride =]">
+<Attack accuracy="+16" reach="[= 2 stride =]" recharge="4–6">
 
-##### Nulled Blade (Recharge 4–6)
+##### Nulled Blade <span>Melee Weapon Attack</span>
 
 On a hit, 22 ([% 4d10 +9 force %]).  
 Targets suffer **Nulling**.  
@@ -138,13 +130,13 @@ The creature becomes **immune to those effects** until it finishes a [# kw:Repos
 
 </Attack>
 
-<Attack accuracy="+16" reach="[= 1 stride =]">
+<Attack accuracy="+16" reach="[= 1 stride =]" recharge="4–6">
 
-##### Barely Functional Disambiguator (Recharge 4–6)
+##### Barely Functional Disambiguator <span>Melee Weapon Attack</span>
 
 On a hit, [% 2d6 +9 slashing %] plus [% 2d12 dark %].  
 The War Machine heals **half of the damage dealt** with this attack.  
-It saves against **Backfire**, or it cannot use **The Toll** and **The Cave** for this attack.  
+It saves against **Backfire**, or it cannot use **The Toll** or **The Cave** for this attack.  
 
 <Feature mark="other" accuracy="+16" targets="the War Machine">
 
@@ -166,28 +158,20 @@ A creature the Disambiguator hits saves Constitution or fails one death saving t
 
 ###### The Cave
 
-A creature the Disambiguator hits saves Charisma or is **[# kw:condition:stunned #], [# kw:condition:paralyzed #], put to sleep, and [# kw:condition:petrified #]** (petrification completes after two rounds). This effect cannot be repeated and can only be removed by a curse removal.
+A creature the Disambiguator hits saves Charisma or is **[# kw:condition:stunned #], [# kw:condition:paralyzed #], put to sleep, and [# kw:condition:petrified #]**. This effect cannot be repeated and can only be removed by a curse removal.
 
 </Feature>
 
 </Attack>
 
-<Attack accuracy="+14" range="[= 2 stride =]/[= 6 stride =]" targets="creatures within range">
+<Attack accuracy="+14" range="[= 2 stride =]/[= 6 stride =]">
 
 ##### Thruster Axe-Kick <span>[# kw:attack alteration #]</span>
 
 The War Machine launches forward on hydraulic thrusters, landing [= 1 stride =] from its target.  
 On a hit, [% 3d10 +6 slashing %].  
 A target that takes damage also gains **1 stack of [# kw:Erosion #]**.  
-Targets suffer **Driven Down**.
-
-<Feature mark="other" accuracy="+10" targets="targets that are Large or smaller">
-
-###### Driven Down
-
-A creature the kick hits saves Strength or is **knocked [# kw:condition:prone #]**.
-
-</Feature>
+Targets that are Large or smaller save Strength against **DC 20** or are **knocked [# kw:condition:prone #]**.
 
 </Attack>
 
@@ -195,7 +179,7 @@ A creature the kick hits saves Strength or is **knocked [# kw:condition:prone #]
 
 ## Deeds
 
-The Abandoned Old War Machine can expend deeds to use the options below. Only one deed can be used at a time and only at the end of another creature's turn.
+The Abandoned Old War Machine has **3 legendary deeds per round**, and regains all expended deeds at the start of its turn. It can expend deeds to use the options below, each taken with different timing, as described in [Legendary Deeds](/en/library/rules/creatures-critters-and-characters/legendary-deeds).
 
 <Feature deed="act" cost="1 Deed">
 

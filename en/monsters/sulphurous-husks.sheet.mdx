@@ -7,6 +7,8 @@ contentType: monsters
 
 These creatures are old empyrean and human inhabitants of the original city of the brume, buried in sulphur, fire and xanthosis when their god-patron Xanthous destroyed his own empire in a mad fit of rage and self sabotage.
 
+# Husk of Xanthosis (Sword-Wielder)
+
 <Monster
   size="Medium"
   type="Construct (Undead)"
@@ -27,11 +29,15 @@ These creatures are old empyrean and human inhabitants of the original city of t
   challenge="1/2"
   xp="100">
 
+---
+
+<Sheet>
+
 ## Traits
 
 <Trait>
 
-### Diseased Body
+#### Diseased Body
 
 Any creature hit by the husk's sword saves Constitution against DC 10 or is infected with a minor disease. After 1 hour, the infected creature gains disadvantage on Constitution saving throws and skill checks for 24 hours. The disease can be cured with _Restoration_ or after 24 hours without a failed saving throw.
 
@@ -39,39 +45,9 @@ Any creature hit by the husk's sword saves Constitution against DC 10 or is infe
 
 <Trait>
 
-### Undead Fortitude
+#### Undead Fortitude
 
 If damage reduces the husk to 0 hit points, it saves Constitution with a DC equal to the damage taken, unless the damage is holy or from a critical hit. On a success, the husk drops to 1 hit point instead.
-
-</Trait>
-
----
-
-
-<Trait>
-
-### Diseased Bite
-
-Any creature hit by the husk's bite saves Constitution against DC 10 or is infected with a minor disease. After 1 hour, the infected creature gains disadvantage on Constitution saving throws and skill checks for 24 hours. The disease can be cured with _Restoration_ or after 24 hours without a failed saving throw.
-
-</Trait>
-
-<Trait>
-
-### Undead Fortitude
-
-If damage reduces the husk to 0 hit points, it saves Constitution with a DC equal to the damage taken, unless the damage is holy or from a critical hit. On a success, the husk drops to 1 hit point instead.
-
-</Trait>
-
----
-
-
-<Trait>
-
-### Diseased Arrows
-
-The Husks of Xanthosis launches arrows tainted with minor diseases. Any creature hit by a ranged spell or attack saves Constitution against DC 10 or is infected with the husk's disease. After 1 hour, the infected creature gains disadvantage on Constitution saving throws and skill checks for 24 hours. The disease can be cured with [_Restoration_](/en/library/spells/restoration) or after 24 hours without a failed saving throw.
 
 </Trait>
 
@@ -83,23 +59,29 @@ The Husks of Xanthosis launches arrows tainted with minor diseases. Any creature
 
 <Action cost="1 Major Action">
 
-### Multiattack
+#### Multiattack
 
 The husk makes two attacks with its Rusty Sword.
 
+</Action>
+
+### Attacks
+
 <Attack accuracy="+3" reach="[= 1 stride =]">
 
-#### Rusty Sword
+##### Rusty Sword <span>Melee Weapon Attack</span>
 
 On a hit, 6 ([% 1d8 +2 slashing %]) plus 2 ([% 1d4 dark %]). The target saves Constitution against DC 10 or is infected with the husk's disease.
 
 </Attack>
 
-</Action>
+</Sheet>
 
 </Monster>
 
 ---
+
+# Husk of Xanthosis (Biter)
 
 <Monster
   size="Medium"
@@ -122,34 +104,67 @@ On a hit, 6 ([% 1d8 +2 slashing %]) plus 2 ([% 1d4 dark %]). The target saves Co
   xp="100"
   tierBonus="+2">
 
+---
+
+<Sheet>
+
+## Traits
+
+<Trait>
+
+#### Diseased Bite
+
+Any creature hit by the husk's bite saves Constitution against DC 10 or is infected with a minor disease. After 1 hour, the infected creature gains disadvantage on Constitution saving throws and skill checks for 24 hours. The disease can be cured with _Restoration_ or after 24 hours without a failed saving throw.
+
+</Trait>
+
+<Trait>
+
+#### Undead Fortitude
+
+If damage reduces the husk to 0 hit points, it saves Constitution with a DC equal to the damage taken, unless the damage is holy or from a critical hit. On a success, the husk drops to 1 hit point instead.
+
+</Trait>
+
+---
+
+## Features
+
+### Actions
 
 <Action cost="1 Major Action">
 
-### Multiattack
+#### Multiattack
 
 The husk makes two Bite attacks.
-
-<Attack accuracy="+3" reach="[= 1 stride =]">
-
-#### Bite
-
-On a hit, 6 ([% 1d6 +2 piercing %]) plus 2 ([% 1d4 dark %]). The target saves Constitution against DC 10 or is infected with the husk's disease.
-
-</Attack>
 
 </Action>
 
 <Action cost="1 Minor Action">
 
-### Leap
+#### Leap
 
 The husk can leap up to [= 2 stride =], landing within [= 1 stride =] of a target and making a Bite attack.
 
 </Action>
 
+### Attacks
+
+<Attack accuracy="+3" reach="[= 1 stride =]">
+
+##### Bite <span>Melee Weapon Attack</span>
+
+On a hit, 6 ([% 1d6 +2 piercing %]) plus 2 ([% 1d4 dark %]). The target saves Constitution against DC 10 or is infected with the husk's disease.
+
+</Attack>
+
+</Sheet>
+
 </Monster>
 
 ---
+
+# Husk of Xanthosis (Spellcaster/Ranged)
 
 <Monster
   size="Medium"
@@ -173,42 +188,53 @@ The husk can leap up to [= 2 stride =], landing within [= 1 stride =] of a targe
   tierBonus="+2"
   saveDc="10">
 
+---
+
+<Sheet>
+
+## Traits
+
+<Trait>
+
+#### Diseased Arrows
+
+The Husks of Xanthosis launches arrows tainted with minor diseases. Any creature hit by a ranged spell or attack saves Constitution against DC 10 or is infected with the husk's disease. After 1 hour, the infected creature gains disadvantage on Constitution saving throws and skill checks for 24 hours. The disease can be cured with [_Restoration_](/en/library/spells/restoration) or after 24 hours without a failed saving throw.
+
+</Trait>
+
+---
+
+## Features
+
+### Actions
 
 <Action cost="1 Major Action">
 
-### Multiattack
+#### Multiattack
 
 The husk makes one Rotting Arrow attack or casts a cantrip.
-
-<Attack accuracy="+3" range="[= 12 stride =]/[= 48 stride =]">
-
-#### Rotting Arrow
-
-On a hit, 6 ([% 1d8 +2 piercing %]) plus 3 ([% 1d6 dark %]). The target saves Constitution against DC 10 or is infected with the husk’s disease.
-
-</Attack>
 
 </Action>
 
 <Action accuracy="+2" cost="1 Major Action">
 
-### Spellcasting
+#### Spellcasting
 
 - **Cantrips (at will)**: [_Ashen Anointment_](/en/library/spells/ashen-anointment), [_Envenom_](/en/library/spells/envenom)
 - **1st level (2 slots)**: [_Ray of Sickness_](/en/library/spells/ray-of-sickness), [_Bane_](/en/library/spells/bane)
 
 </Action>
 
+### Attacks
+
+<Attack accuracy="+3" range="[= 12 stride =]/[= 48 stride =]">
+
+##### Rotting Arrow <span>Ranged Weapon Attack</span>
+
+On a hit, 6 ([% 1d8 +2 piercing %]) plus 3 ([% 1d6 dark %]). The target saves Constitution against DC 10 or is infected with the husk’s disease.
+
+</Attack>
+
+</Sheet>
+
 </Monster>
-
-## Husk of Xanthosis (Sword-Wielder)
-
----
-
-## Husk of Xanthosis (Biter)
-
----
-
-## Husk of Xanthosis (Spellcaster/Ranged)
-
----

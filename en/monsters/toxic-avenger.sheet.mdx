@@ -30,6 +30,8 @@ contentType: monsters
 
 ---
 
+<Sheet>
+
 ## Traits
 
 <Trait>
@@ -98,6 +100,23 @@ As an [# kw:delayed #] effect, creatures there save Dexterity against DC 18 or *
 
 The Avenger makes **two** attacks with its **Spine Sickle** or **Acid Tendrils**.
 
+</Action>
+
+<Action cost="1 Major Action" recharge="6">
+
+#### Deathcall.
+
+The Avenger raises its own severed head as it lets out a pressurized scream of acid vapor and psychic noise.  
+Each creature within **[= 12 stride =]** that can hear it saves Wisdom against DC 18.  
+On a failed save, the creature takes **27 ([% 6d8 psychic %])** and is **[# kw:condition:terrified #]** [# kw:briefly #].  
+If the creature was already [# kw:condition:terrified #], it additionally takes **48** chemical damage.  
+On a successful save, the creature takes half damage and is not [# kw:condition:terrified #].  
+If **Toxic Surge** is available, it immediately activates.
+
+</Action>
+
+### Attacks
+
 <Attack accuracy="+10" reach="[= 3 stride =]">
 
 ##### Spine Sickle
@@ -119,21 +138,6 @@ If a creature is already [# kw:condition:grappled #], the Avenger restrains them
 
 </Attack>
 
-</Action>
-
-<Action cost="1 Major Action">
-
-#### Deathcall (Recharge 6).
-
-The Avenger raises its own severed head as it lets out a pressurized scream of acid vapor and psychic noise.  
-Each creature within **[= 12 stride =]** that can hear it saves Wisdom against DC 18.  
-On a failed save, the creature takes **27 ([% 6d8 psychic %])** and is **[# kw:condition:terrified #]** [# kw:briefly #].  
-If the creature was already [# kw:condition:terrified #], it additionally takes **48** chemical damage.  
-On a successful save, the creature takes half damage and is not [# kw:condition:terrified #].  
-If **Toxic Surge** is available, it immediately activates.
-
-</Action>
-
 
 ### Reactions
 
@@ -144,8 +148,9 @@ If **Toxic Surge** is available, it immediately activates.
 ---
 
 
-### Deeds
+## Deeds
 
+The Avenger has **3 legendary deeds per round**, and regains all expended deeds at the start of its turn.
 
 #### Lair
 
@@ -160,7 +165,6 @@ Each creature in the area saves Dexterity against DC 18 or takes **31 ([% 7d8 bl
 
 As part of this action, the Avenger reverses sewage currents and immediately **relocates to a pipe within [= 24 stride =]**, even if it has already shifted using **Pipe Network** this round.
 
-</Monster>
 
 ## Toxic Surge (Recharge 3–6).##
 
@@ -168,3 +172,6 @@ A pressure blast erupts through all connected outlets.
 Each creature within **[= 3 stride =]** of any active pipe saves Constitution against DC 18, taking **31 ([% 7d8 chemical %])** and becoming **[# kw:condition:blinded #]** until the start of the Avenger's next turn on a failure, or half as much on a success.
 
 ---
+
+</Sheet>
+</Monster>

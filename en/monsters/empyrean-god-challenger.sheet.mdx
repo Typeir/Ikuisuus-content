@@ -35,6 +35,8 @@ contentType: monsters
 
 ---
 
+<Sheet>
+
 ## Traits
 
 <Trait>
@@ -122,22 +124,26 @@ This character may ride any of the following creatures:
 
 ---
 
+## Features
+
 ### Actions
 
-<Action>
+<Action cost="1 Major Action">
 
-##### Multiattack
+#### Multiattack
 
 The God-Challenger makes **two melee weapon attacks** with their **Grand Empyrean Sword-Spear**.
 
+</Action>
+
+### Attacks
+
 <Attack accuracy="+8" reach="[= 2 stride =]">
 
-###### Grand Empyrean Sword-Spear
+##### Grand Empyrean Sword-Spear <span>Melee Weapon Attack</span>
 
 On a hit, 12 ([% 1d10 +6 slashing %]) plus 6 ([% 2d6 frost %]).  
 This weapon is **Versatile** ([% 1d10 %]), **Heavy**, and **Martial**. It is forged from tombsteel and treated as magical for overcoming resistance.
-
-</Attack>
 
 <Feature>
 
@@ -150,7 +156,7 @@ When the God-Challenger hits a creature with a melee weapon attack, they can use
 
 </Feature>
 
-</Action>
+</Attack>
 
 ---
 
@@ -176,4 +182,7 @@ The God-Challenger is a spellcaster. Their casting ability is **Charisma**.
 - 1st: [_Shield of Faith_](/en/library/spells/shield-of-faith), [_Bless_](/en/library/spells/bless), [_Command_](/en/library/spells/command), [_Bane_](/en/library/spells/bane)
 - 2nd: [_Hold_](/en/library/spells/hold), [_Magic Weapon_](/en/library/spells/magic-weapon)
 
+
+</Sheet>
 </Monster>
+

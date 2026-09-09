@@ -29,6 +29,8 @@ contentType: monsters
 
 ---
 
+<Sheet>
+
 ## Traits
 
 <Trait>
@@ -67,13 +69,18 @@ The Ribboner makes **two attacks**, choosing from **Throwing Dagger**, **Stake**
 
 </Action>
 
----
-
 <Action cost="1 Major Action">
 
-#### Throwing Dagger
+#### Tie
+One creature **[# kw:condition:grappled #]** by the Ribboner saves Dexterity against DC 15 or is **[# kw:condition:restrained #] [# kw:briefly #]**.
+
+</Action>
+
+### Attacks
 
 <Attack accuracy="+7" range="[= 4 stride =]/[= 12 stride =]">
+
+##### Throwing Dagger
 
 On a hit, 9 ([% 1d10 +4 piercing %]).
 
@@ -81,15 +88,9 @@ If the target is within **[= 2 stride =] of an edge or drop**, the Ribboner may 
 
 </Attack>
 
-</Action>
-
----
-
-<Action cost="1 Major Action">
-
-#### Stake
-
 <Attack accuracy="+6" reach="[= 1 stride =]">
+
+##### Stake
 
 On a hit, 10 ([% 2d6 +3 piercing %]).
 
@@ -100,15 +101,9 @@ If the target is adjacent to a wall, chain, corpse-chain, or vertical surface, i
 
 </Attack>
 
-</Action>
-
----
-
-<Action cost="1 Major Action">
-
-#### Hammer
-
 <Attack accuracy="+6" reach="[= 1 stride =]">
+
+##### Hammer
 
 On a hit, 11 ([% 2d8 +3 bludgeoning %]).
 
@@ -116,15 +111,9 @@ If the target is **[# kw:condition:grappled #]**, it saves Constitution against 
 
 </Attack>
 
-</Action>
-
----
-
-<Action cost="1 Major Action">
-
-#### Hook Shot
-
 <Attack accuracy="+7" range="[= 8 stride =]/[= 16 stride =]">
+
+##### Hook Shot
 
 or surface  
 On a hit, 9 ([% 1d10 +4 piercing %]).
@@ -137,21 +126,8 @@ On hit, the Ribboner chooses one:
 
 </Attack>
 
-</Action>
 
----
-
-<Action cost="1 Major Action">
-
-#### Tie
-One creature **[# kw:condition:grappled #]** by the Ribboner saves Dexterity against DC 15 or is **[# kw:condition:restrained #] [# kw:briefly #]**.
-
-</Action>
-
----
-
-
-### Deeds
+## Deeds
 
 
 #### Phase
@@ -167,4 +143,7 @@ When the Ribboner is **slain**, it immediately performs the following before col
 
 </Action>
 
+
+</Sheet>
 </Monster>
+

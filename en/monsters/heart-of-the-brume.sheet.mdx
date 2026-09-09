@@ -43,6 +43,8 @@ contentType: monsters
 
 ---
 
+<Sheet>
+
 ## Traits
 
 <Trait>
@@ -147,31 +149,25 @@ Heart of the Brume makes two attacks with its Grand Empyrean Sword-Spear, replac
 
 </Action>
 
----
-
-<Action cost="1 Major Action">
-
-#### Heavenpiercing Sword-Spear
+### Attacks
 
 <Attack accuracy="+18" reach="[= 2 stride =]">
+
+##### Heavenpiercing Sword-Spear
 
 Hit: 21 ([% 2d10 +10 slashing %]) plus 22 ([% 5d8 holy %]).
 This weapon is Heavy, Martial, and forged from silver. It is treated as magical for overcoming resistance.
 
 </Attack>
 
-</Action>
-
 - **Silencer** (Recharge 5–6)
   The Heart fires their rifle in a **[= 6 stride;ADJ =] cone**. Each creature in the cone saves Dexterity against DC 26:
 - **Failure**: 70 ([% 10d10 %]) + 10 piercing damage and knocked [# kw:condition:prone #]
 - **Success**: Half damage, no knockdown
 
-<Action recharge="6" cost="1 Major Action">
+<Attack accuracy="+13" range="[= 12 stride =]" recharge="6">
 
-#### Hand of Judgment
-
-<Attack accuracy="+13" range="[= 12 stride =]">
+##### Hand of Judgment
 
 On a hit, 80 ([% 10d10 +25 bludgeoning %]).
 The target saves Constitution against DC 21 or is **[# kw:condition:stunned #] for 1 minute**.
@@ -180,17 +176,19 @@ The Heart must concentrate on the stun.
 
 </Attack>
 
-</Action>
-
 ---
 
 
-### Deeds
+## Deeds
+
+Heart of the Brume has **3 legendary deeds per round**, and regains all expended deeds at the start of his turn. Heart of the Brume can expend legendary deeds to use the options below, each taken with different timing, as described in [Legendary Deeds](/en/library/rules/creatures-critters-and-characters/legendary-deeds).
+
+#### Stratagem
 
 
 #### Act
 
-Heart of the Brume can expend legendary deeds to use the options below. Only one legendary deed can be used at a time and only at the end of another creature's turn.
+Act deeds are taken at the end of another creature’s turn, as described in [Legendary Deeds](/en/library/rules/creatures-critters-and-characters/legendary-deeds).
 
 - **Coordinated Strike.** (Costs 1 Deed)
   Heart of the Brume makes one melee weapon attack with its Grand Empyrean Sword-Spear.
@@ -210,9 +208,6 @@ Heart of the Brume can expend legendary deeds to use the options below. Only one
 
 ---
 
-
-
-#### Stratagem
 
 
 #### Phase
@@ -252,4 +247,7 @@ If Heart of the Brume becomes [# kw:condition:incapacitated #], these benefits e
 
 </Action>
 
+
+</Sheet>
 </Monster>
+

@@ -28,6 +28,8 @@ contentType: monsters
 
 ---
 
+<Sheet>
+
 ## Traits
 
 <Trait>
@@ -98,7 +100,6 @@ Nigredo is an **INT-based spellcaster** (save **DC 22**, accuracy **+14**).
   <Column label="Slots / Level" values="At Will, At Will, At Will, 4 (1st), 4 (1st), 4 (1st), 3 (2nd), 3 (2nd), 3 (3rd), 3 (3rd), 3 (4th), 3 (4th), 2 (5th), 2 (5th), 1 (6th), 1 (7th), 1 (8th)" />
 </SpellList>
 
-</Monster>
 
 ## Features
 
@@ -109,31 +110,6 @@ Nigredo is an **INT-based spellcaster** (save **DC 22**, accuracy **+14**).
 #### Multiattack
 
 Nigredo makes three **Impale Drive** attacks, or two plus **Flyburst** or **Exhale the Rot**.
-
-<Attack accuracy="+15" reach="[= 3 stride =]">
-
-##### Impale Drive
-
-Hit: [% 4d10 +8 piercing %] plus [% 4d8 dark %]. Target makes a DC 22 STR save or is impaled, [# kw:condition:grappled #], and dragged [= 3 stride =]. If already impaled, the target has vulnerability to dark damage until Nigredo’s next turn.
-
-</Attack>
-
-<Feature>
-
-##### Flyburst (Recharge 4–6) <span>[# kw:attack alteration #]</span>
-
-Nigredo releases swarms of necrotic flies from every segment of their Endless Form.  
-All creatures within [= 3 stride =] of any part of Nigredo's body must succeed on a DC 22 CON save or take **[% 10d8 dark %]** and become **[# kw:condition:blinded #]** until the start of their next turn. On success, creatures take half damage and avoid blindness.
-
-</Feature>
-
-<Feature>
-
-##### Exhale the Rot (Recharge 5–6) <span>[# kw:attack alteration #]</span>
-
-Nigredo exhales spores in a [= 18 stride;ADJ =] cone. Creatures make a DC 22 CON save or take [% 12d8 dark %] and become rotted (disadvantage on CON saves, healing halved) for 1 minute, half as much damage on a save.
-
-</Feature>
 
 </Action>
 
@@ -150,15 +126,43 @@ Rotting spores fall in a [= 24 stride;ADJ =] radius. Creatures make three DC 22 
 
 </Action>
 
+### Attacks
+
+<Attack accuracy="+15" reach="[= 3 stride =]">
+
+##### Impale Drive
+
+Hit: [% 4d10 +8 piercing %] plus [% 4d8 dark %]. Target makes a DC 22 STR save or is impaled, [# kw:condition:grappled #], and dragged [= 3 stride =]. If already impaled, the target has vulnerability to dark damage until Nigredo’s next turn.
+
+</Attack>
+
+<Feature recharge="4–6">
+
+##### Flyburst <span>[# kw:attack alteration #]</span>
+
+Nigredo releases swarms of necrotic flies from every segment of their Endless Form.  
+All creatures within [= 3 stride =] of any part of Nigredo's body must succeed on a DC 22 CON save or take **[% 10d8 dark %]** and become **[# kw:condition:blinded #]** until the start of their next turn. On success, creatures take half damage and avoid blindness.
+
+</Feature>
+
+<Feature recharge="5–6">
+
+##### Exhale the Rot <span>[# kw:attack alteration #]</span>
+
+Nigredo exhales spores in a [= 18 stride;ADJ =] cone. Creatures make a DC 22 CON save or take [% 12d8 dark %] and become rotted (disadvantage on CON saves, healing halved) for 1 minute, half as much damage on a save.
+
+</Feature>
+
 ---
 
 
-### Deeds
+## Deeds
 
+Nigredo has **3 legendary deeds per round**, and regains all expended deeds at the start of their turn. Nigredo can expend legendary deeds to use the options below, each taken with different timing, as described in [Legendary Deeds](/en/library/rules/creatures-critters-and-characters/legendary-deeds).
 
 #### Act
 
-Nigredo can expend legendary deeds to use the options below. Only one legendary deed can be used at a time and only at the end of another creature's turn.
+Act deeds are taken at the end of another creature’s turn, as described in [Legendary Deeds](/en/library/rules/creatures-critters-and-characters/legendary-deeds).
 
 - **Drill Reposition.** (Costs 1 Deed) Move freely through Endless Form terrain, reappearing anywhere along its length.
 - **Crush with Mass.** (Costs 1 Deed) Creature touching Endless Form makes a DC 22 DEX save or takes [% 6d10 bludgeoning %] and is knocked [# kw:condition:prone #].
@@ -166,3 +170,6 @@ Nigredo can expend legendary deeds to use the options below. Only one legendary 
 - **Cast Spell.** (Costs 2 Deeds) Cast a spell of 4th level or lower.
 
 ---
+
+</Sheet>
+</Monster>

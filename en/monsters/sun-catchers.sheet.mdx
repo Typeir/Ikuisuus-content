@@ -12,7 +12,7 @@ contentType: monsters
 
 ---
 
-## Sun Catcher Cub
+# Sun Catcher Cub
 
 <Monster
   size="Large"
@@ -35,17 +35,33 @@ contentType: monsters
 
 ---
 
-## Actions
+<Sheet>
+
+## Features
+
+### Actions
 
 <Action cost="1 Major Action">
 
-### Multiattack
+#### Multiattack
 
 The Sun Catcher Cub makes one Claws attack and one Jaws attack.
 
+</Action>
+
+<Action cost="1 Minor Action">
+
+#### Hide in Mane
+
+Once per day, the creature can close its flower-like mane and set its Armor Class to 17, at the cost of going blind and deaf until it emerges (Minor Action).
+
+</Action>
+
+### Attacks
+
 <Attack accuracy="+6" reach="[= 1 stride =]">
 
-#### Claws
+##### Claws
 
 On a hit, 11 ([% 2d6 +4 slashing %]).
 
@@ -53,27 +69,19 @@ On a hit, 11 ([% 2d6 +4 slashing %]).
 
 <Attack accuracy="+6" reach="[= 1 stride =]">
 
-#### Jaws
+##### Jaws
 
 On a hit, 18 ([% 3d8 +4 piercing %]).
 
 </Attack>
 
-</Action>
-
-<Action cost="1 Minor Action">
-
-### Hide in Mane
-
-Once per day, the creature can close its flower-like mane and set its Armor Class to 17, at the cost of going blind and deaf until it emerges (Minor Action).
-
-</Action>
+</Sheet>
 
 </Monster>
 
 ---
 
-## Sun Catcher Juvenile
+# Sun Catcher Juvenile
 
 <Monster
   size="Large"
@@ -95,11 +103,13 @@ Once per day, the creature can close its flower-like mane and set its Armor Clas
 
 ---
 
+<Sheet>
+
 ## Traits
 
 <Trait>
 
-### Tool User
+#### Tool User
 
 This creature may use its posterior appendages to grasp weapons and shields, but it will move at [= 6 stride =] when standing on its hind legs.
 
@@ -107,17 +117,31 @@ This creature may use its posterior appendages to grasp weapons and shields, but
 
 ---
 
-## Actions
+## Features
+
+### Actions
 
 <Action cost="1 Major Action">
 
-### Multiattack
+#### Multiattack
 
 The creature makes one Claws attack and one Jaws attack.
 
+</Action>
+
+<Action>
+
+#### Shrieking Roar
+
+The creature uses its petals to emit a shrieking noise while it roars; all creatures that are not Sun Catchers and can hear it within [= 5 stride =] saves Wisdom against DC 11 or is [# kw:condition:frightened #] of it [# kw:briefly #].
+
+</Action>
+
+### Attacks
+
 <Attack accuracy="+7" reach="[= 1 stride =]">
 
-#### Claws
+##### Claws
 
 On a hit, 17 ([% 3d6 +6 slashing %]).
 
@@ -125,27 +149,19 @@ On a hit, 17 ([% 3d6 +6 slashing %]).
 
 <Attack accuracy="+7" reach="[= 1 stride =]">
 
-#### Jaws
+##### Jaws
 
 On a hit, 18 ([% 3d8 +5 piercing %]).
 
 </Attack>
 
-</Action>
-
-<Action>
-
-### Shrieking Roar
-
-The creature uses its petals to emit a shrieking noise while it roars; all creatures that are not Sun Catchers and can hear it within [= 5 stride =] saves Wisdom against DC 11 or is [# kw:condition:frightened #] of it [# kw:briefly #].
-
-</Action>
+</Sheet>
 
 </Monster>
 
 ---
 
-## Sun Catcher Elder
+# Sun Catcher Elder
 
 <Monster
   size="Large"
@@ -167,11 +183,13 @@ The creature uses its petals to emit a shrieking noise while it roars; all creat
 
 ---
 
+<Sheet>
+
 ## Traits
 
 <Trait>
 
-### Tool User
+#### Tool User
 
 This creature may use its posterior appendages to grasp weapons and shields, but it will move at [= 6 stride =] when standing on its hind legs.
 
@@ -179,17 +197,31 @@ This creature may use its posterior appendages to grasp weapons and shields, but
 
 ---
 
-## Actions
+## Features
+
+### Actions
 
 <Action cost="1 Major Action">
 
-### Multiattack
+#### Multiattack
 
 The creature makes one Claws attack and one Jaws attack.
 
+</Action>
+
+<Action>
+
+#### Shrieking Roar
+
+The creature uses its petals to emit a shrieking noise while it roars; all creatures that are not Sun Catchers and can hear it within [= 20 stride =] saves Wisdom against DC 13 or is [# kw:condition:frightened #] of it [# kw:briefly #]. If the creature has direct line of sight, they are [# kw:condition:paralyzed #] instead.
+
+</Action>
+
+### Attacks
+
 <Attack accuracy="+9" reach="[= 1 stride =]">
 
-#### Claws
+##### Claws
 
 On a hit, 17 ([% 3d6 +6 slashing %]).
 
@@ -197,27 +229,19 @@ On a hit, 17 ([% 3d6 +6 slashing %]).
 
 <Attack accuracy="+9" reach="[= 1 stride =]">
 
-#### Jaws
+##### Jaws
 
 On a hit, 24 ([% 4d8 +6 piercing %]).
 
 </Attack>
 
-</Action>
-
-<Action>
-
-### Shrieking Roar
-
-The creature uses its petals to emit a shrieking noise while it roars; all creatures that are not Sun Catchers and can hear it within [= 20 stride =] saves Wisdom against DC 13 or is [# kw:condition:frightened #] of it [# kw:briefly #]. If the creature has direct line of sight, they are [# kw:condition:paralyzed #] instead.
-
-</Action>
+</Sheet>
 
 </Monster>
 
 ---
 
-## Kipinöitä (Sun Catcher Elder)
+# Kipinöitä (Sun Catcher Elder)
 
 <Monster
   size="Large"
@@ -239,11 +263,13 @@ The creature uses its petals to emit a shrieking noise while it roars; all creat
 
 ---
 
+<Sheet>
+
 ## Traits
 
 <Trait>
 
-### Tool User
+#### Tool User
 
 This creature may use its posterior appendages and tail to grasp weapons and shields, but it will move at [= 6 stride =] when standing on its hind legs.
 
@@ -251,7 +277,7 @@ This creature may use its posterior appendages and tail to grasp weapons and shi
 
 <Trait>
 
-### Ironwood Staff
+#### Ironwood Staff
 
 Ironwood Staff: accuracy +9, 21 ([% 4d6 +7 bludgeoning %]) magical damage. Target saves Constitution against DC 15 or is silenced [# kw:briefly #].
 
@@ -259,43 +285,21 @@ Ironwood Staff: accuracy +9, 21 ([% 4d6 +7 bludgeoning %]) magical damage. Targe
 
 ---
 
-## Actions
+## Features
+
+### Actions
 
 <Action cost="1 Major Action">
 
-### Multiattack
+#### Multiattack
 
 The creature makes one weapon attack (Claws or Ironwood Staff) and one Jaws attack.
-
-<Attack accuracy="+9" reach="[= 1 stride =]">
-
-#### Claws
-
-On a hit, 17 ([% 3d6 +6 slashing %]).
-
-</Attack>
-
-<Attack accuracy="+9" reach="[= 1 stride =]">
-
-#### Ironwood Staff
-
-On a hit, 21 ([% 4d6 +7 bludgeoning %]). The target saves Constitution against DC 15 or is silenced [# kw:briefly #].
-
-</Attack>
-
-<Attack accuracy="+9" reach="[= 1 stride =]">
-
-#### Jaws
-
-On a hit, 24 ([% 4d8 +6 piercing %]).
-
-</Attack>
 
 </Action>
 
 <Action>
 
-### Shrieking Roar
+#### Shrieking Roar
 
 The creature uses its petals to emit a shrieking noise while it roars; all creatures that are not Sun Catchers and can hear it within [= 20 stride =] saves Wisdom against DC 13 or is [# kw:condition:frightened #] of it [# kw:briefly #]. If the creature has direct line of sight, they are [# kw:condition:paralyzed #] instead.
 
@@ -303,7 +307,7 @@ The creature uses its petals to emit a shrieking noise while it roars; all creat
 
 <Action accuracy="+4">
 
-### Spellcasting
+#### Spellcasting
 
 It has the following wizard spells prepared:
 
@@ -313,5 +317,33 @@ It has the following wizard spells prepared:
 </SpellList>
 
 </Action>
+
+### Attacks
+
+<Attack accuracy="+9" reach="[= 1 stride =]">
+
+##### Claws
+
+On a hit, 17 ([% 3d6 +6 slashing %]).
+
+</Attack>
+
+<Attack accuracy="+9" reach="[= 1 stride =]">
+
+##### Ironwood Staff
+
+On a hit, 21 ([% 4d6 +7 bludgeoning %]). The target saves Constitution against DC 15 or is silenced [# kw:briefly #].
+
+</Attack>
+
+<Attack accuracy="+9" reach="[= 1 stride =]">
+
+##### Jaws
+
+On a hit, 24 ([% 4d8 +6 piercing %]).
+
+</Attack>
+
+</Sheet>
 
 </Monster>

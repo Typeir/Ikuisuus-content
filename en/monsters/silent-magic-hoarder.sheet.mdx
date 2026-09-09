@@ -29,6 +29,8 @@ contentType: monsters
   xp="13,000"
   saveDc="16">
 
+<Sheet>
+
 ## Traits
 
 ---
@@ -213,6 +215,19 @@ Whenever it succeeds on such a saving throw, it regains **10 hit points**.
 
 The Hoarder makes **three Slam attacks**, or it uses **Hurl Relic** once and makes two Slam attacks.
 
+</Action>
+
+<Action cost="1 Major Action" recharge="5–6">
+
+#### Disruptive Pulse.
+
+Each creature of The Hoarder’s choice within **[= 6 stride =]** saves Constitution against DC 16, halving **27 ([% 6d8 psychic %])**.  
+Creatures that fail are also **[# kw:condition:stunned #] [# kw:briefly #]**.
+
+</Action>
+
+### Attacks
+
 <Attack accuracy="+9" reach="[= 2 stride =]">
 
 ##### Slam
@@ -221,29 +236,14 @@ On a hit, 12 ([% 2d4 +6 bludgeoning %]).
 
 </Attack>
 
-</Action>
-
-<Action cost="1 Major Action">
-
-#### Hurl Relic.
-
 <Attack accuracy="+7" range="[= 12 stride =]/[= 36 stride =]">
+
+##### Hurl Relic.
 
 On a hit, 18 ([% 3d8 +5 bludgeoning %]).  
 On a hit, roll once on **More Than One Ring** and apply the effect centered on the target.
 
 </Attack>
-
-</Action>
-
-<Action cost="1 Major Action">
-
-#### Disruptive Pulse (Recharge 5–6).
-
-Each creature of The Hoarder’s choice within **[= 6 stride =]** saves Constitution against DC 16, halving **27 ([% 6d8 psychic %])**.  
-Creatures that fail are also **[# kw:condition:stunned #] [# kw:briefly #]**.
-
-</Action>
 
 ---
 
@@ -261,31 +261,22 @@ When The Hoarder is hit by an attack, it can teleport up to **[= 6 stride =]** t
 ---
 
 
-### Deeds
+## Deeds
 
+The Hoarder has **2 legendary deeds per round**, and regains all expended deeds at the start of its turn.
+
+The Hoarder can expend legendary deeds to use the options below, each taken with different timing, as described in [Legendary Deeds](/en/library/rules/creatures-critters-and-characters/legendary-deeds).
 
 #### Act
 
-The Hoarder has **2 legendary deeds per round**, and regains all expended deeds at the start of its turn.
+Act deeds are taken at the end of another creature’s turn, as described in [Legendary Deeds](/en/library/rules/creatures-critters-and-characters/legendary-deeds).
 
 #### Legendary Deed: Resist 1/[# kw:Recovery #]
 
 When The Hoarder fails a saving throw, it can expend a legendary deed to succeed instead.
 
----
-
-
-
-#### Act
-
-The Hoarder can expend legendary deeds to use the options below. Only one legendary deed can be used at a time and only at the end of another creature’s turn.
-
 - **More Than One Ring.** (Costs 1 Deed) The Hoarder activates **More Than One Ring**.
 - **Slither Away**. (Costs 2 Deeds) The Hoarder teleports up to **[= 12 stride =]** to an unoccupied space it can see.
-
----
-
-
 
 #### Phase
 
@@ -305,4 +296,7 @@ When The Hoarder is **slain**, it activates **More Than One Ring** three times, 
 
 </Action>
 
+
+</Sheet>
 </Monster>
+

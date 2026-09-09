@@ -29,6 +29,8 @@ contentType: monsters
 
 ---
 
+<Sheet>
+
 ## Traits
 
 <Trait>
@@ -44,8 +46,7 @@ While fully submerged in saltwater or industrial brine, it regains **10 hit poin
 #### Suffocating Coils
 A creature **[# kw:condition:grappled #]** by the Brine Sea Worm begins **[# kw:condition:suffocating #]** at the start of its next turn as its lungs fill with pressurized brine.  
 While [# kw:condition:suffocating #], the creature can’t speak or cast spells with verbal components.  
-This effect ends if the grapple ends or the worm releases the target.  
-A [# kw:condition:suffocating #] creature saves Constitution at the start of each of its turns, suffering **one failed death saving throw** on a failure.
+This effect ends if the grapple ends or the worm releases the target.
 
 </Trait>
 
@@ -68,6 +69,10 @@ While underground or submerged, the worm has advantage on **Stealth** checks and
 
 The Brine Sea Worm makes two attacks: one with its **Bite** and one with its **Coiling Grasp**.
 
+</Action>
+
+### Attacks
+
 <Attack accuracy="+8" reach="[= 2 stride =]">
 
 ##### Bite
@@ -86,17 +91,15 @@ If the target is already [# kw:condition:grappled #], the damage is **maximized 
 
 </Attack>
 
-<Feature>
+<Feature recharge="5–6">
 
-##### Brine Jet (Recharge 5–6) <span>[# kw:attack alteration #]</span>
+##### Brine Jet <span>[# kw:attack alteration #]</span>
 
 The worm sprays a high-pressure jet of saltwater in a **[= 6 stride;ADJ =] line**, [= 1 stride =] wide.  
 Each creature in the line saves Dexterity against DC 16, halving **27 ([% 6d8 bludgeoning %])** and chemical damage.  
 A creature that fails the save gains **1 stack of [# kw:Erosion #]**.
 
 </Feature>
-
-</Action>
 
 ---
 
@@ -109,4 +112,7 @@ When the worm takes more than 20 damage from a single attack, it can use its rea
 
 </Action>
 
+
+</Sheet>
 </Monster>
+
