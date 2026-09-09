@@ -3,13 +3,18 @@ source: Ikuisuus
 contentType: monsters
 ---
 
-<Sheet foot level="1">
 
 # Xanthous
 
 _Hiisi of Eternal Failure, Scion of Sulphur, Lord of Obsession, Miracle Incarnate_
 
 <BlendedImage src='/library/images/monsters/xanthous.webp' alt='Xanthous' />
+
+<Sheet foot multi>
+
+## Xanthous
+
+
 
 <Monster
   size="Gargantuan"
@@ -40,11 +45,11 @@ _Hiisi of Eternal Failure, Scion of Sulphur, Lord of Obsession, Miracle Incarnat
 
 <Sheet>
 
-## Traits
+### Traits
 
 <Trait>
 
-#### Legendary Deeds
+##### Legendary Deeds
 
 Xanthous has **3 legendary deeds per round**, and regains all expended deeds at the start of his turn.
 
@@ -52,7 +57,7 @@ Xanthous has **3 legendary deeds per round**, and regains all expended deeds at 
 
 <Trait charges="3/Repose">
 
-#### Legendary Deed: Resist
+##### Legendary Deed: Resist
 
 When Xanthous fails a saving throw, he can expend a legendary deed to succeed instead. This feature can be used **3 times per [# kw:Repose #]**.
 
@@ -60,7 +65,7 @@ When Xanthous fails a saving throw, he can expend a legendary deed to succeed in
 
 <Trait>
 
-#### Poison of the Mind
+##### Poison of the Mind
 
 Xanthous's very presence causes the mind to unravel and disassemble itself. If a creature interacts with Xanthous in any way, such as speaking, touching, or being struck by him in any way, they save Wisdom against DC 23 or are affected by [# kw:Poison of the Mind #]. Characters immune to sickness and curses ignore this feature, and take [% 6d6 psychic %] instead.
 
@@ -68,7 +73,7 @@ Xanthous's very presence causes the mind to unravel and disassemble itself. If a
 
 <Trait>
 
-#### Twin Reactions
+##### Twin Reactions
 
 Xanthous can take up to **2 reactions per round**, but no more than one per turn.
 
@@ -76,7 +81,7 @@ Xanthous can take up to **2 reactions per round**, but no more than one per turn
 
 <Trait>
 
-#### Angels
+##### Angels
 
 Xanthous can summon and control up to four angels, each taking their turn directly after his own.
 Each angel shares Xanthous's hit point pool, and when an angel takes damage, Xanthous takes equally as much "indirect" damage.
@@ -87,7 +92,7 @@ All angels are tethered to Xanthous by a [= 12 stride =] long, sulphurous umbili
 
 <Trait accuracy="+19">
 
-#### Dual Spellcasting
+##### Dual Spellcasting
 
 He has the following spells slots 1st (4), 2nd (3), 3rd (3), 4th (3), 5th (3), 6th (2), 7th (2), 8th (1), 9th (1).
 
@@ -127,13 +132,13 @@ Xanthous always casts spells as though he were under the effect of the [_Twinned
 
 ---
 
-## Features
+### Features
 
-### Actions
+#### Actions
 
 <Action cost="1 Major Action">
 
-#### Multiattack
+##### Multiattack
 
 Xanthous strikes five times, once with a claw, twice with his tendrils, and twice with his Eye Beams.
 
@@ -141,7 +146,7 @@ Xanthous strikes five times, once with a claw, twice with his tendrils, and twic
 
 <Action cost="1 Major Action">
 
-#### Spellcasting
+##### Spellcasting
 
 Xanthous casts a spell.
 
@@ -149,17 +154,17 @@ Xanthous casts a spell.
 
 <Action cost="1 Minor Action">
 
-#### Mind Wraps
+##### Mind Wraps
 
 As a Minor Action, Xanthous can grab (Athletics contest) a creature and grapple them. Xanthous can grab up to 4 creatures this way. Xanthous must succeed on Concentration checks to keep the grapples.
 
 </Action>
 
-### Attacks
+#### Attacks
 
 <Attack accuracy="+19" reach="[= 1 stride =]" cost="1 Major Action">
 
-##### Tombsteel Claws
+###### Tombsteel Claws
 
 On a hit, 25 ([% 2d12 +10 piercing %]) plus 8 ([% 4d4 frost %]). The target saves Constitution against DC 25 or gains 1 level of exhaustion as tombsteel fragments bite into their marrow.
 
@@ -167,7 +172,7 @@ On a hit, 25 ([% 2d12 +10 piercing %]) plus 8 ([% 4d4 frost %]). The target save
 
 <Attack accuracy="+19" reach="[= 2 stride =]" cost="1 Major Action">
 
-##### Tendrils
+###### Tendrils
 
 On a hit, 31 ([% 4d10 +10 piercing %]). The target is [# kw:condition:grappled #] (escape DC 25). While [# kw:condition:grappled #], the target is also [# kw:condition:restrained #] and silenced (cannot provide verbal or somatic components).
 
@@ -175,32 +180,32 @@ On a hit, 31 ([% 4d10 +10 piercing %]). The target is [# kw:condition:grappled #
 
 <Attack accuracy="+18" range="[= 12 stride =]/[= 24 stride =]" cost="1 Major Action">
 
-##### Eye Beams
+###### Eye Beams
 
 On a hit, 28 ([% 3d12 +10 holy %]). The target saves Wisdom against DC 25 or suffers psychic backlash, becoming [# kw:condition:terrified #] [# kw:briefly #]. If the creature was already [# kw:condition:terrified #], it instead takes an additional 31 ([% 5d12 psychic %]).
 
 </Attack>
 
-## Deeds
+### Deeds
 
 Xanthous has **3 legendary deeds per round**, and regains all expended deeds at the start of his turn.
 
-#### Lair
+##### Lair
 
 <Action deed="lair">
 
-#### First Cross / Second Cross
+##### First Cross / Second Cross
 
 Xanthous projects a 45-degree cross that's [= 3 stride =] wide and [= 40 stride =] long. The cross is made of egg-shaped **chemical** or **frost** bombs. These count as difficult terrain, and explode as a [# kw:persistent #] effect, forcing the intersecting creature to save Dexterity against DC 25 or take 21 ([% 6d6 %] damage) of the corresponding type and fall [# kw:condition:prone #].
 Each cross counts as a separate deed.
 
 </Action>
 
-#### Act
+##### Act
 
 <Action cost="1 Deed" deed="act">
 
-#### Quick Reflexes
+##### Quick Reflexes
 
 Xanthous regains two reactions.
 
@@ -208,7 +213,7 @@ Xanthous regains two reactions.
 
 <Action cost="1 Deed" deed="act">
 
-#### Awaken Angel
+##### Awaken Angel
 
 One of Xanthous's four angel-appendages drops from their shell, tethered to it by a [= 12 stride =] long cord. Angels count as invocations and take turns after Xanthous.
 
@@ -216,7 +221,7 @@ One of Xanthous's four angel-appendages drops from their shell, tethered to it b
 
 <Action cost="1 Deed" deed="act">
 
-#### Enact Angelical Will
+##### Enact Angelical Will
 
 As a legendary deed, an awakened angel takes a turn. During this turn, the angel has a +10 accuracy and damage bonus, and a +10 bonus to every saving throw and skill check.
 
@@ -224,7 +229,7 @@ As a legendary deed, an awakened angel takes a turn. During this turn, the angel
 
 <Action cost="1 Deed" deed="act">
 
-#### Loving Embrace of the Miracle
+##### Loving Embrace of the Miracle
 
 If a creature is directly below Xanthous, it saves Wisdom against DC 20, regardless if Xanthous is currently weakened or not. If the creature fails, Xanthous assumes total control of it [# kw:briefly #].
 
@@ -232,7 +237,7 @@ If a creature is directly below Xanthous, it saves Wisdom against DC 20, regardl
 
 <Action cost="2 Deeds" recharge="5-6" deed="act">
 
-#### Pure Radiance
+##### Pure Radiance
 
 _Xanthous emits a pulse of psychic energy in a [= 12 stride;ADJ =] cone._
 
@@ -252,7 +257,7 @@ On a successful save, a creature takes half as much damage and is not [# kw:cond
 
 ---
 
-# Angel of the Blazing Blade
+## Angel of the Blazing Blade
 
 <BlendedImage
   src='/library/images/monsters/xanthous-angel4.webp'
@@ -285,11 +290,11 @@ On a successful save, a creature takes half as much damage and is not [# kw:cond
 
 <Sheet>
 
-### Traits
+#### Traits
 
 <Trait>
 
-#### Divine Aura
+##### Divine Aura
 
 All creatures within [= 2 stride =] of the angel take 10 holy damage at the start of their turn.
 
@@ -297,7 +302,7 @@ All creatures within [= 2 stride =] of the angel take 10 holy damage at the star
 
 <Trait>
 
-#### Warding Shield
+##### Warding Shield
 
 The angel can use its reaction to impose disadvantage on an attack roll made against a creature within [= 1 stride =] of it.
 
@@ -305,21 +310,21 @@ The angel can use its reaction to impose disadvantage on an attack roll made aga
 
 ---
 
-### Actions
+#### Actions
 
 <Action cost="1 Major Action">
 
-#### Multiattack
+##### Multiattack
 
 The angel makes two attacks with its Blazing Blade.
 
 </Action>
 
-### Attacks
+#### Attacks
 
 <Attack accuracy="+11" reach="[= 1 stride =]" cost="1 Major Action">
 
-##### Blazing Blade
+###### Blazing Blade
 
 On a hit, 21 ([% 3d10 +4 holy %]).
 
@@ -329,7 +334,7 @@ On a hit, 21 ([% 3d10 +4 holy %]).
 
 </Monster>
 
-# Angel of the Seven Wings
+## Angel of the Seven Wings
 
 <BlendedImage
   src='/library/images/monsters/xanthous-angel.webp'
@@ -362,11 +367,11 @@ On a hit, 21 ([% 3d10 +4 holy %]).
 
 <Sheet>
 
-### Traits
+#### Traits
 
 <Trait>
 
-#### Sevenfold Wings
+##### Sevenfold Wings
 
 The angel can fly up to [= 24 stride =], granting it advantage on Dexterity saving throws while in flight.
 
@@ -374,7 +379,7 @@ The angel can fly up to [= 24 stride =], granting it advantage on Dexterity savi
 
 <Trait>
 
-#### Blessing of Freedom
+##### Blessing of Freedom
 
 The angel's tether is [= 48 stride =] long, instead of 60.
 
@@ -382,7 +387,7 @@ The angel's tether is [= 48 stride =] long, instead of 60.
 
 <Trait>
 
-#### Ethereal Shroud
+##### Ethereal Shroud
 
 As a Minor Action, it can become incorporeal until the start of its next turn, gaining resistance to all damage and becoming invisible.
 
@@ -390,11 +395,11 @@ As a Minor Action, it can become incorporeal until the start of its next turn, g
 
 ---
 
-### Attacks
+#### Attacks
 
 <Attack accuracy="+13" reach="[= 2 stride =]">
 
-##### Wing Slash
+###### Wing Slash
 
 On a hit, 27 ([% 3d12 +6 slashing %]).
 
@@ -404,7 +409,7 @@ On a hit, 27 ([% 3d12 +6 slashing %]).
 
 </Monster>
 
-# Angel of Tombsteel Frame
+## Angel of Tombsteel Frame
 
 <BlendedImage
   src='/library/images/monsters/xanthous-angel2.webp'
@@ -437,11 +442,11 @@ On a hit, 27 ([% 3d12 +6 slashing %]).
 
 <Sheet>
 
-### Traits
+#### Traits
 
 <Trait>
 
-#### Deathly Aura
+##### Deathly Aura
 
 Creatures within [= 2 stride =] take 10 dark damage at the start of their turn.
 
@@ -449,11 +454,11 @@ Creatures within [= 2 stride =] take 10 dark damage at the start of their turn.
 
 ---
 
-### Attacks
+#### Attacks
 
 <Attack accuracy="+13" reach="[= 1 stride =]">
 
-##### Tombsteel Claws
+###### Tombsteel Claws
 
 On a hit, 28 ([% 4d10 +6 frost %]).
 
@@ -461,11 +466,11 @@ On a hit, 28 ([% 4d10 +6 frost %]).
 
 ---
 
-### Reactions
+#### Reactions
 
 <Action cost="1 Reaction">
 
-#### Riposte
+##### Riposte
 
 When a creature misses the angel with a melee attack, it can use its reaction to make a melee weapon attack against that creature. If it hits, the attack deals an additional 4 ([% 1d8 frost %]).
 
@@ -475,7 +480,7 @@ When a creature misses the angel with a melee attack, it can use its reaction to
 
 </Monster>
 
-# Angel of Eternal Slumber
+## Angel of Eternal Slumber
 
 <BlendedImage
   src='/library/images/monsters/xanthous-angel3.webp'
@@ -507,11 +512,11 @@ When a creature misses the angel with a melee attack, it can use its reaction to
 
 <Sheet>
 
-### Traits
+#### Traits
 
 <Trait>
 
-#### Aura of Somnolence
+##### Aura of Somnolence
 
 Creatures within [= 2 stride =] save Wisdom against DC 25 or are affected by the [_Sleep_](/en/library/spells/sleep) spell (as if cast at 5th level) with maximized damage.
 
@@ -519,7 +524,7 @@ Creatures within [= 2 stride =] save Wisdom against DC 25 or are affected by the
 
 <Trait>
 
-#### Song of Invigoration
+##### Song of Invigoration
 
 As a Minor Action, the angel may grant 10 temporary hit points to any creature that can hear it within [= 12 stride =].
 
@@ -527,11 +532,11 @@ As a Minor Action, the angel may grant 10 temporary hit points to any creature t
 
 ---
 
-### Attacks
+#### Attacks
 
 <Attack accuracy="+11" reach="[= 1 stride =]">
 
-##### Dreaming Touch
+###### Dreaming Touch
 
 On a hit, 21 ([% 3d10 +4 psychic %]), and the target saves Wisdom against DC 25 or is [# kw:condition:incapacitated #] [# kw:briefly #].
 

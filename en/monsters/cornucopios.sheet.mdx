@@ -20,9 +20,9 @@ scarring_
 
 ---
 
-<Sheet foot level="1">
+<Sheet foot multi>
 
-# Hunter Frog
+## Hunter Frog
 
 <Monster
   size="Medium"
@@ -47,11 +47,11 @@ scarring_
 
 <Sheet>
 
-## Traits
+### Traits
 
 <Trait>
 
-#### Amphibious
+##### Amphibious
 
 The warrior frog can breathe air and water.
 
@@ -59,7 +59,7 @@ The warrior frog can breathe air and water.
 
 <Trait>
 
-#### Pack Tactics
+##### Pack Tactics
 
 The frog has advantage on an attack roll against a creature if at least one of the frog's allies is within [= 1 stride =] of the creature and the ally isn't [# kw:condition:incapacitated #].
 
@@ -67,23 +67,23 @@ The frog has advantage on an attack roll against a creature if at least one of t
 
 ---
 
-## Features
+### Features
 
-### Actions
+#### Actions
 
 <Action cost="1 Major Action">
 
-#### Multiattack
+##### Multiattack
 
 The warrior frog makes two attacks: one with its bite and one with its spear.
 
 </Action>
 
-### Attacks
+#### Attacks
 
 <Attack accuracy="+6" reach="[= 1 stride =]">
 
-##### Bite
+###### Bite
 
 On a hit, 10 ([% 1d10 +3 piercing %]).
 
@@ -91,7 +91,7 @@ On a hit, 10 ([% 1d10 +3 piercing %]).
 
 <Attack accuracy="+6" reach="[= 1 stride =]">
 
-##### Spear
+###### Spear
 
 On a hit, 8 ([% 1d6 +3 piercing %]).
 
@@ -99,7 +99,7 @@ On a hit, 8 ([% 1d6 +3 piercing %]).
 
 <Feature>
 
-##### Grapple <span>[# kw:attack alteration #]</span>
+###### Grapple <span>[# kw:attack alteration #]</span>
 
 The warrior frog can attempt to grapple a creature as part of its attack.
 
@@ -109,7 +109,7 @@ The warrior frog can attempt to grapple a creature as part of its attack.
 
 </Monster>
 
-# Ritualist Frog
+## Ritualist Frog
 
 <Monster
   size="Medium"
@@ -135,11 +135,11 @@ The warrior frog can attempt to grapple a creature as part of its attack.
 
 <Sheet>
 
-## Traits
+### Traits
 
 <Trait>
 
-#### Amphibious
+##### Amphibious
 
 The caster frog can breathe air and water.
 
@@ -147,7 +147,7 @@ The caster frog can breathe air and water.
 
 <Trait accuracy="+6">
 
-#### Spellcasting
+##### Spellcasting
 
 - **Cantrips**: [_Envenom_](/en/library/spells/envenom), [_Acid Splash_](/en/library/spells/acid-splash)
 - **1st level**: [_Hex_](/en/library/spells/hex)
@@ -157,23 +157,23 @@ The caster frog can breathe air and water.
 
 ---
 
-## Features
+### Features
 
-### Actions
+#### Actions
 
 <Action cost="1 Major Action">
 
-#### Multiattack
+##### Multiattack
 
 The caster frog makes two attacks: one with its bite and one with its tongue.
 
 </Action>
 
-### Attacks
+#### Attacks
 
 <Attack accuracy="+5" reach="[= 1 stride =]">
 
-##### Bite
+###### Bite
 
 On a hit, 7 ([% 1d8 +3 piercing %]).
 
@@ -181,7 +181,7 @@ On a hit, 7 ([% 1d8 +3 piercing %]).
 
 <Feature>
 
-##### Sickening Song <span>[# kw:attack alteration #]</span>
+###### Sickening Song <span>[# kw:attack alteration #]</span>
 
 As a Major Action, the caster frog prepares to unleash a sickening song. After one round, the frog sings, and all creatures in a [= 12 stride;ADJ =] sphere save consitution against DC18, or are afflicted by the Whims of Rubedo, the lost **Hiisi**. They will be **[# kw:condition:poisoned #]** and can only be **cured** by ingesting a plant of the **nighshade** variety and **coal worth [= 1 burden =] per 4**. **Every day this sickness is not cured**, the afflicted will gain a **level of exhaustion**.
 
@@ -189,7 +189,7 @@ As a Major Action, the caster frog prepares to unleash a sickening song. After o
 
 <Attack accuracy="+5" reach="[= 3 stride =]">
 
-##### Tongue
+###### Tongue
 
 On a hit, 9 ([% 1d6 +3 bludgeoning %]), and the target saves Strength against DC 14 or is pulled [= 2 stride =] closer to the caster frog.
 
@@ -199,7 +199,7 @@ On a hit, 9 ([% 1d6 +3 bludgeoning %]), and the target saves Strength against DC
 
 </Monster>
 
-# Golden Frog
+## Golden Frog
 
 <Monster
   size="Medium"
@@ -225,11 +225,11 @@ On a hit, 9 ([% 1d6 +3 bludgeoning %]), and the target saves Strength against DC
 
 <Sheet>
 
-## Traits
+### Traits
 
 <Trait>
 
-#### Amphibious
+##### Amphibious
 
 The golden frog can breathe air and water.
 
@@ -237,7 +237,7 @@ The golden frog can breathe air and water.
 
 <Trait>
 
-#### Gold Glimmer
+##### Gold Glimmer
 
 The golden frog emits a faint, mesmerizing glow. Creatures within [= 2 stride =] of the frog save Wisdom against DC 15 or are [# kw:condition:charmed #] [# kw:briefly #].
 
@@ -245,7 +245,7 @@ The golden frog emits a faint, mesmerizing glow. Creatures within [= 2 stride =]
 
 <Trait>
 
-#### Winged Assault
+##### Winged Assault
 
 The golden frog can sprout ethereal wings for 1 round, granting it a flying speed of [= 12 stride =]. While airborne, it can make one attack with a thrown weapon.
 
@@ -253,13 +253,13 @@ The golden frog can sprout ethereal wings for 1 round, granting it a flying spee
 
 ---
 
-## Features
+### Features
 
-### Actions
+#### Actions
 
 <Action saveDc="15" accuracy="+7">
 
-#### Spellcasting
+##### Spellcasting
 
 - **Cantrips**: 
 - **1st level**: [_Hex_](/en/library/spells/hex)
@@ -270,17 +270,17 @@ The golden frog can sprout ethereal wings for 1 round, granting it a flying spee
 
 <Action cost="1 Major Action">
 
-#### Multiattack
+##### Multiattack
 
 The golden frog makes two attacks: one with its bite and one with its thrown weapon (stone-egg).
 
 </Action>
 
-### Attacks
+#### Attacks
 
 <Attack accuracy="+6" reach="[= 1 stride =]">
 
-##### Bite
+###### Bite
 
 On a hit, 10 ([% 1d10 +5 piercing %]).
 
@@ -288,7 +288,7 @@ On a hit, 10 ([% 1d10 +5 piercing %]).
 
 <Attack accuracy="+8" range="[= 6 stride =]/[= 12 stride =]">
 
-##### Stone-Egg Throw
+###### Stone-Egg Throw
 
 On a hit, 12 ([% 2d6 +5 bludgeoning %]). On a hit, the stone-egg shatters, and each creature within [= 1 stride =] of the target saves Dexterity against DC 13, halving 6 ([% 2d6 chemical %]).
 

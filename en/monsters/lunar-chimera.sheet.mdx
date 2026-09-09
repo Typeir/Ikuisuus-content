@@ -14,24 +14,22 @@ The Lunar Chimera is a massive, three-headed monstrosity that roams the lunar su
 Each of its heads represents a different aspect of the moon's power: the lion embodies strength and ferocity, the serpent symbolizes cunning and agility, and the goat represents wisdom and magic.
 Together, they form a terrifying creature that commands both physical prowess and arcane might.
 
-## Traits
+### Traits
 
-## Shared Body
+### Shared Body
 
 The chimera is comprised of three entities that share a single body. Each entity has its own stat block, actions, and traits.
 
-## Area Effects (Shared)
+### Area Effects (Shared)
 
 When the Lunar Chimera is subjected to an **area-of-effect**, the effect applies to **only one** of the three stat blocks.  
 Resolve the saving throw using the **least successful save** among them.
 
-## Legendary Deeds (Shared)
+## Deeds
 
-The Lunar Chimera has **3 legendary deeds per round**, shared across its three stat blocks, and regains all expended deeds at the start of its turn.
+The Lunar Chimera has **3 legendary deeds per round**, shared across its three stat blocks, and regains all expended deeds at the start of its turn. It can expend deeds to use the options below, each taken with different timing, as described in [Legendary Deeds](/en/library/rules/creatures-critters-and-characters/legendary-deeds).
 
-## Legendary Deed: Act
-
-The Lunar Chimera can expend legendary deeds to use the options below, each taken with different timing, as described in [Legendary Deeds](/en/library/rules/creatures-critters-and-characters/legendary-deeds).
+### Act
 
 - **Savage Swipe.** (Costs 1 Deed) The lion makes one **claw** attack.
 - **Constriction Flick.** (Costs 1 Deed) The serpent makes one **Tail Strike**.
@@ -40,9 +38,9 @@ The Lunar Chimera can expend legendary deeds to use the options below, each take
 
 ---
 
-<Sheet foot level="1">
+<Sheet foot multi>
 
-# Lunar Chimera, Lion
+## Lunar Chimera, Lion
 
 <Monster
   size="Huge"
@@ -70,11 +68,11 @@ The Lunar Chimera can expend legendary deeds to use the options below, each take
 
 <Sheet>
 
-## Traits
+### Traits
 
 <Trait>
 
-#### One with the Moon
+##### One with the Moon
 
 This member is immune to magical effects created by the other chimeric members, and vice versa.
 When the Chimera recieves healing or gains temporary hit points from any source, they can choose which member benefits from it, provided that member is still alive.
@@ -83,7 +81,7 @@ When the Chimera recieves healing or gains temporary hit points from any source,
 
 <Trait>
 
-#### Antimagic Fur
+##### Antimagic Fur
 
 The lion is resistant to damage from spells and has advantage on saving throws against spells.
 
@@ -91,7 +89,7 @@ The lion is resistant to damage from spells and has advantage on saving throws a
 
 <Trait>
 
-#### Night Stalker
+##### Night Stalker
 
 The lion can see through magical darkness as if it were normal darkness.
 
@@ -99,7 +97,7 @@ The lion can see through magical darkness as if it were normal darkness.
 
 <Trait>
 
-#### Undying Resolve
+##### Undying Resolve
 
 When the lion is reduced to 0 hit points, but members of the Lunar Chimera are still active, it can still move, but cannot take actions or reactions of any kind.
 
@@ -107,7 +105,7 @@ When the lion is reduced to 0 hit points, but members of the Lunar Chimera are s
 
 <Trait>
 
-#### Metabolic engine
+##### Metabolic engine
 
 When the Goat or Serpent dies, the lion enters a raging state. While raging, it is resistant to all damage, and immune to psychic damage.
 Additionally, it's attacks deal an extra 8 damage of their type per dead member.
@@ -118,23 +116,23 @@ The damage bonus from this trait applies to legendary deeds as well, and cannot 
 
 ---
 
-## Features
+### Features
 
-### Actions
+#### Actions
 
 <Action>
 
-#### Multiattack
+##### Multiattack
 
 The lion makes three attacks: two with its claws and one with its bite, or it can use its Crushing Pounce and make one bite attack.
 
 </Action>
 
-### Attacks
+#### Attacks
 
 <Attack accuracy="+17" reach="[= 1 stride =]">
 
-##### Claw
+###### Claw
 
 On a hit, 22 ([% 3d8 +9 slashing %]).
 
@@ -142,7 +140,7 @@ On a hit, 22 ([% 3d8 +9 slashing %]).
 
 <Attack accuracy="+17" reach="[= 1 stride =]">
 
-##### Bite
+###### Bite
 
 On a hit, 26 ([% 3d10 +9 piercing %]).
 
@@ -150,7 +148,7 @@ On a hit, 26 ([% 3d10 +9 piercing %]).
 
 <Attack accuracy="+17" reach="[= 1 stride =]">
 
-##### Crushing Pounce
+###### Crushing Pounce
 
 On a hit, 18 ([% 2d8 +9 bludgeoning %]), and the target is **[# kw:condition:grappled #]** (escape DC 24).
 Until the grapple ends, the target is **[# kw:condition:restrained #]**.
@@ -163,7 +161,7 @@ Until the grapple ends, the target is **[# kw:condition:restrained #]**.
 
 ---
 
-# Lunar Chimera, Serpent
+## Lunar Chimera, Serpent
 
 <Monster
   size="Huge"
@@ -192,11 +190,11 @@ Until the grapple ends, the target is **[# kw:condition:restrained #]**.
 
 <Sheet>
 
-## Traits
+### Traits
 
 <Trait>
 
-#### One with the Moon
+##### One with the Moon
 
 This member is immune to magical effects created by the other chimeric members, and vice versa.
 When the Chimera recieves healing or gains temporary hitpoints from any source, they can choose which member benefits from it, provided that member is still alive.
@@ -205,7 +203,7 @@ When the Chimera recieves healing or gains temporary hitpoints from any source, 
 
 <Trait>
 
-#### Night Stalker
+##### Night Stalker
 
 The serpent can see through magical darkness as if it were normal darkness.
 
@@ -213,13 +211,13 @@ The serpent can see through magical darkness as if it were normal darkness.
 
 ---
 
-## Features
+### Features
 
-### Actions
+#### Actions
 
 <Action recharge="5–6">
 
-#### Bile spray
+##### Bile spray
 
 As a Minor Action, the serpent can exhale a spray of corrosive bile in a [= 3 stride;ADJ =] cone.
 Each creature in that area saves Dexterity against DC 22, halving 27 ([% 6d8 chemical %]).
@@ -229,18 +227,18 @@ Creatures that fail the save are also **[# kw:condition:blinded #]** [# kw:brief
 
 <Action>
 
-#### Vitriolic blood
+##### Vitriolic blood
 
 When the lion or goat dies, the serpent can, on each of it's subsequent turns, use it's reaction to emit a Bile Spray from the dead member's body.
 The spray originates from the dead member's position, and uses the serpent's saving throw DC.
 
 </Action>
 
-### Attacks
+#### Attacks
 
 <Attack accuracy="+16" reach="[= 3 stride =]">
 
-##### Tail Strike
+###### Tail Strike
 
 On a hit, 19 ([% 2d10 +8 bludgeoning %]) plus 18 ([% 4d8 poison %]).
 The target saves Constitution against DC 22 or becomes **[# kw:condition:Paralyzed #]** [# kw:briefly #].
@@ -253,7 +251,7 @@ The target saves Constitution against DC 22 or becomes **[# kw:condition:Paralyz
 </Monster>
 ---
 
-# Lunar Chimera, Goat
+## Lunar Chimera, Goat
 
 <Monster
   size="Huge"
@@ -282,11 +280,11 @@ The target saves Constitution against DC 22 or becomes **[# kw:condition:Paralyz
 
 <Sheet>
 
-## Traits
+### Traits
 
 <Trait accuracy="+14">
 
-#### Chimeric Spellcasting
+##### Chimeric Spellcasting
 
 The Lunar Chimera (goat) has **80 spell points**, and can spend **up to 8 spell points per round**.
 Spell level corresponds to spell point cost, and lower-level spells may be **overcast** by spending additional points, following the spell’s normal overcasting rules.
@@ -313,13 +311,13 @@ All spells cast in this way are considered **magical effects created by the goat
 
 ---
 
-## Features
+### Features
 
-### Actions
+#### Actions
 
 <Action>
 
-#### Lunar Reconstitution
+##### Lunar Reconstitution
 
 At the **start of the goat’s turn**, if any other chimeric member (lion or serpent) is at **0 hit points**, the goat may reconstitute them.
 

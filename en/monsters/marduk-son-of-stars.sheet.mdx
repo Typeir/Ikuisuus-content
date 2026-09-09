@@ -5,9 +5,9 @@ contentType: monsters
 
 # Marduk, Son of Stars
 
-<Sheet foot level="1">
+<Sheet foot multi>
 
-# Marduk, The Man.
+## Marduk, The Man.
 
 <Monster
   size="Medium"
@@ -37,11 +37,11 @@ contentType: monsters
 
 <Sheet>
 
-## Traits
+### Traits
 
 <Trait>
 
-#### Legendary Deeds
+##### Legendary Deeds
 
 Marduk has **3 deeds per round**, and regains all expended deeds at the start of his turn.
 
@@ -49,7 +49,7 @@ Marduk has **3 deeds per round**, and regains all expended deeds at the start of
 
 <Trait charges="3/Repose">
 
-#### Legendary Deed: Resist
+##### Legendary Deed: Resist
 
 When Marduk fails a saving throw, he can expend a legendary deed to succeed instead. This feature can be used **3 times per [# kw:Repose #]**.
 
@@ -57,7 +57,7 @@ When Marduk fails a saving throw, he can expend a legendary deed to succeed inst
 
 <Trait>
 
-#### Segmented Recharge
+##### Segmented Recharge
 
 Marduk rolls **one recharge die** at the start of each of his turns.
 
@@ -69,7 +69,7 @@ Marduk rolls **one recharge die** at the start of each of his turns.
 
 <Trait>
 
-#### Refusal
+##### Refusal
 
 Marduk cannot benefit from healing effects other than his own traits.
 
@@ -77,7 +77,7 @@ Marduk cannot benefit from healing effects other than his own traits.
 
 <Trait>
 
-#### Mortal Persistence
+##### Mortal Persistence
 
 At the start of each of Marduk’s turns, he gains **25 temporary hit points**.  
 If Marduk would be reduced to 0 hit points in this form, he instead drops to **1 hit point** and immediately shifts into **Dragon Aspect**. This effect can occur once per encounter.
@@ -86,7 +86,7 @@ If Marduk would be reduced to 0 hit points in this form, he instead drops to **1
 
 <Trait>
 
-#### Unwavering Blows
+##### Unwavering Blows
 
 Marduk's weapon attacks score a critical hit on a roll of 19 or 20, and ignore resistance to damage.
 If the target is **[# kw:condition:terrified #] of Marduk**, Marduk scores a critical hit on a roll of 17-20.
@@ -95,13 +95,13 @@ If the target is **[# kw:condition:terrified #] of Marduk**, Marduk scores a cri
 
 ---
 
-## Features
+### Features
 
-### Actions
+#### Actions
 
 <Action>
 
-#### Multiattack
+##### Multiattack
 
 Marduk makes **three** attacks with **Midnight Star**, replacing them with other available features of multiattack as desired.
 
@@ -109,7 +109,7 @@ Marduk makes **three** attacks with **Midnight Star**, replacing them with other
 
 <Action recharge="6">
 
-#### Stellar Judgment
+##### Stellar Judgment
 
 Marduk detonates one dark star at a point he can see within [= 24 stride =]. The star erupts in a barrage of obsidian scales that fly towards a creature of Marduk's choosing in a straight line.
 Each creature in a **[= 1 stride;ADJ =]-wide, [= 24 stride;ADJ =]-long line** saves Dexterity against DC 25, halving 62 ([% 14d8 force %]).
@@ -119,7 +119,7 @@ The main target takes an additional 31 ([% 7d8 force %]), halving on the same sa
 
 <Action recharge="6">
 
-#### Quasar
+##### Quasar
 
 Each dark star Marduk has created with is immediately duplicated, and the duplicates appear within [= 1 stride =] of the original stars.
 
@@ -127,7 +127,7 @@ Each dark star Marduk has created with is immediately duplicated, and the duplic
 
 <Action recharge="6">
 
-#### The Horns
+##### The Horns
 
 Marduk lets out a deafening and charges at a creature he can see within [= 60 stride =] at inconcievable speed.
 Each creature of Marduk's choice within [= 12 stride =] that can hear him saves Constitution against DC 25 or is [# kw:condition:terrified #] of Marduk [# kw:briefly #].
@@ -135,19 +135,17 @@ Marduk then charges to the target, up to [= 60 stride =], and makes one melee at
 
 <Attack accuracy="+20" reach="[= 1 stride =]">
 
-###### Melee Attack
-
 On a hit, 45 ([% 6d10 +10 bludgeoning %]). Marduk can carry one dark star created with **Fist of the North Star** with him during this charge.
 
 </Attack>
 
 </Action>
 
-### Attacks
+#### Attacks
 
 <Attack accuracy="+23" reach="[= 3 stride =]">
 
-##### Midnight Star
+###### Midnight Star
 
 On a hit, 41 ([% 5d12 +10 slashing %]) plus 31 ([% 7d8 psychic %]).
 
@@ -155,7 +153,7 @@ On a hit, 41 ([% 5d12 +10 slashing %]) plus 31 ([% 7d8 psychic %]).
 
 <Feature>
 
-##### Starborne Dragon <span>[# kw:attack alteration #]</span>
+###### Starborne Dragon <span>[# kw:attack alteration #]</span>
 
 Marduk forgoes one attack and transforms into his **dragon aspect**, and immediately moves up to [= 6 stride =] without provoking opportunity attacks.
 
@@ -163,7 +161,7 @@ Marduk forgoes one attack and transforms into his **dragon aspect**, and immedia
 
 <Attack accuracy="+20" reach="[= 1 stride =]" recharge="6">
 
-##### Fist of the North Star
+###### Fist of the North Star
 
 On a hit, 37 ([% 5d10 +10 bludgeoning %]), and a dark star erupts at the point of impact.
 
@@ -176,11 +174,15 @@ passing through terrain and objects.
 
 ---
 
-## Legendary Deed: Stratagem
+### Deeds
 
-<Action deed="stratagem">
+Marduk has **3 deeds per round**, and regains all expended deeds at the start of his turn. He can expend deeds to use the options below, each taken with different timing, as described in [Legendary Deeds](/en/library/rules/creatures-critters-and-characters/legendary-deeds).
 
-#### Test of Will
+#### Stratagem
+
+<Feature deed="stratagem">
+
+##### Test of Will
 
 **Declare:**
 Marduk draws a single, unwavering line of judgment across the battlefield.
@@ -199,11 +201,11 @@ Creatures that take damage from this effect lose one stack of **Dwarfed Will** (
 Creatures that have no stacks of **Dwarfed Will** automatically succeed on this saving throw, and are resistant to this damage.
 Creatures outside the line when the effect resolves take [% 20d6 psychic %].
 
-</Action>
+</Feature>
 
-<Action deed="stratagem">
+<Feature deed="stratagem">
 
-#### Snuff the Unworthy
+##### Snuff the Unworthy
 
 **Declare:**
 Marduk targets one creature he can see within [= 12 stride =].
@@ -215,41 +217,33 @@ The target loses all stacks of **Dwarfed Will** if it survives.
 
 Marduk cannot use Snuff the Unworthy if he has not used **Test of Will** in the last minute.
 
-</Action>
+</Feature>
 
----
+#### Act
 
-## Legendary Deed: Act
-
-<Action deed="act">
-
-Marduk can expend legendary deeds to use the options below, each taken with different timing, as described in [Legendary Deeds](/en/library/rules/creatures-critters-and-characters/legendary-deeds).
-
-<Action cost="1 Deed">
+<Feature cost="1 Deed" deed="act">
 
 ##### Measured Step
 
 Marduk moves up to [= 6 stride =] without provoking opportunity attacks.
 
-</Action>
+</Feature>
 
-<Action cost="1 Deed">
+<Feature cost="1 Deed" deed="act">
 
 ##### Unanswerable Blow
 
 Marduk makes one Midnight Star attack with advantage.
 
-</Action>
+</Feature>
 
-<Action cost="2 Deeds">
+<Feature cost="2 Deeds" deed="act">
 
 ##### Collapse Resolve
 
 The creature whose turn just ended saves Charisma against DC 25 or takes 41 ([% 9d8 psychic %]) and has disadvantage on all saving throws [# kw:briefly #].
 
-</Action>
-
-</Action>
+</Feature>
 
 </Sheet>
 
@@ -257,7 +251,7 @@ The creature whose turn just ended saves Charisma against DC 25 or takes 41 ([% 
 
 ---
 
-# Marduk, The Dragon.
+## Marduk, The Dragon.
 
 <Monster
   size="Huge"
@@ -276,7 +270,7 @@ The creature whose turn just ended saves Charisma against DC 25 or takes 41 ([% 
   resistances="Fire, Frost, Holy, Force"
   immunities="Psychic"
   conditionImmunities="[# kw:condition:Terrified #]"
-  senses="Truesight [= 24 stride =], passTerrifieption 26"
+  senses="Truesight [= 24 stride =], passive Perception 26"
   languages="Tongue of Dragons, Empyrean"
   saveDc="24"
   challenge="28"
@@ -287,11 +281,11 @@ The creature whose turn just ended saves Charisma against DC 25 or takes 41 ([% 
 
 <Sheet>
 
-## Traits
+### Traits
 
 <Trait>
 
-#### Aura of Terror
+##### Aura of Terror
 
 As an [# kw:delayed #] effect, creatures within [= 40 stride =] of Marduk save Wisdom against DC 25 or are [# kw:condition:frightened #] [# kw:briefly #].
 
@@ -299,7 +293,7 @@ As an [# kw:delayed #] effect, creatures within [= 40 stride =] of Marduk save W
 
 <Trait>
 
-#### Reconstitution
+##### Reconstitution
 
 At the start of each of Marduk’s turns, he regains **25 hit points**.
 If Marduk would be reduced to 0 hit points in this form, he instead drops to **1 hit point** and immediately shifts into **Mortal Aspect**. This effect can occur once per encounter.
@@ -308,7 +302,7 @@ If Marduk would be reduced to 0 hit points in this form, he instead drops to **1
 
 <Trait>
 
-#### Terrible Strikes
+##### Terrible Strikes
 
 Marduk's attacks deal psychic damage instead of their normal damage type to [# kw:condition:frightened #] and [# kw:condition:terrified #] creatures, and ignore resistance to damage.
 
@@ -316,13 +310,13 @@ Marduk's attacks deal psychic damage instead of their normal damage type to [# k
 
 ---
 
-## Features
+### Features
 
-### Actions
+#### Actions
 
 <Action>
 
-#### Multiattack
+##### Multiattack
 
 Marduk makes **three** attacks with **Midnight Star**, replacing them with other available features of multiattack as desired.
 
@@ -330,7 +324,7 @@ Marduk makes **three** attacks with **Midnight Star**, replacing them with other
 
 <Action recharge="6">
 
-#### Corona of the Fifth Star
+##### Corona of the Fifth Star
 
 Marduk manifests a corona of burning stellar remnants that orbit him at varying distances.
 When this ability activates, **twelve star-fragments** appear and orbit Marduk. The fragments last for 1 minute, until expended, or until Marduk is [# kw:condition:incapacitated #].
@@ -341,7 +335,7 @@ Once all star-fragments are expended, the corona ends.
 
 <Action recharge="6">
 
-#### Breath of Stellar Verdict
+##### Breath of Stellar Verdict
 
 Marduk exhales collapsing starlight in a [= 24 stride;ADJ =] cone.
 Each creature in the area saves Wisdom against DC 25, halving 90 ([% 14d12 holy %]).
@@ -351,7 +345,7 @@ Failing targets are **[# kw:condition:frightened #]** [# kw:briefly #].
 
 <Action recharge="6">
 
-#### Gravity of Presence
+##### Gravity of Presence
 
 Space buckles around Marduk.
 Each creature of Marduk’s choice within [= 12 stride =] saves Strength against DC 25, halving 62 ([% 14d8 force %]).
@@ -361,7 +355,7 @@ Failing targets are pulled up to [= 8 stride =] toward Marduk and knocked **[# k
 
 <Action accuracy="+16">
 
-#### Spellcasting
+##### Spellcasting
 
 <SpellList spells="psychic-link, twilight-bolt, cause-fear, psychic-nail, empty-skies, objection, banishment, perfect-barrier, sunbeam, disintegrate">
 
@@ -373,11 +367,11 @@ Failing targets are pulled up to [= 8 stride =] toward Marduk and knocked **[# k
 
 </Action>
 
-### Attacks
+#### Attacks
 
 <Attack accuracy="+20" reach="[= 3 stride =]">
 
-##### Bite
+###### Bite
 
 On a hit, 51 ([% 5d12 +18 piercing %]) plus 25 ([% 6d8 force %]).
 
@@ -385,7 +379,7 @@ On a hit, 51 ([% 5d12 +18 piercing %]) plus 25 ([% 6d8 force %]).
 
 <Attack accuracy="+20" reach="[= 2 stride =]">
 
-##### Claw
+###### Claw
 
 On a hit, 41 ([% 5d10 +14 slashing %]).
 
@@ -393,7 +387,7 @@ On a hit, 41 ([% 5d10 +14 slashing %]).
 
 <Feature>
 
-##### Earthbound Warrior <span>[# kw:attack alteration #]</span>
+###### Earthbound Warrior <span>[# kw:attack alteration #]</span>
 
 Marduk forgoes one attack and transforms into his **mortal aspect**, and immediately moves up to [= 6 stride =] without provoking opportunity attacks.
 
@@ -401,7 +395,7 @@ Marduk forgoes one attack and transforms into his **mortal aspect**, and immedia
 
 <Attack recharge="6" reach="[= 6 stride;ADJ =]">
 
-##### Tail Swipe
+###### Tail Swipe
 
 Marduk sweeps his tail in a brutal arc.
 Each creature in a **[= 6 stride;ADJ =] cone** saves Dexterity against DC 27, halving 35 ([% 5d8 +12 bludgeoning %]).
@@ -411,37 +405,35 @@ Failing targets are knocked **[# kw:condition:prone #]**.
 
 ---
 
-## Legendary Deed: Act
+### Deeds
 
-<Action deed="act">
+Marduk has **3 deeds per round**, and regains all expended deeds at the start of his turn. He can expend deeds to use the options below, each taken with different timing, as described in [Legendary Deeds](/en/library/rules/creatures-critters-and-characters/legendary-deeds).
 
-Marduk can expend legendary deeds to use the options below, each taken with different timing, as described in [Legendary Deeds](/en/library/rules/creatures-critters-and-characters/legendary-deeds).
+#### Act
 
-<Action cost="1 Deed">
+<Feature cost="1 Deed" deed="act">
 
 ##### Wing Drift
 
 Marduk moves up to half his flying speed without provoking opportunity attacks.
 
-</Action>
+</Feature>
 
-<Action cost="1 Deed">
+<Feature cost="1 Deed" deed="act">
 
 ##### Star Rend
 
 Marduk makes one Claw attack.
 
-</Action>
+</Feature>
 
-<Action cost="2 Deeds">
+<Feature cost="2 Deeds" deed="act">
 
 ##### Astral Compression
 
 One creature within [= 6 stride =] saves Constitution against DC 25 or takes 41 ([% 9d8 force %]) and have its speed reduced to 0 [# kw:briefly #].
 
-</Action>
-
-</Action>
+</Feature>
 
 </Sheet>
 
