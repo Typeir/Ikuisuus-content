@@ -28,11 +28,13 @@ The Spindle does not command them; it simply **anchors them**, preserving their 
 
 ---
 
-### Attributes
+## Attributes
 
 <Attributes />
 
-### Traits
+<Sheet>
+
+## Traits
 
 <Trait>
 
@@ -66,7 +68,7 @@ If you die, the staff liquefies and cocoons your body in wax. Your body becomes 
 
 </Trait>
 
-### Features
+## Features
 
 <Feature cost="1 Minor Action">
 
@@ -90,37 +92,61 @@ Targets save Charisma, becoming [# kw:condition:stunned #] until the start of yo
 
 </Feature>
 
-### Plinio & Adastria (Wax-Bound Homunculi)
+## Statlets
 
-_Small Construct, Neutral_
+<Statlet
+  kind="creature"
+  size="Small"
+  type="Construct"
+  alignment="Neutral"
+  armorClass="15"
+  hitPoints="[% 13d6 +35 %]"
+  speed="[= 8 stride =], climb [= 4 stride =]"
+  str="14"
+  dex="14"
+  con="20"
+  int="10"
+  wis="14"
+  cha="10"
+  saves="Con +9, Wis +6"
+  skills="Acrobatics +6, Athletics +10, Insight +6, Medicine +6"
+  resistances="Fire, Holy"
+  immunities="Poison"
+  conditionImmunities="[# kw:condition:Poisoned #]"
+  senses="Darkvision [= 12 stride =], They emit bright light [= 6 stride =], dim another [= 6 stride =]. Passive Perception 13"
+  languages="Same as their master."
+  tierBonus="+4">
 
-| **Armor Class** | **Hit Points** | **Speed**            |
-| --------------- | -------------- | -------------------- |
-| 15              | [% 13d6 +35 %] | [= 8 stride =], climb [= 4 stride =] |
+##### Plinio & Adastria (Wax-Bound Homunculi)
 
-| STR     | DEX     | CON     | INT     | WIS     | CHA     |
-| ------- | ------- | ------- | ------- | ------- | ------- |
-| 14 (+2) | 14 (+2) | 20 (+5) | 10 (+0) | 14 (+2) | 10 (+0) |
+<Trait>
 
-- **Saving Throws**: Con +9, Wis +6
-- **Skills**: Acrobatics +6, Athletics +10, Insight +6, Medicine +6
-- **Damage Resistances**: Fire, Holy;
-- **Damage Immunities**: Poison
-- **Condition Immunities**: [# kw:condition:Poisoned #],
-- **Senses**: Darkvision [= 12 stride =], They emit bright light [= 6 stride =], dim another [= 6 stride =]. Passive Perception 13
-- **Languages**: Same as their master.
-- **Tier Bonus**: +4
+###### Guardian's Instinct
 
-**Shared Ability — Guardian's Instinct.**  
 Allies within [= 1 stride =] of either homunculus gain **+1 AC** while it is conscious.
 
-**Construct Nature.**  
+</Trait>
+
+<Trait>
+
+###### Construct Nature
+
 Doesn't need to sleep, but does get sleepy.
 
-**Nimble Messenger.**  
+</Trait>
+
+<Trait>
+
+###### Nimble Messenger
+
 Advantage on Dexterity (Acrobatics) and Strength (Athletics). Can move through the space of a Large or larger creature.
 
-**Martial Adepts.**  
+</Trait>
+
+<Trait>
+
+###### Martial Adepts
+
 Their **unarmed strikes are magical**, deal **[% 1d6 %]** bludgeoning damage, and use **Dexterity** for attack and damage. After taking the **Attack** action, they can make **one unarmed strike as a Minor Action**. They also have:
 
 - **Multiattack** When they take the attack action, they may attack twice instead of once.
@@ -128,34 +154,31 @@ Their **unarmed strikes are magical**, deal **[% 1d6 %]** bludgeoning damage, an
 - **Slow Fall.** Reduce fall damage by **20**.
 - **Deflect Missiles (Reaction).** Reduce ranged weapon damage by **[% 1d10 +10 %]**; if reduced to 0, they may catch and immediately hurl it (range [= 4 stride =]/[= 12 stride =]) using the same reaction (attack +6).
 
----
+</Trait>
 
-#### Actions
+</Statlet>
 
-**Unarmed Strike.**  
-Accuracy +6, reach [= 1 stride =], one creature.  
-On a hit, 6 ([% 1d6 +2 %]) bludgeoning.
+<Statlet
+  kind="creature"
+  size="Tiny"
+  type="Construct"
+  alignment="Neutral">
 
-**Unique Function (choose by homunculus).**
+##### Cierto, Poet of Oblivion
 
-- **Plinio — Wax Dome (Recharge 5–6).** Forms a **[= 4 stride;ADJ =]-radius dome** of translucent wax centered on a point within [= 6 stride =]
-  Creatures inside gain **three-quarters cover** and **resistance to all damage**.
-  The dome has **AC 20, 60 HP, resistance to all damage, immunity to poison, psychic, and dark**, has a damage **Threshold of 25**, lasts **1 minute** or until destroyed.
-- **Adastria — Will-mend (Recharge 5–6).** All allies within **[= 6 stride =]** regain **30 hit points** and remove **one** of the following conditions: **[# kw:condition:blinded #], [# kw:condition:deafened #], [# kw:condition:frightened #], or [# kw:condition:poisoned #]**.
+<Feature accuracy="+13" charges="1/[# kw:Repose #]">
 
----
+###### Black Quill Strike
 
-**Wax Form.**  
-If reduced to 0 HP, they collapse into a soft puddle of wax. Recreating a destroyed homunculus requires **50,000 gp** in materials and **one month** of dedicated work.
-
-### Cierto, Poet of Oblivion
-
-_Tiny Construct, Neutral_
-
-**Black Quill Strike.**  
-A Wax Rat with a theatrical streak and an infernal glimmer. Upon summoning, Cierto immediately performs a **Black Quill Strike** (accuracy +13) dealing [% 2d8 +15 bludgeoning %], plus [% 14d8 psychic %], and stunning the target without save.
-Cierto then vanishes back to his own adventure.  
+A Wax Rat with a theatrical streak and an infernal glimmer. Upon summoning, Cierto immediately performs a **Black Quill Strike** dealing [% 2d8 +15 bludgeoning %], plus [% 14d8 psychic %], and stunning the target without save.
+Cierto then vanishes back to his own adventure.
 His voice lingers for this round, whispering poetry and folk tales that grant a single **d12 bardic inspiration** to allies within [= 6 stride =].
 Cierto can only be summoned once every [# kw:Repose #], as he is busy hunting demons.
+
+</Feature>
+
+</Statlet>
+
+</Sheet>
 
 </Heirloom>

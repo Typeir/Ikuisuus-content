@@ -21,11 +21,13 @@ A **colossal estoc**, rigid and razor-thin, meant for graceful counters and puni
 
 ---
 
-### Attributes
+## Attributes
 
 <Attributes />
 
-### Traits
+<Sheet>
+
+## Traits
 
 <Trait>
 
@@ -51,19 +53,7 @@ A creature attuned to Carranza's Great Épée cannot attune to Narvaez's Mighty 
 
 </Trait>
 
-### Features
-
-<Feature charges="1/[# kw:Repose #], or 3/[# kw:Repose #] with mastery" cost="1 Reaction" trigger="when a creature makes an attack against you">
-
-#### Parry and Riposte <span>Masterful Blow</span>
-
-When a creature makes a melee attack against you, you can force them to reroll the attack with disadvantage. If their attack misses, you can counterattack, dealing an extra [% 1d8 lightning %] damage.
-
-When you are targeted by a ranged attack, you can attempt to redirect it. Save Dexterity against DC 10 or half the damage, whichever is higher, to redirect the attack at a target within [= 6 stride =]/[= 12 stride =]; you roll attack and damage as if the original attacker had aimed for them.
-
-</Feature>
-
-<Feature>
+<Trait>
 
 #### Fated Demise
 
@@ -75,10 +65,32 @@ If the fallen wielder is revived, these effects end immediately, but [# kw:condi
 
 If you are separated from the other wielder by more than [= 120 stride =], you gain 1 [# kw:condition:exhaustion #] per day at dawn until the link is broken or restored.
 
-While under Fated Demise, when you use a Parry and Riposte option (the redirect or counterattack), you can replace it with a shockwave riposte. Every creature within [= 1 stride =] of you saves Dexterity against DC 10 + Dexterity modifier + tier bonus. Failing creatures take [% 2d8 slashing %]. If the attack you deflected was ranged, creatures make the save with advantage.
+While under Fated Demise, when you use a Parry and Riposte option (the redirect or counterattack), you can replace it with the **Fated Shockwave**.
 
-If the thread of fate is severed, the shockwave riposte option becomes a 1-charge feature, recharging daily at noon.
+<Feature mark="other" targets="every creature within [= 1 stride =] of you">
+
+###### Fated Shockwave
+
+Every creature within [= 1 stride =] of you saves Dexterity against DC 10 + Dexterity modifier + tier bonus. Failing creatures take [% 2d8 slashing %]. If the attack you deflected was ranged, creatures make the save with advantage.
+
+If the thread of fate is severed, this option becomes a 1-charge feature, recharging daily at noon.
 
 </Feature>
+
+</Trait>
+
+## Features
+
+<Feature charges="1/[# kw:Repose #], or 3/[# kw:Repose #] with mastery" cost="1 Reaction" trigger="when a creature makes an attack against you">
+
+#### Parry and Riposte <span>Masterful Blow</span>
+
+When a creature makes a melee attack against you, you can force them to reroll the attack with disadvantage. If their attack misses, you can counterattack, dealing an extra [% 1d8 lightning %] damage.
+
+When you are targeted by a ranged attack, you can attempt to redirect it. Save Dexterity against DC 10 or half the damage, whichever is higher, to redirect the attack at a target within [= 6 stride =]/[= 12 stride =]; you roll attack and damage as if the original attacker had aimed for them.
+
+</Feature>
+
+</Sheet>
 
 </Heirloom>

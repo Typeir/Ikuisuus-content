@@ -335,95 +335,6 @@ Yskeia can expend legendary deeds to use the options below, each taken with diff
 
 At the start of the creature with the highest initiative's turn, Yskeia can expend a legendary deed to use one of the following lair deeds. She cannot use the same lair deed two rounds in a row.
 
-
-#### Stratagem
-
-
-#### Act
-
-Act deeds are taken at the end of another creature’s turn, as described in [Legendary Deeds](/en/library/rules/creatures-critters-and-characters/legendary-deeds).
-
-<Action deed="act" cost="1 Deed">
-
-#### Reposition
-
-<Meta
-  target='generator'
-  type='feature'
-  featureId='war-goddess-yskeia/reposition'
-  customHandler='geometry_teleport'
-/>
-
-Yskeia instantly relocates to any point that maintains the exact same distance from the creature currently **Marked for Decommission**.  
-This movement does not provoke opportunity attacks, ignores terrain, and renders her immune to all damage and effects until the repositioning ends.
-
-</Action>
-
----
-
-<Action deed="act" cost="2 Deeds">
-
-#### Mutually Assured Destruction
-
-<Meta
-  target='generator'
-  type='feature'
-  featureId='war-goddess-yskeia/mutually-assured-destruction'
-  customHandler='damage_reflection'
-/>
-
-Yskeia designates one creature she can see within [= 60 stride =].  
-The target saves Charisma against DC 32 or becomes linked to her for 1 minute.  
-While linked, all damage the target deals to Yskeia is reflected back to it as **true damage**, and any healing the creature receives is instead granted to Yskeia.  
-The effect ends early if the creature saves Charisma against DC 32 at the end of its turns.  
-A creature that succeeds on either saving throw is immune to this effect for 24 hours.
-
-</Action>
-
----
-
-<Action deed="act" cost="1 Deed">
-
-#### Attack
-
-Yskeia makes one weapon attack of her choice.
-
-</Action>
-
----
-
-<Action deed="act" cost="1 Deed" recharge="6">
-
-#### Faterender Railgun
-
-<Meta
-  target='generator'
-  type='feature'
-  featureId='war-goddess-yskeia/faterender-railgun-recharge-6'
-  customHandler='text_pipe'
-/>
-
-Yskeia fires a blinding rail of divine kinetic energy in a **[= 2 stride;ADJ =]-wide, [= 600 stride;ADJ =]-long line**.  
-All creatures in the area save Dexterity against DC 35, halving force damage equal to the sum of their ability scores**.  
-If a creature does not have at least one score equal to or greater than 20, it dies instantly on a failed save, or has its maximum and current hit points reduced to 1 on a success.
-This damage ignores resistances, immunities, and cover.  
-The shot targets creatures in sequence, beginning with the closest along the line.  
-If a creature is reduced to 0 hit points by this attack, the creature is disintegrated and the shot continues to the next creature in line.
-
-Objects and structures instead take 200 damage.
-
-If the target is **Marked for Decommission**, it takes double damage and is also [# kw:condition:Paralyzed #] [# kw:briefly #].
-
-Once fired, the Faterender Railgun cannot be used again until it recharges.
-
-</Action>
-
----
-
-
-
-#### Phase
-
 <Action deed="lair">
 
 #### Arms Race
@@ -489,8 +400,6 @@ When the effect ends, the atmosphere reforms over [% 1d4 %] minutes, leaving beh
 
 </Action>
 
----
-
 <Action deed="lair">
 
 #### Tides of Ruin
@@ -519,8 +428,7 @@ On a success, it takes half as much damage and is pushed [= 6 stride =] ahead of
 
 </Action>
 
----
-
+#### Stratagem
 
 <Action deed="stratagem" cost="1 Deed">
 
@@ -539,10 +447,80 @@ A creature that fails the save is also **knocked [# kw:condition:prone #]**.
 
 </Action>
 
----
+#### Act
 
----
+Act deeds are taken at the end of another creature’s turn, as described in [Legendary Deeds](/en/library/rules/creatures-critters-and-characters/legendary-deeds).
 
+<Action deed="act" cost="1 Deed">
+
+#### Reposition
+
+<Meta
+  target='generator'
+  type='feature'
+  featureId='war-goddess-yskeia/reposition'
+  customHandler='geometry_teleport'
+/>
+
+Yskeia instantly relocates to any point that maintains the exact same distance from the creature currently **Marked for Decommission**.  
+This movement does not provoke opportunity attacks, ignores terrain, and renders her immune to all damage and effects until the repositioning ends.
+
+</Action>
+
+<Action deed="act" cost="2 Deeds">
+
+#### Mutually Assured Destruction
+
+<Meta
+  target='generator'
+  type='feature'
+  featureId='war-goddess-yskeia/mutually-assured-destruction'
+  customHandler='damage_reflection'
+/>
+
+Yskeia designates one creature she can see within [= 60 stride =].  
+The target saves Charisma against DC 32 or becomes linked to her for 1 minute.  
+While linked, all damage the target deals to Yskeia is reflected back to it as **true damage**, and any healing the creature receives is instead granted to Yskeia.  
+The effect ends early if the creature saves Charisma against DC 32 at the end of its turns.  
+A creature that succeeds on either saving throw is immune to this effect for 24 hours.
+
+</Action>
+
+<Action deed="act" cost="1 Deed">
+
+#### Attack
+
+Yskeia makes one weapon attack of her choice.
+
+</Action>
+
+<Action deed="act" cost="1 Deed" recharge="6">
+
+#### Faterender Railgun
+
+<Meta
+  target='generator'
+  type='feature'
+  featureId='war-goddess-yskeia/faterender-railgun-recharge-6'
+  customHandler='text_pipe'
+/>
+
+Yskeia fires a blinding rail of divine kinetic energy in a **[= 2 stride;ADJ =]-wide, [= 600 stride;ADJ =]-long line**.  
+All creatures in the area save Dexterity against DC 35, halving force damage equal to the sum of their ability scores**.  
+If a creature does not have at least one score equal to or greater than 20, it dies instantly on a failed save, or has its maximum and current hit points reduced to 1 on a success.
+This damage ignores resistances, immunities, and cover.  
+The shot targets creatures in sequence, beginning with the closest along the line.  
+If a creature is reduced to 0 hit points by this attack, the creature is disintegrated and the shot continues to the next creature in line.
+
+Objects and structures instead take 200 damage.
+
+If the target is **Marked for Decommission**, it takes double damage and is also [# kw:condition:Paralyzed #] [# kw:briefly #].
+
+Once fired, the Faterender Railgun cannot be used again until it recharges.
+
+</Action>
+
+#### Phase
 
 <Action deed="phase">
 
@@ -556,8 +534,6 @@ He joins the initiative immediately after Yskeia.
 > “Her voice did not falter. Nor did my shield.” — War Counselor Of Yskeia
 
 </Action>
-
----
 
 <Action deed="phase">
 
@@ -590,8 +566,6 @@ While wielding Athena:
 > _“She laid down command and took up judgment.” — The Dreamcatcher, on their confrontation with Yskeia_
 
 </Action>
-
----
 
 </Sheet>
 

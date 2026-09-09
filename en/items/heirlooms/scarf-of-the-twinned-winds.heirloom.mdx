@@ -22,19 +22,13 @@ The scarf’s mirrored fabric catches wind even indoors. Its left edge pulses fa
 
 ---
 
-### Attributes
+## Attributes
 
 <Attributes />
 
-### Traits
+<Sheet>
 
-<Trait>
-
-#### Twinned Ward
-
-While wearing this scarf, you gain a +1 bonus to Armor Class and a +1 bonus to all Saving Throws.
-
-</Trait>
+## Traits
 
 <Trait>
 
@@ -44,9 +38,12 @@ The scarf may be used as a spellcasting focus, and does not hinder somatic compo
 
 </Trait>
 
-### Features
+## Features
 
-_ (Recharge: Midday)_  
+<Feature cost="1 Major Action" recharge="at midday" targets="creatures in a [= 6 stride;ADJ =] line">
+
+#### Burning Wind
+
 As a Major Action, you release a **[= 6 stride;ADJ =] line** of scorching wind, [= 1 stride;ADJ =] wide.
 
 - All creatures in the line save **Dexterity** against **9 plus your [# kw:accuracy #]**
@@ -61,6 +58,8 @@ As a Major Action, you release a **[= 6 stride;ADJ =] line** of scorching wind, 
 
 - After using this feature, you gain **resistance to fire damage** until the start of your next turn.
 
+</Feature>
+
 <Feature cost="1 Major Action" recharge="at midnight" targets="creatures within a [= 3 stride;ADJ =] cone">
 
 #### Freezing Gale
@@ -68,5 +67,7 @@ As a Major Action, you release a **[= 6 stride;ADJ =] line** of scorching wind, 
 You unleash a cone of glacial wind. Targets save Constitution, halving [% 6d10 frost %]. Failing targets are treated as if under the effects of the [_Slow_](/en/library/spells/slow) spell (no [# kw:concentration #]) until the start of your next turn. After using this feature, you gain resistance to frost damage until the start of your next turn.
 
 </Feature>
+
+</Sheet>
 
 </Heirloom>
