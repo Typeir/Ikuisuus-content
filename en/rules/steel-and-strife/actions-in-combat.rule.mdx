@@ -2,47 +2,64 @@
 contentType: rules
 source: Ikuisuus
 keywords:
-  - attack
+  - assault
   - cast
-  - dash
-  - disengage
-  - dodge
+  - bolt
+  - bail
+  - brace
   - ready
   - help
   - hide
   - search
-  - parlay
+  - parley
   - movement
   - use
   - drop
+  - squeeze
 ---
 
 # Actions in Combat
 
 This page lists the standard actions available to creatures in combat.
 You have two Actions per turn and may spend at most one on a Major Action (see [Turns and Initiative](/en/library/rules/steel-and-strife/turns-and-initiative)).
-The actions below are Major Actions unless noted otherwise. When an action is described elsewhere, the Game Director tells you whether it is possible and what roll, if any, is required.
+When an action is described elsewhere, the Game Director tells you whether it is possible and what roll, if any, is required.
 
-## Mechanics
+**In short.** Each turn you have **two action points** and may spend one of them on a **Major Action**. You have **one Reaction** per round, regained at the start of your turn. A **reflex** costs nothing and is unlimited, and a saving throw is a reflex. Deeds fuel **Grit**.
 
-### Action Points
+## Features
 
-Characters follow the “Two actions, one reaction” principle.
-Each turn, you have a pool of two action points to spend as you see fit. 
-This pool can grow or shrink based on features, and is unbounded.
-You refresh your pool at the start of each of your turns, and you can forgo any or all of these whenever you see fit.
-You are limited to one Major Action per turn, unless a feature says otherwise.
+All creatures have access to the following Features:
 
-### Major Actions
+| Feature      | Cost                                                                                       | Effect                                                                                                              |
+| ------------ | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------- |
+| **Assault** | 1 Major Action                                                                             | One melee or ranged attack.                                                                                         |
+| **Cast**     | 1 Major Action, or the spell's own casting time                                            | A spell whose casting time is a Major Action.                                                                       |
+| **Brace**    | 1 Major Action                                                                             | Attacks against you have disadvantage, and you have advantage on Dexterity saves, until the start of your next turn. |
+| **Bolt**     | 1 Major Action                                                                             | Move again, equal to your speed.                                                                                    |
+| **Bail**     | 1 Major Action                                                                             | Your movement stops provoking opportunity attacks for the turn.                                                     |
+| **Help**     | 1 Major Action                                                                             | An ally gains advantage on the task you aid.                                                                        |
+| **Hide**     | 1 Major Action                                                                             | A Stealth check to hide.                                                                                            |
+| **Ready**    | 1 Major Action                                                                             | Hold an action against a stated trigger.                                                                            |
+| **Search**   | 1 Major Action                                                                             | Look for something.                                                                                                 |
+| **Parley**   | 1 Major Action                                                                             | Contest a hostile creature's disposition.                                                                           |
+| **Use**      | What the item says                                                                         | Interact with one object.                                                                                           |
+| **Squeeze**  | 1 Major Action to enter; 1 Major Action to exit                                            | Fit through a space up to half your size in any dimension.                                                          |
+| **Movement** | No action point                                                                            | Up to your speed.                                                                                                   |
+| **Drop**     | Free, and no action point                                                                  | Drop anything you are holding.                                                                                      |
 
-- The actions listed below cost one Major Action from your pool and count as your Major Action for the turn. These are considered the core actions of combat, and are the most common ways to spend your turn.
-- Sometimes, these actions are modified in such a way that they can be taken as Minor or Free Actions — Read carefully.
+Some features may alter their costs.
 
-#### Attack
+<Action cost="1 Major Action">
 
-- The Attack action is the most common action in combat. When you take the Attack action, you make one melee or ranged attack.
-- Certain features, such as the Warrior's Extra Attack, allow you to make more than one attack when you take this action. If you make more than one attack, the first attack roll that hits or misses follows the normal rules; features that modify subsequent attacks apply as written.
+#### Assault
+
+- The most common action in combat. You make one melee or ranged attack.
+- Certain features, such as the Warrior's Extended Assault, allow you to make more than one attack when you take it. If you make more than one attack, the first attack roll that hits or misses follows the normal rules; features that modify subsequent attacks apply as written.
 - See the “Making an Attack” rules for the specifics that govern attack rolls, hit determination, and damage.
+
+</Action>
+
+<Action cost="1 Major Action">
 
 #### Cast
 
@@ -52,59 +69,95 @@ You are limited to one Major Action per turn, unless a feature says otherwise.
 - Although Cast is listed as a Major Action, some spells might have a casting time of 1 Minor Action or 1 Reaction.
 - Each spell is different — follow the rules for the specific spell you are casting.
 
-#### Dash
+</Action>
 
-- When you take the Dash action, you gain extra movement for the current turn. The increase equals your speed after applying any modifiers.
-  With a speed of [= 6 stride =], you can move up to [= 12 stride =] on your turn if you Dash. Any change to your speed alters this bonus by the same amount.
+<Action cost="1 Major Action">
 
-#### Disengage
+#### Bolt
 
-- When you take the Disengage action, your movement doesn't provoke opportunity attacks for the rest of the turn.
+- You gain extra movement for the current turn. The increase equals your speed after applying any modifiers.
+  With a speed of [= 6 stride =], you can move up to [= 12 stride =] on your turn if you Bolt. Any change to your speed alters this bonus by the same amount.
 
-#### Dodge
+</Action>
 
-- When you take the Dodge action, you focus entirely on avoiding attacks.
+<Action cost="1 Major Action">
+
+#### Bail
+
+- Your movement doesn't provoke opportunity attacks for the rest of the turn.
+
+</Action>
+
+<Action cost="1 Major Action">
+
+#### Brace
+
+- You focus entirely on avoiding attacks.
 - Until the start of your next turn:
   - Any attack roll made against you has disadvantage if you can see the attacker.
   - You make Dexterity saving throws with advantage.
-- You lose these benefits if you are [# kw:condition:incapacitated #] (as explained in appendix PH\A) or if your speed drops to 0.
+- You lose these benefits if you are [# kw:condition:incapacitated #] or if your speed drops to 0.
+
+</Action>
+
+<Action cost="1 Major Action">
 
 #### Ready
 
-- Sometimes you want to get the jump on a foe or wait for a particular circumstance before you act. The Ready action lets you act using your reaction before the start of your next turn.
-- To use Ready:
+- Sometimes you want to get the jump on a foe or wait for a particular circumstance before you act. You act using your reaction before the start of your next turn.
+- To ready:
   1. First, you decide what perceivable circumstance will trigger your reaction.
   2. Then you choose the action you will take in response to that trigger, or you choose to move up to your speed in response to it. Examples of triggers include “If the cultist steps on the trapdoor, I’ll pull the lever that opens it,” and “If the goblin steps next to me, I move away.”
 - When the trigger occurs, you can either take your reaction right after the trigger finishes or ignore the trigger.
-- When you ready a spell, you cast it as normal but hold its energy, which you release with your reaction when the trigger occurs. To be readied, a spell must have a casting time of 1 Major Action, and the caster holds the spell's energy until the reaction is used or the opportunity passes. 
+- When you ready a spell, you cast it as normal but hold its energy, which you release with your reaction when the trigger occurs. To be readied, a spell must have a casting time of 1 Major Action, and the caster holds the spell's energy until the reaction is used or the opportunity passes.
+
+</Action>
+
+<Action cost="1 Major Action">
 
 #### Help
 
-- You can lend your aid to another creature in the completion of a task by taking the Help action.
-- When you take the Help action, the creature you aid gains advantage on the next ability check it makes to perform the task you are helping with, provided that it makes that check before the start of your next turn.
-- Alternatively, you can use the Help action to aid a friendly creature attacking a creature within [= 1 stride =] of you. If you do so, the first attack roll made against that target before your next turn is made with advantage.
+- You can lend your aid to another creature in the completion of a task.
+- The creature you aid gains advantage on the next ability check it makes to perform the task you are helping with, provided that it makes that check before the start of your next turn.
+- Alternatively, you can aid a friendly creature attacking a creature within [= 1 stride =] of you. If you do so, the first attack roll made against that target before your next turn is made with advantage.
+
+</Action>
+
+<Action cost="1 Major Action">
 
 #### Hide
 
-- When you take the Hide action, you make a Dexterity (Stealth) check in an attempt to hide, following the rules for hiding.
+- You make a Dexterity (Stealth) check in an attempt to hide, following the rules for hiding.
 - If you succeed, you gain the benefits described in the “Unseen Attackers and Targets” section until you are discovered or you stop hiding.
+
+</Action>
+
+<Action cost="1 Major Action">
 
 #### Search
 
-When you take the Search action, you devote your attention to locating something. The Game Director may call for a Wisdom (Perception) or Intelligence (Investigation) check depending on what you seek.
+You devote your attention to locating something. The Game Director may call for a Wisdom (Perception) or Intelligence (Investigation) check depending on what you seek.
 
-#### Parlay
+</Action>
 
-A creature may take a Major Action to attempt to **Parlay** with a hostile creature during combat, subject to [# kw:disposition #] modifiers.
+<Action cost="1 Major Action">
+
+#### Parley
+
+A creature may attempt to **Parley** with a hostile creature during combat, subject to [# kw:disposition #] modifiers.
 
 The acting creature makes a **Persuasion**, **Intimidation**, or **Deception** check contested by the target's **Insight**.
 
 - **On a failure**: the attempt has no effect.
-- **On a success**: the acting creature gains **advantage on its next attack roll, saving throw or skill competition that's not directly related to the parlay**, and if the target's [# kw:disposition #] can change, it shifts one step toward **Neutral** on the disposition track.
+- **On a success**: the acting creature gains **advantage on its next attack roll, saving throw or skill competition that's not directly related to the parley**, and if the target's [# kw:disposition #] can change, it shifts one step toward **Neutral** on the disposition track.
 
-Any harm done to the creature or its allies by the Parlayer or their allies immediately shifts them away from **Neutral** and renders parlay unusable until the end of the creature's next turn.
+Any harm done to the creature or its allies by the Parleyer or their allies immediately shifts them away from **Neutral** and renders parley unusable until the end of the creature's next turn.
 
-### Movement
+</Action>
+
+<Action cost="No action point">
+
+#### Movement
 
 On your turn, you can move up to your speed. You can break movement before and after your Actions. You cannot exceed your speed in a single turn.
 
@@ -116,16 +169,48 @@ Features that require you to be [# kw:condition:steady #] include:
 - Certain martial maneuvers granted by Fighting Style chain feats
 - Feat features that require a planted stance (e.g. [Swift and Steady](/en/library/character-creation/feats/swift-and-steady), long-range [Sharpshooter](/en/library/character-creation/feats/sharpshooter) precision)
 
-### Use
+</Action>
 
-- You can interact with one object or feature of the environment for free, during either your movement or while taking a Major Action. Some particularly complex objects might count as a Major Action. For example, you could open a door as you move toward it, or draw a weapon as part of an attack.
+<Action cost="What the item says">
+
+#### Use
+
+- Using an item costs what that item says it costs.
+- [_Trinkets_](/en/library/items/trinkets) and [_Heirlooms_](/en/library/items/heirlooms) each state their own — follow the item's description.
+- You can interact with one object or feature of the environment for free, during either your movement or while taking a Major Action. For example, you could open a door as you move toward it, or draw a weapon as part of an attack.
 - If you want to interact with a second object, you must use a Minor Action — opening a second door, pulling a lever, picking up a dropped axe.
-- Certain objects, such as [_Heirlooms_](/en/library/items/heirlooms), require a Major Action to use.
-- [_Trinkets_](/en/library/items/trinkets) require the Use action. Some trinkets allow this as a Minor Action or Reaction — follow the trinket's description.
 
-### Drop
+</Action>
+
+<Action cost="1 Major Action to enter; 1 Major Action to exit">
+
+#### Squeeze
+
+You fit through a space up to **half your size** in any dimension.
+
+Large or larger creatures must squeeze to move through spaces of **[= 1 stride =] or less** in width. Medium and smaller creatures may squeeze through unusually narrow gaps at the Game Director's discretion.
+
+For the effects that apply while you are squeezing, see [Movement, Terrain, and Traversal](/en/library/rules/steel-and-strife/movement-terrain-and-traversal#squeezing).
+
+</Action>
+
+<Action cost="Free, and no action point">
+
+#### Drop
 
 - You can drop anything you are holding for free, **without** spending an **Action Point**. This includes weapons, shields, and other items you are holding in your hands, as well as items you are carrying in a backpack or similar container.
+
+</Action>
+
+## Mechanics
+
+### Action Points
+
+Characters follow the “Two actions, one reaction” principle.
+Each turn, you have a pool of two action points to spend as you see fit.
+This pool can grow or shrink based on features, and is unbounded.
+You refresh your pool at the start of each of your turns, and you can forgo any or all of these whenever you see fit.
+You are limited to one Major Action per turn, unless a feature says otherwise.
 
 ### Deeds and Grit
 
@@ -134,5 +219,5 @@ When the Game Director rewards exceptional roleplay, the party pool gains **+1 D
 ## On the Game Director's role in action resolution
 
 - The Game Director resolves improvised actions and determines required rolls when actions are not detailed in the rules.
-- Abilities and features that modify attacks, movement, or reactions interact with these standard actions according to their own rules. For example, Extra Attack modifies the Attack action by granting additional attacks; effects that impose disadvantage or grant advantage apply to individual attack rolls as described in their entries.
+- Abilities and features that modify attacks, movement, or reactions interact with these standard actions according to their own rules. For example, Extended Assault modifies Assault by granting additional attacks; effects that impose disadvantage or grant advantage apply to individual attack rolls as described in their entries.
 - Appropriate use of actions in a roleplaying context is a key part of the game, and the Game Director should encourage players to think creatively about how to use their turn. Reward compelling roleplay with Deeds for the party pool. The Game Director should also be prepared to adjudicate creative uses of actions that may not be explicitly covered in the rules, using the principles of the game and the spirit of fun and storytelling to guide decisions.

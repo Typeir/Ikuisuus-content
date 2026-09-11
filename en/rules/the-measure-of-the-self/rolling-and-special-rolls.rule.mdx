@@ -13,27 +13,17 @@ Not all rolls in Damocles follow the same structure. This page outlines the spec
 
 ---
 
+## The Test
 
-## Accuracy
+A test is the **roll** of a **d20** to determine the plausible outcome of an interaction. 
 
-Accuracy determines the **sum** of **Modifiers** added to a **Roll**.
-Accuracy is also added to the **Difficulty Class** _(DC)_, provided the **feature** imposes a **saving throw** or **check** of any kind.
-Each individual feature has a different keyed **modifier** for it's accuracy and damage.
-
----
-
-## Important Notes
-
-**Confirmed Rolls** are for moments where risk doubles, an action is just barely possible with enough luck _(like throwing potions directly into mouths)_, or some higher power has altered the playing field. They should not be routine.
-
-**Raw Rolls** are for situations where **only understanding**, **discipline**, **practice**, or **the intrinsic self** matter. They ignore all magical, circumstantial, and external aids.  
-As such, **grafts** and **permanent alterations** to the self might give one an edge in these cases.
+**Tests** are governed by the following rules:
 
 ---
 
-## Standard Rolls
+## Standard Tests
 
-Most checks in Damocles follow the standard **d20 roll + modifiers** system:
+Most **Tests** in Damocles follow a **d20 roll + modifiers** system:
 
 - **Ability Checks** – d20 + relevant ability modifiers
 - **Attack Rolls** – d20 + relevant attack modifiers
@@ -41,42 +31,156 @@ Most checks in Damocles follow the standard **d20 roll + modifiers** system:
 
 ---
 
-## Critical Hits
+## The dice states:
 
-In Damocles, **critical rolls exist only for attack rolls**. a **20** does not mean an automatic success, a **1** does not mean an automatic failure.
-_Some things are bound to happen, no matter what the die says, others are forbidden by the whims of fate_.
+A dice roll has a defined set of states through which it is referred to:
+
+- **Nascent**: before it is cast, what is applied unconditionally to it. 
+>  Example: **Strength** is applied nascently to a check that involves strength, such as **Athletics**, or an attack with a **Broadsword**.
+- **Cast**: while the dice is rolling and the outcome has not settled; the lifetime of the roll itself.
+- **Posthumous**: After the dice is cast, rolled, and the result is **known**. Certain effects are applied posthumously.
+>  Example: [_Argent strands_](/en/library/spells/argent-strands) is applied to a roll once the result is known.
 
 ---
 
-## Advantage and Disadvantage
+## Test Modifiers
 
-When rolling with **Advantage**, roll **two d20s** and take the **higher result**.  
-When rolling with **Disadvantage**, roll **two d20s** and take the **lower result**.  
+These concepts govern the outcome of the final roll result, modifiers change the way the result is determined:
+
+### Accuracy
+
+Accuracy determines the **sum** of **Modifiers** added to a **Test**.
+Accuracy is also added to the **Difficulty Class** _(DC)_, provided the **feature** imposes a **saving throw** or **check** of any kind.
+Each individual feature has a different keyed **modifier** for its accuracy and damage.
+
+---
+
+### Critical Roll
+
+Critical rolls occur when the dice roll on a certain face, meeting a threshold or not being able to surpass it.
+Critical rolls are scoped to **Ability Checks**, **Attack Rolls** and **Saving Throws**
+A critical success is attained when a threshold is met. Certain features change this threshold.
+A critical failure is the inverse, and occurs when a certain threshold is not surpassed.
+The normal threshold for a critical success is **20**, and the normal threshold for a critical failure is **1**.
+For all rolls save for **attacks**, a **critical success** does not mean an automatic success, and a **critical failure** does not mean an automatic failure.
+These often carry extra consequences on top of a regular failure or success.
+
+_Some things are bound to happen, no matter what the die says, others are forbidden by the whims of fate_.
+
+
+---
+
+### Advantage and Disadvantage
+
+When rolling with **Advantage**, roll **twice** and take the **higher result**.  
+When rolling with **Disadvantage**, roll **twice** and take the **lower result**.  
 These cancel each other out and are **not stackable**.
 
 These follow standard rules.
 
 ---
 
-## Deeds and Grit
+### Deeds and Grit
 
-When the Game Director rewards exceptional roleplay, the party gains **+1 Deed**. Spending a Deed before a roll lets you declare **Grit** — a bonus tied to Tier Bonus and a relevant ability score. Declare before the die lands; the Deed is spent whether you succeed or fail. See [Deeds, Grit, and Misdeeds](/en/library/rules/steel-and-strife/deeds-grit-and-misdeeds) for the full rules.
+Deeds are a resource that can be used to [# kw:grit #] through a challenge, bridging the gap to success by changing the odds from the source.
+Spending a Deed before a roll lets you declare [# kw:grit #].
+
+See [Deeds, Grit, and Misdeeds](/en/library/rules/steel-and-strife/deeds-grit-and-misdeeds) for the full rules.
+
+The Game Director can reward exceptional roleplay, granting the party **+1 Deed**. 
+Declare before the die is cast; the Deed is spent whether you succeed or fail. 
+
+---
+
+### Bonus and Penalty Die
+
+Certain features will grant additional dice to be rolled with the original, altering the result.
+
+- **Bonus Die**: The result is added to the total.
+- **Penalty Die**: The result is subtracted from the total.
+
+These die are **cast** along with the original cast.
+These die may be present in rolls other than **Attack Rolls** **Ability Checks** and **Saving Throws**.
+
+---
+
+### Flooring
+
+A floored roll has its dice result changed to a specific minimum if it would be under it, a floor of 10 has any result on the dice it floors have a minimum value of 10.
+> Example: A [_Pellervi_](/en/library/character-creation/bloodlines/pellervi) with **Dependable** rolls a 3 on a skill check, which fails by just two. 3 is under 5, so it becomes a 5 instead. The pellervi has a high enough modifier to turn that failed roll of 3 into a success with a 5, so they succeed.   
+
+
+---
+
+## Defying the outcome
+
+Some features let you modify the outcome **posthumously** rather than **nascently**; after the die has been cast and the outcome has been determined.
+
+### Chancing
+
+Unlike Deeds and Grit, **chancing** allows one to roll the entire roll again, and must take the new result.
+This includes all of the **Bonus** and **Penalty** dice.
+A chanced roll does not carry **advantage** or **disadvantage** from the original roll with it.
+A **critical roll** can **never** be **chanced**, regardless of outcome. [_Pellervi Luck_](/en/library/character-creation/bloodlines/pellervi) is the sole exception.
+
+### Swaying
+
+A swayed roll acts exactly like a **Bonus or Penalty** dice, but **Posthumously**.
+Once the result is known, you may alter it after the fact, with these dice; Potentially altering the course of fate.
+
+---
+
+## Habitual Rolls
+
+### Attack Rolls
+
+For attack rolls, critical hits are automatic success, and critical misses are automatic failures, regardless of modifiers. A 1 will never hit, and a 20 will never miss.
+
+- A **result of 20** on an **attack roll** is a **critical hit**.  
+  **All damage dice are doubled** on a critical hit.
+- A **result of 1** on an **attack roll** is a **critical miss**.  
+
+---
+
+### Skill Checks and Saving Throws
+
+- **Skill checks and Saves have Critical**.
+- A **result of 1** is **not an automatic failure**.
+- A **result of 20** is **not an automatic success**.
+
+Only the **final total matters**. Some tasks are **impossible no matter the roll**, and some are **inevitable no matter the hand**.
 
 ---
 
 ## Special Roll Types
 
----
+Certain Roll types are more uncommon or require special consideration
+
+### Chained
+
+A roll may be **Chained**, resolving over several attempts rather than one.
+
+A chain is written **Chained(successes/failures)**:
+  - **Chained(3/1)** completes on **three successes** and fails on **one failure**. 
+  - **Chained(3/3)** completes or fails on **three** of either.
+
+Successes and failures **need not be consecutive**, and either count may be reached first.
+
+When a chain **completes**, the effect it was resisting **ends**. When a chain **fails**, the entry states what failing it does.
+
+A **Chained** **Resist** is rolled **at the end of the sufferer's turn**, one at a time, per turn.
+
+A common example of a **Chained** effect are **Death Saving Throws**. A creature that is **[# kw:condition:dying #]** rolls **Chained(3/3)**. On **three successes**, it stabilizes. On **three failures**, it dies.
+
+--- 
 
 ### Raw Roll
 
 A Raw Roll **[RR]** is a check where:
 
 - You roll **d20 + specified modifier _(score, tier, expertise, familiarity)_, if any**.
-- Magical effects, items, or magical features do not apply unless specifically stated.
-  This includes bonuses from spells like [_Bless_](/en/library/spells/bless), bardic inspiration, or magic items.  
-  Non-magical features may apply as long as the **timeframes align**, for example, if the roll represents an immediate process, **Indomitable** can be used.
-  Non-magical feats such as [_Lucky_](/en/library/character-creation/feats/lucky) can be used.
+- The roll cannot be **Chanced**, **Swayed**, given **Bonus** or **Penalty** dice of any kind, and is not affected by bonuses whose **source** is other than you.
+- Grit cannot be used on raw rolls.
 - **Alterations to the self** do affect this roll—if one **Grafts** a monstrous appendage that increases their strength tenfold, they may succeed where they otherwise couldn't.
 
 Raw Rolls represent **accumulated comprehension and effort**, **extreme luck**, or **the intrinsic self**, not talent or magic.
@@ -93,7 +197,7 @@ Use a Raw Roll **[RR]** when:
 
 ---
 
-### Confirmed Roll [CR]
+### Confirmed Roll
 
 A **Confirmed Roll [CR]** represents actions where success requires **both execution and confirmation**.
 
@@ -124,7 +228,7 @@ Use a **Confirmed Roll [CR]** when:
 
 ---
 
-### Deliberate Roll [DR]
+### Deliberate Roll
 
 A **Deliberate Roll [DR]** allows a character to **default to a fixed result** when no danger, urgency, or metaphysical risk is involved.
 
@@ -147,41 +251,6 @@ Use a **Deliberate Roll [DR]** when:
 - The task is **safe, repeatable, and allows for patient effort**.
 - Time is available, and there's no penalty for taking longer.
 - The check represents **study, inspection, or careful execution** without pressure.
-
----
-
-### Chained
-
-A roll may be **Chained**, resolving over several attempts rather than one.
-
-A chain is written **Chained(successes/failures)**:
-  - **Chained(3/1)** completes on **three successes** and fails on **one failure**. 
-  - **Chained(3/3)** completes or fails on **three** of either.
-
-Successes and failures **need not be consecutive**, and either count may be reached first.
-
-When a chain **completes**, the effect it was resisting **ends**. When a chain **fails**, the entry states what failing it does.
-
-A **Chained** **Resist** is rolled **at the end of the sufferer's turn**, one at a time, per turn.
-
-A common example of a **Chained** effect are **Death Saving Throws**. A creature that is **[# kw:condition:dying #]** rolls **Chained(3/3)**. On **three successes**, it stabilizes. On **three failures**, it dies.
-
-### Attack Rolls
-
-- A **natural 20** on an **attack roll** is a **critical hit**.  
-  **All damage dice are doubled**.
-- A **natural 1** on an **attack roll** is a **critical miss**.  
-  The Game Director may assign additional consequences, especially if the miss is reckless or dangerous.
-
----
-
-### Skill Checks and Saving Throws
-
-- **Skill checks and saving throws do not have critical hits or failures**.
-- A **natural 1** is **not an automatic failure**.
-- A **natural 20** is **not an automatic success**.
-
-Only the **final total matters**. Some tasks are **impossible no matter the roll**, and some are **inevitable no matter the hand**.
 
 ---
 
