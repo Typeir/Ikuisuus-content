@@ -206,11 +206,11 @@ Each creature hit saves Strength against DC 23 or is **pushed [= 3 stride =]** a
 
 ### Reactions
 
-### Shedding Wake
+#### Shedding Wake
 
 When a creature **ends its movement within [= 2 stride =]** of Albedo's Godmass, **spawn 1 Petal** adjacent to that creature (once per creature per round).
 
-### Exuvial Guard
+#### Exuvial Guard
 
 When Albedo would be hit by a melee attack, growths interpose. The attacker saves Dexterity against DC 23 or the attack **misses**.  
 Whether it hits or misses, **spawn 1 Petal** adjacent to the attacker.
@@ -263,102 +263,248 @@ The nucleus destabilizes; replication overruns structure.
 
 > These creatures are part of Albedo and act on **initiative count 10** (grouped), unless created at another time; then they join the count 10 group at the end of the round.
 
-> ### Petal
->
-> _Small Aberration_
->
-> | **Armor Class** | **Hit Points**     | **Speed**            |
-> | --------------- | ------------------ | -------------------- |
-> | 15 (natural)    | 40 ([% 5d8 +15 %]) | [= 8 stride =], climb [= 4 stride =] |
->
-> | **STR** | **DEX** | **CON** | **INT** | **WIS** | **CHA** |
-> | ------- | ------- | ------- | ------- | ------- | ------- |
-> | 16 (+3) | 16 (+3) | 16 (+3) | 3 (−4)  | 10 (+0) | 5 (−3)  |
->
-> - **Resistances**: Chemical, Dark;
-> - **Senses**: Blindsight [= 6 stride =]
-> - **Actions — Claw.** Accuracy +11, reach [= 1 stride =]; **12 ([% 2d8 +3 slashing %])** + **7 ([% 2d6 chemical %])**.
-> - **Deathburst.** When reduced to 0 HP, creatures within [= 1 stride =] save Dexterity against DC 19 or take **7 ([% 2d6 chemical %])**.
+<Statlet
+  kind="creature"
+  size="Small"
+  type="Aberration"
+  armorClass="15 (natural)"
+  hitPoints="40 ([% 5d8 +15 %])"
+  speed="[= 8 stride =], climb [= 4 stride =]"
+  str="16"
+  dex="16"
+  con="16"
+  int="3"
+  wis="10"
+  cha="5"
+  resistances="Chemical, Dark;"
+  senses="Blindsight [= 6 stride =]">
+
+##### Petal
+
+<Attack accuracy="+11" reach="[= 1 stride =]">
+
+###### Claw
+
+On a hit, **12 ([% 2d8 +3 slashing %])** + **7 ([% 2d6 chemical %])**.
+
+</Attack>
+
+<Trait>
+
+###### Deathburst
+
+When reduced to 0 HP, creatures within [= 1 stride =] save Dexterity against DC 19 or take **7 ([% 2d6 chemical %])**.
+
+</Trait>
+
+</Statlet>
 
 ---
 
-> ### Bloom (Swarm)
->
-> _Medium Aberration_
->
-> | **Armor Class** | **Hit Points**       | **Speed**            |
-> | --------------- | -------------------- | -------------------- |
-> | 16 (natural)    | 120 ([% 15d8 +45 %]) | [= 8 stride =], climb [= 4 stride =] |
->
-> | **STR** | **DEX** | **CON** | **INT** | **WIS** | **CHA** |
-> | ------- | ------- | ------- | ------- | ------- | ------- |
-> | 16 (+3) | 16 (+3) | 16 (+3) | 3 (−4)  | 10 (+0) | 5 (−3)  |
->
-> - **Resistances**: Chemical, Dark;
-> - **Senses**: Blindsight [= 6 stride =]
-> - **Swarm.** The swarm can occupy another creature’s space; that space is **difficult terrain** for the swarm.
-> - **Grind and Shear.** Accuracy +11, reach [= 1 stride =]; **([% 3d8 +3 %])** slashing + **([% 2d6 %])** chemical. Attacks against a creature in the swarm’s space have **advantage**.
-> - **Shred.** As an [# kw:delayed #] effect, a Large or smaller creature in the swarm's space takes **11 ([% 3d6 slashing %])**.
-> - **Multitudes** The swarm cannot take more than **40** damage from a single attack roll.
-> - **Split Reaction.** When reduced to 0 HP, the swarm **spawns 2 Petals** in its space.
+<Statlet
+  kind="creature"
+  size="Medium"
+  type="Aberration"
+  armorClass="16 (natural)"
+  hitPoints="120 ([% 15d8 +45 %])"
+  speed="[= 8 stride =], climb [= 4 stride =]"
+  str="16"
+  dex="16"
+  con="16"
+  int="3"
+  wis="10"
+  cha="5"
+  resistances="Chemical, Dark;"
+  senses="Blindsight [= 6 stride =]">
+
+##### Bloom (Swarm)
+
+<Trait>
+
+###### Swarm
+
+The swarm can occupy another creature’s space; that space is **difficult terrain** for the swarm.
+
+</Trait>
+
+<Attack accuracy="+11" reach="[= 1 stride =]">
+
+###### Grind and Shear
+
+On a hit, **([% 3d8 +3 %])** slashing + **([% 2d6 %])** chemical. Attacks against a creature in the swarm’s space have **advantage**.
+
+</Attack>
+
+<Trait>
+
+###### Shred
+
+As an [# kw:delayed #] effect, a Large or smaller creature in the swarm's space takes **11 ([% 3d6 slashing %])**.
+
+</Trait>
+
+<Trait>
+
+###### Multitudes
+
+The swarm cannot take more than **40** damage from a single attack roll.
+
+</Trait>
+
+<Trait>
+
+###### Split Reaction
+
+When reduced to 0 HP, the swarm **spawns 2 Petals** in its space.
+
+</Trait>
+
+</Statlet>
 
 ---
 
-> ### Flower
->
-> _Large Aberration (Union of Three Blooms)_
->
-> | **Armor Class**    | **Hit Points**         | **Speed**            |
-> | ------------------ | ---------------------- | -------------------- |
-> | 17 (natural armor) | 360 ([% 30d10 +180 %]) | [= 8 stride =], climb [= 4 stride =] |
->
-> | **STR** | **DEX** | **CON** | **INT** | **WIS** | **CHA** |
-> | ------- | ------- | ------- | ------- | ------- | ------- |
-> | 18 (+4) | 16 (+3) | 22 (+6) | 3 (−4)  | 10 (+0) | 5 (−3)  |
->
-> - **Resistances**: Chemical, Dark;
-> - **Condition Immunities**: [# kw:condition:Terrified #]
-> - **Senses**: Blindsight [= 12 stride =]
-> - **Grind and Spray.** When the Flower takes slashing or lightning damage, creatures within [= 2 stride =] save Dexterity against DC 19 or take **11 ([% 3d6 chemical %])**.
-> - **Multiattack.** The Flower makes **two Tendril** attacks.
-> - **Multitudes** The swarm cannot take more than **120** damage from a single attack roll.
-> - **Tendril.** Accuracy +11, reach [= 2 stride =]; **([% 2d10 +4 %])** slashing + ** ([% 3d6 %])** chemical.
-> - **Split Reaction.** When reduced to 0 HP, the Flower **spawns 2 Blooms** in its space.
+<Statlet
+  kind="creature"
+  size="Large"
+  type="Aberration"
+  subtype="Union of Three Blooms"
+  armorClass="17 (natural armor)"
+  hitPoints="360 ([% 30d10 +180 %])"
+  speed="[= 8 stride =], climb [= 4 stride =]"
+  str="18"
+  dex="16"
+  con="22"
+  int="3"
+  wis="10"
+  cha="5"
+  resistances="Chemical, Dark;"
+  conditionImmunities="[# kw:condition:Terrified #]"
+  senses="Blindsight [= 12 stride =]">
+
+##### Flower
+
+<Trait>
+
+###### Grind and Spray
+
+When the Flower takes slashing or lightning damage, creatures within [= 2 stride =] save Dexterity against DC 19 or take **11 ([% 3d6 chemical %])**.
+
+</Trait>
+
+<Action>
+
+###### Multiattack
+
+The Flower makes **two Tendril** attacks.
+
+</Action>
+
+<Trait>
+
+###### Multitudes
+
+The swarm cannot take more than **120** damage from a single attack roll.
+
+</Trait>
+
+<Attack accuracy="+11" reach="[= 2 stride =]">
+
+###### Tendril
+
+On a hit, **([% 2d10 +4 %])** slashing + ** ([% 3d6 %])** chemical.
+
+</Attack>
+
+<Trait>
+
+###### Split Reaction
+
+When reduced to 0 HP, the Flower **spawns 2 Blooms** in its space.
+
+</Trait>
+
+</Statlet>
 
 ---
 
-> ### Bouquet
->
-> _Gargantuan Aberration (Union of Three Flowers)_
->
-> | **Armor Class**    | **Hit Points**         | **Speed**            |
-> | ------------------ | ---------------------- | -------------------- |
-> | 18 (natural armor) | 900 ([% 36d12 +360 %]) | [= 8 stride =], climb [= 4 stride =] |
->
-> | **STR** | **DEX** | **CON** | **INT** | **WIS** | **CHA** |
-> | ------- | ------- | ------- | ------- | ------- | ------- |
-> | 22 (+6) | 14 (+2) | 26 (+8) | 3 (−4)  | 10 (+0) | 5 (−3)  |
->
-> - **Resistances**: Chemical, Dark, Psychic;
-> - **Condition Immunities**: [# kw:condition:Terrified #], [# kw:condition:Prone #]
-> - **Senses**: Blindsight [= 24 stride =]
-> - **Eternal Bloom.** Regains **20 HP** at the start of its turn unless it took chemical damage since its last turn.
-> - **Corrosive Pulse (Recharge 5–6).** All creatures within [= 6 stride =] make a **DC 21 Dexterity** save, taking **45 ([% 10d8 chemical %])** + **27 ([% 6d8 dark %])** on a fail, or half on success.
-> - **Multiattack (3 Cores Active).** The Bouquet makes **three Tendril** attacks.
-> - **Tendril.** Accuracy +13, reach [= 3 stride =]; **([% 3d10 +6 %])** slashing + ** ([% 3d8 %])** chemical.
-> - **Split Reaction.** When reduced to 0 HP, the Bouquet **spawns 2 Flowers** in its space.
+<Statlet
+  kind="creature"
+  size="Gargantuan"
+  type="Aberration"
+  subtype="Union of Three Flowers"
+  armorClass="18 (natural armor)"
+  hitPoints="900 ([% 36d12 +360 %])"
+  speed="[= 8 stride =], climb [= 4 stride =]"
+  str="22"
+  dex="14"
+  con="26"
+  int="3"
+  wis="10"
+  cha="5"
+  resistances="Chemical, Dark, Psychic;"
+  conditionImmunities="[# kw:condition:Terrified #], [# kw:condition:Prone #]"
+  senses="Blindsight [= 24 stride =]">
+
+##### Bouquet
+
+<Trait>
+
+###### Eternal Bloom
+
+Regains **20 HP** at the start of its turn unless it took chemical damage since its last turn.
+
+</Trait>
+
+<Feature recharge="5–6">
+
+###### Corrosive Pulse
+
+All creatures within [= 6 stride =] make a **DC 21 Dexterity** save, taking **45 ([% 10d8 chemical %])** + **27 ([% 6d8 dark %])** on a fail, or half on success.
+
+</Feature>
+
+<Action>
+
+###### Multiattack (3 Cores Active)
+
+The Bouquet makes **three Tendril** attacks.
+
+</Action>
+
+<Attack accuracy="+13" reach="[= 3 stride =]">
+
+###### Tendril
+
+On a hit, **([% 3d10 +6 %])** slashing + ** ([% 3d8 %])** chemical.
+
+</Attack>
+
+<Trait>
+
+###### Split Reaction
+
+When reduced to 0 HP, the Bouquet **spawns 2 Flowers** in its space.
+
+</Trait>
+
+</Statlet>
 
 ---
 
-> ### Reflected Parasite (On-Host)
->
-> _Tiny Aberration (Attached to a Host)_
->
-> | **Armor Class** | **Hit Points** | **Speed** |
-> | --------------- | -------------- | --------- |
-> | —               | —              | —         |
->
-> - A host can use a **Major Action** to make a **DC 21 Strength (Athletics)** or **Dexterity (Acrobatics)** check to tear it off; on success, the parasite dies.
+<Statlet
+  kind="creature"
+  size="Tiny"
+  type="Aberration"
+  alignment="Attached to a Host"
+  armorClass="—"
+  hitPoints="—"
+  speed="—">
+
+##### Reflected Parasite (On-Host)
+
+A host can use a **Major Action** to make a **DC 21 Strength (Athletics)** or **Dexterity (Acrobatics)** check to tear it off; on success, the parasite dies.
+
+</Statlet>
 
 ---
 

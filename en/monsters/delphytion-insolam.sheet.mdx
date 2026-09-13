@@ -119,7 +119,7 @@ The Delphytion Insolam makes three attacks: two with its **Needle Limbs** and on
 
 ##### Needle Limb
 
-**Hit**: 18 ([% 2d10 +7 piercing %]). If the target is Large or smaller, it saves Strength against DC 20 or is [# kw:condition:grappled #]. The Delphytion can grapple up to two creatures this way.
+On a hit, 18 ([% 2d10 +7 piercing %]). If the target is Large or smaller, it saves Strength against DC 20 or is [# kw:condition:grappled #]. The Delphytion can grapple up to two creatures this way.
 
 </Attack>
 
@@ -128,7 +128,7 @@ The Delphytion Insolam makes three attacks: two with its **Needle Limbs** and on
 ##### Barbed Proboscis
 
 **[# kw:condition:grappled #]** by the Delphytion.  
-**Hit**: 27 ([% 4d10 +7 piercing %]).
+On a hit, 27 ([% 4d10 +7 piercing %]).
 The target saves Constitution against DC 20 or is implanted with a **Sunspawn embryo**.
 At the start of each of the implanted creature’s turns, it takes **11 ([% 2d10 poison %])** as the embryo feeds.
 The embryo dies if the host receives **20 or more points of holy damage** or if any effect cures disease.
@@ -140,7 +140,7 @@ After **3 rounds**, the embryo erupts: the host takes **33 ([% 6d10 piercing %])
 
 ##### Tail Sweep
 
-**Hit**: 16 ([% 2d8 +7 bludgeoning %]). Each Large or smaller creature hit saves Strength against DC 20 or is pushed **[= 3 stride =]** away and knocked [# kw:condition:prone #].
+On a hit, 16 ([% 2d8 +7 bludgeoning %]). Each Large or smaller creature hit saves Strength against DC 20 or is pushed **[= 3 stride =]** away and knocked [# kw:condition:prone #].
 
 </Attack>
 
@@ -159,37 +159,52 @@ The Delphytion Insolam can expend legendary deeds to use the options below, each
 
 #### Act
 
-> #### Sunspawn
->
-> _Small Monstrosity, Unaligned_
->
-> | **Armor Class** | **Hit Points**    | **Speed**            |
-> | --------------- | ----------------- | -------------------- |
-> | 14 (natural)    | 22 ([% 4d6 +8 %]) | [= 6 stride =], climb [= 6 stride =] |
->
-> | STR    | DEX     | CON     | INT    | WIS     | CHA    |
-> | ------ | ------- | ------- | ------ | ------- | ------ |
-> | 8 (–1) | 18 (+4) | 14 (+2) | 3 (–4) | 10 (+0) | 5 (–3) |
->
-> - **Damage Immunities**: Holy
-> - **Condition Immunities**: [# kw:condition:Poisoned #], [# kw:condition:Blinded #]
-> - **Senses**: Blindsight [= 6 stride =], Passive Perception 10
-> - **Languages**: —
->
-> **Radiant Parasitism.**  
-> The Sunspawn is tethered to the nearest Delphytion Insolam within [= 60 stride =]. While within range, it gains **advantage on attack rolls**. Additionally, when the Sunspawn deals damage to a creature, the nearest Delphytion within [= 60 stride =] regains hit points equal to half the damage dealt.
->
-> **Born of the Sun.**  
-> The Sunspawn sheds **dim light in a [= 2 stride;ADJ =] radius**. It has **advantage on saving throws** against spells and magical effects that deal fire or holy damage.
->
-> **Actions — Barbed Latch.**  
-> Accuracy +7, reach [= 1 stride =], one creature.  
-> **Hit:** 3 ([% 1d4 +1 piercing %]), and the Sunspawn attaches to the target. While attached, the target's speed is reduced by **[= 1 stride =]** per attached Sunspawn.
-> For every **[= 1 stride =]** the target moves while attached, it gains **1 stack of [# kw:condition:Bleeding #]**.
-> The target or a creature within [= 1 stride =] can use a Major Action to attempt detaching one Sunspawn.
-> Make a **DC 14 Wisdom (Medicine) check**. On a success, the Sunspawn detaches safely.
-> On a failure, the Sunspawn remains attached and the target's [# kw:condition:Bleeding #] stacks **double**.
-> Alternatively, a creature can use a Major Action to simply **yank** the Sunspawn free (no check)—it detaches, but the target's [# kw:condition:Bleeding #] stacks **double**.
+<Statlet
+  kind="creature"
+  size="Small"
+  type="Monstrosity"
+  alignment="Unaligned"
+  armorClass="14 (natural)"
+  hitPoints="22 ([% 4d6 +8 %])"
+  speed="[= 6 stride =], climb [= 6 stride =]"
+  str="8"
+  dex="18"
+  con="14"
+  int="3"
+  wis="10"
+  cha="5"
+  immunities="Holy"
+  conditionImmunities="[# kw:condition:Poisoned #], [# kw:condition:Blinded #]"
+  senses="Blindsight [= 6 stride =], Passive Perception 10"
+  languages="—">
+
+##### Sunspawn
+
+<Trait>
+
+###### Radiant Parasitism
+
+The Sunspawn is tethered to the nearest Delphytion Insolam within [= 60 stride =]. While within range, it gains **advantage on attack rolls**. Additionally, when the Sunspawn deals damage to a creature, the nearest Delphytion within [= 60 stride =] regains hit points equal to half the damage dealt.
+
+**Born of the Sun.**  
+The Sunspawn sheds **dim light in a [= 2 stride;ADJ =] radius**. It has **advantage on saving throws** against spells and magical effects that deal fire or holy damage.
+
+</Trait>
+
+<Attack accuracy="+7" reach="[= 1 stride =]" targets="one creature">
+
+###### Barbed Latch
+
+On a hit, 3 ([% 1d4 +1 piercing %]), and the Sunspawn attaches to the target. While attached, the target's speed is reduced by **[= 1 stride =]** per attached Sunspawn.
+For every **[= 1 stride =]** the target moves while attached, it gains **1 stack of [# kw:condition:Bleeding #]**.
+The target or a creature within [= 1 stride =] can use a Major Action to attempt detaching one Sunspawn.
+Make a **DC 14 Wisdom (Medicine) check**. On a success, the Sunspawn detaches safely.
+On a failure, the Sunspawn remains attached and the target's [# kw:condition:Bleeding #] stacks **double**.
+Alternatively, a creature can use a Major Action to simply **yank** the Sunspawn free (no check)—it detaches, but the target's [# kw:condition:Bleeding #] stacks **double**.
+
+</Attack>
+
+</Statlet>
 
 <Action deed="act" cost="1 Deed">
 
@@ -198,7 +213,7 @@ The Delphytion Insolam can expend legendary deeds to use the options below, each
 The Delphytion regurgitates a larval Sunspawn and hurls it as a projectile at a creature within **[= 12 stride =]** that it can sense.
 
 Accuracy +10, one creature.  
-**Hit**: 11 ([% 2d6 +4 chemical %]), and a **Sunspawn** appears in an unoccupied space adjacent to the target. The Sunspawn acts immediately after the Delphytion in initiative.
+On a hit, 11 ([% 2d6 +4 chemical %]), and a **Sunspawn** appears in an unoccupied space adjacent to the target. The Sunspawn acts immediately after the Delphytion in initiative.
 
 </Action>
 

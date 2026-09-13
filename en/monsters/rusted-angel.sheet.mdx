@@ -167,22 +167,37 @@ Each creature within a **[= 3 stride;ADJ =]-radius sphere** centered on that poi
 Creatures that fail also gain **1 stack of [# kw:Erosion #]** and are **knocked [# kw:condition:prone #]**.  
 After the impact, a **black ice fragment** forms in the center of the area.
 
-> #### Black Ice Fragment
->
-> | **Armor Class** | **Hit Points** | **Damage Threshold** |
-> | ---------------- | -------------- | -------------------- |
-> | 18 | 40 | 15 |
->
-> - **Size**: Gargantuan object ([= 4 stride;ADJ =]-by-[= 1 stride;ADJ =] section)
-> - **Material**: Black Ice
-> - **Damage Resistances**: Piercing, Slashing
-> - **Damage Immunities**: Frost, Dark, Poison, Psychic, Holy
-> - **Damage Vulnerabilities**: Force, Fire, Bludgeoning, Bludgeoning
->
-> **Dead Winter Aura.**  
-> The fragment radiates a **[= 3 stride;ADJ =] aura** of killing frost.
-> The area is considered difficult terrain for creatures other than the Rusted Angel.  
-> As a [# kw:persistent #] effect, creatures other than the Rusted Angel save Constitution against DC 21, halving **13 ([% 3d8 frost %])**.
+<Statlet
+  kind="object"
+  armorClass="18"
+  hitPoints="40"
+  damageThreshold="15"
+  material="Black Ice"
+  resistances="Piercing, Slashing"
+  immunities="Frost, Dark, Poison, Psychic, Holy"
+  vulnerabilities="Force, Fire, Bludgeoning, Bludgeoning">
+
+###### Black Ice Fragment
+
+<Trait>
+
+###### Size
+
+Gargantuan object ([= 4 stride;ADJ =]-by-[= 1 stride;ADJ =] section)
+
+</Trait>
+
+<Trait>
+
+###### Dead Winter Aura
+
+The fragment radiates a **[= 3 stride;ADJ =] aura** of killing frost.
+The area is considered difficult terrain for creatures other than the Rusted Angel.  
+As a [# kw:persistent #] effect, creatures other than the Rusted Angel save Constitution against DC 21, halving **13 ([% 3d8 frost %])**.
+
+</Trait>
+
+</Statlet>
 
 A black ice fragment lasts until consumed, destroyed, or until the Rusted Angel dies.
 
@@ -194,22 +209,43 @@ A black ice fragment lasts until consumed, destroyed, or until the Rusted Angel 
 
 The Rusted Angel manifests a gargantuan, quasi-intangible ice blade in an unoccupied space it can see within **[= 6 stride =]**.
 
-> #### Avalanche Blade
->
-> | **Armor Class** | **Hit Points** | **Damage Threshold** |
-> | ---------------- | -------------- | -------------------- |
-> | 18 | 40 | 15 |
->
-> - **Size**: Gargantuan object ([= 4 stride;ADJ =]-by-[= 1 stride;ADJ =] section)
-> - **Material**: Black Ice
-> - **Damage Resistances**: Piercing, Slashing
-> - **Damage Immunities**: Frost, Dark, Poison, Psychic, Holy
-> - **Damage Vulnerabilities**: Force, Fire, Bludgeoning, Bludgeoning
-> - **Uncanny Reflexes**: The Avalanche Blade gains a reaction at the start of each creature's turn if it has none left.
->
-> **Cold Cleave.**  
-> Accuracy +14, reach [= 1 stride =], one creature.  
-> On a hit, **36 ([% 8d6 +8 frost %])**. The target’s speed becomes **[= 0 stride =]** [# kw:briefly #].
+<Statlet
+  kind="object"
+  armorClass="18"
+  hitPoints="40"
+  damageThreshold="15"
+  material="Black Ice"
+  resistances="Piercing, Slashing"
+  immunities="Frost, Dark, Poison, Psychic, Holy"
+  vulnerabilities="Force, Fire, Bludgeoning, Bludgeoning">
+
+###### Avalanche Blade
+
+<Trait>
+
+###### Size
+
+Gargantuan object ([= 4 stride;ADJ =]-by-[= 1 stride;ADJ =] section)
+
+</Trait>
+
+<Trait>
+
+###### Uncanny Reflexes
+
+The Avalanche Blade gains a reaction at the start of each creature's turn if it has none left.
+
+</Trait>
+
+<Attack accuracy="+14" reach="[= 1 stride =]" targets="one creature">
+
+###### Cold Cleave
+
+On a hit, **36 ([% 8d6 +8 frost %])**. The target’s speed becomes **[= 0 stride =]** [# kw:briefly #].
+
+</Attack>
+
+</Statlet>
 
 The blade lasts for **1 minute**, until the Rusted Angel dismisses it, or until it is destroyed. It cannot normally move on its own.  
 Once per turn, as a [# kw:persistent #] effect, the blade makes **Cold Cleave** against a creature of the Rusted Angel’s choice in its space.

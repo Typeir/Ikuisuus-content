@@ -92,62 +92,87 @@ At the end of its next turn, the death guard is destroyed immediately.
 ### Greatblade
 
 _Weapon Attack:_ accuracy +12; reach or range varies by specialization; one creature.  
-**Hit:** damage varies by specialization (see below).
+On a hit, damage varies by specialization (see below).
 
 - **Death Guard of Blood (Greataxe).**  
   Reach [= 1 stride =]  
-  **Hit:** 17 ([% 1d12 +11 slashing %]).
+  On a hit, 17 ([% 1d12 +11 slashing %]).
 
 - **Death Guard of Rime (Greatsword).**  
   Reach [= 2 stride =]  
-  **Hit:** 15 ([% 2d6 +8 slashing %]).  
+  On a hit, 15 ([% 2d6 +8 slashing %]).  
   On a hit, the target is pushed [= 1 stride =] and its speed is reduced by [= 1 stride =] [# kw:briefly #].  
   On a miss, the target still takes 6 slashing damage.
 
 - **Death Guard of Graves (Glaive).**  
   Reach [= 2 stride =]  
-  **Hit:** 15 ([% 1d10 +10 slashing %]).
+  On a hit, 15 ([% 1d10 +10 slashing %]).
 
 - **Death Guard of Mists (Greatbow).**  
   Range [= 30 stride =]/[= 120 stride =]  
-  **Hit:** 15 ([% 2d6 +8 piercing %]).  
+  On a hit, 15 ([% 2d6 +8 piercing %]).  
   **Execution** applies to this attack.
 
 ### Spellcasting
 
 The death guard casts one of its prepared spells, using a spell slot as normal.
 
-> #### Retinue
->
-> _Medium Construct (Undead), unaligned_
->
-> | **Armor Class** | **Hit Points**       | **Speed**      |
-> | --------------- | -------------------- | -------------- |
-> | 18              | 167 ([% 18d8 +90 %]) | [= 5 stride =] |
->
-> | STR | DEX | CON | INT | WIS | CHA |
-> | --- | --- | --- | --- | --- | --- |
-> | 18  | 12  | 20  | 18  | 10  | 6   |
->
-> - **Saving Throws:** Constitution +11
-> - **Damage Resistances:** dark, frost
-> - **Condition Immunities:** [# kw:condition:Terrified #], [# kw:condition:poisoned #]
-> - **Senses:** darkvision [= 12 stride =]
-> - **Languages:** understands the languages of its creator but can’t speak
->
-> **Gravebound**  
-> The retinue counts as a corpse for the purpose of spells and effects that target corpses, such as [_Commune with Entropy_](/en/library/spells/commune-with-entropy).
->
-> **Actions — Grave Swipe.**  
-> Accuracy +9, reach [= 1 stride =], one creature.  
-> **Hit:** 11 ([% 1d12 +5 dark %]). The target’s speed is reduced by [= 1 stride =] [# kw:briefly #].
->
-> **Cold Hand of Death.**  
-> When the death guard hits a creature with **Execution**, it may use its **Minor Action** to have one retinue within reach immediately attempt to **grapple** the target (escape DC 16). This does not use the retinue’s action.
->
-> **Corpse Consumption.**  
-> As a **Minor Action**, the retinue devours a corpse or destroyed construct within [= 1 stride =]. The body crumbles, and the retinue regains **23 hit points**.  
-> Once used, this feature can’t be used again until after a [# kw:Repose #] or [# kw:Recovery #].
+<Statlet
+  kind="creature"
+  size="Medium"
+  type="Construct (Undead)"
+  alignment="unaligned"
+  armorClass="18"
+  hitPoints="167 ([% 18d8 +90 %])"
+  speed="[= 5 stride =]"
+  str="18"
+  dex="12"
+  con="20"
+  int="18"
+  wis="10"
+  cha="6"
+  saves="Constitution +11"
+  resistances="dark, frost"
+  conditionImmunities="[# kw:condition:Terrified #], [# kw:condition:poisoned #]"
+  senses="darkvision [= 12 stride =]"
+  languages="understands the languages of its creator but can’t speak">
+
+##### Retinue
+
+<Trait>
+
+###### Gravebound
+
+The retinue counts as a corpse for the purpose of spells and effects that target corpses, such as [_Commune with Entropy_](/en/library/spells/commune-with-entropy).
+
+</Trait>
+
+<Attack accuracy="+9" reach="[= 1 stride =]" targets="one creature">
+
+###### Grave Swipe
+
+On a hit, 11 ([% 1d12 +5 dark %]). The target’s speed is reduced by [= 1 stride =] [# kw:briefly #].
+
+</Attack>
+
+<Action>
+
+###### Cold Hand of Death
+
+When the death guard hits a creature with **Execution**, it may use its **Minor Action** to have one retinue within reach immediately attempt to **grapple** the target (escape DC 16). This does not use the retinue’s action.
+
+</Action>
+
+<Action>
+
+###### Corpse Consumption
+
+As a **Minor Action**, the retinue devours a corpse or destroyed construct within [= 1 stride =]. The body crumbles, and the retinue regains **23 hit points**.
+Once used, this feature can’t be used again until after a [# kw:Repose #] or [# kw:Recovery #].
+
+</Action>
+
+</Statlet>
 
 ---
 
@@ -196,21 +221,43 @@ The death guard’s melee weapon attacks have **+[= 1 stride =] reach**. On a hi
 The death guard can summon an **Avalanche Blade** as a **Minor Action**.
 The blade is a gargantuan ice construct that automatically attacks creatures that enter its space once per turn, as a _Reaction_.
 
-> #### Avalanche Blade
->
-> | **Armor Class** | **Hit Points** | **Damage Threshold** |
-> | --------------- | -------------- | -------------------- |
-> | 14              | 56             | 15                   |
->
-> - **Size**: Gargantuan object ([= 4 stride =] section)
-> - **Material**: Ice
-> - **Resistances**: **Slashing, Piercing**
-> - **Vulnerabilities**: **Force**
-> - **Immunities**: **Poison**, **Psychic**, **Dark**, **Holy**, **Frost**
-> - **Uncanny Reflexes**: The Avalanche gains a reaction at the start of each creature's turn if it has none left.
-> - **Reactions — Cold Cleave.**  
->   14, reach [= 1 stride =]; one creature.  
->   **Hit:** [% 8d6 +6 frost %]. Target's speed is reduced to [= 0 stride =] [# kw:briefly #].
+<Statlet
+  kind="object"
+  armorClass="14"
+  hitPoints="56"
+  damageThreshold="15"
+  material="Ice"
+  resistances="**Slashing, Piercing**"
+  vulnerabilities="**Force**"
+  immunities="**Poison**, **Psychic**, **Dark**, **Holy**, **Frost**">
+
+##### Avalanche Blade
+
+<Trait>
+
+###### Size
+
+Gargantuan object ([= 4 stride =] section)
+
+</Trait>
+
+<Trait>
+
+###### Uncanny Reflexes
+
+The Avalanche gains a reaction at the start of each creature's turn if it has none left.
+
+</Trait>
+
+<Attack accuracy="+14" reach="[= 1 stride =]" targets="one creature" cost="1 Reaction">
+
+###### Cold Cleave
+
+On a hit, [% 8d6 +6 frost %]. Target's speed is reduced to [= 0 stride =] [# kw:briefly #].
+
+</Attack>
+
+</Statlet>
 
 The death guard can summon only one Avalanche Blade at a time and can use this feature a number of times equal to its Strength modifier per [# kw:Recovery #].
 

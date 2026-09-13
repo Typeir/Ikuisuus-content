@@ -219,23 +219,58 @@ Every [= 1 stride =] of willing movement deals **[% 1d4 %] damage** to creatures
 Rubedo designates up to **two unoccupied spaces** it can see within **[= 12 stride =]**.  
 At resolution, a **Fallen Blade** manifests in each designated space.
 
-> #### Fallen Blade
->
-> | **Armor Class** | **Hit Points** | **Damage Threshold** |
-> | --------------- | -------------- | -------------------- |
-> | 20              | 220            | 30                   |
->
-> - **Size**: Huge object ([= 3 stride;ADJ =] space)
-> - **Resistances**: Slashing, Piercing
-> - **Vulnerabilities**: Force
-> - **Immunities**: Poison, Psychic, Dark, Holy
-> - **Fixed**: The Fallen Blade cannot move.
-> - **Uncanny Reflexes**: The Fallen Blade gains a reaction at the start of each creature's turn if it has none left.
-> - **Reaction — Entropic Cleave**  
->   Accuracy +18, reach [= 2 stride =], one creature.  
->   **Hit:** 54 ([% 12d8 slashing %]). The target’s speed becomes **0** [# kw:briefly #].
-> - **Endless Battlefield**  
->   The fallen blade automatically swings at creatures that enter or move within its reach, as a _Reaction_.
+<Statlet
+  kind="object"
+  armorClass="20"
+  hitPoints="220"
+  damageThreshold="30"
+  resistances="Slashing, Piercing"
+  vulnerabilities="Force"
+  immunities="Poison, Psychic, Dark, Holy">
+
+###### Fallen Blade
+
+<Trait>
+
+###### Size
+
+Huge object ([= 3 stride;ADJ =] space)
+
+</Trait>
+
+<Trait>
+
+###### Fixed
+
+The Fallen Blade cannot move.
+
+</Trait>
+
+<Trait>
+
+###### Uncanny Reflexes
+
+The Fallen Blade gains a reaction at the start of each creature's turn if it has none left.
+
+</Trait>
+
+<Attack accuracy="+18" reach="[= 2 stride =]" targets="one creature" cost="1 Reaction">
+
+###### Entropic Cleave
+
+On a hit, 54 ([% 12d8 slashing %]). The target’s speed becomes **0** [# kw:briefly #].
+
+</Attack>
+
+<Trait>
+
+###### Endless Battlefield
+
+The fallen blade automatically swings at creatures that enter or move within its reach, as a _Reaction_.
+
+</Trait>
+
+</Statlet>
 
 Fallen Blades last until destroyed or until Rubedo is destroyed.  
 Rubedo may have up to **six** Fallen Blades active at once.
@@ -302,7 +337,7 @@ All attacks this round must be **Dreamcatcher Relics**.
 - Rubedo may **declare one Stratagem immediately**, even if it has already declared a Stratagem this turn.
 - At initiative count **20** (losing initiative ties), each creature within **[= 8 stride =]** of Rubedo saves Dexterity against DC 25.
 - As an [# kw:delayed #] effect, creatures in the lair take an additional **[% 3d12 force %]**, for a total of **[% 6d12 %]**.
-- Rubedo becomes perpetually affected by the spells [_Freedom of Movement_](/en/library/spells/freedom-of-movement), [_Haste_](/en/library/spells/haste), and [_Starpath_](/en/library/spells/starpath).
+- Rubedo becomes perpetually affected by the spells _Freedom of Movement_, [_Haste_](/en/library/spells/haste), and [_Starpath_](/en/library/spells/starpath).
 - All of Rubedo’s attacks cause [# kw:Red Ruin #] on a hit.
 
 </Action>

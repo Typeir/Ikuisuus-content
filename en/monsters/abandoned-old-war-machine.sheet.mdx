@@ -96,7 +96,7 @@ The War Machine makes three attacks with any combination of its weapons.
 
 <Attack accuracy="+14" reach="[= 4 stride =]">
 
-##### Pseudopod Slam <span>Melee Weapon Attack</span>
+##### Pseudopod Slam
 
 On a hit, 18 ([% 3d8 +6 bludgeoning %]) and chemical damage.  
 Targets gain **1 stack of [# kw:Erosion #]** and save Strength against **DC 20** or are **knocked [# kw:condition:prone #]**.
@@ -114,57 +114,57 @@ Creatures that fail are **[# kw:condition:blinded #]** [# kw:briefly #] and gain
 
 <Attack accuracy="+16" reach="[= 2 stride =]" recharge="4–6">
 
-##### Nulled Blade <span>Melee Weapon Attack</span>
+##### Nulled Blade
 
 On a hit, 22 ([% 4d10 +9 force %]).  
 Targets suffer **Nulling**.  
 
-<Feature mark="other" accuracy="+11">
+</Attack>
 
-###### Nulling
+<Feature accuracy="+11">
+
+##### Nulling
 
 A creature the blade hits saves Charisma or loses all magical effects currently affecting it, taking **10 force damage** for each effect removed and for each stack of **Erosion** on it.
 The creature becomes **immune to those effects** until it finishes a [# kw:Repose #] or [# kw:Recovery #] and is **vulnerable to damage from the Nulled Blade** [# kw:briefly #].
 
 </Feature>
 
-</Attack>
-
 <Attack accuracy="+16" reach="[= 1 stride =]" recharge="4–6">
 
-##### Barely Functional Disambiguator <span>Melee Weapon Attack</span>
+##### Barely Functional Disambiguator
 
 On a hit, [% 2d6 +9 slashing %] plus [% 2d12 dark %].  
 The War Machine heals **half of the damage dealt** with this attack.  
 It saves against **Backfire**, or it cannot use **The Toll** or **The Cave** for this attack.  
 
-<Feature mark="other" accuracy="+16" targets="the War Machine">
+</Attack>
 
-###### Backfire
+<Feature accuracy="+16" targets="the War Machine">
+
+##### Backfire
 
 The War Machine saves Constitution or immediately casts **[_Pyroblast_](/en/library/spells/pyroblast)** as an 8th-level spell centered on itself and automatically fail the save.
 
 </Feature>
 
-<Feature mark="other" accuracy="+11">
+<Feature accuracy="+11">
 
-###### The Toll
+##### The Toll
 
 A creature the Disambiguator hits saves Constitution or fails one death saving throw. It also loses all magical effects currently affecting it.
 
 </Feature>
 
-<Feature mark="other" accuracy="+10">
+<Feature accuracy="+10">
 
-###### The Cave
+##### The Cave
 
 A creature the Disambiguator hits saves Charisma or is **[# kw:condition:stunned #], [# kw:condition:paralyzed #], put to sleep, and [# kw:condition:petrified #]**. This effect cannot be repeated and can only be removed by a curse removal.
 
 </Feature>
 
-</Attack>
-
-<Attack accuracy="+14" range="[= 2 stride =]/[= 6 stride =]">
+<Feature accuracy="+14" range="[= 2 stride =]/[= 6 stride =]">
 
 ##### Thruster Axe-Kick <span>[# kw:attack alteration #]</span>
 
@@ -173,7 +173,7 @@ On a hit, [% 3d10 +6 slashing %].
 A target that takes damage also gains **1 stack of [# kw:Erosion #]**.  
 Targets that are Large or smaller save Strength against **DC 20** or are **knocked [# kw:condition:prone #]**.
 
-</Attack>
+</Feature>
 
 ---
 
