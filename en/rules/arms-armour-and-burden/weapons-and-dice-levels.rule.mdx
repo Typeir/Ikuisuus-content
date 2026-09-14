@@ -9,17 +9,17 @@ keywords:
 
 ## What Is a Weapon Attack
 
-When you make a weapon attack, you roll your attack die against the target's Armour Class. On a hit, you roll the weapon's damage die and add your relevant ability modifier. Melee attacks use Strength by default; some weapons permit Dexterity through their property definitions (see [Weapon Properties](/en/library/rules/arms-armour-and-burden/weapon-properties)).
+When you make a weapon attack, you roll your attack die against the target's Armour Class. On a hit, you roll the weapon's damage die and add your relevant ability modifier. Attacks use Strength by default; a weapon with the Finesse attribute uses Dexterity (see [Weapon Attributes](/en/library/rules/arms-armour-and-burden/weapon-properties)).
 
 Specific weapon damage dice and any special rules tied to individual weapons are in [Equipment: Weapons](/en/library/items/equipment/weapons).
 
-## Proficiency
+## Arts
 
-You add your tier bonus to attack rolls only with weapons in which you have proficiency. If you lack proficiency with a weapon, you may still use it — you simply do not add the tier bonus to the attack roll. Damage rolls are unaffected.
+You add your tier bonus to attack rolls with a weapon your [arts](/en/library/rules/arms-armour-and-burden/weapon-arts) cover. A weapon your arts do not cover is an improvised weapon in your hands.
 
 ## Two-Weapon Fighting
 
-Two-weapon fighting is the [Light property](/en/library/rules/arms-armour-and-burden/weapon-properties#weapon-properties), and that property is the whole rule. Attacking with a Light melee weapon lets you make one extra attack with a different Light weapon in your other hand; the property states what action that costs and how damage modifiers apply.
+Any melee weapon that is not Unwieldy can be used as an off-hand weapon. The rule is in [Making an Attack](/en/library/rules/steel-and-strife/making-an-attack#two-weapon-fighting).
 
 ## Improvised Weapons
 
@@ -31,18 +31,18 @@ Improvised thrown objects have a normal range of [= 4 stride =] and a long range
 
 Certain creatures are susceptible to treated weapons where they would otherwise resist or ignore mundane blows. A weapon can be treated without altering its normal function, though the process requires skilled work and is not trivially inexpensive.
 
-Treatments are trinkets, not weapon properties. Applying one costs a Major Action, lasts a stated duration or number of hits, and never changes the weapon's damage die, damage type, properties, or Mastery. Two treatments cannot be held on the same weapon at once; a new application replaces the old.
+Treatments are trinkets, not weapon attributes. Applying one costs a Major Action, lasts a stated duration or number of hits, and never changes the weapon's damage die, finish, attributes, or masteries. Two treatments cannot be held on the same weapon at once; a new application replaces the old.
 
 Two samples exist, and the full set is still being written:
 
 - [Silver Ointment](/en/library/items/trinkets/silver-ointment) — makes a weapon count as silvered.
 - [Basic Poison](/en/library/items/trinkets/basic-poison) — adds a poison save on a hit.
 
-## Mastery and Masterful Blow
+## Masteries and Masterful Blows
 
-Every weapon carries a Mastery property. Characters who qualify may perform a **Masterful Blow** — a specialized strike that exploits it. Where Mastery comes from, how many Masterful Blows are available per rest, and the mechanics of each Mastery type are detailed in [Weapon Properties](/en/library/rules/arms-armour-and-burden/weapon-properties).
+A weapon's masteries and its Masterful Blow come from its art. The arts, their masteries and the ladder that opens them are on [Weapon Arts](/en/library/rules/arms-armour-and-burden/weapon-arts); the blows are on [Weapon Attributes](/en/library/rules/arms-armour-and-burden/weapon-properties#masterful-blows).
 
-The full list of weapons, their damage dice, properties, and Mastery assignments is in [Equipment: Weapons](/en/library/items/equipment/weapons).
+The full list of weapons, their bases, attributes and dice is in [Equipment: Weapons](/en/library/items/equipment/weapons).
 
 ---
 
@@ -62,8 +62,8 @@ This is a system entirely separate from weapon bonuses (e.g. +1, +2, etc.).
 
 ## Dice Progression (Quality)
 
-Weapons exist at many different qualities.  
-When the Game Director introduces a weapon, choose its place along the dice sequence.
+Weapons exist at many different qualities. 
+The Game Director may introduce weapons with qualities other than mundane, or characters may be able to craft some.
 
 | Dice Sequence |
 | ------------- |
@@ -76,9 +76,31 @@ When the Game Director introduces a weapon, choose its place along the dice sequ
 | [% 2d10 %]          |
 | [% 2d12 %]          |
 | [% 4d8 %]           |
+| [% 4d10 %] |
+| [% 4d12 %] |
+| [% 8d8 %] |
 | …and so on    |
 
-> **Note**: After reaching the largest single die (d12), the sequence adds more dice instead of increasing die size. This avoids extreme variance.
+> **Note**: If anything would fall below the lowest entry in the dice sequence, it deals 1 damage instead of rolling.
+
+### The Quality Rungs
+
+**Mundane is zero.** A Mundane weapon rolls the die printed for its pattern. Each rung above Mundane moves the die one step up the sequence; each rung below moves it one step down.
+
+| Rung | Step from Mundane |
+| --- | --- |
+| Ruined | −4 |
+| Degraded | −3 |
+| Worn | −2 |
+| Shoddy | −1 |
+| Mundane | 0 |
+| Enhanced | +1 |
+| Superior | +2 |
+| Supreme | +3 |
+| Perfected | +4 |
+| True | +5 |
+
+A Hurt Stick (Hilted, Blunt, Vexing; Edged, Pointed, Unwieldy, Two-handed) is [% 2d10 %] at Mundane. Ruined it is [% 1d8 %]; True it is [% 8d8 %].
 
 ---
 
@@ -87,7 +109,7 @@ When the Game Director introduces a weapon, choose its place along the dice sequ
 All weapons are assumed **Medium** by default.  
 Weapons physically made for larger creatures **multiply the number of dice** they roll.
 
-- A creature needs a Strength Score of 18 or higher to wield a weapon one size larger than itself. They do so at disadvantage.
+- A creature needs a Strength Score of 18 or higher to wield a weapon one size larger than itself. They do so at disadvantage, even if the threshold is met.
 - A creature cannot wield a weapon more than one size larger than itself unless it has a trait that explicitly allows it.
 - Homunculi with [Oversized Armament Discipline](/en/library/character-creation/bloodlines/homunculus) ignore that limit for **Large** weapons.
 

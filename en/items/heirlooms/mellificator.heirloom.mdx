@@ -7,9 +7,11 @@ contentType: heirlooms
 
 <Heirloom
   rarity="very rare"
-  base="Musket (Martial, Two-Handed)"
+  pattern="musket"
+  base="Hammered, Pointed, Hammering"
+  attributes="Two-handed"
   range="40/120"
-  damage="[% 1d12 dark %]"
+  damage="[% 1d12 dark %]*"
   burden="[= 5 burden =]"
   mastery="Slow"
   masterfulBlow="Sweet Chains"
@@ -86,7 +88,7 @@ As an [# kw:delayed #] effect, creatures in the aura may heal from any number of
 
 ## Features
 
-<Feature charges="1/[# kw:Repose #], or 3/[# kw:Repose #] with mastery" cost="1 Reflex" trigger="When you take [# kw:assault #]">
+<Feature charges="1/[# kw:Repose #] at Proficient, 3/[# kw:Repose #] at Expert" cost="1 Reflex" trigger="When you take [# kw:assault #]">
 
 #### Sweet Chains <span>Masterful Blow</span>
 

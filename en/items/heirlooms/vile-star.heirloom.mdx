@@ -8,12 +8,13 @@ contentType: heirlooms
 <Heirloom
   rarity="Legendary"
   attunement="required"
-  base="Rifle (Unwieldy, Two-Handed, Ranged 60/120, Special)"
+  pattern="rifle"
+  base="Hammered, Pointed, Hammering"
+  attributes="Unwieldy, Two-handed, Catalyst (Key)"
   enchantment="+2 accuracy, +2 damage"
-  damage="[% 1d12 holy %] + [% 1d12 poison %]"
+  damage="[% 1d12 holy %] + [% 1d12 poison %]*"
   mastery="Slow"
   masterfulBlow="Vile Supernova"
-  focus="spellcasting, while attuned"
   burden="[= 5 burden =]">
 
 A speck of truth, granted to those who've been inflicted vileness—so they may return it to the world.
@@ -39,7 +40,7 @@ The rifle has 3 venom-infused phial slots. You insert a venom gland or poison in
 
 </Feature>
 
-<Feature charges="1/[# kw:Repose #], or 3/[# kw:Repose #] with mastery">
+<Feature charges="1/[# kw:Repose #] at Proficient, 3/[# kw:Repose #] at Expert">
 
 #### Vile Supernova <span>Masterful Blow</span>
 

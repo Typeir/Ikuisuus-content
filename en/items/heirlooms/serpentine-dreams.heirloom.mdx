@@ -8,14 +8,14 @@ contentType: heirlooms
 <Heirloom
   rarity="Legendary"
   attunement="required"
-  base="Longsword (Martial, Large, Versatile, Special)"
+  pattern="longsword"
+  base="Hilted, Edged, Vexing"
+  attributes="Catalyst (Fold, Will, Key)"
   quality="Mundane"
   enchantment="+3 accuracy and damage"
-  damage="[% 2d8 force %]"
-  versatile="[% 2d10 %]"
+  damage="[% 2d8 force %]*"
   mastery="Cleave"
   masterfulBlow="Mooncleave"
-  focus="spellcasting, when attuned"
   burden="[= 1 burden =]">
 
 When Bloodboil Ludwig dreamt of the moonlit sea, he saw a blade of shifting light and shadow, forged from the essence of the lunar godess herself.
@@ -118,7 +118,7 @@ You can combine Dreamer’s Reversal with a feature or spell in this way a numbe
 
 </Feature>
 
-<Feature mastery="Longswords">
+<Feature mastery="Vexing">
 
 #### Cleave
 
@@ -126,7 +126,7 @@ When you hit a creature with this weapon, you can make a **second attack** with 
 
 </Feature>
 
-<Feature charges="1/[# kw:Repose #], or 3/[# kw:Repose #] with mastery" cost="1 Major Action" targets="creatures within a [= 6 stride;ADJ =] cone">
+<Feature charges="1/[# kw:Repose #] at Proficient, 3/[# kw:Repose #] at Expert" cost="1 Major Action" targets="creatures within a [= 6 stride;ADJ =] cone">
 
 #### Mooncleave <span>Masterful Blow</span>
 

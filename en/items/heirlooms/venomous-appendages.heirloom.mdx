@@ -7,9 +7,11 @@ contentType: heirlooms
 
 <Heirloom
   rarity="very rare"
-  base="Natural Weapon (Finesse, Special)"
+  pattern="natural weapon"
+  base="Fisted, ?, Knifing"
+  attributes="Finesse"
   quality="Mundane"
-  damage="[% 1d6 poison %]"
+  damage="[% 1d6 poison %]*"
   mastery="Slow"
   masterfulBlow="Venom Pulse">
 
@@ -58,7 +60,7 @@ When this weapon deals damage, the target's **movement speed is reduced by [= 2 
 
 ## Features
 
-<Feature charges="1/[# kw:Repose #], or 3/[# kw:Repose #] with mastery">
+<Feature charges="1/[# kw:Repose #] at Proficient, 3/[# kw:Repose #] at Expert">
 
 #### Venom Pulse <span>Masterful Blow</span>
 When you take [# kw:assault #], you may replace one of your attacks with a venom burst directed at a creature you can reach. That creature saves Constitution against DC 18 + TB, halving [% 6d6 poison %]. Failing targets are [# kw:condition:poisoned #] [# kw:briefly #].

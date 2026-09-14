@@ -8,11 +8,12 @@ contentType: heirlooms
 <Heirloom
   rarity="very rare"
   attunement="required"
-  base="Sword-Spear (Martial, Versatile, Unwieldy)"
+  pattern="sword-spear"
+  base="Hilted + Hafted, Edged"
+  attributes="Unwieldy"
   enchantment="+1 accuracy and damage"
   damage="[% 1d8 slashing %]"
   masterfulBlow="Frozen Riposte"
-  versatile="[% 1d10 %]"
   burden="[= 5 burden =]">
 
 The Empyrean Empire knew no bounds, and so did its cruelty. After the old gods were felled, tombsteel swords, spears, and lances such as this were forged in the image of the _heaven-piercers_ that killed **Päimar**, the sun god. These weapons were designed to channel the icy cold of the Empyrean’s wrath, bringing swift death to their enemies.
@@ -31,7 +32,7 @@ The Empyrean Empire knew no bounds, and so did its cruelty. After the old gods w
 
 #### Dual Mastery
 
-This weapon has two mastery properties. Both are available to the wielder while attuned, but only one may be used per attack.
+This weapon has two masteries. Both are available to the wielder while attuned, but only one may be used per attack.
 
 </Trait>
 
@@ -61,7 +62,7 @@ When you hit a creature with this weapon, it saves Strength against DC 10 + STR 
 
 </Feature>
 
-<Feature cost="1 Reaction" trigger="after you take damage from a melee attack" targets="the attacker" charges="1/[# kw:Repose #], or 3/[# kw:Repose #] with mastery">
+<Feature cost="1 Reaction" trigger="after you take damage from a melee attack" targets="the attacker" charges="1/[# kw:Repose #] at Proficient, 3/[# kw:Repose #] at Expert">
 
 #### Frozen Riposte <span>Masterful Blow</span>
 You can make an attack against the attacker. If this attack hits, it deals an additional [% 2d6 frost %].

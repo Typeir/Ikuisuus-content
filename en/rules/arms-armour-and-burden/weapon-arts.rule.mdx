@@ -1,0 +1,186 @@
+---
+contentType: rules
+source: Ikuisuus
+keywords:
+  - weapon art: The Twelve Arts
+  - cleaving: The Twelve Arts
+  - crushing: The Twelve Arts
+  - bracing: The Twelve Arts
+  - binding: The Twelve Arts
+  - vexing: The Twelve Arts
+  - knifing: The Twelve Arts
+  - hammering: The Twelve Arts
+  - hurling: The Twelve Arts
+  - drawing: The Twelve Arts
+  - cranking: The Twelve Arts
+  - warding: The Twelve Arts
+  - pummeling: The Twelve Arts
+  - cleave: Masteries
+  - push: Masteries
+  - topple: Masteries
+  - slow: Masteries
+  - vex: Masteries
+  - skip: Masteries
+  - graze: Masteries
+  - hurl: Masteries
+  - aim: Masteries
+  - focus: Masteries
+  - rattle: Masteries
+  - sap: Masteries
+  - anchor: Masteries
+  - harry: Masteries
+  - bite: Masteries
+  - parry: Masteries
+  - ward: Masteries
+  - hafted: Chassis
+  - hilted: Chassis
+  - enarmed: Chassis
+  - fisted: Chassis
+  - flexed: Chassis
+  - slung: Chassis
+  - hammered: Chassis
+  - edged: Finish
+  - pointed: Finish
+  - blunt: Finish
+---
+
+# Weapon Arts
+
+An art is a way of fighting. Being knowledgeable enough with a specific art allows one to use weapons similar to it with ease. Only those who truly know the depth and breadth of fighting arts can use the most complex of weapons.
+
+## The Ladder
+
+| Tier | Attributes the weapon may carry | Masterful blow uses | Masteries |
+| --- | --- | --- | --- |
+| Familiar | 1 | — | — |
+| Proficient | 2 | 1 per [# kw:Repose #] | — |
+| Expert | 3 | 3 per [# kw:Repose #] | one |
+| Savant | 4 | 3 per [# kw:Repose #] | both |
+
+## Usability
+
+In order to be able to use a weapon effectively, there are two gates, both of which must be passed:
+
+- **Access.** Every element of the **base**, and every attribute from the **definition** on the weapon must belong to an art you are at least **familiar** with. It does not matter if they belong to separate arts, as long as you pass the gate with **all**.
+- **Count.** Your tier in the weapon's own art caps how many attributes the weapon may carry. If you are only **familiar** with a cleaving weapon, you can **only** wield a cleaving weapon with **one attribute**.
+
+Fail either and the weapon is an [improvised weapon](/en/library/rules/arms-armour-and-burden/weapons-and-dice-levels#improvised-weapons): [% 1d4 %], no tier bonus.
+
+
+[# kw:accuracy #] stays unaffected by proficiency levels in with arts. an art does not describe how accurate your blows are, but how well you can explot the intricacies of a weapon's design.
+Being familiar, proficient, expert or savant in any art yields only the same TB to accuracy as the lowest rung.
+
+## Chassis
+
+A weapon is a **base** and a list of **attributes**.
+
+> **Chassis + Finish + Art → the base** 
+> ** Attributes → the definition.**
+
+Named weapons still exist: "Longsword" is a pattern in the [catalogue](/en/library/items/equipment/weapons), and a player who wants a longsword reads its row and swings it.
+
+The chassis names the grip.
+
+| Chassis | Grip | Patterns | Base die | Chassis facts |
+| --- | --- | --- | --- | --- |
+| Hafted | a haft and a head, or a pole | axes, hammers, maces, spears, staves, polearms, flails, chains, whips | [% 1d6 %] | versatile |
+| Hilted | a blade on a hilt | swords, daggers, rapiers | [% 1d6 %] | versatile |
+| Enarmed | the enarmes, a shield's forearm straps | shields | 1 + stat | base die is the damage floor; cannot take the grip step |
+| Fisted | the fist is the grip | unarmed strikes, natural weapons, the katar, the pata | [% 1d6 %] | not always Blunt; cannot take the grip step |
+| Flexed | stored tension | bows, crossbows | [% 1d4 %] | — |
+| Slung | leverage, storing nothing | slings | [% 1d4 %] | cannot be gripped in two hands |
+| Hammered | percussion ignition | guns | [% 1d4 %] | versatile, Loading, loud |
+
+A chassis is unlocked by an art, never chosen on its own. Each chassis carries only the arts listed against it on this page, and a catalogue weapon's art follows from its chassis. Chassis facts are not attributes: they cost no slot and refund none. Enarmed and Two-handed together are legal. Thrown weapons keep the base die of their melee chassis.
+
+## Versatile
+
+A versatile weapon may be gripped in two hands for one step up the dice ladder.
+This applies to Hafted, Hilted and Hammered weapons only.  
+A shield occupies a hand: it costs the step. 
+A pistol fired in one hand is a step below one braced.
+
+## Finish
+
+The finish is the base's physical damage type. 
+
+| Finish | Damage |
+| --- | --- |
+| Edged | Slashing |
+| Pointed | Piercing |
+| Blunt | Bludgeoning |
+
+Blunt is the default finish of unarmed strikes and improvised weapons, which are not built from a budget.
+
+A weapon carrying more than one finish chooses which it deals with each blow. 
+Akashic, Elemental, Somatic and True are special traits a weapon may hold, and they exist with the base, either replacing its core damage, or living alongside it. 
+Each item will specify.
+
+## Dice
+
+A stepper is an attribute that moves the weapon's die one step up the ladder.
+
+| Stepper | Steps |
+| --- | --- |
+| Each finish beyond the base one | 1 |
+| Unwieldy | 1 |
+| Two-handed | 2, its own and the grip it uses permanently |
+| Draw | 1, Flexed and Slung only |
+| Paired | −1 in the main hand, +1 in the off hand |
+
+Every other attribute is a permission: Finesse, Reach, Bind, Thrown, Loading, Chamber, Barrel, Cruel, Vicious, Set, Shod, Gracile, Concealed, Catalyst.
+
+Anything that would drop below [% 1d4 %] deals 1 + the stat.
+
+The ladder is the [quality ladder](/en/library/rules/arms-armour-and-burden/weapons-and-dice-levels): [% 1d4 %] → [% 1d6 %] → [% 1d8 %] → [% 1d10 %] → [% 1d12 %] → [% 2d8 %] → [% 2d10 %] → [% 2d12 %] → [% 4d8 %]. Quality is an emergent property from crafting.
+Size multiplies dice: Large ×2, Huge ×3...
+
+A weapon's die is its chassis base, stepped once per stepper it carries, _then_ moved by its quality, in that _order_.
+Durability moves quality down on the ladder, until destruction.
+
+## The Twelve Arts
+
+Each art carries two masteries, and a weapon built under the art carries both: at Expert you apply one of them when you hit, at Savant you apply both. A mastery may sit in more than one art. Heirlooms are exempt from this gating and carry the masteries their own text names.
+
+| Art | Chassis | Mastery | Mastery | Masterful blow | Attributes |
+| --- | --- | --- | --- | --- | --- |
+| Cleaving | Hafted | Cleave | Ward | Hemorrhaging | Unwieldy, Two-handed, Reach, Edged, Shod |
+| Crushing | Hafted | Push | Rattle | Sundering | Unwieldy, Two-handed, Blunt, Cruel |
+| Bracing | Hafted | Topple | Anchor | Flaying | Reach, Two-handed, Pointed, Thrown, Set |
+| Binding | Hafted, Hilted | Slow | Harry | Disarming | Bind, Reach, Finesse |
+| Vexing | Hilted | Vex | Parry | Confusing | Finesse, Pointed, Two-handed, Unwieldy, Concealed |
+| Knifing | Hilted, Fisted | Skip | Bite | Concussing | Finesse, Paired, Thrown, Edged, Vicious |
+| Hammering | Hammered | Graze | Sap | Muddling | Chamber (N), Barrel, Finesse, Unwieldy |
+| Hurling | Slung, thrown weapons | Hurl | Harry | Dazzling | Thrown, Pointed, Draw, Paired |
+| Drawing | Flexed, bows | Aim | Bite | Hamstringing | Draw, Two-handed, Unwieldy, Pointed, Gracile |
+| Cranking | Flexed, crossbows | Focus | Anchor | Muzzling | Loading (N), Finesse, Two-handed, Unwieldy |
+| Warding | Enarmed | Rattle | Parry | Tackling | Pointed, Reach |
+| Pummeling | Fisted | Sap | Anchor | Redoubling | Bind, Blunt, Finesse, Paired |
+
+## Masteries
+
+Unless stated otherwise, a mastery applies when you hit a creature with a weapon built under its art.
+
+| Mastery | Effect |
+| --- | --- |
+| Cleave | If you hit a creature with a melee attack roll using this weapon, you can make a melee attack roll with the weapon against a second creature within [= 1 stride =] of the first that is also within your reach. On a hit, the second creature takes the weapon's damage, but don't add your ability modifier to that damage unless that modifier is negative. You can make this extra attack only once per turn. All of the other properties of the original attack apply to this extra attack, masterful blows included. |
+| Push | If you hit a creature with this weapon, you can push the creature [= 1 stride =] straight away from yourself if it is a creature you can effectively grapple. The push is forced movement and deals poise damage as forced movement does. |
+| Topple | If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw. On a failed save, the creature has the [# kw:condition:prone #] condition. |
+| Slow | If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by [= 2 stride =] until the start of your next turn. If the creature is hit more than once by weapons that have this mastery, the Speed reduction doesn't exceed [= 2 stride =]. |
+| Vex | If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn. |
+| Skip | If you hit a creature with this weapon, you can move [= 1 stride =] to an unoccupied space you can see within [= 1 stride =] of the target. |
+| Graze | If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll. This damage is the same type dealt by the weapon, and the damage can be increased only by increasing the ability modifier. |
+| Hurl | When you throw this weapon, you gain a +2 [# kw:accuracy #] and [# kw:damage bonus #] on the attack. |
+| Aim | Your critical hit range with this weapon increases by 1. |
+| Focus | While you are [# kw:condition:steady #], you gain a +2 [# kw:accuracy #] and [# kw:damage bonus #] with this weapon. |
+| Rattle | The poise damage this weapon deals is doubled. |
+| Sap | If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn. |
+| Anchor | If you hit a creature with this weapon, you can become [# kw:condition:steady #] without spending movement. |
+| Harry | If you hit a creature with this weapon, the first time it moves before the start of your next turn it takes damage equal to the ability modifier you used to make the attack roll. |
+| Bite | This weapon's damage ignores damage reduction up to your tier bonus. |
+| Parry | If you hit a creature with this weapon, you gain +1 AC until the start of your next turn. |
+| Ward | If you hit a creature with this weapon, you gain temporary hit points equal to the ability modifier you used to make the attack roll. |
+
+## Masterful Blows
+
+Each art carries a Masterful Blow, and an heirloom may carry a blow of its own. Uses follow the ladder: one per [# kw:Repose #] at Proficient, three at Expert and Savant. The blows are defined in [Weapon Attributes](/en/library/rules/arms-armour-and-burden/weapon-properties#masterful-blows).

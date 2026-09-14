@@ -6,7 +6,7 @@ contentType: feats
 # Quickdraw
 
 <Feat
-  prerequisite="**Proficiency with any ranged martial weapon**"
+  prerequisite="**Weapon Proficiency**"
   ability="Dexterity">
 
 You maintain lethal efficiency with ranged weapons even under pressure, relying on speed, discipline, and practiced handling.
@@ -15,7 +15,13 @@ You maintain lethal efficiency with ranged weapons even under pressure, relying 
 
 When you take this feat, you gain the following benefits:
 
-- You **ignore the loading property** of ranged weapons with which you are proficient.
+<Feature trigger="when you roll Initiative" charges="Dexterity modifier/[# kw:Recovery #]">
+
+#### Quick Hands
+
+If you are wielding a weapon with Loading (N) or Chamber (N), roll [% 1d4 %]. That weapon's N increases by the result until your next reload.
+
+</Feature>
 
 - Being within **[= 1 stride =] of a hostile creature** doesn’t impose **disadvantage** on your ranged weapon attack rolls.
 

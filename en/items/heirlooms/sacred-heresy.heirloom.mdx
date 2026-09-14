@@ -8,14 +8,15 @@ contentType: heirlooms
 <Heirloom
   rarity="Rare"
   attunement="required"
-  base="Greataxe (Unwieldy, Two-Handed)"
+  pattern="greataxe"
+  base="Hafted, Edged, Cleaving"
+  attributes="Unwieldy, Two-handed, Catalyst (Väki, Key)"
   quality="Mundane"
   enchantment="+1 accuracy and damage"
   damage="[% 1d12 slashing %]"
   mastery="Sap, Cleave"
   masterfulBlow="Edge of Duality"
-  burden="[= 4 burden =]"
-  focus="spellcasting, if you have Pact of the Blade">
+  burden="[= 4 burden =]">
 
 Forged from a slab of curdled demon-sap and a chunk of primordial wax, this axe radiates with heat and cold in equal measure. The wound it opens is real—but so is the mend.
 
@@ -67,7 +68,7 @@ If the wielder is a Villein, this weapon must be used as the wielder's pact weap
 
 ## Features
 
-<Feature charges="1/[# kw:Repose #], or 3/[# kw:Repose #] with mastery" cost="1 Major Action" targets="creatures in the [= 6 stride;ADJ =] line">
+<Feature charges="1/[# kw:Repose #] at Proficient, 3/[# kw:Repose #] at Expert" cost="1 Major Action" targets="creatures in the [= 6 stride;ADJ =] line">
 
 #### Edge of Duality <span>Masterful Blow</span>
 Hurl Sacred Heresy in a [= 6 stride;ADJ =] line. It cleaves through everything in its path before returning to your hand. Targets save Dexterity against a DC of 9 plus your tier bonus and Strength modifier. Failing targets take [% 2d12 slashing %], [% 2d8 dark %], and [% 2d8 holy %]. Saving targets are instead healed for [% 2d8 %] plus your Strength modifier. You gain temporary hit points equal to half the total damage and healing caused, rounded up.
