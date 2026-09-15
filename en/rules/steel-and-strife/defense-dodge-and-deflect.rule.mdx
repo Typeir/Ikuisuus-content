@@ -1,0 +1,90 @@
+---
+contentType: rules
+source: Ikuisuus
+keywords:
+  - defence
+  - dodge
+  - deflect
+---
+
+# Defense, Dodge and Deflect
+
+Defence is the number an attack roll must equal or exceed to hit. Defence is the sum of a base of 10, Deflect and Dodge.
+
+---
+
+## Formula
+
+Defence = 10 + Deflect + Dodge.
+
+- 10 is the base. Every creature and object has it.
+- Deflect and Dodge are whole numbers. Either can be negative.
+- Defence has no minimum. Deflect 0 and Dodge −2 give Defence 8.
+- A creature or object has one Defence. Every attack against it uses that number, except where a flag below turns a part off.
+
+## Dodge
+
+Dodge is the part of Defence that makes an attack miss.
+
+Sources:
+
+- The Dexterity modifier. Every creature has this source.
+- A shield: buckler +1, shield +2, greatshield +3. Values on the [armour page](/en/library/items/equipment/armour).
+- A feature, spell or item that names Dodge.
+
+Cap:
+
+- Armour lists a Max Dodge. Max Dodge caps the Dexterity source only.
+- Light armour: no cap. Medium armour: 2. Heavy armour: 0.
+- Dodge from a shield, feature, spell or item is not capped.
+
+Off:
+
+- [# kw:condition:stunned #]: Dodge is 0.
+- [# kw:condition:incapacitated #]: Dodge is 0.
+- Speed 0 from any source: Dodge is 0. Rules on [Donning, Doffing and Defence](/en/library/rules/arms-armour-and-burden/donning-doffing-and-defense).
+- An unavoidable attack: Dodge is 0 against that attack.
+
+## Deflect
+
+Deflect is the part of Defence that makes a hit fail to harm.
+
+Sources:
+
+- Armour: the Deflect column on the [armour page](/en/library/items/equipment/armour).
+- Quality: +1 Deflect per rung above Mundane. Clothing at Mundane gives 0.
+- Cover: half +2, three-quarters +5. Rules on [Making an Attack](/en/library/rules/steel-and-strife/making-an-attack).
+- Natural armour: a creature's own body. The value is on the creature's sheet.
+- A feature, spell or item that names Deflect.
+
+Cap: none.
+
+Off:
+
+- An unblockable attack: Deflect is 0 against that attack.
+- No condition turns Deflect off.
+
+## Modifiers
+
+- A bonus or penalty names the part it changes. Example: +2 Dodge, +1 Deflect.
+- A bonus or penalty that names Defence changes the total. It is applied after both parts.
+- A part that is off is 0. Every bonus and penalty to that part is off with it.
+
+## Attacks
+
+- Attack roll equal to or above Defence: hit.
+- Unavoidable attack: resolved against 10 + Deflect.
+- Unblockable attack: resolved against 10 + Dodge.
+- Unavoidable and unblockable attack: resolved against 10.
+- A natural 20 hits and a natural 1 misses regardless of Defence. Rules on [Making an Attack](/en/library/rules/steel-and-strife/making-an-attack).
+
+## Objects
+
+- An object has Dodge 0 unless its entry says otherwise.
+- An object's Defence is 10 + Deflect. Values on the [Objects page](/en/library/rules/arms-armour-and-burden/objects).
+
+## Creatures
+
+- A creature's Dodge is its Dexterity modifier, capped by the armour it wears, plus its shield.
+- A creature's Deflect is the rest of its Defence.
+- Uncaring: a creature with this trait has Defence 10. No bonus or penalty from any source applies to it.

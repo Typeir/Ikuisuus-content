@@ -85,7 +85,7 @@ The chassis names the grip.
 | --- | --- | --- | --- | --- |
 | Hafted | a haft and a head, or a pole | axes, hammers, maces, spears, staves, polearms, flails, chains, whips | [% 1d6 %] | versatile |
 | Hilted | a blade on a hilt | swords, daggers, rapiers | [% 1d6 %] | versatile |
-| Enarmed | the enarmes, a shield's forearm straps | shields | 1 + stat | base die is the damage floor; cannot take the grip step |
+| Enarmed | the enarmes, a shield's forearm straps | shields | **1** | base die is the damage floor; cannot take the grip step |
 | Fisted | the fist is the grip | unarmed strikes, natural weapons, the katar, the pata | [% 1d6 %] | not always Blunt; cannot take the grip step |
 | Flexed | stored tension | bows, crossbows | [% 1d4 %] | — |
 | Slung | leverage, storing nothing | slings | [% 1d4 %] | cannot be gripped in two hands |
@@ -130,7 +130,7 @@ A stepper is an attribute that moves the weapon's die one step up the ladder.
 
 Every other attribute is a permission: Finesse, Reach, Bind, Thrown, Loading, Chamber, Barrel, Cruel, Vicious, Set, Shod, Gracile, Concealed, Catalyst.
 
-Anything that would drop below [% 1d4 %] deals 1 + the stat.
+Anything that would drop below [% 1d4 %] deals **1**.
 
 The ladder is the [quality ladder](/en/library/rules/arms-armour-and-burden/weapons-and-dice-levels): [% 1d4 %] → [% 1d6 %] → [% 1d8 %] → [% 1d10 %] → [% 1d12 %] → [% 2d8 %] → [% 2d10 %] → [% 2d12 %] → [% 4d8 %]. Quality is an emergent property from crafting.
 Size multiplies dice: Large ×2, Huge ×3...
@@ -140,7 +140,10 @@ Durability moves quality down on the ladder, until destruction.
 
 ## The Twelve Arts
 
-Each art carries two masteries, and a weapon built under the art carries both: at Expert you apply one of them when you hit, at Savant you apply both. A mastery may sit in more than one art. Each art also fixes a finish: a weapon built under the art has it as its base finish, and any other finish the weapon carries is an attribute. Heirlooms are exempt from this gating and carry the masteries their own text names.
+Each art carries two masteries, and a weapon under the art carries both: at Expert you apply one of them when you hit, at Savant you apply both. 
+A mastery may sit in more than one art. 
+Each art also fixes a finish: a weapon built under the art has it as its base finish, and any other finish the weapon carries is an attribute.
+Heirlooms are exempt from this gating and carry the masteries their own text names.
 
 | Art | Chassis | Finish | Mastery | Mastery | Masterful blow | Attributes |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -157,30 +160,6 @@ Each art carries two masteries, and a weapon built under the art carries both: a
 | Warding | Enarmed | Blunt | Rattle | Parry | Tackling | Pointed, Reach |
 | Pummeling | Fisted | Blunt | Sap | Anchor | Redoubling | Bind, Blunt, Finesse, Paired |
 
-## Masteries
+## Attributes ad Masteries
 
-Unless stated otherwise, a mastery applies when you hit a creature with a weapon built under its art.
-
-| Mastery | Effect |
-| --- | --- |
-| Cleave | If you hit a creature with a melee attack roll using this weapon, you can make a melee attack roll with the weapon against a second creature within [= 1 stride =] of the first that is also within your reach. On a hit, the second creature takes the weapon's damage, but don't add your ability modifier to that damage unless that modifier is negative. You can make this extra attack only once per turn. All of the other properties of the original attack apply to this extra attack, masterful blows included. |
-| Push | If you hit a creature with this weapon, you can push the creature [= 1 stride =] straight away from yourself if it is a creature you can effectively grapple. The push is forced movement and deals poise damage as forced movement does. |
-| Topple | If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw. On a failed save, the creature has the [# kw:condition:prone #] condition. |
-| Slow | If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by [= 2 stride =] until the start of your next turn. If the creature is hit more than once by weapons that have this mastery, the Speed reduction doesn't exceed [= 2 stride =]. |
-| Vex | If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn. |
-| Skip | If you hit a creature with this weapon, you can move [= 1 stride =] to an unoccupied space you can see within [= 1 stride =] of the target. |
-| Graze | If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll. This damage is the same type dealt by the weapon, and the damage can be increased only by increasing the ability modifier. |
-| Hurl | When you throw this weapon, you gain a +2 [# kw:accuracy #] and [# kw:damage bonus #] on the attack. |
-| Aim | Your critical hit range with this weapon increases by 1. |
-| Focus | While you are [# kw:condition:steady #], you gain a +2 [# kw:accuracy #] and [# kw:damage bonus #] with this weapon. |
-| Rattle | The poise damage this weapon deals is doubled. |
-| Sap | If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn. |
-| Anchor | If you hit a creature with this weapon, you can become [# kw:condition:steady #] without spending movement. |
-| Harry | If you hit a creature with this weapon, the first time it moves before the start of your next turn it takes damage equal to the ability modifier you used to make the attack roll. |
-| Bite | This weapon's damage ignores damage reduction up to your tier bonus. |
-| Parry | If you hit a creature with this weapon, you gain +1 AC until the start of your next turn. |
-| Ward | If you hit a creature with this weapon, you gain temporary hit points equal to the ability modifier you used to make the attack roll. |
-
-## Masterful Blows
-
-Each art carries a Masterful Blow, and an heirloom may carry a blow of its own. Uses follow the ladder: one per [# kw:Repose #] at Proficient, three at Expert and Savant. The blows are defined in [Weapon Attributes](/en/library/rules/arms-armour-and-burden/weapon-properties#masterful-blows).
+Weapons have a set of attributes and masteries that alter how they operate. Consult the repertoire in [_Weapon Properties_](/en/library/rules/arms-armour-and-burden/weapon-properties)
