@@ -13,7 +13,9 @@ _War Goddess_
   size="Gargantuan"
   type="Construct"
   alignment="Lawful Neutral"
-  armorClass="35 (Primeval Plating; see mechanics) → 23"
+  defence="35 (Primeval Plating; see mechanics) → 23"
+  deflect="16 (Primeval Plating; see mechanics), 4"
+  dodge="9"
   hitPoints="1,640 ([% 80d20 +800 %])"
   speed="[= 10 stride =], fly [= 24 stride =] (hover), climb [= 6 stride =]"
   str="30"
@@ -69,13 +71,15 @@ When Yskeia fails a saving throw, she can expend a legendary deed to succeed ins
 Yskeia's armor is made of an ancient alloy that hardens and softens at will.
 
 Yskeia has 4 Primeval Platings that can be destroyed, each facing a different direction (front, back, left, right).
-Each plating has AC 30, 100 HP, and resistance to all damage types barring force.
-When a plating is destroyed, Yskeia loses 3 AC (to a minimum of 23) and takes 100 true damage as the plating shatters internal mechanisms.
+Each plating has Defence 30, 100 HP, and resistance to all damage types barring force.
+When a plating is destroyed, Yskeia loses 3 Defence (to a minimum of 23) and takes 100 true damage as the plating shatters internal mechanisms.
 
 <Statlet
   kind="object"
   size="Medium or Large object (5–[= 2 stride =] section)"
-  armorClass="30"
+  defence="30"
+  deflect="—"
+  dodge="—"
   hitPoints="100"
   damageThreshold="25"
   resistances="All damage except Force"
@@ -171,7 +175,9 @@ The attack ignores cover and resistance, and penetrates all forms of magical bar
 <Statlet
   kind="object"
   size="Medium object ([= 1 stride =] section)"
-  armorClass="25"
+  defence="25"
+  deflect="—"
+  dodge="—"
   hitPoints="100"
   damageThreshold="20"
   resistances="All damage except Force"
@@ -237,7 +243,9 @@ As a Major Action, Yskeia deploys up to four **Warlings** into empty spaces with
   size="Medium"
   type="Construct"
   alignment="Unaligned"
-  armorClass="18"
+  defence="18"
+  deflect="—"
+  dodge="—"
   hitPoints="50"
   speed="[= 8 stride =], fly [= 12 stride =]"
   resistances="All damage except Force"
@@ -550,12 +558,12 @@ From this point onward, Yskeia replaces all attacks made with the Spear of Retri
 Accuracy +27 (Wisdom-based), reach [= 5 stride =], one creature. Athena critically strikes on a roll of 18, 19, or 20.  
 On a hit, **122 ([% 20d10 +15 slashing %])** plus **66 ([% 12d10 holy %])**.
 On a hit, Athena strips away magical protections: the target loses all spell effects, resistances, immunities, and temporary hit points until the end of Yskeia's next turn.
-On a critical hit, the target's **AC is permanently reduced by 2** until removed by a spell such as [_Restoration_](/en/library/spells/restoration) or similar, cast at a minimum slot level of 9.
+On a critical hit, the target's **Defence is permanently reduced by 2** until removed by a spell such as [_Restoration_](/en/library/spells/restoration) or similar, cast at a minimum slot level of 9.
 
 While wielding Athena:
 
 - War Counselor Of Yskeia wields the **Spear of Retribution**, dealing **58 ([% 10d8 +13 piercing %])** plus **27 ([% 6d8 holy %])**.
-- Whenever Athena strikes a creature **Marked for Decommission**, that creature’s **AC is permanently reduced by 1**.
+- Whenever Athena strikes a creature **Marked for Decommission**, that creature’s **Defence is permanently reduced by 1**.
   This effect stacks and can only be undone by a spell such as [_Restoration_](/en/library/spells/restoration) or similar, cast at a minimum slot level of 9.
 
 > _“She laid down command and took up judgment.” — The Dreamcatcher, on their confrontation with Yskeia_

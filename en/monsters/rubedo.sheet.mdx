@@ -9,7 +9,9 @@ contentType: monsters
   size="Huge"
   type="Aberration"
   alignment="Lawful Good"
-  armorClass="28 (natural armor)"
+  defence="28 (natural armor)"
+  deflect="6"
+  dodge="12"
   hitPoints="1,020 ([% 60d12 +600 %])"
   speed="[= 8 stride =], fly [= 12 stride =]"
   str="24"
@@ -55,7 +57,7 @@ When Rubedo fails a saving throw, it can expend a legendary deed to succeed inst
 
 #### Armor Constraint
 
-While Rubedo’s Armor Class is **above 25**, damage dealt by **Flame Belch** is **halved** (round down).
+While Rubedo’s Defence is **above 25**, damage dealt by **Flame Belch** is **halved** (round down).
 
 </Trait>
 
@@ -221,7 +223,9 @@ At resolution, a **Fallen Blade** manifests in each designated space.
 
 <Statlet
   kind="object"
-  armorClass="20"
+  defence="20"
+  deflect="—"
+  dodge="—"
   hitPoints="220"
   damageThreshold="30"
   resistances="Slashing, Piercing"
@@ -311,7 +315,7 @@ All attacks this round must be **Dreamcatcher Relics**.
 
 #### Wounded (75% HP)
 
-- Rubedo’s **Armor Class is permanently reduced by 1**.
+- Rubedo’s **Defence is permanently reduced by 1**.
 - Rubedo may **declare one Stratagem immediately**, even if it has already declared a Stratagem this turn.
 - As an [# kw:delayed #] effect, creatures in the lair take **[% 1d12 force %]**.
 
@@ -321,7 +325,7 @@ All attacks this round must be **Dreamcatcher Relics**.
 
 #### Bloodied (50% HP)
 
-- Rubedo’s **Armor Class is permanently reduced by an additional 2** (total –3).
+- Rubedo’s **Defence is permanently reduced by an additional 2** (total –3).
 - Rubedo may **declare one Stratagem immediately**, even if it has already declared a Stratagem this turn.
 - **Sorcery Ring** deals an additional **18 ([% 4d8 fire %])**.
 - As an [# kw:delayed #] effect, creatures in the lair take an additional **[% 2d12 force %]**.
@@ -333,7 +337,7 @@ All attacks this round must be **Dreamcatcher Relics**.
 
 #### Doomed (25% HP)
 
-- Rubedo’s **Armor Class is permanently reduced by an additional 3** (total –6).
+- Rubedo’s **Defence is permanently reduced by an additional 3** (total –6).
 - Rubedo may **declare one Stratagem immediately**, even if it has already declared a Stratagem this turn.
 - At initiative count **20** (losing initiative ties), each creature within **[= 8 stride =]** of Rubedo saves Dexterity against DC 25.
 - As an [# kw:delayed #] effect, creatures in the lair take an additional **[% 3d12 force %]**, for a total of **[% 6d12 %]**.
