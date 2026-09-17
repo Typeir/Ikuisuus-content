@@ -45,9 +45,6 @@ Warriors master various weapon techniques, and a well-equipped Warrior always ha
   <Column label="Features">
     <Row at="13" unique>Indomitable (Two Uses)</Row>
     <Row at="17" unique>Action Surge (Two Uses), Indomitable (Three Uses)</Row>
-    <Row at="20" unique>Extended Assault (3)</Row>
-    <Row at="21" unique>Specialization feature</Row>
-    <Row at="22" unique>Masterful Warrior</Row>
   </Column>
   <Column label="Second Wind Uses" values="2, 2, 2, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 5" />
 </Progression>
@@ -85,22 +82,6 @@ You are Familiar in one weapon art of your choice and Proficient in two others.
 
 </Feature>
 
-<Feature collapsible level="5">
-
-## Weapon Expertise
-
-You gain one more art you do not already hold at each rung below Expert, and one of your Proficient arts becomes Expert. With a weapon of the Expert art you apply one of its two masteries when you hit.
-
-</Feature>
-
-<Feature collapsible level="11">
-
-## Weapon Savant
-
-You gain one more art you do not already hold at each rung below Savant, and one of your Expert arts becomes Savant. With a weapon of the Savant art you apply both of its masteries when you hit.
-
-</Feature>
-
 <Feature collapsible level="2">
 
 ## Action Surge
@@ -117,7 +98,7 @@ This action can be used ad libitum for any valid purpose.
 
 ## Tactical Mind
 
-When you fail an **ability check**, you may expend a use of **Second Wind** to reroll a **d10** and add it to the check.
+When you fail an **ability check**, you may expend a use of **Second Wind** to sway a bonus of **1d10**.
 
 - If the check still fails, this use of Second Wind is **not expended**.
 
@@ -164,13 +145,20 @@ When you activate **Second Wind**, you may move up to **half your Speed** withou
 
 </Feature>
 
+<Feature collapsible level="5">
+
+## Weapon Expertise
+
+You gain one more art you are not already Familiar with at each rung below Expert, and one of your Proficient arts becomes Expert. With a weapon of the Expert art you apply one of its two masteries when you hit.
+
+</Feature>
+
 <Feature collapsible level="9">
 
 ## Indomitable
 
-When you fail a **saving throw**, you may reroll it and add a bonus equal to your **Warrior level**.
+When you fail a **saving throw**, you may sway a bonus of your **Warrior level**.
 
-- You must use the new roll.
 - You may use this feature **once per [# kw:Recovery #]**.
 - At **level 13**, use it **twice** per rest.
 - At **level 17**, use it **three times** per rest.
@@ -190,6 +178,14 @@ When you attack with a weapon of an art you are Expert or Savant in, you may use
 ## Extended Assault (2)
 
 When you take [# kw:assault #], you may attack **three times** instead of once.
+
+</Feature>
+
+<Feature collapsible level="11">
+
+## Weapon Savant
+
+You gain one more art you are not already Familiar with at each rung below Savant, and one of your Expert arts becomes Savant. With a weapon of the Savant art you apply both of its masteries when you hit.
 
 </Feature>
 
