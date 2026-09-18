@@ -46,7 +46,7 @@ contentType: monsters
 
 #### Legendary Deeds
 
-The Mucklord has **3 legendary deeds per round**, and regains all expended deeds at the start of its turn.
+The Mucklord has **3 legendary deeds per round**, and regains all expended deeds each round.
 
 </Trait>
 
@@ -95,7 +95,7 @@ The Mucklord’s tongue is a siege cannon. It can target any point it can see wi
 
 #### Sad Resilience
 
-Once per round, when the Mucklord takes damage, it gains **temporary hit points** equal to **half the damage taken** until the start of its next turn. The source creature saves Wisdom against DC 24 or is **[# kw:condition:terrified #]** of the Mucklord [# kw:briefly #].
+Once per round, when the Mucklord takes damage, it gains **temporary hit points** equal to **half the damage taken** until the end of its round. The source creature saves Wisdom against DC 24 or is **[# kw:condition:terrified #]** of the Mucklord [# kw:briefly #].
 If the mucklord then takes damage that does not exceed the temporary hit points, the source of the damage is cursed with a **Curse of indolence**, applying a stack of [# kw:Erosion #] **as if the d4 had landed on a "4"**,
 and forcing them to use their Minor Action to harmlessly sigh when in combat. This effect stacks indefinitely.
 
@@ -154,7 +154,7 @@ _Miss:_ The shot detonates prematurely; creatures within **[= 3 stride =]** of t
 
 ## Deeds
 
-The Mucklord has **3 legendary deeds per round**, and regains all expended deeds at the start of its turn.
+The Mucklord has **3 legendary deeds per round**, and regains all expended deeds each round.
 
 The Mucklord can expend legendary deeds to use the options below, each taken with different timing, as described in [Legendary Deeds](/en/library/rules/creatures-critters-and-characters/legendary-deeds).
 
@@ -235,7 +235,7 @@ They are inert but reanimate if struck by brine or acid during subsequent rounds
 
 #### The Pit Remembers
 
-_Declared at the end of the Mucklord’s turn; resolves at the start of its next turn. Recharges after combat._
+_Declared at the end of the Mucklord’s turn; resolves at the start of its next round. Recharges after combat._
 
 The mucklord attempts to consume a **[= 24 stride;ADJ =] cone** in front of it. Creatures in the area save Strength against DC 25 or **sink [= 2 stride =]** and become **[# kw:condition:restrained #]**.  
 At resolution, all **[# kw:condition:restrained #]** creatures are devoured and **banished** to the **Muck Dimension** (see [_Nullbrand_](/en/library/items/heirlooms/nullbrand)) for **1 minute**, taking [% 6d10 force %] at the start of each of their turns there.  
@@ -247,17 +247,17 @@ If the Mucklord dies while this effect is active, the breach collapses, dealing 
 
 #### Gluttony and Hatred
 
-_Declared at the end of the Mucklord’s turn; resolves at the start of its next turn. Recharges after combat._
+_Declared at the end of the Mucklord’s turn; resolves at the start of its next round. Recharges after combat._
 At declaration, the Mucklord **devours itself**, consuming its own mass. Its body vanishes entirely at the **end of its turn**.
 Until resolution, a **spectral afterimage** of the Mucklord is visible, trudging in a **straight line** along the path it will take through the **Muck Dimension**. This path is obvious, slow, and uninterrupted; it cannot turn, stop, or change direction once declared.
 The afterimage ignores terrain, obstacles, and creatures.
-At the start of its next turn, the Mucklord **re-emerges violently** at any point along that line, detonating outward in a rupture of brine and compressed mass.
+At the start of its next round, the Mucklord **re-emerges violently** at any point along that line, detonating outward in a rupture of brine and compressed mass.
 
 - **Re-emergence Area**: [= 8 stride;ADJ =] radius sphere centered on the emergence point.
 - **Saving Throw**: DC **+25 Strength**.
 
-On a **failure**, a creature takes 88 ([% 16d10 bludgeoning %]) and 44 ([% 8d10 chemical %]), is **pushed [= 6 stride =]** directly away from the center, and is **knocked [# kw:condition:prone #]**.  
-On a **success**, the creature takes half damage, is pushed **[= 2 stride =]**, and is not knocked [# kw:condition:prone #].
+On a **failure**, a creature takes 88 ([% 16d10 bludgeoning %]) and 44 ([% 8d10 chemical %]), is displaced [= 6 stride =] away from the center, and is **knocked [# kw:condition:prone #]**.
+On a **success**, the creature takes half damage, is displaced [= 2 stride =] away from the Mucklord, and is not knocked [# kw:condition:prone #].
 
 If the Mucklord emerges in a space occupied by one or more creatures, those creatures **automatically fail** the saving throw, take the full damage, and are forcibly displaced to the nearest unoccupied spaces of the Mucklord’s choice.
 Creatures reduced to **0 hit points** by this detonation are **absorbed** along with everything they were carrying, the Mucklord gains **20 temporary hit points per creature** absorbed this way.

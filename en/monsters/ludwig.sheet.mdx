@@ -43,7 +43,7 @@ contentType: monsters
 
 #### Legendary Deeds
 
-Ludwig has **3 legendary deeds per round**, and regains all expended deeds at the start of his turn.
+Ludwig has **3 legendary deeds per round**, and regains all expended deeds each round.
 
 </Trait>
 
@@ -127,7 +127,10 @@ On a hit, [% 2d10 +10 slashing %] + [% 2d6 frost %], plus **[% 2d6 fire %]** if 
 
 ##### Gore Hurl <span>[# kw:attack alteration #]</span>
 
-Ludwig throws a **[# kw:condition:grappled #] creature** up to [= 12 stride =]. The creature lands in a **[= 4 stride;ADJ =] radius** area. All creatures there save Dexterity against DC 20 or take **[% 6d6 bludgeoning %]** and fall [# kw:condition:prone #]. The thrown creature automatically takes the damage and is no longer [# kw:condition:grappled #].
+Ludwig displaces a **[# kw:condition:grappled #] creature** up to [= 12 stride =], to a point of his choosing.
+The creature produces a  **[= 4 stride;ADJ =] radius** tremor if it hits a solid object.
+All creatures there save Dexterity against DC 20 or take **[% 6d6 bludgeoning %]** and fall [# kw:condition:prone #]. 
+The thrown creature automatically takes the damage and is no longer [# kw:condition:grappled #].
 
 </Feature>
 
@@ -136,7 +139,7 @@ Ludwig throws a **[# kw:condition:grappled #] creature** up to [= 12 stride =]. 
 ##### Bloodspire Growth <span>[# kw:attack alteration #]</span>
 
 Ludwig charges up to [= 6 stride =] in a straight line. A massive spire of divine blood erupts beneath a target, who saves Strength against DC 20 or takes **[% 8d10 piercing %]**, be **[# kw:condition:Restrained #]**, and launched atop a **[= 12 stride;ADJ =] tall spire**.
-Creatures in a **[= 4 stride;ADJ =] wide** trail save Dexterity against DC 16 or take **[% 4d6 fire %]** and are **pushed [= 1 stride =] away**.
+Creatures in a **[= 4 stride;ADJ =] wide** trail save Dexterity against DC 16 or take **[% 4d6 fire %]** and are displaced [= 1 stride =] away.
 The path remains aflame until the start of Ludwig’s next turn, dealing **[% 4d6 fire %]** as a [# kw:persistent #], [# kw:delayed #] effect.
 
 </Feature>
@@ -145,7 +148,7 @@ The path remains aflame until the start of Ludwig’s next turn, dealing **[% 4d
 
 ## Deeds
 
-Ludwig has **3 legendary deeds per round**, and regains all expended deeds at the start of his turn. Ludwig can expend legendary deeds to use the options below, each taken with different timing, as described in [Legendary Deeds](/en/library/rules/creatures-critters-and-characters/legendary-deeds).
+Ludwig has **3 legendary deeds per round**, and regains all expended deeds each round. Ludwig can expend legendary deeds to use the options below, each taken with different timing, as described in [Legendary Deeds](/en/library/rules/creatures-critters-and-characters/legendary-deeds).
 
 #### Lair
 
@@ -174,7 +177,7 @@ The affected becomes difficult terrain until the next initiative count 20 (losin
 
 #### Spire Burst
 
-Ludwig commands the blood spires in his lair to erupt violently. Each creature pinned by a spire takes 100 piercing damage and is launched [= 20 stride =] into the air.
+Ludwig commands the blood spires in his lair to erupt violently. Each creature pinned by a spire takes 100 piercing damage and is displaced [= 20 stride =] upward.
 The explosion covers a [= 6 stride;ADJ =] radius, forcing all creatures other than the pinned creature to save Dexterity against DC 19 or take [% 6d6 fire %] and [% 6d6 piercing %], half as much on a success.
 
 </Action>
@@ -197,10 +200,10 @@ The explosion covers a [= 6 stride;ADJ =] radius, forcing all creatures other th
 
 - **Attack.** (Costs 1 Deed) Ludwig makes one _Mooncleaver_ attack.
 - **Dragstep.** (Costs 1 Deed) Ludwig moves up to [= 4 stride =] and attempts to **grapple each creature** he moves through. [# kw:condition:Grappled #] creatures are **[# kw:condition:Restrained #] by blood chains**, but his hands remain free.
-- **Lesser Spire of Blood (Costs 2 Deeds).** A blood spire erupts beneath a creature within [= 6 stride =]. The target saves Dexterity against DC 20 or takes **[% 8d10 piercing %]** and is launched [= 4 stride =] into the air (landing [# kw:condition:prone #] unless it succeeds a DC 16 Acrobatics check).
+- **Lesser Spire of Blood (Costs 2 Deeds).** A blood spire erupts beneath a creature within [= 6 stride =]. The target saves Dexterity against DC 20 or takes **[% 8d10 piercing %]** and is displaced [= 4 stride =] upward (landing …
 - **Cast a Spell (Costs 2 Deeds).** Ludwig casts one spell of 5th level or lower.
 - **Severing Blood (Recharge 6) (Costs 2 Deeds).** One creature within [= 12 stride =] saves Constitution against DC 23 or becomes **[# kw:condition:Paralyzed #]** as blood congeals around their veins. While [# kw:condition:paralyzed #] this way, the creature also takes **[% 1d10 fire %]** at the start of each of its turns. This burning cannot be extinguished by mundane means.  
-  At the end of each of its turns, the creature may [# kw:resist #].
+  The creature may [# kw:resist #].
 
 #### Phase
 
@@ -224,7 +227,7 @@ Each creature saves Dexterity against DC 21 or takes **[% 20d6 fire %] + [% 20d6
 
 At the brink of death, Ludwig manifests the **Serpentine Dreams**, a curved moonlight greatsword shimmering with the cerulean light of kuutar, and fights with it alongside Mooncleaver. His stance becomes eerily calm, each movement carrying both crushing weight and blinding speed.
 
-- **Resurgence**: Upon entering this phase, Ludwig gains advantage on all saving throws until the end of his next turn.
+- **Resurgence**: Upon entering this phase, Ludwig gains advantage on all saving throws [# kw:briefly #].
 - **Overclocked Will**: Whenever ludwig takes [# kw:assault #] and misses, he can choose to succeed instead. Ludwig can use this feature once per round.
 - **Bonus Attack**: Ludwig can make one additional Serpentine Dreams attack as a **Minor Action** on his turn.
 
@@ -300,7 +303,7 @@ After Ludwig makes a melee attack (hit or miss), he may move **[= 1 stride =]**.
 
 When Ludwig hits a creature with a melee attack, that creature saves Charisma against DC 21 or suffers the effects of [_Bane_](/en/library/spells/bane) for 1 minute.
 
-- The target may repeat the save at the end of each of its turns.
+- The target may [# kw:resist #].
 - Once a creature saves against this effect, it is immune to Ludwig’s Martial Domination for 24 hours.
 
 </Action>
