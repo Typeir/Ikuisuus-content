@@ -21,7 +21,7 @@ contentType: monsters
   con="20"
   wis="24"
   cha="6"
-  saves="Con +9, Dex +10"
+  saves="CON +9, DEX +10"
   resistances="Fire, Lightning, Frost, Holy"
   immunities="Poison, Dark"
   vulnerabilities="Bludgeoning, Chemical"
@@ -43,7 +43,7 @@ contentType: monsters
 
 When reduced to 0 hit points, the hunter erupts in a [= 60 stride;ADJ =]-radius explosion (blocked by solid terrain).  
 After a three turn delay, the hunter explodes.
-Each creature within range saves Dexterity against DC 21, taking **180 ([% 40d8 force %])** and becoming **[# kw:condition:blinded #]** [# kw:briefly #] on a failure, or half as much damage on a success.
+Each creature within range saves DEX against DC 21, taking **180 ([% 40d8 force %])** and becoming **[# kw:condition:blinded #]** [# kw:briefly #] on a failure, or half as much damage on a success.
 
 </Trait>
 
@@ -59,7 +59,7 @@ The Ventralis variant is considered both a Construct and Undead. It can be affec
 
 #### Spore Exhalation
 
-Immediately after moving at least [= 2 stride =], the Hunter emits fungal clouds into a **[= 2 stride;ADJ =] radius** centered on itself. Creatures in the area save Constitution against DC 17 or are **infected** and **[# kw:condition:blinded #]** [# kw:briefly #]. This area becomes **difficult terrain** for 1 minute as the floor blooms with creeping mycelium.
+Immediately after moving at least [= 2 stride =], the Hunter emits fungal clouds into a **[= 2 stride;ADJ =] radius** centered on itself. Creatures in the area save CON against DC 17 or are **infected** and **[# kw:condition:blinded #]** [# kw:briefly #]. This area becomes **difficult terrain** for 1 minute as the floor blooms with creeping mycelium.
 
 </Trait>
 
@@ -69,9 +69,9 @@ Immediately after moving at least [= 2 stride =], the Hunter emits fungal clouds
 
 After completing its movement, the Hunter may cast one of the following spells as a Minor Action, centered on itself or its space:
 
-- [_Entangle_](/en/library/spells/entangle) (DC 17 Str) — **2 spell points**
-- [_Entangle (Lattice)_](/en/library/spells/entangle) (DC 17 Dex, [# kw:condition:restrained #] on failure) — **3 spell points**
-- [_Stinking Cloud_](/en/library/spells/stinking-cloud) (DC 17 Con, [# kw:condition:poisoned #] and can't take actions) — **5 spell points**
+- [_Entangle_](/en/library/spells/entangle) (DC 17 STR) — **2 spell points**
+- [_Entangle (Lattice)_](/en/library/spells/entangle) (DC 17 DEX, [# kw:condition:restrained #] on failure) — **3 spell points**
+- [_Stinking Cloud_](/en/library/spells/stinking-cloud) (DC 17 CON, [# kw:condition:poisoned #] and can't take actions) — **5 spell points**
 
 Each spell can be used **once per day**, or cast again by expending spell points.
 
@@ -106,7 +106,7 @@ The Hunter makes one attack with its Fated Blade and one with its Particle Rende
 ##### Fated Blade _(Melee Weapon, Finesse)_
 
 On a hit, [% 2d10 +6 slashing %]  
-**Effect**: Once per day per creature, the target saves Charisma against DC 19 or becomes **vulnerable to all damage** from this blade. The Hunter also gains **truesight** on that target for 1 minute.
+**Effect**: Once per day per creature, the target saves CHA against DC 19 or becomes **vulnerable to all damage** from this blade. The Hunter also gains **truesight** on that target for 1 minute.
 
 </Attack>
 
@@ -122,7 +122,7 @@ On a hit, [% 2d8 +6 slashing %]
 - **Thruster Axe-Kick** _(Gap Closer)_  
   Accuracy +10, range 10–[= 6 stride =], one creature.  
   On a hit, [% 3d10 +6 slashing %]  
-  **Effect**: Target saves Strength against DC 17 or is knocked [# kw:condition:prone #].  
+  **Effect**: Target saves STR against DC 17 or is knocked [# kw:condition:prone #].  
   If the target takes damage, it [catches fire](/en/library/rules/steel-and-strife/conditions#burning).
 
 ---
@@ -130,7 +130,7 @@ On a hit, [% 2d8 +6 slashing %]
 ## Infection Mechanic
 
 **Ventralis Infection.**  
-Any creature hit by a melee weapon attack saves Constitution against DC 15 or becomes **infected** with a latent fungal curse.
+Any creature hit by a melee weapon attack saves CON against DC 15 or becomes **infected** with a latent fungal curse.
 If the creature is already infected by any of the [# kw:Black Rot #] effects, they instantly roll on the Table again.
 
 While infected:
@@ -147,7 +147,7 @@ While infected:
 
 ## Coatings
 
-All Ventralis Hunter weapons are coated in necrotic mycelium. Once per day per creature, on hit, the target saves Constitution against DC 15 or suffers one of the following conditions (Hunter’s choice):
+All Ventralis Hunter weapons are coated in necrotic mycelium. Once per day per creature, on hit, the target saves CON against DC 15 or suffers one of the following conditions (Hunter’s choice):
 
 - Sleep
 - Paralysis

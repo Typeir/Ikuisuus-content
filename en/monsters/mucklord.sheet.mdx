@@ -28,7 +28,7 @@ contentType: monsters
   con="40"
   wis="12"
   cha="20"
-  saves="Str +23, Con +25, Cha +15"
+  saves="STR +23, CON +25, CHA +15"
   skills="Descry +12"
   resistances="Fire, Force"
   immunities="Chemical, Poison, Psychic"
@@ -64,7 +64,7 @@ The Mucklord does not need to breathe or eat. Although it may do either of the t
 
 #### Aura of Stillness ([= 12 stride;ADJ =] radius)
 
-As an [# kw:delayed #] effect, creatures in the aura save Strength against DC 24 or their speed becomes **0** [# kw:briefly #]. Creatures immune to paralysis instead have their speed **halved**.
+As an [# kw:delayed #] effect, creatures in the aura save STR against DC 24 or their speed becomes **0** [# kw:briefly #]. Creatures immune to paralysis instead have their speed **halved**.
 
 </Trait>
 
@@ -97,7 +97,7 @@ The Mucklord’s tongue is a siege cannon. It can target any point it can see wi
 
 #### Sad Resilience
 
-Once per round, when the Mucklord takes damage, it gains **temporary hit points** equal to **half the damage taken** until the end of its round. The source creature saves Wisdom against DC 24 or is **[# kw:condition:terrified #]** of the Mucklord [# kw:briefly #].
+Once per round, when the Mucklord takes damage, it gains **temporary hit points** equal to **half the damage taken** until the end of its round. The source creature saves WIS against DC 24 or is **[# kw:condition:terrified #]** of the Mucklord [# kw:briefly #].
 If the mucklord then takes damage that does not exceed the temporary hit points, the source of the damage is cursed with a **Curse of indolence**, applying a stack of [# kw:Erosion #] **as if the d4 had landed on a "4"**,
 and forcing them to use their Minor Action to harmlessly sigh when in combat. This effect stacks indefinitely.
 
@@ -139,7 +139,7 @@ The Mucklord makes one **Crushing Claw** attack against a **[# kw:condition:grap
 
 ##### Crushing Claw
 
-On a hit, 55 ([% 8d10 +10 bludgeoning %]) plus 22 ([% 4d10 chemical %]). If the target is Large or smaller, it saves Strength against DC 23 or is **[# kw:condition:grappled #]** (escape **DC 24**).
+On a hit, 55 ([% 8d10 +10 bludgeoning %]) plus 22 ([% 4d10 chemical %]). If the target is Large or smaller, it saves STR against DC 23 or is **[# kw:condition:grappled #]** (escape **DC 24**).
 
 </Attack>
 
@@ -147,8 +147,8 @@ On a hit, 55 ([% 8d10 +10 bludgeoning %]) plus 22 ([% 4d10 chemical %]). If the 
 
 ##### Cannon Tongue
 
-On a hit, 25 + ([% 20d8 force %]), plus an extra 25 force damage per stack of erosion on the target, and the target saves Charisma against DC 26 or suffers the effects of [_Feeblemind_](/en/library/spells/feeblemind).  
-_Miss:_ The shot detonates prematurely; creatures within **[= 3 stride =]** of the Mucklord save Dexterity against DC 24 or take 40 ([% 10d6 chemical %]), 40 ([% 10d6 fire %]) and 40 ([% 10d6 piercing %]).
+On a hit, 25 + ([% 20d8 force %]), plus an extra 25 force damage per stack of erosion on the target, and the target saves CHA against DC 26 or suffers the effects of [_Feeblemind_](/en/library/spells/feeblemind).  
+_Miss:_ The shot detonates prematurely; creatures within **[= 3 stride =]** of the Mucklord save DEX against DC 24 or take 40 ([% 10d6 chemical %]), 40 ([% 10d6 fire %]) and 40 ([% 10d6 piercing %]).
 
 </Attack>
 
@@ -187,7 +187,7 @@ They act immediately after the Mucklord in the initiative order and remain until
 
 The Mucklord emits a shuddering groan that resonates through the brine, forcing every active Forlorn within **[= 60 stride =]** to rupture violently.
 
-Each Forlorn detonates in a **[= 6 stride;ADJ =] radius**, forcing all creatures in range to save Dexterity against DC 24.  
+Each Forlorn detonates in a **[= 6 stride;ADJ =] radius**, forcing all creatures in range to save DEX against DC 24.  
 On a failure, the creature takes **chemical and force damage equal to as many d6 as the Forlorn's Lethality** and is **knocked [# kw:condition:prone #]**.  
 On a success, it takes half damage and is not knocked [# kw:condition:prone #].
 
@@ -202,7 +202,7 @@ If **three or more** Forlorn are destroyed this way, the Mucklord regains **50 h
 The brine surrounding the Mucklord rises and begins to seethe with Nullbrand’s resonance.  
 All creatures **standing on brine** or within **[= 12 stride =]** of the Mucklord that are touching the ground gain **one stack of [# kw:Erosion #]** .
 
-If a creature already has **[# kw:Erosion #]**, regardless of whether it is on brine or not it saves Constitution against DC 24 or gains **another stack** instead.  
+If a creature already has **[# kw:Erosion #]**, regardless of whether it is on brine or not it saves CON against DC 24 or gains **another stack** instead.  
 Objects and weapons made of metal in contact with the ground take [% 10d10 force %], ignoring resistance.
 
 > Everything fades, eventually.
@@ -220,7 +220,7 @@ Roll [% 1d20 %] to determine the tantrum’s intensity.
 
 - The number rolled is the number of **corpses ([% 1d20 %])** that **fall into the arena**, landing in random unoccupied spaces within the lair of the Mucklord.
 - The **DC** for the resulting shockwave is **35 – the number rolled** (minimum 15, maximum 34).
-- The Mucklord then emits a thunderous cry, or a joyful screech. All creatures of its choice within **[= 60 stride =]** save Constitution against DC result.
+- The Mucklord then emits a thunderous cry, or a joyful screech. All creatures of its choice within **[= 60 stride =]** save CON against DC result.
   - **Fail**: The creature is **[# kw:condition:deafened #] and [# kw:condition:blinded #]** [# kw:briefly #] and takes **(DC)d4 bludgeoning damage**.
   - **Success**: No damage or condition.
 
@@ -239,7 +239,7 @@ They are inert but reanimate if struck by brine or acid during subsequent rounds
 
 _Declared at the end of the Mucklord’s turn; resolves at the start of its next round. Recharges after combat._
 
-The mucklord attempts to consume a **[= 24 stride;ADJ =] cone** in front of it. Creatures in the area save Strength against DC 25 or **sink [= 2 stride =]** and become **[# kw:condition:restrained #]**.  
+The mucklord attempts to consume a **[= 24 stride;ADJ =] cone** in front of it. Creatures in the area save STR against DC 25 or **sink [= 2 stride =]** and become **[# kw:condition:restrained #]**.  
 At resolution, all **[# kw:condition:restrained #]** creatures are devoured and **banished** to the **Muck Dimension** (see [_Nullbrand_](/en/library/items/heirlooms/nullbrand)) for **1 minute**, taking [% 6d10 force %] at the start of each of their turns there.  
 If the Mucklord dies while this effect is active, the breach collapses, dealing 150 ([% 20d12 force %]) to all creatures within **[= 24 stride =]**
 
@@ -271,7 +271,7 @@ The Mucklord is considered **absent from the battlefield** between disappearance
 
 - **Detect.** (Costs 1 Deed) The Mucklord makes a Dexterity (Descry) check with advantage.
 - **Lurch.** (Costs 2 Deeds) The Mucklord moves up to [= 6 stride =]. All creatures that harm it during this movement take 20 chemical damage.
-- **Brine Rattle.** (Costs 3 Deeds) The Mucklord releases a mist of poisonous brine. Creatures within [= 8 stride =] of the Mucklord save Dexterity against DC 24 or take 54 ([% 12d8 poison %]) and gain a level of exhaustion. Creatures take half as much damage on a success and do not gain exhaustion.
+- **Brine Rattle.** (Costs 3 Deeds) The Mucklord releases a mist of poisonous brine. Creatures within [= 8 stride =] of the Mucklord save DEX against DC 24 or take 54 ([% 12d8 poison %]) and gain a level of exhaustion. Creatures take half as much damage on a success and do not gain exhaustion.
 
 </Sheet>
 

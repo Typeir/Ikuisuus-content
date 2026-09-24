@@ -25,7 +25,7 @@ contentType: monsters
   con="30"
   wis="22"
   cha="26"
-  saves="Strength +17, Constitution +19, Charisma +15"
+  saves="STR +17, CON +19, CHA +15"
   skills="Athletics +17, Insight +17, Descry +17, Discern +17, Survival +17"
   resistances="Holy, Dark, Force"
   immunities="Fire, Poison, Psychic"
@@ -115,7 +115,7 @@ Marduk makes **three** attacks with **Midnight Star**, replacing them with other
 ##### Stellar Judgment
 
 Marduk detonates one dark star at a point he can see within [= 24 stride =]. The star erupts in a barrage of obsidian scales that fly towards a creature of Marduk's choosing in a straight line.
-Each creature in a **[= 1 stride;ADJ =]-wide, [= 24 stride;ADJ =]-long line** saves Dexterity against DC 25, halving 62 ([% 14d8 force %]).
+Each creature in a **[= 1 stride;ADJ =]-wide, [= 24 stride;ADJ =]-long line** saves DEX against DC 25, halving 62 ([% 14d8 force %]).
 The main target takes an additional 31 ([% 7d8 force %]), halving on the same save, and gains a stack of **Dwarfed Will**.
 
 </Action>
@@ -133,7 +133,7 @@ Each dark star Marduk has created with is immediately duplicated, and the duplic
 ##### The Horns
 
 Marduk lets out a deafening and charges at a creature he can see within [= 60 stride =] at inconcievable speed.
-Each creature of Marduk's choice within [= 12 stride =] that can hear him saves Constitution against DC 25 or is [# kw:condition:terrified #] of Marduk [# kw:briefly #].
+Each creature of Marduk's choice within [= 12 stride =] that can hear him saves CON against DC 25 or is [# kw:condition:terrified #] of Marduk [# kw:briefly #].
 Marduk then charges to the target, up to [= 60 stride =], and makes one melee attack.
 
 <Attack accuracy="+20" reach="[= 1 stride =]">
@@ -195,10 +195,10 @@ While this line persists, it is considered **difficult terrain**.
 
 When the line appears, creatures within [= 60 stride =] of Marduk **that are not within the line** are immediately displaced [= 4 stride =] away from the line.
 As a [# kw:persistent #], [# kw:delayed #] effect, creatures within the line may immediately **remove 1 stack of Dwarfed Will**.
-A creature that **leaves the line** for the first time on a turn saves Charisma against DC 25 or becomes **[# kw:condition:Frightened #] of Marduk** [# kw:briefly #], and gains 1 stack of **Dwarfed Will**.
+A creature that **leaves the line** for the first time on a turn saves CHA against DC 25 or becomes **[# kw:condition:Frightened #] of Marduk** [# kw:briefly #], and gains 1 stack of **Dwarfed Will**.
 
 **Resolve (Start of Marduk’s next turn):**
-All creatures within the line save Charisma against DC 25. Roll **[% 55d10 %]** force damage. Divide the total damage evenly among all creatures in the line (round down).
+All creatures within the line save CHA against DC 25. Roll **[% 55d10 %]** force damage. Divide the total damage evenly among all creatures in the line (round down).
 Each creature takes its share, halving on the same save.
 Creatures that take damage from this effect lose one stack of **Dwarfed Will** (to a minimum of zero), two if they succeeded on the saving throw.
 Creatures that have no stacks of **Dwarfed Will** automatically succeed on this saving throw, and are resistant to this damage.
@@ -212,7 +212,7 @@ Creatures outside the line when the effect resolves take [% 20d6 psychic %].
 
 **Declare:**
 Marduk targets one creature he can see within [= 12 stride =].
-The target saves Constitution against DC 25 or is **[# kw:condition:blinded #]** until the end of Marduk’s next turn.
+The target saves CON against DC 25 or is **[# kw:condition:blinded #]** until the end of Marduk’s next turn.
 
 **Resolve (start of Marduk’s next turn):**
 The target takes 62 ([% 14d8 psychic %]) per stack of **Dwarfed Will** it has. If the target has more than 3 stacks of **Dwarfed Will**, the damage is maximized.
@@ -244,7 +244,7 @@ Marduk makes one Midnight Star attack with advantage.
 
 ##### Collapse Resolve
 
-The creature whose turn just ended saves Charisma against DC 25 or takes 41 ([% 9d8 psychic %]) and has disadvantage on all saving throws [# kw:briefly #].
+The creature whose turn just ended saves CHA against DC 25 or takes 41 ([% 9d8 psychic %]) and has disadvantage on all saving throws [# kw:briefly #].
 
 </Feature>
 
@@ -272,7 +272,7 @@ The creature whose turn just ended saves Charisma against DC 25 or takes 41 ([% 
   con="28"
   wis="18"
   cha="22"
-  saves="Strength +20, Constitution +19, Charisma +16"
+  saves="STR +20, CON +19, CHA +16"
   resistances="Fire, Frost, Holy, Force"
   immunities="Psychic"
   conditionImmunities="[# kw:condition:Terrified #]"
@@ -293,7 +293,7 @@ The creature whose turn just ended saves Charisma against DC 25 or takes 41 ([% 
 
 ##### Aura of Terror
 
-As an [# kw:delayed #] effect, creatures within [= 40 stride =] of Marduk save Wisdom against DC 25 or are [# kw:condition:frightened #] [# kw:briefly #].
+As an [# kw:delayed #] effect, creatures within [= 40 stride =] of Marduk save WIS against DC 25 or are [# kw:condition:frightened #] [# kw:briefly #].
 
 </Trait>
 
@@ -344,7 +344,7 @@ Once all star-fragments are expended, the corona ends.
 ##### Breath of Stellar Verdict
 
 Marduk exhales collapsing starlight in a [= 24 stride;ADJ =] cone.
-Each creature in the area saves Wisdom against DC 25, halving 90 ([% 14d12 holy %]).
+Each creature in the area saves WIS against DC 25, halving 90 ([% 14d12 holy %]).
 Failing targets are **[# kw:condition:frightened #]** [# kw:briefly #].
 
 </Action>
@@ -354,7 +354,7 @@ Failing targets are **[# kw:condition:frightened #]** [# kw:briefly #].
 ##### Gravity of Presence
 
 Space buckles around Marduk.
-Each creature of Marduk’s choice within [= 12 stride =] saves Strength against DC 25, halving 62 ([% 14d8 force %]).
+Each creature of Marduk’s choice within [= 12 stride =] saves STR against DC 25, halving 62 ([% 14d8 force %]).
 Failing targets are displaced up to [= 8 stride =] toward Marduk and knocked **[# kw:condition:prone #]**.
 
 </Action>
@@ -404,7 +404,7 @@ Marduk forgoes one attack and transforms into his **mortal aspect**, and immedia
 ###### Tail Swipe
 
 Marduk sweeps his tail in a brutal arc.
-Each creature in a **[= 6 stride;ADJ =] cone** saves Dexterity against DC 27, halving 35 ([% 5d8 +12 bludgeoning %]).
+Each creature in a **[= 6 stride;ADJ =] cone** saves DEX against DC 27, halving 35 ([% 5d8 +12 bludgeoning %]).
 Failing targets are knocked **[# kw:condition:prone #]**.
 
 </Attack>
@@ -437,7 +437,7 @@ Marduk makes one Claw attack.
 
 ##### Astral Compression
 
-One creature within [= 6 stride =] saves Constitution against DC 25 or takes 41 ([% 9d8 force %]) and have its speed reduced to 0 [# kw:briefly #].
+One creature within [= 6 stride =] saves CON against DC 25 or takes 41 ([% 9d8 force %]) and have its speed reduced to 0 [# kw:briefly #].
 
 </Feature>
 

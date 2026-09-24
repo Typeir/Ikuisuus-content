@@ -23,7 +23,7 @@ contentType: monsters
   con="20"
   wis="18"
   cha="10"
-  saves="Constitution +9, Wisdom +8"
+  saves="CON +9, WIS +8"
   skills="Athletics +10, Arcana +8"
   resistances="Frost, Dark"
   conditionImmunities="[# kw:condition:Terrified #], [# kw:condition:Frightened #], [# kw:condition:Charmed #], [# kw:condition:Poisoned #]"
@@ -135,7 +135,7 @@ The death guard casts one of its prepared spells, using a spell slot as normal.
   con="20"
   wis="18"
   cha="6"
-  saves="Constitution +11"
+  saves="CON +11"
   resistances="dark, frost"
   conditionImmunities="[# kw:condition:Terrified #], [# kw:condition:poisoned #]"
   senses="darkvision [= 12 stride =]"
@@ -190,16 +190,16 @@ Once used, this feature can’t be used again until after a [# kw:Repose #] or [
 When the death guard is hit by an attack, it increases its Deflect against that attack by **[% 1d12 %]**. If this causes the attack to miss, the attack deals no damage. The death guard can use this reaction **18 times per [# kw:Recovery #]**.
 
 **Heartburn (5/Recovery).**  
-One creature the death guard can see within **[= 6 stride =]** saves Constitution against DC 16 or suffers one of the following effects, chosen by the death guard:
+One creature the death guard can see within **[= 6 stride =]** saves CON against DC 16 or suffers one of the following effects, chosen by the death guard:
 
 - **Blood Sublimation**: The creature takes **[% 2d8 +4 fire %]**, has disadvantage on attack rolls and ability checks until the end of the death guard’s next turn, and gains **1 stack of [# kw:condition:Bleeding #]**.
 - **Blood Deposition**: The creature takes **4 frost damage**, its speed is halved, it can make only one attack on its turn, and if it casts a spell before the end of the death guard’s next turn it must succeed on a concentration check or the spell fails. The creature gains **1 stack of [# kw:condition:Bleeding #]**.
 
 **Bloodspire.**  
-When the death guard makes an attack against a creature inside **Greater Abundance and Decay**, it may replace one weapon attack with a melee spell attack (**accuracy +9**, reach [= 1 stride =]). On a hit, the target takes **[% 4d8 magical %] piercing damage** and saves Dexterity against DC 16 or is **[# kw:condition:grappled #]** (escape DC 16).
+When the death guard makes an attack against a creature inside **Greater Abundance and Decay**, it may replace one weapon attack with a melee spell attack (**accuracy +9**, reach [= 1 stride =]). On a hit, the target takes **[% 4d8 magical %] piercing damage** and saves DEX against DC 16 or is **[# kw:condition:grappled #]** (escape DC 16).
 
 **Heartbreak (2 Uses; 1/Repose).**  
-When the death guard hits a creature [# kw:condition:grappled #] by Bloodspire, it detonates the spire. The target saves Dexterity against DC 16. On a failure, the target takes **[% 8d6 magical %] piercing damage** and gains **[% 1d4 +5 %] stacks of [# kw:condition:Bleeding #]**. On a success, the target takes half damage and gains **1 stack of [# kw:condition:Bleeding #]**.
+When the death guard hits a creature [# kw:condition:grappled #] by Bloodspire, it detonates the spire. The target saves DEX against DC 16. On a failure, the target takes **[% 8d6 magical %] piercing damage** and gains **[% 1d4 +5 %] stacks of [# kw:condition:Bleeding #]**. On a success, the target takes half damage and gains **1 stack of [# kw:condition:Bleeding #]**.
 
 #### Bloodboil Spellcasting
 
@@ -271,7 +271,7 @@ The death guard can summon only one Avalanche Blade at a time and can use this f
 The death guard ignores resistance to frost damage. Once per round, when it deals frost damage to a creature, it deals an additional **18 frost damage** to that creature if it has not already used Execution that round.
 
 **Dance of Mana.**  
-Once per turn, when the death guard deals frost damage to a creature, **Avalanche Blade** moves up to **[= 6 stride =]** toward that creature. Each creature the blade passes through saves Dexterity against DC 16 or takes damage equal to one roll of the blade’s Cold Cleave.
+Once per turn, when the death guard deals frost damage to a creature, **Avalanche Blade** moves up to **[= 6 stride =]** toward that creature. Each creature the blade passes through saves DEX against DC 16 or takes damage equal to one roll of the blade’s Cold Cleave.
 
 #### Rimelord Spellcasting
 
@@ -295,10 +295,10 @@ Prepared spells:
 Once per round, when the death guard uses Execution or casts a spell, it may have that attack or spell originate from the space of one of its retinues within **[= 6 stride =]**.
 
 **Explode Corpse.**  
-As a Major Action, the death guard detonates a corpse or one of its retinues within **[= 2 stride =]** of it or another retinue. Each creature within **[= 1 stride =]** saves Dexterity against DC 16, halving **18 dark damage**. The detonated corpse or retinue is destroyed.
+As a Major Action, the death guard detonates a corpse or one of its retinues within **[= 2 stride =]** of it or another retinue. Each creature within **[= 1 stride =]** saves DEX against DC 16, halving **18 dark damage**. The detonated corpse or retinue is destroyed.
 
 **Kalmora’s Grasp (Recharge 6).**  
-As a Major Action, one creature within **[= 6 stride =]** of the death guard or one of its retinues saves Charisma against DC 16. On a failure, the creature is banished for **1 minute**, is [# kw:condition:incapacitated #], automatically fails Strength and Dexterity saving throws, and takes **[% 5d12 dark %]** at the start of each of its turns. The creature repeats the saving throw at the end of each of its turns, ending the effect on a success. On a success, the creature takes half damage and is not banished.
+As a Major Action, one creature within **[= 6 stride =]** of the death guard or one of its retinues saves CHA against DC 16. On a failure, the creature is banished for **1 minute**, is [# kw:condition:incapacitated #], automatically fails STR and DEX saving throws, and takes **[% 5d12 dark %]** at the start of each of its turns. The creature repeats the saving throw at the end of each of its turns, ending the effect on a success. On a success, the creature takes half damage and is not banished.
 
 #### Graveherder Spellcasting
 
@@ -328,9 +328,9 @@ For the purpose of targeting, total cover is treated as three-quarters cover unl
 The guard of the mists can create a second area called **Länsihenki’s Shroud** as a Major Action. Instead of reducing Defence, it is heavily obscured for all creatures except death guards and their retinues.
 The death guard can move the area up to **[= 4 stride =]** as a Minor Action on its turn.
 
-- **Vortex Swap**: The death guard swaps all willing creatures between the two areas. Unwilling creatures save Charisma against DC 17 to resist the swap.
+- **Vortex Swap**: The death guard swaps all willing creatures between the two areas. Unwilling creatures save CHA against DC 17 to resist the swap.
 - **Collision Event**: The death guard causes Länsihenki’s Shroud to collide with Greater Abundance and Decay.
-  Each creature of their choice within abundance and decay saves Dexterity against DC 17, taking **[% 12d10 %]** dark damage, and being **[# kw:condition:stunned #]** [# kw:briefly #] on a failure.
+  Each creature of their choice within abundance and decay saves DEX against DC 17, taking **[% 12d10 %]** dark damage, and being **[# kw:condition:stunned #]** [# kw:briefly #] on a failure.
   Creatures that succeed take half damage and are not [# kw:condition:stunned #].
 
 #### Mistreaver Spellcasting
