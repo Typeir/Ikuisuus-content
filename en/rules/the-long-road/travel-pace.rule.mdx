@@ -19,12 +19,12 @@ These rules determine how far a character or monster can move in a minute, an ho
 
 | Pace   |      Strides per minute |     Leagues per hour |      Leagues per day | Effect                                    |
 | ------ | ----------------------: | -------------------: | -------------------: | ----------------------------------------- |
-| Fast   |         [= 80 stride =] |       [= 4 league =] |      [= 32 league =] | -5 penalty to passive Dexterity (Descry) |
+| Fast   |         [= 80 stride =] |       [= 4 league =] |      [= 32 league =] | -5 penalty to passive Descry (DEX) |
 | Normal |         [= 60 stride =] |       [= 3 league =] |      [= 24 league =] | —                                         |
 | Slow   |         [= 40 stride =] |       [= 2 league =] |      [= 16 league =] | Able to use stealth                       |
 
 - The table states how far the party can move in a period of time and whether the pace has any effect on passive descry or stealth.
-- A fast pace makes characters less perceptive (penalty to passive Dexterity (Descry)). A slow pace lets characters attempt to use Stealth while traveling.
+- A fast pace makes characters less perceptive (penalty to passive Descry (DEX)). A slow pace lets characters attempt to use Stealth while traveling.
 
 ### Choosing a pace
 
@@ -34,9 +34,7 @@ These rules determine how far a character or monster can move in a minute, an ho
 ### Forced March
 
 - The Travel Pace table assumes characters travel for 8 hours in a day. Characters can push on beyond that limit at the risk of [# kw:condition:exhaustion #].
-- For each additional hour of travel beyond 8 hours, each character must make a CON saving throw at the end of that hour.
-- The DC for this saving throw is 10 + 1 for each hour past 8. (DC = 10 + (hours beyond 8)).
-- On a failed saving throw, a character suffers one level of [# kw:condition:exhaustion #].
+- For each additional hour of travel beyond 8 hours, each character saves CON against DC 10 + (hours beyond 8) at the end of that hour or suffers one level of [# kw:condition:exhaustion #].
 
 Example: If a character travels for 10 hours (2 hours beyond 8), they save CON against DC 11 at the end of the 9th hour and against DC 12 at the end of the 10th hour. A failed save at either check causes one level of [# kw:condition:exhaustion #].
 
@@ -62,6 +60,6 @@ Example: If a character travels for 10 hours (2 hours beyond 8), they save CON a
 
 ## Interactions
 
-- Pace interacts with perception and stealth: fast travel imposes a penalty to passive Dexterity (Descry); slow travel enables the use of Stealth.
+- Pace interacts with perception and stealth: fast travel imposes a penalty to passive Descry (DEX); slow travel enables the use of Stealth.
 - Forced march interacts with [# kw:condition:exhaustion #] rules; each failed CON Save from overlong travel inflicts one level of [# kw:condition:exhaustion #].
 - Mount-based gallops and vehicle travel can change how much distance the party covers in a given time, and availability of fresh mounts or crew affects how long high-speed travel is sustainable.
