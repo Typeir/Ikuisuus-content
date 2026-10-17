@@ -1,0 +1,43 @@
+---
+source: Ikuisuus
+contentType: spells
+aspects:
+  - form:object
+  - school:transmutation
+---
+
+# Artisan's Touch
+
+A tool becomes pristine and perfected; capable of elevating the work of any artisan.
+
+---
+
+<Spell
+  level="4"
+  cost="10 Minutes"
+  components="V, S"
+  duration="10 days"
+  range="Touch"
+  targets="a tool used by a trade">
+
+You touch the target object, giving it the gift of master craftsmanship.
+
+While the caster wields the tool, it gains the following benefits:
+
+For the duration, the tool gains an enchantment, granting a [# kw:accuracy #] bonus of +1.
+Any output produced with the tool increases one level in the [# kw:quality #] ladder.
+
+If the tool would be wielded by a creature other than the caster, the benefits do not apply.
+
+If the output produced would already be of the **True** quality, there is no effect.
+
+<Overcast>
+
+**(per +1):** the duration increases by 10 days, and the tool's bonus increases by 1.
+The bonus does not increase the quality of the output further. 
+
+</Overcast>
+
+</Spell>
+
+<SpellLists members={["tinker", "wizard"]} />
