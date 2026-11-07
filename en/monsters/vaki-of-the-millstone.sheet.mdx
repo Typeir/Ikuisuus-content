@@ -1,0 +1,102 @@
+---
+source: Ikuisuus
+contentType: monsters
+---
+
+# Väki of the Millstone
+
+WIPWIPWIPWIPWIPWIPWIPWIPWIP
+WIPWIPWIPWIPWIPWIPWIPWIPWIP
+WIPWIPWIPWIPWIPWIPWIPWIPWIP
+WIPWIPWIPWIPWIPWIPWIPWIPWIP
+WIPWIPWIPWIPWIPWIPWIPWIPWIP
+WIPWIPWIPWIPWIPWIPWIPWIPWIP
+WIPWIPWIPWIPWIPWIPWIPWIPWIP
+WIPWIPWIPWIPWIPWIPWIPWIPWIP
+
+Stone that weighs. The millstone, the anchor, the slab over the cellar door.
+It is in no rush to crush you. It only needs to keep turning.
+
+<Monster
+  size="Small"
+  type="Väki"
+  alignment="Unaligned"
+  defence="14 (natural armor)"
+  deflect="3"
+  dodge="1"
+  hitPoints="38 ([% 7d6 +14 %])"
+  stability="×2"
+  poise="26"
+  speed="[= 4 stride =]"
+  str="16"
+  dex="8"
+  con="14"
+  wis="10"
+  cha="8"
+  saves="STR +5, CON +4"
+  skills="Athletics +5"
+  resistances="Bludgeoning, Piercing, Slashing"
+  immunities="Poison"
+  vulnerabilities="Chemical"
+  conditionImmunities="[# kw:condition:Petrified #], [# kw:condition:Poisoned #]"
+  senses="Tremorsense [= 6 stride =], Passive Descry 10"
+  languages="Speaks to whom it chooses, in whatever tongue it pleases."
+  lethality="2"
+  xp="450"
+  saveDc="11">
+
+---
+
+<Sheet>
+
+## Traits
+
+<Trait>
+
+#### Chosen Sight
+
+The Väki is perceived only by those it chooses. To every other creature it is **[# kw:condition:invisible #]** and makes no sound. Choosing, or unchoosing, costs it nothing.
+
+</Trait>
+
+<Trait>
+
+#### The Splinter Is the Whole
+
+The Väki is Stone, and Stone remembers. A creature that reduces it to 0 hit points is known to every Väki of Stone, and has disadvantage on every check to parlay with Stone until the Idea tires of the grudge.
+
+</Trait>
+
+<Trait>
+
+#### Felid Guise
+
+As a **Minor Action**, the Väki takes the shape of an ordinary house feline, or sheds it. Its statistics are unchanged save its size, which becomes Tiny.
+
+</Trait>
+
+<Trait>
+
+#### Turning
+
+A creature **[# kw:condition:grappled #]** by the Väki has its speed reduced to 0. At the start of each of its turns it takes 3 ([% 1d6 bludgeoning %]), and the damage grows by [% 1d6 %] for each consecutive turn it stays [# kw:condition:grappled #], to a maximum of [% 4d6 %].
+
+</Trait>
+
+---
+
+## Features
+
+### Attacks
+
+<Attack accuracy="+5" reach="[= 1 stride =]">
+
+##### Grind
+
+On a hit, 7 ([% 1d8 +3 bludgeoning %]). A Medium or smaller target is **[# kw:condition:grappled #]** (escape DC 11). The Väki can hold one creature at a time.
+
+</Attack>
+
+</Sheet>
+
+</Monster>

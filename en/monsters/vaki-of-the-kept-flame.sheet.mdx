@@ -1,0 +1,119 @@
+---
+source: Ikuisuus
+contentType: monsters
+---
+
+# Väki of the Kept Flame
+
+WIPWIPWIPWIPWIPWIPWIPWIPWIP
+WIPWIPWIPWIPWIPWIPWIPWIPWIP
+WIPWIPWIPWIPWIPWIPWIPWIPWIP
+WIPWIPWIPWIPWIPWIPWIPWIPWIP
+WIPWIPWIPWIPWIPWIPWIPWIPWIP
+WIPWIPWIPWIPWIPWIPWIPWIPWIP
+WIPWIPWIPWIPWIPWIPWIPWIPWIP
+WIPWIPWIPWIPWIPWIPWIPWIPWIP
+
+The fire that is tended. The banked coal, the hearth at dusk, the lamp left in a window.
+A blacksmith may work beside it for forty years and never once see it watching.
+
+<Monster
+  size="Small"
+  type="Väki"
+  alignment="Unaligned"
+  defence="14"
+  deflect="1"
+  dodge="4"
+  hitPoints="58 ([% 13d6 +13 %])"
+  stability="×1"
+  poise="13"
+  speed="[= 6 stride =]"
+  str="8"
+  dex="18"
+  con="12"
+  wis="14"
+  cha="16"
+  saves="DEX +6, CHA +5"
+  skills="Insight +4, Persuasion +5, Stealth +6"
+  resistances="Dark, Frost"
+  immunities="Fire"
+  conditionImmunities="[# kw:condition:Burning #]"
+  senses="Darkvision [= 12 stride =], Passive Descry 12"
+  languages="Speaks to whom it chooses, in whatever tongue it pleases."
+  lethality="3"
+  xp="700"
+  saveDc="12">
+
+---
+
+<Sheet>
+
+## Traits
+
+<Trait>
+
+#### Chosen Sight
+
+The Väki is perceived only by those it chooses. To every other creature it is **[# kw:condition:invisible #]** and makes no sound. Choosing, or unchoosing, costs it nothing.
+
+</Trait>
+
+<Trait>
+
+#### The Splinter Is the Whole
+
+The Väki is Flame, and Flame remembers. A creature that reduces it to 0 hit points is known to every Väki of Flame, and has disadvantage on every check to parlay with Flame until the Idea tires of the grudge.
+
+</Trait>
+
+<Trait>
+
+#### Felid Guise
+
+As a **Minor Action**, the Väki takes the shape of an ordinary house feline, or sheds it. Its statistics are unchanged save its size, which becomes Tiny.
+
+</Trait>
+
+<Trait>
+
+#### Kept Warmth
+
+Creatures of the Väki's choice within [= 2 stride =] of it have resistance to frost damage, and advantage on saves against [# kw:condition:exhaustion #] from cold.
+
+</Trait>
+
+---
+
+## Features
+
+### Actions
+
+<Action recharge="5–6" cost="1 Major Action">
+
+#### Banked Coals
+
+The Väki curls into a glowing coal. Until the start of its next turn, it has resistance to all damage, and any creature that touches it or hits it with a melee attack takes 7 ([% 2d6 fire %]).
+
+</Action>
+
+### Attacks
+
+<Attack accuracy="+6" reach="[= 1 stride =]">
+
+##### Ember Paw
+
+On a hit, 7 ([% 1d6 +4 slashing %]) plus 3 ([% 1d6 fire %]).
+
+</Attack>
+
+<Attack accuracy="+6" range="[= 12 stride =]">
+
+##### Spat Cinder
+
+On a hit, 9 ([% 2d8 fire %]).
+
+</Attack>
+
+</Sheet>
+
+</Monster>

@@ -1,0 +1,119 @@
+---
+source: Ikuisuus
+contentType: monsters
+---
+
+# Väki of the Cairn
+
+WIPWIPWIPWIPWIPWIPWIPWIPWIP
+WIPWIPWIPWIPWIPWIPWIPWIPWIP
+WIPWIPWIPWIPWIPWIPWIPWIPWIP
+WIPWIPWIPWIPWIPWIPWIPWIPWIP
+WIPWIPWIPWIPWIPWIPWIPWIPWIP
+WIPWIPWIPWIPWIPWIPWIPWIPWIP
+WIPWIPWIPWIPWIPWIPWIPWIPWIP
+WIPWIPWIPWIPWIPWIPWIPWIPWIP
+
+Stone that marks. The cairn on the pass, the grave-heap, the boundary that outlived the men who set it.
+It does not move much. It does not forget at all.
+
+<Monster
+  size="Medium"
+  type="Väki"
+  alignment="Unaligned"
+  defence="15 (natural armor)"
+  deflect="4"
+  dodge="0"
+  hitPoints="45 ([% 6d8 +18 %])"
+  stability="×2"
+  poise="30"
+  speed="[= 4 stride =]"
+  str="16"
+  dex="6"
+  con="16"
+  wis="14"
+  cha="8"
+  saves="CON +5, WIS +4"
+  skills="Insight +4"
+  resistances="Piercing, Slashing, Frost"
+  immunities="Poison"
+  conditionImmunities="[# kw:condition:Petrified #], [# kw:condition:Poisoned #], [# kw:condition:Prone #]"
+  senses="Tremorsense [= 6 stride =], Passive Descry 12"
+  languages="Speaks to whom it chooses, in whatever tongue it pleases."
+  lethality="2"
+  xp="450"
+  saveDc="11">
+
+---
+
+<Sheet>
+
+## Traits
+
+<Trait>
+
+#### Chosen Sight
+
+The Väki is perceived only by those it chooses. To every other creature it is **[# kw:condition:invisible #]** and makes no sound. Choosing, or unchoosing, costs it nothing.
+
+</Trait>
+
+<Trait>
+
+#### The Splinter Is the Whole
+
+The Väki is Stone, and Stone remembers. A creature that reduces it to 0 hit points is known to every Väki of Stone, and has disadvantage on every check to parlay with Stone until the Idea tires of the grudge.
+
+</Trait>
+
+<Trait>
+
+#### Felid Guise
+
+As a **Minor Action**, the Väki takes the shape of an ordinary house feline, or sheds it. Its statistics are unchanged save its size, which becomes Tiny.
+
+</Trait>
+
+<Trait>
+
+#### Unmoved
+
+The Väki cannot be [# kw:displace #]d.
+
+</Trait>
+
+<Trait>
+
+#### Marked
+
+When a creature reduces one of the Väki's allies to 0 hit points within [= 6 stride =] of it, the Väki marks that creature. The Väki has advantage on attacks against a marked creature.
+
+</Trait>
+
+---
+
+## Features
+
+### Actions
+
+<Action recharge="5–6" cost="1 Major Action">
+
+#### Set a Stone
+
+A waist-high cairn rises in an unoccupied space within [= 6 stride =] of the Väki. It grants half cover, its space is difficult terrain, and it crumbles at the end of the encounter.
+
+</Action>
+
+### Attacks
+
+<Attack accuracy="+5" reach="[= 1 stride =]">
+
+##### Cairn-Fist
+
+On a hit, 10 ([% 2d6 +3 bludgeoning %]).
+
+</Attack>
+
+</Sheet>
+
+</Monster>

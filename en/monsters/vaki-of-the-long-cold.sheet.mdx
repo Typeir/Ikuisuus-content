@@ -1,0 +1,138 @@
+---
+source: Ikuisuus
+contentType: monsters
+---
+
+# Väki of the Long Cold
+
+WIPWIPWIPWIPWIPWIPWIPWIPWIP
+WIPWIPWIPWIPWIPWIPWIPWIPWIP
+WIPWIPWIPWIPWIPWIPWIPWIPWIP
+WIPWIPWIPWIPWIPWIPWIPWIPWIP
+WIPWIPWIPWIPWIPWIPWIPWIPWIP
+WIPWIPWIPWIPWIPWIPWIPWIPWIP
+WIPWIPWIPWIPWIPWIPWIPWIPWIP
+WIPWIPWIPWIPWIPWIPWIPWIPWIP
+
+Not ice, not winter. Cold is what remains when warmth has left, and it has never once been in a hurry.
+It wears a shape the way a frozen lake wears a sky: borrowed, still, and patient beyond reckoning.
+
+<Monster
+  size="Huge"
+  type="Väki"
+  alignment="Unaligned"
+  defence="17 (natural armor)"
+  deflect="5"
+  dodge="1"
+  hitPoints="210 ([% 20d12 +80 %])"
+  stability="×4"
+  poise="118"
+  speed="[= 6 stride =]"
+  str="20"
+  dex="10"
+  con="20"
+  wis="16"
+  cha="18"
+  saves="CON +9, WIS +7, CHA +8"
+  skills="Insight +7, Intimidation +8"
+  resistances="Dark, Lightning"
+  immunities="Frost"
+  vulnerabilities="Fire"
+  conditionImmunities="[# kw:condition:Exhaustion #], [# kw:condition:Paralyzed #], [# kw:condition:Petrified #], [# kw:condition:Slowed #]"
+  senses="Tremorsense [= 12 stride =], Passive Descry 15"
+  languages="Speaks to whom it chooses, in whatever tongue it pleases."
+  lethality="10"
+  xp="5,900"
+  saveDc="16">
+
+---
+
+<Sheet>
+
+## Traits
+
+<Trait>
+
+#### Chosen Sight
+
+The Väki is perceived only by those it chooses. To every other creature it is **[# kw:condition:invisible #]** and makes no sound. Choosing, or unchoosing, costs it nothing.
+
+</Trait>
+
+<Trait>
+
+#### The Splinter Is the Whole
+
+The Väki is Cold, and Cold remembers. A creature that reduces it to 0 hit points is known to every Väki of Cold, and has disadvantage on every check to parlay with Cold until the Idea tires of the grudge.
+
+</Trait>
+
+<Trait>
+
+#### Felid Guise
+
+As a **Minor Action**, the Väki takes the shape of an ordinary house feline, or sheds it. Its statistics are unchanged save its size, which becomes Tiny.
+
+</Trait>
+
+<Trait>
+
+#### Where Warmth Leaves
+
+Mundane flames within [= 3 stride =] of the Väki gutter out. Each creature that starts its turn within [= 3 stride =] takes 7 ([% 2d6 frost %]) and saves CON against DC 16 or is **[# kw:condition:slowed #]** [# kw:briefly #].
+
+</Trait>
+
+---
+
+## Features
+
+### Actions
+
+<Action cost="1 Major Action">
+
+#### Multiattack
+
+The Väki makes two **Rime Grasp** attacks.
+
+</Action>
+
+<Action recharge="5–6" cost="1 Major Action">
+
+#### The Still
+
+Cold settles in a [= 6 stride =] radius around the Väki. Each creature in the area saves CON against DC 16, taking 40 ([% 9d8 frost %]) on a failure, or half as much on a success. On a failure, the creature is also **[# kw:condition:slowed #]** for 1 minute (saveto end).
+
+</Action>
+
+<Action charges="1/recovery" cost="1 Major Action">
+
+#### Hearth Gone Out
+
+Every fire within [= 12 stride =] of the Väki goes out, and spells of 5th level or lower that create fire there end. Each creature of the Väki's choice in the area saves WIS against DC 16 or is **[# kw:condition:frightened #]** [# kw:briefly #], remembering the coldest night it ever knew.
+
+</Action>
+
+### Attacks
+
+<Attack accuracy="+9" reach="[= 2 stride =]">
+
+##### Rime Grasp
+
+On a hit, 16 ([% 2d10 +5 bludgeoning %]) plus 10 ([% 3d6 frost %]). A Large or smaller target is **[# kw:condition:grappled #]** (escape DC 16).
+
+</Attack>
+
+### Reactions
+
+<Action cost="1 Reaction">
+
+#### Nothing Hurries
+
+When a creature within [= 3 stride =] of the Väki takes a reaction, the Väki forces it to save CON against DC 16. On a failure, the reaction is lost and the creature takes 7 ([% 2d6 frost %]).
+
+</Action>
+
+</Sheet>
+
+</Monster>

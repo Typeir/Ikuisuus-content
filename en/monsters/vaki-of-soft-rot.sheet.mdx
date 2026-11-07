@@ -1,0 +1,119 @@
+---
+source: Ikuisuus
+contentType: monsters
+---
+
+# Väki of Soft Rot
+
+WIPWIPWIPWIPWIPWIPWIPWIPWIP
+WIPWIPWIPWIPWIPWIPWIPWIPWIP
+WIPWIPWIPWIPWIPWIPWIPWIPWIP
+WIPWIPWIPWIPWIPWIPWIPWIPWIP
+WIPWIPWIPWIPWIPWIPWIPWIPWIP
+WIPWIPWIPWIPWIPWIPWIPWIPWIP
+WIPWIPWIPWIPWIPWIPWIPWIPWIP
+WIPWIPWIPWIPWIPWIPWIPWIPWIP
+
+The rot of fruit left too long, of bread gone green, of the wound nobody cleaned.
+Sweet-smelling, unhurried, certain: everything soft comes to it eventually.
+
+<Monster
+  size="Medium"
+  type="Väki"
+  alignment="Unaligned"
+  defence="14"
+  deflect="1"
+  dodge="3"
+  hitPoints="82 ([% 11d8 +33 %])"
+  stability="×1"
+  poise="24"
+  speed="[= 6 stride =], climb [= 6 stride =]"
+  str="12"
+  dex="16"
+  con="16"
+  wis="14"
+  cha="14"
+  saves="CON +6, WIS +5"
+  skills="Stealth +6, Insight +5"
+  resistances="Chemical, Dark, Piercing"
+  immunities="Poison"
+  conditionImmunities="[# kw:condition:Poisoned #], [# kw:condition:Exhaustion #]"
+  senses="Blindsight [= 6 stride =], Passive Descry 12"
+  languages="Speaks to whom it chooses, in whatever tongue it pleases."
+  lethality="5"
+  xp="1,800"
+  saveDc="13">
+
+---
+
+<Sheet>
+
+## Traits
+
+<Trait>
+
+#### Chosen Sight
+
+The Väki is perceived only by those it chooses. To every other creature it is **[# kw:condition:invisible #]** and makes no sound. Choosing, or unchoosing, costs it nothing.
+
+</Trait>
+
+<Trait>
+
+#### The Splinter Is the Whole
+
+The Väki is Rot, and Rot remembers. A creature that reduces it to 0 hit points is known to every Väki of Rot, and has disadvantage on every check to parlay with Rot until the Idea tires of the grudge.
+
+</Trait>
+
+<Trait>
+
+#### Felid Guise
+
+As a **Minor Action**, the Väki takes the shape of an ordinary house feline, or sheds it. Its statistics are unchanged save its size, which becomes Tiny.
+
+</Trait>
+
+<Trait>
+
+#### Ripening
+
+Creatures within [= 2 stride =] of the Väki regain only half the hit points they would from any source. Food and drink in the same area spoils within the hour.
+
+</Trait>
+
+---
+
+## Features
+
+### Actions
+
+<Action cost="1 Major Action">
+
+#### Multiattack
+
+The Väki makes two **Blighting Touch** attacks.
+
+</Action>
+
+<Action recharge="5–6" cost="1 Major Action">
+
+#### Overripe
+
+The air around the Väki thickens, sweet and cloying. Each creature within [= 3 stride =] saves CON against DC 13, taking 21 ([% 6d6 poison %]) on a failure, or half as much on a success. On a failure, the creature is also **[# kw:condition:poisoned #]** [# kw:briefly #].
+
+</Action>
+
+### Attacks
+
+<Attack accuracy="+6" reach="[= 1 stride =]">
+
+##### Blighting Touch
+
+On a hit, 10 ([% 2d6 +3 dark %]). The target saves CON against DC 13 or is **[# kw:condition:poisoned #]** until the end of its next turn. A target already [# kw:condition:poisoned #] takes an extra 7 ([% 2d6 poison %]) instead.
+
+</Attack>
+
+</Sheet>
+
+</Monster>
