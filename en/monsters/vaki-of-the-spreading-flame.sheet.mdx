@@ -1,0 +1,121 @@
+---
+source: Ikuisuus
+contentType: monsters
+---
+
+# Väki of the Spreading Flame
+
+WIPWIPWIPWIPWIPWIPWIPWIPWIP
+WIPWIPWIPWIPWIPWIPWIPWIPWIP
+WIPWIPWIPWIPWIPWIPWIPWIPWIP
+WIPWIPWIPWIPWIPWIPWIPWIPWIP
+WIPWIPWIPWIPWIPWIPWIPWIPWIP
+WIPWIPWIPWIPWIPWIPWIPWIPWIP
+WIPWIPWIPWIPWIPWIPWIPWIPWIP
+WIPWIPWIPWIPWIPWIPWIPWIPWIP
+
+The same Flame as the hearth, wearing its other face. The spark in dry grass, the thatch catching, the brand passed hand to hand.
+It is not cruel. It is hungry, and the world is very dry.
+
+<Monster
+  size="Medium"
+  type="Väki"
+  alignment="Unaligned"
+  defence="13"
+  deflect="0"
+  dodge="4"
+  hitPoints="52 ([% 8d8 +16 %])"
+  stability="×1"
+  poise="15"
+  speed="[= 10 stride =]"
+  str="10"
+  dex="18"
+  con="14"
+  wis="8"
+  cha="12"
+  saves="DEX +6"
+  skills="Acrobatics +6"
+  resistances="Bludgeoning"
+  immunities="Fire, Poison"
+  vulnerabilities="Frost"
+  conditionImmunities="[# kw:condition:Burning #], [# kw:condition:Poisoned #]"
+  senses="Darkvision [= 12 stride =], Passive Descry 9"
+  languages="Speaks to whom it chooses, in whatever tongue it pleases."
+  lethality="3"
+  xp="700"
+  saveDc="12">
+
+---
+
+<Sheet>
+
+## Traits
+
+<Trait>
+
+#### Chosen Sight
+
+The Väki is perceived only by those it chooses. To every other creature it is **[# kw:condition:invisible #]** and makes no sound. Choosing, or revoking costs it nothing.
+The Väki may not interact with creatures that cannot perceive it beyond the natural effects of it's existence, a flame is still a flame whether or not the anima within it can be seen.
+
+</Trait>
+
+<Trait>
+
+#### The Splinter Is the Whole
+
+A creature that reduces it to 0 hit points is known to every Väki of Flame, and has disadvantage on every check to parlay with Flame until the Idea tires of the grudge.
+
+</Trait>
+
+<Trait>
+
+#### Felid Guise
+
+As a **Minor Action**, the Väki takes the shape of an ordinary house feline, or sheds it. Its statistics are unchanged save its size, which becomes Tiny.
+
+</Trait>
+
+<Trait>
+
+#### Catching
+
+The Väki can move through the spaces of other creatures. The first time it enters a creature's space on a turn, that creature saves DEX against DC 12 or becomes **[# kw:condition:burning #]**. Flammable objects the Väki touches ignite.
+
+</Trait>
+
+<Trait>
+
+#### Fed
+
+Whenever a creature within [= 6 stride =] of the Väki becomes [# kw:condition:burning #], the Väki regains 5 hit points.
+
+</Trait>
+
+---
+
+## Features
+
+### Actions
+
+<Action recharge="5–6" cost="1 Major Action">
+
+#### Leap Between Fires
+
+The Väki vanishes into a fire it can see and steps out of another fire within [= 12 stride =]. Each creature within [= 1 stride =] of where it emerges saves DEX against DC 12, taking 7 ([% 2d6 fire %]) on a failure, or half as much on a success.
+
+</Action>
+
+### Attacks
+
+<Attack accuracy="+6" reach="[= 1 stride =]">
+
+##### Licking Brand
+
+On a hit, 11 ([% 2d6 +4 fire %]). The target saves DEX against DC 12 or becomes **[# kw:condition:burning #]**.
+
+</Attack>
+
+</Sheet>
+
+</Monster>

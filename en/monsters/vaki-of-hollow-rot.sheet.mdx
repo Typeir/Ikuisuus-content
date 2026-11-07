@@ -1,0 +1,120 @@
+---
+source: Ikuisuus
+contentType: monsters
+---
+
+# Väki of Hollow Rot
+
+WIPWIPWIPWIPWIPWIPWIPWIPWIP
+WIPWIPWIPWIPWIPWIPWIPWIPWIP
+WIPWIPWIPWIPWIPWIPWIPWIPWIP
+WIPWIPWIPWIPWIPWIPWIPWIPWIP
+WIPWIPWIPWIPWIPWIPWIPWIPWIP
+WIPWIPWIPWIPWIPWIPWIPWIPWIP
+WIPWIPWIPWIPWIPWIPWIPWIPWIP
+WIPWIPWIPWIPWIPWIPWIPWIPWIP
+
+The rot in the heartwood, in the beam, in the keel. It works from within and is noticed only when the floor gives way.
+
+<Monster
+  size="Large"
+  type="Väki"
+  alignment="Unaligned"
+  defence="15 (natural armor)"
+  deflect="3"
+  dodge="1"
+  hitPoints="95 ([% 10d10 +40 %])"
+  stability="×2"
+  poise="44"
+  speed="[= 6 stride =], burrow [= 2 stride =] (wood and soil only)"
+  str="18"
+  dex="10"
+  con="18"
+  wis="12"
+  cha="10"
+  saves="STR +7, CON +7"
+  skills="Athletics +7"
+  resistances="Bludgeoning, Piercing, Dark"
+  immunities="Poison"
+  vulnerabilities="Fire"
+  conditionImmunities="[# kw:condition:Poisoned #], [# kw:condition:Exhaustion #]"
+  senses="Tremorsense [= 6 stride =], Passive Descry 11"
+  languages="Speaks to whom it chooses, in whatever tongue it pleases."
+  lethality="5"
+  xp="1,800"
+  saveDc="13">
+
+---
+
+<Sheet>
+
+## Traits
+
+<Trait>
+
+#### Chosen Sight
+
+The Väki is perceived only by those it chooses. To every other creature it is **[# kw:condition:invisible #]** and makes no sound. Choosing, or revoking costs it nothing.
+The Väki may not interact with creatures that cannot perceive it beyond the natural effects of it's existence, rot is still rot whether or not the anima within it can be seen.
+
+</Trait>
+
+<Trait>
+
+#### The Splinter Is the Whole
+
+A creature that reduces it to 0 hit points is known to every Väki of Rot, and has disadvantage on every check to parlay with Rot until the Idea tires of the grudge.
+
+</Trait>
+
+<Trait>
+
+#### Felid Guise
+
+As a **Minor Action**, the Väki takes the shape of an ordinary house feline, or sheds it. Its statistics are unchanged save its size, which becomes Tiny.
+
+</Trait>
+
+<Trait>
+
+#### From Within
+
+The Väki deals double damage to objects and structures of wood, bone, or leather.
+
+</Trait>
+
+---
+
+## Features
+
+### Actions
+
+<Action cost="1 Major Action">
+
+#### Multiattack
+
+The Väki makes two **Hollowing Grip** attacks.
+
+</Action>
+
+<Action charges="1/recovery" cost="1 Major Action">
+
+#### The Floor Gives Way
+
+Wooden floors and soil within [= 4 stride =] of the Väki become difficult terrain until a [# kw:Repose #] is taken. Each creature standing in the area saves DEX against DC 13 or falls **[# kw:condition:prone #]**.
+
+</Action>
+
+### Attacks
+
+<Attack accuracy="+7" reach="[= 1 stride =]">
+
+##### Hollowing Grip
+
+On a hit, 13 ([% 2d8 +4 bludgeoning %]) plus 7 ([% 2d6 dark %]). The target gains one instance of **[# kw:condition:sundered #]**, which lasts until it mends its armour during a [# kw:Repose #].
+
+</Attack>
+
+</Sheet>
+
+</Monster>

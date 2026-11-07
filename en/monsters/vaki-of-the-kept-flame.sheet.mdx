@@ -1,0 +1,112 @@
+---
+source: Ikuisuus
+contentType: monsters
+---
+
+# Väki of the Kept Flame
+
+WIPWIPWIPWIPWIPWIPWIPWIPWIP
+WIPWIPWIPWIPWIPWIPWIPWIPWIP
+WIPWIPWIPWIPWIPWIPWIPWIPWIP
+WIPWIPWIPWIPWIPWIPWIPWIPWIP
+WIPWIPWIPWIPWIPWIPWIPWIPWIP
+WIPWIPWIPWIPWIPWIPWIPWIPWIP
+WIPWIPWIPWIPWIPWIPWIPWIPWIP
+WIPWIPWIPWIPWIPWIPWIPWIPWIP
+
+The fire that is tended. The banked coal, the hearth at dusk, the lamp left in a window.
+A blacksmith may work beside it for forty years and never once see it watching.
+
+<Monster
+  size="Small"
+  type="Väki"
+  alignment="Unaligned"
+  defence="14"
+  deflect="1"
+  dodge="4"
+  hitPoints="58 ([% 13d6 +13 %])"
+  stability="×1"
+  poise="13"
+  speed="[= 6 stride =]"
+  str="8"
+  dex="18"
+  con="12"
+  wis="14"
+  cha="16"
+  saves="DEX +6, CHA +5"
+  skills="Insight +4, Persuasion +5, Stealth +6, Performance +6"
+  resistances="Dark, Frost"
+  immunities="Fire"
+  conditionImmunities="[# kw:condition:Burning #]"
+  senses="Darkvision [= 12 stride =], Passive Descry 12"
+  languages="Speaks to whom it chooses, in whatever tongue it pleases."
+  lethality="3"
+  xp="700"
+  saveDc="12">
+
+---
+
+<Sheet>
+
+## Traits
+
+<Trait>
+
+#### Chosen Sight
+
+The Väki is perceived only by those it chooses. To every other creature it is **[# kw:condition:invisible #]** and makes no sound. Choosing, or revoking costs it nothing.
+The Väki may not interact with creatures that cannot perceive it beyond the natural effects of it's existence, a flame is still a flame whether or not the anima within it can be seen.
+
+</Trait>
+
+<Trait>
+
+#### The Splinter Is the Whole
+
+A creature that reduces it to 0 hit points is known to every Väki of Flame, and has disadvantage on every check to parlay with Flame until the Idea tires of the grudge.
+
+</Trait>
+
+<Trait>
+
+#### Felid Guise
+
+As a **Minor Action**, the Väki takes the shape of an ordinary house feline, or sheds it. Its statistics are unchanged save its size, which becomes Tiny.
+
+</Trait>
+
+<Trait>
+
+#### Kept Warmth
+
+Creatures of the Väki's choice within [= 2 stride =] of it have resistance to frost damage, and advantage on saves against [# kw:condition:exhaustion #] from cold.
+
+</Trait>
+
+---
+
+## Features
+
+### Actions
+
+<Action recharge="5–6" cost="1 Major Action">
+
+#### Consuming Cavort
+
+The Vaki dances and prances around a creature. Targets save CHA, on a failed save, they must roll a contested performance roll, taking as much damage as the difference of the roll, to a minimum of 0.
+
+</Action>
+
+### Attacks
+
+<Attack accuracy="+6" range="[= 12 stride =]">
+
+#### Pyromancy
+
+The Väki hurls a flame at a creature, as if casting [_Pyromancy_](/en/library/spells/pyromancy).
+
+</Attack>
+
+</Sheet>
+
+</Monster>

@@ -1,0 +1,112 @@
+---
+source: Ikuisuus
+contentType: monsters
+---
+
+# Väki of the Cairn
+
+WIPWIPWIPWIPWIPWIPWIPWIPWIP
+WIPWIPWIPWIPWIPWIPWIPWIPWIP
+WIPWIPWIPWIPWIPWIPWIPWIPWIP
+WIPWIPWIPWIPWIPWIPWIPWIPWIP
+WIPWIPWIPWIPWIPWIPWIPWIPWIP
+WIPWIPWIPWIPWIPWIPWIPWIPWIP
+WIPWIPWIPWIPWIPWIPWIPWIPWIP
+WIPWIPWIPWIPWIPWIPWIPWIPWIP
+
+Stone that marks. What it marks is left to the observer; a dead mans hoard, a path not well traveled, a sacred ground, a trip no one returns from.
+It is unmoving, yet it may or may not be there the next time the road is taken.
+
+<Monster
+  size="Medium"
+  type="Väki"
+  alignment="Unaligned"
+  defence="15 (natural armor)"
+  deflect="4"
+  dodge="0"
+  hitPoints="45 ([% 6d8 +18 %])"
+  stability="×2"
+  poise="30"
+  speed="[= 4 stride =]"
+  str="16"
+  dex="6"
+  con="16"
+  wis="14"
+  cha="8"
+  saves="CON +5, WIS +4"
+  skills="Insight +4"
+  resistances="Piercing, Slashing, Frost"
+  immunities="Poison"
+  conditionImmunities="[# kw:condition:Petrified #], [# kw:condition:Poisoned #], [# kw:condition:Prone #]"
+  senses="Tremorsense [= 6 stride =], Passive Descry 12"
+  languages="Speaks to whom it chooses, in whatever tongue it pleases."
+  lethality="2"
+  xp="450"
+  saveDc="11">
+
+---
+
+<Sheet>
+
+## Traits
+
+<Trait>
+
+#### Chosen Sight
+
+The Väki is perceived only by those it chooses. To every other creature it is **[# kw:condition:invisible #]** and makes no sound. Choosing, or revoking costs it nothing. 
+The Väki may not interact with creatures that cannot perceive it beyond the natural effects of it's existence, a rock is still a rock whether or not the anima within it can be seen.
+
+</Trait>
+
+<Trait>
+
+#### The Splinter Is the Whole
+
+A creature that reduces it to 0 hit points is known to every Väki of Stone, and has disadvantage on every check to parlay with Stone until the Idea tires of the grudge.
+
+</Trait>
+
+<Trait>
+
+#### Felid Guise
+
+As a **Minor Action**, the Väki takes the shape of an ordinary house feline, or sheds it. It becomes Tiny, but is otherwise unchanged.
+
+</Trait>
+
+<Trait>
+
+#### Unmoved
+
+The Väki cannot be [# kw:displace #]d.
+
+</Trait>
+
+---
+
+## Features
+
+### Actions
+
+<Action recharge="5–6" cost="1 Major Action">
+
+#### Set a Stone
+
+A waist-high cairn rises in an unoccupied space within [= 6 stride =] of the Väki. It grants half cover, its space is difficult terrain, and it crumbles if the vaki moves further than [= 18 stride =] from it.
+
+</Action>
+
+### Attacks
+
+<Attack accuracy="+5" reach="[= 1 stride =]">
+
+##### Kivi
+
+The cairn launches a stone, as if casting [_Kivi_](/en/library/spells/kivi).
+
+</Attack>
+
+</Sheet>
+
+</Monster>
