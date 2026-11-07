@@ -21,16 +21,16 @@ Sweet-smelling, unhurried, certain: everything soft comes to it eventually.
   size="Medium"
   type="Väki"
   alignment="Unaligned"
-  defence="14"
+  defence="13"
   deflect="1"
   dodge="3"
-  hitPoints="82 ([% 11d8 +33 %])"
+  hitPoints="97 ([% 11d8 +48 %])"
   stability="×1"
   poise="24"
   speed="[= 6 stride =], climb [= 6 stride =]"
   str="12"
   dex="16"
-  con="16"
+  con="20"
   wis="14"
   cha="14"
   saves="CON +6, WIS +5"
@@ -54,7 +54,8 @@ Sweet-smelling, unhurried, certain: everything soft comes to it eventually.
 
 #### Chosen Sight
 
-The Väki is perceived only by those it chooses. To every other creature it is **[# kw:condition:invisible #]** and makes no sound. Choosing, or unchoosing, costs it nothing.
+The Väki is perceived only by those it chooses. To every other creature it is **[# kw:condition:invisible #]** and makes no sound. Choosing, or revoking costs it nothing.
+The Väki may not interact with creatures that cannot perceive it beyond the natural effects of it's existence, rot is still rot whether or not the anima within it can be seen.
 
 </Trait>
 
@@ -62,7 +63,7 @@ The Väki is perceived only by those it chooses. To every other creature it is *
 
 #### The Splinter Is the Whole
 
-The Väki is Rot, and Rot remembers. A creature that reduces it to 0 hit points is known to every Väki of Rot, and has disadvantage on every check to parlay with Rot until the Idea tires of the grudge.
+A creature that reduces it to 0 hit points is known to every Väki of Rot, and has disadvantage on every check to parlay with Rot until the Idea tires of the grudge.
 
 </Trait>
 
@@ -82,19 +83,19 @@ Creatures within [= 2 stride =] of the Väki regain only half the hit points the
 
 </Trait>
 
+<Trait>
+
+#### Rotten Arcana
+
+The väki uses
+
+</Trait>
+
 ---
 
 ## Features
 
 ### Actions
-
-<Action cost="1 Major Action">
-
-#### Multiattack
-
-The Väki makes two **Blighting Touch** attacks.
-
-</Action>
 
 <Action recharge="5–6" cost="1 Major Action">
 
@@ -106,13 +107,16 @@ The air around the Väki thickens, sweet and cloying. Each creature within [= 3 
 
 ### Attacks
 
-<Attack accuracy="+6" reach="[= 1 stride =]">
+<Action cost="1 Major Action">
 
-##### Blighting Touch
+##### Omen of Rot
 
-On a hit, 10 ([% 2d6 +3 dark %]). The target saves CON against DC 13 or is **[# kw:condition:poisoned #]** until the end of its next turn. A target already [# kw:condition:poisoned #] takes an extra 7 ([% 2d6 poison %]) instead.
+Images of one's own decay flash upon the mind of a creature the Väki touches.
+The creature is affected by the spell _Omen_, and the vaki gains a bonus to accuracy of +2 per every health threshold past whole the target is in, up to a maximum of +6, and the dice step increase once per threshold too.
 
-</Attack>
+<Omen/>
+
+</Action>
 
 </Sheet>
 

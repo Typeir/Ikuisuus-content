@@ -14,8 +14,8 @@ WIPWIPWIPWIPWIPWIPWIPWIPWIP
 WIPWIPWIPWIPWIPWIPWIPWIPWIP
 WIPWIPWIPWIPWIPWIPWIPWIPWIP
 
-Stone that marks. The cairn on the pass, the grave-heap, the boundary that outlived the men who set it.
-It does not move much. It does not forget at all.
+Stone that marks. What it marks is left to the observer; a dead mans hoard, a path not well traveled, a sacred ground, a trip no one returns from.
+It is unmoving, yet it may or may not be there the next time the road is taken.
 
 <Monster
   size="Medium"
@@ -54,7 +54,8 @@ It does not move much. It does not forget at all.
 
 #### Chosen Sight
 
-The Väki is perceived only by those it chooses. To every other creature it is **[# kw:condition:invisible #]** and makes no sound. Choosing, or unchoosing, costs it nothing.
+The Väki is perceived only by those it chooses. To every other creature it is **[# kw:condition:invisible #]** and makes no sound. Choosing, or revoking costs it nothing. 
+The Väki may not interact with creatures that cannot perceive it beyond the natural effects of it's existence, a rock is still a rock whether or not the anima within it can be seen.
 
 </Trait>
 
@@ -62,7 +63,7 @@ The Väki is perceived only by those it chooses. To every other creature it is *
 
 #### The Splinter Is the Whole
 
-The Väki is Stone, and Stone remembers. A creature that reduces it to 0 hit points is known to every Väki of Stone, and has disadvantage on every check to parlay with Stone until the Idea tires of the grudge.
+A creature that reduces it to 0 hit points is known to every Väki of Stone, and has disadvantage on every check to parlay with Stone until the Idea tires of the grudge.
 
 </Trait>
 
@@ -70,7 +71,7 @@ The Väki is Stone, and Stone remembers. A creature that reduces it to 0 hit poi
 
 #### Felid Guise
 
-As a **Minor Action**, the Väki takes the shape of an ordinary house feline, or sheds it. Its statistics are unchanged save its size, which becomes Tiny.
+As a **Minor Action**, the Väki takes the shape of an ordinary house feline, or sheds it. It becomes Tiny, but is otherwise unchanged.
 
 </Trait>
 
@@ -79,14 +80,6 @@ As a **Minor Action**, the Väki takes the shape of an ordinary house feline, or
 #### Unmoved
 
 The Väki cannot be [# kw:displace #]d.
-
-</Trait>
-
-<Trait>
-
-#### Marked
-
-When a creature reduces one of the Väki's allies to 0 hit points within [= 6 stride =] of it, the Väki marks that creature. The Väki has advantage on attacks against a marked creature.
 
 </Trait>
 
@@ -100,7 +93,7 @@ When a creature reduces one of the Väki's allies to 0 hit points within [= 6 st
 
 #### Set a Stone
 
-A waist-high cairn rises in an unoccupied space within [= 6 stride =] of the Väki. It grants half cover, its space is difficult terrain, and it crumbles at the end of the encounter.
+A waist-high cairn rises in an unoccupied space within [= 6 stride =] of the Väki. It grants half cover, its space is difficult terrain, and it crumbles if the vaki moves further than [= 18 stride =] from it.
 
 </Action>
 
@@ -108,9 +101,11 @@ A waist-high cairn rises in an unoccupied space within [= 6 stride =] of the Vä
 
 <Attack accuracy="+5" reach="[= 1 stride =]">
 
-##### Cairn-Fist
+##### Kivi
 
-On a hit, 10 ([% 2d6 +3 bludgeoning %]).
+The cairn launches a stone, as if using. 
+
+<Kivi/>
 
 </Attack>
 
